@@ -1,0 +1,11 @@
+<script language="javascript" type="text/javascript" src="<?php echo APP_ROOT_URL; ?>js/brochure.js"></script>
+<h5>Newsletter Sign-up</h5>
+<span class="errormsg"><?php if(isset($_SESSION['successmsg'])) echo $_SESSION['successmsg']; $_SESSION['successmsg']='';?></span>
+		   <form name="frm_name_newsletter" action="<?php echo APP_ROOT_URL; ?>newsletter.html" method="post" onsubmit="return newsletterform()" enctype="multipart/form-data" >
+		   <input type="hidden" name="redirect_url" id="redirect_url" value="<?php echo $_SERVER['PHP_SELF']; ?>" />   
+          <input name="newsletter_email" id="newsletter_email"  type="text" class="Input" value="Your Email Here" onfocus="if (this.value == 'Your Email Here') this.value = '';" onblur="if (this.value == '') this.value = 'Your Email Here';" onkeypress="javascript: clearField('error_newsletter_email')"  />
+             
+              
+          <input name="" value="Sign-up" type="submit" onclick="return subscribe_newsletter();" class="Button" />
+		  <span class="errormsg" id="error_newsletter_email"  style="float:right;"></span>
+		  </form>

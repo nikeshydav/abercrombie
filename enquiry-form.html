@@ -1,0 +1,277 @@
+<?php
+include("config.php");
+include("classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--Flag-->
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+</script>
+<!--Flag-->
+<script type="text/javascript" src="js/tabcontent.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/enquiry.js"></script>
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics End here -->
+
+
+<!-- Script start here for Check boxes -->
+<script>
+function showMe (it, box) {
+  var vis = (box.checked) ? "block" : "none";
+  document.getElementById(it).style.display = vis;
+}
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="yahoo.html">
+                 
+     <img src="images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+<div class="tickerHolder">
+<a href="enquiry-form.html"><img src="images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="request-brochure.html"><img src="images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('header.html'); ?>
+  <!-- Header Part End Here -->
+  <!-- Banner Part Start Here -->
+  <div id="Banner"><img src="images/enquiry-banner.jpg" alt="Abercrombie &amp; Kent" /></div>
+  <!-- Banner Part End Here -->
+  <!-- Container Part Start Here -->
+  <div id="Container">
+    <!-- Left Container Part Start Here -->
+    <div class="LeftContaner">
+      <div class="Breadcrumb">
+        <ul>
+          <li>You are here</li>
+          <li><a href="index.html">Home</a></li>          
+          <li>Online Enquiry Form</li>
+        </ul>
+      </div>
+      <div class="LeftList">
+        <h4>About A&amp;K</h4>
+        <ul>
+          <li><a href="about/difference.html">A&amp;K Difference</a></li>
+          <li><a href="about/philanthropy.html">A&amp;K Philanthropy</a></li>
+          <li><a href="about/team.html" class="Active">A&amp;K Team</a></li>
+          <li><a href="enquiry-form.html">Jobs in A&amp;K</a></li>
+          <li><a href="#">A&amp;K Traveler Testimonials</a></li>
+          <li><a href="about/press.html">Press</a></li>
+          <li><a href="about/ground-offices.html">A&amp;K Ground Offices</a></li>
+        </ul>
+        <h4>CHOOSE YOUR STYLE</h4>
+<select onChange="ChangeValue(this)">
+<option value="0" selected="selected">Choose Your Style</option>
+<option value="journeystyles/private-journeys.html">Private Luxury Journeys</option>
+<option value="journeystyles/connections.html">Conections</option>
+<option value="journeystyles/extreme-adventures.html">Extreme Adventures</option>
+<option value="journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+<option value="journeystyles/private-jet.html">Private Jet Journeys</option>
+<option value="journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+<option value="journeystyles/family-holidays.html">Family Holidays</option>
+<option value="journeystyles/rest-revive.html">Rest &amp; Revive</option>
+<option value="journeystyles/celebration.html">Celebrations</option>
+<option value="journeystyles/honeymoon.html">Honeymoon</option>
+<option value="journeystyles/special-interst-groups.html">Special Interest Groups</option>
+<option value="journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+<option value="journeystyles/ak-villas.html">A&amp;K Villas</option>
+<option value="journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+</select>
+
+<h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="destinations/africa.html">Africa</option>
+		<option value="destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="destinations/europe.html">Europe</option>
+		<option value="destinations/australasia.html">Australasia</option>
+		<option value="destinations/theorient.html">The Orient</option>
+		<option value="destinations/south-america.html">South America</option>
+		<option value="destinations/north-america.html">North America</option>
+         <option value="destinations/central-america.html">Central America</option>
+		<option value="destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="destinations/antartica.html">Antarctica</option>
+        <option value="destinations/arctic.html">Arctic</option>
+    </select>
+      </div>
+      <?php include('brochure_left.html'); ?>
+    </div>
+    <!-- Left Container Part End Here -->
+    <!-- Center Container Part Start Here -->
+    <div class="CenterContainerInner">
+      <h1>Online Enquiry FORM </h1>
+      <div class="Right">
+        <div class="RightIcons">
+		  <?php include('share.html'); ?>
+		</div>
+        <div class="NewsletterBox">
+         <?php include('newsletterform.html'); ?>
+        </div>
+      </div>
+      <div class="Clr"></div>
+      <ul class="jobmainsec"> 
+        
+		
+		 <form id="loginform"name="loginform" method="post" action="sendenquiry.php" onsubmit="return checkfield(this)">
+		 
+                  
+		  
+		  
+          
+		  
+		  
+			  
+              
+		  <h2 class="blue14">Your details</h2>
+          <li class="dottedBorder">
+		  
+          <dl>
+            <dt><strong>*</strong>  Name<br />
+            </dt>
+            <dd>
+              <input type="text" name="first_name" id="first_name" class="inptxt" maxlength="32" />
+              <br />
+              <span class="errormsg" id="span_first_name"></span> </dd>
+          </dl>
+		  
+		  <dl>
+            <dt><strong>*</strong> Email<br />
+            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="email" id="email"  maxlength="64"/>
+              <br />
+              <span class="errormsg" id="span_email"></span> </dd>
+          </dl>
+		  
+		  <dl>
+            <dt><strong>*</strong> Phone<br />
+            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="telephone" id="telephone" maxlength="15"/>
+              <br />
+              <span class="errormsg" id="span_telephone"></span> </dd>
+          </dl> 
+		   
+		  <dl>
+            <dt><strong>*</strong> Address           </dt>
+            <dd>
+              <input type="text" class="inptxt" name="address1" id="address1"  maxlength="100"/>
+              <br />
+              <span class="errormsg" id="span_address1"></span> </dd>
+          </dl>
+		  </li>      
+		  
+          <li>
+		  
+            <!--<dl>
+            <dt><strong>*</strong> How did you hear about A&amp;K? </dt>
+            <dd>
+             <select class="selectmenu-b" name="how_hear_about" id="how_hear_about">
+                <option value=""> Select </option>
+				<?php echo $how_hear_about_list;?>
+              </select>
+              <br />
+              <span class="errormsg" id="span_how_hear_about"></span> </dd>
+          </dl>--><dl>
+            <dt>Please share your travel requirement/enquiry</dt>
+            <dd>
+              <textarea class="txtarea" name="help_information" id="help_information" maxlength="1000"></textarea>
+              <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+		  </li>
+		<dl><p>&nbsp;</p></dl>
+		<dl>
+		<span class="Left">
+		<input type="image" name="submit" src="images/submit-btn.jpg" /></span>
+		</dl>
+		</form>
+      </ul> 
+    </div> 
+    <!-- Center Container Part End Here -->
+    <div class="Clr"></div>
+  </div>
+  <!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script>
+</body>
+</html>

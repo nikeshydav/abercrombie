@@ -1,0 +1,180 @@
+
+<div id="Header">
+<div class="Logo"><a href="<?php echo APP_ROOT_URL; ?>index.html" title="Abercrombie &amp; Kent"><img src="<?php echo APP_ROOT_URL; ?>images/logo.gif" alt="Abercrombie &amp; Kent" border="0" /></a>
+<p class="select_region">Select your home region -<span id="ddtopmenubar" class="mattblackmenu"><a target="_top" href='http://www.abercrombiekent.co.in/region.html' 
+     class='lightview' 
+     data-lightview-group='example'
+    
+     > <strong>IN</strong> <img src="../images/india-flag.jpg" style="margin:0 0 0 5px;" border="0" /></a>
+
+</span>
+            <script type="text/javascript">
+ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+</script>
+
+            </p>
+</div>
+<div class="HeaderRight">
+<div class="FlagLeft">
+<div class="TollFree">India Toll Free : 1800 - 111 - 010</div>
+
+
+</div>
+<div class="FlagRight">
+<ul>
+<li><a href="<?php echo APP_ROOT_URL; ?>request-brochure.html" title="Brochure">Brochure</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>enquiry-form.html" title="Enquiry">Enquiry</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>contact/contact.html" title="Contact Us">Contact Us</a></li>
+</ul>
+<div class="SearchBg">
+
+<form action="<?php echo APP_ROOT_URL; ?>search-result.html" method="post" >
+<input name="keyword" type="text" class="Input" value="Search" onfocus="if (this.value == 'search') this.value = '';" onblur="if (this.value == '') this.value = 'search';"  />
+<input name="" type="image" src="<?php echo APP_ROOT_URL; ?>images/arrow-button.gif" class="Button" />
+
+</form>
+</div>
+
+</div>
+</div>
+<div class="Clr"></div>
+<!-- Top Navigation Start Here -->
+<div class="TopNavigation"> 	
+<ul>
+<li><a href="<?php echo APP_ROOT_URL; ?>index.html" title="Home" <?php if($_SERVER['PHP_SELF']=='/index.html') {echo "class='selected'";}?>>Home</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>about/about.html" title="About A&amp;K" <?php if($_SERVER['PHP_SELF']=='/about/about.html') {echo "class='selected'";}?>>About a&amp;K</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>destinations/destinations.html" title="Destinations" <?php if($_SERVER['PHP_SELF']=='/destinations/destinations.html') {echo "class='selected'";}?>>Destinations</a>
+<!--<ul style="left:-170px;">
+<li>
+<div class="menuinner">
+<h3>Africa</h3>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-kenya.html" title="Kenya" >Kenya</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-tanzania.html" title="Tanzania">Tanzania</a></span>
+<span><a href="javascript:void(0)" title="Rwanda">Rwanda</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-uganda.html" title="Uganda">Uganda</a></span>
+<span><a href="javascript:void(0)" title="Namibia">Namibia</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-southafrica.html" title="South Africa">South Africa</a></span>
+<span><a href="javascript:void(0)" title="Zimbabwe">Zimbabwe</a></span>
+<span><a href="javascript:void(0)" title="Zambia">Zambia</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-botswana.html" title="Botswana">Botswana</a></span>
+
+<h3 class="mtop10">Middle East &amp; North  Africa</h3>
+<span><a href="javascript:void(0)" title="Egypt">Egypt</a></span>
+<span><a href="javascript:void(0)" title="Israel">Israel</a></span>
+<span><a href="javascript:void(0)" title="Jordan">Jordan</a></span>
+<span><a href="javascript:void(0)" title="Morocco">Morocco</a></span>
+<span><a href="javascript:void(0)" title="Oman">Oman</a></span>
+</div>
+
+<div class="menuinner">
+<h3>Europe</h3>
+<span><a href="javascript:void(0)" title="UK &amp; Ireland">UK &amp; Ireland</a></span>
+<span><a href="javascript:void(0)" title="France">France</a></span>
+<span><a href="javascript:void(0)" title="Spain &amp; Portugal">Spain &amp; Portugal</a></span>
+<span><a href="javascript:void(0)" title="Italy">Italy</a></span>
+<span><a href="javascript:void(0)" title="Switzerland">Switzerland </a></span>
+<span><a href="javascript:void(0)" title="Benelux">Benelux</a></span>
+<span><a href="javascript:void(0)" title="Croatia">Croatia</a></span>
+<span><a href="javascript:void(0)" title="Greece">Greece</a></span>
+<span><a href="javascript:void(0)" title="Germany">Germany</a></span>
+<span><a href="javascript:void(0)" title="Poland">Poland</a></span>
+<span><a href="javascript:void(0)" title="Austria">Austria</a></span>
+<span><a href="javascript:void(0)" title="Russia">Russia</a></span>
+<span><a href="javascript:void(0)" title="Turkey ">Turkey </a></span>
+
+<h3 class="mtop10">Australasia</h3>
+                <span><a href="javascript:void(0)" title="New Zealand">New Zealand</a></span> <span><a href="javascript:void(0)" title="Australia">Australia</a></span>                         
+</div>
+
+<div class="menuinner">
+<h3>China &amp; Orient</h3>
+<span><a href="javascript:void(0)" title="China">China</a></span>
+<span><a href="javascript:void(0)" title="Japan">Japan</a></span>
+<span><a href="javascript:void(0)" title="Bhutan">Bhutan</a></span>
+<span><a href="javascript:void(0)" title="Vietnam">Vietnam</a></span>
+
+<span><a href="javascript:void(0)" title="Laos">Laos </a></span>
+<span><a href="javascript:void(0)" title="Cambodia">Cambodia</a></span>
+<span><a href="javascript:void(0)" title="Thailand">Thailand</a></span>
+<span><a href="javascript:void(0)" title="Myanmar">Myanmar</a></span>
+
+<h3 class="mtop10">South America</h3>
+<span><a href="javascript:void(0)" title="Peru">Peru</a></span>
+<span><a href="javascript:void(0)" title="Ecuador">Ecuador</a></span>  
+<span><a href="javascript:void(0)" title="Brazil">Brazil</a></span>  
+
+<span><a href="javascript:void(0)" title="Brazil">Argentina</a></span>  
+<span><a href="javascript:void(0)" title="Chile">Chile</a></span>  
+</div>
+
+<div class="menuinner">
+<h3>North America</h3>
+<span><a href="javascript:void(0)" title="USA">USA</a></span>
+<span><a href="javascript:void(0)" title="Canada">Canada</a></span>
+<span><a href="javascript:void(0)" title="Mexico">Mexico</a></span>
+
+<h3 class="mtop10">Beach &amp; Island escapes</h3>
+<span><a href="javascript:void(0)" title="Maldives">Maldives</a></span>
+<span><a href="javascript:void(0)" title="Tahiti">Tahiti</a></span>  
+<span><a href="javascript:void(0)" title="Fiji">Fiji</a></span>  
+<span><a href="javascript:void(0)" title="Mauritius">Mauritius</a></span>  
+<span><a href="javascript:void(0)" title="Seychelles">Seychelles</a></span>  
+<span><a href="javascript:void(0)" title="Philippines">Philippines</a></span>  
+<h3 class="mtop10">Antarctica</h3>
+</div>
+</li>
+</ul>-->
+</li>
+<li><a href="<?php echo APP_ROOT_URL; ?>journeystyles/ak-journey-style.html" title="A&amp;K Journey Styles" <?php if($_SERVER['PHP_SELF']=='/journeystyles/ak-journey-style.html') {echo "class='selected'";}?>>A&amp;K Journey Styles</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>news.html" title="News" <?php if($_SERVER['PHP_SELF']=='/news.html') {echo "class='selected'";}?>>News</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>destinations/special-offers.html" title="Special Offers" <?php if($_SERVER['PHP_SELF']=='/destinations/special-offers.html') {echo "class='selected'";}?>>Special Offers</a>
+<!--<ul style="left:-520px;">
+            <li>
+              <div class="menuinner">
+                <h3>Africa</h3>
+                <span><a href="#" title="Kenya">Kenya</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-tanzania-special-offers.html" title="Tanzania">Tanzania</a></span>
+<span><a href="javascript:void(0)" title="Rwanda">Rwanda</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-uganda-special-offers.html" title="Uganda">Uganda</a></span>
+<span><a href="javascript:void(0)" title="Namibia">Namibia</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-southafrica-special-offers.html" title="South Africa">South Africa</a></span>
+<span><a href="javascript:void(0)" title="Zimbabwe">Zimbabwe</a></span>
+<span><a href="javascript:void(0)" title="Zambia">Zambia</a></span>
+<span><a href="<?php echo APP_ROOT_URL; ?>destinations/africa-botswana-special-offers.html" title="Botswana">Botswana</a></span>
+                <h3 class="mtop10">Middle East &amp; North  Africa</h3>
+                <span><a href="javascript:void(0)" title="Egypt">Egypt</a></span> <span><a href="javascript:void(0)" title="Israel">Israel</a></span> <span><a href="javascript:void(0)" title="Jordan">Jordan</a></span> <span><a href="javascript:void(0)" title="Morocco">Morocco</a></span> <span><a href="javascript:void(0)" title="Oman">Oman</a></span>
+              </div>
+              <div class="menuinner">
+                <h3>Europe</h3>
+                <span><a href="javascript:void(0)" title="UK &amp; Ireland">UK &amp; Ireland</a></span> <span><a href="javascript:void(0)" title="France">France</a></span> <span><a href="javascript:void(0)" title="Spain &amp; Portugal">Spain &amp; Portugal</a></span> <span><a href="javascript:void(0)" title="Italy">Italy</a></span> <span><a href="javascript:void(0)" title="Switzerland">Switzerland </a></span> <span><a href="javascript:void(0)" title="Benelux">Benelux</a></span> <span><a href="javascript:void(0)" title="Croatia">Croatia</a></span> <span><a href="javascript:void(0)" title="Greece">Greece</a></span> <span><a href="javascript:void(0)" title="Germany">Germany</a></span> <span><a href="javascript:void(0)" title="Poland">Poland</a></span> <span><a href="javascript:void(0)" title="Austria">Austria</a></span> <span><a href="javascript:void(0)" title="Russia">Russia</a></span> <span><a href="javascript:void(0)" title="Turkey ">Turkey </a></span>
+                <h3 class="mtop10">Australasia</h3>
+                <span><a href="javascript:void(0)" title="New Zealand">New Zealand</a></span> <span><a href="javascript:void(0)" title="Australia">Australia</a></span>
+              </div>
+              <div class="menuinner">
+                <h3>China &amp; Orient</h3>
+                <span><a href="javascript:void(0)" title="China">China</a></span> <span><a href="javascript:void(0)" title="Japan">Japan</a></span> <span><a href="javascript:void(0)" title="Bhutan">Bhutan</a></span> <span><a href="javascript:void(0)" title="Vietnam">Vietnam</a></span> <span><a href="javascript:void(0)" title="Laos">Laos </a></span> <span><a href="javascript:void(0)" title="Cambodia">Cambodia</a></span> <span><a href="javascript:void(0)" title="Thailand">Thailand</a></span> <span><a href="javascript:void(0)" title="Myanmar">Myanmar</a></span>
+                <h3 class="mtop10">South America</h3>
+                <span><a href="javascript:void(0)" title="Peru">Peru</a></span> <span><a href="javascript:void(0)" title="Ecuador">Ecuador</a></span> <span><a href="javascript:void(0)" title="Brazil">Brazil</a></span> <span><a href="javascript:void(0)" title="Brazil">Argentina</a></span> <span><a href="javascript:void(0)" title="Chile">Chile</a></span>
+              </div>
+              <div class="menuinner">
+                <h3>North America</h3>
+                <span><a href="javascript:void(0)" title="USA">USA</a></span> <span><a href="javascript:void(0)" title="Canada">Canada</a></span> <span><a href="javascript:void(0)" title="Mexico">Mexico</a></span>
+                <h3 class="mtop10">Beach &amp; Island escapes</h3>
+                <span><a href="javascript:void(0)" title="Maldives">Maldives</a></span> <span><a href="javascript:void(0)" title="Tahiti">Tahiti</a></span> <span><a href="javascript:void(0)" title="Fiji">Fiji</a></span> <span><a href="javascript:void(0)" title="Mauritius">Mauritius</a></span> <span><a href="javascript:void(0)" title="Seychelles">Seychelles</a></span> <span><a href="javascript:void(0)" title="Philippines">Philippines</a></span>
+                <h3 class="mtop10">Antarctica</h3>
+              </div>
+            </li>
+          </ul>-->
+</li>
+<li><a href="<?php echo APP_ROOT_URL; ?>travel-tools/travel-calendar.html" title="Travel Tools" <?php if($_SERVER['PHP_SELF']=='/travel-tools/travel-calendar.html') {echo "class='selected'";}?>>Travel Tools</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>legal/legal.html" title="Legal" <?php if($_SERVER['PHP_SELF']=='/legal/legal.html') {echo "class='selected'";}?>>Legal</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>blog/" title="Blog" <?php if($_SERVER['PHP_SELF']=='/blog') {echo "class='selected'";}?>>Blog</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>contact/contact.html" title="Contact Us" <?php if($_SERVER['PHP_SELF']=='/contact/contact.html') {echo "class='selected'";}?>>Contact Us</a></li>
+
+</ul>
+</div>
+
+
+<!-- Top Navigation End Here -->
+</div>
+
