@@ -1,0 +1,864 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Itineraries UK Tour, London Itineraries, Holidays Itineraries UK, A&K Ireland Itineraries"/>
+<meta name="description" content="Find the itineraries for royal journey in London, UK and also customized to your individual interests and are required not only for luxury but also for culture and tradition." />
+<title>UK & Ireland Holiday and Tour Itineraries with A & K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--popup-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=16; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+			}
+	}
+}
+</script>
+<!--popup-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/uk-ireland-banner.jpg" alt="UK-Ireland" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="europe.html">Europe</a></li>
+<li><a href="europe-uk-ireland.html">UK &amp; Ireland</a></li>
+<li>Recommended Itineraries</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="europe.html">Europe</a></h5>
+        <ul>
+          <li><a href="europe-uk-ireland.html" title="UK &amp; Ireland"><span>-</span> UK &amp; Ireland</a>
+          <ul>
+              <li><a href="europe-uk-ireland.html" title="UK &amp; Ireland"><span>-</span> Introduction to UK &amp; Ireland</a></li>
+              <li><a href="europe-uk-ireland-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="europe-uk-ireland-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="europe-uk-ireland-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+              <li><a href="../about/uk-office.html" title="A&amp;K office in UK &amp; Ireland"><span>-</span> A&amp;K office in UK &amp; Ireland</a></li>
+              <li><a href="europe-uk-ireland-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>    <li><a href="europe-news.html?id=4" title="News"><span>-</span> News</a></li>
+              <li><a href="uk-ireland-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+              <li><a href="europe-uk-ireland-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li> <li><a href="europe-uk-ireland-luxury-rail-journey.html" title="Luxury Rail Journey"><span>-</span> Luxury Rail Journey</a></li>
+ <li><a href="../journeystyles/famity-holday.html" title="Family Holidays"><span>-</span> Family Holidays</a></li>
+              <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>
+              <li><a href="europe-uk-special-interest-groups.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+              <li><a href="../journeystyles/ak-villas.html" title="A&k Villas"><span>-</span> A&k Villas</a></li>
+<li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
+  
+            </ul>
+          </li>
+      
+          <li><a href="europe-spain-portugal.html" title="Spain &amp; Portugal"><span>+</span> Spain &amp; Portugal </a></li>
+          <li><a href="europe-italy-croatia.html" title="Italy &amp; Croatia">+ Italy &amp; Croatia</a>          
+          </li>
+          <li><a href="europe-russia.html" title="Russia"><span>+</span> Russia</a></li>
+          <li><a href="europe-rest-europe.html" title="Rest of Europe"><span>+</span> Rest of Europe</a></li> <li><a href="europe-france.html"  title="France"><span>+</span> France</a></li>   
+        
+          <li><a href="#" class="cursorauto"  title="Benelux"><span>+</span> Benelux </a></li>
+          <li><a href="#" class="cursorauto"  title="Greece"><span>+</span> Greece </a></li>
+          <li><a href="#" class="cursorauto" title="Germany"><span>+</span> Germany </a></li>
+          <li><a href="#" class="cursorauto" title="Poland"><span>+</span> Poland </a></li>
+          <li><a href="#"class="cursorauto"  title="Austria"><span>+</span> Austria </a></li>
+          
+		 <li><a href="#" class="cursorauto" title="Turkey"><span>+</span> Turkey</a></li>
+		
+ </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>UK & Ireland Recommended Itineraries</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
+<div class="Clr"></div>
+<div class="count-page"> <a href="europe-uk-ireland-recommended-itineraries3.html"> < Prev </a> |  <a href="europe-uk-ireland-recommended-itineraries.html">1</a> | <a href="europe-uk-ireland-recommended-itineraries2.html"> 2 </a> | <a href="europe-uk-ireland-recommended-itineraries3.html">3</a>  | <a href="europe-uk-ireland-recommended-itineraries4.html"><strong>4</strong></a> </div>
+<div class="Clr"></div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/royal-journey-uk.jpg" alt="royal-journey-uk" width="326" height="210" /></div>
+<div class="rightbox"><h2>A Royal Journey Through The UK</h2>
+<p><strong>Duration:</strong>  9 days<br />
+<strong>Highlights:</strong> Westminster Abbey, Houses of Parliament, Tower of London, St. Paul's Cathedral, Kensington Palace, Windsor Castle, Eton College, Edinburgh Castle, Holyrood Palace, Royal Yacht Britannia, Scone Palace, Stirling Castle, Linlithgow Palace </p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/scottish-estate.jpg" alt="royal-journey-uk" width="326" height="210" /></div>
+<div class="rightbox"><h2>The Classic World of Downton Abbey</h2>
+<p><strong>Duration:</strong>  8 days<br />
+<strong>Highlights:</strong> London sightseeing, traditional afternoon tea-making class, Victoria and Albert Museum, Beaulieu Motor Car Museum, Highclere
+Castle, Bampton, Blenheim Palace, Dyrham Park, Bath </p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="count-page"> <a href="europe-uk-ireland-recommended-itineraries3.html"> < Prev </a> |  <a href="europe-uk-ireland-recommended-itineraries.html">1</a> | <a href="europe-uk-ireland-recommended-itineraries2.html"> 2 </a> | <a href="europe-uk-ireland-recommended-itineraries3.html">3</a> | <a href="europe-uk-ireland-recommended-itineraries4.html"><strong>4</strong></a>  </div>
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--Royal Journey Through The UK-->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onClick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/Roya-Journey-Through-UK.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div><img src="../images/uk-ireland-logo.jpg" /></div>
+</div>
+<div id="tab1">
+
+<h1>A Royal Journey Through The UK</h1>
+<div class="popupbanner"><img src="../images/uk-ireland-inner.jpg" alt="Royal Journey Through The UK" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  9 days </p>
+<p>In celebration of the Queen's Diamond Jubilee, this itinerary is ideal for travellers interested in the English Monarchy and Britain's Royal heritage.</p>
+<p><strong>Highlights:</strong> Westminster Abbey, Houses of Parliament, Tower of London, St. Paul's Cathedral, Kensington Palace, Windsor Castle, Eton College, Edinburgh Castle, Holyrood Palace, Royal Yacht Britannia, Scone Palace, Stirling Castle, Linlithgow Palace</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive Heathrow</h5>
+<p>Upon arrival at the London Heathrow airport, you will be met by your Guardian Angel and transferred by private vehicle to your hotel in London, where you will be assisted with check-in.</p>
+<p><strong>Overnight:</strong> The Goring Hotel </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Royal Westminster</h5>
+<p>Today you will be met by a London Guide who will take you on a tour of the City of Westminster where you will see the sites associated with the Royal Family. Start in Parliament Square where you will visit Westminster Abbey, the National Church of England and scene for many state occasions including the Queen's Coronation in 1953 following her accession to the throne in February 1952, and the wedding of the Duke and Duchess of Cambridge in 2011.</p>
+<p>From here you will continue past the iconic Houses of Parliament and Downing Street into Whitehall. This street was once the site of Whitehall Palace built by King Henry VIII. Subject to availability, you will visit the only part of the palace to survive, the Banqueting House, built by Inigo Jones and decorated by Peter Paul Rubens.</p>
+<p>At the top of Whitehall is Trafalgar Square where you turn into the Mall, the royal route that leads to Buckingham Palace. On the north side of the Mall is Clarence House, the official London residence of the Prince of Wales.
+</p>
+<p>Buckingham Palace, the Queen's official residence in London, is one of the most iconic sites in the world. In August and September you will be able to take a tour of the opulent state apartments where many functions are held each year. At other times, you may visit the Queen's Gallery where important items from the Royal Collection are on display, and the Royal Mews where the ceremonial carriages are maintained.</p>
+<p>In August and September this year you will be able to visit a collection of the Queen's best diamonds on display at the palace.</p>
+<p><strong>Overnight:</strong>The Goring Hotel<br />
+<strong>Meal Plan:</strong> B </p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>The City of London</h5>
+<p>
+Your guide and chauffeur will be waiting to meet you for a further full day sightseeing tour. Today you will visit the Tower of London, the ancient royal fortress guarding the City of London. Here the Yeoman Warders - the 'Beefeaters' - guard the dazzling Crown Jewels that are still used for royal ceremonies to this day. Visit the White Tower, the central and oldest block of the complex; then see the reconstruction of the Medieval Palace that aims to show the style in which the medieval kings of England would have lived when they had apartments at the Tower.  </p>
+<p>
+You will also visit St. Paul's Cathedral, the baroque masterpiece that was rebuilt by Sir Christopher Wren after the Great Fire of London in 1666. It has also been used for state occasions, most notably the wedding of the Prince of Wales to Lady Diana Spencer in 1981.</p>
+<p>
+This afternoon, you may visit Kensington Palace, where you can take time to explore the state apartments of this ornate house that was a favorite royal home before Buckingham Palace was chosen to be the official residence. It was also here where Diana, as Princess of Wales lived her last years. After your tour of the palace, take a walk across Kensington Gardens to visit the fountain that was created in her memory.</p>
+<p>
+<strong>Overnight: </strong>The Goring Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>The Cotswolds - Royal Associations</h5>
+<p>Today you will be taken on a full day excursion with your driver-guide into the rural English countryside that lies to the west of London. Your destination is the Cotswold Hills, one of the most picturesque regions of England where little villages built out of the honey-coloured local limestone pepper the countryside. You will visit Cirencester, the centre of the Cotswolds and home to the Royal Agricultural College, and then pass Avening, the village where Gatcombe Park, the home of the Princess Royal, is located.</p>
+<p>
+You will stop in Tetbury, one of the most attractive of the towns in the region that is known for its myriad of antiques shops. It is very close to Highgrove House, the home of the Prince of Wales and where Princes William and Harry spent time during their childhood. Visit the Highgrove Shop, where a wide range of organic foods and other items promoted by the Prince of Wales are on sale.</p>
+<p>
+You will take a southern route back to London, on which you will pass by Marlborough College, the private school where Kate Middleton was educated; you will then travel by the quaint village of Bucklebury in Berkshire which is Kate's home town.</p>
+<p>
+<strong>Overnight:</strong> The Goring Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Windsor and Eton - flight to Edinburgh</h5>
+<p>This morning you will leave your London hotel with your driver-guide and head west out of London to Windsor, the town to the west of London that has long been associated with royalty. You will enjoy a tour of Windsor Castle, the largest inhabited castle in the world, and the Queen's favourite residence. Visit the State Apartments, including St. George's Hall that has been beautifully reconstructed following the fire of 1992. Here you will see Queen Mary's Doll's House, a stunning miniature house with beautiful furnishings and fittings. You will also see the beautiful St. George's Chapel, the home of the Order of the Garter and one of the royal sepulchres in England.</p>
+<p>
+This afternoon you will cross the River Thames to visit Eton College, the famous private school that was attended by Princes William and Harry. On your tour of the college you will see the School Yard and the grandiose chapel, built in perpendicular gothic style. You will also visit the Museum of Eton Life where you can see how the school has evolved since its foundation by King Henry VI in the 15th century.</p>
+<p>
+At the end of your visit to Eton you will transfer to nearby Heathrow Airport for your flight to Edinburgh. Upon arrival at Edinburgh airport, you will be met by your Guardian Angel and transferred by private vehicle to your hotel in Edinburgh, where you will be assisted with check-in.</p>
+<p>
+<strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Royal Edinburgh</h5>
+<p>This morning, you will meet an expert local guide for a full day sightseeing tour of Scotland's capital city, on which you will see the landmarks that are associated with the city's royal heritage. You will first head up to Edinburgh Castle, where you will see the 'Honours of Scotland', or the Scottish Crown Jewels, and obtain stunning views of the city. You will then continue down the Royal Mile to St. Giles Cathedral, home to the Order of the Thistle of which the Queen is the head. The lower end of the Royal Mile is called the Canongate; here you will see the royal church in Edinburgh, the venue of the wedding of Zara Phillips, the Queen's granddaughter. At the end of the Royal Mile, and opposite the magnificent Scottish Parliament building, is Holyrood Palace, the Queen's Official Residence in Scotland. (You will tour the staterooms of the palace if no member of the Royal Family is staying here at the time).</p>
+<p>
+This afternoon, you will drive down to the city docks at Leith, where you will board the former Royal Yacht Britannia, now permanently moored here. Built in Scotland, this ship was used by the Royal Family for many official voyages during her working life. See the elegant staterooms where the Queen hosted dinners. You will see the intimate private quarters where the Royal Family relaxed, and also the 'behind the scenes' areas where the crew lived and worked.</p>
+<p>
+<strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+<li>
+<h4>Day 7</h4>
+<h5>Scone and St. Andrews</h5>
+<p>Today you will have a full day excursion to the north of Edinburgh with your driver-guide. Cross the mighty Forth Bridge and head to Scone Palace, home of the Earls of Mansfield. In the grounds of the palace is Moot Hill, the ancient coronation place of the Scottish kings, who sat on the Stone of Destiny during the ceremony. This stone was taken to Westminster Abbey by the English King Edward I, but is now housed in Edinburgh Castle.</p>
+<p>
+You will then cross over the River Tay into the region known as Fife. On the far eastern side of Fife is the delightful town of St. Andrews that overlooks the North Sea. This town is known throughout the world as the home of golf, it was here that the first modern golf course developed. However St. Andrews was originally the ecclesiastical capital of Scotland, and you will visit the ruins of the cathedral, destroyed during the Reformation.</p>
+<p>
+The town is also the home of Scotland's oldest university, and it is here that Prince William and Kate Middleton met while they were both students at the university. Take time to explore the quadrangles that house the present university departments and facilities before returning to Edinburgh.</p>
+<p>
+<strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Stirling and Linlithgow</h5>
+<p>Your final day of touring with your driver-guide will take you to the west of Edinburgh along the valley of the River Forth. Your destination is Stirling, the strategic site at a bridging point on the river where both William 'Braveheart' Wallace and Robert the Bruce defeated the English armies during the Scottish Wars of Independence. Stirling Castle developed as one of the most important royal fortresses in Scotland; it boasts a fine Great Hall, and a Chapel Royal where Mary Queen of Scots was crowned when just an infant.</p>
+<p>
+On your return back to Edinburgh you will visit the ruins of Linlithgow Palace. With a delightful setting on the banks of a lake, and a convenient location between Edinburgh and Stirling, this was one of the favourite residences of the Stuart Kings of Scotland. It was here that Mary Queen of Scots was born in 1542; although it is now a ruin, the stout remains indicate how majestically the medieval monarchs of Scotland lived.</p>
+<p>
+<strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>Depart Edinburgh</h5>
+<p>You will be transfered to Edinburgh airport for your departure flight.</p>
+<p>
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="UK"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Royal Journey Through UK"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Roya-Journey-Through-UK.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="UK"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Royal Journey Through UK"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Upon arrival at Kilimanjaro International airport you will be met and transferred by private vehicle to your lodge set on a coffee plantation in Arusha. The remainder of your day is at leisure.<br /><br />Arusha Coffee Lodge is located on a coffee plantation on the outskirts of Arusha. Designed around the original plantation houses but completely renovated to achieve the highest standards of comfort, the d&eacute;cor is luxuriant and stylish with undertones of the bygone days of early exploration. Each of the 18 plantation houses has been lavishly furnished and features a split level living area and a private deck. The lodge also boasts a coffee shop, patisserie, conference facilities and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arrive Kilimanjaro - Arusha", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today meet your private driver/guide in the lobby of your lodge for a short briefing before transferring to Swala Camp located within Tarangire National Park. This afternoon enjoy a game drive in Tarangire National Park. Tarangire is noted for its elephant population and spectacular baobabs of every shape creating a beautiful setting for your safari.<br /><br />Swala Camp is located under a majestic umbrella of acacia trees at the southwestern part of the park. The camp offers a peaceful setting for the traveller after a long day of game viewing. The camp is comprised of nine double tents and a mess tent with a common room. All tents face east overlooking the marshland and watering hole which are regularly visited by lions, buffalo and elephants.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Arusha - Tarangire", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>You will be awoken this morning with a steaming hot cup of tea or coffee served on the decking of your tent looking out over the waterhole. Enjoy an early breakfast before venturing out into Tarangire National Park by 4WD vehicle on exciting morning and afternoon game drives.&nbsp;<br /><br />The appeal of Tarangire National Park lies not only in the herds of migrating animals but also in the beauty of the landscape with its grand baobabs and acacia trees. During the dry season the animals migrate from as far north as Lake Natron, resulting in the resident population of wildebeest, zebra, eland, elephant, hartebeest, buffalo and fringe-eared oryx swelling and competing for Tarangire's permanent water pools.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Tarangire", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following an early breakfast, head out on a game drive before leaving Tarangire for Ngorongoro Crater highlands. Transfer to your lodge located adjacent to the Ngorongoro Conservation area. This afternoon is at leisure to participate in one of the many activities on offer at your lodge including coffee tasting, guided walks on the estate, bike riding or horse back riding.&nbsp;<br /><br />The Manor at Ngorongoro is reminiscent of an elegant, up country farm home in the Cape Dutch style of architecture. With its 20 luxurious guest cottage suites, this is a luxury safari experience fusing East African safari hospitality with old world Afro-European architecture and d&eacute;cor.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Tarangire - Ngorongoro Crater", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before transferring to the Ngorongoro Crater. Descend to the crater floor by 4WD safari vehicle for a game drive unlike any other you will experience in Africa with the forest-covered crater walls rising around you. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -4.0295777;
+					var minLng = 35.566932;
+					var maxLat = -3.172344;
+					var maxLng = 36.67445;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Royal Journey Through The UK-->
+
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/The-Classic-World-of-Downton-Abbey.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div><img src="../images/uk-ireland-logo.jpg" /></div>
+</div>
+<div id="tab5">
+
+<h1>The Classic World of Downton Abbey</h1>
+<div class="popupbanner"><img src="../images/uk-ireland-inner12.jpg" alt="The Classic World of Downton Abbey" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  8 days </p>
+<p>A classic English 8 day tour with vast appeal for enthusiasts of the period drama Downton Abbey. Visit some of the filming locations for the hugely popular TV series, take a look at some of the first motor cars as shown in Downton Abbey along with the fashion and furniture of the early
+20th century.</p>
+<p><strong>Highlights:</strong> London sightseeing, traditional afternoon tea-making class, Victoria and Albert Museum, Beaulieu Motor Car Museum, Highclere Castle, Bampton, Blenheim Palace, Dyrham Park, Bath</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive London</h5>
+<p>Upon arrival at London Heathrow airport you will be welcomed to England by your local Guardian Angel as you exit customs into the arrivals hall, and transferred to your hotel where you will be assisted with check-in procedures.</p>
+<p>The Milestone Hotel is wonderfully located within the Royal Borough of Kensington and Chelsea. When the good weather is upon us, enjoy a peaceful stroll to Kensington Park and Gardens, a lovely green space that flanks Hyde Park, at your leisure</p>
+<p><strong>Overnight:</strong> The Milestone Hotel & Apartments </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>London</h5>
+<p>Meet your local guide and private vehicle for a half-day (4hr) orientation tour of London. Your guide will show you the Tower of London, St.Paul's Cathedral, Tower Bridge, Westminster Abbey, the Houses of Parliament, Buckingham Palace and Trafalgar Square. You will also gain a spectacular panorama of the city from the London Eye, the world's largest observation wheel.</p>
+<p>Optional Extra (charges apply):<br />
+This afternoon meet Mrs Guilliana for an afternoon tea making class in her own house. This includes a 'mini' house tour of this detached Victorian 1860's house. Receive step-by-step instructions and recipes for making scones, shortbread and specialty sandwiches and take home a written reminder of what you have learned. After the baking and preparations are complete, enjoy a full afternoon tea in the drawing room as the character of Downton Abbey often do. This poses an ideal opportunity to execute the art of English etiquette and conversation in a friendly and relaxed atmosphere.</p>
+<p><strong>Overnight:</strong> The Milestone Hotel & Apartments<br />
+<strong>Meal Plan:</strong> B </p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>London - Hampshire</h5>
+<p>Depart you hotel this morning and head to the Victoria and Albert Museum where you will meet your guide for a short tour. The Victoria and Albert Museum is world renowned for its fashion collection covers changing shapes and tastes in style, from beautiful 17th-century fashions to contemporary, cutting-edge designs and haute couture. Here you will be able to see the famous dinner jackets introduced in Downton Abbey and the introduction of the flapper dresses which caused so much controversy when they were first worn. The collection also includes accessories such as jewellery, gloves and handbags.</p>
+<p>You will also have the opportunity to visit the furniture exhibition where Dr Susan Weber Gallery tells the story of furniture design and production spanning the past 600 years, including chairs, tables, bureaux, stools, chests, cabinets and wardrobes. Designers such as Thomas Chippendale, Frank Lloyd Wright, Eileen Gray, Charles and Ray Eames, Tom Dixon and Ron Arad sit alongside lesser-known names all selected for their superior techniques.</p>
+<p><strong>Optional Extra</strong> (charges apply): <br />
+This evening you may like to cruise down the picturesque Basingstoke Canal, which runs through your Hotel's Estate</p>
+
+<strong>Overnight: </strong> Four Seasons Hotel Hampshire<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Portsmouths</h5>
+<p>This morning depart your hotel with your driver-guide and head further south, starting with a tour of the motor car museum; Beaulieu. The Motor Museum exhibits include some of the earliest examples of motoring to legendary World Record Breakers like Bluebird, 'TV Star' cars like Del Boy's Reliant Regal and rare oddities like the giant orange on wheels. You can also view cars like the ones Lady Edith learnt to drive in during series 3 of Downton Abbey.</p>
+<p>You may also wish to visit the 'secret army exhibition' where you will discover how a scenic and serene Hampshire village became the base for sabotage and subversion. The exhibition will introduce visitors to the training schools, instructors, secret agents and unsung heroes of the SOE. Further displays describe agents' training, recount secret missions and their outcomes and provide a learning zone for younger visitors.</p>
+<p>After exploring Beaulieu you may wish to then head to Portsmouth historical dockyards. Here you will see vessels and battle ship used over the centuries. Portsmouth is also the oldest dry dock in the world. Portsmouth Historical dockyards were used to defend the British Isles during wars and other attacks on England. Here you can walk on some of the vessels, walk through the museums or take a ride around the harbour on a public boat with your private guide. You will have the opportunity to enjoy a memorable experience on a luxurious 17-metre (56-foot) canal boat. The boat offers endless possibilities no matter the weather, with heating and air-conditioning ensuring a comfortable on-board temperature. You may like to enjoy a private dining experience or have a drink upon the canal boat before stopping at a local English pub for a meal (taxis to be arranged for return transfer).</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Hotel Hampshire<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Highclere Castle - Cotswolds</h5>
+<p>Today embark on an adventure with your driver-guide, venturing to where the renowned Downton Abbey was filmed*. The fictional Downton Abbey is set in Yorkshire however it was filmed in Hampshire at Highclere Castle, one of Britain's most spectacular Victorian Castles.</p>
+<p>
+The castle is owned by the Earl & Countess Carnarvon and has been in the Carnarvon family since 1679. Set among 1000 acres of beautiful parklands and gardens, the castle dates back to medieval times as it was built on the foundations of a medieval palace.
+Upon arrival at the Castle you will get the opportunity to wander the lavish rooms where most of the period drama was set, including the Drawing Room, Library, Main Hall and bedrooms. Images are instantly conjured up of Lord and Lady Crawley sipping on their aperitifs before going through to dinner, or where Lady Mary and Matthew Crawley shared their first kiss in the Main Hall. Whilst seeing the opulent "Upstairs" you will also get the chance to explore the starker "Downstairs", the servants' quarter, where Mrs Patmore and the other maids cooked many a fine feast. There is also the opportunity to explore the beautiful surrounding parklands with many different walkways meandering through the stunning gardens and woodlands.</p>
+<p>
+You can also visit the nearby, idyllic village of Highclere where other scenes of the drama was filmed, including the small church, where many of the services were set and the village square which held the village fete. After your tour you will venture to the beautiful Cotswolds to your hotel.</p>
+<p>*Tours of Highclere Castle are subject to availability</p>
+<p>
+<strong>Overnight:</strong> Ellenborough Park<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Bampton - Blenheim Palace</h5>
+<p>This morning continue into Oxfordshire to the village of Bampton. Bampton was used during the filming of Downton Abbey for their village scenes, and whilst exploring you have the chance to see some of these film locations. The main places you will see during your tour are the local village church, the hospital and the village pub. You may also have the chance to see the home of Matthew Crawley.</p>
+<p>
+Continue to Blenheim Palace; currently home to the 11th Duke and Duchess of Marlborough, the Palace was designed by the architect
+Vanbrugh and was the birthplace of wartime leader Sir Winston Churchill. A vast park, wonderfully landscaped by Capability Brown, surrounds the palace. Here you will have the opportunity to hear how 'Grace Ridley' who is the 1st Duchess's maid, and hear about life as a servant in a palace. After your tour you will be privately transferred back to your hotel in the heart of the Cotswolds.</p>
+<p>
+<strong>Overnight:</strong> Ellenborough Park<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+<li>
+<h4>Day 7</h4>
+<h5>Cotswolds - London</h5>
+<p>Today depart the Cotswolds and head first to Dyrham Park. Dyrham Park has a spectacular garden and rolling parkland, with sweeping views towards Bristol. The house was designed by Talman for William Blathwayt, Secretary at War during the reign of William III. The house was used for many other period dramas similar to Downton Abbey such as 'The Remains of the Day'.</p>
+<p>Time permitting you may also like to visit the Spa town of Bath. Bath is famous for being the locations that Jane Austen set two of her six published novels, Northanger Abbey and Persuasion and she made the city her home from 1801 to 1806. You may wish to visit the Jane Austen Museum during your visit or explore the Roman Baths that were discovered in an excellent state of preservation near to Bath Abbey church, and also see the magnificent Palladian architecture for which the city is renowned (seen at its best in the Circus and the Royal Crescent). After your tour you will be privately transferred to your London hotel.</p>
+<p>
+<strong>Overnight:</strong> The Milestone Hotel & Apartments<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Depart London</h5>
+<p>Today you will be transferred by private vehicle to the London Heathrow airport to board your flight
+</p>
+<p>
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="UK"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Classic World of Downton Abbey"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="The-Classic-World-of-Downton-Abbey.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="UK"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Classic World of Downton Abbey"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy the day doing as much or as little as you please. You may like to take an optional trip to explore the old Stone Town, a spice farm or Jozani Forest to see the Red colobus monkey which is endemic to Zanzibar (tours not included). Alternatively you may prefer to just relax at your resort or pamper yourself at the spa, enjoy yoga or meditation. There is also a water sports centre for snorkeling, windsurfing, sailing or canoeing and a licensed PADI dive centre.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Enjoy another full day at your idyllic beach resort.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Kilimanjaro International airport where you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Lake Manyara Serena Lodge in time for lunch. This afternoon enjoy a game drive in Lake Manyara National Park in search of the elusive tree-climbing lion.&nbsp;<br /><br />Lake Manyara Serena Lodge is dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley. The 66 rooms blend gracefully with the serene natural surroundings and the lodge is located only a few minutes from Lake Manyara National Park. For those who want some time out of their vehicles, the lodge supports a number of nature trails and also has a resident naturalist to enhance the experience. Guests may also choose to relax at an observation post or by the pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arusha - Lake Manyara", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>This morning is at leisure before transferring to Gibbs Farm, located in the Ngorongoro Crater highlands, for lunch. Continue to the Ngorongoro Crater, the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Sopa Lodge is situated on the eastern rim of the crater. The 92 rooms of the lodge are built in the traditional African rondavel style. There is a beautifully designed dining room, a bar, a well-stocked gift shop and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Lake Manyara - Ngorongoro Crater", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue the drive to your lodge, centrally located in the Serengeti National Park. Enjoy game viewing en route.<br /><br />Serengeti Serena Lodge is located high on a hill offering magnificent views of the Serengeti Plains. The lodge is pure Africa. Rustic and natural, circular like an African village, its 66 rooms make up a series of rondavels. The simple style is enhanced with sophisticated detail in the form of traditional handicraft, such as wood carvings, beadwork and pottery designs. The lodge offers its own unique game trails devised in conjunction with park consultants to allow enjoyment of the Serengeti's unequalled variety of game.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip, the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 square kilometers, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, when 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other game that follow close behind make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast, transfer to the airstrip for your flight to Zanzibar. Upon arrival you will be met and transferred by private vehicle to your beach resort.<br /><br />Breezes Beach Club is situated along a pristine, untouched beach, stretching as far as the eye can see. It is located on the eastern side of the island, near the village of Bwejuu approximately one hour from the airport. The hotel has a swimming pool, fitness and aerobics centre, water sports centre, floodlit tennis court, scuba diving, Makuti a-la carte restaurant, Breakers lunch restaurant, The Safari bar, Upepo Lounge and Mutiny Pool Bar.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Serengeti - Zanzibar", description, "6");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -6.165917;
+					var minLng = 34.6856509;
+					var maxLat = -2.416213;
+					var maxLng = 39.202641;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

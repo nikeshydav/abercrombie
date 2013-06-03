@@ -1,0 +1,838 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Itineraries Laos Tour, Laos Travel Itineraries, Holidays Itineraries Laos, A&K Laos Itineraries, Laos Travel Itineraries"/>
+<meta name="description" content="Find the best luxury travel itineraries of Laos, Jewel of the Mekong and southern Laos extension. This is customized to your individual interests and is required not only for luxury but also for culture." />
+<title>Laos Tour & Holidays Itineraries - A & K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--POP UP-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=12; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		    
+	        if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="block";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+	}
+}
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--POP UP-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/laos-banner2.jpg" alt="Laos" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="theorient.html">The Orient</a></li>
+<li><a href="laos.html">Laos</a></li>
+<li>Recommended Itineraries</li>
+</ul>
+</div>
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="theorient.html">The Orient</a></li>
+<li>Laos</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="theorient.html">The Orient</a></h5>
+        <ul>
+          <li><a href="cambodia.html"  title="Cambodia"> <span>+</span> Cambodia</a>
+          
+          </li>
+<li><a href="china.html" title="China"><span>+</span> China</a>     
+  </li>
+ <li><a href="myanmar.html" title="Myanmar"> <span>+</span> Myanmar</a></li>
+          <li><a href="thailand.html" title="Thailand"> <span>+ </span>Thailand</a></li>
+           <li><a href="japan.html" title="Japan"> <span>+</span> Japan</a></li>
+          <li><a href="laos.html" title="Laos"> <span>- </span>Laos</a>
+          <ul>
+              <li><a href="laos.html" title="Introduction to Laos"><span>-</span> Introduction to Laos</a></li>
+              <li><a href="laos-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="laos-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+             <!-- <li><a href="#" class="cursorauto" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+               <li><a href="#" class="cursorauto" title="A&amp;K office in Laos"><span>-</span> A&amp;K office in Laos</a></li>-->
+               <li><a href="laos-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>  <!--<li><a href="#" class="cursorauto" title="News"><span>-</span> News</a></li>
+               <li><a href="#" class="cursorauto" title="Special Offers"><span>-</span> Special Offers</a></li>-->
+               <li><a href="laos-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+              <!-- <li><a href="#" class="cursorauto" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>-->
+               <li><a href="../journeystyles/private-journeys.html" title="Private Journey"><span>-</span> Private Journey</a></li>
+             
+            
+            </ul>
+          </li>
+         <li><a href="bhutan.html" title="Bhutan"> <span>+ </span>Bhutan</a></li>
+          <li><a href="tibet.html"  title="Tibet"> <span>+</span> Tibet</a></li>
+           <li><a href="vietnam.html" title="Vietnam"> <span>+ </span>Vietnam</a></li>
+           <li><a href="indonesia.html"  title="Indonesia"> <span>+ </span> Indonesia</a>          
+          </li>
+     </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Laos Recommended Itineraries</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/laos-recommended1.jpg" alt="Jewel of the Mekong" /></div>
+<div class="rightbox"><h2>Jewel of the Mekong</h2>
+<p><strong>Duration:</strong> 5 days<br />
+<strong>Highlights:</strong> &bull; Sleepy charm of Old Asia<br />
+&bull; Vientiane's oldest monastery<br />
+&bull; Textile studios and colourful markets<br />
+&bull; World Heritage listed Luang Prabang<br />
+&bull; Cruise on Mekong River </p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/laos-recommended2.jpg" alt="Southern Laos Extension" /></div>
+<div class="rightbox"><h2>Southern Laos Extension</h2>
+<p><strong>Duration:</strong>  4 days<br />
+<strong>Highlights:</strong> &bull; World Heritage listed Wat Phou<br />
+&bull; The beautiful 4000 Islands<br />
+&bull; Rural Laos<br />
+&bull; Waterfalls<br />
+&bull; Famous Lao coffee </p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" >View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!-- Jewel of the Mekong Start Here -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Jewel-of-the-Mekong.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/Laos-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<h1>Jewel of the Mekong </h1>
+<div class="popupbanner"><img src="../images/laos-inner1.jpg" alt="Classic China" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  5 days</p>
+<p>Sleepy charm of Old Asia. Vientiane's oldest monastery. Textile studios and colourful markets. World Heritage listed Luang Prabang. Cruise on Mekong River.</p>
+<p>
+<strong>Highlights:</strong> &bull; Sleepy charm of Old Asia<br />
+&bull; Vientiane's oldest monastery<br />
+&bull; Textile studios and colourful markets<br />
+&bull; World Heritage listed Luang Prabang<br />
+&bull; Cruise on Mekong River</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive Vientiane</h5>
+<p>Arrive to your private A&K welcome and settle into your heritage hotel. Your introduction to the charming Laotian capital includes the serene Wat Sisaket, the only temple left intact after the Siamese (Thai) invasion in 1828. It is one of the most beautiful temples in the capital and its breezy teak covered hallways are filled with thousands of miniature Buddha statues. Continue on to the nearby WatPhraKeo. Used as a religious museum, WatPhraKeo displays a collection of both Lao and Khmer works of art. Also nearby, is the Presidential Palace. Although you are not allowed inside, it is a good glimpse in to the town's colonial past as this building formerly served as the French governor's palace. Stop at Wat Simuang, the most popular and venerated temple in Vientiane, as it is considered the guardian of the spirit of the city. Within its grounds you will find an Angkorian-era pillar and it is a popular belief that if you circle it three times and make a wish, your wish will come true.</p>
+<p>This afternoon continue to the Patuxay monument, Laos' version of the Arc de Triomphe, where you can climb the stairs to the roof for sweeping panoramic views of the city. Next, your tour takes you to That Luang, the holiest site in Laos. Constructed by King Setthethirat in the 16th century, the temple is resplendent as the sun is shines upon its towering golden spire.
+</p>
+<p>
+<strong>Overnight:</strong> Green Park Boutique Hotel (Deluxe)<br />
+<strong>Meal Plan:</strong> L</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Vientiane - Luang Prabang</h5>
+<p>The day's adventure starts with a morning flight north to the imperial capital, Luang Prabang, serenely situated at the junction of the Mekong and Nam Khan Rivers and surrounded by mountains. Explore the city with your guide on board a tuk tuk. Start your city tour at the former Royal Palace, now the National Museum, where you will explore the history of Laos. Continue on foot to Wat Mai, a temple renowned for its golden bas-relief, and WatSensoukarahm, which features a beautiful dazzling golden façade. Finish the tour at WatXieng Thong, the most revered temple in Luang Prabang. Located at the end of the peninsula, close to the Mekong, this temple was built in 1560 by King Setthathirat and is decorated with ornate carvings and mosaics.</p>
+<p>
+After that, climb the 328 stairs of Mount Phousi and watch the sun set over the city and surrounding hills. Visit the hill tribe evening market for some shopping. This colourful market takes place every evening around 5pm along the main streets of town and is a great place to look for mementos of your visit 
+</p>
+<p>
+<strong>Overnight:</strong> La Residence Phou Vao (Mountain View)<br />
+<strong>Meal Plan:</strong> (B,L)</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Luang Prabang</h5>
+<p>A boat cruise along the Mekong this morning to Pak Ou. Laos has several waterways that have traditionally been used as the local form of transportation and they continue to be used in that manner today in many parts of the country. Taking a local boat cruise is probably one of the most rewarding ways to discover life along the rivers. As you cruise along, observe the daily activities of fishermen, how they throw their nets in an elegant arm gestures, and rely on the water for their livelihood. For the villages settled along the Mekong, the river plays an important role in their daily life and usually represents the only means of transportation and commerce.</p>
+<p>
+Two hours upstream from Luang Prabang, disembark to visit the famous Pak Ou Caves. Locally called Tam Ting, the caves are filled with thousands of gold-lacquered Buddha statues. The statues range in size from a few centimetres tall to the height of a human and are crammed into the cave which is nestled in a limestone cliff. The caves are a destination for local pilgrimages.</p>
+<p>After visiting the caves, reboard the boat for a cruise back to Luang Prabang. En route, stop at Ban Xang Hay, a village which specialises in making traditional rice-wine.</p>
+<p>
+Lunch today is at Tamarind. Run by an Australian woman and her Lao husband, they have created a fresh menu of Lao dishes and are dedicated to promoting a greater understanding of the local cuisine.</p>
+<p>
+This afternoon, enjoy a visit to Kuang Si Waterfall, south west of Luang Prabang (32km). Along the way, stops will be made to visit some villages of the various ethnic minorities of the area. Upon reaching the falls, relax and enjoy the scenery, and if the weather is good, you can enjoy a swim in the cool, clear waters.</p>
+<p>
+For the adventurous, it is possible to walk to the top of the falls via a steep track where stunning views await you at the top.</p>
+<p>After leisurely time at the waterfalls, transfer back to your hotel in Luang Prabang.</p>
+
+<p>A traditional Baci welcome this evening is a recommended option</p>
+<p><strong>Overnight:</strong> La Residence Phou Vao (Mountain View)<br />
+<strong>Meal Plan:</strong> B,L</p>
+
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Design your day Luang Prabang</h5>
+<p>Your choice of activity:</p>
+<p>Option 1:Trek and Hill tribe Discovery<br />
+This morning you will be picked up from your hotel and driven to the Elephant Village, a scenic elephant camp on the outskirts of Luang Prabang. A longtail boat is waiting to transfer you across the Nam Khan River to the starting point for the hike. Your local guide will lead you along the pathways and through small Kamu villages where you will be able to interact with the locals. Continuing along a narrow rocky track make your way to a Hmong village for lunch in a local house. After lunch, take a short walk around the village to learn more about the traditional lifestyle and culture of the Hmong people. Trek back to the starting point by following a stream where a long tail boat awaits to transfer you back to the Elephant Village and you transfer by road back to your hotel in Luang Prabang.</p>
+<p>Option 2: Stencil Class &Traditional Art & Ethnology Centre<br />
+Your guide will meet you at the hotel and transfer you to Yensabai Books and Art where you will meet with your stencil teacher, Anousith, who will tell you about the history of stencil art in Laos and explain what the different motifs and patterns represent. Then you will have the opportunity to create your own work of art by carving a stencil with close guidance by Anousith. Afterwards, stop at the Traditional Art & Ethnology Centre for more details on ethnic groups living in Laos </p>
+<p>
+<strong>Overnight:</strong> La Residence Phou Vao (Mountain View)<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Depart Luang Prabang </h5>
+<p>Transfer airport for onward flight</p>
+<p>
+<strong>Overnight:</strong> Shangri-La<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id=1;?>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Laos"/>
+<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Jewel of the Mekong"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Jewel-of-the-Mekong.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Laos"/>
+<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Jewel of the Mekong"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>After a leisurely breakfast your driver/guide will transfer you to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, transfer to Norfolk Hotel where dayrooms have been reserved for you. The rest of the day is free for you to relax and freshen up or go sightseeing and shopping.<br /><br />This evening transfer to Jomo Kenyatta International Airport for your international departure flight.&nbsp; <strong><br /><br />Option to extend to Tanzania.</strong></p><p>On arrival in Nairobi take a connecting schedule flight to Kilimanjaro Airport in Tanzania. Today enjoy lunch at Kia Lodge before returning to the airport for your flight to Manyara. On arrival in Manyara you will be transferred to Ngorongoro Crater Lodge.<br /><br />Situated on the edge of the ancient crater rim above the cool, swirling mists, the Ngorongoro Crater Lodge is a return to the noble elegance of the traveling colonials. Inspired in design by the Masai manyatta, three separate camps of 6 to 12 suites each remember a bygone era. The stilted structures are adorned with graceful antiques, grand chandeliers and treasures collected from travels through Africa. Each suite is discreetly tended by a personal butler, who will bring you tea in bed, stoke your fireplace and even draw your bath, scattering the water with rose petals, ready for your return from your safari.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Masai Mara - Depart Nairobi OR Extend to Tanzania", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrols the flat crater floor. A world of wide grassland plains, acacia copses, pools and streams, elephant, buffalo, lion, leopard and even rhino can be seen here. The central soda lake attracts birds and sometimes flocks of flamingo.<br /><br />Full day game viewing in the Crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>This morning after breakfast drive to Olduvai Gorge to see the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />After your visit drive to the Serengeti, one of the most magnificent parks in Africa. On arrival drive to Kusini which is perfectly sited in a cluster of kopjes (beautiful outcrops of granite rock). Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.&nbsp;<br /><br />Serengeti is the home of the great Wildebeest migration and the short grass plains around Kusini provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.4052990, 34.727783), "Ngorongoro - Serengeti", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport. After clearing customs and immigration formalities, you will be transferred to the Norfolk Hotel. Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904.<br /><br />Just south of the equator, Nairobi's main avenues blaze with colour from tropical bushes and vines. Nairobi was established by 1907 and quickly grew as a white farming community. It also attracted world attention as the centre of big-game safaris for the rich and famous. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets.There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49397, 36.8261718), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, transfer to Nairobi's Wilson Airport for your private charter flight to Borana.<br /><br />Fly northwards through the rift and up the western wall of the great escarpment on to the Laikipia plateau. The Laikipia region is a broad swathe of game rich grasslands and hills that reach Mount Kenya to one side and the wild deserts of the north to the other.<br /><br />On arrival at Borana, you will be met at the airstrip and transferred to the lodge. Borana is a large private conservancy which has been the home of the Dyer family since the 1920s. The ranch was originally started as a cattle concern; however, in the last twenty years they have turned much of their energy to conservation and have a thriving predator population, elephant, plains game and smaller beasts. Borana Lodge is set on the edge of a valley with panoramic views across the plains and overlooks a watering hole for wildlife in the area. Your days will be busy with day and night game drives, walks, picnics and bush dinners, horse riding for both experienced riders and novices, mountain biking, or visits to the working ranch or the various community and conservation projects Borana is involved in. The ranch is an accredited member of the Eco Tourism Society of Kenya, is certified organic and plays an extremely active role in regional conservation.<br /></p><p>There is time to freshen up and relax before lunch.Your hosts will be at hand to discuss your preferences and plan your activities for your stay. Spend the afternoon game viewing, relaxing or exploring the area.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.3606063, 36.7819505), "Nairobi - Laikipia", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>After a leisurely breakfast take a scheduled flight to the Masai Mara, one of Africa's greatest parks.<br /><br />On landing at the airstrip, your driver/guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />We have selected Olonana for you accordingly for its small size and privacy. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net windows and river view verandahs. Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Laikipia - Masai Mara", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.727783;
+					var maxLat = 0.3606063;
+					var maxLng = 36.8261718;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+				//gmapInitialize();
+			//});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!-- Jewel of the Mekong Content End Here -->
+<!-- Southern Laos Extension Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Southern-Laos-Extension.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/Laos-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<h1>Southern Laos Extension</h1>
+<div class="popupbanner"><img src="../images/laos-inner.jpg" alt="Roof of The World" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  5 days</p>
+<p>World Heritage listed Wat Phou. The beautiful 4000 Islands. Rural Laos. Waterfalls. Famous Lao coffee.</p>
+<p>
+<strong>Highlights:</strong> &bull; World Heritage listed Wat Phou<br />
+&bull; The beautiful 4000 Islands<br />
+&bull; Rural Laos<br />
+&bull; Waterfalls<br />
+&bull; Famous Lao coffee</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive Pakse</h5>
+<p>Arrive Pakse where you are met and transferred to the hotel for check-in. Enjoy a short tour of Pakse town. On the confluence of the Mekong and the Sedone River, Pakse is the most important town in Southern Laos. Interesting but small it has some colonial and Chinese buildings and a huge local market selling fresh food. Its importance lies in its proximity to most of the main attractions in the region including the prestigious pre-Angkorian temples of Wat Phou, the Bolaven Plateau and its coffee plantations and waterfalls as well as the quiet and relaxing 4000 islands.</p>
+<p>Your tour is followed by a drive to the Boloven Plateau and the important series of impressive waterfalls. While you are in the area visit a tea and/or coffee plantation. Coffee in Laos is cultivated almost exclusively in the Boloven Plateau by around 20,000 families who live in 250 villages. The plateau is also home to hill tribes such as Lavens. Return to Pakse in the late afternoon.
+</p>
+<p><strong>Overnight:</strong> Pakse Hotel (Panorama Room)
+</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Pakse - Wat Phou - Khong Island</h5>
+<p>After breakfast, transfer by road to Wat Phou. Recognised by UNESCO as a World Heritage Site, Wat Phou is a spectacular pre-Angkorian temple that sits amidst the rice fields and waterways of southern Laos. The temple was constructed in three levels by the rulers of the Khmer empire before the construction of Angkor Wat. The temple served as the most important economic and political centre of the region and still is one of the Lao people's most revered temples.</p>
+<p>
+Return to Champasak, driving through streets lined with French colonial buildings, and continue on to Ban Kiet Ngong. Stop en route at Ban Nong Bune, a wood carving village for lunch with the villagers. The small Lao village of Ban Kiet Ngong is the starting point for a 90 minute elephant ride through the forest and up to Mount Asa. This tour is part of a community-based tourism project developed to help the local villagers and provide conservation awareness. Along the way, you will have stunning views of the Xe Pian National Park which is settled between Champasak and Attapeu provinces. Stretching along the Mekong with many wetlands and unspoiled forest areas, this park offers a huge biodiversity with 29 recorded ecosystems with bird species such as egrets, sarus crane, hornbill plus mammals like wild elephant and gibbons.
+</p>
+<p>After the elephant ride continue on to Khong Island, the biggest island in southern Laos and the start of the 4000 Islands Region. Called Siphandon in the Lao language, this area is where the Mekong stretches over 14km wide and is characterised by thousands of islands, cascades and rapids </p>
+<p>
+<strong>Overnight:</strong> Senesothxeune Hotel (Superior Mekong View)<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Khong Island - Pakse</h5>
+<p>This morning visit Don Det and Don Khone, two very laidback islands near the border of Strung Treng Province in Cambodia. These islands have no cars and electricity is only provided in the evening. The southern part of Don Det and Don Khone island are very traditional with the locals reliant on coconut, kapok and bamboo farming.</p>
+<p>
+The islands played an important role during French Colonial rule as they linked
+Laos to Cambodia and Southern Vietnam. To pass the waterfalls, a railway and bridge were built, the perfect place to take your time and soak in the view.
+Continue to the impressive Lippi Falls which are wedged between Don Khone Island and the Cambodian border. Their original name, Tad Somphamit, means "trap spirit" and they are most revered by the locals who believe they act as a trap for bad spirits.</p>
+<p>After a stroll through the palm-fringed villages near Lippi, continue to the southernmost part of Laos and the imposing Khone Papheng waterfalls, close to the Cambodian border. In the afternoon return to Pakse. </p>
+<p><strong>Overnight:</strong> Pakse Hotel (Panorama Room)<br />
+<strong>Meal Plan:</strong> B</p>
+
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Depart Pakse </h5>
+<p>After breakfast transfer either to the Thai border or to the airport for your onward flight</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id=2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Laos"/>
+<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Southern Laos Extension"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Southern-Laos-Extension.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Laos"/>
+<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Southern Laos Extension"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport. After clearing customs and immigration formalities, you will be transferred to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904.<br /><br />Just south of the equator, Nairobi's main avenues blaze with colour from tropical bushes and vines. Nairobi became established by 1907 and quickly grew as a white farming community. It also attracted world attention as the centre of big-game safaris for the rich and famous. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Tortilis Camp in time for lunch. Named after the trees from which it takes shade, Tortilis Camp lies on the boundary of Amboseli Game Reserve. The snow-domed Mount Kilimanjaro sets the stage for excellent game viewing and magnificent sunrises. The accommodation tents are spacious and thoughtfully spaced at some distance from each other offering total privacy and breathtaking views across the plains to Africa's highest mountain. Perched on a look out hill, the main house offers relaxation, attentive service and delightful home-cooked Italian food.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Amboseli lies south-east of Nairobi, at the foot of Africa's highest mountain, Mount Kilimanjaro. The snow-capped peak rising above a saucer of clouds dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. The National Park has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /><br />Today explore Amboseli National Park. In addition to game drives, guests at Tortilis can enjoy bush walks with a Maasai guide - an experience which brings the sights, sounds and smells of the bush to life. Simply relax by the swimming pool or watch a dazzling array of bird life from your verandah.&nbsp;<br /><br /><strong>Option to stay at Chyulu Hills:</strong><br /><br />Ol Donyo Waus is nestled in the Chyulu Hills, between Amboseli and Tsavo National Parks. The Chyulu Hills are the youngest range of volcanic hills in Africa. Ol Donyo Wuas Lodge is a 22 bed eco lodge in the heart of the Mbirikani Maasai conservation area on the slopes of the Hills. The lodge was recently rebuilt and original ethos and character remains with a focus on comfort and amenities. All but two of the cottages have their own plunge pool and all have star beds, stunning views of Mount Kilimanjaro, efficient solar powered lighting, and solar heated showers in the ensuite bathrooms which feature a d&eacute;cor that is both modern and luxurious as well as rustic and comfortable. Ol Donyo Wuas was one of the first eco lodges in Kenya and has a longstanding working relationship with the local Maasai community, with great emphasis on education, development and conservation<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>After breakfast, transfer to the airstrip for your flight to Nairobi. Take a connecting flight and fly north to Lewa Downs at the foothills of Mount Kenya.<br /><br />On arrival take a game viewing drive en-route to your luxury mobile camp. Our mobile camps offer the ultimate and most authentic form of a safari. We position your camp as close to the wildlife action as possible, taking you into prime game viewing areas and the secret hideaways.<br /></p><p>Each tent is set with campaign furniture and hand woven rugs in warm organic colours to blend in with the environment. Your personal tent attendant will make sure that the Egyptian cotton sheets on your large, comfortable bed are crisp and that a hot water bottle is slipped beneath your duvet on a chilly night. While you are at supper, he will have turned down your bed and drawn around your mosquito net. On your verandah are two chairs and a butler table for you to enjoy a drink whilst catching up with your book or watching animals.&nbsp;<br /><br />The tents are solar powered so that you have two bright bedside reading lamps and an overhead light in your bedroom and bathroom. Your tent attendant will be at hand to make sure that your naval bucket shower is mixed to the perfect temperature for whatever time of day or night you choose to bathe. You have a fully flushing, ceramic toilet and even running water in the basin. He will take care of your laundry which will be delivered, weather permitting, to your tent each morning, pressed beautifully by an old fashioned charcoal iron. He will also take any shoes that require cleaning in the evening returning them to you with your morning tea or coffee.&nbsp;<br /><br />Three main meals are served each day. We will even prepare delicious picnics for you to take with you in to the bush if you so choose. Our expert cooks take full advantage of vegetables and salads that are in season and are up before anyone else in camp to bake the finest breads and pastries for your breakfast.&nbsp;<br /><br />After freshening up, lunch is served al fresco. This afternoon is free to enjoy a siesta before embarking on a late afternoon game viewing drive in the Conservancy.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.2229225, 37.4467952), "Amboseli - Nairobi - Lewa Downs", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend two full days in Lewa Downs to explore the conservancy and its resident wildlife. Your days will be as flexible as you wish with possibilities of a picnic lunch, traditional African sundowners or dinner in the middle of the African bush.<br /><br />Lose yourself in the magical atmosphere of Lewa, which was one of Kenya's original ranches and has been the home of the Craig family since 1924. The Conservancy is now one of East Africa's major conservation successes and is host to approximately 10 percent of Kenya's endangered black rhino. Game viewing is exceptional with a variety of animals and you will also find several animal species not seen in the southern hemisphere, including reticulated giraffe, Grevy zebra and the graceful Gerenuk antelope with its long neck.<br /><br />A wide variety of activities are available - ride on horseback alongside herds of giraffe, zebra and antelope, take a night game drive, walk with armed rangers, or take a camel ride with a local Samburu guide.&nbsp;<br /><br />In between game viewing there is the opportunity to visit the on-going conservation projects and also the craft centre run by the local community.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.2229225, 37.4467952), "Lewa Downs", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.2229225, 37.4467952), "Lewa Downs", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>After a leisurely breakfast transfer to the airstrip for a scheduled flight to the Masai Mara, one of Africa's greatest parks.<br /><br />On landing you will meet your Olonana guide and enjoy a game drive en-route to Olonana. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains' game.<br /><br />We have selected Olonana for you accordingly for its small size and privacy. Your 'room' is canvas but a permanent structure, very spacious and has a flush lavatory, solar lights and a good hot shower. Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Lewa Downs - Masai Mara", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>You have the next two days to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert Olonana driver/guide. A wide range of activities are offered at Olonana,your day can be as active or as leisurely as you wish. You can visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest and topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge to snort and grumble while crocodiles sunbathe on the riverbanks. Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands and nearby breakfast is already being prepared and, of course, glasses of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure: An early start this morning with a transfer to take you to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>On arrival in Entebbe you will be met and transferred to the Emin Pasha Hotel in Kampala.<br /><br />Emin Pasha Hotel is a unique boutique hotel in the bustling capital city of Uganda. The hotel evokes another era and offers a harmonious balance between old and new - from the architecture and the furnishings, to those modern amenities that today's business and leisure traveller requires. The hotel is set in tropical gardens with big mature trees, flowering shrubs and scented vines abound, yet is within walking distance to the Commercial Business District.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.314269, 32.572871), "Nairobi - Entebbe - Kampala", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 12 - ';
+						description = description + "<p>After breakfast transfer to the airport for a private charter flight to Bwindi. On arrival you will be met and transferred to Gorilla Forest Camp.<br /><br />Gorilla Forest Camp is located in Bwindi Impenetrable National Park, which is a UNESCO World Heritage Site and the natural habitat for just over half the world's last surviving population of mountain gorillas. Gorilla Forest Camp is the perfect base for your tracking experience.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "Kampala - Bwindi", description, "12");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>The gorilla tracking experience is arguably one of the most exhilarating wildlife experiences. Seeing these gentle giants in their natural habitat is a unique opportunity afforded only to a select few, as just eight visitors are allowed to view each habituated group each day.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "Bwindi", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -2.666667;
+					var minLng = 29.7194377;
+					var maxLat = 0.314269;
+					var maxLng = 37.4467952;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+		<div id="map_canvas1" style="width:625px; height:450px;overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!-- Southern Laos Extension End Here -->
+
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

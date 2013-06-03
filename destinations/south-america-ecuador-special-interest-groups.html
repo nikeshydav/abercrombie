@@ -1,0 +1,951 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Customized Trips Ecuador, Escorted Journeys Ecuador, Guided Tour to Ecuador, Private Journeys, Group Tours, Group Travel, Special Interest Group to Ecuador"/>
+<meta name="description" content="A&K specializes in group travel in Ecuador. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Ecuador and its peoples." />
+<title>Group Tours & Special Luxury Travel Ecuador - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--popup-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=16; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+			}
+	}
+}
+</script>
+<!--popup-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/ecuador-banner4.jpg" alt="Ecuador" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="south-america.html">South America</a></li>
+<li><a href="south-america-ecuador.html">Ecuador</a></li>
+<li>Special Interest Groups</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+<h5><a href="south-america.html">South america</a></h5>
+        <ul>
+<li><a href="south-america-peru.html" title="Peru"><span>+</span> Peru</a></li>
+<li><a href="south-america-ecuador.html" title="Ecuador"><span>-</span> Ecuador</a>
+<ul>
+              <li><a href="south-america-ecuador.html" title="Introduction to Ecuador"><span>-</span> Introduction to Ecuador</a></li>
+              <li><a href="south-america-ecuador-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="south-america-ecuador-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="south-america-ecuador-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li><li><a href="../about/ecuador-office.html" title="A&amp;K office in Ecuador"><span>-</span> A&amp;K office in Ecuador</a></li>
+              <li><a href="south-america-ecuador-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>    <li><a href="south-america-news.html?id=3" title="News"><span>-</span> News</a></li>
+               <li><a href="south-america-ecuador-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+               <li><a href="south-america-ecuador-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+                  <li><a href="../journeystyles/extreme-adventures.html" title="Extreme adventures"><span>-</span> Extreme Adventures</a></li>
+               <li><a href="../journeystyles/ecuador-smallship-cruising.html" title="small Ship Cruising"><span>-</span> Small Ship Cruising</a></li>
+            
+ <li><a href="../journeystyles/famity-holday.html" title="Family Holidays"><span>-</span> Family Holidays</a></li>
+              <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>
+              <li><a href="../journeystyles/honeymoon.html" title="Honeymoon"><span>-</span> Honeymoon</a></li>
+               <li><a href="south-america-ecuador-special-interest-groups.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+<li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li> 
+  </ul>
+</li>
+<li><a href="south-america-argentina.html" title="Argentina"><span>+</span> Argentina</a></li>
+<li><a href="south-america-chile.html" title="Chile"><span>+</span> Chile</a></li>
+<li><a href="south-america-brazil.html" title="Brazil"><span>+</span> Brazil</a></li>
+          </ul>
+
+  <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select>
+         <h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Special Interest Groups</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/Ecuador-Wildlife.jpg" alt="Ecuador's Wildlife" width="326" height="210" /></div>
+<div class="rightbox"><h2>Ecuador's Wildlife</h2>
+<p><strong>Duration:</strong> 13 days<br />
+<strong>Highlights:</strong> Quito, Amazon Rainforest, Zuleta, Otavalo, Cotopaxi National Park. </p>
+<p>Quito, Amazon Rainforest, Zuleta, Otavalo, Cotopaxi National Park. </p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/Ecuador-Group.jpg" alt="Ecuador Group" width="326" height="210" /></div>
+<div class="rightbox"><h2>Ecuador Group</h2>
+<p><strong>Duration:</strong> 13 days<br />
+<strong>Highlights:</strong> Quito, Galapagos Islands, Hualilagua </p>
+<p>Ideal for groups of all sizes wanting to explore Ecuador, including a cruise in the Galapagos Islands.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--Ecuador Wildlife-->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onClick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/Ecuador-Wildlife.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div><img src="../images/ecuador-logo.jpg" /></div>
+</div>
+<div id="tab1">
+
+<h1>ECUADOR'S WILDLIFE</h1>
+<div class="popupbanner"><img src="../images/ecuador-inner3.jpg" alt="Best of Ecuador" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 13 days</p>
+<p>An action-packed itinerary in Ecuador with fantastic opportunities for wildlife spotting in rainforest, cloudforest and volcanic national park.</p>
+<p><strong>Highlights:</strong> Quito, Amazon Rainforest, Zuleta, Otavalo, Cotopaxi National Park.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE QUITO</h5>
+<p>Arrive in Quito this evening to begin your adventure. Transfer to your hotel.</p>
+<p>
+Rich in history, Quito is the second highest capital city in the world, founded in 1534 by Spanish Conquistador Sebastian de Benalcazar. For nearly three centuries, the arts and intellectual societies flourished under Spanish colonial rule until 1809, when Quito established the first self-governing junta in the colonies. Liberator Simon Bolivar led the country as part of the Republic of Greater Colombia until 1830, when the Republic of Ecuador announced its independence with the adoption of the Constitution signed in Riobamba. Due to the city's preservation of its blended past, UNESCO declared Quito a World Heritage Site in 1978.</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>QUITO</h5>
+<p>You will begin with a city tour of Colonial Quito, which will help you understand some of the reasons why Ecuador's capital has earned its honour as a world cultural site. Marvel at the city's ornate churches such as the Church of San Francisco, dedicated to Quito's patron saint and rich in art treasures, fine woodcarvings and altars of gold leaf. You will also visit La Compañía Church, a colonial jewel. This baroque masterpiece has an elaborate façade and a glittering interior created with seven tons of gold.</p>
+<p>
+Lunch will be offered at a local restaurant and in the afternoon we invite the group to attend a lecture by Randy Borman.  </p>
+<p>
+Randy Borman has spent most of his life in the rainforest. He was born in Shell Ecuador in 1955. His parents were American missionaries who moved to Ecuador in the early 1950s to live with the Cofán. They learned the Cofán language and culture so that they could translate the Bible into the Cofán language. Raised as a Cofán, Randy spent most of youth in the village of Dureno where most of the Cofán lived. Randy went to high school in Quito and attended a university in the United States for two years before returning to his home in the Ecuadorian forest. Randy returned to find that roads had been bulldozed into the jungle, and where once only 500 Cofán lived there were 30,000 colonists. Randy travelled down river, deeper into the Amazonia, to establish a new hunting camp and home. Other Cofán families followed and a new village, Zabalo, was founded. In part because of his leadership, strategic, and hunting skills, and in part because of his Western education, Randy is a Cofán leader, a proud nation of over 700 people trying to live with one foot in the old world and the other foot in the modern, Western world.</p>
+<p>
+You will meet Randy Borman and hear about his personal experiences after a visit to the Mindalae Ethnographic Museum.  This museum holds a complete exhibition of handicrafts and home utensils elaborated in what is now Ecuador. The museum holds more than 700 pieces from different Indigenous peoples of Ecuador - ceramic, natural fibers, musical instruments, fishing and hunting weapons.</p>
+<p>
+This evening you will be transferred to the Casa de la Musica, where a very special performance of the SINAMUNE Foundation Orchestra will be arranged exclusively. This organisation is run by an Ecuadorian musician who created a national system of music for disabled children. He has arranged a true orchestra that will delight you with the masterpieces of classical composers as well as traditional Latin American music. Sit back and listen.</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>QUITO - SACHA LODGE</h5>
+<p>You will be transferred to the airport as your journey to the Amazon basin begins with a 45 minute flight over the Andes mountains from Quito, Ecuador's capital, to the port town of Puerto Francisco de Orellana.</p>
+<p>
+Here a shaded motorised canoe awaits for a 50 mile, 2½ hour trip down the Napo River, a tributary of the Amazon itself. Upon arrival to our 5,000-acre private reserve, you will take your first walk along a raised boardwalk through dense flooded palm forest where several species of monkeys are often sighted. The path leads to Pilchicocha Lake, where dugout canoes await to cross you over to the Lodge.</p>
+<p>
+After a welcome cocktail and orientation briefing, you will be shown to your comfortable rooms, which provide 24 hour electricity, private bathrooms with hot water showers, ceiling fans and porches with hammocks overlooking the jungle. Later, there is usually time to take a walk, swim, bird watch or visit a small lookout with a scenic view of the lake and cabins before sunset.</p>
+<p>
+<strong>Overnight:</strong> Sacha Lodge<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>SACHA LODGE</h5>
+<p>Guests will be divided into small groups for activities, which will be led by both a native guide with expert knowledge of the rainforest's medicinal and other useful plants, and a bilingual naturalist guide educated in the biology and ecology of the area. Each group can decide on its own wake-up and breakfast time, as well as the difficulty and duration of their morning outings.</p>
+<p>
+During the first morning you will follow trails through pristine terra firme forest, where 150 foot kapok trees tower above and roots form huge buttresses to give them support. For the adventurous, it is also possible to follow a path along fallen tree trunks and a steel cable zip-line through rich swampland.</p>
+<p>
+After lunch you may visit our butterfly farm, where you will be shown how these beautiful insects are bred and raised, and later be free to wander through "the flying room", where hundreds of colourful butterflies including spectacular blue morphs flutter from flower to flower. Later, paddle along an ancient oxbow lake hidden at the end of one of our forest trails, where luxuriant lianas, bromeliads and palm trees thrive.</p>
+<p>
+After dark, you may search for caiman (of the alligator family) on our lake, or take a walk to experience the jungle and its creatures after dark.</p>
+<p>
+<strong>Overnight:</strong> Sacha Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>SACHA LODGE</h5>
+<p>A must for all guests at Sacha Lodge is a visit to the 135 foot observation tower. Situated on a hill and constructed around a giant kapok tree for stability, this tower allows you to climb into and above the rainforest canopy for a magnificent view of the surrounding area. Be it shortly after sunrise or before sunset, from the tower's ample platform it is possible to observe toucans, parrots, and dozens of other colorful bird species in the treetops. With some luck, noisy howler monkeys, foraging squirrel monkeys or the gentle three-toed sloth may also be seen, especially with the aid of a powerful telescope provided by your guides.</p>
+<p>
+The tower may be reached on foot via a half hour walk through terra firme forest, which is an easy way to get there at or before sunrise. However, no one can miss out on at least a one-way trip to or from the tower along Orchid Creek, Pilchicocha Lake's natural black water runoff to the Napo River. In a dugout canoe guests may follow this winding stream through untamed palm forest for about an hour, a trip that many choose to repeat.</p>
+<p>
+In the afternoon you make take some time to fish for the infamous razor-toothed piranha, and later follow strategically raised boardwalks through seasonally flooded forest where walking on the ground would be nearly impossible during most of the year. Keep an eye out for the anacondas!</p>
+<p>
+<strong>Overnight:</strong> Sacha Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>QUITO - OTAVALO</h5>
+<p> After breakfast you will walk back out to the Napo River for the trip to Puerto Francisco de Orellana, and the flight to Quito.</p>
+<p>Upon arrival in Quito you will be transferred to Otavalo for a two night stay at Hacienda Zuleta.</p>
+<p>
+<strong>Overnight:</strong> Hacienda Zuleta<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+
+<li>
+<h4>Day 7</h4>
+<h5>ZULETA</h5>
+<p>Spend the day exploring Zuleta Hacienda. Built in 1691 it is the centerpiece of a 4,000 acre working farm that was once owned by two Ecuadorian presidents, and currently belongs to their descendants. Besides the farming area, the family hacienda has a remarkably successful condor-recuperation and raising project, archaeological remains from 800 AD, a dairy and cheese factory, an organic garden, a tree nursery, a trout farm and an embroidery workshop owned by the indigenous community that live and work in the area.</p>
+<p>
+<strong>Overnight:</strong> Hacienda Zuleta<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>ZULETA</h5>
+<p>Spend the day with your guide exploring the area around Zuleta. Visit the nearby Caranqui pyramids, watch artisans at an embroidery workshop. Optional activities include cooking classes, mountain biking and horseback riding (available at an additional cost).</p>
+<p>
+<strong>Overnight:</strong> Hacienda Zuleta<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>OTAVALO - QUITO</h5>
+<p>Today you will stop at the famous indigenous market in Otavalo.   Your guide will encourage you to try the traditional bargaining for your purchases. You will also visit the fruit and vegetable market.</p>
+<p>
+Lunch will be offered at Hacienda Cusín, and you will be welcomed by a group of young Indian dancers who will perform traditional Andean dances for you.</p>
+<p>Return to Quito in the afternoon.</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>COTOPAXI NATIONAL PARK</h5>
+<p>Today you will experience an active visit to the Cotopaxi National Park. This is a high altitude nature and wildlife refuge established around the highest active volcano in the world. It offers one of Ecuador's best mountain biking experiences as it crosses through a unique paramo ecosystem under stunning volcano scenery. A support vehicle, a naturalist guide and high quality mountain biking equipment are included in this incredible volcano experience.</p>
+<p>
+Depart from Quito driving south through the inter-Andean valleys until you reach the Cotopaxi National Park entrance. Explore the park looking out for wildlife while driving by many volcanoes in the area such as Ilinizas, Sincholagua, Rumiñahui and Pasochoa. You will reach Limpiopungo Glacier Lake where you will jump on a mountain bike to ride through spectacular highland plateaus while observing highland (paramo) vegetation and fauna, such as llamas, wild horses, ducks, gulls and even the magnificent Condor. The ride is mostly downhill to compensate for the high altitude until you reach the Pucara Inca Ruins. Included: Private transportation, professional biking guide, quality mountain bikes (Shimano Deore 27 speed, front suspension, disc brakes), gloves, helmets, lunch and snacks.</p>
+<p>Return to Quito arriving in the afternoon.</p>
+
+<p> - Travel time: 2 hours each way<br />
+-   Riding time: 3 hours<br />
+-   Season: All year<br />
+-  Altitude: 3900 m to 3600 m<br />
+-  Average temperature: Day 10-18°C/Night 5-9°C</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 11</h4>
+<h5>QUITO</h5>
+<p>The cloudforest near Quito offer great options for moderate whitewater rafting in Class III to III+ rivers. These rivers are born high in the Andean volcanoes and thunder their way westwards to the tropical rainforest of Ecuador's coast. The Toachi flows within a spectacular gorge with high lush-green walls. As you exit the gorge the Toachi merges into the Blanco, where water flow increases to produce continuously exhilarating white-capped rapids. The combinations of these two rivers provide the best tropical water rafting west of the Andes year-round.</p>
+<p>Depart from Quito towards the coast at 7 am. You will descend on a dramatic mountain road through the Andes all the way down to 500 metre above sea level. After a safety briefing youour whitewater adventure begins. Depending on water levels you will  run up to 30 kilometres of the best whitewater west of the Andes. On your way you will learn about the tropical ecosystem and be on the lookout for wildlife such as egrets, cormorants, kingfishers, and may also be able to see the southern river otter. Snacks and a healthy river beach lunch will be served by your guides and support team. Return to Quito, arriving in the late afternoon.</p>
+<p>
+Included: Private transportation, professional rafting equipment, personal safety gear, wholesome lunch and snacks, and American Canoe Association (ACA) certified raft guides.</p>
+<p>
+-   Travel time: 2 to 3 hours each way from Quito<br />
+-   Rafting time: 3-4 hours based on water levels<br />
+-    Season: All year<br />
+-   Altitude: 600m to 300m<br />
+-    Average temperaure: Day 18-34°C</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito<br />
+<strong>Meal Plan:</strong> B,L
+</p>
+</li>
+<li>
+<h4>Day 12</h4>
+<h5>QUITO</h5>
+<p>After breakfast you  will have a 'behind the scenes' visit to the studio and art collection of Mr. Osvaldo Viteri - one of the most outstanding and well known artists in contemporary Ecuador. During his illustrious career he has taken part in more than 50 solo exhibitions and over 120 shared exhibitions, both within Ecuador and internationally including London, Bonn, Venice, and numerous Latin American cities. In addition, Osvaldo is the owner of one of the largest private collections of colonial religious art, and during the visit, not only will you tour these historic works from his collection, but also view his own working studio. Mrs. Viteri speaks perfect English, so she is the hostess of this visit and she personally guides visitors around their home.</p>
+<p>
+This afternoon you will have some time at leisure for last-minute shopping.</p>
+<p>
+In the evening we offer you a farewell dinner at one of the best local restaurants in town, which can be enhanced with the performance of an opera singer or one of the best guitar players in Ecuador - Mr. Luis Rameix.</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 13</h4>
+<h5>DEPART QUITO</h5>
+<p>This morning you are transferred to the airport for your flight home.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Ecuador"/>
+<input type="hidden" name="region_email" id="region_email" value="South America"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Ecuador Wildlife"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Ecuador-Wildlife.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Ecuador"/>
+<input type="hidden" name="region_quote" id="region_quote" value="South America"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ecuador Wildlife"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Upon arrival at Kilimanjaro International airport you will be met and transferred by private vehicle to your lodge set on a coffee plantation in Arusha. The remainder of your day is at leisure.<br /><br />Arusha Coffee Lodge is located on a coffee plantation on the outskirts of Arusha. Designed around the original plantation houses but completely renovated to achieve the highest standards of comfort, the d&eacute;cor is luxuriant and stylish with undertones of the bygone days of early exploration. Each of the 18 plantation houses has been lavishly furnished and features a split level living area and a private deck. The lodge also boasts a coffee shop, patisserie, conference facilities and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arrive Kilimanjaro - Arusha", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today meet your private driver/guide in the lobby of your lodge for a short briefing before transferring to Swala Camp located within Tarangire National Park. This afternoon enjoy a game drive in Tarangire National Park. Tarangire is noted for its elephant population and spectacular baobabs of every shape creating a beautiful setting for your safari.<br /><br />Swala Camp is located under a majestic umbrella of acacia trees at the southwestern part of the park. The camp offers a peaceful setting for the traveller after a long day of game viewing. The camp is comprised of nine double tents and a mess tent with a common room. All tents face east overlooking the marshland and watering hole which are regularly visited by lions, buffalo and elephants.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Arusha - Tarangire", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>You will be awoken this morning with a steaming hot cup of tea or coffee served on the decking of your tent looking out over the waterhole. Enjoy an early breakfast before venturing out into Tarangire National Park by 4WD vehicle on exciting morning and afternoon game drives.&nbsp;<br /><br />The appeal of Tarangire National Park lies not only in the herds of migrating animals but also in the beauty of the landscape with its grand baobabs and acacia trees. During the dry season the animals migrate from as far north as Lake Natron, resulting in the resident population of wildebeest, zebra, eland, elephant, hartebeest, buffalo and fringe-eared oryx swelling and competing for Tarangire's permanent water pools.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Tarangire", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following an early breakfast, head out on a game drive before leaving Tarangire for Ngorongoro Crater highlands. Transfer to your lodge located adjacent to the Ngorongoro Conservation area. This afternoon is at leisure to participate in one of the many activities on offer at your lodge including coffee tasting, guided walks on the estate, bike riding or horse back riding.&nbsp;<br /><br />The Manor at Ngorongoro is reminiscent of an elegant, up country farm home in the Cape Dutch style of architecture. With its 20 luxurious guest cottage suites, this is a luxury safari experience fusing East African safari hospitality with old world Afro-European architecture and d&eacute;cor.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Tarangire - Ngorongoro Crater", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before transferring to the Ngorongoro Crater. Descend to the crater floor by 4WD safari vehicle for a game drive unlike any other you will experience in Africa with the forest-covered crater walls rising around you. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -4.0295777;
+					var minLng = 35.566932;
+					var maxLat = -3.172344;
+					var maxLng = 36.67445;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Ecuador Wildlife-->
+<!--Ecuador Group-->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/Ecuador-Group.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div><img src="../images/ecuador-logo.jpg" /></div>
+</div>
+<div id="tab5">
+<h1>ECUADOR GROUP</h1>
+<div class="popupbanner"><img src="../images/ecuador-inner4.jpg" alt="Ecuadorian Jungle" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  13 days</p>
+<p>Ideal for groups of all sizes wanting to explore Ecuador, including a cruise in the Galapagos Islands.</p>
+<p><strong>Highlights:</strong> Quito, Galapagos Islands, Hualilagua.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE QUITO</h5>
+<p>Upon arrival in Ecuador's capital you are met and transferred to your hotel for the night.  Quito, nestled at the foot of 17,800 foot Rucu Pichincha, is known for its eternally spring-like climate and for the beauties of its well-preserved casco colonial, or colonial Old Town.</p>
+<p>
+Rich in history, Quito is the second highest capital city in the world, founded in 1534 by Spanish Conquistador Sebastian de Benalcazar.  For nearly three centuries, the arts and intellectual societies flourished under Spanish colonial rule until 1809, when Quito established the first self-governing junta in the colonies. Liberator Simon Bolivar led the country as part of the Republic of Greater Colombia until 1830, when the Republic of Ecuador announced its independence with the adoption of the Constitution signed in Riobamba. Due to the city's preservation of its blended past, UNESCO declared Quito one of the "world's cultural heritage sites" in 1978.</p>
+<p><strong>Overnight:</strong> Swissotel Quito</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>QUITO</h5>
+<p>This morning, take a city tour of colonial Quito, which demonstrates some of the reasons why Ecuador's capital has earned its honour as a world cultural site. Marvel at the city's ornate churches such as the Cathedral, La Compañía de Jesús and San Francisco, and experience a long history of local culture in Quito's "Old Town". Rich in art treasures, fine woodcarvings and altars of gold leaf, the churches are the historical icons of Quito. A very special venue will welcome you for lunch - the San Agustin Monastery, which has a very significant meaning to the history of the city as it was here where the Act declaring Independence of Spain was signed in 1822.</p>
+<p>This afternoon, drive north to the Middle of the World, where you straddle both hemispheres at once. Visit the Ethnographic Museum which displays the costumes and lifestyle of the various indigenous groups of Ecuador. Alternatively, you can visit the Inti Ñan Museum. Inti Nan is a Quechua word meaning the "Route of the Sun." Located on the equator, this interactive museum includes various astronomical experiments and equatorial demonstrations.</p>
+<p>Tonight, dine on typical Ecuadorian cuisine at a private dinner at your hotel.</p>
+<p><strong>Overnight:</strong> Swissotel Quito</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>QUITO - OTAVALO - QUITO</h5>
+<p>After breakfast at your hotel, you drive north through dramatic mountain landscapes dotted with tiny villages, white churches and blue lakes to Otavalo. This small town, with a population of about 18,000, is justly renowned for its friendly people and their market, a gathering that has occurred here since pre-Incan times. Otavalenos are the most prosperous Indian group in the country - surely because their weavings, carpets, colourful ponchos, Indian jewellery and needlework are so attractive! Bargaining is the order of the day here; those who refuse to "play the game" will lose both money and respect to stallholders who greatly enjoy the clash of wits. Enjoy lunch at hacienda La Compania with its beautiful rose plantation. The owners will provide a private tour through the plantation and afterwards, you are entertained with a performance of folk ballet before returning to Quito.</p>
+<p>
+Leave Quito this evening for the 45 minute drive to the historic Hacienda Chillo Jijon, Ever since its construction around 1730 as a manor house, the hacienda has always been a residence to the same family. Built by the Marquees of Miraflores and enlarged a century later by the Marquees of San Jose, the hacienda has seen much of the country's history within its walls. For over 120 years, it was home to one of the largest and oldest textile mills in the Andes. The hacienda has been embellished and restored to create a unique country house, superb in style and rich in tradition and insight to Ecuadorian aristocracy. Enjoy a cocktail and dinner in this fascinating setting, as a duo of guitarists from the region perform during dinner.</p>
+<p><strong>Overnight:</strong> Swissotel Quito</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>QUITO - GALAPAGOS ISLANDS</h5>
+<p>This morning after breakfast you will be transferred to the airport for your flight to Guayaquil and Galapagos. In Baltra Airport, guests will be received at the airport by guides and then taken to the pier to join the boat of your choice.</p>
+<p>
+The Galapagos, located approximately 600 miles off Ecuador's Pacific coast, is a fascinating archipelago consisting of 13 large islands, 6 smaller ones and over 40 islets. Formed approximately four to five million years ago by underwater volcanoes that erupted and rose above the ocean's surface, the islands were made world-famous when Charles Darwin visited in 1835 and later wrote his famed "The Origin of the Species."  Due to the strong conservationist efforts and strict regulations in the archipelago, the endemic wildlife and fauna Darwin noted in his studies remain unique to the area even today.</p>
+ <p>
+Weather, water and wildlife conditions will affect your actual day to day itinerary but visits are planned for main islands and their landmarks. You land by panga on island beaches to wander among the Galapagos' unique species - where you are objects of curiosity rather than fear.</p>
+<p>This afternoon: Las Bachas Beach - Santa Cruz Island</p>
+<p>Las Bachas Beach is located in the north of Santa Cruz. Its soft, white sand is derived from decomposed coral, making it a favourite nesting site for sea turtles. Behind the beach there is a small brackish lagoon, where it is possible to observe flamingos and other coastal birds, such as black-necked stilts and whimbrels.</p>
+<p><strong>Overnight:</strong> M/Y Eclipse</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>GALAPAGOS ISLANDS</h5>
+<p>Morning: Puerto Egas - Santiago Island<br />
+Puerto Egas (James Bay) is located on the northwest side of Santiago. The landing is on a black beach with eroded rock formations in the background. The trail crosses the dry interior, where the remains of a salt mining enterprise can still be seen, and then continues along the coast. Tidal pools are home to a variety of invertebrate organisms, including sea urchins, octopus and starfish. The trail leads to the Fur Seals Grottos, one of the only places in the islands where they can be seen. After the walk, you will have time to swim or snorkel off the beach, where you will see sea lions, fish and maybe some turtles and reef sharks.</p>
+<p>Afternoon: Bartolomé Island<br />
+Bartolomé is a small island that has two visitor sites. At the first site, you can swim and snorkel around Pinnacle Rock, where penguins are usually seen. Back on board for a quick change of clothes and then it is a short dinghy ride to a dry landing for a climb to the highest point on the island. On the way up, you will encounter different volcanic formations, including spatter and tuff cones, lava flow and lava tubes. From the summit you will have a wonderful view of Sullivan Bay.</p>
+<p><strong>Overnight:</strong> M/Y Eclipse</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>GALAPAGOS ISLANDS</h5>
+<p>Morning: Cerro Dragón - Santa Cruz Island<br />
+The name Cerro Dragon (Dragon Hill) stems from the fact that it was one of the few sites on Santa Cruz Island where a healthy population of land iguanas were found in 1975. After landing at a pier, a hike takes to you to a salt water lagoon behind the beach, frequented by common stilts, pintail ducks and occasionally flamingos. A short walk up the hill leads you to a land iguana nesting site, with breathtaking views of the bay. You will have the chance to go swimming after the walk.</p>
+<p>
+Afternoon: Rábida Island<br />
+Rábida is a small island with red volcanic rocks surrounding a beautiful red sand beach, where there is a colony of sea lions and a pelican nesting site. The trail leads to a salt water lagoon where shore birds can be seen. Rábida is considered to be one of the best snorkeling sites in the Galapagos Islands, and you will also have the opportunity to go kayaking.</p>
+<p><strong>Overnight:</strong> M/Y Eclipse</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>GALAPAGOS ISLANDS</h5>
+<p>Morning: Tagus Cove - Isabela Island<br />
+Tagus Cove was historically used as an anchoring place for pirates, buccaneers and whalers. Here you will see the names of hundreds of ships painted on the high ridges (a practice now forbidden). On the hike, the trail goes through an area of vegetation and the volcanic landscape of Darwin Volcano. At the top of the trail, you will enjoy an incredible view of the whole cove and Darwin Lake. On the panga ride, you will see a large number of blue-footed boobies perched on the ledges of the cliffs, as well as marine iguanas, penguins, brown pelicans, brown noddy terns and swallow-tailed gulls. While exploring the channel between Fernandina and Isabela Islands, dolphins and whales are sometimes encountered.</p>
+<p>
+Afternoon: Elizabeth Bay - Isabela Island<br />
+Elizabeth Bay is one of the furthest points of the Galapagos that you will visit on your cruise. A panga ride around two islets called the Marielas offers a wide variety of bird life, such as flightless cormorants, herons, and blue-footed boobies. Then you will enter a sheltered cove - a wonderful mangrove ecosystem that is a refuge for sea turtles and rays.
+</p>
+<p>
+<strong>Overnight:</strong> M/Y Eclipse</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>GALAPAGOS ISLANDS</h5>
+<p>Morning: Punta Espinoza - Fernandina Island<br />
+Fernandina last erupted in 1995. La Cumbre Volcano dominates the landscape, with lava fields stretching towards the ocean from its base. Punta Espinoza is a narrow piece of land where some of the most unique Galapagos species can be seen, including the flightless cormorant, Galapagos snakes, marine iguanas, penguins and the Galapagos hawk.</p>
+<p>
+Afternoon: Punta Vicente Roca - Isabela Island<br />
+Punta Vicente Roca is a wonderful snorkeling site, where you can usually see turtles as well as all kinds of fish. After the snorkeling you will go on a panga ride, which will give you the opportunity to study some of the Galapagos' spectacular geological rock formations. Nazca boobies, pelicans, swallow-tailed gulls, marine iguanas, flightless cormorants and penguins are often seen in the area.</p>
+<p><strong>Overnight: </strong>M/Y Eclipse</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>GALAPAGOS ISLANDS</h5>
+<p>Morning: Charles Darwin Research Station - Santa Cruz Island<br />
+On your visit to the Charles Darwin Research Station you will gain insight into the huge efforts being made by scientists, guides, rangers and park managers to preserve this UNESCO World Heritage Site. You will see the famous Galapagos tortoises that are the islands' namesake. After the visit you will have some free time to explore the town of Puerto Ayora.</p>
+<p>
+Afternoon: Santa Cruz Highlands - Santa Cruz Island<br />
+From Puerto Ayora you will travel by bus to the lush, green highlands of Santa Cruz, where you will visit a tortoise reserve to search for giant tortoises in their natural surroundings. You will have the opportunity to walk through lava tunnels so take a flashlight if you have one.</p>
+<p>
+<strong>Overnight:</strong> M/Y Eclipse</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>GALAPAGOS ISLANDS</h5>
+<p>Morning: Gardner Bay - Española Island<br />
+Gardner Bay offers the chance to enjoy a wonderful white sandy beach. It is home to one of the most important colonies of sea lions, and it is also a nesting site for sea turtles. After the beach time you will have a chance to deep water snorkel from the panga at Gardner Islet.</p>
+<p>
+Afternoon: Punta Suarez - Española Island<br />
+Punta Suarez is one of the most popular and attractive sites in the Galapagos. Due to its isolation from other islands, it has a high proportion of endemic fauna. A few steps inland from the landing site, groups of Española marine iguanas bask in the sun. Further inland, Nazca and blue-footed boobies nest almost on the trail, Galapagos doves peck around unaware of visitors and finches go about their business. The trail continues towards a blowhole, which is a fissure in the lava where water spurts high into the air like a geyser. The cracks in the cliffs are home to swallow-tailed gulls and red-billed tropicbirds. Further up the cliff in an area of low-lying trees you will find waved albatrosses nesting. The 10,000 to 12,000 pairs of albatrosses on Española represent the entire population of this species on the planet. They perform one of the most spectacular courtship rituals of the animal world.</p>
+<p><strong>Overnight:</strong> M/Y Eclipse</p>
+</li>
+<li>
+<h4>Day 11</h4>
+<h5>GALAPAGOS ISLANDS - QUITO</h5>
+<p>Morning: Black Turtle Cove - Santa Cruz Island<br />
+Black Turtle Cove is one of the most beautiful marine sites in Galapagos. It is a complex maze of tranquil saltwater inlets, surrounded by three different species of mangrove. Its waters are a resting site for sea turtles, rays and sharks. This site is only accessible by panga.</p>
+<p>
+Departure from Baltra Airport to Quito, via Guayaquil.</p>
+<p>
+Arrival in Quito and transfer to the hotel.</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito</p>
+</li>
+<li>
+<h4>Day 12</h4>
+<h5>QUITO - HUALILAGUA</h5>
+<p>This morning travel south to Hacienda Hualilagua de Jijon, dating back to 1718. The hacienda was built on the mountainside and overlooks the Valley of Machachi. It is still owned and run by the descendants of the founding family. During its early years it produced cereals and precious woods for furniture and religious sculptures. Its charming manor house is surrounded by gardens with many native species of trees, orchids and bromeliads.  Learn about the traditions, stroll through the gardens, watch the rodeo and most important, enjoy the hospitality of the owners. The Chagras, or men on horses, at full gallop show their ability to round up the cattle and their skill with the lasso. The hacienda's manor house is noted for its extensive collection of paintings, furniture and sculptures representative of the "Quito School of Art" of the 16th and 17th centuries. Lunch is served in the charming dining room, featuring the richness of the Ecuadorian biodiversity with organic vegetables and grains.</p>
+<p>
+This evening, enjoy dinner at Theatrum Restaurant and Wine Bar which was built in the late 1800s as the Teatro Nacional Sucre, an expression of Renaissance Classicism. Its unique location and exterior architectural design, combined with an impeccable contemporary decoration, have turned it into one of the best restaurants in the historical centre of Quito.</p>
+<p>
+<strong>Overnight:</strong> Swissotel Quito</p>
+</li>
+<li>
+<h4>Day 13</h4>
+<h5>DEPART QUITO</h5>
+<p>Your international flight from Quito leaves early in the morning and you will be transferred to the airport on time to comply with boarding procedures.</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Ecuador"/>
+<input type="hidden" name="region_email" id="region_email" value="South America"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Ecuador Group"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Ecuador-Group.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Ecuador"/>
+<input type="hidden" name="region_quote" id="region_quote" value="South America"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ecuador Group"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy the day doing as much or as little as you please. You may like to take an optional trip to explore the old Stone Town, a spice farm or Jozani Forest to see the Red colobus monkey which is endemic to Zanzibar (tours not included). Alternatively you may prefer to just relax at your resort or pamper yourself at the spa, enjoy yoga or meditation. There is also a water sports centre for snorkeling, windsurfing, sailing or canoeing and a licensed PADI dive centre.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Enjoy another full day at your idyllic beach resort.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Kilimanjaro International airport where you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Lake Manyara Serena Lodge in time for lunch. This afternoon enjoy a game drive in Lake Manyara National Park in search of the elusive tree-climbing lion.&nbsp;<br /><br />Lake Manyara Serena Lodge is dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley. The 66 rooms blend gracefully with the serene natural surroundings and the lodge is located only a few minutes from Lake Manyara National Park. For those who want some time out of their vehicles, the lodge supports a number of nature trails and also has a resident naturalist to enhance the experience. Guests may also choose to relax at an observation post or by the pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arusha - Lake Manyara", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>This morning is at leisure before transferring to Gibbs Farm, located in the Ngorongoro Crater highlands, for lunch. Continue to the Ngorongoro Crater, the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Sopa Lodge is situated on the eastern rim of the crater. The 92 rooms of the lodge are built in the traditional African rondavel style. There is a beautifully designed dining room, a bar, a well-stocked gift shop and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Lake Manyara - Ngorongoro Crater", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue the drive to your lodge, centrally located in the Serengeti National Park. Enjoy game viewing en route.<br /><br />Serengeti Serena Lodge is located high on a hill offering magnificent views of the Serengeti Plains. The lodge is pure Africa. Rustic and natural, circular like an African village, its 66 rooms make up a series of rondavels. The simple style is enhanced with sophisticated detail in the form of traditional handicraft, such as wood carvings, beadwork and pottery designs. The lodge offers its own unique game trails devised in conjunction with park consultants to allow enjoyment of the Serengeti's unequalled variety of game.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip, the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 square kilometers, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, when 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other game that follow close behind make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast, transfer to the airstrip for your flight to Zanzibar. Upon arrival you will be met and transferred by private vehicle to your beach resort.<br /><br />Breezes Beach Club is situated along a pristine, untouched beach, stretching as far as the eye can see. It is located on the eastern side of the island, near the village of Bwejuu approximately one hour from the airport. The hotel has a swimming pool, fitness and aerobics centre, water sports centre, floodlit tennis court, scuba diving, Makuti a-la carte restaurant, Breakers lunch restaurant, The Safari bar, Upepo Lounge and Mutiny Pool Bar.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Serengeti - Zanzibar", description, "6");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -6.165917;
+					var minLng = 34.6856509;
+					var maxLat = -2.416213;
+					var maxLng = 39.202641;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Ecuador Group-->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

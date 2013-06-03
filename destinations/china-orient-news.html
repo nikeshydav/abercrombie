@@ -1,0 +1,364 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=4; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById("img"+i).style.display="";
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById("img"+i).style.display="none";
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquery-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="img1"><img src="../images/china-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img2" style="display:none;"><img src="../images/cambodia-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img3" style="display:none;"><img src="../images/myanmar-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img4" style="display:none;"><img src="../images/thailand-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="theorient.html">The Orient</a></li>
+<li>News</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>News</h4>
+<ul>
+<li><a href="africa-news.html" title="Africa">Africa</a></li>
+<li><a href="middle-east-north-africa-news.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="europe-news.html" title="Europe">Europe</a></li>
+<li><a href="australasia-news.html" title="Australasia">Australasia</a></li>
+<li><a href="china-orient-news.html" title="The Orient">The Orient</a></li>
+<li><a href="south-america-news.html" title="South America">South America</a></li>
+<li><a href="../news.html?id=7" title="North America">North America</a></li>
+<li><a href="../news.html?id=8" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="../news.html?id=9" title="Antarctica">Antarctica</a></li>
+</ul>
+<h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/famity-holday.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="#">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>The Orient News</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="China"><span>China</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Cambodia"><span>Cambodia</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Myanmar"><span>Myanmar</span></a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');" title="Thailand"><span>Thailand</span></a></li>
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top"></div>
+<div class="tabtxtHolder-mid">
+<div id="tab1">
+<div style="float:right;"><a href="china.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< China Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Visa free for transit to third country via Beijing International Airport</strong></h3>
+<p>Starting from January 1st 2013, overseas travellers from 45 countries will be able to enjoy a visa-free stay up to 72 hours while transiting through Beijing International Airport.  In other words, if our clients transit from Beijing International Airport to a third country, a China visa will no longer be needed.</p>
+<p>
+<p>
+The following countries will benefit from this change:<br />
+European Schengen visa agreement: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden, Switzerland.<br />
+Other European countries: Russia, the United Kingdom, Ireland, Cyprus, Bulgaria, Romania, Ukraine.<br />
+America: United States, Canada, Brazil, Mexico, Argentina, Chile.<br />
+Oceania: Australia, New Zealand.<br />
+Asian countries: South Korea, Japan, Singapore, Brunei, the United Arab Emirates, Qatar.</p>
+<h3><strong style="text-decoration:underline;">An Aerial Tour of the Great Wall</strong></h3>
+<p>The Great Wall has been built up in myth and legend, but despite the many inaccuracies written, it remains one of the great man-made wonders of the world.  It rides some of the highest peaks of the Yan Mountains.  Originally built to guard strategic passes to the plains on which Beijing is located, the magnificent vistas and solitary setting here evoke the grandeur and dazzling achievement of 5,000 years of Chinese civilization.</p>
+<p>There is more than one way to appreciate the beauty of the Great Wall: Besides riding a cable car up and a toboggan sled down at the Mutianyu section; now you can get a bird's eye view of the landscape and architecture while enjoying the comfort in a Eurocopter AS350B3 helicopter at the Badaling section.</p>
+<p><a href="../contact/contact.html">Contact us</a> for a Beijing tour encompassing a 15-minute helicopter tour that brings you some of the most stunning views of the Great Wall.</p>
+<h3><strong style="text-decoration:underline;">Crowne Plaza Huangshan Yuchengu</strong></h3>
+<p>Strategically located aside the Xin'an River and next to Riverside Wetland Park, Crowne Plaza Huangshan Yucheng is close to the famous attractions like Mountain Huangshan, which is renowned for its rich geothermal energy resource where the mountain is made up of many granite and rocks emerging out of a sea of clouds.  Being the first international 5-star hotel in the area, Crowne Plaza Huangshan Yucheng is housed with 485 deluxe rooms and 31 suites.  Its signature Yun Hai Chinese Restaurant offers you one of the finest Chinese cuisines in Huangshan; or you can enjoy a western meal at Riverside Café and finish the day with a relaxing evening cocktail at Lobby Lounge.  To rejuvenate yourself after a day-long trip to the World Heritage Sites, enjoy a massage by their professional masseur at the Spa.</p>
+
+<h3><strong style="text-decoration:underline;">Tibet Reopens to Foreign Traveller</strong></h3>
+<p>Tibet reopens to foreign travellers after a temporary closure from February 20 to March 30, 2012.  The closure was due to China's plan to close Tibet during the sensitive period covering the Tibetan new year festival.</p>
+<p>Coined as "Third Pole" and "Roof for the World" for its altitude, Tibet has a deep religious root that can be visualized through the Jokhang Monastery, Potala Place and Sanggye Dhungu cliff Buddha status.  Travellers also have a chance to meet with nuns at chanting ceremony or attend a Lhasa monk scripture recital.</p>
+<p>Interested to travel to this ancient and mystery part of the world after it reopens to foreign travellers?  Email us for a creative Tibet itinerary.</p>
+<h3><strong style="text-decoration:underline;">MICE Destination - Macau</strong></h3>
+<p>Macau is one of the hottest MICE destinations in China where we offer you seamless arrangements ranging from international meetings to university alumni conferences.  With the appropriate top-of-the-range audio and visual facilities and computer systems, we can cater for seminars to fit any specific purpose.</p>
+<p>Macau is a vibrant one-time Portuguese colony that boasts a great variety of hotels such as the luxury Venetian Hotel with its famous Grand Canal, and the more relaxing Western Resort.  One of the great places that MICE attendees will find to visit during meetings is the Ruins of St. Paul's Church - a beautiful old church and college constructed in the 17th century, or The House of Dancing Water show - a beautifully conveyed, epic love story depicted with dazzling costumes, special effects and record breaking acts.  Of course, a trip to Macau can only be completed with a visit to its world class casinos - try the Wynn or Sands.  With its colonial history, Macau is famous for its unique Macau-Portuguese food that you can find nowhere else.</p>
+<h3><strong style="text-decoration:underline;">Guilin Li River Boat Cruise</strong></h3>
+<p>With rugged mountains, crystalline rivers, verdant forests and mysterious caves, Guillin earns the accolade of "best scenic spot for landscape" in China.  The best way to appreciate the landscape is to cruise along the Li River which sails southwards to the village of Yangshuo.  Enroute, you can admire the dramatic limestone formations and learn about the legends that are associated with pinnacles.</p>
+<p>The Ge Shi Ni is the newest boat on the river - setting sail in June 2011. The upper-deck consists of a coffee house and private cabins and the lower-deck consists of buffet restaurant and a 60-seat hall. The Ge Shi Ni is the most luxurious cruise ship on the Li River, and can be chartered for private groups.</p>
+<h3><strong style="text-decoration:underline;">Celebrate New Year 2012 in Japan</strong></h3>
+<p>Plan your trip with us to celebrate New Year 2012 in the Orient. We are proud to present new ideas for  New Year Celebrations in Japan, with our latest  tailor-made itinerary  that encompasses cosmopolitan Tokyo, the resort of Hakone and historic Kyoto.</p>
+<p>The trip spans 11 days, allowing you to experience the best of New Year (shogatsu or oshogatsu) Japanese style.  In Japan it is traditional to visit a shrine or temple at this time of year, and the most popular, such as Tokyo's Meiji Shrine, attract several million people during the New Year's first few days. Visits to these shrines are most impressive at the actual turn of the year, when large temple bells are rung at midnight.</p>
+<p>On this trip, guests will get the chance to delve into the various kinds of special dishes served during shogatsu. They include osechi ryori (colorful dishes packed in layers of lacquer boxes), otoso (sweetened rice wine) and ozoni (a soup made with mochi). Take in a shopping spree or two, in particular on January the 2nd, when most department stores will open to sell fortune bags called "Fuku-bukuro" as well as valuable articles at much lower prices than usual.  These big sales during the New Year period are called Hatsuuri.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+
+
+</div>
+
+<div id="tab2" style="display:none">
+<div style="float:right;"><a href="cambodia.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Cambodia Hompage</a></div>
+<h3><strong style="text-decoration:underline;">Cebu Pacific to fly Manila-Siem Reap</strong></h3>
+<p>CEBU Pacific will launch thrice-weekly direct flights from Manila to Siem Reap starting April 19, representing a breakthrough on the monopoly on transit services to the destination.</p>
+<p>Travellers from Manila usually access Siem Reap via Bangkok or Hanoi/Ho Chi Minh City, with connecting flights offered by Bangkok Airways and Vietnam Airlines, respectively.
+Cebu Pacific's new flight will reduce the flight costs by about half for those as flying through Vietnam or Bangkok would cost about 500-600 USD already.</p>
+<p>To launch its latest international route, the budget carrier is offering P888 seats from Manila to Siem Reap from January 27 to 29 or until seats are still available, for travel between April 19 and May 31, 2012.</p>
+<p>The latest route is due to leave Manila at 7:50pm every Tuesday, Thursday and Sunday, and arrive in Siem Reap at 9:30pm, while return flights will depart from Siem Reap at 10:30pm and arrive in Manila at 12:10am.</p>
+<h3><strong style="text-decoration:underline;">Exploring Cambodia by staying with local Khmer families</strong></h3>
+<p>The few established attractions in Cambodia such as the temple in Angkor Wat are generally overrun by tourists.</p>
+<p>However, Khmer families in the province of Kampong Thom are now offering village accommodation in their simple wooden houses, presenting tourists with the chance of exploring rarely visited jungle terrain and mountain temples.</p>
+<p>Seven villages in Prasath Sambo district, which is approximately a 45-minute drive from the provincial capital Kampong Thom, have formed a joint venture to try and attract more tourists to the area by offering overnight accommodation with local families.</p>
+<p>Tourists can not only help with the rice harvest, learn local cooking techniques and philosophise with monks in the Buddhist temples, but also assist researchers with the excavation of historical treasures. All the activities are organized by local operators in Kampong Thom and Phnom Phen but tourists travelling on their own can reach the site by bus, rent a bicycle or moped, or even pay a family to bring them there in an ox and cart.</p>
+<p>Travellers can choose either accommodation with a family that includes two meals or a  bungalow-style hotel. The new Sambor Village hotel in Kampong Thom offers a swimming pool and exotic gardens.
+</p>
+<h3><strong style="text-decoration:underline;">Song Saa Private Island's Opening on 13 February 2012</strong></h3>
+<p>Opening on 13 February 2012, Song Saa Private Island or "Sweetheart" Private Island is made up of two small islands, Koh Ouen and Koh Bong, connected by a footbridge.  The 25 luxury villas are built with sustainable materials and with the deepest respect for the natural environment.</p>
+<p>Be the first to experience this untouched nature with the deserted oasis of virgin rainforests, tropical reefs and glistening white beaches of the island.</p>
+<p>Check out the unbeatable opening promotional offers of "Stay 4 Pay 3, Stay 7 Pay 5 and Stay 10 Pay 7" during 13 February until 31 May 2012 which include a full board and drinks throughout the day, daily restocked mini bar and unlimited laundry, and many more.</p>
+<h3><strong style="text-decoration:underline;">Angkor Wat International Half Marathon 2011 kicks off on 4 December 2011</strong></h3>
+<p>Running since 1996 the Angkor Wat International Half Marathon is an international charity event organized for the benefit of landmine victims and other pressing issues in Cambodian development.</p>
+<p>Mark your diary for Sunday 4 December 2011 when the 16th Angkor Wat International Half Marathon starts in front of Angkor Wat, one of the true wonders of the world. The race course offers fantastic views of historical temples and lush jungle reflecting in the ponds and moats as the morning mist rises, going  through the main areas of Angkor ruins. A truly opportunity not to be missed!</p>
+<p>Register online at here for either the 21 km International Half Marathon, 10 km Road Race or 3 km Fun Run. There will also be the 21 km Wheel Chair and 10 km Artificial Limbs courses.</p>
+<h3><strong style="text-decoration:underline;">Yangon bound from Cambodia</strong></h3>
+<p>Myanmar Airways International (MAI) launched on 2 November 2011 a twice weekly flight every Wednesday and Saturday between Phnom Penh and Myanmar's economic hub and former capital,
+Yangon. The flights are operated on 162-seat A320 jets which will transfer in Siem Reap before continuing on to Phnom Penh.</p>
+<p>Schedule for 30 October 2011 to 31 March 2012 on Wednesdays and Saturdays:</p>
+<p>8M401  08:50-11:00 Yangon (RGN) to Siem Reap (REP)<br />
+8M401  12:00-12:50 Siem Reap (REP) to Phnom Penh (PNH)<br />
+8M402 13:50-15:15 Phnom Penh (PNH) to Yangon (RGN)</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab3" style="display:none">
+<div style="float:right;"><a href="myanmar.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Myanmar Hompage</a></div>
+<h3><strong style="text-decoration:underline;">Myanmar to introduce e-visas</strong></h3>
+<p>Myanmar's Ministry of Hotels and Tourism has unveiled plans to launch an electronic visa system sometime later this year.</p>
+<p>The Ministry of Hotel and Tourism is planning on the launch of an e-visa system at entrance and exit points at airports, seaports and border checkpoints to make it more convenient for foreign visitors. The online visa system will be tested before being officially introduced as soon as possible this year. </p> 
+<p>Myanmar's government introduced a visa on arrival (VOA) system on May 1, 2010 that allowed foreign visitors from any country able to obtain a VOA at Yangon and Mandalay international airports without having to make prior arrangements with a travel management company. However, the VOA was suspended just four months later by the Department of Immigration and National Registration.</p>
+<p>VOAs are currently permitted for passengers on Myanmar Airways International flights arriving from Phnom Penh and Siem Reap in Cambodia and China's Guangzhou.</p>
+<h3><strong style="text-decoration:underline;">Sticky Rice Preparation Competitions</strong></h3>
+<p>Tabodwe (January-February) is a cool month and also the time when the first harvest is gathered in Myanmar. In Myanmar this first harvest is offered to the pagodas and monks, and to friends and neighbours too, to gain merit. Tabodwe is also known as the month when the Htamane (sticky rice) making competitions are held.</p>
+<p>The people of Myanmar organise competitions to make the finest sticky rice. Teams of youth representing their own neighbourhoods enter these competitions with good spirits, sometimes accompanied by traditional "doebut" (a music group) and their own group of fans.</p>
+<p>
+These traditional sticky rice preparation competitions are held all over the country during the Myanmar month of Tabodwe (February). Many are held at monasteries and pagoda compounds but some also in residential areas. No invitations are necessary or needed. Just walk into any competition and you will be warmly welcomed.</p>
+<h3><strong style="text-decoration:underline;">Amara foundation starts "Floating Library" service</strong></h3>
+<p>The Amara foundation has launched a "floating library" service to bring books and journals to remote villages in the rural Ayeyarwady Region. The boat will be loaded with about 1000 titles, including fiction, non-fiction, magazines and journals, visiting the seven Dedaye township villages once a week. The selected villages are in a remote area that is often hard to reach by car or bus. The main proposes of this project are to encourage rural people to read more books, to widen their knowledge and to enhance their overall lifestyle. The foundation was established in 2008 and is linked to the Amara Hotel Group, which operates tourism properties around the country.</p>
+<h3><strong style="text-decoration:underline;">Ngapali Bay Villas &amp; Spa launches</strong></h3>
+<p>The Ngapali Bay Villas &amp; Spa is a newly launched, first-class hotel - apparent from each of its 36 comfortably furnished rooms. Located on the famous and unspoiled Ngapali Beach in the midst of verdant vegetation, the resort is launching this month with four beach-front suite villas and 28 individual sea view deluxe rooms. All the rooms are 100-square-metres in size and are elegantly decorated with generous space for bathroom and jacuzzi, and lavishly equipped with five-star amenities. Additionally, this new property will feature a sea view restaurant with an Asian and Western menu, a spa and a unique swimming pool nestled among trees next to the bar.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+</div>
+
+<div id="tab4" style="display:none">
+<div style="float:right;"><a href="thailand.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Thailand Hompage</a></div>
+<h3><strong style="text-decoration:underline;">InterContinental Samui opens</strong></h3>
+<p>INTERCONTINENTAL has opened their latest property - the Samui Baan Taling Ngam a well-known hotel previously run by Le Meridien group of Hotels & Resorts.</p>
+<p>Located in the enclave of Taling Ngam Bay, on the west coast of Koh Samui, the 81-key resort offers guestrooms, suites and beachfront villas that come fitted with state-of-the-art facilities including LCD flat-screen TVs, DVD players, and iPod docking stations. Private plunge pools are featured in all villas, and complimentary Internet access is provided across all room types. Dining and entertainment establishments include the Air Bar, Amber and Flames.</p>
+<p>Highlights of the resort include seven designer pools, a private beach with a 150m licensed private jetty and a 200m pier that provides guests easy access to the rest of Koh Samui's well-known destinations.</p>
+<h3><strong style="text-decoration:underline;">2012 King's Cup Polo Tournament</strong></h3>
+<p>Dates have been announced for one of Thailand's most unique sporting events, the King's Cup Polo Tournament.</p>
+<p>The event will take place in the seaside resort town of Hua Hin between September 12th and 16th this year. The charitable polo event differs from the regular brand of polo by using elephants instead of horses.  The tournament is held to raise money for Thailand's elephants, with around US$ 500,000 raised throughout the event's 11-year history.</p>
+<p>This year's King's Polo Tournament promises to be bigger and better than 2011, which saw 12 teams, featuring over 40 players, including German royals, Prince Carl-Eugen Oettingen-Wallerstein, his wife Princess Anna and daughter, Princess Joanna.</p>
+<p>Proceeds from last year's event have been donated to a number of projects, which include the research of using elephants in therapy sessions for children in Thailand living with autism.  Other projects to receive funding were an elephant hospital based in southern Thailand, and a number of elephant conservation networks around the country.</p>
+<h3><strong style="text-decoration:underline;">Thailand prepares to launch Miracle campaign</strong></h3>
+<p>The Thai Tourism and Sports Ministry will launch the new "Miracle Thailand Year" campaign in April after postponing it from last month due to the flooding which devastated parts of the country late last year. With a budget of THB6.3 billion (US$202 million), the 12-month campaigns will focus strongly on Thai festivals. The Tourism Authority of Thailand (TAT) plans to extend the festival periods to maximise tourism potential of these events. Thai New Year promotions, the Songkran Festival, will run for a whole month rather than five days as has been the case previously.</p>
+<p>Susdivarchr Cheewarattanaporn, president of the Association of Thai Travel Agents, wants to see a longer term plan to maintain Thailand's tourism leadership position in the region as the Asean economic integration approaches in 2015.</p>
+<h3><strong style="text-decoration:underline;">Phuket shortlisted for surf reserve</strong></h3>
+<p>At least three surfing locations in Phuket, Thailand, are being shortlisted for recognition as National Surfing Reserves (NSRs). Unlike the coastline of Sumatra, Thailand is not renowned for its surf, however, it is a safe and accessible destination with a favorable climate of environmental awareness, especially with tourism. These factors combined with the natural resource, is why Phuket is being considered for this distinction.</p>
+<p>National Surfing Reserves (NSR) noted that the surfing reserve concept is recognized as coastal resource worthy of conservation. There are currently 14 NSRs in Australia, two in Hawaii and several more under review in the region, including Indonesia, Sri Lanka, Philippines and possibly China.</p>
+<h3><strong style="text-decoration:underline;">Nahm - a unique and memorable food experience</strong></h3>
+<p>Bangkok's rich culinary tradition was set alight by the opening of Nahm in a newly-designed, contemporary space at the Metropolitan Bangkok on South Sathorn Road. This is the first venture in the country that first inspired David Thompson. The Australian-born, award-winning chef, author and TV personality is internationally renowned for his renditions of traditional Thai cuisine. The cuisine is like the food eaten at home, relaxed, generous and authentic. This comfortable approach will be reflected in the style of service, beginning with several different canapés served at each meal. Guided by highly informative Thai waiters, diners will then be able to explore the full gamut of Thompson's repertoire.</p>
+<p>It will be designed by Japanese interior architect, Koichiro Ikebuchi, who also designed Uma Ubud in Bali and Aoki in Singapore. Ikebuchi is defined by his sensitive approach to cultural authenticity. Both modern and traditional at the same time, Nahm Bangkok uses natural wood, including screens for privacy, and warm oranges and browns with shimmering bronze plates on tables. The space will be steeped in natural daylight and in the evening, enriched by the soft mood lighting of the nearby outdoor pool.</p>
+<p>Open for lunch with Traditional Thai noodle, Kanom Jin, and set lunch from 12.00-14.00 on weekdays (Monday-Friday) and dinner seven days a week for both a la carte and set menu from 19.00-23.00.</p>
+<h3><strong style="text-decoration:underline;">Royal Flora to be held 14th December 2011 - 14th March 2012</strong></h3>
+<p>The International Horticultural Exposition or better known as the Royal Flora Ratchaphruek Fair is aimed to mark and celebrate the three auspicious occasions - HM King Bhumibol Adulyadej's 84th birthday anniversary in 2011, Queen Sirikit's 80th birthday anniversary and Crown Prince Maha Vajiralongkorn's 60 birthday anniversary in 2012.</p>
+<p>There will be grand-scale celebrations. Highlights of the Royal Flora Ratchaphruek Fair include the Giant Flora Wheel, Imagination Light Gardens and Kids' Eco Park. The over 40-meter high Giant Flora Wheel allows visitors to enjoy the panoramic view of the entire park. The Kid's Eco Park features exhibitions and fun activities about global warming to help create the nature loving generations.</p>
+<p>For further details please contact the Information Center of the International Horticultural Exposition at Tel: +66 2 610 2011 (everyday from 08.30-19.30).</p>
+<h3><strong style="text-decoration:underline;">SpiceRoads Cycle Tours unique bike tours in and around Chiang Mai</strong></h3>
+<p>Tours range from 3 hours to 4 days and there are tours for all interests ranging from easy rides around Chiang Mai to adrenaline filled mountain biking and zip-lining combinations.</p>
+<p>The new Chiang Mai Night ride allows guests to discover the charm and beauty of the city as the sun goes down. Those whole want to escape the city for the day can chose from leisurely cycles around Lamphun or through the Sankampaeng countryside. Then for the more adventurous there are multi-activity days that incorporate biking with white-water rafting, kayaking or ziplining, and for those who really want to work up the distance you can take a road bike ride up Thailand tallest mountain.</p>
+<p>Finally, for those who have a few spare days why not consider a multiday trip and the opportunity to really immerse yourself in the local environment on a 4 day cycle tour from Chiang Mai to Chiang Rai.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

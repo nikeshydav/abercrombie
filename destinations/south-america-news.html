@@ -1,0 +1,403 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=4; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById("img"+i).style.display="";
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById("img"+i).style.display="none";
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquery-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="img1"><img src="../images/argentina-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img2" style="display:none;"><img src="../images/chile-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img3" style="display:none;"><img src="../images/ecuador-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img4" style="display:none;"><img src="../images/peru-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="south-america.html">South America</a></li>
+<li>News</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>News</h4>
+<ul>
+<li><a href="africa-news.html" title="Africa">Africa</a></li>
+<li><a href="middle-east-north-africa-news.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="europe-news.html" title="Europe">Europe</a></li>
+<li><a href="australasia-news.html" title="Australasia">Australasia</a></li>
+<li><a href="china-orient-news.html" title="The Orient">The Orient</a></li>
+<li><a href="south-america-news.html" title="South America">South America</a></li>
+<li><a href="../news.html?id=7" title="North America">North America</a></li>
+<li><a href="../news.html?id=8" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="../news.html?id=9" title="Antarctica">Antarctica</a></li>
+</ul>
+<h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/famity-holday.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="#">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>South America News</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="Argentina"><span>Argentina</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Chile"><span>Chile</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Ecuador"><span>Ecuador</span></a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');" title="Peru"><span>Peru</span></a></li>
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top"></div>
+<div class="tabtxtHolder-mid">
+<div id="tab1">
+<div style="float:right;"><a href="../destinations/south-america-argentina.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Argentina Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Casa Bemberg opens in Iguassu!</strong></h3>
+<p>Posada Puerto Bemberg is one of the best-known names for lodging near Iguassu Falls, and now this famous marque is set to unveil the recently refurbished Casa Bemberg, a fabulous and luxurious home perfect for families and small groups.</p>
+<h3><strong style="text-decoration:underline;">Buenos Aires awarded by Travel+Leisure</strong></h3>
+<p>Once again Argentina's capital city, Buenos Aires, was elected as the number 1 city in Latin America and Mexico by the readers of Travel+Leisure Magazine, in their World's Best Awards 2011. With a score of 87.77 Buenos Aires shares the 11th position in the world with Jerusalem. The selection criteria involved areas such as tourist attractions, cultural events and gastronomy. The city also counts with 7 properties awarded among the 500 World's Best Hotels for 2011.</p>
+<h3><strong style="text-decoration:underline;">Construction of 6 star hotel ready to begin in Buenos Aires</strong></h3>
+<p>The construction of the most luxurious hotel in South America is about to begin. A well known economic group is setting the foundations of what will be a very exciting development in Argentina. The development belongs to Grupo Vidante, an expert in high standard properties, owning several luxury hotels in Mexico. The hotel will be located in the Puerto Madero area, near the famed Faena Hotel. Keep in touch for more news regarding this hotel that will be open during 2013.</p>
+<h3><strong style="text-decoration:underline;">Puyehue Volcano affects flights in Argentina</strong></h3>
+<p>The eruption of a volcanic area near the Puyehue Volcano located in the south of Chile has been affecting flights since last week. The volcano continues to pour ash into the sky and the cancelation of flights depends mainly on the direction and intensity of the wind. Most of the canceled flights have been departures of arrivals from Buenos Aires. For more information regarding flight cancelations, please contact our offices in Argentina at: <a href="mailto:info@abercrombiekent.com.ar">info@abercrombiekent.com.ar</a></p>
+<h3><strong style="text-decoration:underline;">Buenos Aires' renowned "Teatro Colon" re-opens for Public visits after $300 million investment</strong></h3>
+<p>After four long years, Argentina's "Teatro Colon" has reopened its doors for public visits following a number of preliminary performances in 2010 to celebrate Argentina's bicentenary. To book tickets to performances or include a visit to the renowned theatre please get in touch with one of our team members.</p>
+<h3><strong style="text-decoration:underline;">Sheraton Upgrades for 2011</strong></h3>
+<p>We would like to let you know that the hotel Sheraton Iguazú Resort &amp; Spa will start the refurbishment of its second floor. It will start beginning of May 2011 ending in September 2011.</p>
+<p>Even though we have taken all necessary steps, we know it might cause some noises or discomfort, for that reason the working hours will be from 8:00am until 6:00pm.</p>
+<h3><strong style="text-decoration:underline;">In 2011 we'll take you from Buenos Aires to Mexico directly!</strong></h3>
+<p>Aerolineas Argentinas has announced direct flights between Buenos Aires and Mexico city to begin operations on March 3rd  2011; the route will have 4 weekly services departing from Ezeiza airport at 10.10pm local time on Mondays, Tuesdays, Thursdays and Sundays and from Mexico city at 7.15am local time.</p>
+<h3><strong style="text-decoration:underline;">Anuva_Tasting ITINERARY IDEAS: Unforgettable nights in Buenos Aires.</strong></h3>
+<p>Buenos Aires never sleeps. Just one night in Buenos Aires will give you an unforgettable and unique experience. Why not begin the evening with an intimate tasting of the best Argentine wines in the sophisticated district of Palermo Hollywood before heading to one of the best Argentine milongas where the real tango dancers come alive? With all this excitement and adventure you'll need time to recharge! a dinner at the acclaimed restaurant Casa Las Lilas where the best Argentine beef is served is a must!</p>
+<h3><strong style="text-decoration:underline;">NEWS: Art lovers are welcome in Buenos Aires - Mamba museum has re-opened its doors!</strong></h3>
+<p>Those art-lovers travelling to Buenos Aires will be happy to hear that after five years closed to the public the contemporary art Mamba Museum has opened its doors again with two local exhibitions. The museum was created in 1956 by initiative of the art critic Rafael Squirru and today owns an important heritage of some 7000 works of Argentine and international art of the XX and XXI centuries.</p>
+<h3><strong style="text-decoration:underline;">ITINERARY IDEAS: A new season for fly fishing begins in Chile &amp; Argentina</strong></h3>
+<p>Rivers and lakes of Argentina and Chile offer incredible experiences that an angler never forgets. No wonder that both countries have become favorites for fishing enthusiasts. While in Patagonia Estancia Tipiluke started the season with programmes specifically designed for beginners the luxurious Pira Lodge located north of Argentina offer unique adventures in Esteros del Ibera, one of the most fascinating wetlands in the world where a vast system of swamps, rivers and lakes pure and crystalline water, hide one of the most exciting game fish in Latin America ...</p>
+<h3><strong style="text-decoration:underline;">NEWS: Casa Antucura re-opens in Argentina's winelands</strong></h3>
+<p>After being closed for over a year, Casa Antucura has re-opened its doors deep in the Uco valley of Mendoza; one of the most prominent wine producing regions in South America. This excellent news brings the refined elegance of Casa Antucura back to Argentina's wine regions following a year's absence. Located at around one hour 45 minutes drive from Mendoza, the lodge provides a base to explore the regions most important vineyards or access the nearby Andes range for a day's hiking, biking or rafting before retiring back to the lodge to open a bottle of Casa Antucuras own wines grown on the vineyards surrounding the property.</p>
+<h3><strong style="text-decoration:underline;">NEWS: Jardín Escondido boutique hotel to re-open in Buenos Aires</strong></h3>
+<p>The renewed Jardín Escondido boutique hotel has new management and from November it is functioning as a boutique hotel. Boasting three levels of gardens, a solar-heated pool, an outdoor 'parrilla' (barbeque), and a beautiful terrace surrounded by plants of all kinds, Jardin Escondido is located within walking distance of fashion and design boutiques, craft fairs, and the abundant street culture of Palermo Soho. Families may rent the entire hotel, couples can share the two principle sections on either side of the garden or we can make arrangements for your all your celebratory and corporate event needs. The hotel has meeting rooms, a flat screen TV entertainment centre with a collection of classic films; an on-call sommelier and of course a fantastic collection of wines!</p>
+<h3><strong style="text-decoration:underline;">NEWS: British Airways announces a direct route between Buenos Aires and London</strong></h3>
+<p>From March 27th, 2011 British Airways will fly from London to Buenos Aires direct, with seven weekly services departing from Heathrow at 9:55pm and from Ezeiza at 1:25pm to arrive in London at 6:35am. The airline currently flies daily to London with a stopover in San Pablo.</p>
+<h3><strong style="text-decoration:underline;">NEWS: New air routes in Argentina</strong></h3>
+<p>From August 18th Aerolineas Argentinas provides an excellent circuit of air routes connecting many of the destinations on a new flight known as the 'Corredor Norte'. The route will fly twice a week- every Wednesday and Saturday - in each direction connecting the following destinations in this order: Iguazu - Salta - Mendoza - Bariloche. Whilst suggesting this new route to your clients don't forget to mention the excellent accommodation opportunities found along the way.  From Loi suites in Iguazú to the finely appointed Kkala boutique hotel in Salta with only 6 rooms or the elegant Cavas Wine Lodge in Mendoza to the 'El Casco' property for art lovers, there is something for everyone. Before heading home make sure you don't miss the Estancia La Bamba, just 2 hours drive from Buenos Aires.</p>
+<h3><strong style="text-decoration:underline;">NEWS: Qatar Airways debuts in South America connecting Qatar &amp; Buenos Aires</strong></h3>
+<p>On June 24th at 8:30pm Qatar Airways made its debut in South America, the inaugural flight landed at Ezeiza International Airport from Doha, via Sao Paulo. The new route will have a daily operation departing from Doha at 8:00am and arriving in Buenos Aires at 8:30pm (an 18.5 hour flight time including one stop in Brazil), from Ezeiza will depart at 11:05pm to arrive at Qatar's capital at 11:10pm the following day (an 18:05 hour flight time including one stop in Brazil), Qatar Airways flights are operated with Boeing 777 equipment.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+
+
+</div>
+
+<div id="tab2" style="display:none">
+<div style="float:right;"><a href="../destinations/south-america-chile.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Chile Homepage</a></div>
+<h3><strong style="text-decoration:underline;">New Hotel Refugia brings grace and style to remote Chiloé Island</strong></h3>
+<p>A brand new luxury property promises to bring indulgence to the Island of Chiloé, in Southern Chile. <strong>Each of the 12-rooms of the recently inaugurated Refugia overlooks the rolling countryside and beautiful bay.</strong> How to get there? Just last week, Lan Airlines inaugurated the new airport on the island with the first commercial flight into Chiloé. With under 3 hours from Santiago, the flight opens the destination to everyone.</p>
+<h3><strong style="text-decoration:underline;">Explora</strong></h3>
+<p>The view from the Cordillera Paine rooms of Explora's iconic hotel in Patagonia might be one of the most spectacular sights in the country. Let your clients know that it's worth waking up at dawn to see the sunrise over the mountains from the warmth of their bed. This is truly amazing experience.</p>
+<h3><strong style="text-decoration:underline;">Red harvest: a special food and wine itinerary in Chile</strong></h3>
+<p>There is no better time to wander around the wine country than during harvest season, with the bright red leaves of Chile's iconic Carmenere grape variety providing a remarkable setting during these months. In celebration of this year's harvest season A&K Chile has designed a unique itinerary around the best food and wine the country has to offer. There is no better time to wander around the wine country than during harvest season, and the bright red leaves of Chile's iconic Carmenere grape variety provide a remarkable setting during these months. The departure is set for May 12th and starts in Santiago with cooking classes with celebrity chef Emilio Pescheira, followed by a trip to the coast to discover the amazing variety of Chile's seafood. Afterwards you're free to enjoy the wines! Spend two days tasting and discovering some of the best wines Chile has to offer. We know that no journey to Chile would be complete without a visit to its other breath-taking landscapes, so we'll complete the itinerary with just that. Spend 3 nights in the Atacama desert where the epicurean experience continues with gourmet meals at night under the brightest skies in the world, visits to Andean farmers and shepherds to understand their culture and cocktails while swimming in the natural pools of the oasis. </p>
+<h3><strong style="text-decoration:underline;">Restoration of historic Patagonia</strong></h3>
+<p>One of our tour consultants recently visited the new Singular Patagonia, set to open in November. The hotel is set within one of Patagonia's few historical buildings: a former industrial building with a stunning setting. The Singular is offers spectacular views over the harbor and a complete spa for relaxing after those tough days in Patagonia.</p>
+<h3><strong style="text-decoration:underline;">Chilean gastronomy on BBC</strong></h3>
+<p>Santiago is an amazing city to discover and one of the little known aspects is its gastronomy scene. This week a BBC story featured some of those little known spots where you can get under the skin of chilean food. As you'll find out, there's a lot more than just wine here!</p>
+<h3><strong style="text-decoration:underline;">Chiloé featured in Condé Nast</strong></h3>
+<p>The boutique hotel Palafito 1326 in Chiloé is turning the spotlight on this new destination. The Island of Chiloé, in the southern part of Chile is a place caught in time. Rolling hills of bright green are occasionally interrupted by beautiful wooden churches that are scattered all over the island.  In the main city, a quite boutique hotel lies, literally, over the water. Palafito 1326 was recently featured in Condé Nast Best New Hotels in the World, one of the two hotels in Chile included in the list.</p>
+<h3><strong style="text-decoration:underline;">ITINERARY IDEAS: Observe the stars in the southern hemisphere at just 20 minutes from Santiago.</strong></h3>
+<p>Amateur astronomers will be happy to hear that one of the largest astronomical centers in South America has opened its doors just 20 minutes from major hotels in the capital of Chile. No matter if you have no previous experience in astronomy a "star tour" at the foot of the Andes at the OAA (Andean observatory) will help you better understand the universe in which we live through powerful telescopes and  with the company expert guides - no doubt an excellent alternative before continuing to the Atacama Desert - known worldwide as the astronomical capital of the planet.</p>
+<h3><strong style="text-decoration:underline;">NEWS: Le Reve - best recommended hotel in Santiago by Trip Advisor</strong></h3>
+<p>Le Reve boutique hotel has been announced as the one of the best hotels in Chile's capital city by the travel guide and research website "Trip Advisor", and with a good reason! Because its classic European style offers great infrastructure and service nestled in a beautiful mansion that has been named as Chile's Monument. The hotel lives in perfect harmony with its exquisite French architecture and the technological advances of today's world and with its privileged location in the heart of Providence is a good base to explore important trade centers, restaurants, theaters and many tourist attractions!!</p>
+<h3><strong style="text-decoration:underline;">NEWS: Pre-Columbian museum has changed its remodelling dates - now from September 2011</strong></h3>
+<p>During the closure of the Pre-Columbian museum we will be offering a wide variety of options for 'culture vultures' in Chile's capital city including some excellent museums, galleries, and historical houses with permanent (mainly Latin American) collections but also visiting exhibitions such as the "Museo de Bellas Artes" or Fine Arts Museum featuring an extensive collection of national and foreign 19th and 20th century sculpture and major works by Roberto Matta, Pedro Lira, Gonzalo Cienfuegos, Mario Toral and Nemesio Antunez..</p>
+<h3><strong style="text-decoration:underline;">Be part of the Rally Dakar 2011 &amp; visit San Esteban Mine where all 33 miners emerged unscathed - exclusive opportunities in the Atacama Desert.</strong></h3>
+<p>If your clients want to experience the most famous race in the world from the inside, A&amp;K has prepared an exclusive programme to follow the Rally Dakar 2011 with a total immersion in the heart of the race and its backgrounds. As a group or single traveller, the experience will be rich in emotion and high on adrenalin. With the program centered near to the city of Copiapó, travelers will be in close proximity to the San Esteban mine where the 33 miners were successfully freed last month and A&amp;K has arranged for an exclusive tour to learn about the unique story.</p>
+<h3><strong style="text-decoration:underline;">Explore Chile's central valleys by helicopter!</strong></h3>
+<p>Chile's increasingly famous wine lands have always been a key stop on any journey through Chile but A&amp;K offers the opportunity to fly to the Valley's of Colchagua and Casablanca aboard a helicopter whilst admiring the impressive Andean backdrop. Alongside wine-tasting why not offer something a little more original such as becoming a winemaker for a day to learn about the blending of different grapes.  A&amp;K has an excellent list of contacts in the region to fit the needs of the novice wine enthusiast right through to true experts!</p>
+<h3><strong style="text-decoration:underline;">ITINERARY IDEAS: Casadoca and Casa Silva - boutique style on Chile's coast and an old favourite is refurbished</strong></h3>
+<p>Those looking for somewhere to put their weary feet up after a day's exploring amongst Valparaiso's hills should consider the new 6 room 'Casadoca' hotel located 25 minutes to the north. Perched just above the Pacific Ocean in the fishing town of Con-Con, the hotel affords beautiful ocean views blended with contemporary comfort in the heart of one of the central coast's most typical fishing towns. If your clients are after a little wine tasting whilst in Chile's central valleys, the newly refurbished Casa Silva hotel features a mixture of tradition and state-of-the-art technology and is an excellent alternative to use as base for your Chilean vineyard explorations. Why not have your clients become an enologist for a day or visit the renewed Colchagua museum with its curious collection of Paleontology Latin American cultural pieces, Chilean history and more.</p>
+<h3><strong style="text-decoration:underline;">NEWS: Slight increase in Chilean Reciprocity fee for U.S citizens</strong></h3>
+<p>U.S. citizens travelling to Chile for recreation, tourism, business, or academic conferences do not need to obtain a visa prior to their arrival to Chile. A Tourist Card will be issued for a stay of up to 90 days upon payment of a reciprocity fee, currently US$140. This fee is paid before going through Immigrations and Customs and may be paid by credit card or cash. </p>
+<h3><strong style="text-decoration:underline;">Explore Chile's Lake District with Nomads of the Seas</strong></h3>
+<p>Nomads of the Seas extraordinary expedition vessel 'The Atmosphere' is to set sail again for Chile's 2010-2011 season and will launch the season with its ground-breaking 'Tasting Chile' Program where those aboard will sail through some of the country's most remote regions in the company of internationally renowned chefs. Please get in touch to find out more about surprising prices!</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab3" style="display:none">
+<div style="float:right;"><a href="../destinations/south-america-ecuador.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Ecuador Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Casona de la Ronda</strong></h3>
+<p>As one of the newest additions to Quito's boutique hotel scene,  La Casona de la Ronda features 22 rooms arranged around a beautiful central patio, mixing cultural, traditional and contemporary elements. Enjoy all the modern conveniences built into the original structure, where the colours and stone walls tell a story of history. The rooms have been designed to provide an authentic experience that reflects the true atmosphere of the unique colonial centre of Quito, Ecuador.</p>
+<h3><strong style="text-decoration:underline;">Casa Gangotena</strong></h3>
+<p>The Plaza View Suites in Quito's new Casa Gangotena take their name seriously - the vistas from here are stunning. One glance out of your soundproofed window reveals Plaza San Francisco, Quito's oldest, with dozens of spires and steeples rising into the background.</p>
+<h3><strong style="text-decoration:underline;">Ocean Spray: The newest luxury vessel in the Galapagos</strong></h3>
+<p>There's certainly been a leap forward in the quality of vessels in the Galapagos during the last few years. The Ocean Spray promises to continue to push the boundaries with the first Mega-Catamaran of the Enchanted Isles. As we made our way to the dock to see the brand new Ocean Spray, one of the crew members corrected me - "Mega", he insisted, was necessary before "Catamaran". He wasn't joking. This beautiful new 16 passenger Galapagos vessel, set to begin operations in April, is indeed massive. With a width of 13 metres, the Ocean Spray boasts ample social areas and spacious bathrooms. Best of all, the private balconies attached to each cabin are some of the best I've seen in the Galapagos. Add in modern design and thoughtful amenities, and the Ocean Spray is sure to become one of our top choices for clients.</p>
+<h3><strong style="text-decoration:underline;">Ecuador named one of world's top horse-trekking destinations by CNN</strong></h3>
+<p>Long overshadowed by the Galapagos, Ecuador's mainland attractions are beginning to summon well-merited attention. Most recently, CNN named horse trekking through the Ecuadorian Andes, nicknamed the "Avenue of the Volcanoes" as one of the top horseback riding destinations in the world. It's the perfect pre or post Galapagos extension for your adventurous clients!</p>
+<h3><strong style="text-decoration:underline;">How the rainy season will affect clients heading to the Ecuadorian coast</strong></h3>
+<p>With 80 degree (F) / 27 degree (C) weather and plenty of sun, the period between December to May is most Ecuadorians favourite time to visit the beach.  Technically, though, this is the rainy season, and the occasional downpours can make our favourite coastal haciendas muddy and difficult to visit. As such, we recommend clients avoid all coastal haciendas and the ecological reserve of Cerro Blanco at least through the month of March.</p>
+<h3><strong style="text-decoration:underline;">Renovations on tap for Termas de Papallacta</strong></h3>
+<p>The Termas de Papallacta, one of Ecuador's top spas, will be undergoing environmentally motivated renovations through March, 2012. The thatched roofs previously featured by the hotel and spa proved to be unsustainable, prompting a switch to longer-lasting wood tiles, which will be more dependable and have less environmental impact.</p>
+<h3><strong style="text-decoration:underline;">New wine cellar for the J.W. Marriott's La Hacienda Restaurant</strong></h3>
+<p>With 879 bottles, the brand new wine cellar within La Hacienda promises to make a significant splash in Quito's wine scene. With the new addition, La Hacienda, an excellent Argentine restaurant, will offer diners an excellent and vast selection of top quality wines from around the continent.</p>
+<h3><strong style="text-decoration:underline;">Fare changes imminent for all internal Ecuador flights</strong></h3>
+<p>We have recently been informed of pending changes in fuel subsidies for internal airfare. The Ecuadorian government has announced that they will be rescinding the fuel subsidy for all internal flights as of January 1, 2012. This includes all flights to/from the Galapagos. Aerogal will be adding a $50 surcharge each way for Galapagos flights from Quito and Guayaquil, which TAME will add $60 each way from Guayaquil and $70 each way from Quito. This surcharge applies regardless of whether flight reservations have already been made or not.</p>
+<h3><strong style="text-decoration:underline;">JW Marriott Quito Recognised by Rainforest Alliance and TripAdvisor</strong></h3>
+<p>The JW Marriott Hotel in Quito has become the first 5-star hotel in Ecuador to be verified by the Rainforest Alliance.  The verification recognises organisations within the tourism industry which have achieved significant and measurable progress in sustainability. In addition, the hotel has received a 4.5 rating out of 5 and a Certificate of Excellence for 2011 from TripAdvisor. The score is derived from client reviews on TripAdvisor.com, giving an excellent firsthand insight into the quality of the hotel.</p>
+<h3><strong style="text-decoration:underline;">Cotopaxi Airport Opens to Air Traffic</strong></h3>
+<p>The new Cotopaxi Airport has opened for business. Located in Latacunga, capital of Cotopaxi province, the airport will handle both passenger and cargo traffic.  Saereo will maintain daily flights (except for Sundays) to and from Guayaquil, while Tame will be instituting similar service with three 50-passenger aircraft.</p>
+<h3><strong style="text-decoration:underline;">Astronomy Museum Opens in Quito's Historic Observatory</strong></h3>
+<p>Ecuador's first museum of astronomy has opened in the 138 year old Quito Observatory.  The observatory, one of the finest in the world when it opened, has been completely refurbished to offer space for the museum as well as continuing research.  The museum features multiple salons focusing on different elements of astronomy and its history.  Touch-screen displays offer both English and Spanish language descriptions.</p>
+<h3><strong style="text-decoration:underline;">New Folklore Dance Show at Quito's La Choza Restaurant</strong></h3>
+<p>La Choza in Quito, one of the city's top destinations for authentic Ecuadorian food, is now offering a Dinner Show featuring the Jacchigua Folklore Ballet.  Every Saturday evening, this incredible dance troupe will perform and demonstrate the traditions and culture of Ecuador.  Dinner is served with your choice of delicious typical Ecuadorian dishes.</p>
+<h3><strong style="text-decoration:underline;">TAME Resumes Quito to Manta Service</strong></h3>
+<p>After suspending service to Manta in 2009, TAME has announced a resumption of flights.  Since the end of June, TAME has been offering two daily flights to Manta Mondays through Fridays, with one outgoing flight to Manta on Saturdays and a return flight on Sundays.</p>
+<h3><strong style="text-decoration:underline;">M/V Explorer II Announces 2012 Changes</strong></h3>
+<p>Beginning January, 2012, the Explorer II is excited to announce the following changes in accordance with their Master Quality Improvement Plan:</p>
+<ul>
+<li>Introduction of the new 'Elite Program' included for the Renaissance Balcony Suites and the Majestic Balcony Suite. Program highlights include butler service, a complimentary bottle of champagne, and personalized stationery. Please contact us for further details</li>
+<li>Changes in suite categories - New 'Majestic Balcony Suites'; conversion of the 'Premium Suites' to 'Classic Suites'</li>
+<li>New programs; itineraries including 4, 6, and 8 night cruises</li>
+<li>ISO 9001:2009 Certification</li>
+</ul>
+<h3><strong style="text-decoration:underline;">ITINERARY IDEAS: If you're looking for a unique dive destination - it doesn't get much better than the Galápagos!</strong>   </h3>
+<p>Thankfully you don't need to be an experienced diver to dive in the Galapagos and whilst there are advanced and specialist courses from PADI available in the islands; there is also room for the novice to spend time acquiring the basic PADI qualifications in some of the richest and most unusual waters on earth! Whilst there are a number of dedicated dive vessels available such as the Galapagos Sky, a program based around day trips from lodges dotted throughout the islands offers the most flexibility for groups with divers and non-divers. If you have clients interested in seeing everything from marine iguanas to moray eels, sharks, and stingrays don't hesitate to get in touch with our experts to advise you on the best options.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+</div>
+
+<div id="tab4" style="display:none">
+<div style="float:right;"><a href="../destinations/south-america-peru.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Peru Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Palacio Nazarenas</strong></h3>
+<p>After years of hard work, on June 15th the Orient Express finally opened their new hotel in Cusco, Palacio Nazarenas.</p>
+ Surrounded by walls of Inca Stones the hotel combines the old with the new showing a contemporary side of Cusco with a state-of-the-art spa, the city's first outdoor pool and stylish restaurants serving cutting-edge local cuisine. This luxury retreat has just 55 suites, each enriched with oxygen and its own private bar where guests (or their private bultler) can create drinks accented with fresh ingredients grown at and around the hotel. To see more about the new Palacio Nazarenas please check its video <a href="http://www.youtube.com/watch?v=LZzWeGZWNdY" target="_blank">here.</a>
+ </p>
+<h3><strong style="text-decoration:underline;">Titilaka joins Virtuoso</strong></h3>
+<p>As of June 1st, 2012, Titilaka, the most exclusive retreat in Lake Titicaca, has joined the Virtuoso network. This 18 all-suite property is located at the less touristy side of the lake, providing an exclusive experience, privacy and utmost comfort. Enjoy panoramic views of the highest navigable lake in the world, outstanding staff, knowledgeable guides from the area, great variety of activities, gourmet andfusion meals including drinks, cocktail hour and tea time every day.</p>
+<h3><strong style="text-decoration:underline;">Hacienda Concepcion</strong></h3>
+<p>Recognised by Conde Nast Traveler as one of the World's Best New Hotels of 2012, a new jungle lodge 'Hacienda Concepcion' has opened just 45 minutes from Cusco in the Peruvian jungle. Owned by Inkaterra, the property promises to add an exciting twist to itineraries in the area. It is an ideal property for those clients looking for a taste of the Amazon but with limited time to spare. The small 15-room hacienda is located on a 2,000 acre private estate in Tambopata, one of the Peruvian Amazon's most impressive natural reserves. This location provides the perfect combination for a trip to Machu Picchu, as the area is just a 45 minute flight from Cusco whilst being conveniently positioned within walking distance of the beautiful and solitary Lake Sandoval, which offers a wide range of land and river excursions within its surroundings. You can also take advantage of the opportunity to watch exotic Amazon species such as hoatzins or shanshos and other animals in their natural habitat.</p>
+<h3><strong style="text-decoration:underline;">Starbucks in Cusco</strong></h3>
+<p>Starbucks has announced the opening of its 41st branch  in Peru located in the historic centre of Cusco. The new outlet  currently the third store located in Southern Peru, can accommodate up to 86 people, and will employ approximately 40 people staff from the region. Local flavours have been incorporated into drinks, such as the Algarrobina Frappuccino, and they are socially committed to the community of Villa Rica, thereby fulfilling their self-proclaimed corporate social responsibility guidelines.</p>
+<h3><strong style="text-decoration:underline;">Rafting Peru's Amazon</strong></h3>
+<p>The 13th annual Great River Amazon Raft Race event will take place this October 6th, contestants will set out on homemade balsa rafts from the beaches of Nauta, and paddle their way back to Iquitos over three days--covering some 180k along the way.</p>
+<p>Almost every year, the overall event is won by teams from nearby, either "Los Increibles" or "Los Invencibles". They dominated the annual race until 2008 when the first international winners, David Kelly and his USA team "Easy Living", won in record time by finishing in 12 hours, 19 minutes, a record that still stands.</p>
+<p>The fastest currents are fairly narrow and tend to run just five to fifteen meters offshore, and they switch banks at every large bend in the river. So the race is actually longer than it appears on paper, as teams must cross the vast river diagonally throughout the day to stay in the current.</p>
+<p>So far, the 2011 line-up includes 34 teams from eight countries participating, with colorful and humorous team names such as "Team Macho Man," "Electric Amazon Lovefest," "The Crazy Cuys," "River City Donkey Show," to name a few.</p>
+<h3><strong style="text-decoration:underline;">Travel+Leisure World's Best Hotels in Peru</strong></h3>
+<p>Each year, readers of Travel+Leisure, the top travel magazine in the US, choose from among the world's top hotels, resorts, spas, cruise lines, airlines, travel companies and destinations, to determine the winners of the World's Best Awards.</p>
+<p>This year, Cusco, city of the Incas, have been recognized as 2nd World's best city within Mexico, Central and Latin America. Lima also made a debut on the list, on 6th place. Inkaterra Machu Picchu Pueblo Hotel won the award as World's best Family Hotel in Latin America, it was also ranked 3rd in the category of Latin America's best resorts. Monasterio Hotel in Cusco was also ranked 3rd on the World's best City Hotels in Latin America.</p>
+<h3><strong style="text-decoration:underline;">Peruvian cuisine takes a trip to Nebraska!</strong></h3>
+<p>Peru is a country that offers one of the richest and varied cuisines in the world.  Thanks to the legacy of our ancient civilizations and to the influence of immigration from countries on 4 continents mixed together with the fact that Peruvians enjoy every bite, the country has become a hub for foodies, offering a unique range of delicious choices. To promote Peru, an agency took a group of famous chefs and personalities to a small town in Nebraska, called Peru, to spread the word on what it means to be Peruvian. Check out the hilarious documentary of  this group of Peruvians heading to the heartland of America:</p>
+<p><a href="http://www.youtube.com/watch?v=RL9gsVy9gfU" target="_blank">http://www.youtube.com/watch?v=RL9gsVy9gfU</a></p>
+<h3><strong style="text-decoration:underline;">Itinerary adjustments in Perú</strong></h3>
+<p>Over the last couple of days some local communities in Puno have been protesting against the potential future activities of some mining companies which have unfortunately affected operations in the Titicaca area.</p>
+<p>Although the Government is working hard to solve the issue, operations have become a little more difficult over the last couple of hours. Given the situation A&K Peru has taken to the decision to adjust itineraries visiting the Titicaca and Puno area over the coming few days so that they are not inconvenienced in any way. Our Operations department will be in touch with all those who have clients in the area to give more specific details.</p>
+<h3><strong style="text-decoration:underline;">Taca increases operations in Perú</strong></h3>
+<p>TACA, one of South Americas leading Airlines has announced that they will be increasing frequencies for domestic flights within Peru including a substantial increase in weekly flights to Cusco from 13 to 21. Elsewhere the airline has announced the launch of routes from Lima to Juliaca (the access point to Lake Titicaca), Tarapoto in the Peruvian Amazon and Trujillo in the north of the country.</p>
+<h3><strong style="text-decoration:underline;">NEWS: Peru Rail announces changes in its services to Machu Picchu, Vista dome and Hiram Bingham...</strong></h3>
+<p>From Jan 1st until Feb 28th both trains will run from/to Ollantaytambo station. This will be particularly helpful for times when landslides sometimes occur during the rainy season, causing inconveniences especially at Pomatales canyon.
+The route Cusco/Ollantaytambo/Cusco will be served by regular buses provided by Peru rail however following our commitment to offer you a high quality service and suitable comfort, A&K Peru will arrange this drive exclusively for our passengers.</p>
+<h3><strong style="text-decoration:underline;">ITINERARY IDEAS: A new hiding place in the heart of Peru</strong></h3>
+<p>Cusco and Machu Picchu are two must-visit destinations on all travellers lists, but often particularly with newlyweds. From a shamanic blessing, a romantic picnic in the desert to a carriage ride through the colonial streets of Lima, Peru continues to surprise. To end your days of countless enigmatic experiences why not take a rejuvenating treatment and de-stress at the Spa Hotel Unno Aranwa in the sacred valley: something we know  all our passengers will appreciate.</p>
+<h3><strong style="text-decoration:underline;">NEWS: Yale University's pieces of Machu Picchu will return to Peru at the end of the 100-year agreement...</strong></h3>
+<p>Their new home will be the Casa Concha in the city of Cusco. From July 2011 and to commemorate the first sighting of Machu Picchu the first 363 pieces will be on exhibition expecting for the remaining 46,000 pieces to arrive in 2012. The Casa Concha has 70 rooms and is near to complete the restoration (98%).  The house is incredible as it features Inca areas, remnants of the colonial times, of the transition period as well as of the republican era. Peruvian archaeologist and Yale commissioner are making every effort to ensure the proper conservation of the archaeological object as well as installation of windows, humidity control equipment and security systems.</p>
+<h3><strong style="text-decoration:underline;">Lima - New restaurants highlight Peru's gastronomic boom</strong></h3>
+<p>With gastronomy becoming such an important part of travel within Peru due to it's unique influences it's important to recommend the best to your clients. El Mercado, Amor Amar and Central are three restaurants all right on the cutting edge of Limas finest dining experiences. Whilst Amor Amar and El Mercado focus on Peru's world famous seafood including the national dishes of tiradito and ceviche, Central concentrates on elegant surroundings and a relaxed atmosphere to deliver dishes that resemble artworks rather than dinner but deliver some of the finest tastes to be found in the city. If you would like more information regarding restaurants in Peru or even to organize a gastronomic journey from the coast over the Andes and into the Amazon please don't hesitate to get in touch with us.</p>
+<h3><strong style="text-decoration:underline;">NEW AIR ROUTES: New LAN destinations</strong></h3>
+<p>We are very excited about the new LAN routes. Since last September we have flights from Lima to Galapagos via Guayaquil and Quito and from January 5th direct flights from Lima to Easter Islands will start every Wednesday and Sunday. Furthermore beginning January 16th direct connections with Iguazu will be offered from Lima. Wherever you want to fly from Lima you can do it via LAN!!</p>
+<h3><strong style="text-decoration:underline;">NEWS: Cusco one of the most popular cities of America</strong></h3>
+<p>Cusco, the Imperial city of the Incas, was chosen by thousands of readers of the American magazine Condé Nast Traveller among the top 10 destinations in America, during the Readers Choice Awards 2010. The best hotels in Peru,  according to the readers are the Monasterio Hotel in Cusco, Inkaterra Machu Picchu, Marriot in Lima and Libertador in Cusco.</p>
+<h3><strong style="text-decoration:underline;">New General Manager in our Peruvian office</strong></h3>
+<p>With great pleasure we want to introduce you to our new General Manager in Peru, Rodrigo Custodio. With almost 25 years of experience in the Peruvian travel industry, he has mainly been involved with adventure and nature expeditions, where he was running a multi-location operation including treks to Machu Picchu and four rainforest lodges in the Southern Amazon, very close to Cusco. A thorough professional, very environmentally aware and well connected, Rodrigo also has  excellent knowledge of new developing areas like Trujillo, Chiclayo and Chapapoyas which is right on the cutting edge of new products that you all demand from us!</p>
+<h3><strong style="text-decoration:underline;">NEWS: Air France will fly again to Lima</strong></h3>
+<p>From June 2011 Air France has re-commenced operations to Lima with 5 weekly services on Tuesdays, Thursdays, Fridays, Saturdays and Sundays. The French company is proud of strengthening a cultural and commercial exchange between France and Peru, one of the peak tourist destinations in Latin America. They plan to fly with Boeing 777-200, with a capacity for 309 people.</p>
+<h3><strong style="text-decoration:underline;">NEWS: Northern Peru witnesses another important archaeological discovery at the site of the Lord of Sipan</strong></h3>
+<p>Upon its discovery in 1987, the site of The Lord of Sipan was heralded as the King Tut of South America for the elaborate jewellery within the tomb including pieces made of gold silver and semi-precious stones. Those travelling to Peru's north will now have the opportunity not only to see the Lord of Sipan's tomb but also the ongoing excavations which recently uncovered an entire family buried close by which are believed to date back over 1800 years predating the Lord of Sipan by 120 years.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

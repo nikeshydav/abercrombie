@@ -1,0 +1,1229 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--popup-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=16; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+		}
+	}
+}
+</script>
+<!--popup-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/uk-ireland-banner10.jpg" alt="UK-Ireland" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="europe.html">Europe</a></li>
+<li><a href="europe-uk-ireland.html">UK &amp; Ireland</a></li>
+<li>Special Interest Groups</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="europe.html">Europe</a></h5>
+        <ul>
+          <li><a href="europe-uk-ireland.html" title="UK &amp; Ireland"><span>-</span> UK &amp; Ireland</a>
+          <ul>
+              <li><a href="europe-uk-ireland.html" title="UK &amp; Ireland"><span>-</span> Introduction to UK &amp; Ireland</a></li>
+              <li><a href="europe-uk-ireland-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="europe-uk-ireland-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="europe-uk-ireland-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+              <li><a href="../about/uk-office.html" title="A&amp;K office in UK &amp; Ireland"><span>-</span> A&amp;K office in UK &amp; Ireland</a></li>
+              <li><a href="europe-uk-ireland-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>    <li><a href="europe-news.html?id=4" title="News"><span>-</span> News</a></li>
+              <li><a href="uk-ireland-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+              <li><a href="europe-uk-ireland-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li> <li><a href="europe-uk-ireland-luxury-rail-journey.html" title="Luxury Rail Journey"><span>-</span> Luxury Rail Journey</a></li>
+ <li><a href="../journeystyles/famity-holday.html" title="Family Holidays"><span>-</span> Family Holidays</a></li>
+              <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>
+              <li><a href="europe-uk-special-interest-groups.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+              <li><a href="../journeystyles/ak-villas.html" title="A&k Villas"><span>-</span> A&k Villas</a></li>
+<li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
+  
+            </ul>
+          </li>
+      
+          <li><a href="europe-spain-portugal.html" title="Spain &amp; Portugal"><span>+</span> Spain &amp; Portugal </a></li>
+          <li><a href="europe-italy-croatia.html" title="Italy &amp; Croatia">+ Italy &amp; Croatia</a>          
+          </li>
+          <li><a href="europe-russia.html" title="Russia"><span>+</span> Russia</a></li>
+          <li><a href="europe-rest-europe.html" title="Rest of Europe"><span>+</span> Rest of Europe</a></li> <li><a href="europe-france.html"  title="France"><span>+</span> France</a></li>   
+        
+          <li><a href="#" class="cursorauto"  title="Benelux"><span>+</span> Benelux </a></li>
+          <li><a href="#" class="cursorauto"  title="Greece"><span>+</span> Greece </a></li>
+          <li><a href="#" class="cursorauto" title="Germany"><span>+</span> Germany </a></li>
+          <li><a href="#" class="cursorauto" title="Poland"><span>+</span> Poland </a></li>
+          <li><a href="#"class="cursorauto"  title="Austria"><span>+</span> Austria </a></li>
+          
+		 <li><a href="#" class="cursorauto" title="Turkey"><span>+</span> Turkey</a></li>
+		
+ </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Special Interest Groups</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
+<div class="Clr"></div>
+<div class="count-page"> <a href="europe-uk-special-interest-groups.html">< Prev  </a>| <a href="europe-uk-special-interest-groups.html">1</a> | <a href="europe-uk-special-interest-groups2.html"><strong> 2</strong></a> </div>
+<div class="Clr"></div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/london-bath1.jpg" alt="london-bath1" width="326" height="210" /></div>
+<div class="rightbox"><h2>London and Bath</h2>
+<p><strong>Duration:</strong>  7 days<br />
+<strong>Highlights:</strong> London, Bath, Oxford   </p>
+<p>Discover the capital of England as well as the revered cities of Bath and Oxford</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/Estate-Cotswolds1.jpg" alt="Estate-Cotswolds" width="326" height="210" /></div>
+<div class="rightbox"><h2>Private Estate in the Cotswolds</h2>
+<p><strong>Duration:</strong> 9 days<br />
+<strong>Highlights:</strong> Georgian Bath, Salisbury, Stonehenge, Cotswolds villages - Lechlade, Bibury & Burford, Oxford's Christchurch College, Windsor Castle, London </p>
+<p>Enjoy the privacy of your own country house estate in the glorious English countryside in the </p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/scottish-estate.jpg" alt="Scottish-private" width="326" height="210" /></div>
+<div class="rightbox"><h2>Scottish Private Estate</h2>
+<p><strong>Duration:</strong>  10 days<br />
+<strong>Highlights:</strong>  Edinburgh Castle, Castle of Mey shooting  </p>
+<p>Live like a Laird on a private nature reserve in the Scottish Highlands amidst a glorious natural landscape. Outdoor activities: 4x4 Wilderness experiences, Ranger guided walks, mountain </p>
+</div>
+<div class="bottom">
+
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px; padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="Clr"></div>
+<div class="count-page"> <a href="europe-uk-special-interest-groups.html">< Prev  </a>| <a href="europe-uk-special-interest-groups.html">1</a> | <a href="europe-uk-special-interest-groups2.html"><strong> 2</strong></a> </div>
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--London-Bath -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onClick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/London-Bath.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div><img src="../images/uk-ireland-logo.jpg" /></div>
+</div>
+<div id="tab1">
+
+<h1>London and Bath </h1>
+<div class="popupbanner"><img src="../images/uk-ireland-inner4.jpg" alt="Scotland" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  7 days  </p>
+<p>Discover the capital of England as well as the revered cities of Bath and Oxford</p>
+<p><strong>Highlights:</strong> London, Bath, Oxford</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive Edinburgh</h5>
+<p>Upon arrival at Edinburgh airport you will be met in the arrivals hall by your local representative and privately transferred to your hotel. Your representative will assist you with check-in procedures.</p>
+<p> <strong>Overnight:</strong> Balmoral Hotel</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Edinburgh</h5>
+<p>This morning, you will meet an expert local guide for a full day sightseeing tour of Scotland's capital city by private vehicle. You will first head up to Edinburgh Castle, where you will see the 'Honours of Scotland', the Scottish Crown Jewels, and obtain stunning views of the city. You will then continue down the Royal Mile, past St. Giles High Kirk, to Holyrood Palace, the Queen's official residence in Scotland. You will tour the staterooms of the palace if no member of the Royal Family is staying here at the time.</p>
+ <p>
+This afternoon, start by visiting the National Gallery of Scotland where a curator will take you on a tour of the highlights. Later you will drive down to the city docks at Leith, where you will board the former Royal Yacht Britannia, now permanently moored here, for a semi-private early evening tour. Built in Scotland, this ship was used by the Royal Family for many official voyages during her working life.</p>
+<p>
+<strong>Overnight:</strong> Balmoral Hotel
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>The Borders of Scotland</h5>
+<p>You will meet your driver-guide who will take you on a full day excursion into the Scottish Borders in a vintage Rolls Royce or Daimler vehicle. The River Tweed, one of the finest salmon rivers in Britain, runs through this area of pleasant hills and rolling agricultural land. This is Walter Scott Country, and you will visit his house at Abbotsford. Still owned by his descendants, you can see where the novelist worked and look at some of his memorabilia. You will also visit the nearby woollen mill town of Melrose, site of one of the region's many ruined abbey churches.</p>
+<p>
+Later, you will visit Traquair House, the oldest inhabited house in Scotland.  Known for its gates that will remain shut until a member of the Stuart family sits again on the British throne, this house boasts its own brewery. On your return to Edinburgh you may also visit Rosslyn Chapel, this small but very ornately carved church has achieved fame recently as a location featured in 'The Da Vinci Code'.</p>
+<p>
+<strong>Overnight:</strong> Balmoral Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Edinburgh - Perth - Fort William</h5>
+<p>Your driver-guide will take you on a full day journey by private vehicle into the Highlands of Scotland.  You will make your first stop in Perth, where you will be able to visit Scone Palace, a mansion built on the site of the coronation of the medieval kings of Scotland. Continue north into the Scottish Highlands, and stop to visit the Edradour Scotch whisky distillery, the smallest in Scotland, where you will be treated to a tasting of various malts of different ages. Afterwards you will continue to your hotel in Fort William, one of the main towns in the region. You will be confirmed for 3 nights at Inverlochy Castle, the finest country house hotel in Scotland.</p>
+<p>
+<strong>Overnight:</strong> Inverlochy Castle<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Loch Ness and the Great Glen</h5>
+<p> Today you will see some of Scotland's best-known places on a full day journey to Fort William with your driver-guide and private vehicle.  Drive along the River Ness until you reach Loch Ness, home of the fabled monster. You can visit the ruins of Urquhart Castle that dominate the deepest part of the lake. If you prefer, why not take a privately-chartered cruise on a boat which has sonar equipment on board to scan for mysterious objects in the water.</p>
+<p>
+Continue to Inverness, where you will cross the battlefield of Culloden Moor, scene of the battle where Bonnie Prince Charlie was defeated in 1746 by government troops. On the return journey to Fort William, you may like to take the gondola up the Aonach Mor slope of Ben Nevis, Britain's highest mountain.</p>
+<p>
+<strong>Overnight:</strong> Inverlochy Castle
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>The Isle of Skye</h5>
+<p>Your driver-guide will lead you on a full day excursion to the Isle of Skye. The route starts by heading northwest over the mountains to Glen Shiel, the valley that will lead you to the West Coast.  In Loch Duich, you will visit the romantic Eilean Donan Castle, pictured on many postcards from Scotland.</p>
+<p>
+You will then drive over the bridge to the Isle of Skye, where you will still see road signs in the Gaelic language. Weather permitting you will obtain fine views of the Cuillin Hills in the centre of the island. Pause to obtain a flavour of the Gaelic heritage at the Clan Donald Centre. Lunch may be taken at Kinloch Lodge, the restaurant owned by Lady Claire MacDonald, one of Scotland's leading cookery writers.</p>
+<p>
+Return to the mainland by the ferry to Mallaig, and drive along the 'Road to the Isles' that leads to Fort William. En route, you will pass the Glenfinnan monument, where Bonnie Price Charlie raised his standard in 1745.</p>
+<p>
+<strong>Overnight:</strong> Inverlochy Castle
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+<li>
+<h4>Day 7</h4>
+<h5>Fort William - Loch Lomond and the Trossachs - Gleneagles</h5>
+<p>You will leave your hotel this morning for a full day of touring with your driver-guide in a private vehicle. Drive along Glencoe, scene of the Campbell atrocity against the McDonalds, crossing the windswept Rannoch Moor, and following the road down to Crianlarich.</p>
+<p>
+You will then drive south until you reach Loch Lomond, the largest body of inland water in Great Britain. Continue along the shore of the lake before turning east to drive through the area of hills and woods known as the Trossachs. This is the land of Rob Roy. You will reach your resort hotel, where the evening is yours to spend at leisure.</p>
+<p>
+You will be confirmed for 2 nights at the Gleneagles Hotel, the world-famous resort that has three 18-hole golf courses.</p>
+<p>
+<strong>Overnight:</strong> Gleneagles
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Glamis and St. Andrews</h5>
+<p>Your driver-guide will take you on a full day excursion eastwards. You will drive into the soft fruit-growing region called Strathmore. Here you will take a privately guided tour of the turreted Glamis Castle, the childhood home of the Queen Mother, and still home to the Bowes-Lyon family.</p>
+<p>
+You will then head south over the Sidlaw Hills, and cross the Tay Bridge over to Fife and head over to St. Andrews on the North Sea coast. Known throughout the world as the home of golf, St. Andrews was originally the ecclesiastical and educational capital of Scotland. You will visit the ruins of the cathedral, destroyed during the Reformation. You may also wish to visit the British Golf Museum, located next to the Royal and Ancient Clubhouse.</p>
+<p>
+You will return to your hotel from St. Andrews, where the evening is yours to spend at leisure.</p>
+<p>
+<strong>Overnight:</strong>  Gleneagles
+<strong>Meal Plan:</strong>  B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>Depart Edinburgh</h5>
+<p>Today you will be privately transferred to Edinburgh airport for your departure flight.</p>
+<p>
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="UK"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="London Bath"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="London-Bath.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="UK"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="London Bath"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Upon arrival at Kilimanjaro International airport you will be met and transferred by private vehicle to your lodge set on a coffee plantation in Arusha. The remainder of your day is at leisure.<br /><br />Arusha Coffee Lodge is located on a coffee plantation on the outskirts of Arusha. Designed around the original plantation houses but completely renovated to achieve the highest standards of comfort, the d&eacute;cor is luxuriant and stylish with undertones of the bygone days of early exploration. Each of the 18 plantation houses has been lavishly furnished and features a split level living area and a private deck. The lodge also boasts a coffee shop, patisserie, conference facilities and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arrive Kilimanjaro - Arusha", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today meet your private driver/guide in the lobby of your lodge for a short briefing before transferring to Swala Camp located within Tarangire National Park. This afternoon enjoy a game drive in Tarangire National Park. Tarangire is noted for its elephant population and spectacular baobabs of every shape creating a beautiful setting for your safari.<br /><br />Swala Camp is located under a majestic umbrella of acacia trees at the southwestern part of the park. The camp offers a peaceful setting for the traveller after a long day of game viewing. The camp is comprised of nine double tents and a mess tent with a common room. All tents face east overlooking the marshland and watering hole which are regularly visited by lions, buffalo and elephants.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Arusha - Tarangire", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>You will be awoken this morning with a steaming hot cup of tea or coffee served on the decking of your tent looking out over the waterhole. Enjoy an early breakfast before venturing out into Tarangire National Park by 4WD vehicle on exciting morning and afternoon game drives.&nbsp;<br /><br />The appeal of Tarangire National Park lies not only in the herds of migrating animals but also in the beauty of the landscape with its grand baobabs and acacia trees. During the dry season the animals migrate from as far north as Lake Natron, resulting in the resident population of wildebeest, zebra, eland, elephant, hartebeest, buffalo and fringe-eared oryx swelling and competing for Tarangire's permanent water pools.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Tarangire", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following an early breakfast, head out on a game drive before leaving Tarangire for Ngorongoro Crater highlands. Transfer to your lodge located adjacent to the Ngorongoro Conservation area. This afternoon is at leisure to participate in one of the many activities on offer at your lodge including coffee tasting, guided walks on the estate, bike riding or horse back riding.&nbsp;<br /><br />The Manor at Ngorongoro is reminiscent of an elegant, up country farm home in the Cape Dutch style of architecture. With its 20 luxurious guest cottage suites, this is a luxury safari experience fusing East African safari hospitality with old world Afro-European architecture and d&eacute;cor.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Tarangire - Ngorongoro Crater", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before transferring to the Ngorongoro Crater. Descend to the crater floor by 4WD safari vehicle for a game drive unlike any other you will experience in Africa with the forest-covered crater walls rising around you. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -4.0295777;
+					var minLng = 35.566932;
+					var maxLat = -3.172344;
+					var maxLng = 36.67445;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--London-Bath -->
+<!--Private Estate in the Cotswolds-->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Private-Estate-Cotswolds.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/uk-ireland-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+
+<div id="tab5" style="display:block;">
+<h1>PRIVATE ESTATE IN THE COTSWOLDS</h1>
+<div class="popupbanner"><img src="../images/uk-ireland-inner7.jpg" alt="Summer Escape to Scotland and Ireland" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  9 days </p>
+<p>Enjoy the privacy of your own country house estate in the glorious English countryside in the heart of the Cotswolds.</p>
+<p><strong>Highlights:</strong> Georgian Bath, Salisbury, Stonehenge, Cotswolds villages - Lechlade, Bibury & Burford, Oxford's Christchurch College, Windsor Castle, London </p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE IN BATH</h5>
+<p>You are met at the airport by your private representative after which you will be transferred to your hotel in the heart of Georgian Bath.</p>
+<p>
+Your local representative will meet you at the hotel reception and assist you with checking in. He/she will run through your itinerary with you and answer any questions you may have. Your representative is then available by telephone throughout your vacation to answer any queries.</p>
+<p><strong>Overnight:</strong> Royal Crescent Hotel</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>EXPLORE GEORGIAN BATH</h5>
+<p> This morning you will take a walking tour with a local guide to explore the beautiful Georgian city of Bath, often regarded as one of the loveliest cities in all of England.</p>
+<p>From its beginnings as a Roman camp in the first century AD, Bath developed through troubled centuries to emerge in the 1700's as a fashionable "spa" resort. Some of England's best-preserved Georgian architecture is housed here, together with fascinating relics of earlier eras. Visit the Roman Baths that were discovered in an excellent state of preservation near to Bath Abbey church and also see the magnificent Palladian architecture for which the city is renowned, seen at its best in the Circus and the Royal Crescent.
+</p>
+<p><strong>Overnight:</strong> Royal Crescent Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>BATH-STONEHENGE-COTSWOLDS</h5>
+<p>You will be joined this morning by a guide for a tour by private vehicle across the English countryside. You will head first to Salisbury, stopping to admire the thirteenth-century cathedral that boasts the highest medieval spire in England and also to visit the Chapter House, to see the best preserved of the four surviving original copies of the Magna Carta. Continue afterwards past the hill of Old Sarum on your way up to the Salisbury Plain. Here you will visit Stonehenge, arguably the most famous prehistoric site in Europe, it inspires wonder at the effort it must have taken to drag the enormous stones over the land and erect them in circles.</p>
+<p>From here, drive north into the Cotswold Hills to reach Little Faringdon House, the country house reserved exclusively for you for the next 4 nights. You are welcomed by the house staff, and this evening you will be served dinner in the elegant dining room.</p>
+<p>Little Faringdon House is a grade II listed Cotswold house with a mile long driveway set in private parkland. Sleeping up to 18 in 9 en-suite rooms, the estate is ideal for extended families and friends to explore and relax at leisure in quintessential English countryside.</p>
+<p>
+<strong>Overnight:</strong> Little Faringdon House<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>AT HOME IN THE COTSWOLDS</h5>
+<p> Peel away your crisp cotton sheets from your four-poster bed, hop into a luxurious bubble bath and head downstairs where your breakfast awaits you. Feeling fully recharged escape with your rental car to start the southern section of the Romantic Road of the Cotswolds.
+</p>
+<p>The first day will be spent exploring Lechlade, a bustling little town where Kelmscott Manor can be found, an old Cotswold manor house that was owned by William Morris, the founder of the 19th century Arts & Crafts movement. Situated on the south side of the Thames is a delightful example of a neo-classical country mansion, Buscot Park, interestingly once home to Lord Faringdon and a fantastic series of murals painstakingly produced by the Pre-Raphaelite painter Edward Burne-Jones. Before heading back to your own country pad why not hire a boat on the River Thames?</p>
+<p>Following dinner enjoy a film in your very own cinema room equipped with comfy armchairs and sofas.</p>
+<p><strong>Overnight:</strong> Little Faringdon House<br />
+<strong>Meal Plan:</strong>  B,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>THE SOUTHERN COTSWOLDS</h5>
+<p> Back on the winding country roads your next stop is Fairford which boasts a fine example of a 15th century Cotswold wool church, built on the proceeds of the medieval wool trade. The church is unique for its nearly complete set of ornate medieval painted windows depicting biblical stories.</p>
+<p>From here head to the chocolate box village of Bibury, one of the most photographed of all of the villages in England where quaint cottages, such as those in Arlington Row, date from the 14th century. Whilst exploring the pretty streets the local Trout Farm is well worth a visit and a stop off for afternoon tea next to the river shouldn't be missed.
+</p>
+<p>Prior to the evening meal why not explore the private parkland that belongs to the house, which includes ponds, a lake, an orchard and beautiful walks along the River Leach.</p>
+ <p><strong>Overnight:</strong>  Little Faringdon House<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>BURFORD &AMP; CIRENCESTER</h5>
+<p>Prior to continuing on the Romantic Road make a quick detour to Burford just 10 minutes drive away from Little Faringdon House. Burford was voted the 6th most idyllic destination in Europe by Forbes in 2009. Burford High Street sweeps down the hill towards the River Windrush and is lined with many interesting shops, including antiques shops, where souvenirs can be purchased. One of the local pubs is a great spot to sample some local cuisine for your lunch prior to heading to the self-styled capital of the Cotswolds, Cirencester.
+</p>
+<p>Cirencester dates back to Roman times, local artifacts and mosaics from which can be found on display at the fascinating Corinium Museum. A great selection of elegant shops allows for another opportunity to pick up some souvenirs. Alternatively stop off at Barnsley House (now a luxury hotel) which has one of the best-loved gardens in England, created by renowned horticulturalist Rosemary Verey. To complete the Romantic Road head back to Little Faringdon House via the town of Painswick, known for its immaculate 99 yew trees in the churchyard.</p>
+<p>Some members of the party may enjoy a gentle early evening horse ride or maybe a massage in the conservatory. With prior notice the staff would be more than happy to arrange this for you.</p>
+<p><strong>Overnight:</strong> Little Faringdon House<br />
+<strong>Meal Plan:</strong>  B,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>COTSWOLDS-OXFORD-WINDSOR-LONDON</h5>
+<p> On departure from Little Faringdon House you will be met by your guide who will take you on a full day tour (8 hours) into the English countryside. You will first head to Oxford, home to England's oldest university, where you may take a walk through the impressive buildings that are still home to the university's main ceremonial and educational functions, and visit Christchurch Cathedral. You also visit Christchurch College, where you will see scenes associated with the world of Lewis Carroll and the Harry Potter films.</p>
+<p>Continue to Windsor, where you will enjoy a tour of the largest inhabited castle in the world, which is also the Queen's favourite residence. Subject to opening restrictions, you may see the State Apartments, St George's Chapel and Queen Mary's Doll's House. You will also gain excellent views of Eton College from the castle ramparts, followed by a visit to the charming old town to peruse some of the boutiques and cafes.</p>
+<p>Continue to the newly renovated Langham hotel in London, where your evening is at leisure.</p>
+<p><strong>Overnight:</strong> The Langham<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>LONDON HIGHLIGHTS</h5>
+<p> Meet your local guide and private vehicle this morning for a half-day orientation tour of London. Your guide will point out the major landmarks of the city, including the Tower of London, St Paul's Cathedral, Tower Bridge, Westminster Abbey, the Houses of Parliament, Buckingham Palace and Trafalgar Square.</p>
+<p>You will also gain a spectacular panorama of the city from the London Eye, the world's largest observation wheel.</p>
+<p><strong>Overnight:</strong> The Langham<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>DEPART LONDON</h5>
+<p>Today you will be privately transferred to the airport for your journey home.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id =4;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="UK"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Private Estate Cotswolds"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Private-Estate-Cotswolds.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="UK"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Private Estate Cotswolds"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize2() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas2"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport and transfer to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />Just south of the equator Nairobi's main avenues blaze with colour from tropical bushes and vines. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch.<br /><br />Sitting in the formidable shadow of Africa's highest mountain, Amboseli Serena Lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of big game, from lion, buffalo, giraffe and wildebeest to some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies southeast of Nairobi, at the foot of Mount Kilimanjaro.&nbsp; The snow-capped peak of Mount Kilimanjaro rising above a saucer of clouds, dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge and then drive to the Kenya/Tanzania border town of Namanga. After immigration and customs formalities meet your Tanzania driver guides and drive to the town of Arusha for lunch.<br /><br />After lunch continue to Manyara. Dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley, the rooms blend gracefully with the serene natural surroundings. The lodge is located only a few minutes from Lake Manyara National Park.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Amboseli - Namanga - Arusha - Manyara", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning enjoy a game drive in the park before driving to the Ngorongoro Conservation area.<br /><br />Stop at Gibbs Farm, an old-colonial farmhouse for lunch. Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Manyara - Ngorongoro", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the full day game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park drive to your lodge with game viewing en-route. Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi. Upon arrival in Nairobi fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.&nbsp;</p><p>Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Serengeti - Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.&nbsp;</p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.6856509;
+					var maxLat = -1.274359;
+					var maxLng = 40.866667;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Private Estate in the Cotswolds-->
+<!--Scottish Private-->
+<div id="popup3" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli9"><a href="javascript:void(0)" onClick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli10"><a href="javascript:void(0)" onClick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli11"><a href="javascript:void(0)" onClick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli12"><a href="javascript:void(0)" onClick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Scottish-Private-Estate.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/uk-ireland-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+
+<div id="tab9" style="display:block;">
+<h1>SCOTTISH PRIVATE ESTATE</h1>
+<div class="popupbanner"><img src="../images/uk-ireland-inner7.jpg" alt="Summer Escape to Scotland and Ireland" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  10 days</p>
+<p>Live like a Laird on a private nature reserve in the Scottish Highlands amidst a glorious natural landscape. Outdoor activities: 4x4 Wilderness experiences, Ranger guided walks, mountain biking & Trout fly fishing. Optional: whisky tasting, pony trekking, clay bird</p>
+<p><strong>Highlights:</strong> Edinburgh Castle, Castle of Mey shooting.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE IN SCOTLAND</h5>
+<p>You are met at the airport and assisted with Customs formalities by your private local representative after which you will be transferred to your hotel in Edinburgh's city centre.</p>
+<p>Our local representative  will meet you at the hotel reception and assist you with checking in. He/she will run through your itinerary with you and answer any questions you may have. Your local representative is then available by telephone throughout your vacation to answer any queries.</p>
+<p><strong>Overnight:</strong>  Balmoral Hotel</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>SIGHTSEEING IN EDINBURGH</h5>
+<p> Today you will meet an expert local guide for a half day walking tour of the 'Old Town' of Edinburgh.  You will first head up to Edinburgh Castle, where you will see the 'Honours of Scotland', or the Scottish Crown Jewels, and admire stunning views of the city. You will then continue down the Royal Mile to St. Giles Cathedral, the national church of Scotland where you will hear stories of the walls that once divided the building, and of the buildings past and present that surrounded it.
+</p>
+<p><strong>Overnight:</strong> Balmoral Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>EDINBURGH-SCOTTISH HIGHLANDS</h5>
+<p>This morning, transfer by private vehicle to Edinburgh airport for your flight to the far north of Scotland (flight cost not included).</p>
+<p>
+Upon arrival at Wick airport, you will be met by your guide for the journey to your Highland retreat. As you are so close to the north coast of Scotland, you may visit John O' Groats, the most northerly village in Great Britain, and 836 miles from Land's End. Alternatively, you could visit the Castle of Mey, the romantic house that was the private home of the Queen Mother during her lifetime; a very personal visit, you can also see the garden that was created for her here in spite of the harsh local weather.</p>
+<p>
+Drive south across the windswept Caithness landscape, and head into Sutherland, one of the most scenic parts of the Scottish Highlands. Your Lodge, on it's own Scottish private estate and reserved exclusively for you for the next 4 nights, is located in a wonderful mountain setting not far from Skibo Castle, the former home of Andrew Carnegie. You will be welcomed by the staff and enjoy dinner this evening.</p>
+<p>
+<strong>Overnight:</strong> The Lodge<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>OUTDOOR PURSUITS IN THE SCOTTISH HIGHLANDS</h5>
+<p> Today is dedicated to activity. This morning, you will join one of the estate's Rangers for a guided three hour walk exploring the estate's nature reserve. The estate is made up of 23,000 glorious acres of Scottish wilderness at the narrowest point of the British Isles. From the highest point it is possible to see both the Atlantic Ocean and the North Sea. As well as enjoying the spectacular scenery and fresh air of the Highlands, you will learn from the Ranger about the pioneering work of the estate which aims to restore much of the native forest and the wildlife, such as wild boar, which is once again starting to roam freely in it's natural habitat. Your visit to the estate will contribute directly to this conservation project.</p>
+<p>
+After returning to the Lodge for lunch, you will have an afternoon free to explore the landscape by mountain bike.</p>
+<p>
+Upon return to the Lodge, it is time to unwind and enjoy a game of snooker in the Games Room or rest your aching limbs in the Lodge's sauna. Spa treatments may be booked on request (not included and advance booking recommended).</p>
+<p>
+<strong>Overnight:</strong> The Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>WILDERNESS &AMP; WILDLIFE EXPERIENCE BY 4 X 4</h5>
+<p> Today is dedicated to natural wildlife as you take a 4 x 4 Wilderness and Wildlife Experience tour with a Ranger. The estate's flora and fauna is a unique experience which includes the remnants of the 'Great Wood of Caledon' which covered much of Caledonia during Roman times. Birdlife at the estate is exceptional and include golden eagle, osprey, peregrine falcon and the merlin. We recommend you bring binoculars to truly appreciate the wildlife opportunities.</p>
+<p>
+Other wildlife includes the notoriously shy badger, which may be observed in a their hide. It may also be possible to spot deer, elk, Highland cattle, pine martin, red fox, and otter. Red squirrels, which have become almost extinct in the British Isles are currently being reintroduced on the estate and so keep your eyes peeled. One of the estate's conservation projects includes a study on wild boar, supervised by Oxford University's Wildlife Conservation Research Unit. Your Ranger will detail these projects to you first hand.</p>
+<p>
+Return to the Lodge for an ample lunch and then venture out for an afternoon with your choice of either trout fly fishing (1 April  -30 September) or to observe salmon leaping (seasonal). A selection of Orvis fishing rods and tackle are available at the Lodge for use during your stay.</p>
+<p>
+This evening, relax back at the comfortable Lodge. You may like to enjoy an optional whisky tasting by the fireside whilst your chef prepares your evening meal. (Tasting not included but can be arranged on request).</p>
+<p>
+<strong>Overnight:</strong> The Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>OPTIONAL CLAY BIRD SHOOTING, PONY TREKKING OR EXCURSION</h5>
+<p>Today you may choose simply to relax at the Lodge or explore the eastate further.</p>
+<p>
+Alternatively you may like to take advantage of one of optional activities such as clay bird shooting or pony trekking through the lochs and glens of the estate. There are pony tracks throughout the estate and your guide will inform you of the points of interest along the way, such as the ruins of old crofts left as silent evidence of the infamous Highland Clearances.</p>
+<p>
+For those wishing to explore the Highlands further there are a range of places to visit within driving distance. On the east coast, Dornoch is a quaint historic town that is home to a small cathedral church that was the venue for the wedding of Madonna and Guy Richie. Dornoch is also home to the most northerly of Scotland's great links golf courses, the Royal Dornoch.</p>
+<p>
+ To the north of here lies Dunrobin Castle, home of Lord Strathnaver. Built in a fairytale French style, this castle is one of the most unusual in appearance in Scotland; it has many richly furnished rooms to explore, and overlooks an extensive park. In the opposite direction in Tain is the Glenmorangie Distillery where many people's favorite brand of malt whisky is produced; distillery tours and tastings are available on all weekdays, and weekends during the Summer.</p>
+<p>
+Heading west through the mountains, you are treated to some of the finest scenery that Scotland has to offer. The mountains of this region present a bleak, glacially eroded landscape where it is possible to imagine the warfare that took place between the Highland clans in bygone eras. People stopping at the striking Falls of Shin may be able to see salmon attempting their great leap over the cascade in order to get upstream. Those who continue further west into the Assynt region see some famous mountains like Suilven and Quinag before reaching the Atlantic Coast. Lochinver and Ullapool are two attractive small towns that have excellent views over the ocean and the surrounding coastal hills.
+</p>
+<p><strong>Overnight:</strong> The Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>HIGHLANDS - GLENEAGLES VIA LOCH NESS, BEN NEVIS AND GLENCOE</h5>
+<p> Today you will see some of Scotland's best-known places on a full day journey to Gleneagles with your guide and private vehicle.  Leave Alladale and drive south to Inverness, the 'capital' of the Scottish Highlands, along the River Ness until you reach Loch Ness, home of the fabled monster. You will visit the ruins of Urquhart Castle that dominate the deepest part of the lake, and from where the monster has been seen more often than from any other place!</p>
+<p>
+Continue along the Great Glen past Ben Nevis, the highest mountain in Scotland, to Fort William that stands at the head of Loch Linnhe. Your route continues along Glencoe, scene of the infamous massacre of the MacDonalds by the Campbells. At the head of this valley, cross the wild and grandiose upland plain called Rannoch Moor. On reaching Crianlarich, turn east and head to Gleneagles Hotel.</p>
+<p>
+<strong>Overnight:</strong> Gleneagles<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>THE TROSSACHS &AMP; ABERFOYLE</h5>
+<p>  This morning your guide will lead you on an excursion into the Trossachs, the scenic region to the west of Gleneagles that was the lair of the infamous outlaw Rob Roy McGregor. Drive through the woods and hills of the region to Loch Katrine, where you will take a scenic boat cruise on this lonely and picturesque stretch of water.</p>
+<p>
+Return to Gleneagles via Aberfoyle, once the home of the Scottish Wool Centre where various breeds of sheep are reared whose fleeces are used locally.</p>
+<p>
+<strong>Overnight:</strong> Gleneagles<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>GLENEAGLES AND OPTIONAL EXCURSION TO STIRLNG</h5>
+<p> You may choose to spend a full day enjoying the excellent leisure facilities on the Gleneagles estate.</p>
+<p>
+For those seeking a more cultural experience, one possible excursion is to Stirling, where the castle is one of the most important historically in Scotland. The impressive Great Hall and the Chapel Royal dominate the plains around Stirling Bridge, where the 'Braveheart' William Wallace defeated the English army in 1297. To the south of Stirling, the Battlefield of Banockburn is where Robert the Bruce finally sent the English out from Scotland in 1314.</p>
+<p>
+Also near Gleneagles are the beautiful formal gardens of Drummond Castle where a guided tour with a horticulturalist can be arranged. If you think you have seen these gardens before, they were used as a main location in the film 'Rob Roy', based around the life of the notorious outlaw who lived in this area of central Scotland.</p>
+<p><strong>Overnight:</strong> Gleneagles<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>DEPART SCOTLAND</h5>
+<p> This morning, check out of your hotel and transfer by private vehicle to the airport for your return journey home.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+<div id="tab10" style="display:none;">
+<?php $id =4;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="UK"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Scottish Private Estate"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Scottish-Private-Estate.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab11" style="display:none;">
+<h1>Request a quote</h1>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="UK"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Scottish Private Estate"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+<div id="tab12" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize2() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas2"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport and transfer to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />Just south of the equator Nairobi's main avenues blaze with colour from tropical bushes and vines. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch.<br /><br />Sitting in the formidable shadow of Africa's highest mountain, Amboseli Serena Lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of big game, from lion, buffalo, giraffe and wildebeest to some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies southeast of Nairobi, at the foot of Mount Kilimanjaro.&nbsp; The snow-capped peak of Mount Kilimanjaro rising above a saucer of clouds, dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge and then drive to the Kenya/Tanzania border town of Namanga. After immigration and customs formalities meet your Tanzania driver guides and drive to the town of Arusha for lunch.<br /><br />After lunch continue to Manyara. Dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley, the rooms blend gracefully with the serene natural surroundings. The lodge is located only a few minutes from Lake Manyara National Park.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Amboseli - Namanga - Arusha - Manyara", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning enjoy a game drive in the park before driving to the Ngorongoro Conservation area.<br /><br />Stop at Gibbs Farm, an old-colonial farmhouse for lunch. Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Manyara - Ngorongoro", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the full day game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park drive to your lodge with game viewing en-route. Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi. Upon arrival in Nairobi fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.&nbsp;</p><p>Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Serengeti - Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.&nbsp;</p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.6856509;
+					var maxLat = -1.274359;
+					var maxLng = 40.866667;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Scottish Private-->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

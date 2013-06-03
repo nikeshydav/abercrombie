@@ -1,0 +1,1021 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Customized Trips South Africa, Escorted Journeys South Africa, Guided Tour to South Africa, Private Journeys, Group Tours, Group Travel, Special Interest Group to South Africa"/>
+<meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into South Africa and its people, and includes visit to Zimbabwe safari golf." />
+<title>Group Tours & Luxury Travel South Africa - Abercrombie & Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{		
+	
+	for(var i=1; i<=8; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+	}
+}
+</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/special-interest-groups.jpg" alt="Special Interest Groups" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="africa-southafrica.html">Africa</a></li>
+<li><a href="africa-botswana.html">South africa</a></li>
+<li>Special Interest Groups</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="africa.html">Africa</a></h5>
+        <ul>
+          <li><a href="africa-kenya.html" title="Kenya">+ Kenya</a></li>
+          <li><a href="africa-tanzania.html" title="Tanzania"><span>+</span> Tanzania</a></li>
+          <li><a href="africa-uganda.html" title="Uganda"><span>+</span> Uganda</a></li>
+          <li><a href="africa-southafrica.html" title="South Africa"><span>-</span> South Africa</a>
+		  <ul>
+              <li><a href="africa-southafrica.html" title="Introduction to South Africa"><span>-</span> Introduction to South Africa</a></li>
+              <li><a href="africa-southafrica-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="africa-southafrica-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="africa-southafrica-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+              <li><a href="../about/southafrica-office.html" title="A&amp;K office in South Africa"><span>-</span> A&amp;K office in South Africa</a></li>
+              <li><a href="africa-southafrica-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li> 
+              <li><a href="africa-news.html?id=6" title="News"><span>- </span>News</a></li>
+              <li><a href="africa-southafrica-special-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+              <li><a href="africa-southafrica-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+              
+              <!--<li><a href="../journeystyles/small-ship-cruiesing.html" title="Small ship cruising "><span>-</span> Small ship cruising </a></li>-->
+              <li><a href="../journeystyles/Luxury-rail-journey.html" title="Luxury Rail Journeys"><span>-</span> Luxury Rail Journeys </a></li>
+             <li><a href="../journeystyles/family-holidays.html" title="Family Holidays"><span>-</span> Family Holidays</a></li>
+              <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>
+                 <li><a href="../journeystyles/honeymoon.html" title="Honeymoon"><span>-</span> Honeymoon</a></li>
+              <li><a href="africa-southafrica-special-interst-groups.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+              <li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
+              <!--<li><a href="../journeystyles/private-mob-copm.html" title="Private Mobile Camping"><span>-</span> Private Mobile Camping</a></li>-->
+              <!--<li><a href="../journeystyles/ak-villas.html" title="A&amp;K Villas"><span>-</span> A&amp;K Villas</a></li>-->
+             <!-- <li><a href="southafrica-sanctuary-retreats.html" title="Sanctuary Retreats"><span>-</span> Sanctuary Retreats</a></li>-->
+            </ul>
+		  </li>
+		  <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a></li>   <li><a href="africa-zimbabwe.html" title="Zimbabwe" ><span>+</span> Zimbabwe</a></li><li><a href="africa-zambia.html" title="Zambia" ><span>+</span> Zambia</a></li><li><a href="africa-rwanda.html" title="Rwanda">+  Rwanda</a></li>
+<li><a href="javascript:void(0)" class="cursorauto" title="Namibia"><span>+</span> Namibia</a></li>         
+            </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Special Interest Groups</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/south-africa-zambia-pic.jpg" alt="South Africa and Zambia" /></div>
+<div class="rightbox"><h2>South Africa and Zambia</h2>
+<p><strong>Duration:</strong>  21 days<br />
+<strong>Highlights:</strong>  Johannesburg, Lusaka, South</p>
+<p>Luangwa National Park, Lower Zambezi National Park, George, Knysna, Hermanus, Phinda Private Game Reserve, Royal Malewane Private Game Reserve.  <br />The ultimate group itinerary combining beach </p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" id="view1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" id="view2" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" id="view3" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/zimbabwe-safari-golf.jpg" alt="Zimbabwe Safari Golf" /></div>
+<div class="rightbox"><h2>Zimbabwe Safari Golf</h2>
+<p><strong>Duration:</strong>  8 days<br />
+<strong>Highlights:</strong> Royal Harare Golf Club, Victoria Falls, Eastern HIghlands and Nakavango Estate.</p>
+<p>Play an 18 hole round of golf amidst the spectacular scenery of Zimbabwe in an atmosphere of historic style and charm.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+
+
+
+
+<div class="Clr"></div>
+</div>
+
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<!-- South Africa and Zambia Popup Content Start Here -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/south-africa-zambia.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/south-africa-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<div class="logoinner1"><img src="../images/south-africa-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>South Africa and Zambia</h1>
+<div class="popupbanner"><img src="../images/south-africa-inner7.jpg" alt="South Africa and Zambia" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 8 days</p>
+<p>The ultimate group itinerary combining beach and bush - stay in luxurious camps and lodges in some of South Africa and Zambia's most remote national parks and private game reserves. The programme also includes a stay on the coast.</p>
+<p><strong>Highlights:</strong> Johannesburg, Lusaka, South Luangwa National Park, Lower Zambezi National Park, George, Knysna, Hermanus, Phinda Private Game Reserve, Royal Malewane Private Game Reserve. </p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive Johannesburg </h5>
+<p>On arrival at OR Tambo International Airport, please clear customs and immigrations and collect your luggage. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to the hotel. The transfer is approximately 45 minutes.</p>
+<p>Nestled in the exclusive Sandton suburb of Sandhurst, Saxon makes a world-class statement of ethnic African elegance, combined with attention to detail. Saxon was the home of Nelson Mandela after he was released from prison, and it was here that South Africa's former president edited his autobiography, "The Long Walk to Freedom".</p>
+<p>The remainder of the day is at leisure.</p>
+<p><strong>Overnight:</strong> The Saxon Hotel<br />
+<strong>Meal Plan:</strong> </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Johannesburg - Lusaka</h5>
+<p>This morning transfer to OR Tambo International Airport for your scheduled flight to Lusaka. </p>
+<p>On arrival at Lusaka Airport, clear customs and immigrations, after which you will be assisted to your shared charter flight to Mfuwe. The flying time is approximately 1 hour.</p>
+<p>Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which may affect the flying time.</p>
+<p>On arrival at the Mfuwe Airstrip, you will be met by a camp representative and transferred to the camp. The transfer time is approximately 1 hour 30 minutes.</p>
+<p>Puku Ridge Tented Camp is situated in a remote wildlife rich area in South Luangwa National Park. Named after the elusive Puku antelope which never strays far from water, this beautiful camp among the trees overlooks a sweeping expanse of the fertile Kakumbi dambo (valley).</p>
+<p>Puku Ridge Tented Camp is small and intimate , built unobtrusively close to the wild. Each of the seven comfortably furnished safari tents has its own private bathroom which provides the option of taking a shower with the sun on your shoulders. Well-lit pathways, cleared of undergrowth, connect the tents to the main bar/lounge.</p>
+<p>Game viewing includes elephant, lion, wild dog, buffalo and a wide variety of antelope in addition to endemic species such as Thornicroft's giraffe and Cookson's wildebeest. This is also an excellent area for leopards. There is time for two game activities per day. There are wonderful opportunities for walking safaris and night drives in this area of Zambia. Guided walks by a professional guide and an armed national parks scout. There is a full range of game drives and night drives in South Luangwa National Park using open four wheel-drive vehicles driven by a knowledgeable guide.</p>
+<p>The afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Puku Ridge Tented Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>South Luangwa National Park</h5>
+<p>The day is at leisure to enjoy the game viewing activities on offer.</p>
+<p><strong>Overnight:</strong> Puku Ridge Tented Camp  <br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>South Luangwa National Park - Lower Zambezi National Park</h5>
+<p>Enjoy an early morning game viewing activity. After breakfast a camp representative will transfer you to the Mfuwe Airstrip for your shared light aircraft charter flight to Kulefu. The flying time is approximately 1 hour and 40 minutes.</p>
+<p>Kindly note, however, that all inter camp flights are subject to multiple pick ups and drop offs en route to your destination which may affect the flying time.</p>
+<p>On arrival at Kulefu Airstrip, you will be met by a camp representative and transferred the short distance to the camp. The transfer time is approximately 15 minutes by boat.</p>
+<p>The Lower Zambezi was for many years a forgotten wilderness, lying along the northern banks of the Zambezi River opposite Mana Pools National Park. Enjoy the beautiful riverbank setting at Kulefu which offers excellent game viewing opportunities as the wildlife is concentrated in the land corridor between the steep escarpment and the river.</p>
+<p>The camp is located on the banks of one of the permanent channels of the Zambezi River in a lovely sheltered and shady area, and provides a sophisticated and luxurious atmosphere. The camp boasts a riverside lounge nestled under the enormous acacia trees, a swimming pool and an evening fire pit. The camp offers eight tents with bathtubs overlooking the river.</p>
+<p>Activities include guided game drives in open 4x4 vehicles and guided night game drives in open vehicles to enable guests to see nocturnal animals. Guests can also enjoy exciting boat and canoe excursions or enjoy the variety of bird species available in the area. Fantastic walking safaris are also a highlight at Kulefu as well as relaxing fishing activities.</p>
+<p>The afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Zambezi Kulefu Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Lower Zambezi National Park</h5>
+<p>The day is at leisure to enjoy the game viewing activities on offer.</p>
+<p><strong>Overnight:</strong> Zambezi Kulefu Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Lower Zambezi National Park </h5>
+<p>The day is at leisure to enjoy the game viewing activities on offer.</p>
+<p><strong>Overnight:</strong> Zambezi Kulefu Camp <br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Lusaka - Johannesburg </h5>
+<p>Enjoy an early morning game viewing activity. After breakfast a camp representative will transfer you to Kulefu Airstrip for your shared light aircraft charter flight to Lusaka. The flying time is approximately 50 minutes. Depart Lusaka on a scheduled flight to Johannesburg.</p>
+<p>On arrival at OR Tambo International Airport, please clear customs and immigrations. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to the hotel.</p>
+<p>The remainder of the day is at leisure.</p>
+<p><strong>Overnight:</strong> The Saxon Hotel <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Johannesburg - George</h5>
+<p>This morning transfer to the airpirt for your scheduled flight to George.</p>
+<p>On arrival at George Airport a representative will meet and transfer you to Pezula Resort. It is the first luxury resort estate in Africa, located on dramatic cliffs overlooking four kilometres of spectacular coastline and rolling sea near Knysna on the Garden Route.</p>
+<p>Pezula Resort's 18 hole golf course offers an exciting challenge to keen amateurs and world-class professionals. Activities also include horse-riding, tennis, cricket, cycling, mountain biking, jogging, outdoor or indoor aquacise, hiking, yachting, kayaking, diving and fishing.</p>
+<p>The remainder of the day is at leisure.</p>
+<p><strong>Overnight:</strong> Pezula Resort Hotel &amp; Spa   <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>Knysna</h5>
+<p>Your day is at leisure to enjoy this beautiful area and to take advantage of the many activities on offer at the resort.</p>
+<p><strong>Overnight:</strong> Pezula Resort Hotel &amp; Spa<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>Knysna</h5>
+<p>Your day is at leisure to enjoy this beautiful area and to take advantage of the many activities on offer at the resort.</p>
+<p><strong>Overnight:</strong> Pezula Resort Hotel &amp; Spa<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 11</h4>
+<h5>Knysna</h5>
+<p>Your day is at leisure to enjoy this beautiful area and to take advantage of the many activities on offer at the resort.</p>
+<p><strong>Overnight:</strong> Pezula Resort Hotel &amp; Spa<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 12</h4>
+<h5>Knysna - Hermanus  </h5>
+<p>This morning transfer to Hermanus. The transfer time is approximately five hours.</p>
+<p>Perched high on the cliffs of Hermanus and overlooking Walker Bay, Birkenhead House is the perfect destination for those seeking a luxury holiday by the sea.</p>
+<p>Rolling lawns, which are ideal for picnics, surround the hotel and sundowners can be enjoyed from the terrace that overlooks a number of beautiful beaches. There are plenty of activities to keep you busy during your stay at Birkenhead House including golf, whale watching, bird watching and nature walks along the scenic coastline or the fynbos covered mountains. A good selection of beaches are on your doorstep including Nanny's or Karma Bay Beach, Voelkop which is great for bathing, and Grotto beach which is the largest and longest in Hermanus.</p>
+<p><strong>Overnight:</strong> Birkenhead House  <br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 13</h4>
+<h5>Hermanus</h5>
+<p>The day is at leisure.</p>
+<p><strong>Overnight:</strong> Birkenhead House  <br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 14</h4>
+<h5>Hermanus - Durban  </h5>
+<p>This morning transfer to Cape Town Airport for your scheduled flight to Durban.</p>
+<p>On arrival at Durban Airport, please make your way to the Federal Air Lounge to board a shared Federal Air light aircraft charter flight to Phinda Vlei. The transfer takes approximately one hour.</p>
+<p>Intimate and elegant, Phinda Vlei Lodge comprises six thatched suites with en suite bathrooms, dressing rooms, private plunge pools and decks which overlook the vlei where you're likely to observe herds of grazing antelope, zebra and a dazzling variety of birdlife.</p>
+<p>Delicious Pan-African cuisine is served to you on the game-viewing decks, or in a dramatic bush setting near the lodge. Phinda is renowned for its unforgettable bush banquets in beautiful, remote settings.</p>
+<p>The afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Phinda Vlei Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 15</h4>
+<h5>Phinda Private Game Reserve</h5>
+<p>The day is at leisure to enjoy the game viewing activities on offer.</p>
+<p><strong>Overnight:</strong> Phinda Vlei Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 16</h4>
+<h5>Phinda Private Game Reserve</h5>
+<p>The day is at leisure to enjoy the game viewing activities on offer.</p>
+<p><strong>Overnight:</strong> Phinda Vlei Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 17</h4>
+<h5>Phinda Private Game Reserve - Royal Malewane Private Game Reserve </h5>
+<p>Enjoy an early morning game viewing activity. After breakfast a lodge representative will transfer you to the nearby airstrip. Depart Phinda on a shared Federal Air light aircraft charter flight to Royal Malewane. The flying time is approximately 1 hour and 30 minutes.</p>
+<p>The joys of a bygone era await you at Royal Malewane, situated within the greater Kruger National Park in South Africa. Accommodating a maximum of 20 guests in the utmost colonial splendour, Royal Malewane is an exclusive getaway for those who value privacy, personalised service and the best game viewing Africa has to offer. As the suites are set deep in the African bush - this unspoilt paradise may not suit those who seek a tame, sterile environment. Rather, it suits the more adventurous traveller who wants to experience true Africa.</p>
+<p>Stretching out majestically in the shade of Acacia thorn and boasting panoramic views, the Royal Malewane suites are the pinnacle of refinement and opulence and are the largest in Africa at 210 square meters. These ultra luxurious private hideaways accommodate four guests each in two en-suite rooms, private lounge and dining facilities. Complimentary services include a private butler and chef, private game drives and up to four complimentary massages per suite per day.</p>
+<p>Game viewing at Royal Malewane provides guests with the best opportunities for seeing the natural abundance of big game on the 12,000 hectare reserve, home of the "Big Five" - lion, leopard, elephant, buffalo and rhino. Over 250 recorded bird species are also to be found in the Reserve. Game viewing is tailored to guests' individual needs, either by open Land Rover or on foot. Our expert ranger and master tracker (one of only two in South Africa) accompany the guests.</p>
+<p>This afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Royal Malewane<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 18</h4>
+<h5>Royal Malewane Private Game Reserve  </h5>
+<p>Today is at leisure to enjoy the game viewing activities on offer.</p>
+<p>The order of the day is typically: Early morning game drive followed by a leisurely breakfast. Thereafter, guests can enjoy the luxury of the camp before lunch is served. An afternoon game drive and sundowners follow the sumptuous high tea, culminating in a night drive in search of exciting nocturnal game. Dinner is served under the African sky or in the dining areas.</p>
+<p><strong>Overnight:</strong> Royal Malewane<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 19</h4>
+<h5>Royal Malewane Private Game Reserve</h5>
+<p>Today is at leisure to enjoy the game viewing activities on offer.</p>
+<p>The order of the day is typically: Early morning game drive followed by a leisurely breakfast. Thereafter, guests can enjoy the luxury of the camp before lunch is served. An afternoon game drive and sundowners follow the sumptuous high tea, culminating in a night drive in search of exciting nocturnal game. Dinner is served under the African sky or in the dining areas.</p>
+<p><strong>Overnight:</strong> Royal Malewane<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 20</h4>
+<h5>Royal Malewane Private Game Reserve</h5>
+<p>Today is at leisure to enjoy the game viewing activities on offer.</p>
+<p>The order of the day is typically: Early morning game drive followed by a leisurely breakfast. Thereafter, guests can enjoy the luxury of the camp before lunch is served. An afternoon game drive and sundowners follow the sumptuous high tea, culminating in a night drive in search of exciting nocturnal game. Dinner is served under the African sky or in the dining areas</p>
+<p><strong>Overnight:</strong> Royal Malewane<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 21</h4>
+<h5>Royal Malewane Private Game Reserve - Depart Johannesburg</h5>
+<p>Time permitting enjoy a morning game viewing activity at the lodge. After breakfast transfer to the nearby airstrip. Depart Royal Malewane on a scheduled Federal Air light aircraft charter flight to Johannesburg.</p>
+<p>On arrival in Johannesburg at the Federal Air Hangar, a representative will meet and transfer you the short distance to the OR Tambo International Airport, for check in for your onward flight.</p>
+<p><strong>Overnight:</strong> <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<?php $id=17; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="South africa"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="South Africa and Zambia"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="south-africa-zambia.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="South Africa"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="South Africa and Zambia"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 20 - ';
+						description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /></p><p>The order of the day is typically: Early morning game drive followed by a leisurely breakfast. Thereafter, guests can enjoy the luxury of the camp before lunch is served. An afternoon game drive and sundowners follow the sumptuous high tea, culminating in a night drive in search of exciting nocturnal game. Dinner is served under the African sky or in the dining areas</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-23.821424, 31.4456179), "Royal Malewane Private Game Reserve", description, "20");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 21 - ';
+						description = description + "<p>Time permitting enjoy a morning game viewing activity at the lodge. After breakfast transfer to the nearby airstrip. Depart Royal Malewane on a scheduled Federal Air light aircraft charter flight to Johannesburg.<br /><br />On arrival in Johannesburg at the Federal Air Hangar, a representative will meet and transfer you the short distance to the OR Tambo International Airport, for check in for your onward flight.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-26.201486, 28.045869), "Royal Malewane Private Game Reserve - Depart Johannesburg", description, "21");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>On arrival at OR Tambo International Airport, please clear customs and immigrations and collect your luggage. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to the hotel. The transfer is approximately 45 minutes.<br /><br />Nestled in the exclusive Sandton suburb of Sandhurst, Saxon makes a world-class statement of ethnic African elegance, combined with attention to detail. Saxon was the home of Nelson Mandela after he was released from prison, and it was here that South Africa's former president edited his autobiography, The Long Walk to Freedom.<br /><br />The remainder of the day is at leisure.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-26.201486, 28.045869), "Arrive Johannesburg", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>This morning transfer to OR Tambo International Airport for your scheduled flight to Lusaka.&nbsp;</p><p>On arrival at Lusaka Airport, clear customs and immigrations, after which you will be assisted to your shared charter flight to Mfuwe. The flying time is approximately 1 hour.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which may affect the flying time.<br /><br />On arrival at the Mfuwe Airstrip, you will be met by a camp representative and transferred to the camp. The transfer time is approximately 1 hour 30 minutes.<br /><br />Puku Ridge Tented Camp is situated in a remote wildlife rich area in South Luangwa National Park. Named after the elusive Puku antelope which never strays far from water, this beautiful camp among the trees overlooks a sweeping expanse of the fertile Kakumbi dambo (valley).<br /><br />Puku Ridge Tented Camp is small and intimate , built unobtrusively close to the wild. Each of the seven comfortably furnished safari tents has its own private bathroom which provides the option of taking a shower with the sun on your shoulders. Well-lit pathways, cleared of undergrowth, connect the tents to the main bar/lounge.<br /><br />Game viewing includes elephant, lion, wild dog, buffalo and a wide variety of antelope in addition to endemic species such as Thornicroft's giraffe and Cookson's wildebeest. This is also an excellent area for leopards. There is time for two game activities per day. There are wonderful opportunities for walking safaris and night drives in this area of Zambia. Guided walks by a professional guide and an armed national parks scout. There is a full range of game drives and night drives in South Luangwa National Park using open four wheel-drive vehicles driven by a knowledgeable guide.<br /><br />The afternoon is at leisure to enjoy the game viewing activity on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "Johannesburg - Lusaka", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa National Park", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Enjoy an early morning game viewing activity. After breakfast a camp representative will transfer you to the Mfuwe Airstrip for your shared light aircraft charter flight to Kulefu. The flying time is approximately 1 hour and 40 minutes.<br /><br />Kindly note, however, that all inter camp flights are subject to multiple pick ups and drop offs en route to your destination which may affect the flying time.<br /><br />On arrival at Kulefu Airstrip, you will be met by a camp representative and transferred the short distance to the camp. The transfer time is approximately 15 minutes by boat.<br /><br />The Lower Zambezi was for many years a forgotten wilderness, lying along the northern banks of the Zambezi River opposite Mana Pools National Park. Enjoy the beautiful riverbank setting at Kulefu which offers excellent game viewing opportunities as the wildlife is concentrated in the land corridor between the steep escarpment and the river.<br /><br />The camp is located on the banks of one of the permanent channels of the Zambezi River in a lovely sheltered and shady area, and provides a sophisticated and luxurious atmosphere. The camp boasts a riverside lounge nestled under the enormous acacia trees, a swimming pool and an evening fire pit. The camp offers eight tents with bathtubs overlooking the river.<br /><br />Activities include guided game drives in open 4x4 vehicles and guided night game drives in open vehicles to enable guests to see nocturnal animals. Guests can also enjoy exciting boat and canoe excursions or enjoy the variety of bird species available in the area. Fantastic walking safaris are also a highlight at Kulefu as well as relaxing fishing activities.<br /><br />The afternoon is at leisure to enjoy the game viewing activity on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-15.627545, 29.464359), "South Luangwa National Park - Lower Zambezi National Park", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-15.627545, 29.464359), "Lower Zambezi National Park", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-15.627545, 29.464359), "Lower Zambezi National Park", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy an early morning game viewing activity. After breakfast a camp representative will transfer you to Kulefu Airstrip for your shared light aircraft charter flight to Lusaka. The flying time is approximately 50 minutes. Depart Lusaka on a scheduled flight to Johannesburg.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigrations. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to the hotel.<br /><br />The remainder of the day is at leisure.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-26.201486, 28.045869), "Lusaka - Johannesburg", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>This morning transfer to the airpirt for your scheduled flight to George.<br /><br />On arrival at George Airport a representative will meet and transfer you to Pezula Resort. It is the first luxury resort estate in Africa, located on dramatic cliffs overlooking four kilometres of spectacular coastline and rolling sea near Knysna on the Garden Route.<br /><br />Pezula Resort's 18 hole golf course offers an exciting challenge to keen amateurs and world-class professionals. Activities also include horse-riding, tennis, cricket, cycling, mountain biking, jogging, outdoor or indoor aquacise, hiking, yachting, kayaking, diving and fishing.<br /><br />The remainder of the day is at leisure.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-33.960549, 22.4561924), "Johannesburg - George", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>Your day is at leisure to enjoy this beautiful area and to take advantage of the many activities on offer at the resort.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-34.035704, 23.0512837), "Knysna", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>Your day is at leisure to enjoy this beautiful area and to take advantage of the many activities on offer at the resort.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-34.035704, 23.0512837), "Knysna", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>Your day is at leisure to enjoy this beautiful area and to take advantage of the many activities on offer at the resort.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-34.035704, 23.0512837), "Knysna", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 12 - ';
+						description = description + "<p>This morning transfer to Hermanus. The transfer time is approximately five hours.<br /><br />Perched high on the cliffs of Hermanus and overlooking Walker Bay, Birkenhead House is the perfect destination for those seeking a luxury holiday by the sea.<br /><br />Rolling lawns, which are ideal for picnics, surround the hotel and sundowners can be enjoyed from the terrace that overlooks a number of beautiful beaches. There are plenty of activities to keep you busy during your stay at Birkenhead House including golf, whale watching, bird watching and nature walks along the scenic coastline or the fynbos covered mountains. A good selection of beaches are on your doorstep including Nanny's or Karma Bay Beach, Voelkop which is great for bathing, and Grotto beach which is the largest and longest in Hermanus.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-34.420432, 19.239481), "Knysna - Hermanus", description, "12");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>The day is at leisure.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-34.420432, 19.239481), "Hermanus", description, "13");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>This morning transfer to Cape Town Airport for your scheduled flight to Durban.<br /><br />On arrival at Durban Airport, please make your way to the Federal Air Lounge to board a shared Federal Air light aircraft charter flight to Phinda Vlei. The transfer takes approximately one hour.<br /><br />Intimate and elegant, Phinda Vlei Lodge comprises six thatched suites with en suite bathrooms, dressing rooms, private plunge pools and decks which overlook the vlei where you're likely to observe herds of grazing antelope, zebra and a dazzling variety of birdlife.<br /><br />Delicious Pan-African cuisine is served to you on the game-viewing decks, or in a dramatic bush setting near the lodge. Phinda is renowned for its unforgettable bush banquets in beautiful, remote settings.<br /><br />The afternoon is at leisure to enjoy the game viewing activity on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-29.857801, 31.0256115), "Hermanus - Durban", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 15 - ';
+						description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-29.857801, 31.0256115), "Phinda Private Game Reserve", description, "15");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 16 - ';
+						description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-29.857801, 31.0256115), "Phinda Private Game Reserve", description, "16");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 17 - ';
+						description = description + "<p>Enjoy an early morning game viewing activity. After breakfast a lodge representative will transfer you to the nearby airstrip. Depart Phinda on a shared Federal Air light aircraft charter flight to Royal Malewane. The flying time is approximately 1 hour and 30 minutes.<br /><br />The joys of a bygone era await you at Royal Malewane, situated within the greater Kruger National Park in South Africa. Accommodating a maximum of 20 guests in the utmost colonial splendour, Royal Malewane is an exclusive getaway for those who value privacy, personalised service and the best game viewing Africa has to offer. As the suites are set deep in the African bush - this unspoilt paradise may not suit those who seek a tame, sterile environment. Rather, it suits the more adventurous traveller who wants to experience true Africa.<br /><br />Stretching out majestically in the shade of Acacia thorn and boasting panoramic views, the Royal Malewane suites are the pinnacle of refinement and opulence and are the largest in Africa at 210 square meters. These ultra luxurious private hideaways accommodate four guests each in two en-suite rooms, private lounge and dining facilities. Complimentary services include a private butler and chef, private game drives and up to four complimentary massages per suite per day.<br /><br />Game viewing at Royal Malewane provides guests with the best opportunities for seeing the natural abundance of big game on the 12,000 hectare reserve, home of the 'Big Five; - lion, leopard, elephant, buffalo and rhino. Over 250 recorded bird species are also to be found in the Reserve. Game viewing is tailored to guests' individual needs, either by open Land Rover or on foot. Our expert ranger and master tracker (one of only two in South Africa) accompany the guests.<br /><br />This afternoon is at leisure to enjoy the game viewing activity on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-23.821424, 31.4456179), "Phinda Private Game Reserve - Royal Malewane Private Game Reserve", description, "17");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 18 - ';
+						description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /></p><p>The order of the day is typically: Early morning game drive followed by a leisurely breakfast. Thereafter, guests can enjoy the luxury of the camp before lunch is served. An afternoon game drive and sundowners follow the sumptuous high tea, culminating in a night drive in search of exciting nocturnal game. Dinner is served under the African sky or in the dining areas.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-23.821424, 31.4456179), "Royal Malewane Private Game Reserve", description, "18");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 19 - ';
+						description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /></p><p>The order of the day is typically: Early morning game drive followed by a leisurely breakfast. Thereafter, guests can enjoy the luxury of the camp before lunch is served. An afternoon game drive and sundowners follow the sumptuous high tea, culminating in a night drive in search of exciting nocturnal game. Dinner is served under the African sky or in the dining areas.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-23.821424, 31.4456179), "Royal Malewane Private Game Reserve", description, "19");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -34.420432;
+					var minLng = 19.239481;
+					var maxLat = -12.693842;
+					var maxLng = 31.8107079;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- South Africa and Zambia Popup Content End Here -->
+
+<!-- Zimbabwe Safari Golf Popup Content Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/zimbabwe-safari-golf.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/south-africa-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<div class="logoinner1"><img src="../images/south-africa-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>Zimbabwe Safari Golf</h1>
+<div class="popupbanner"><img src="../images/south-africa-inner8.jpg" alt="Zimbabwe Safari Golf" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 8 days</p>
+<p>Play an 18 hole round of golf amidst the spectacular scenery of Zimbabwe in an atmosphere of historic style and charm.  </p>
+<p><strong>Highlights:</strong> Royal Harare Golf Club, Victoria Falls, Eastern HIghlands and Nakavango Estate. </p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Johannesburg to Harare </h5>
+<p>Arrive Johannesburg.</p>
+<p>Connecting flight to Harare.</p>
+<p>Meet &amp; greet then transfer to your hotel.</p>
+<p>One of the Leading Hotels of the world, this hotel offers five star luxury and comfort in Harare. Located in the central business and shopping districts of the city, overlooking the Africa Unity Square and colourful flower markets the hotel is a great choice for the discerning traveller. Facilities at the hotel include a beauty centre with sauna, swimming pool, gym, a number of restaurants including the award winning La Fontaine Grill Room and is less than 5 kilometres from three top golf courses.</p>
+<p>Afternoon city tour.</p>
+<p>Harare is a city of contrasts - combining the old and the new. The new section of the city is characterized by high rise buildings, tree-lined avenues while the older section of the town boasts buildings dating back to the early 1900s. Drive through the city and see the various landmarks such as the Parliament Buildings, the Supreme Court, Africa Unity Square (the historic place where the Union Jack Flag was raised by the first settlers), the Kopjie and finally a traditional African market.</p>
+<p><strong>Overnight:</strong> Meikles Hotel  <br />
+<strong>Meal Plan:</strong> D</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Harare  </h5>
+<p>Morning is at leisure.</p>
+<p>Afternoon round of golf at Royal Harare Golf Course.</p>
+<p>Royal Harare Golf Club. This 18 hole golf course is set amidst a picturesque wooded park land location. You will find a wide variety of birds and grazing deer in the fields. Different tournaments including local, national and international are organized by Royal Harare Golf Club, Harare in Zimbabwe.</p>
+<p>The place has been frequented by countless golf players all around the globe. Several private functions are also held in the club. Never miss a visit to this lovely golf course on your Harare Tours. There are a wide range of facilities in the course too for the players as well as the spectators.</p>
+<p><strong>Overnight:</strong> Meikles Hotel<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Harare to Eastern Highlands</h5>
+<p>Fly or drive to the Eastern Highlands of Zimbabwe.</p>
+<p>Enjoy a scenic drive east of the Capital City to the border town of Vumba in the Eastern Highlands. Continue through the picturesque mountains to Leopard Rock Hotel. The hotel is a tranquil haven set in the majestic Eastern Highlands of Zimbabwe. This classic, elegant and charming hotel with its "French Chateau" atmosphere has something special for everyone. Facilities at the hotel include a casino, two restaurants, and swimming pool.</p>
+<p>Afternoon at leisure for optional activities such as horse-riding, visit to the Botanical Gardens, and scenic walks. Other activities on offer include trips to the Bunga Forest. Travelling north will take you to Pungwe View, Honde View and the Mtarazi Falls - the 2nd highest waterfall in Africa with a drop of 762 metres. The nearby Leopard Rock Game Reserve hosts nyala, zebra, impala, wildebeest and kudu which can be seen during the game drives on offer.</p>
+<p><strong>Overnight:</strong> Leopard Rock Hotel<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Eastern Highlands </h5>
+<p>The golf course high up in the mountains offers a challenging game to the avid golfer - not to mention the astounding views. Enjoy a leisurely round this morning.</p>
+<p>Afternoon at leisure.</p>
+<p><strong>Overnight:</strong> Leopard Rock Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Eastern Highlands/ Harare then to Victoria Falls </h5>
+<p>Road transfer to Harare for connecting flight to Victoria Falls alternatively charter directly from Vumba to Victoria Falls.</p>
+<p>Transfer to your hotel.</p>
+<p>The Victoria Falls Hotel, popularly known as "the grand old lady of the Falls" is situated within the Victoria Falls National Park overlooking the Victoria Falls bridge and one of the gorges.</p>
+<p>This Edwardian-style five star hotel was built in 1904 and was recently refurbished to combine the charm of the old with the convenience of the new. Set in lush tropical gardens, the hotel provides the tranquillity and seclusion that guests seek.</p>
+<p>Evening sundowner cruise on the mighty Zambezi River.</p>
+<p>Unwind at the end of the day on board a cruise boat on the mighty Zambezi River. The sundowner cruise takes you through some of the channels of the river, offering an opportunity to see animals such as hippopotamus, elephant, crocodile as well as a variety of birdlife that inhabit the riverine vegetation.</p>
+<p>A selection of drinks &amp; snacks are served.</p>
+<p><strong>Overnight:</strong>  Victoria Falls Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Victoria Falls</h5>
+<p>Guided Tour of the mighty Victoria Falls. Wander through the rainforest and view the largest curtain of falling water from a number of panoramic viewing points. The evergreen rainforest is home to monkeys, baboons and other small animals such as the bushbuck. The Falls themselves vary in height from the Devil's Cataract being the lowest at 70 metres high to the Rainbow Falls at 108 metres. The Falls are split into 5 sections namely the Devil's Cataract, Main Falls, Horseshoe Falls, Rainbow Falls and the Eastern Cataract which make up this world wonder which is also a World Heritage Site.</p>
+<p>Afternoon round of golf on the 18 hole championship golf course designed by Gary Player located at Elephant Hills Resort.</p>
+<p><strong>Overnight:</strong> Victoria Falls Hotel <br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Victoria Falls</h5>
+<p>Morning round of golf.</p>
+<p>Afternoon Big 5 Safari on the nearby Nakavango Estate. This includes an elephant interaction, opportunity to walk with the lions, a visit to the rhino breeding programme and educational centre, a game drive through the reserve which has a variety of plains game, rhino, leopards, buffalo, and giraffe. At the end of the day sit back and enjoy a bush dinner under the African skies.</p>
+<p><strong>Overnight:</strong> Victoria Falls Hotel <br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Victoria Falls to Johannesburg </h5>
+<p>Transfer to Victoria Falls airport.</p>
+<p>Departure flight to Johannesburg.</p>
+<p>Connecting flight to outbound international flights.</p>
+<p><strong>Overnight:</strong> <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id=18; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="South africa"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Zimbabwe Safari Golf"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="zimbabwe-safari-golf.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="South africa"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Zimbabwe Safari Golf"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<div align=justify><p>Morning round of golf.</p></div><p>Afternoon Big 5 Safari on the nearby Nakavango Estate. This includes an elephant interaction, opportunity to walk with the lions, a visit to the rhino breeding programme and educational centre, a game drive through the reserve which has a variety of plains game, rhino, leopards, buffalo, and giraffe. At the end of the day sit back and enjoy a bush dinner under the African skies.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.82922, 31.053961), "Victoria Falls", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<div align=justify><p>Arrive Johannesburg.<br /><br />Connecting flight to Harare.<br /><br />Meet &amp; greet then transfer to your hotel.<br /><br />One of the Leading Hotels of the world, this hotel offers five star luxury and comfort in Harare. Located in the central business and shopping districts of the city, overlooking the Africa Unity Square and colourful flower markets the hotel is a great choice for the discerning traveller. Facilities at the hotel include a beauty centre with sauna, swimming pool, gym, a number of restaurants including the award winning La Fontaine Grill Room and is less than 5 kilometres from three top golf courses.<br /><br />Afternoon city tour.<br /><br />Harare is a city of contrasts - combining the old and the new. The new section of the city is characterized by high rise buildings, tree-lined avenues while the older section of the town boasts buildings dating back to the early 1900s. Drive through the city and see the various landmarks such as the Parliament Buildings, the Supreme Court, Africa Unity Square (the historic place where the Union Jack Flag was raised by the first settlers), the Kopjie and finally a traditional African market.</p></div>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.015438, 29.154857), "Johannesburg to Harare", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p align=justify>Morning is at leisure.<br /></p><p align=justify>Afternoon round of golf at Royal Harare Golf Course.<br /></p><div align=justify><p>Royal Harare Golf Club. This 18 hole golf course is set amidst a picturesque wooded park land location. You will find a wide variety of birds and grazing deer in the fields. Different tournaments including local, national and international are organized by Royal Harare Golf Club, Harare in Zimbabwe.</p><p>The place has been frequented by countless golf players all around the globe. Several private functions are also held in the club. Never miss a visit to this lovely golf course on your Harare Tours. There are a wide range of facilities in the course too for the players as well as the spectators.</p></div>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.82922, 31.053961), "Harare", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Fly or drive to the Eastern Highlands of Zimbabwe.<br /><br />Enjoy a scenic drive east of the Capital City to the border town of Vumba in the Eastern Highlands. Continue through the picturesque mountains to Leopard Rock Hotel. The hotel is a tranquil haven set in the majestic Eastern Highlands of Zimbabwe. This classic, elegant and charming hotel with its 'French Chateau' atmosphere has something special for everyone. Facilities at the hotel include a casino, two restaurants, and swimming pool.<br /><br />Afternoon at leisure for optional activities such as horse-riding, visit to the Botanical Gardens, and scenic walks. Other activities on offer include trips to the Bunga Forest. Travelling north will take you to Pungwe View, Honde View and the Mtarazi Falls - the 2nd highest waterfall in Africa with a drop of 762 metres. The nearby Leopard Rock Game Reserve hosts nyala, zebra, impala, wildebeest and kudu which can be seen during the game drives on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.115306, 26.8627), "Harare to Eastern Highlands", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>The golf course high up in the mountains offers a challenging game to the avid golfer - not to mention the astounding views. Enjoy a leisurely round this morning.<br /><br />Afternoon at leisure.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.999010, 25.8723649), "Eastern Highlands", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<div align=justify><p>Road transfer to Harare for connecting flight to Victoria Falls alternatively charter directly from Vumba to Victoria Falls.</p></div><p>Transfer to your hotel.<br /></p><p>The Victoria Falls Hotel, popularly known as 'the grand old lady of the Falls' is situated within the Victoria Falls National Park overlooking the Victoria Falls bridge and one of the gorges.<br /><br />This Edwardian-style five star hotel was built in 1904 and was recently refurbished to combine the charm of the old with the convenience of the new. Set in lush tropical gardens, the hotel provides the tranquillity and seclusion that guests seek.<br /><br />Evening sundowner cruise on the mighty Zambezi River.</p><p>Unwind at the end of the day on board a cruise boat on the mighty Zambezi River. The sundowner cruise takes you through some of the channels of the river, offering an opportunity to see animals such as hippopotamus, elephant, crocodile as well as a variety of birdlife that inhabit the riverine vegetation.<br /><br />A selection of drinks &amp; snacks are served.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.015438, 29.154857), "Eastern Highlands/ Harare then to Victoria Falls", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<div align=justify><p>Guided Tour of the mighty Victoria Falls. Wander through the rainforest and view the largest curtain of falling water from a number of panoramic viewing points. The evergreen rainforest is home to monkeys, baboons and other small animals such as the bushbuck. The Falls themselves vary in height from the Devil's Cataract being the lowest at 70 metres high to the Rainbow Falls at 108 metres. The Falls are split into 5 sections namely the Devil's Cataract, Main Falls, Horseshoe Falls, Rainbow Falls and the Eastern Cataract which make up this world wonder which is also a World Heritage Site.<br /><br />Afternoon round of golf on the 18 hole championship golf course designed by Gary Player located at Elephant Hills Resort.</p></div>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.999010, 25.8723649), "Victoria Falls", description, "6");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -19.015438;
+					var minLng = 25.8723649;
+					var maxLat = -6.115306;
+					var maxLng = 31.053961;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+		
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- Zimbabwe Safari Golf Popup Content End Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

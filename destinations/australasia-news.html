@@ -1,0 +1,532 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=2; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById("img"+i).style.display="";
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById("img"+i).style.display="none";
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquery-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="img1"><img src="../images/australia-banner7.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img2" style="display:none;"><img src="../images/newzealand-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="australasia.html">Australasia</a></li>
+<li> News</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>News</h4>
+<ul>
+<li><a href="africa-news.html" title="Africa">Africa</a></li>
+<li><a href="middle-east-north-africa-news.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="europe-news.html" title="Europe">Europe</a></li>
+<li><a href="australasia-news.html" title="Australasia">Australasia</a></li>
+<li><a href="china-orient-news.html" title="The Orient">The Orient</a></li>
+<li><a href="south-america-news.html" title="South America">South America</a></li>
+<li><a href="../news.html?id=7" title="North America">North America</a></li>
+<li><a href="../news.html?id=8" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="../news.html?id=9" title="Antarctica">Antarctica</a></li>
+</ul>
+<h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/famity-holday.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="#">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Australasia News</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="Australia"><span>Australia</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="New Zealand "><span>New Zealand</span></a></li>
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top"></div>
+<div class="tabtxtHolder-mid">
+<div id="tab1">
+<div style="float:right;"><a href="australasia-australia.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Australia Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Dining in The Woods</strong></h3>
+<p>The Woods, Four Seasons Hotel Sydney's adventurous new dining destination has thrown open its doors, paving the way for a new generation of hotel dining in Australia! </p> 
+<p>
+Sporting a chic contemporary yet rustic appearance, this stunning ground floor restaurant's ethos revolves around wood-fired cooking with Hamish Ingham at the helm as Restaurant Executive Chef. He is supported by his restaurateur partner Rebecca Lines who is overseeing The Woods' management.</p>
+<p>
+Created by award-winning designer, Michael McCann, The Woods draws in guests with its spectacular centrally located wood-fired oven and open-plan kitchen complete with wood-fired grill. Ingham sources fresh, home-grown produce which is cooked over a variety of naturally-flavoured Australian woods including apple wood, mushroom and mallee stumps.</p>
+<p>
+The wow factors include a creative live vertical herb wall which forms the backdrop to the chef's table, a hand-hewn butcher's block to display the home-made bread and butter, and a dramatic black and white cow hide wall hanging, which frames the open-plan cold kitchen.</p>
+<p>
+Guests can have a taste of The Woods at the restaurant's bar on entry which offers its own lighter menu, or go deeper into The Woods for the experience of a semi-private dining room which even has its own separate entry path, ideal for larger bookings and functions. </p>
+<p>
+Ingham's philosophy for The Woods is very much about the art of simplicity.  He showcases the purest ingredients in a light, fresh, balanced way using the evocative nature of burning wood.</p>
+<p>
+Breakfast<br />
+Monday to Friday<br />
+6:30 am - 10:00 am<br />
+Saturday, Sunday and public holidays<br />
+6:30 am - 11:00 am<br />
+</p>
+<p>
+Lunch<br />
+Monday to Friday<br />
+12:00 noon - 2:30 pm<br />
+</p>
+<p>
+Dinner<br />
+Monday to Saturday<br />
+5:30 pm - 10:30 pm</p>
+<h3><strong style="text-decoration:underline;">DescaradA2 - Luxury cruising in the Whitsundays</strong></h3>
+<p>The Whitsunday Islands and the surrounding waters are part of the protected Great Barrier Reef World Heritage Area. Only eight of the 74 Islands are inhabited, leaving the rest to pure nature. The area is known for its crystal clear waters, brilliant white sand beaches, spectacular coral reefs and majestic bush land.</p>
+<p>
+DescaradA2, Queensland's world class luxury cruise liner operates on the waters of this breathtakingly beautiful Whitsunday region.  DescaradA2, at 110 foot (33 metres) has four elegant cabins, ranging from a King Double, Double, Triple and Family Cabins, all with en-suites, with a maximum capacity of 12 guests.</p>
+<p>
+Once on-board an experienced and enthusiastic crew of four look after guests' needs. Bailey Price is the Executive Chef and Daniel Page, in the role of Host. Dan has trained by his own accord to become a Sommelier, working at some of NZ's top boutique resorts with a strong food & beverage emphasis, so has strong knowledge of Australia's finest wines. Bailey's cuisine is inspired by fresh locally sourced Australian produce, creating menus that are light, fresh and healthy.</p>
+<p>
+You will visit the most beautiful locations in the Whitsundays - the pure white silica sands of Whitehaven Beach, Nara Inlet for aboriginal history and various reef sites including the Manta Ray Bay and Blue Pearl Bay for incredible snorkelling. You'll even get to brush with local celebrity "Elvis" the Maori Wrasse who you can be sure will put on a show for you on your visit.  Activities such as fishing, jet skiing, kayaking and bush walking are also available. </p> 
+<p>
+You can choose from a 3 night pre-scheduled cruise available twice a week or a private charter on a request basis from Hamilton Island.  DescaradA2 can be accessed directly from all east coast international gateway cities in less than three hours. Couples and families with older children welcome.</p>
+<p>
+The cruise includes full itinerary with activities, professional crew, accommodation, all meals (breakfast - morning tea - lunch - afternoon platter - 3 course dinner), non-alcoholic beverages, marine park & island fees & transfers to/from Hamilton Island airport.</p>
+<h3><strong style="text-decoration:underline;">Voyages Ayers Rock Resort indigenous tours</strong></h3>
+<p>With your next stay at Voyages Ayers Rock Resort, you will now have the opportunity for more interaction with the traditional owners of the land with the introduction of Voyages Indigenous Tourism Australia's complimentary indigenous activity schedule. Guests can take a guided garden walk through the Red Centre backyard with an insight into local flora and inside knowledge of how indigenous people traditionally lived and using the bush for food and medicinal purposes. Kids can enjoy an interactive indigenous art class using canvas or boomerangs (additional cost applies for the boomerang), giving them a unique momento to take home. Hear of Aboriginal history, culture and aboriginal dreamtime stories through the yarns of an aboriginal storyteller. Learn to throw a boomerang or spear, see traditional Wakagetti cultural dancers & wander through unique locally made art stalls at the indigenous art markets.</p>
+<p>
+We will ensure that if you are staying at the resort that you experience at least one of these unique indigenous experiences.</p>
+<h3><strong style="text-decoration:underline;">Lake Eyre in flood</strong></h3>
+<p>Now is the time to view Australia's largest salt lake, which is located 647 km north east of Adelaide in South Australia. Witnessing parts of the lake in full flood, is normally a 'once in a lifetime' occurrence, however due to the large amount of rain that has been flowing into the lake from the 1 million square kilometre Lake Eyre basin, parts of the lake currently remain spectacularly in flood for the third year running. The lake itself actually comprises of 2 lakes - Lake Eyre North & Lake Eyre South.</p>
+<p>
+The sheer size of the lake with its stunning range of colours is best viewed from the air onboard a private flight with expert pilot/guide. From the comfort of the aircraft, fly low over the green grass, pink algae in the lake, white salt on the Northern section of the lake and blue water in Belt Bay. Not only do you see the lake but the full day private scenic flight will take you over the multi-layered ancient landscape of the Flinders Ranges home of the strangely beautiful natural amphitheatre of Wilpena Pound. The tour will also visit Coopers Creek & the legendary Birdsville Track - a former stock route which cuts it way through the outback and stretches for 517km.</p>
+<p>
+Land at William Creek a tiny outback town with only 3 permanent residents and a dog! Step into the outback William Creek Hotel to try some delicious Aussie pub fare. Conclude the tour with a fly over the Anna Creek Station - the same size of Wales and proudly the largest cattle station in the World!</p>
+<p>
+This remarkable day tour departs from Adelaide and is seasonal depending on the flood waters.</p>
+<p>
+Please speak to an A&K Travel Specialist for further details and pricing.</p>
+<h3><strong style="text-decoration:underline;">El Questro - New Cliffside Retreats  </strong></h3>
+<p>El Questro homestead, located in the heart of the Kimberleys - one of the world's most unspoilt frontiers, was recently voted 2nd in Australian Traveller's list of Australia's 10 Luxury lodges in 2011. Exciting news is that they have just opened 3 new exclusive Cliff side Retreats situated on the edge of a sheer escarpment offering spectacular vistas over the Chamberlain River as it flows from the heart of the gorge.</p>
+<p>These architecturally designed suites feature:</p>
+.    Daybed and feather topped king size bed facing floor to ceiling sliding glass walls<br />
+.    Uninterrupted views of the El Questro wilderness and Chamberlain River<br />
+.    Spacious and light filled interiors<br />
+.    Quality furnishings and fittings  in keeping with the environment<br />
+.    Walk through wardrobe<br />
+.    Private ensuite with uninterrupted views of the landscape<br />
+.    Free standing bath on the Cliff Side Retreat Verandahs<br />
+.    Garden Rain shower surrounded by magnificent stone walls to preserve your privacy<br />
+.    Bose Wave CD Player, Ipod Dock<br />
+.    Bath and body treats from Aesop<br />
+.    Serviced twice daily
+<br />
+<p>
+The opening of the resort is seasonal from April to October annually and caters to a maximum of just 18 guests. We highly recommend a visit to the Kimberleys on your next visit to Australia with a 2 or 3 night stay at El Questro were you will be treated to the highest level of service, dining experiences and restrained luxury.</p>
+<h3><strong style="text-decoration:underline;">New Tours in Uluru - Uluru Highlights & Bush Tucker  </strong></h3>
+<p>Departing from Ayers Rock Resort, this 'Bush Tucker' adventure showcases the traditional bush food of Central Australia. Your Aboriginal host will walk you through the red countryside and you can learn how the local people once lived in such a hot desert climate surviving on a variety of bush plants and animals. Taste a selection of the bush foods, grind native seeds and take the opportunity to talk with your Aboriginal host about desert life.?</p>
+ <p>
+To make the most of your time in Central Australia, we recommend you book a 3 hour 'Uluru Highlights' tour before your 'Bush Tucker' adventure. You will travel towards Uluru; watching its vast shape rise from the sand dunes in the early dawn light highlighting its unmistakable presence in this country. Your guide will take you to a special location to watch the sun rise over this amazing monolith. You will learn the Creation stories of Liru (poisonous snake) and Kuniya (python) and hear about the Mala people. After breakfast visit the Mutitjulu Waterhole before driving around the base of Uluru before returning to the resort.</p>
+ <p>
+Uluru Highlights Inclusions: Professionally guided 3 hour tour and outback picnic breakfast</p>
+<p>Bush Tucker  Inclusions: Professionally guided 2 hour tour with samplings of a variety of bush foods and Aboriginal host.</p>
+ <p>
+Please note: Aboriginal hosts are traditional people with strong cultural obligations. When cultural events occur an Aboriginal host may not be available.</p>
+<h3><strong style="text-decoration:underline;">Chateau Yering - Home of luxury hospitality and fine dining  </strong></h3>
+<p>In the heart of Victoria's wine region of the Yarra Valley lies Chateau Yering, a graceful five star boutique hotel elegantly decorated with period fittings throughout, offering guests a luxury stay with fine dining.  </p>
+<p>
+Recently their signature restaurant 'Eleonore's was named the 'National Fine Dining Restaurant of the Year' as voted by Australia's most coveted Australian restaurant awards - the 'Savour Australia Restaurant & Catering HOSTPLUS Awards for Excellence'. Their Head Chef Mathew Macartney prepares exquisite meals using only the freshest local produce accompanied by outstanding Yarra Valley wines from their historic cellar, build in 1840.</p>
+<p>
+Their apprentice chef Colin Wilson has also just won 'Apprentice of the Year' and with that accolade had the amazing opportunity to meet with the Queen!</p>
+<h3><strong style="text-decoration:underline;">NEW: Sydney Opera House Tour & Chef's Plate</strong></h3>
+<p>Begin your journey by exploring underneath the sails with a spectacular Sydney Opera House Tour, taking you inside one of the world's greatest performance venues. You will see inside the theatres, discover the stories, history and magic of the House and learn of how architect Jorn Utzon's heritage-listed masterpiece came to life.</p>
+<p>
+You can also decide when to take your Opera Kitchen three-tier gourmet tasting plate, before or after your tour as lunch or return for dinner at dusk or a late supper. There's nothing more to do than sit back at Sydney's newest dining spot and indulge in famous oysters, mini wagyu Burgers or dumplings and soak in the Sydney Harbour views.</p>
+<p>
+Opera Kitchen is home to Sydney's best chefs, food artisans and producers that will tantalise your tastebuds and leave you spoilt for choice. The perfect way to experience one of the world's most stunning icons and Sydney's newest dining destination.</p>
+<h3><strong style="text-decoration:underline;">The John Singleton Beach House</strong></h3>
+<p>Your very own luxury Australian Beach House - comparable in style and amenities to any of the super premium properties of Sydney's playground to the rich and famous, Palm Beach.
+</p>
+<p>
+The John Singleton Beach House boasts absolute beachfront location right next door to the Killcare Surf Club, making it a haven for young families and groups of friends alike.  Managed by the Bells At Killcare and Pretty Beach House team, this property is perfect for the discerning traveller looking for laid back lifestyle vacations.  The contemporary residence features 4 double bedrooms. On the upper level, the master suite comprising study, dressing room, bathroom and a private deck, overlooks a small waterfall and landscaped bushland. On the lower level there are two more double bedrooms, both with views as well as a children's room with 4 bunks and another bathroom with a bath.</p>
+<p>
+The property boasts two sitting rooms, two kitchens and the Central Coast's most extravagant private terrace and cocktail bar. Adjacent to the main house there is also a self-contained bungalow with a bedroom, sitting room, kitchenette and bathroom. Fittings and furniture are of an international standard. There is daily house-cleaning service available and Bells at Killcare acclaimed chef Stefano Manfredi, and his team can create exclusive meal and hamper packages on request.</p>
+<p>
+The John Singleton Beach House at Killcare is just over a 90 minute drive from Sydney and can also be reached via ferry to Palm Beach.</p>
+<p>
+John Singleton is an Australian advertising entrepreneur well known for campaigns including the Qantas commercials that featured the children's choir singing I Still Call Australia Home.</p>
+<h3><strong style="text-decoration:underline;">Swim with Great White Sharks</strong></h3>
+<p>Where in the world can you swim with Great White Sharks in just one day?  Port Lincoln in South Australia is a little known town providing access to some of Australia's most incredible sea life. </p>
+<p>
+Experience the chance to see the legendary Great White Shark in its natural habitat. Take a day on the water to visit Shark Bay at the Neptune Islands in South Australia, home of the world's largest predatory fish! On the way see the spectacular scenery as you cruise through the Thorny Passage and expect sightings of dolphins and local Sea Birds. When the Sharks arrive you can choose to take a splash and get into the cage to actually swim with these endangered species. This is the only berly (baiting or chumming) free Eco friendly Great White Shark Cage Diving Experience in Australia.  Sharks are attracted to a unique sonar signal rather than the more gruesome method of baiting.  This way you will observe the naturally curious creature in a calm state rather than in an agitated and aggressive state.</p>
+<p>
+Port Lincoln is serviced by 25 flights daily from Adelaide making it easy to connect through to major cities in one day.  Other sea creature experiences in the region include swimming with the mighty tuna, gentle dolphins and playful sea lions.</p>
+<h3><strong style="text-decoration:underline;">Touring with a twist 60's style</strong></h3>
+<p>Introducing one of our most unique guides - Richard Graham. Richard is many things - inspirational tour guide, entrepreneur and Sydney local - but most importantly, it's his passion for his home town that'll make your day in Sydney unlike any other.</p>
+<p>
+With a passion for cars and especially early model Holdens, Richard transports his guests in a beautifully restored and air-conditioned 1964 EH Holden Premier - an iconic model that was also Australia's most popular car in its day.  In this vehicle you are invited to be a part of Australian culture and become a local for a day.  The truly authentic experience is polished with first class service and your personal Sydney local guide.</p>
+<p>
+This very exclusive and off the beaten path touring option caters for no more than three guests at a time.  During a day out with Richard you'll take in Sydney inner city suburbs and cafe lifestyle, locals' favourite scenic waterfront walks, a harbourside bush walk, fantastic views of Sydney and her icons, lunch in a fine dining restaurant and a private two-hour cruise on the Hawkesbury River.  Morning tea, afternoon tea, lunch and cheese and drinks to conclude the day are included in this personalised experience.</p>
+<p>
+Three, four, five and ten hour options are also available.</p>
+<h3><strong style="text-decoration:underline;">Coconut Grove, Port Douglas</strong></h3>
+<p>A heavenly retreat awaits in the heart of Port Douglas at Coconut Grove - Tropical North Queensland's newest and most impressive interpretation of luxurious Port Douglas accommodation.  Only 3 years old, these 5 star, fully self- contained and truly glamorous apartments are the perfect fit for guests seeking a contemporary accommodation experience second to none.  Roof top and level one apartments boast their own swimming pool and spa while the size and layout of the Balcony Apartment are perfect for enjoying all that the Tropical North has to offer.  The modern, chic finish of these apartments combined with unrivalled facilities and services will leave no guests' expectations unmet.</p>
+<p>The property is just minutes walk away from some of the best dining experiences that Port Douglas has to offer.</p>
+<p>Additional services available on request include personal nanny, personal chef and inhouse massage therapy.  The property works closely with Port Douglas catering offering delivery of breakfast packs and meals and can offer a fully stocked pantry on request.</p>
+<h3><strong style="text-decoration:underline;">NEW: Sydney Opera House Tour &amp; Chef's Plate</strong></h3>
+<p>Begin your journey by exploring underneath the sails with a spectacular Sydney Opera House Tour, taking you inside one of the world's greatest performance venues. You will see inside the theatres, discover the stories, history and magic of the House and learn of how architect Jorn Utzon's heritage-listed masterpiece came to life.</p>
+<p>You can also decide when to take your Opera Kitchen three-tier gourmet tasting plate, before or after your tour as lunch or return for dinner at dusk or a late supper. There's nothing more to do than sit back at Sydney's newest dining spot and indulge in famous oysters, mini wagyu Burgers or dumplings and soak in the Sydney Harbour views.</p>
+<p>Opera Kitchen is home to Sydney's best chefs, food artisans and producers that will tantalise your tastebuds and leave you spoilt for choice. The perfect way to experience one of the world's most stunning icons and Sydney's newest dining destination.</p>
+<h3><strong style="text-decoration:underline;">Saffire wins Architecture and Travel Accolades</strong></h3>
+<p>World Architecture News, a website for the global architectural community, has awarded Saffire Freycinet on Tasmania's east coast as winner of the Hotel of the Year 2011.</p>
+<p>The stunning design of this luxury coastal sanctuary by Circa Architecture impressed the judges for capturing the essence of the unique region.</p>
+<p>Saffire also recently won a coveted Australian Gourmet Traveller Magazine Travel Award for 'Best New Hotel, Resort or Lodge 2011'. Saffire came runner-up in the 'Best Hotel or Resort Dining 2011' category as well.</p>
+<p>"That show stopping view across Great Oyster Bay to the granite hulk of the Hazards and beyond is enough to arouse wanderlust in the most sensible of souls. Dream location aside, Saffire's other strong qualities are its size - just 20 luxurious suites among the peppermint gums - and sweeping architecture." - Australian Gourmet Traveller Magazine.
+</p>
+<p>Also in Tasmania - MONA, Museum of Old and New Art was awarded Standout Australian Travel Experience -
+"Hobart millionaire David Walsh, iconoclastic owner of the Museum of Old and New Art, successfully dazzles and defies the conventions of gallery going with his fantastic new museum on the fringe of the Tasmanian capital. The Fender Katsalidis-designed fortress of rusted steel fused onto primitive sandstone feels like a metaphor for Walsh's eclectic private art collection (reputedly the nation's largest) that marries ancient artifacts with bracingly modern installations. So keenly awaited and so feverishly hyped, since opening in January MONA has proved itself to be that rare commodity among Australian attractions = an instant success, an international drawcard and a growing source of national pride." - Australian Gourmet Traveller Magazine.</p>
+<h3><strong style="text-decoration:underline;">Papua New Guinea Festivals</strong></h3>
+<p>If your clients are thinking about travelling to Papua New Guinea, then right now is the time to consider incorporating one of the amazing cultural shows that take place throughout the year.</p>
+<h4><strong>The Tumbuna Sing-sing - May</strong></h4>
+<p>Tumbuna is the Tok Pisin (the lingua franca of Papua New Guinea) word for ancestors. "Taim Bilong Tumbuna" refers to the time before the white-man came, being the ways of the ancestors.</p>
+<h4><strong>The Wahgi Cultural Show - June</strong></h4>
+<p>The Wahgi Show is held in the village of Nondugl - a village where time has stood still. Situated half way down the Wahgi Valley, Nondugl is a village where people still live a subsistence lifestyle, growing their own food and going about their daily lives, much as they have for thousands of years. The Wahgi Cultural Show gives an in-depth perspective into life in the Wahgi Valley, showcasing sing-sing groups mainly from the local area. It is a chance to really experience how the people of the Wahgi Valley live, both in daily life and in times of great celebration.</p>
+<h4><strong>The Mount Hagen Cultural Show - August</strong></h4>
+<p>The most famous cultural show in Papua New Guinea, The Mount Hagen Cultural Show, is held in August. The Mount Hagen Show brings together sing-sing groups from all over the country in an amazing conglomeration of colour, beauty and culture.</p>
+<h4><strong>Goroka Show - September</strong></h4>
+<p>Held in September every year, the Goroka Show is famous for its dazzling array of sing-sing groups, showcasing some of the many cultures of Papua New Guinea - the Goroka Cultural Show is an event not to be missed.</p>
+<h4><strong>The Morobe Show - October</strong></h4>
+<p>The Morobe Show is the oldest festival in Papua New Guinea. Essentially staged to showcase technological improvements in the regions agricultural industry, it is one of Papua New Guinea's largest events drawing crowds of over 30 000 annually.</p>
+<h4><strong>The Alotau Canoe &amp; Kundu Festival Tour - November</strong></h4>
+<p>The War Canoe &amp; Kundu Festival is a small and friendly cultural show, allowing attendees to interact with the performers. It celebrates the culture and tradition of War Canoes and inherited Kundu drums.</p>
+<h3><strong style="text-decoration:underline;">Oprah's Ultimate Australian Adventure</strong></h3>
+<p>Oprah Winfrey and 302 of her audience members travel Down Under for "Oprah's Ultimate Australian Adventure," a four-part television event. Oprah first surprised the audience members with the trip during the "Oprah" show 25th season premiere.</p>
+<p>Inspired by Oprah's journey, Abercrombie &amp; Kent has designed a trip to take your clients to the same destinations as Oprah. Oprah began her Australian adventure with a bang as she landed on Hamilton Island and has a close encounter with a pair of frisky koalas. She loved the wonder of the Great Barrier Reef and hosted a beautiful beach barbeque with celebrity chef Curtis Stone. Oprah then travelled to Uluru where she experienced the spiritual heart of Australia and an unforgettable dinner under the stars with local Aboriginal people. Oprah also faced a crowd of 10,000 in Melbourne's Federation Square. Nearly 500 feet above the Sydney Harbor, Oprah and her audience made their way to the top of the Sydney Harbor Bridge Climb to attempt an all-new world record attempt. Plus, the fleet set sail for a once in a lifetime regatta with Oprah's first mate, Russell Crowe!</p>
+<p>Experience an itinerary that traces Oprah's footsteps in Sydney, Melbourne and Hamilton Island and spend two nights on Kangaroo Island, considered Australia's Galapagos. Image copyright 2010 Harpo Productions - photographer George Burns</p>
+<h3><strong style="text-decoration:underline;">International Beach Polo Festival for Broome</strong></h3>
+<p>The unique Kimberley region of north west Australia is set to host Australia's first international beach polo festival in Broome from May 8 to May 15 2011. The competition is expected to attract polo players and tourists from around the world. The cornerstone of the festival is Paspaley Beach Polo, Australia's first and only beach polo event, which was launched at Broome's iconic Cable Beach in May this year as a one-day, one match event. Next year, the event will be elevated to a genuine sporting league with teams competing in a round robin qualification competition to secure one of four places in the finals which will be held on the weekend of May 14 and 15. The festival's beach action will conclude with an international test match between Australia and a visiting country. Pinctada Cable Beach, named Australia's Best Resort Style Accommodation at this year's AHA National Awards for Excellence, will again be the official hotel for the tournament hosting players and a variety of polo-themed functions. Cable Beach is one of just five exotic locations around the world to host beach polo, along with Miami in the USA, Poole in the UK, Dubai in the UAE and Goa in India. To stay at Pinctada Cable Beach or visit during the festival, contact A&amp;K.</p>
+<h3><strong style="text-decoration:underline;">NEW: Rotten Point House - Great Ocean Road</strong></h3>
+<p>Enjoy isolation and privacy at the magnificent Rotten Point House on an untouched cliff top over-looking Johanna Beach and adjacent to the Cape Otway National Park. This architecturally designed house with stunning views over the Southern Ocean to Moonlight Head is located between Victoria's Apollo Bay and the 12 Apostles situated on 100 acres of native bushland adjoining the Great Otway National Park. Sleeping up to eight people in four bedrooms and two spacious bathrooms, a family or group of friends can enjoy the floor to ceiling windows providing ever changing views from each room. The kitchen is fully equipped for cooking up a feast. Or you have the option of a private in-house chef on request to create incredible meals from fresh local produce. In house massages and guided activities can also be arranged. Guided walks based at Rotten Point House are available in 3, 4 and 6 days duration. During your stay you'll walk through tall forests, along remote beaches, atop towering sea cliffs and alongside pristine estuaries. The diversity of native habitat provides home for a fascinating range of Australian native animals to spot along the way.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+
+
+</div>
+
+<div id="tab2" style="display:none">
+<div style="float:right;"><a href="australasia-newzealand.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< New Zealand Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Luxury hosted experience in the Bay of Islands</strong></h3>
+<p>If you would like to experience some of New Zealand's amazing culture and history, then a visit to the Bay of Islands is a must. For a truly memorable stay, the charming village of Russell is the perfect destination and Flagstaff Lodge & Day Spa the ideal place to relax and soak it all in.</p>
+<p>
+Forget the car, the Lodge is just a few minutes level stroll from the restaurants, galleries and architectural gems of historic Russell and the Lodge itself is one of those gems. The Lodge is 100 years old this year and it has been transformed into a truly luxurious space, reflecting contemporary style, NZ art and a focus on local food & wine.  The Lodge offers 4 beautiful en-suite rooms, each individually styled and with views through Russell to the Bay. All rooms have flat screen TVs, DVD players, mini-bars, iPod docs and free Wi-Fi laptop access.</p>
+<p>
+The very popular on-site day spa offers massage and beauty treatments using premium Thalgo products but at rates which will be a pleasant surprise.</p>
+<p>
+Included in the tariff are evening drinks with canapés with the hosts Jessie and Ruth which provides the perfect opportunity to sample the best of local Northland wines and the chance to chat with your Kiwi host and fellow guests. Also included are breakfasts featuring local ingredients and freshly made treats. Jessie and Ruth are friendly, enthusiastic, knowledgeable and excellent cooks, making this the perfect example of a luxury hosted experience.</p>
+<h3><strong style="text-decoration:underline;">Exclusive and personalised tour with Old Antarctic Explorer</strong></h3>
+<p>Join an Old Antarctic Explorer on an exclusive and personalised tour of Christchurch's International Antarctic Centre discovering New Zealand's Scott Base, The Snow & Ice Experience and the Antarctic Storm where you will experience extreme wind chill Antarctic conditions. Enjoy a cruise to Antarctica on board an Antarctic Cruise Ship in the brand new 4D Extreme Theatre or enjoy watching the penguins being fed in the New Zealand Penguin Encounter.</p>
+<p>
+Rations are available in the Antarctic Café & Bar and a signed copy of an Antarctic book is yours to take away at the end of your 3-hour personalised Antarctic experience.</p>
+<p>
+The Tour will give visitors the opportunity to spend time with genuine Old Antarctic Explorers many of which have spent many years in Antarctica and have written books about the icy continent.</p>
+<p>
+The "Old Antarctic Explorers Tour" Tour will be 3 hours in duration.</p>
+<p>
+The tour consists of a visit through the famous Antarctic attraction, an Antarctic Explorers luncheon- with time to reflect and share old Antarctic stories. Also included is a Ride in the Hagglund - a genuine Antarctic vehicle used down at Scott Base, and a private Antarctic clothing display demonstration and discussion. At the end of the tour a gift of an Antarctic book will be presented to each participant personally signed by the Old Antarctic Explorer himself.</p>
+<h3><strong style="text-decoration:underline;">Bishops Suites, Nelson</strong></h3>
+<p>For the ultimate in opulence and indulgence, consider the newly opened Bishops Suites in Nelson - located in New Zealand's North Island. </p> 
+<p>
+The Bishop's Suites are annexed to The Bishopdale Estate homestead, a grand Victorian home built on a charming 20 acre estate. Originally built by Bishop Suter in 1925, the estate has been restored to its former glory.  </p>
+<p>
+Access to the Suites is easy - only 10 minutes from the airport or 5 minute drive from the town centre. On arrival you are welcomed by the hosts Mary & Peter Dallison who are friendly, inviting and love entertaining their guests.</p>
+<p>
+The main estate is tastefully decorated and sits on the estate's well-manicured gardens, complete with swimming pool and spa room.  In the evening a sumptuous five course dinner is served in the dining room of the Homestead. </p>
+<p>
+The Bishop's Suites are luxury stand-alone apartments accessed by pathways from the suites down to the homestead (approximately 50 - 100 metres away).  Generously appointed, each has a warm and inviting style of its own, with rich fabrics, elegant furniture and beautiful Irish linen. There are numerous thoughtful touches - soft and enveloping bathrobes, L'Occitane toiletries, fresh fruit, scented candles, handmade chocolates, even shortbread made in the homestead's kitchen.</p>
+<p>
+In these generous but cosy suites it's easy to immerse yourself in the peace and quiet of the estate's more relaxed pace. Each suite has an open fireplace, air conditioning, flat-screen TV, DVD player, radio, and complimentary high-speed Wi-Fi connection. The rates are fully inclusive and offer exceptional value for money.</p>
+<p>
+For more details and pricing, please speak to a Travel Specialist.</p>
+<h3><strong style="text-decoration:underline;">The Black Swan Lakeside Boutique Hotel, Rotorua</strong></h3>
+<p>The Black Swan Lakeside Boutique Hotel is a beautifully appointed hotel that offers the discerning visitor the opportunity to experience the comforts and hospitality of personalised luxury hotel accommodation, whilst enjoying an exclusive and intimate environment. The expansive grounds include rose gardens, sweeping lawns, swimming pool, secret grotto, sandy beach, private jetty, heli-pad and eight suites.</p>
+<p>
+Although situated in an oasis of calm, the Black Swan Lakeside Boutique Hotel is only a 5 minute drive from Rotorua City Centre and a 15 minute ride from Rotorua International Airport. For guests who'd rather not leave the haven of the hotel, there are plenty of recreational activities to enjoy including lake cruises, fishing trips and float plane scenic flights from the private jetty or a helicopter sightseeing trip from the onsite heli-pad.</p>
+<p>
+The chic décor is tastefully designed with black, white and dark purple tones with opulent wallpapers and elegant chandeliers and accompanied with stunning views over Lake Rotorua, great service and food (the restaurant is getting fantastic reviews from guests and local diners). If you want to stay somewhere with stately home furnishings in contemporary finishes and fabrics then you won't be disappointed.</p>
+<p>
+Rooms are well appointed with flat screen TV's, minibars, tea/coffee making facilities, large and well-presented bathrooms, in neutral tones, separate large shower, double sinks and large deep bath. We recommend the Lakefront rooms (for which there are 2) as their large windows open fully to uninterrupted views over lake.</p>
+<h3><strong style="text-decoration:underline;">NEW: Art Adventures, Queenstown</strong></h3>
+<p>Art Adventures enables you to design your exclusive and personalized art experience in and around the lake and alpine resort of Queenstown. No art experience is necessary. Professional tutored excursions can offer you the opportunity to learn about art, sketching or painting, and to create your own original artworks that record your outdoor experience.</p>
+<p>
+Light refreshments are provided on half day tours and lunch + light refreshments are offered on full day tours.</p>
+<p>
+Tour options:</p>
+<p>
+1) Artists' Studio / Art Gallery Tours: Minimum 2 guests<br />
+View creative works of established and emerging New Zealand artists with a professional guide for a half or full day. Travel by luxury transport  through scenic landscapes while visiting some of the best local artists in their studios and
+regional dealer art galleries.</p>
+<p>
+Tour Inclusions:<br />
+- Personal guiding and commentary by a professional guide<br />
+- Customised to your interests. (e.g. traditional, contemporary, landscape)<br />
+- Small intimate groups for personal attention<br />
+<p>
+2) Learn to Sketch Excursions (Tutored): Minimum 2 guests
+Half and full day sketching excursions where you are taken to scenic locations to learn to sketch. No art experience is necessary. Tutors explain and demonstrate how to record their holiday experience with artistic tips and techniques that can be used long after the excursion ends.</p>
+<p>
+Tour Inclusions:<br />
+- Tuition by professional artist. Note - tutors are subject to availability; one per group of 2 - 6 adults<br />
+- Moleskin Travel Journal and a pencil case of high quality sketching equipment all provided in an eco carry bag<br />
+- Comfortable outdoor seating provided<br />
+- Visits to artists' studios or dealer art galleries can be included in full day combo<br />
+- Small intimate groups for personal attention and instruction</p>
+<h3><strong style="text-decoration:underline;">Tranz Scenic - Coastal Pacific rail journey</strong></h3>
+<p>This outstanding train journey between Chistchurch and Picton in New Zealand's south island, stops at Blenheim and the renowned whale watching town of Kaikoura. Travelling along 98 kilometres of ruggedly beautiful coastline you'll get astonishingly close to the swelling Pacific Ocean and steeply rising Kaikoura Ranges. You'll also travel through beautiful wine growing regions, across broad rivers and the rich patchwork farming landscape of the Canterbury Plains. The views are breath-taking!</p>
+<p>
+Brand new scenic carriages have now been introduced on this journey to bring guest comfort to a luxury new level. The features of the new carriages are the large panoramic and sky windows opening up the views of the mountains and hands free doors and swiveling seats allowing passengers to face the direction of travel. New train enhancements also lend to a smoother ride and there is also now commentary available in five languages (English, Japanese, Mandarin, German & French).</p>
+<h3><strong style="text-decoration:underline;">NEW: Explore Marlborough by boat</strong></h3>
+<p>Explore the stunning Marlborough Sounds aboard a 53ft luxury yacht. The relaxing day tour includes a cruise to the end of Queen Charlotte Sound to Motuara Island and Ship Cove. On Motuara take a short walk to the top of the island for stunning views of the Queen Charlotte Sound. The island is home to a number of New Zealand's endangered birds which can be spotted while walking. The tour includes a gourmet lunch of local produce with a focus on local seafood. The balance of the day is spent cruising back towards Picton with canapés, a glass of Marlborough wine and the setting sun. Throughout the day your experienced skipper and Explore Marlborough guide will entertain you with stories of the area's history, wildlife and landscape and local personalities.</p>
+<ul>
+<p>Includes:</p>
+<li>Experienced skipper.</li>
+<li>Morning tea or coffee with locally roasted coffee and fresh home baking.</li>
+<li>Gourmet lunch on board the yacht.</li>
+<li>Bottle of Marlborough Sauvignon Blanc per couple</li>
+<li>Knowledgeable guide</li>
+<li>Pick up from and drop off to accommodation</li>
+<li>Visit to Motuara Island Bird Sanctuary and Ship Cove.</li>
+</ul>
+<br />
+<h3><strong style="text-decoration:underline;">Top 5 Adventure New Zealand</strong></h3>
+<p>When deciding between luxury &amp; adventure for your holiday for this year, look no further than New Zealand - the destination that provides arguably the best adventure options as well as some of the most renowned luxury lodges internationally.</p>
+<p>White Water Rafting - The Kaituna River makes for an exciting forty minutes of pure adrenalin rush and includes the world famous 27-foot (7-metre) waterfall - the largest rafted waterfall in the Southern Hemisphere!</p>
+<p>Zorb Rotorua: Experience the inside of a bouncy ball! Zydro - this is the ride that has water added so you can run, tumble, flip or slide inside, as the globe hurtles downhill at speeds of up to 30 km/h.</p>
+<p>Four Wheel Drive (4WD) Safari: Travel to the Mamaku Ranges where a truly unique experience awaits you. Take the wheel and drive in convoy on a four-wheel drive track that is full of obstacles and challenges such as water-filled tunnels, logs and swamps. At the end of your experience your helicopter your way to The Farm at Cape Kidnappers.</p>
+<p>Bungy Queenstown: The Nevis High Wire Bungy is the younger brother to the original Kawarau Bungy Jump and is the same height as the top of the Sydney Harbour Bridge!</p>
+<p>Sky Dive: It takes a certain kind of person to jump from an aircraft at 15,000ft into thin air. It takes courage. Harnessed by space age materials to an experienced qualified jumpmaster, you step out that aircraft door and for some 60 seconds you plummet toward the ground at 200kph, Terminal Velocity.</p>
+<p>With a selection of superb lodges awaiting you after your adventure, the only question is when do you arrive? Contact A&amp;K for more information and to tailor the right itinerary for you.</p>
+
+<h3><strong style="text-decoration:underline;">Eagles Nest</strong></h3>
+<p>Located on a headland above the sea with sweeping views of the bay, the well-secured, exceptional luxury escape comprising of five villas in New Zealand's Bay of Islands, a few kilometres north of Russell is not boasting when they say they are "Somewhere between seven stars and heaven". Recently voted the World's best "Luxury Coastal Hotel" by the World Luxury Hotel Awards, there is no doubt of Eagles Nests unsurpassed facilities and services. The World Luxury Hotel Awards are regarded as the pinnacle of achievement for luxury hotels worldwide. This award was established as a celebration of the ultimate achievement in the worldwide hotel industry. It is about recognizing hotels that have taken the ultimate step and distinguished themselves as truly exceptional hotels. This award is by no means the first for Eagles Nest who already have a full mantelpiece of international and domestic accolades from the likes of Conde Nast Traveller, Elite Traveller, Tattler Magazine and Kia Ora Magazine. When staying at Eagles nest, there are many things to do in the area if you can bear to leave your villa. Let us arrange a private sailing or fishing charter for you. Or perhaps you would prefer a private scenic flight over the spectacular region. For a more outdoors approach, let us arrange a guided walks with gourmet picnic lunch or private touring to the regions historical highlights including Waitangi grounds.</p>
+<h3><strong style="text-decoration:underline;">Whakarewarewa Thermal Village</strong></h3>
+<p>Whakarewarewa Thermal Village: Te Whakarewarewatanga O Te Ope Taua A Wahiao' - Meaning "The uprising of the warriors (war party) of Wahiao" Set amidst a landscape of erupting geothermal activity, hot thermal springs and hot bubbling mud pools is the Living Maori village of Whakarewarewa situated in Rotorua, the heart of the North Island. Meet the people of Tuhourangi - Ngati Wahiao (a Maori family tribe) who have lived in and around the geothermal activity of Whakarewarewa for over 200 years. This tribe have opened up their village to show visitors their way of life, a legacy passed down from generation to generation. Let us arrange a private experience for you to truly discover this lifestyle designed to incorporate the unique thermal environment as well as the culture and traditions of this tribe. The people of this area have been hosting visitors and welcoming guests into their homes since the early 1800's. The Tuhourangi/Ngati Wahiao people have a proud heritage which they have shared with visitors from around the world. As the Maori Tribe say, Nau mai, haere mai, whakatau mai - Welcome, Come In, Make Yourself At Home.</p>
+
+<h3><strong style="text-decoration:underline;">New Insider Access: Antarctic Encounter, Christchurch</strong></h3>
+<p>On this exclusive and personalised tour you'll journey through Christchurch's International Antarctic Centre with a genuine Antarctic Explorer as your host and guide.  </p>
+<p>Take a ride in the Hagglund - a genuine Antarctic vehicle used down at Scott Base, view a private Antarctic clothing display demonstration and enjoy fascinating discussion over a light lunch.</p>
+<p>Your Antarctic Explorer has visited The Ice on countless occasions and can share with you countless stories and tales from the frozen land. Bill Cranfield was the pilot with Sir Edmund Hillary's support party for the Trans Antarctic Expedition in 1957/8. Bill flew the 10 hour route finding and supporting the field parties, and establishing the depots for the crossings party and supplying the famous NZ tractor party.  David Harrowfield who has written nearly 70 books, articles and refereed papers on Antarctic history was the Antarctic curator at Canterbury Museum and is currently completing a major re-write of Antarctic history on one of Shackleton's expeditions. Allan Guard is another Old Antarctic Explorer who was Base Engineer and deputy leader at Scott Base in 1968-69 and spent a two-year tour of duty with a scientific expedition on the sub-Antarctic Campbell Islands from 1964 to 1966.</p>
+<p>Over three hours discover environments including New Zealand's Scott Base, The Snow & Ice Experience and an Antarctic Storm where you will experience extreme wind chill Antarctic conditions.  There's also opportunity to watch penguins being fed and experience a 4D theatre version of life aboard an Antarctic Cruise Ship. At the end of the tour a gift of an Antarctic book will be presented to each participant personally signed by the Antarctic Explorer himself.</p>
+
+<h3><strong style="text-decoration:underline;">New Insider Access: The Kitchens of Bosley and Brown, Wellington</strong></h3>
+<p>Enjoy a rare, behind-the-scenes tour of the kitchens of Logan Brown and Martin Bosley's, two Supreme Winners of NZ Cuisine Magazine's Restaurant of the Year Awards. You'll see, smell, hear and taste the action in these two busy environments.  At iconic Martin Bosley's, Martin will personally offer a rare insight into how he creates and delivers such incredible dishes to the table.  At Logan Brown, either Steve Logan or head chef Shaun Clouston will reveal their compact kitchen amid pre-lunch preparations.  After the kitchen tours, take a seat in the beautiful surroundings of the Logan Brown restaurant and enjoy a delicious, light three course lunch matched with New Zealand wines.</p>
+<p>This Insider Access experience includes return transport, kitchen tours, tastings, a tasty gift from each restaurant and a light three course lunch matched with 3 tasting glasses of matched New Zealand wines.  Duration Pick up 10am returning to hotel around 2pm, 4 hours.</p>
+<h3><strong style="text-decoration:underline;">Otahuna Lodge to Re-Open 11 July</strong></h3>
+<p>Otahuna Lodge will re-open on Monday, 11 July 2011 following its closure due to the 6.3-magnitude Christchurch Earthquake on 22 February.</p>
+<p>The celebrated 116-year old homestead -- a Category 1 New Zealand Historic Places Trust Landmark -- sustained moderate interior damage, primarily to internal walls, ceilings and floors. More than 200 wall and ceiling surfaces are being repaired and restored prior to the Lodge's July re-opening.</p>
+<p>Fortunately the Lodge incurred only modest damage as a result of extensive seismic strengthening carried out on the building last year. Many heritage features of the homestead including its Victorian wooden carvings, stained glass windows and fifteen working fireplaces were unaffected. All seven of Otahuna's suites are being restored to their previous condition, with interior furnishings and artworks entirely unaffected. Outside the Lodge, Otahuna's thirty acres of historic gardens were also untouched by the earthquake.</p>
+<p>Otahuna Lodge is located approximately a 25-minute drive from Christchurch.</p>
+<h3><strong style="text-decoration:underline;">Powerco Taranaki Garden Spectacular 28 Oct - 6 Nov 2011</strong></h3>
+<p>The annual ten day Powerco Taranaki Garden Spectacular - New Zealand's Premier Spring Festival, showcases some of New Zealand's most stunning private and public gardens. As one of New Zealand's longest running festivals each year it offers an exclusive opportunity to experience a diverse range of high quality gardens that are among the best in the country.  Visitors will enjoy strolling through large park-like country gardens, geometric and intimate inner city potager gardens, sub-tropical and rainforest gardens. As New Zealand's premier garden experience the festival has an extensive events programme featuring jazz & wine in gardens, an exclusive landscape design project, guided walks and a garden celebrity speaker series and much more.</p>
+<p>Indulge in a feast for your senses, borne from the imaginations, inspiration and sheer perspiration of New Zealand's most gifted gardeners.  What better time to visit New Zealand than late Spring in the Southern Hemisphere!</p>
+<h3><strong style="text-decoration:underline;">The George, Christchurch Reopens</strong></h3>
+<p>Luxury boutique hotel, The George has reopened to in-house guests as of Tuesday 22 March and on Wednesday 23 March, 50 On Park Restaurant and Bar opened for breakfast, lunch and dinner.</p>
+<p>The George's signature restaurant, Pescatore, will open for dinner on Tuesday 29 March.</p>
+<p>While Christchurch continues the massive job of cleaning and rebuilding after the devastating earthquake of 22 February, structural engineers have inspected the hotel and declared it safe to occupy and all amenities are all in place.</p>
+<p>The New Zealand National Crisis Management Centre are no longer advising against non-essential travel to Christchurch City. This is a positive development in helping get the message out that New Zealand is open and operating, however it comes with a caution that some tourism operators in the central business district remain severely disrupted.</p>
+<p>Whilst it was closed to guests, The George was able to help the efforts Christchurch by accommodating City Care workers and Police from around the country following the earthquake.</p>
+<p>The George, a luxury boutique hotel, is the essence of supreme comfort and is renowned for offering a personalised stay and attentive staff as well as two award winning restaurants. Located in the heart of Christchurch overlooking the picturesque Hagley Park and river Avon, The George is the only Christchurch Hotel with a one-to-one staff to guest ratio.</p>
+<h3><strong style="text-decoration:underline;">1st March 2011 - New Zealand Earthquake Update</strong></h3>
+<p>On 22 February 2011, Christchurch and the surrounding area were struck by an earthquake that caused severe damage and tragic casualties. The area continues to be shaken with continuous aftershocks placing further buildings and lives in danger.</p>
+<p>On Tuesday this week at 12.51 (New Zealand time) our New Zealand team observed two minutes silence to remember those lost in last week's Christchurch Earthquake</p>
+<p>It is a cruel event as many areas of Christchurch were still rebuilding from the 7.1 earthquake that hit last September.</p>
+<p>Like most of the world, our team have watched the tragic results of the earthquake with extreme sadness but despite the widespread damage reported we are able to advise that both our preferred hotels in the Christchurch region; Otahuna Lodge and The George are relatively unaffected and we look forward to soon receiving word from each saying that bookings are again being accepted for future travellers.</p>
+<p>At this time we think of our friends, suppliers and guides in the region and send our thoughts and support to them. One of the ways our team are helping out is to organise a fundraiser lunch on Monday 07th March with all contributions being matched by Abercrombie &amp; Kent Philanthropy. Monies raised will be used to help the communities, families and people of Christchurch and the Canterbury region.</p>
+<p>We are currently advising clients not to travel to Christchurch for the next month or so, however the rest of New Zealand is fully operational with no road closures and all airports being open.</p>
+<p>Contact the team at A&amp;K if you would like information to donate to the official relief fund or to talk about the ideal region for you to travel to in New Zealand.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+</div>
+
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
