@@ -1,0 +1,1024 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Customized Trips Uganda, Escorted Journeys Uganda, Guided Tour to Uganda, Private Journeys, Group Tours, Group Travel, Special Interest Group to Uganda"/>
+<meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip in Uganda. This special interest programme provides fascinating insight into Uganda and its people." />
+<title>Group Tours & Luxury Travel Uganda - Abercrombie & Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=8; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		    
+	        if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="block";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+	}
+}
+</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/uganda-banner.jpg" alt="Special Interest Group Uganda" title="Special Interest Group Uganda" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="africa.html">Africa</a></li>
+<li><a href="africa-uganda.html">Uganda</a></li>
+<li>Special Interest Groups</li>
+</ul>
+</div>
+<div class="LeftList">
+        <h4>TRAVEL DestinationS</h4>
+        <h5><a href="africa.html">Africa</a></h5>
+        <ul>
+          <li><a href="africa-kenya.html" title="Kenya">+ Kenya</a></li>
+          <li><a href="africa-tanzania.html" title="Tanzania"><span>+</span> Tanzania</a></li>
+          <li><a href="africa-uganda.html" title="Uganda"><span>-</span> Uganda</a>
+		  <ul>
+              <li><a href="africa-uganda.html" title="Introduction to Uganda"><span>-</span> Introduction to Uganda</a></li>
+              <li><a href="africa-uganda-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="africa-uganda-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="africa-uganda-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+              <li><a href="../about/uganda-office.html" title="A&amp;K office in Uganda"><span>-</span> A&amp;K office in Uganda</a></li>
+              <li><a href="africa-uganda-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li> <li><a href="africa-news.html?id=4" title="News"><span>-</span> News</a></li>
+              <li><a href="africa-uganda-special-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+              <li><a href="africa-uganda-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+			  
+             <li><a href="../journeystyles/family-holidays.html" title="Family Holidays"><span>-</span> Family Holidays</a></li>
+              <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>
+              <li><a href="../journeystyles/honeymoon.html" title="Honeymoon"><span>-</span> Honeymoon</a></li>
+              <li><a href="africa-uganda-special-interest.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+			 <!-- <li><a href="../journeystyles/private-mob-copm.html" title="Private Mobile Camping"><span>-</span> Private Mobile Camping</a></li>--><li><a href="../journeystyles/uganda-sanctuary-retreats.html" title="Sanctuary Retreats"><span>-</span> Sanctuary Retreats</a></li>
+ <li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
+  </ul>
+		  </li>
+		  <li><a href="africa-southafrica.html" title="South Africa"><span>+</span> South Africa</a></li>
+		  <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a></li>   <li><a href="africa-zimbabwe.html" title="Zimbabwe" ><span>+</span> Zimbabwe</a></li><li><a href="africa-zambia.html" title="Zambia" ><span>+</span> Zambia</a></li><li><a href="africa-rwanda.html" title="Rwanda">+  Rwanda</a></li>
+<li><a href="javascript:void(0)" class="cursorauto" title="Namibia"><span>+</span> Namibia</a></li>
+</ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select>
+        <h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Special Interest Groups</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/best-uganda.jpg" alt="The Best of Uganda" title="The Best of Uganda" width="326" height="210" /></div>
+<div class="rightbox"><h2>The Best of Uganda</h2>
+<p><strong>Duration:</strong>  13 days<br />
+<strong>Highlights:</strong>  Entebbe, Murchison Falls National Park, Kibale National Park, Ishasha, Bwindi Impenetrable National Park, Lake Mburo National Park </p>
+<p>This itinerary combines the best of what Uganda has to offer.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/classic-east-africa1.jpg" alt="Classic East Africa" title="Classic East Africa" width="326" height="210" /></div>
+<div class="rightbox"><h2>Classic East Africa</h2>
+<p><strong>Duration:</strong>  15 days<br />
+<strong>Highlights:</strong> Bwindi Impenetrable National Park, Ngorongoro, Serengeti, Masai Mara, Lamu </p>
+<p>This itinerary showcases all the major highlights of Kenya, Uganda and Tanzania</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+
+</div>
+</div>
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/The-Best-of-Uganda.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/uganda-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<div class="logoinner1"><img src="../images/uganda-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>The Best of Uganda</h1>
+<div class="popupbanner"><img src="../images/the-best-of-uganda.jpg" alt="The Best of Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  13 days</p>
+<p>This itinerary combines the best of what Uganda has to offer.</p>
+<p><strong>Highlights:</strong> Entebbe, Murchison Falls National Park, Kibale National Park, Ishasha, Bwindi Impenetrable National Park, Lake Mburo National Park</p>
+</li>
+
+<li><h4>Day 1</h4>
+<h5>Arrive Entebbe</h5>
+<p>On arrival at Entebbe International airport and after clearing customs and immigration formalities, you will be transferred to the Boma Guest House. The Boma is set in tropical gardens in a leafy suburb, a few minutes drive from the Airport .</p>
+<p>The rest of the day is free to relax or if time permits, enjoy some sightseeing.</p>
+<p><strong>Overnight:</strong> Boma Guest House<br />
+<strong>Meal Plan:</strong> D</p>
+</li>
+
+
+<li>
+<h4>Day 2</h4>
+<h5>Murchison Falls National Park</h5>
+<p>After breakfast, drive to Murchison Falls National Park which is Uganda's largest national park. It is named after the Murchison Falls where the River Nile explodes violently through a narrow gorge in the Rift Valley escarpment to plunge into a frothing pool 43m below.</p>
+<p>On arrival you will be ferried to the Paraa Lodge, a 54 roomed lodge which was established in 1954. The lodge is a perfect place to experience Africa's longest river as it makes its way from Lake Victoria to Lake Albert.</p>
+<p>Freshen up and enjoy lunch at the camp before your afternoon game viewing drive.</p>
+<p><strong>Overnight:</strong> Paraa Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 3</h4>
+<h5>Murchison Falls National Park</h5>
+<p>Spend today exploring the National Park. A highlight of any visit to Murchison Falls Conservation Area is the launch trip to view the magnificent Murchison Falls. Hippos and crocodiles are abundant and you will see plenty of game.</p>
+<p>Murchison Falls National Park is home to remarkable 451 species of birds. They include the rare yet famous Shoebill stalk, Martial Eagle, the African Fish Eagle, Papyrus Gonolek, Lesser and Greater Flamingo, White-tailed Lark and Verraux's Eagle Owl.</p>
+<p>In the afternoon take a boat trip through the extensive papyrus delta through which the Victoria Nile flows into Lake Albert. Here again there are plenty of animals and birds to see.</p>
+<p><strong>Overnight:</strong> Paraa Lodge</p>
+</li>
+
+<li>
+<h4>Day 4</h4>
+<h5>Murchison - Kibale Forest National Park</h5>
+<p>After breakfast, begin your drive to Kibale Forest National Park. Kibale has the highest primate density of any area on earth, including the red-tailed money, blue monkey, olive baboon, chimpanzee, colobus (black, white and red ) and white cheeked mangabey.  Other mammals found are bushbuck, red and blue duiker, Uganda kob, Scaly-tailed flying squirrel, tree pangolin, buffalo, waterbuck and hippo as well as a large number of birds.</p>
+<p>Set against the stunning back drop of the legendary Mountains of the Moon, Kyaninga lodge is a luxury lodge on the shores of Lake Kyaninga. Centered around a magnificent main lodge, 8 cottages branch out via raised wooden walkways, each one a good distance away from the next insuring complete exclusivity. The view of the Lake from the cottages is outstanding, a perfect place to relax in privacy.</p>
+<p>After lunch there is time to relax before taking a guided walk round Lake Kyaninga.</p>
+<p><strong>Overnight:</strong> Kyaninga Lodge <br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+
+<li>
+<h4>Day 5</h4>
+<h5>Kibale Forest National Park</h5>
+<p>Chimpanzee tracking excursion is the highlight of visiting Kibale National Park. The habituated chimps are great fun to watch as they squabble and play in fruiting trees. You can expect to see at least two or three other types of primates most probably the grey-cheeked mangabey and red-tailed monkey.</p>
+<p>After lunch, take a guided walk to the nearby Bigodi Swamp for bird watching. Bigodi Wetland Sanctuary is an important biodiversity area situated at the western edge of Kibale National Park. The swamp is host to over 200 bird species, including the most popular, Great Blue Turaco (Corythaeola Cristata).</p>
+<p><strong>Overnight:</strong> Kyaninga Lodge<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+
+<li>
+<h4>Day 6</h4>
+<h5>Kibale - Ishasha</h5>
+<p>After an early breakfast, take a charter flight to Ishasha. Ishasha is a vast low-lying savannah plain lying south of the equator in the Albertine Rift Valley.</p>
+<p>Ishasha Wilderness Camp is situated inside the southern Ishasha sector of Queen Elizabeth National Park on the Ntungwe river. This small and exclusive tented camp offers quality accommodation and services in this unspoilt remote southern sector of Queen Elizabeth National Park famous for its tree climbing lions that can sometimes be spotted resting in the branches of the large fig trees in the area.</p>
+<p>After lunch spend the afternoon game viewing, relaxing or exploring the area.</p>
+<p><strong>Overnight:</strong> Ishasha Wilderness Camp<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+
+
+<li>
+<h4>Day 7</h4>
+<h5>Ngorongoro Crater</h5>
+<p>Today go on a game drive in search of the famous tree climbing lions. Ishasha is also home to a variety of wildlife including elephant, lion, hippo, leopard, buffalo, the Uganda kob, baboon, and birds. Bird-watching is particularly good during the summer months (Oct-Nov) for migratory species as well as endemics.</p>
+<p><strong>Overnight:</strong> Ishasha Wilderness Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+
+<li>
+<h4>Day 8</h4>
+<h5>Ishasha - Bwindi Impenetrable National Park</h5>
+<p>After a leisurely breakfast, begin your drive to Bwindi National Park. Arrive at your lodge in time for lunch. Sanctuary Gorilla Forest Camp is nestled deep inside Bwindi Impenetrable Forest, in Bwindi National Park. The camp is the only accommodation located within the National Park, offering guests an unrivalled location, including the best bird and wildlife viewing in the Bwindi area.</p>
+<p>Bwindi is host to the highest concentration of primates on earth, including the majestic mountain gorilla, one of the rarest animals on the planet.  It is estimated that 65% of the world's surviving population of mountain gorillas, about 460, live within Bwindi's boundaries.  </p>
+<p>Spend the day relaxing and enjoying an activity of your choice.</p>
+<p><strong>Overnight:</strong> Gorilla Forest Camp<br />  
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+
+
+<li>
+<h4>Day 9</h4>
+<h5>Bwindi Impenetrable National Park</h5>
+<p>After an early breakfast this morning, you will receive a briefing from your gorilla tracking guide. Tracking commences every morning from the park headquarters at 8.30am.</p>
+<p>The gorillas you will track belong to one of the 'habituated' family groups in Northern Bwindi. For several years each group has undergone an extremely delicate process that has gradually made them used to the presence of humans. Experienced guides will accompany the tracking, many of who have been involved in the habituation process themselves. Once the gorillas are located, the group will be allowed a maximum of one hour with them. A look into the deep and expressive brown eyes of these giants is surely one of the most unforgettable wildlife encounters that Africa has to offer. </p>
+<p><strong>Overnight:</strong> Gorilla Forest Camp<br />  
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+
+
+<li>
+<h4>Day 10</h4>
+<h5>Bwindi Impenetrable National Park</h5>
+<p>Bwindi is also home to the Batwa Pygmies, who are the oldest inhabitants of the Great Lakes region of Central Africa.  These hunter gatherers, whose existence was first recorded over 4000 years ago, have a rich, deep culture and history that they are very happy to share.  A visit to their community is a unique cultural experience unlike any other and will assist in helping conserve their community and way of life.</p>
+<p>Or you could take a bird walk. Bwindi boasts over 300 bird species, including 24 that are endemic to these highlands straddling Uganda, Rwanda and the Congo - the "Albertine Rift Endemics".   There are also over 200 species of butterflies found in the park.  A local expert will guide you on this fascinating walk.</p>
+<p><strong>Overnight:</strong> Gorilla Forest Camp<br />   
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 11</h4>
+<h5>Bwindi - Lake Mburo National Park</h5>
+<p>Today, drive to Lake Mburo National Park, Uganda's fourth national park, designated in 1982. Situated in rolling hills and open grassy valleys, it is the only Ugandan National Park to contain an entire lake. The land area of the park is composed of open and wooded acacia savannah. The park is home to herds of Impala, as well as the more uncommon Topi, Eland, and Klipspringer. Burchells Zebra and buffalo also graze these areas.</p>
+<p>Mihingo Lodge features ten rooms each nestled on a private piece of the lodge's property, enabling guests to enjoy the tranquil environment in complete seclusion. Placed in varied settings, some rooms are situated in a forest, some with a lake view, and some on rocky outcrops.</p>
+<p>After dinner go on an exciting night game drive in the expansive park.</p>
+<p><strong>Overnight:</strong> Mihingo Lodge<br />   
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 12</h4>
+<h5>Lake Mburo National Park</h5>
+<p>Spend the morning game driving through the park. After lunch, go on a horse back safari of the park.</p>
+<p>In the evening choose to relax or to take a nature trail around the lake through to Rubanga forest which is home to a variety of forest bird species.</p>
+<p><strong>Overnight:</strong> Mihingo Lodge<br />   
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 13</h4>
+<h5>Entebbe - Departure</h5>
+<p>After breakfast, take a charter flight back to Entebbe in time for your international flight.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+
+<div id="tab2" style="display:none;">
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id=13; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Uganda"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Best of Uganda"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="The-Best-of-Uganda.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Uganda"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Best of Uganda"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>On arrival at Entebbe International airport and after clearing customs and immigration formalities, you will be transferred to the Boma Guest House. The Boma is set in tropical gardens in a leafy suburb, a few minutes drive from the Airport .<br /><br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.052784, 32.465), "Arrive Entebbe", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, drive to Murchison Falls National Park which is Uganda's largest national park. It is named after the Murchison Falls where the River Nile explodes violently through a narrow gorge in the Rift Valley escarpment to plunge into a frothing pool 43m below.<br /></p><p>On arrival you will be ferried to the Paraa Lodge, a 54 roomed lodge which was established in 1954. The lodge is a perfect place to experience Africa's longest river as it makes its way from Lake Victoria to Lake Albert.<br /></p><p>Freshen up and enjoy lunch at the camp before your afternoon game viewing drive.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(2.2259798, 31.8107079), "Murchison Falls National Park", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Spend today exploring the National Park. A highlight of any visit to Murchison Falls Conservation Area is the launch trip to view the magnificent Murchison Falls. Hippos and crocodiles are abundant and you will see plenty of game.<br /></p><p>Murchison Falls National Park is home to remarkable 451 species of birds. They include the rare yet famous Shoebill stalk, Martial Eagle, the African Fish Eagle, Papyrus Gonolek, Lesser and Greater Flamingo, White-tailed Lark and Verraux's Eagle Owl.<br /></p><p>In the afternoon take a boat trip through the extensive papyrus delta through which the Victoria Nile flows into Lake Albert. Here again there are plenty of animals and birds to see.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(2.2259798, 31.8107079), "Murchison Falls National Park", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>After breakfast, begin your drive to Kibale Forest National Park. Kibale has the highest primate density of any area on earth, including the red-tailed money, blue monkey, olive baboon, chimpanzee, colobus (black, white and red ) and white cheeked mangabey.&nbsp; Other mammals found are bushbuck, red and blue duiker, Uganda kob, Scaly-tailed flying squirrel, tree pangolin, buffalo, waterbuck and hippo as well as a large number of birds.<br /></p><p>Set against the stunning back drop of the legendary Mountains of the Moon, Kyaninga lodge is a luxury lodge on the shores of Lake Kyaninga. Centered around a magnificent main lodge, 8 cottages branch out via raised wooden walkways, each one a good distance away from the next insuring complete exclusivity. The view of the Lake from the cottages is outstanding, a perfect place to relax in privacy.<br /></p><p>After lunch there is time to relax before taking a guided walk round Lake Kyaninga.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.4861759, 30.3896651), "Murchison - Kibale Forest National Park", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Chimpanzee tracking excursion is the highlight of visiting Kibale National Park. The habituated chimps are great fun to watch as they squabble and play in fruiting trees. You can expect to see at least two or three other types of primates most probably the grey-cheeked mangabey and red-tailed monkey.<br /></p><p>After lunch, take a guided walk to the nearby Bigodi Swamp for bird watching. Bigodi Wetland Sanctuary is an important biodiversity area situated at the western edge of Kibale National Park. The swamp is host to over 200 bird species, including the most popular, Great Blue Turaco (Corythaeola Cristata).</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.4861759, 30.3896651), "Kibale Forest National Park", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>After an early breakfast, take a charter flight to Ishasha. Ishasha is a vast low-lying savannah plain lying south of the equator in the Albertine Rift Valley.<br /></p><p>Ishasha Wilderness Camp is situated inside the southern Ishasha sector of Queen Elizabeth National Park on the Ntungwe river. This small and exclusive tented camp offers quality accommodation and services in this unspoilt remote southern sector of Queen Elizabeth National Park famous for its tree climbing lions that can sometimes be spotted resting in the branches of the large fig trees in the area.<br /></p><p>After lunch spend the afternoon game viewing, relaxing or exploring the area.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-0.74, 29.625), "Kibale - Ishasha", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Today go on a game drive in search of the famous tree climbing lions. Ishasha is also home to a variety of wildlife including elephant, lion, hippo, leopard, buffalo, the Uganda kob, baboon, and birds. Bird-watching is particularly good during the summer months (Oct-Nov) for migratory species as well as endemics.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-0.74, 29.625), "Ishasha", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>After a leisurely breakfast, begin your drive to Bwindi National Park. Arrive at your lodge in time for lunch. Sanctuary Gorilla Forest Camp is nestled deep inside Bwindi Impenetrable Forest, in Bwindi National Park. The camp is the only accommodation located within the National Park, offering guests an unrivalled location, including the best bird and wildlife viewing in the Bwindi area.<br /></p><p>Bwindi is host to the highest concentration of primates on earth, including the majestic mountain gorilla, one of the rarest animals on the planet.&nbsp; It is estimated that 65% of the world's surviving population of mountain gorillas, about 460, live within Bwindi's boundaries. &nbsp;<br /></p><p>Spend the day relaxing and enjoying an activity of your choice.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "Ishasha - Bwindi Impenetrable National Park", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>After an early breakfast this morning, you will receive a briefing from your gorilla tracking guide. Tracking commences every morning from the park headquarters at 8.30am.<br /></p><p>The gorillas you will track belong to one of the 'habituated' family groups in Northern Bwindi. For several years each group has undergone an extremely delicate process that has gradually made them used to the presence of humans. Experienced guides will accompany the tracking, many of who have been involved in the habituation process themselves. Once the gorillas are located, the group will be allowed a maximum of one hour with them. A look into the deep and expressive brown eyes of these giants is surely one of the most unforgettable wildlife encounters that Africa has to offer.&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "Bwindi Impenetrable National Park", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>Today, drive to Lake Mburo National Park, Uganda's fourth national park, designated in 1982. Situated in rolling hills and open grassy valleys, it is the only Ugandan National Park to contain an entire lake. The land area of the park is composed of open and wooded acacia savannah. The park is home to herds of Impala, as well as the more uncommon Topi, Eland, and Klipspringer. Burchells Zebra and buffalo also graze these areas.<br /></p><p>Mihingo Lodge features ten rooms each nestled on a private piece of the lodge's property, enabling guests to enjoy the tranquil environment in complete seclusion. Placed in varied settings, some rooms are situated in a forest, some with a lake view, and some on rocky outcrops.<br /></p><p>After dinner go on an exciting night game drive in the expansive park.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-0.613493, 30.9417368), "Bwindi - Lake Mburo National Park", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 12 - ';
+						description = description + "<p>Spend the morning game driving through the park. After lunch, go on a horse back safari of the park.<br /></p><p>In the evening choose to relax or to take a nature trail around the lake through to Rubanga forest which is home to a variety of forest bird species.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-0.613493, 30.9417368), "Lake Mburo National Park", description, "12");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>Bwindi is also home to the Batwa Pygmies, who are the oldest inhabitants of the Great Lakes region of Central Africa.&nbsp; These hunter gatherers, whose existence was first recorded over 4000 years ago, have a rich, deep culture and history that they are very happy to share.&nbsp; A visit to their community is a unique cultural experience unlike any other and will assist in helping conserve their community and way of life.<br /></p><p>Or you could take a bird walk. Bwindi boasts over 300 bird species, including 24 that are endemic to these highlands straddling Uganda, Rwanda and the Congo - the Albertine Rift Endemics.&nbsp;&nbsp; There are also over 200 species of butterflies found in the park.&nbsp; A local expert will guide you on this fascinating walk.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "Bwindi Impenetrable National Park", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>After breakfast, take a charter flight back to Entebbe in time for your international flight.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.052784, 32.465), "Entebbe -  Departure", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -1.0360366;
+					var minLng = 29.625;
+					var maxLat = 2.2259798;
+					var maxLng = 32.465;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div></div>
+</div></div>
+
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/ClassicEastAfrica.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/uganda-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<div class="logoinner1"><img src="../images/uganda-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>Classic East Africa</h1>
+<div class="popupbanner"><img src="../images/lion_east_africa.jpg" alt="Classic East Africa" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 15 days</p>
+<p>This itinerary showcases all the major highlights of Kenya, Uganda and Tanzania</p>
+<p><strong>Highlights:</strong> Bwindi Impenetrable National Park, Ngorongoro, Serengeti, Masai Mara, Lamu</p>
+</li>
+
+
+<li><h4>Day 1</h4>
+<h5>ARRIVE ENTEBBE, UGANDA</h5>
+<p>On arrival at Entebbe International Airport and after clearing customs you will be met by a Sanctuary Retreats representative who will transfer you to Kajjansi airstrip for an early morning charter flight to Kayonza airstrip - Bwindi. The Sanctuary Gorilla Forest Camp guide will be there to meet you and transfer you to the lodge (approximately 40 minutes).</p>
+<p>Sanctuary Gorilla Forest Camp is the only camp located within Bwindi Impenetrable National Park, a UNESCO World Heritage site. It is the perfect luxurious base for a tracking experience as it offers luxury in the heart of the rainforest. Accommodation is in eight large en-suite 'tents' which have two queen-sized beds and a bathtub looking out onto the forest - ideal for soaking away aches and pains after a day searching for gorillas in the forest.</p>
+<p>The camp has a bar and dining cottage, as well as a raised natural platform for open-air dining. Guests can sit around the cozy campfire at night and enjoy Bwindi's crystal clear mountain sky.</p>
+<p>Lunch at the camp. In the afternoon you can relax and take in the fresh air or take a forest walk, which is a nice way to warm up before the Gorilla tracking tomorrow.</p>
+<p>Bwindi is host to the highest concentration of primates on earth, including the majestic mountain gorilla, one of the rarest animals on the planet.  It is estimated that 65% of the world's surviving population of mountain gorillas, about 460, live within Bwindi's boundaries.</p>
+
+<p><strong>Overnight:</strong> Gorilla Forest Camp<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+
+<li>
+<h4>Day 2</h4>
+<h5>BWINDI IMPENETRABLE NATIONAL PARK</h5>
+<p>After an early breakfast this morning, you will receive a briefing from your gorilla tracking guide. Tracking commences every morning from the park headquarters at 8.30 am.</p>
+<p>The gorillas you will track belong to one of the 'habituated' family groups in Northern Bwindi. For several years each group has undergone an extremely delicate process that has gradually made them used to the presence of humans. Experienced guides will accompany the tracking, many of who have been involved in the habituation process themselves. Once the gorillas are located, the group will be allowed a maximum of one hour with them. A look into the deep and expressive brown eyes of these giants is surely one of the most unforgettable wildlife encounters that Africa has to offer. </p>
+<p><strong>Overnight:</strong> Gorilla Forest Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+
+<li>
+<h4>Day 3</h4>
+<h5>BWINDI IMPENETRABLE NATIONAL PARK</h5>
+<p>Bwindi is also home to the Batwa Pygmies, who are the oldest inhabitants of the Great Lakes region of Central Africa.  These hunter gatherers, whose existence was first recorded over 4000 years ago, have a rich, deep culture and history that they are very happy to share.  A visit to their community is a unique cultural experience unlike any other and will assist in helping conserve their community and way of life.</p>
+<p>Or you could take a bird walk. Bwindi boasts over 300 bird species, including 24 that are endemic to these highlands straddling Uganda, Rwanda and the Congo - the "Albertine Rift Endemics".   There are also over 200 species of butterflies found in the park.  A local expert will guide you on this fascinating walk.</p>
+<p><strong>Overnight:</strong> Gorilla Forest Camp<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+
+
+<li>
+<h4>Day 4</h4>
+<h5>ENTEBBE - JRO</h5>
+<p>Breakfast at the lodge, before your transfer to Kayonza airstrip for your charter flight back to Kajjansi.  Upon arrival you will be met and transferred to Boma Hotel for lunch. You will then be transferred to Entebbe for your flight to Arusha later in the afternoon.</p>
+<p>Upon arrival at JRO Kilimanjaro International Airport you will be met by your Tanzanian driver and transferred to the Arusha Hotel only a short drive away.</p>
+<p><strong>Overnight:</strong> Arusha Hotel<br />
+<strong>Meal Plan:</strong> D </p>
+</li>
+
+
+<li>
+<h4>Day 5</h4>
+<h5>MANYARA-NGORONGORO</h5>
+<p>After breakfast, you will be transferred to the airport to board your scheduled flight to Manyara airstrip. At Manyara, you will be met and transferred to Gibbs Farm in time for lunch.</p>
+<p>Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It  lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.</p>
+<p>After lunch continue to the  Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.</p>
+<p>Your lodge is designed in stone and wood.  The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.</p>
+<p><strong>Overnight:</strong> Ngorongoro Serena Safari Lodge<br />
+<strong>Meal Plan:</strong> D</p>
+</li>
+
+<li>
+<h4>Day 6</h4>
+<h5>NGORONGORO CRATER</h5>
+<p>This morning drive down the crater walls and spend the morning game viewing in the crater.</p>
+<p>The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km² (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.</p>
+<p>In the afternoon, visit a Masai village and experience their culture first hand.</p>
+<p><strong>Overnight:</strong> Ngorongoro Serena Safari Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 7</h4>
+<h5>NGORONGORO CRATER - SERENGETI</h5>
+<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the "Cradle of Mankind". This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.</p>
+<p>Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park, drive to your lodge with game viewing en-route.  Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.</p>
+<p>Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).  Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.</p>
+<p><strong>Overnight:</strong> Kusini<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 8</h4>
+<h5>SERENGETI</h5>
+<p>A full day to explore the Serengeti.</p>
+<p>The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.</p>
+<p><strong>Overnight:</strong> Kusini<br />  
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+
+<li>
+<h4>Day 9</h4>
+<h5>SERENGETI - MASAI MARA</h5>
+<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi.  Upon arrival in Nairobi, fly to the famous Masai Mara Game Reserve.</p>
+<p>On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.</p>
+<p>Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.
+Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.</p>
+<p>Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.</p>
+<p>After lunch there is time to relax before enjoying an activity of your choice.</p>
+<p><strong>Overnight:</strong> Olonana<br />  
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 10</h4>
+<h5>MASAI MARA</h5>
+<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.</p>
+<p>In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.</p>
+<p>Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.</p>
+<p>There are also options for a morning balloon safari or a half-day visit to Lake Victoria.</p>
+<p>Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.</p>
+<p>Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara. </p>
+<p><strong>Overnight:</strong> Olonana<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 11</h4>
+<h5>MASAI MARA</h5>
+<p>As above</p>
+<p><strong>Overnight:</strong> Olonana<br />
+<strong>Meal Plan:</strong> B,L,D </p>
+</li>
+
+<li>
+<h4>Day 12</h4>
+<h5>MASAI MARA - DEPART NAIROBI / OPTION TO EXTEND TO LAMU ISLAND</h5>
+<p>After breakfast transfer to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, you will be transferred to Norfolk Hotel where dayrooms have been reserved. The rest of the day is free for you to relax and freshen up, or go sightseeing and shopping.</p>
+<p>This evening transfer to Jomo Kenyatta International Airport for your international departure flight.</p>
+<p>Option to extend to Lamu Island</p>
+<p>After breakfast transfer to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, you will have a picnic lunch before boarding your scheduled flight to Manda Island. On arrival, the Peponi staff will be there to meet you and take you by boat to your hotel on Lamu Island, an unspoiled island just off the coast of Kenya.</p>
+<p>Peponi was opened in 1967 and it still retains much of the character and charm that it had then, as the ultimate 'home from home' retreat on  Lamu Island.  Tucked into its own headland, with the bustling Swahili town of Shela on one side and the sweep of a shimmering beach on the other, Peponi occupies a special position between the old and new worlds. As well as gentle journeys aboard ancient dhows, the hotel offers a host of water sports, from water skiing and windsurfing to scuba diving and bountiful big game fishing.</p>
+<p><strong>Overnight:</strong> Peponi Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 13</h4>
+<h5>LAMU ISLAND</h5>
+<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and  narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.</p>
+<p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>
+<p><strong>Overnight:</strong> Peponi Hotel<br />
+<strong>Meal Plan:</strong> B,L,D </p>
+</li>
+
+<li>
+<h4>Day 14</h4>
+<h5>LAMU ISLAND</h5>
+<p>As above.</p>
+<p><strong>Overnight:</strong> Peponi Hotel<br />
+<strong>Meal Plan:</strong> B,L,D </p>
+</li>
+
+<li>
+<h4>Day 15</h4>
+<h5>LAMU - DEPART NAIROBI</h5>
+<p>After breakfast , transfer by boat to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, you will be transferred to Jomo Kenyatta International Airport for your international departure flight.</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id=14; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Uganda"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic East Africa"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ClassicEastAfrica.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Uganda"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic East Africa"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 15 - ';
+						description = description + "<p>After breakfast , transfer by boat to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, you will be transferred to Jomo Kenyatta International Airport for your international departure flight.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.319167, 36.9275), "LAMU - DEPART NAIROBI", description, "15");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>On arrival at Entebbe International Airport and after clearing customs you will be met by a Sanctuary Retreats representative who will transfer you to Kajjansi airstrip for an early morning charter flight to Kayonza airstrip - Bwindi. The Sanctuary Gorilla Forest Camp guide will be there to meet you and transfer you to the lodge (approximately 40 minutes).<br /><br />Sanctuary Gorilla Forest Camp is the only camp located within Bwindi Impenetrable National Park, a UNESCO World Heritage site. It is the perfect luxurious base for a tracking experience as it offers luxury in the heart of the rainforest. Accommodation is in eight large en-suite 'tents' which have two queen-sized beds and a bathtub looking out onto the forest - ideal for soaking away aches and pains after a day searching for gorillas in the forest.<br /><br />The camp has a bar and dining cottage, as well as a raised natural platform for open-air dining. Guests can sit around the cozy campfire at night and enjoy Bwindi's crystal clear mountain sky. &nbsp;<br /><br />Lunch at the camp. In the afternoon you can relax and take in the fresh air or take a forest walk, which is a nice way to warm up before the Gorilla tracking tomorrow.<br /><br />Bwindi is host to the highest concentration of primates on earth, including the majestic mountain gorilla, one of the rarest animals on the planet.&nbsp; It is estimated that 65% of the world's surviving population of mountain gorillas, about 460, live within Bwindi's boundaries. &nbsp;</p><p><br /><br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "ARRIVE ENTEBBE, UGANDA", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After an early breakfast this morning, you will receive a briefing from your gorilla tracking guide. Tracking commences every morning from the park headquarters at 8.30 am.<br /><br />The gorillas you will track belong to one of the 'habituated' family groups in Northern Bwindi. For several years each group has undergone an extremely delicate process that has gradually made them used to the presence of humans. Experienced guides will accompany the tracking, many of who have been involved in the habituation process themselves. Once the gorillas are located, the group will be allowed a maximum of one hour with them. A look into the deep and expressive brown eyes of these giants is surely one of the most unforgettable wildlife encounters that Africa has to offer.&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "BWINDI IMPENETRABLE NATIONAL PARK", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Bwindi is also home to the Batwa Pygmies, who are the oldest inhabitants of the Great Lakes region of Central Africa.&nbsp; These hunter gatherers, whose existence was first recorded over 4000 years ago, have a rich, deep culture and history that they are very happy to share.&nbsp; A visit to their community is a unique cultural experience unlike any other and will assist in helping conserve their community and way of life.<br /><br />Or you could take a bird walk. Bwindi boasts over 300 bird species, including 24 that are endemic to these highlands straddling Uganda, Rwanda and the Congo - the 'Albertine Rift Endemics'. &nbsp;&nbsp; There are also over 200 species of butterflies found in the park.&nbsp; A local expert will guide you on this fascinating walk.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "BWINDI IMPENETRABLE NATIONAL PARK", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge, before your transfer to Kayonza airstrip for your charter flight back to Kajjansi.&nbsp; Upon arrival you will be met and transferred to Boma Hotel for lunch. You will then be transferred to Entebbe for your flight to Arusha later in the afternoon.<br /><br />Upon arrival at JRO Kilimanjaro International Airport you will be met by your Tanzanian driver and transferred to the Arusha Hotel only a short drive away.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "ENTEBBE - JRO", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>After breakfast, you will be transferred to the airport to board your scheduled flight to Manyara airstrip. At Manyara, you will be met and transferred to Gibbs Farm in time for lunch.<br /><br />Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It&nbsp; lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "MANYARA-NGORONGORO", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the morning game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.</p><p>In the afternoon, visit a Masai village and experience their culture first hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "NGORONGORO CRATER", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park, drive to your lodge with game viewing en-route.&nbsp; Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "NGORONGORO CRATER - SERENGETI", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "SERENGETI", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>&nbsp;This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi.&nbsp; Upon arrival in Nairobi, fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.<br />Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.4166667, 34.9166667), "SERENGETI - MASAI MARA", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.4166667, 34.9166667), "MASAI MARA", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 12 - ';
+						description = description + "<p>&nbsp;</p><p>After breakfast transfer to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, you will be transferred to Norfolk Hotel where dayrooms have been reserved. The rest of the day is free for you to relax and freshen up, or go sightseeing and shopping.<br /></p><p>This evening transfer to Jomo Kenyatta International Airport for your international departure flight.&nbsp;<br /></p><p>Option to extend to Lamu Island<br /></p><p>After breakfast transfer to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, you will have a picnic lunch before boarding your scheduled flight to Manda Island. On arrival, the Peponi staff will be there to meet you and take you by boat to your hotel on Lamu Island, an unspoiled island just off the coast of Kenya.<br /><br />Peponi was opened in 1967 and it still retains much of the character and charm that it had then, as the ultimate 'home from home' retreat on&nbsp; Lamu Island.&nbsp; Tucked into its own headland, with the bustling Swahili town of Shela on one side and the sweep of a shimmering beach on the other, Peponi occupies a special position between the old and new worlds. As well as gentle journeys aboard ancient dhows, the hotel offers a host of water sports, from water skiing and windsurfing to scuba diving and bountiful big game fishing.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.2731625, 40.9018668), "MASAI MARA - DEPART NAIROBI / OPTION TO EXTEND TO LAMU ISLAND", description, "12");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>&nbsp;As above.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.2731625, 40.9018668), "LAMU ISLAND", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.4166667, 34.9166667), "MASAI MARA", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>&nbsp;Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.<br /></p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.2731625, 40.9018668), "LAMU ISLAND", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.365789;
+					var minLng = 29.7194377;
+					var maxLat = -1.0360366;
+					var maxLng = 40.9018668;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			$(document).ready(function(){
+				gmapInitialize();
+			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div></div>
+</div></div>
+
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

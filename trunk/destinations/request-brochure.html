@@ -1,0 +1,916 @@
+<?php
+include("config.php");
+include("classes/mimemail.class.php");
+$content = '';
+ini_set("display_errors",0);
+error_reporting(0);
+
+     if($_POST)
+     {
+	      /*if($_POST[title]!=''){
+	    $content .= 'First Name: '.$_POST[title].'. '.$_POST[fname]."<br />";
+	 }
+	 if($_POST[lname]!=''){
+	    $content .= 'SurName: '.$_POST[lname]."<br />";
+	 }
+	 if($_POST[email]!=''){
+	    $content .= 'Email: '.$_POST[email]."<br />";
+	 }
+	 if($_POST[telephone]!=''){
+	    $content .= 'Telephone: '.$_POST[telephone]."<br />";
+	 }
+	 if($_POST[address1]!=''){
+	    $content .= 'Address1: '.$_POST[address1]."<br />";
+	 }
+	 if($_POST[address2]!=''){
+	    $content .= 'Address2: '.$_POST[address2]."<br />";
+	 }
+	 if($_POST[address3]!=''){
+	    $content .= 'Address3: '.$_POST[address3]."<br />";
+	 }
+	 if($_POST[city]!=''){
+	    $content .= 'Town/City: '.$_POST[city]."<br />";
+	 }
+	 if($_POST[country]!=''){
+	    $content .= 'Country: '.$_POST[country]."<br />";
+	 }
+	 if($_POST[postcode]!=''){
+	    $content .= 'Post Code: '.$_POST[postcode]."<br />";
+	 }
+	 if($_POST[callme]!=''){
+	    $content .= "I would like a consultant to call me (within 48 hrs):".$_POST[callme]."<br />";
+	 }
+	 if($_POST[hear]!=''){
+	    $content .= "How did you hear about A&amp;K?:  ".$_POST[hear]."<br />";
+	 }
+	 if($_POST[travelled]!=''){
+	    $content .= "Have you travelled with us before?:".$_POST[travelled]."<br />";
+	 }*/
+		$fromEmail 		= "info@abercrombie.com";
+		$to 			=  $email;
+		$subject	 	= "Abercrombie - Request a Brochure";
+		
+		//ob_end_clean();
+		ob_start();
+		//echo  $body = $content;
+		include(APP_ROOT_PATH.'bypost_email.php');
+		$body = ob_get_contents();
+		$headers = '';
+		ob_end_clean();
+		
+		// MAIL TO USER 
+		$objMail = new Mimemail();
+		$objMail->set_To($to);
+		$objMail->set_Bcc('hitesh@oliveglobal.com');
+		$objMail->set_From($fromEmail);
+		$objMail->set_Subject($subject); 
+		$objMail->set_Body($body);
+		$objMail->set_Headers($headers);
+		if($objMail->send()){
+			   if($_POST['downloadpdf']=='pdf')
+			   {
+					if($_POST['requestbrochure2']=='Concept Brochure')
+					{
+					   
+	?>
+							<script type="text/javascript">
+							window.open("<?php echo APP_ROOT_URL?>pdf/AKConcept-Brochure.pdf", '_blank', 'toolbar=0,location=0,menubar=0');
+							</script>
+				<?php
+				
+				
+				}
+				if($_POST['requestbrochure2']=='Worldwide Brochure')
+				{
+				  
+				?>
+	  <script type="text/javascript">window.open("<?php echo APP_ROOT_URL?>pdf/AK-Worldwide-Brochure.pdf", '_blank', 'toolbar=0,location=0,menubar=0');
+	</script>
+	<?php
+					 
+					}
+			   }
+		   else
+		   {
+		   		header("location:request-brochure.html?m=1");
+		   		exit;
+		   }
+		}
+		unset($objMail); 
+		
+ }		
+		
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<link rel="stylesheet" type="text/css" href="../ddlevelsfiles/ddlevelsmenu-base.css" />
+<link rel="stylesheet" type="text/css" href="../ddlevelsfiles/ddlevelsmenu-topbar.css" />
+<link rel="stylesheet" type="text/css" href="../ddlevelsfiles/ddlevelsmenu-sidebar.css" />
+<script type="text/javascript" src="../ddlevelsfiles/ddlevelsmenu.js">
+
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+<script type="text/javascript" src="js/tabcontent.js"></script>
+<script type="text/javascript" src="<?php echo APP_ROOT_URL; ?>js/jquery.js"></script>	
+<style type="text/css">
+.shadediv{opacity:0.4;filter:alpha(opacity=40);background:#FBFBFB;z-index:1000;position:absolute;top:120px;height:830px;width:95%}
+.shadedivclose{}
+</style>
+<script language="javascript">
+function showMe(tab)
+{		
+	
+	for(var i=1; i<=2; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById(name2).className="active";
+			
+			//document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById(name2).className="";
+			
+			//document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+function checkcode2(valuecode)
+ {
+  
+	var  dataString = 'val='+valuecode;
+	
+	$.ajax({
+		type: "GET",
+		url: "checkcode.php",
+		data: dataString,
+		cache: true,
+		success: function(value)
+			{  
+				if(value==0){
+					$("#s_code").val(value);	
+					$("#security_code").focus();
+					return false;
+				} else {
+				    $("#s_code").val(value);
+				    return false;
+				}
+				
+			}
+		});
+ }
+ function checkcode3(valuecode)
+ {
+  
+	var  dataString = 'val='+valuecode;
+	
+	$.ajax({
+		type: "GET",
+		url: "checkcode.php",
+		data: dataString,
+		cache: true,
+		success: function(value)
+			{  
+				if(value==0){
+					$("#s_code2").val(value);	
+					$("#security_code2").focus();
+					return false;
+				} else {
+				    $("#s_code2").val(value);
+				    return false;
+				}
+				
+			}
+		});
+ }
+ 
+function new_captcha()
+{
+var c_currentTime = new Date();
+var c_miliseconds = c_currentTime.getTime();
+document.getElementById('captcha').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
+$("#s_code").val(0);
+}
+ </script>
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder"> <a href="enquery-form.html"><img src="images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+  <br />
+  <a href="request-brochure.html"><img src="images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+<!-- Header Part Start Here -->
+<?php include('header.html'); ?>
+<!-- Header Part End Here -->
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="images/about-banner.jpg" alt="Abercrombie &amp; Kent" /></div>
+<!-- Banner Part End Here -->
+<!-- Container Part Start Here -->
+<div id="Container">
+  <!-- Left Container Part Start Here -->
+  <div class="LeftContaner">
+    <div class="Breadcrumb">
+      <ul>
+        <li>You are here</li>
+        <li><a href="index.html">Home</a></li>
+        <li>Request a Brochure</li>
+      </ul>
+    </div>
+    <div class="LeftList">
+      <h4>About A&amp;K</h4>
+      <ul>
+        <li><a href="about/difference.html">A&amp;K Difference</a></li>
+        <li><a href="about/philanthropy.html">A&amp;K Philanthropy</a></li>
+        <li><a href="about/team.html">A&amp;K Team</a></li>
+        <li><a href="enquery-form.html">Jobs in A&amp;K</a></li>
+        <li><a href="#">A&amp;K Traveler Testimonials</a></li>
+        <li><a href="about/press.html">Press</a></li>
+        <li><a href="about/ground-offices.html">A&amp;K Ground Offices</a></li>
+      </ul>
+      <h4>CHOOSE YOUR STYLE</h4>
+      <select onChange="ChangeValue(this)">
+        <option value="0" selected="selected">Choose Your Style</option>
+        <option value="journeystyles/private-journeys.html">Private Journeys</option>
+        <option value="journeystyles/extreme-adventures.html">Extreme Adventures</option>
+        <option value="journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+        <option value="journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+        <option value="journeystyles/famity-holday.html">Family Holidays</option>
+        <option value="journeystyles/rest-revive.html">Rest &amp; Revive</option>
+        <option value="journeystyles/celebration.html">Celebrations</option>
+        <option value="journeystyles/special-interst-groups.html">Special Interest Groups</option>
+        <option value="journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+        <option value="journeystyles/ak-villas.html">A&amp;K Villas</option>
+        <option value="journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+      </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+      <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+    </div>
+    <?php include('brochure_left.html'); ?>
+  </div>
+  <!-- Left Container Part End Here -->
+  <!-- Center Container Part Start Here -->
+  <div class="CenterContainerInner">
+    <h1>Request a Brochure</h1>
+    <div class="Right">
+      <div class="RightIcons">
+        <?php include('share.html'); ?>
+      </div>
+      <div class="NewsletterBox">
+        <?php include('newsletterform.html'); ?>
+      </div>
+    </div>
+    <div class="Clr"></div>
+    <?php //if(isset($_REQUEST['m']) && $_REQUEST['m']==1){?>
+    <!--<span class="errormsg">Your request has been submitted successfully. </span> <br />-->
+    <?php // }?>
+	
+	
+    <div class="newTabholder" style="position:relative">
+	
+      <div class="tabbtnHolder1" id="countrytabs21">
+	  
+        <ul>
+          <li class="active" id="divli1"><a href="javascript:void(0)" onClick="document.getElementById('shadediv').style.display='none';showMe('1');" rel="tab1" title="Africa"><span>By Post</span></a></li>
+          <li id="divli2"><a href="javascript:void(0)" onClick="document.getElementById('shadediv').style.display='none';showMe('2');" rel="tab2" title="Middle East &amp; North Africa"><span>Download</span></a></li>
+          <!--<li id="divli3"><a href="javascript:void(0)" onclick="document.getElementById('shadediv').style.display='none';showMe('3');"  rel="tab3" tab1title="Europe"><span>View Online</span></a></li>-->
+        </ul>
+      </div>
+	   
+      <div class="tabtxtHolder">
+        <div id="tab1" class="tabcontent" >
+          <ul class="jobmainsec">
+            <li>
+              <dl>
+                <p>Our brochures have been designed around the different types of holiday we offer, with each providing an insight into the sort of experience you could expect with Abercrombie &amp; Kent in the various destinations we tour to.  They can be ordered by post, downloaded in PDF format or viewed online.<br />
+                  <br />
+                  Please complete your personal details below in order for us to process your request.</p>
+              </dl>
+            </li>    
+			<li><h2 class="blue14">Your details</h2>
+			
+<?php if($_REQUEST['formbypost']){
+echo "<span class='errormsg'>Your request has been submitted successfully.</span>";
+}
+?>
+			
+			</li>      
+            <li class="dottedBorder">
+			
+              <form name="frm_name" action="" method="post" onSubmit="return brochure(1);" enctype="multipart/form-data" >
+			  <input type="hidden" name="formbypost" value="1" />
+			  <dl>
+                  <dt><strong>*</strong> Select Brochure</dt>
+                  <dd>
+                    <select class="selectmenu-b" name="requestbrochure" onChange="javascript: clearField('error_requestbrochure')" >
+					
+                      <option value="">Select Brochure</option>
+                      <option value="Concept Brochure">Concept Brochure</option>
+                      <option value="Worldwide Brochure">Worldwide Brochure</option>
+                    </select>
+                    <br />
+                    <span class="errormsg" id="error_requestbrochure"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Title</dt>
+                  <dd>
+                    <select class="selectmenu-b" name="title" onChange="javascript: clearField('error_title')" >
+                      <option value="">Select</option>
+                      <option value="Mr">Mr</option>
+                      <option value="Ms">Ms</option>
+                      <option value="Dr"> Dr</option>
+                      <option value="Eng">Eng</option>
+                      <option value="Prof">Prof</option>
+                    </select>
+                    <br />
+                    <span class="errormsg" id="error_title" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> First Name<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="fname"  onkeypress="javascript: clearField('error_fname')" maxlength="32"/>
+                    <br />
+                    <span class="errormsg" id="error_fname" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Surname<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="lname" onKeyPress="javascript: clearField('error_lname')" maxlength="32" />
+                    <br />
+                    <span class="errormsg" id="error_lname" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Telephone<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="telephone"  onkeypress="javascript: clearField('error_telephone')" maxlength="10" />
+                    <br />
+                    <span class="errormsg" id="error_telephone" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Email<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="email" onKeyPress="javascript: clearField('error_email')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error_email"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Confirm E-mail<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="confirm_email"  onkeypress="javascript: clearField('error_confirm_email')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error_confirm_email"></span> </dd>
+                </dl>
+                <dl>
+                  <p>We'll keep you up to date with our latest special offers, plus give you access to insider destination information from our network of over 60 offices around the world via our twice monthly eNewsletter.</p>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Address line 1 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address1" onKeyPress="javascript: clearField('error_address1')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error_address1"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line  2 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address2" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line  3 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address3" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Town/City </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="city" maxlength="32" onKeyPress="javascript: clearField('error_city')"/>
+                    <br />
+                    <span class="errormsg" id="error_city"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Country: </dt>
+                  <dd>
+                    <select class="selectmenu-b" name="country" onChange="javascript: clearField('error_country')">
+                         <?php echo $country_list;?>
+                       </select>
+                    <br />
+                    <span class="errormsg" id="error_country"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Postcode </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="postcode" maxlength="16" onKeyPress="javascript: clearField('error_postcode')"/>
+                    <br />
+                    <span class="errormsg" id="error_postcode"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> I would like a consultant to call me<br />
+                    &nbsp;(within 48 hrs) </dt>
+                  <dd> <span class="mright10 Left width60">
+                    <input type="radio" vspace="2"  name="callme" value="Yes" />
+                    Yes</span> <span class="Left width60">
+                    <input type="radio" name="callme" value="No" />
+                    No</span> <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> How did you hear about A&amp;K?</dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="hear" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> Have you travelled with us before?</dt>
+                  <dd> <span class="mright10 Left width60">
+                    <input type="radio" vspace="2"  name="travelled" value="Yes" />
+                    Yes</span> <span class="Left width60">
+                    <input type="radio" name="travelled" value="No" />
+                    No</span> <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+				<dl>
+				<dt>Security Code</dt>
+				<dd>
+				<img border="0" class="Border" id="captcha" src="image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br>
+				<input type="text" name="security_code" id="security_code"   class="inptxtsml mleft10" onKeyUp="javascript:return checkcode2(this.value);" />
+				<input type="hidden" name="s_code" id="s_code" value="" />
+				<span class="errormsg" id="err_security_code"></span>
+				<!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
+				</dd>
+				</dl>
+                <dl class="top20">
+                  <span class="Left">
+                  <!--<a href="#"><img src="images/continue-btn.jpg" /></a> -->
+                  <input type="submit" value="Submit" class="submitbtn" />
+                  </span>
+                </dl>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="tabtxtHolder">          
+          <div id="tab2" style="display:none" class="tabcontent">
+		  <ul class="jobmainsec">
+           
+            <li>
+              <dl>
+                <p>Our brochures have been designed around the different types of holiday we offer, with each providing an insight into the sort of experience you could expect with Abercrombie &amp; Kent in the various destinations we tour to.  They can be ordered by post, downloaded in PDF format or viewed online.<br />
+                  <br />
+                  Please complete your personal details below in order for us to process your request.</p>
+              </dl>
+            </li>
+			<li><h2 class="blue14">Your details</h2>
+			
+			
+<?php if($_REQUEST['requestbrochure2']){
+echo "<span class='errormsg'>Your request has been submitted successfully.</span>";
+}
+?>			
+			</li>
+            <li class="dottedBorder">
+	
+              <form name="frm_name2" action="" method="post" onSubmit="return brochure2(2);" enctype="multipart/form-data" >
+			  <input type="hidden" name="downloadpdf" value="pdf" />
+			   <dl>
+                  <dt><strong>*</strong> Select Brochure</dt>
+                  <dd>
+                    <select class="selectmenu-b" name="requestbrochure2" onChange="javascript: clearField('error2_requestbrochure')" >
+                      <option value="">Select Brochure</option>
+                      <option value="Concept Brochure">Concept Brochure</option>
+                      <option value="Worldwide Brochure">Worldwide Brochure</option>
+                    </select>
+                    <br />
+                    <span class="errormsg" id="error2_requestbrochure"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Title</dt>
+                  <dd>
+                    <select class="selectmenu-b" name="title" onChange="javascript: clearField('error2_title')" >
+                      <option value="">Select</option>
+                      <option value="Mr">Mr</option>
+                      <option value="Ms">Ms</option>
+                      <option value="Dr"> Dr</option>
+                      <option value="Eng">Eng</option>
+                      <option value="Prof">Prof</option>
+                    </select>
+                    <br />
+                    <span class="errormsg" id="error2_title" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> First Name<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="fname"  onkeypress="javascript: clearField('error2_fname')" maxlength="32"/>
+                    <br />
+                    <span class="errormsg" id="error2_fname" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Surname<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="lname" onKeyPress="javascript: clearField('error2_lname')" maxlength="32" />
+                    <br />
+                    <span class="errormsg" id="error2_lname" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Telephone<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="telephone"  onkeypress="javascript: clearField('error2_telephone')" maxlength="10" />
+                    <br />
+                    <span class="errormsg" id="error2_telephone" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Email<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="email" onKeyPress="javascript: clearField('error2_email')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error2_email"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Confirm E-mail<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="confirm_email"  onkeypress="javascript: clearField('error2_confirm_email')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error2_confirm_email"></span> </dd>
+                </dl>
+                <dl>
+                  <p>We'll keep you up to date with our latest special offers, plus give you access to insider destination information from our network of over 60 offices around the world via our twice monthly eNewsletter.</p>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line 1 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address1" onKeyPress="javascript: clearField('error2_address1')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error2_address1"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line  2 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address2" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line  3 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address3" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Town/City </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="city" maxlength="32" onKeyPress="javascript: clearField('error2_city')"/>
+                    <br />
+                    <span class="errormsg" id="error2_city"></span> </dd>
+                </dl>
+                <dl>
+                  <dt> &nbsp;&nbsp;Country: </dt>
+                  <dd>
+                    <select class="selectmenu-b" name="country" onChange="javascript: clearField('error2_country')">
+                      
+                      <?php echo $country_list;?>
+                    </select>
+                    <br />
+                    <span class="errormsg" id="error2_country"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Postcode </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="postcode" maxlength="16" onKeyPress="javascript: clearField('error2_postcode')"/>
+                    <br />
+                    <span class="errormsg" id="error2_postcode"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> I would like a consultant to call me<br />
+                    &nbsp;(within 48 hrs) </dt>
+                  <dd> <span class="mright10 Left width60">
+                    <input type="radio" vspace="2"  name="callme" value="Yes" />
+                    Yes</span> <span class="Left width60">
+                    <input type="radio" name="callme" value="No" />
+                    No</span> <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> How did you hear about A&amp;K?</dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="hear" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> Have you travelled with us before?</dt>
+                  <dd> <span class="mright10 Left width60">
+                    <input type="radio" vspace="2"  name="travelled" value="Yes" />
+                    Yes</span> <span class="Left width60">
+                    <input type="radio" name="travelled" value="No" />
+                    No</span> <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+				<dl>
+				<dt>Security Code</dt>
+				<dd>
+				<img border="0" class="Border" id="captcha" src="image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br>
+				<input type="text" name="security_code2" id="security_code2"   class="inptxtsml mleft10" onKeyUp="javascript:return checkcode3(this.value);" />
+				<input type="hidden" name="s_code2" id="s_code2" value="" />
+				<span class="errormsg" id="err2_security_code"></span>
+				<!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
+				</dd>
+				</dl>
+                <dl class="top20">
+                  <span class="Left">
+                  <!--<a href="#"><img src="images/continue-btn.jpg" /></a> -->
+                  <input type="submit" value="Submit" class="submitbtn" />
+                  </span>
+                </dl>
+              </form>
+            </li>
+          </ul> </div>
+		 </div>
+		 <div class="tabtxtHolder">  
+          <div id="tab3" style="display:none" class="tabcontent"><ul class="jobmainsec" >
+            
+            <li>
+              <dl>
+                <p>Our brochures have been designed around the different types of holiday we offer, with each providing an insight into the sort of experience you could expect with Abercrombie &amp; Kent in the various destinations we tour to.  They can be ordered by post, downloaded in PDF format or viewed online.<br />
+                  <br />
+                  Please complete your personal details below in order for us to process your request.</p>
+              </dl>
+            </li>
+			<li><h2 class="blue14">Your details</h2></li>
+            <li class="dottedBorder">
+	
+              <form name="frm_name3" action="" method="post" onSubmit="return brochure3(2);" enctype="multipart/form-data" >
+                <dl>
+                  <dt><strong>*</strong> Title</dt>
+                  <dd>
+                    <select class="selectmenu-b" name="title" onChange="javascript: clearField('error3_title')" >
+                      <option value="">Select</option>
+                      <option value="Mr">Mr</option>
+                      <option value="Ms">Ms</option>
+                      <option value="Dr"> Dr</option>
+                      <option value="Eng">Eng</option>
+                      <option value="Prof">Prof</option>
+                    </select>
+                    <br />
+                    <span class="errormsg" id="error3_title" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> First Name<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="fname"  onkeypress="javascript: clearField('error3_fname')" maxlength="32"/>
+                    <br />
+                    <span class="errormsg" id="error3_fname" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Surname<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="lname" onKeyPress="javascript: clearField('error3_lname')" maxlength="32" />
+                    <br />
+                    <span class="errormsg" id="error3_lname" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Telephone<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="telephone"  onkeypress="javascript: clearField('error3_telephone')" maxlength="15" />
+                    <br />
+                    <span class="errormsg" id="error3_telephone" ></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Email<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="email" onKeyPress="javascript: clearField('error3_email')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error3_email"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Confirm E-mail<br />
+                  </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="confirm_email"  onkeypress="javascript: clearField('error3_confirm_email')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error3_confirm_email"></span> </dd>
+                </dl>
+                <dl>
+                  <p>We'll keep you up to date with our latest special offers, plus give you access to insider destination information from our network of over 60 offices around the world via our twice monthly eNewsletter.</p>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line 1 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address1" onKeyPress="javascript: clearField('error3_address1')" maxlength="64" />
+                    <br />
+                    <span class="errormsg" id="error3_address1"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line  2 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address2" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Address line  3 </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="address3" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong>*</strong> Town/City </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="city" maxlength="32" onKeyPress="javascript: clearField('error3_city')"/>
+                    <br />
+                    <span class="errormsg" id="error3_city"></span> </dd>
+                </dl>
+                <dl>
+                  <dt>&nbsp;&nbsp;Country: </dt>
+                  <dd>
+                    <select class="selectmenu-b" name="country" onChange="javascript: clearField('error3_country')">
+                      <?php echo $country_list;?>
+                    </select>
+                    <br />
+                    <span class="errormsg" id="error3_country"></span> </dd>
+                </dl>
+                <dl>
+                  <dt> &nbsp;&nbsp;Postcode </dt>
+                  <dd>
+                    <input type="text" class="inptxt" name="postcode" maxlength="16" onKeyPress="javascript: clearField('error3_postcode')"/>
+                    <br />
+                    <span class="errormsg" id="error3_postcode"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> I would like a consultant to call me<br />
+                    &nbsp;(within 48 hrs) </dt>
+                  <dd> <span class="mright10 Left width60">
+                    <input type="radio" vspace="2"  name="callme" value="Yes" />
+                    Yes</span> <span class="Left width60">
+                    <input type="radio" name="callme" value="No" />
+                    No</span> <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> How did you hear about A&amp;K?</dt>
+                  <dd>
+                    <input type="text" class="inptxt"  name="hear" maxlength="64" />
+                    <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl>
+                  <dt><strong></strong> Have you travelled with us before?</dt>
+                  <dd> <span class="mright10 Left width60">
+                    <input type="radio" vspace="2"  name="travelled" value="Yes" />
+                    Yes</span> <span class="Left width60">
+                    <input type="radio" name="travelled" value="No" />
+                    No</span> <br />
+                    <span class="errormsg"></span> </dd>
+                </dl>
+                <dl class="top20">
+                  <span class="Left">
+                  <!--<a href="#"><img src="images/continue-btn.jpg" /></a> -->
+                  <input type="submit" value="Submit" class="submitbtn" />
+                  </span>
+                </dl>
+              </form>
+            </li>
+          </ul> </div>
+        </div>
+      </div>
+	  
+    </div>
+	 
+    <!-- Center Container Part End Here -->
+    <div class="Clr"></div>
+  </div>
+  <!-- Container Part End Here -->
+</div></div>
+
+<!-- Footer Part Start Here -->
+<?php include('footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<script type="text/javascript">
+var countries=new ddtabcontent("countrytabs21")
+countries.setpersist(true)
+countries.setselectedClassTarget("link") //"link" or "linkparent"
+countries.init()
+</script>
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script>
+</body>
+</html>

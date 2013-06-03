@@ -1,0 +1,446 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=5; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById("img"+i).style.display="";
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById("img"+i).style.display="none";
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquery-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="img1"><img src="../images/europe-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img2" style="display:none;"><img src="../images/russia-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img3" style="display:none;"><img src="../images/portugal-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img4" style="display:none;"><img src="../images/uk-ireland-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img5" style="display:none;"><img src="../images/europe-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="europe.html">Europe</a></li>
+<li>News</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>News</h4>
+<ul>
+<li><a href="africa-news.html" title="Africa">Africa</a></li>
+<li><a href="middle-east-north-africa-news.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="europe-news.html" title="Europe">Europe</a></li>
+<li><a href="australasia-news.html" title="Australasia">Australasia</a></li>
+<li><a href="china-orient-news.html" title="The Orient">The Orient</a></li>
+<li><a href="south-america-news.html" title="South America">South America</a></li>
+<li><a href="../news.html?id=7" title="North America">North America</a></li>
+<li><a href="../news.html?id=8" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="../news.html?id=9" title="Antarctica">Antarctica</a></li>
+</ul>
+<h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/famity-holday.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="#">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1> Europe News</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="Italy &amp; Croatia"><span>Italy &amp; Croatia</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Russia"><span>Russia</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Spain &amp; Portugal"><span>Spain &amp; Portugal</span></a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');" title="UK &amp; Ireland"><span>UK &amp; Ireland</span></a></li>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');" title="Rest of Europe"><span>Rest of Europe</span></a></li>
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top"></div>
+<div class="tabtxtHolder-mid">
+<div id="tab1">
+<div style="float:right;"><a href="europe-Italy-croatia.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Italy &amp; Croatia Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Prize for Croatia's Coastal Waters</strong></h3>
+<p>Croatia's stunning Adriatic coastal waters have been awarded 2nd prize for having one of the worlds cleanest
+waters. The waters are tested for salinity and temperature, and the air and weather conditions are all taken into account along with microbiological testing. </p>
+<h3><strong style="text-decoration:underline;">40th Year of the Umbrian Jazz Festival</strong></h3>
+<p>Umbria's famous Jazz festival has been running since 1973 and has starred some big names in music from all genres.
+This year sees its 40th year and the celebrations will be bigger and better than ever. </p>
+<h3><strong style="text-decoration:underline;">Cinque Terre</strong></h3>
+<p>The region of the Cinque Terre is recovering well from the flooding that occurred towards the end of last year. The villages of Corniglia, Manarola and Riomaggiore were largely unaffected by the flooding from the start, whilst Monterosso has made a full recovery. The only one of the five villages still affected is Vernazza.</p>
+<p>
+The region of Cinque Terre is a UNESCO world heritage site with beautiful walking paths under the olive trees between each of the villages providing the best way to discover the magnificent panoramic views and picturesque village clinging to the steep cliff edges.</p>
+<p>
+Currently the only path open connecting Vernazza to the other villages is the Via dell'amore, linking Vernazza with Maranola, though the paths to Monterosso and Corniglia are well on the way to recovery and should be open within the next few weeks.</p>
+<p>
+All visitors to this area at this time will help aid a full economic recovery and ensure this wonderful region flourishes for years to come.</p>
+<h3><strong style="text-decoration:underline;">New Chef at Castiglion del Bosco</strong></h3>
+<p>New Chef Elio Sironi has just joined the team in the kitchens at Castiglion del Bosco. Elio Sironi is well known in Italian cuisine. His most recent post was Executive Chef at Bulgari Hotel in Milan.</p>
+<p>
+Guests will experience the the best of the Tuscan cuisine with the special touch of the Chef, in a relaxed but refined setting. A unique Tuscan dining experience. </p>
+<h3><strong style="text-decoration:underline;">Sinking Venice</strong></h3>
+<p>New research by U.S. scientists suggests the beautiful Italian city is sinking more than five times faster than experts first thought. It also suggests that its famous waters are now taking over, as it looks like the historic city may actually be heading out to sea.</p>
+<p>According to measurements taken over 10 years, Venice is also tilting a bit, about a millimetre or two eastward per year. While this doesn't mean any immediate threat for the city, it raises concern that not enough is being done to save it. </p>
+<h3><strong style="text-decoration:underline;">The Vatican's Secret Archive to go on display</strong></h3>
+<p>The archive will be open to the public for the first time, with an exhibition showing off 100 documents at Rome's Capitoline Museum.  It will contain more than 50 miles of shelves packed with an unknown number of papal documents spanning 12 centuries, including correspondence with Genghis Khan's grandson, Wolfgang Mozart and Adolf Hitler,</p>
+<p>The archive also boasts such treasures as a letter, complete with 81 wax seals, sent by English nobles to Pope Clement VII in 1530 demanding Henry VIII be allowed to divorce Catherine of Aragon, a request the pope turned down, helping prompt the formation of the Church of England.</p>
+<h3><strong style="text-decoration:underline;">Verdura won Best hotel Spa in Europe</strong></h3>
+<p>Verdura Golf & Spa Resort in Sicily has won Best Hotel Spa
+in Europe in Conde Nast Traveller's Readers' Spa Awards 2012, and was also voted 6th Best Spa in the World! </p>
+<h3><strong style="text-decoration:underline;">A New Ferrari....On the Rails</strong></h3>
+<p>March sees the launch of an entirely new high speed rail service, Italo, which will run throughout the country. Spearheaded by the boss of Ferrari, the service promises the luxury, finesse and speed of a Ferrari with brand new trains slicing through the country at up to 300kph / 185 mph.</p>
+<p>
+Club Class guests will benefit from luxury carriages with just 19 leather seats, 9&rdquo; personal live TV&rdquo;s and complimentary wi-fi. For that extra touch of privacy, private compartments comprised of 4 seats are available, with a personal wardrobe.</p>
+<h3><strong style="text-decoration:underline;">Venice's 13th Architecture Biennale</strong></h3>
+<p>Venice's 13th Architecture Biennale will take place between August 29th and November 25th 2012 under the curator David Chipperfield, the first British curator of the event, and latest winner of the Mies can der Rohe award for his reinvention of the Neues Museum in Berlin. The exhibition will focus on relationships between architects as well as those who refer to their works.</p>
+<h3><strong style="text-decoration:underline;">Verdura Resort to host Sicilian Golf Open</strong></h3>
+<p>Rocco Forte's Verdura resort is delighted to be hosting the 2012 Sicilian Open Golf Tournament. The tournament will take place between 29th March and 1st April 2012 and is a great accolade for the hotel. The announcement follows the high scores granted to the resort's golf courses in the Rolex World's Top 1000 Golf Courses Guide. If your clients are interested in staying at the Verdura or would like to discuss a tailor-made golf itinerary.</p>
+<h3><strong style="text-decoration:underline;">Armani opens Luxury Hotel in Milan</strong></h3>
+<p>Famed Italian Fashion Designer Giorgio Armani has opened his own Luxury hotel in Milan, home of his fashion empire. The opening of the 95 room hotel follows the success of the Armani Hotel Dubai. Located on the fashionable Via Manzoni, the hotel seeks to merge aesthetic excellence with total comfort. If you wish to find out more information about this hotel.</p>
+<h3><strong style="text-decoration:underline;">Regina Baglioni Ludovisi Suite nominated as a top luxury suite</strong></h3>
+<p>Luxury Travel Advisor have recognised the Ludovisi Suite at the Regina Hotel Baglioni, Rome as one of the top 10 Luxury suite openings in 2011. Accessed by private elevator with a furnished, landscaped terrace boasting unrivalled views over the rooftops and monuments of Rome, the suite really does offer a sumptuous setting from which to discover the city. The hotel also has an additional 20 suites and 85 rooms. Why not make the Regina Hotel Baglioni the base from which you explore the fascinating city of Rome.</p>
+<h3><strong style="text-decoration:underline;">Starwood open St Regis Florence</strong></h3>
+<p>Following a 10 month renovation to restore the historical grandeur of the property, the St Regis Hotel has been opened in Florence. Featuring 81 exquisite guest rooms and 19 spacious suites, the hotel reflects Florence's rich artistic heritage. The frescoes, chandeliers and custom designed furniture infuse the hotel with a sophisticated, yet relaxed, atmosphere. The location is also fantastic, overlooking the romantic Arno river, and situated right in the heart of the city. To find out more about this exceptional new hotel or to discuss your client's trip to Florence.</p>
+<h3><strong style="text-decoration:underline;">Gucci Museum to open in Florence</strong></h3>
+<p>Italian luxury fashion brand Gucci has opened a new museum in Florence to celebrate its 90th birthday. Located at Palazzo Mercantazzia in Piazza della Signoria, the museum will feature some of the most iconic Gucci creations as well as exclusive photographs detailing the history of the fashion house. If any of your clients are fashion lovers and would like to include a visit to the Gucci museum on their trip to Florence</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+</div>
+
+<div id="tab2" style="display:none">
+<div style="float:right;"><a href="europe-russia.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Russia Homepage</a></div>
+<h3><strong style="text-decoration:underline;">New Museum and First of its Kind Opens in Moscow</strong></h3>
+<p>On November 11th, Moscow proudly opened the museum of Jewish history and the tolerance centre. The museum's exhibits are dedicated to the Jewish civilization, its spiritual fundamentals and cultural achievements.  The museum features an educational and exhibition complex, consisting of several exhibitions, a library, a research centre, conference halls and galleries and is said to be the first large scale museum of its kind in Russia. </p>
+<h3><strong style="text-decoration:underline;">First Tourist Information Centre in Moscow</strong></h3>
+<p>The first tourist information centre in Moscow is set to open this summer in the State Historical Museum near the Red Square.   It is also planned to open a tourism portal about Moscow with information in Russian,English and German.  This will be so valuable to tourists to the city and there are further plans to develop other tourist information centres in several Moscow hotels.</p>
+<h3><strong style="text-decoration:underline;">300th Anniversary of Peter and Paul Cathedral</strong></h3>
+<p>This summer marks the 300th anniverary of of the spectacular Peter and Paul Cathedral in St Petersburg. The building was the first stone church in St Petersburg and is also the worlds tallest Orthodox cathedral. </p>
+<p>
+The government has dedicated a programme of special events to mark the anniversary.  The Cathedral is mainly used as a museum now, however some parts have recently been resumed for religious purposes.</p>
+<h3><strong style="text-decoration:underline;">Introduction of subtitles to theatrical performances</strong></h3>
+<p>According to Moscow authorities, theatrical performances in
+the capital will be accompanied by English and German subtitles. The program is supposed to attract more visitors to the city.</p>
+<p>
+The head of the Moscow Culture Department Sergey Kapkova said that more than half a million foreigners are working in the city and would like to attend not only the Bolshoi Theatre, where the language of dance and music is understandable
+without translation.</p>
+<p>
+The innovation is designated not only for foreigners living in the capital, but also for tourists who come to explore the city. The idea is expected to gain popularity among the public and make the Russian theatre more accesible for all visitors.</p>
+<p>
+In addition, another project of creation English signs in the city is going to be implemented.</p>
+<h3><strong style="text-decoration:underline;">Happy 100th Birthday Rocco Forte's Hotel Astoria</strong></h3>
+<p>The first hotel in Russia, opening back in 1912, Hotel Astoria has lived through the Bolshevik revolution, two world wars, Perestroika, the collapse of the Soviet Union and formation of the new Russian economy.</p>
+<p>
+In spring 2012, Hotel Astoria will also unveil newly 78 newly refurbished rooms and 58 suites.</p>
+<p>
+Birthday celebrations include free entrance to museums, backstage tours and many other special treats at the leading cultural institutions of St Petersburg such as the spectacular St Isaac's Cathedral and Hermitage Museum. December 2012 will be marked with a splendid jubilee party bringing together guests from all over the world including politicians, fashion designers, artists, musicians, film stars, and other devoted connoisseurs of true Russian luxury. </p>
+<h3><strong style="text-decoration:underline;">Clients pre-booking an A&K shore excursion in Russia do not need a Visa</strong></h3>
+<p>Any clients who pre-book a shore excursion in St Petersburg with us will not require a visa to enter Russia. Be sure to take a look at our Recommended Itineraries page for some inspiration and examples of what we can offer. A&K Russia will also be happy to assist with any land arrangements for whose wishing to explore St Petersburg further at the end of their cruise. </p>
+<h3><strong style="text-decoration:underline;">Russia Celebrates the 200th Anniversary of the War with Napoleon</strong></h3>
+<p>In celebration of the 200th anniversary of the war with Napoleon, a number of special art exhibitions will open in some of the country's most major venues including the Kremlin, the History Museum and the Hermitage. Here at A&K we have also put together a special itinerary dedicated to the 200th anniversary of the war with Napoleon and the story of Russia's history.</p>
+<h3><strong style="text-decoration:underline;">Best Russian Hotel Announced</strong></h3>
+<p>Moscow five-star hotel "Ararat Park Hyatt" has become
+the winner of the International Hotels Awards in the
+nomination "The best hotel in Russia". At first, the selection of participants is held at the country level, and then the winners are evaluated by international commission, composed of 20 professionals.</p>
+<p>
+"Ararat Park Hyatt" is located in the heart of the capital, near the Bolshoi Theatre and only a few steps from Red Square and the building of the State Duma. The hotel includes three restaurants and 2 bar lounges, as well as a state-of-the-art spa and fitness centre. </p>
+<h3><strong style="text-decoration:underline;">New Moscow - Paris Train Service</strong></h3>
+<p>Russian Railways has introduced a direct train service between Moscow and Paris that will run 3 times a week. The train has several deluxe cars and 1st and 2nd class sleeper compartments and the journey will take 38.5 hours. This new development offers an interesting alternative method of travel for those who prefer not to fly or wish to see more of the European scenery.</p>
+<h3><strong style="text-decoration:underline;">New skating rink to open in Moscow's Gorky Park</strong></h3>
+<p>Moscow is set to see the opening of one of Europe's largest skating rinks this winter. In addition to Red Square's magical rink, this one will be located at the Gorky Central Park of Culture and Leisure and will cover approximately 15,000 square metres. The park will also house springboards for snowboarders and a glacial labyrinth making for a magical winter wonderland. </p>
+<h3><strong style="text-decoration:underline;">English signs introduced around Moscow</strong></h3>
+<p>In order to help visitors to Moscow to navigate the city, 135 special red and white English signs have been installed near the main sights including Red Square, the State Tretyakov Museum and the Russian State Library. </p>
+<h3><strong style="text-decoration:underline;">Radisson Royal in Moscow voted best hotel in the world</strong></h3>
+<p>The Radisson Royal Hotel in Moscow has been announced as the Best Hotel at the World Travel Awards for the second year running. Built between 1953 and 1957, the building is a great example of Soviet neoclassicism. Also nominated were Four Seasons Hotel George V in Paris and the Mandarin Oriental Hotel du Rhone in Geneva. </p>
+<h3><strong style="text-decoration:underline;">Russia celebrates 1150th anniversary</strong></h3>
+<p>2012 will see the 1150th anniversary of Russia which will be celebrated in Novgorod in a similar fashion to the 100th anniversary celebrations held in 1862. Theatrical performances and historical reconstructions will lead the celebrations and historical buildings such as the Kremlin of Novgorod and the ancient settlement of Rurik are to be restored for the event. </p>
+<h3><strong style="text-decoration:underline;">Moscow's Bolshoi Theatre to Reopen</strong></h3>
+<p>The iconic Bolshoi Theatre in Moscow is set to reopen in October after 6 years of reconstruction. Famous for its ballet and opera performances, the theatre has been rebuilt to its former 19th century Czarist glory with embroidered silk tapestry and acoustics improving fir. The theatre will reopen with a gala concert and will host world premieres and classic masterpieces through the 2011/2012 season. </p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab3" style="display:none">
+<div style="float:right;"><a href="europe-spain-portugal.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Spain &amp; Portugal Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Lisbon Up for top honours at World Travel Awards</strong></h3>
+<p>The Oscars of Tourism - 'The World Travel Awards' has announced  that Lisbon has been nominated for four categories in Octobers annual award ceremony.</p>
+<p>Portugals capital has been nominated for awards in the following categories: Europe's Leading Destination, Europe's Leading City Break Destination, Europe's Leading Cruise Destination and Europe's Leading Cruise Port.</p>
+<h3><strong style="text-decoration:underline;">25 Million Year old Fossil Found in La Rioja</strong></h3>
+<p>A 25 million year old fossil has been discovered in the La Rioja region.  The fossil dates back to the Miocene period and has resulted in scientists finding a hitherto unknown species of bird belonging to the crane family.</p>
+<h3><strong style="text-decoration:underline;">Baby Giraffes at Lisbon Zoo</strong></h3>
+<p>Lisbon Zoo welcomes the arrival of five baby Giraffe calves born earlier this year.  The new arrivals now make this zoo one of the parks with the highest reproduction levels in Europe.</p>
+<p>
+Located in Sete Rios, Lisbon Zoo is among the largest theme parks in the world, with about 2,000 animals of 364 species. Zoo tickets offer visitors access to various entertainment activities with the animals such as free flying birds, dolphins, reptile house, farm, cable car, sea-lion feeding and reptile presentation. </p>
+<h3><strong style="text-decoration:underline;">Brand new Suite at Hotel Arts, Barcelona</strong></h3>
+<p>Hotels Arts, Barcelona, is pleased to announce the opening of its brand new suite located on the 30th floor.  The new signature suite occupies the entire seafront facade of the hotel and has outstanding views of this gorgeous coastline and the beautiful city.</p>
+<h3><strong style="text-decoration:underline;">UNESCO give Fado World Immaterial Heritage Status</strong></h3>
+<p>Portugal's national music Fado has been given UNESCO World Immaterial Status, recognising it as a fundamental aspect of Portuguese culture and their philisophy of "who knows what tomorrow will bring?". To find out more about this emblematic song, why not take a visit to the Fado Museum in Alfama, Lisbon, offering a history and tribute to the art. </p>
+<h3><strong style="text-decoration:underline;">Lisbon Restaurants Awarded Michelin Stars</strong></h3>
+<p>Feitoria restaurant, located on the waterfront at the Altis Belem Hotel &amp; Spa, Tavares in the heart of Chiado and Fortaleza do Guincho in Cascais have all been awarded Michelin Stars for 2012. Feitoria offers exquisite Portuguese cuisine, fused with exotic influences, Tavares is led by chef Aimé Barroyer who's creative cuisine is designed with the season in mind, and Fortaleza do Guincho is renowned for the best traditional French cuisine in Portugal. Lisbon is truly a food-lover's heaven! </p>
+<h3><strong style="text-decoration:underline;">Mariinsky Theatre on Tour in Spain</strong></h3>
+<p>Get a taste of Russia in Spain this December as the Mariinsky Theatre goes on tour. The Mariinsky ballet will perform Prokofiev's Romeo and Juliet in Valencia at the Palau de les Arts Reina Sofia on 10th and 11th December. The Mariinsky Theatre Symphony Orchestra will also perform in Barcelona on December 12th and Madrid on December 13th. To include any of these performances in your client's Spanish itinerary, or indeed, to discuss the possibility of visiting the real Mariinsky Theatre in Russia.</p>
+<h3><strong style="text-decoration:underline;">Second Anniversary Celebrations at Mandarin Oriental, Barcelona</strong></h3>
+<p>The Mandarin Oriental in Barcelona is celebrating its second anniversary in November. Join them for a piano concert by Alfredo Rodriguez on 17th November, Gin and Jazz sessions at the bankers bar every Wednesday and special menus and surprise gifts at Moments and Blanc from 23rd - 29th November. The hotel  will also be running their first Mimosa short story writing contest.</p>
+<h3><strong style="text-decoration:underline;">Madrid's Prado Museum to open 7 days a week</strong></h3>
+<p>Madrid's Prado museum is set to open 7 days of the week from January 16th in order to help cover 60 perdent of its budget through self-financing and to expand its cultural activities. The museum's latest exhibition "The Hermitage in the Prado" will adopt the new opening hours from 8th November. The exhibition will display 170 works from the Hermitage museum in Moscow including archaeological pieces, decorative art objects, paintings, sculptures and drawings by artists such as Bernini, Rubens, Monet and Picasso. For more ideas why not take a look at our "Tour of Barcelona, Madrid and Andalucia" itinerary which incorporates a visit to the Prado museum.</p>
+<h3><strong style="text-decoration:underline;">Sagrada Familia gets final completion date</strong></h3>
+<p>Gaudi's iconic Sagrada Familia church in Barcelona is set for completion between 2026 and 2028, over 140 years after it was started. 6 central towers are to be built to complete the masterpiece, 5 of which have been started and will hopefully be finished in time for the centenary of Gaudi's death. Please contact us for more information relating to the Sagrada Familia or your client's visit to Barcelona.</p>
+<h3><strong style="text-decoration:underline;">Portugal's Hotel Bairro Alto and Pestana Palace Hotel win at World Travel Awards</strong></h3>
+<p>Portugal's leading hotels, the hotel Bairro Alto and the Pestana Palace hotel have been recognised at this year's World Travel Awards. Hotel Bairro Alto has won 'Portugal's Leading Boutique Hotel' for the third year running, while the Pestana Palace Hotel has been identified as 'Portugal's Leading Hotel'. Lisbon itself was also nominated for Best City Break Destination. The awards were voted for by more than 183,000 tourism professionals throughout the world. For more information or if your clients are interested in staying at the Hotel Bairro Alto and the Pestana Palace hotel.</p>
+<h3><strong style="text-decoration:underline;">Sintra hosts largest exhibition of outdoor sculpture</strong></h3>
+<p>Sintra is playing host to the largest exhibition of outdoor sculpture entitled "Sintra Public Art VIII". Centered on the theme, "One man, one world", the exhibition of international sculptures will be displayed along the Volta do Duche until June 10th 2012. </p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+</div>
+
+<div id="tab4" style="display:none">
+<div style="float:right;"><a href="europe-uk-ireland.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< UK &amp; Ireland Homepage</a></div>
+<h3><strong style="text-decoration:underline;">The Olympic Torch Journey</strong></h3>
+<p>For the next few weeks the UK will be the home to the famous Olympic torch as it travels throughout the country within 20 miles of most towns and cities.  This historic event is being celebrated all over the country with parties and special events as it makes its way to the Olympic stadium on Friday 27th July. </p>
+<h3><strong style="text-decoration:underline;">World Award for Glen Eagles</strong></h3>
+<p>The beautiful resort of Glen Eagles in Scotland has just won the Ulimate Luxury Travel Award 2012 for Best Golf Resort in the World. The resort which boasts 3 championship golf courses captures the perfect balance of natural beauty with a challenging golfing adventure.</p>
+<h3><strong style="text-decoration:underline;">Private Viewing of Crown Jewels</strong></h3>
+<p>The Crown Jewels at the Tower of London are a unique collection of Royal regalia. The beautiful jewels are still in use by the Queen today for national ceremonies for example the State Opening of Parliament .  This stunning collection is now open for private viewings.  </p>
+<h3><strong style="text-decoration:underline;">The London Eye goes Interactive</strong></h3>
+<p>The London Eye is the city's most popular viewing point and it has recently launched an interactive guide to around 50 of the many attractions visible from its heights. Six tablets in each pod offer instant context to the sights below. With screens designed to reflect the view before you, you can find out trivia just by pressing the touch screen. For example, Battersea Power Station is Europe's largest brick building, designed by the same architect behind the classic red phone boxes - and there are many more titbits of information like this.</p>
+<h3><strong style="text-decoration:underline;">Buckingham Palace to Display Queen's Diamond Collection</strong></h3>
+<p>In celebration of the Queen's Diamond Jubilee this year, Buckingham Palace will be displaying the Queen's best diamond jewellery and tiaras. The collection will be on display from August to September 2012. Other celebratory exhibitions will include "The Queen: Sixty Photographs for Sixty Years" at Windsor Castle and "Treasures from the Queen's Palaces" at the Palace of Holyroodhouse in Edinburgh which will include paintings, drawings, manuscripts, furniture, ceramics and jewellery. </p>
+<h3><strong style="text-decoration:underline;">Charles Dickens museum open in time for the author's 200th birthday</strong></h3>
+<p>A New Charles Dickens Museum has been reopened in time for the author's 200th birthday. The museum, based in the author's only surviving London house, 48 Doughty Street, holds the world's largest collection of Dickens memorabilia including manuscripts, rare editions, personal items and paintings.</p>
+<h3><strong style="text-decoration:underline;">Hampton Court to host new art exhibition</strong></h3>
+<p>Hampton court Palace will host a fascinating new art exhibition, "The Wild, The Beautiful and The Damned", exploring the meaning of beauty and love in the Stuart Court, with particular emphasis on the lives and loves of courtesans and libertines during the reigns of Charles II, James II, William III &amp; Mary II and Anne. On a journey through the Queen's State Apartments, visitors will learn about what beauty meant in the court, how it was complemented by fashion and accessories but also explore the longer term effects of beauty and frivolity in youth. The exhibition will be on display between 5th April and 30th September 2012, please contact us to discuss the possibility of including this exhibition on your client's visit to the UK.</p>
+<h3><strong style="text-decoration:underline;">St Pancras Renaissance Hotel named 'Hotel of the Year'</strong></h3>
+<p>The newly refurbished St Pancras Renaissance hotel has received 'Hotel of the Year' award at the European Hospitality Awards as well as recognition for 'Refurbishment of the Year'. The hotel celebrated its opening back in May following its £150 million renovation. The hotel offers classic and luxurious Victorian decor, spacious accommodation with all the contemporary amenities you would expect whilst maintaining an authentically romantic feel. An ideal setting for clients wishing to transfer on the Eurostar, please do contact us to discuss any requests you may have.</p>
+<h3><strong style="text-decoration:underline;">Discover the secrets of the Tower of London</strong></h3>
+<p>Discover the secrets of the Tower of London with a new behind the scenes tour. Explore prison cells, a martyr's memorial and an angel and be exposed to the juxtaposed beauty and harshness of life in the tower. The tour is ideal for those who are fascinated by the art and architecture of the tower as well as its rich history. For further information on this limited access tour.</p>
+<h3><strong style="text-decoration:underline;">Post-modernism at the V&amp;A museum</strong></h3>
+<p>Discover the evolution of post-modernism at the Victoria and Albert Museum in London this winter. The Port-modernism exhibition will examine the controversial phenomena, how it has developed and its influence on all areas of popular culture. See over 250 pieces of art and design and understand how the culture of the 1970s and 80s embodied such a movement. If your clients are interested in this particular area of art and design.</p>
+<h3><strong style="text-decoration:underline;">National Gallery in London displays newly discovered Da Vinci painting</strong></h3>
+<p>The National Gallery in London will be home to a unique exhibition of works by Leonardo Da Vinci from 9th November until 5th February. The exhibition will include one newly discovered painting never seen in public before. 'Leonardo da Vinci: Painter at the Court of Milan' is the most complete display of Leonardo's rare surviving paintings ever held and will be dedicated to his aims and techniques as an artist. </p>
+<h3><strong style="text-decoration:underline;">Visit the home of Downton Abbey at Highclere Castle</strong></h3>
+<p>The successful period drama 'Downton Abbey' starring Maggie Smith and Hugh Bonneville has been filmed at Highclere Castle in Newbury, highlighting the magnificent house and gardens. The castle has connections with ancient Egypt as it was the castle's 5th Earl that discovered the tomb of Tutankhamun with Howard Carter in 1922. The castle now boasts an exhibition commemorating this event and the newly famed castle and grounds are also open to visitors to explore.</p>
+<h3><strong style="text-decoration:underline;">Dorchester Collection's  41 park lane opens in Mayfair</strong></h3>
+<p>The Dorchester Collection has opened its latest hotel, 45 Park Lane, in Mayfair, London. The hotel features smart, contemporary décor designed by Thierry Despont. With 45 spacious rooms and suites overlooking Hyde Park, this hotel offers a tasteful retreat from which to enjoy London. Also of note is the world-renowned Wolfgang Puck's new restaurant CUT, located at 45 Park Lane, marking the restaurateur's debut into Europe.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab5" style="display:none">
+<div style="float:right;"><a href="europe-rest-europe.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Rest of Europe Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Win 3 nights at the Grande Bretagne in Athens</strong></h3>
+<p>Any agent booking nights at the Grande Bretagne in Athens before the end of October 2012 for stays up to and including the end of October 2012 will be entered into a raffle to win 3 nights in a Suite at the Grande Bretagne. Don't miss out! Terms and conditions apply.</p>
+<h3><strong style="text-decoration:underline;">Celebrating 200 years of Beer Gardens in Munich and Upper Bavaria</strong></h3>
+<p>The first Bavarian beer gardens date back to 1812, a time without electric cooling systems. Brewers used to plant linden and chestnut trees above the cellars where the beer was stored and cover the ground with a thick layer of gravel, the storage rooms then remained cool and the beer therefore stayed fresh. Local residents enjoyed the shade of the trees together with the cold beer, drinking it on the spot, even though the beer was supposed to have been taken home.</p>
+<p>
+It was King Ludwig I who granted the brewers formal permission to sell their beer for consumption outdoors by the brewery. The concept of an outdoor beer garden begun, where you could both eat and drink outdoors. In 2012, breweries and beer gardens throughout Munich and Upper Bavaria are celebrating this anniversary with festivities and events.</p>
+<h3><strong style="text-decoration:underline;">Launch of the "Le Club de Martin" kids club</strong></h3>
+<p>This year Hotel Château Saint-Martin & Spa are pleased to be launching their kids club. A specialist team of leaders awaits your children to entertain and invlove them in cultural and
+sporting activities, theme days, journeys of discovery and lots of fun and games.</p>
+<p>
+Every day throughout July and August 2012, from 2.30 p.m. to 6 p.m., "Le Club de Martin" offers a fun choice of activities in an environment completely devoted to the wellbeing and development of your little ones.</p>
+<p>Developed with a view to stimulating and giving way to the desire and creativity of all participants, the majority of the activities also aim to make children aware of protecting the environment. </p>
+<h3><strong style="text-decoration:underline;">Hotel Le Clos La Boetie awarded 5*</strong></h3>
+<p>The Hotel Le Clos Boetie, in the heart of Périgord Noir, has been awarded a new 5* rating. Exceptional service, tranquility and a beautiful setting ensure a wonderful stay your clients will want to experience.</p>
+<h3><strong style="text-decoration:underline;">Grand Hotel du Cap Ferrat Awarded Best Spa in Europe</strong></h3>
+<p>Le Spa at the Grand Hotel du Cap Ferrat has been awarded the "Best Spa in Europe" in France's Prix Villégiature Awards. These awards are highly regarded throughout Europe and are judged by some of the industry's best journalists.</p>
+<h3><strong style="text-decoration:underline;">Floriade 2012 comes to The Netherlands</strong></h3>
+<p>See, feel and experience nature at Floriade 2012, a once-in-a-decade floral event. Each day will feature a cultural programme of music, dance, literature, theatre and visual art from all over the world and more than 100 exhibitors will pay tribute to horticulture in the 5 unique zones of the park. This spectacular event will take place in Venlo from 5th April to 7th October 2012.</p>
+<h3><strong style="text-decoration:underline;">Youth Winter Olympics to take place in Innsbruck</strong></h3>
+<p>The first ever Winter Youth Olympics will take place in Innsbruck, Austria from 13th - 22nd January 2012. Highlights are to include ski jumping, bobsleigh and skeleton. If your clients are interested in travelling in Austria during this time.</p>
+<h3><strong style="text-decoration:underline;">Le Saint Paul awarded 5*</strong></h3>
+<p>The Relais And Chateaux property Le Saint Paul in France has been awarded 5* status. Reopening on 1st March 2012, the boutique hotel, with only 3 rooms and 13 suites, promises an exquisite and personal experience in the heart of St Paul de Vence. </p>
+<h4><strong>Berlin biennale art event returns in 2012</strong></h4>
+<p>The 7th Berlin Biennial Art Exhibition will take place in 2012. An excellent forum for contemporary art, the exhibition promises to explore known and unknown artistic developments. Internationally acclaimed artist Artur Zmijewski is to develop the concept for next year's event. If your clients are interested in visiting this exciting event.</p>
+<h3><strong style="text-decoration:underline;">Ritz Paris closing for refurbishment</strong></h3>
+<p>The Ritz Paris will be closing for refurbishment in early summer 2012. The great renovation works are expected to last for approximately 27 months, restoring and recreating rooms, suites, restaurants, bars, the spa, cooking school and gardens. To discuss alternative options for your clients' accomodation in Paris during this time.</p>
+<h3><strong style="text-decoration:underline;">Klimt's 'The Kiss' on display at Belvedere Palace in Vienna</strong></h3>
+<p>Celebrating the 150th anniversary of Gustav Klimt in 2012, the Belvedere Palace in Vienna will be displaying his most famous work, The Kiss until March 4th 2012. The Belvedere museum is home to the largest collection of paintings by Klimt; a painter who revolutionised Vienna's art scene around 1900. Exhibitions surrounding the vivacious artist can also be seen at the Kunsthistorisches Museum, the Leopold Museum, and the Austrian Folklore Museum amongst others. To include any of these exhibitions in your itinerary.</p>
+<h3><strong style="text-decoration:underline;">High-speed rail service to open between London and Germany</strong></h3>
+<p>High-speed rail services will commence operation between London and Germany in 2013. German rail operator Deutsche Bahn will provide services from the Eurostar terminal at London St Pancras to Rotterdam/Amsterdam and Cologne/Frankfurt. With journeys taking roughly 4-5 hours, this offers a genuine and realistic alternative to air travel.</p>
+<h3><strong style="text-decoration:underline;">Grand Hotel du Cap Ferrat receives palace distinction</strong></h3>
+<p>The Grand Hotel du Cap Ferrat has been awarded the "palace" distinction. This is the only hotel on the French Riviera to have been awarded France's new 'Palace' rating, putting it among the top eight properties in the country. If your clients would like to experience this hotel first hand, why not allow us to put together a tailor-made tour of France.</p>
+<h3><strong style="text-decoration:underline;">Celebrate a history of music in Leipzig</strong></h3>
+<p>2012 marks the start of some important celebrations in Leipzig with the 800th anniversary of the St Thomas Boys Choir, Church and School followed by the 200th birthday of Richard Wagner in 2013. Famous for its music, the city will open a new music trail in 2012 connecting the city's most important historical sites including the newly opened Bach-Museum. A visit to Leipzig is a must for music lovers in the next few years, for more information.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+</div>
+
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

@@ -1,0 +1,929 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Customized Trips China, Escorted Journeys China, Guided Tour to China, Private Journeys, Group Tours, Group Travel, Special Interest Group to China"/>
+<meta name="description" content="Abercrombie & Kent specializes in group travel in China. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into China and its peoples." />
+<title>Group Tours & Special Luxury Travel China - Abercrombie & Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--POP UP-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=12; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		    
+	        if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="block";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+	}
+}
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--POP UP-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/china-banner5.jpg" alt="China" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="theorient.html">The Orient</a></li>
+<li><a href="china.html">China</a></li>
+<li>Special Interest Groups</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="theorient.html">The Orient</a></h5>
+        <ul>
+         <li><a href="cambodia.html"  title="Cambodia"> <span>+</span> Cambodia</a></li>
+          <li><a href="china.html" title="China"><span>-</span> China</a>
+          <ul>
+              <li><a href="china.html" title="Introduction to China"><span>-</span> Introduction to China</a></li>
+              <li><a href="china-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="china-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="china-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+              <li><a href="../about/china-office.html" title="A&amp;K office in China"><span>-</span> A&amp;K office in China</a></li>
+              <li><a href="china-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li> <li><a href="china-orient-news.html?id=1" title="News"><span>-</span> News</a></li>
+              <li><a href="china-special-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+              <li><a href="china-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li> <li><a href="../journeystyles/extreme-adventures.html" title="Extreme adventures"><span>-</span> Extreme Adventures</a></li>
+              <li><a href="../journeystyles/china-smallship-cruising.html" title="Small Ship Cruising"><span>-</span> Samll Ship Cruising</a></li>
+             <li><a href="../journeystyles/family-holidays.html" title="Family Holidays"><span>-</span> Family Holidays</a></li>
+              <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>
+              <li><a href="china-special-interest-groups.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+              <li><a href="../journeystyles/private-journeys.html" title="Private Journey"><span>-</span> Private Journey</a></li>
+
+			  
+            </ul>
+</li>
+<li><a href="myanmar.html" title="Myanmar"> <span>+</span> Myanmar</a></li>
+<li><a href="thailand.html" title="Thailand"> <span>+ </span>Thailand</a></li>
+      <li><a href="japan.html" title="Japan"> <span>+</span> Japan</a></li>
+        <li><a href="laos.html" title="Laos"> <span>+ </span>Laos</a></li>
+         <li><a href="bhutan.html" title="Bhutan"> <span>+ </span>Bhutan</a></li>
+          
+          <li><a href="tibet.html"  title="Tibet"> <span>+</span> Tibet</a></li>
+           <li><a href="vietnam.html" title="Vietnam"> <span>+ </span>Vietnam</a></li>
+          <li><a href="indonesia.html"  title="Indonesia"> <span>+ </span> Indonesia</a>          
+          </li>
+     </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Special Interest Groups</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/china-silk-road.jpg" alt="China's Silk Road" width="326" height="210" /></div>
+<div class="rightbox"><h2>China's Silk Road</h2>
+<p><strong>Duration:</strong>  10 days<br />
+<strong>Highlights:</strong>  Urumqi, Kashgar, Turfan, Dunhuang.</p>
+<p>Explore China's Silk Road, historically a very important trading route that spanned across the Asian continent, with this exclusive itinerary.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/beijing-xian.jpg" alt="Discover Beijing and Xian" width="326" height="210" /></div>
+<div class="rightbox"><h2>Discover Beijing and Xian</h2>
+<p><strong>Duration:</strong>  9 days<br />
+<strong>Highlights:</strong> Beijing, the Terracotta Warriors and Horses excavation at Xian, and the Great Wall of China. </p>
+<p>A special interest itinerary exploring China's fascinating capital, the excavated terracotta army at Xian and a portion of the Great Wall of China.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!-- CHINA'S SILK ROAD Content Start Here -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/china-silk-road.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/china-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<h1>China's Silk Road  </h1>
+<div class="popupbanner"><img src="../images/china-inner3.jpg" alt="China's Silk Road" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 10 days</p>
+<p>Explore China's Silk Road, historically a very important trading route that spanned across the Asian continent, with this exclusive itinerary.</p>
+<p>
+<strong>Highlights:</strong> Urumqi, Kashgar, Turfan, Dunhuang.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>URUMQI</h5>
+<p>
+This morning, you will be transferred to the airport for your flight to Urumqi, where you will be welcomed by your guide and transferred to the hotel.</p>
+<p>
+<strong>Overnight:</strong> Sheraton Hotel<br />
+<strong>Meal Plan:</strong> D</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>URUMQI - KASHGAR</h5>
+<p>
+This morning, you will be driven to Tianshan Heavenly Lake. Standing at an elevation of 1900 metres, this world famous mountain lake was formed after its river courses were blocked up by the mud-rock flow of glaciers in ancient times.
+After lunch at a local restaurant, enjoy a boat cruise on the lake.</p>
+<p>
+This evening, you will be transferred to the airport for your flight to Kashgar, where you will be met by your guide and transferred to the hotel.</p>
+<p>
+<strong>Overnight: </strong>Baroni Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>KASHGAR</h5>
+<p>
+This morning, you will visit the site of the great Sunday Market that remains open throughout the week and is a popular market for the local Uighur population.</p>
+<p>
+Next, you will visit the Id Kah Mosque, the largest mosque in China. Dating back to the 15th century, it is the centre of religious life in Kashgar and its open courtyard and prayer hall can accommodate over 3000 during festivals. Continue on to visit the Tomb of Abjak Hoja, a Holy site to the Muslims of Xinjiang.</p>
+<p>
+This afternoon, take a walk through a typical Uighur neighbourhood and visit a local family. The Uighur, who are a Turkic-speaking people, originated in Mongolia as part of the vast sea of steppe tribes that covered the Altai and grasslands of Mongolia and Siberia. </p>
+<p>
+Conclude your sightseeing today with a look at the Old City district. Kashgar has a history of more than 2000 years and originally belonged to the Zhuangpu prefectural General's Office of the HunIn in Han Dynasty. Surrounded by mountains, this famous city has many Islamic and Buddhist constructions and tombs which hint at its glorious history.</p>
+<p>
+<strong>Overnight:</strong> Baroni Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>KASHGAR - URUMQI - TURFAN</h5>
+<p>
+This morning, you will be transferred to the airport for your flight to Urumqi.</p>
+<p>
+After lunch at a local restaurant, visit the Xinjiang Archeological Institute to view the remarkable collection of ancient mummies, some more than 5000 years old.</p>
+<p>
+Next, visit the Er Da Qiao Bazaar, a traditional covered market in Xinjiang where food, clothes, souvenirs and animals are sold. This is an opportunity to witness basic everyday Uighur life.</p>
+<p>
+You will then be transferred overland to Turfan and your hotel.</p>
+<p>
+After dinner, enjoy a Uygur Dance Performance.</p>
+<p>
+<strong>Overnight: </strong>Tuha Petroleum Hotel<br />
+<strong>Meal Plan: </strong>B,L,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>TURFAN</h5>
+<p>
+This morning, you will be transferred by donkey cart to visit the impressive ruins of the ancient city of Gaochang that lies 47 kilometres southeast of Turfan. It became the capital of the kingdom of Gaochang under the Han house of Qu. The practice of Buddhism led to the establishment of many monasteries, temples and large religious communities and the monk Xuan Zang taught in this city for several months.</p>
+<p>
+Continue on to visit the Bezelik Buddist Caves, Astana Tombs, and the Flaming Mountains.</p>
+<p>
+In the afternoon, visit more interesting sites such as the Kerez Irrigation System, a series of wells and underground tunnels that use gravity to bring ground water to the surface, and Jiaohe, a city that evokes the past glories of the Silk Road.</p>
+<p>
+Conclude your sightseeing today at Suliman's Minaret. The minaret is constructed mainly of bricks in the style of the pre-Savafid architecture of Iran and is a lovely example of decorated brickwork.</p>
+<p>
+<strong>Overnight: </strong>Tuha Petroleum Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>TURFAN - URUMQI</h5>
+<p>
+This morning, you will be transferred overland to Urumqi, with sightseeing en route.</p>
+<p>
+Visit Red Hill Park for a panoramic view of the city. Locally known as " Hong Shan", the hill has small viewing pavilions including the Zhenglong Pagoda which is the symbol of the city.  </p>
+<p>
+<strong>Overnight:</strong> Sheraton Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>URUMQI - DUNHUANG</h5>
+<p>
+This morning, you will be transferred to the airport for your flight to Dunhuang.</p>
+<p>
+Upon arrival, commence sightseeing by visiting the Buddhist Yulin Caves and West Jin Dynasty Underground Tomb.</p>
+<p>
+Conclude your sightseeing today with a tour of the ancient city of Dunhuang. Known as Shazhou (the realm of sand), Dunhuang became an important garrison on the caravan routes linking China to central Asia and the Middle East. Its reputation grew even more after monks and faithful pilgrims began work here on the Mogao Caves in 366. In the midst of forbidding desert, the greatest gallery of Buddhist sculpture and art were created.</p>
+<p>
+<strong>Overnight: </strong>Dunhuang Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>DUNHUANG</h5>
+<p>
+This morning, you will visit the Mogao Grottoes. These are one of the most famous Buddhist grottoes in the world with many beautiful statues and wall art preserved for future generations.</p>
+<p>
+After dinner, visit the night bazaar, which specialises in antiques, tea and local products.</p>
+<p>
+<strong>Overnight:</strong> Dunhuang Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>DUNHUANG</h5>
+<p>This morning you will be driven to the Yumen Guam Pass, situated 75 kilometres northwest of Dunhuang. The Jade Gate Pass was a strategic pass on the ancient Silk Road, a gateway from central China to the western regions. Continue to an early remnant of the Great Wall from the Han Period.</p>
+<p>
+In the afternoon, visit the White Horse Pagoda that is located on the outskirts on Dunhuang city, and finally the Dunhuang Museum.
+</p>
+<p>
+<strong>Overnight:</strong> Dunhuang Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>DEPART DUNHUANG</h5>
+<p>
+This morning you will be transferred to the airport for your flight home.</p>
+<p>
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<h1>Send itinerary </h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="China"/>
+<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="china silk road"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="china-silk-road.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="China"/>
+<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="china silk road"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>On arrival at Johannesburg O.R Tambo International Airport, you'll be met by a representative who'll hand over further documentation and transfer you to your hotel. The transfer time is approximately 45 minutes (depending on traffic).<br /><br />Meet your representative in the Polo Lounge from where you will proceed to La Belle Taresse Restaurant, for a "Welcome dinner" hosted by a representative. You will enjoy a demonstration by a professional photographer on camera usage and tips on photography.&nbsp;<br /><br />Dinner includes a 3 course restricted choice menu with wine, beer, (excluding premium brands e.g champagne &amp; imported spirits) mineral water, soft drinks and tea/coffee.<br /><br /> The Westcliff by Orient-Express offers a quiet hideaway close to the city centre with terracotta buildings set around cool swimming pools and well manicured gardens. The elegant and opulent accommodation evokes a bygone era of leisure and refinement.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-26.204102, 28.0473051), "Arrive in Johannesburg", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>The dining room will open at 6.30am for breakfast where breakfast will be taken. There is an additional charge should clients wish to have in-room breakfast and this additional charge will be for their own account.</p><p>Meet your representative in the reception area of the hotel for your transfer to O.R Tambo International Airport.&nbsp; The transfer time is approximately 45 minutes (depending on traffic).</p><p>On arrival at Maun Airport, the Botswana guide will meet and assist clients to their shared light aircraft transfer to Stanley's Camp.&nbsp; This flying time is approximately 15 minutes.<br /><br />On arrival a Stanley's Camp a representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 20 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game Drives - Enjoy thrilling guided game drives in customized open-sided 4X4 vehicles. As Sanctuary Stanley's Camp is situated on a private concession, night drives are offered and are usually combined with the afternoon activity.<br /><br />Walking Safaris - Explore the area on foot with skilled, armed professional guides and experience the bush from a different perspective.<br /><br />Mokoro Safaris - Explore the Delta in a traditional dug-out canoe, or mokoro. Glide through reeds and lily ponds to get up close and personal with wildlife (subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.994169, 23.4184), "Johannesburg to Maun", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>This morning you will have the opportunity to meet and interact with three semi-habituated elephants - Jabu, Thembi and Morula on a morning walk.&nbsp; Observe them up close in their natural environment as they feed, take mud baths and swim, whilst learning about them and discovering their unique personalities.<br /><br />The remainder of your day is at leisure to enjoy the game viewing activities available at the camp.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-22.328474, 24.684866), "Okavango Delta", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for a light aircraft transfer to Chief's Camp.&nbsp; This transfer time will be advised to them locally and the flying time is approximately 15 minutes.<br /></p><p>On arrival a Chief's Camp representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 10 minutes. The remainder of your day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game-drives are conducted in custom built open 4 X 4 vehicles, which offer individual seating. Game drives are conducted in the early morning and late afternoon or as otherwise requested (subject to availability). The accompanying professional guides are among the best in Botswana.<br /><br />Mokoro (dugout canoe) activities: the permanent water of the camp will reveal a world of floating safaris (this excursion is offered in high season only, subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Okavango Delta", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.267394, 23.0965064), "Okavango Delta", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for your shared light aircraft transfer to Kasane Airport.&nbsp; This transfer time will be advised locally and the flying time is approximately 1 hour 30 minutes.<br /><br />On arrival at Kasane Airport, a Chobe Chilwero Lodge representative will meet and transfer clients to the lodge.&nbsp; The transfer time is approximately 10 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The lodge manager will advise details of all the activities available.<br /><br />Activities available include:<br /><br />Game-drives - Highly qualified professional guides lead thrilling game drives in open sided 4X4 vehicles that bring guests to the heart of Africa's largest concentration of elephants.<br /><br />Motorised Boat Safaris and Sundowner Cruises- Explore the Chobe River by specially adapted safari motorboats. Subject to water levels.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Chobe National Park", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.70420, 24.6192899), "Chobe National Park", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Time permitting you to enjoy an early morning game viewing activity before being transferred to Victoria Falls, clearing Botswana &amp; Zimbabwe customs and immigration formalities en-route.&nbsp; The approximate transfer time is 1 hour and 30 minutes.<br /><br />As clients will be entering Zimbabwe, a single entry visa will be required.<br /><br />Enjoy a guided walking Tour of the Falls.&nbsp; The walk is approximately 1&frac12; hours in duration (3km), through the rainforest, stopping at the various viewing points. There are however, 3 exit paths along the way in case clients get tired.<br /><br />We advise clients to wear appropriate clothing and shoes for the walk, as well as bring along suitable waterproof protection for camera equipment.<br /><br />You are likely to see abundant bird life in the rainforest, as well as bushbuck, monkeys, baboons and families of mongoose.<br /><br />On completion of the Tour of the Falls clients will be transferred by road to Sanctuary Sussi &amp; Chuma Lodge, clearing Zimbabwe and Zambia customs and immigration formalities en-route.&nbsp; The approximate transfer time is 50 minutes.<br /><br /> This afternoon clients will enjoy a Sundowner Cruise on the Zambezi River.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Chobe National Park to Livingstone", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning the clients will meet the Sussi &amp; Chuma guide in the reception area of the lodge for their transfer to the Musi-oa-Tunya National Park for a walking Tour of the Falls from the Zambian side.<br /></p><p>Return to the lodge for lunch. &nbsp;<br /><br />This afternoon clients will enjoy a Cultural tour of Livingstone.<br /><br />Simonga Village lies to the West of the Mosi-oa-Tunya National Park on the outskirts of Livingstone Town close the famed Victoria Falls in Zambia. This simple fishing village comprises of around 3000 people who live in simple but comfortable mud and brick houses. From the near by Sussi and Chuma village tours are included, where the village scouts and guides show guests around the village which generally includes a courtesy visit to Elizabeth Inongo's house. Elizabeth is one of the few head ladies in Zambia and is responsible for the well being of her ward and of the village in general, and is one of the area Chief's (Chief Sekute's) primary advisors.<br /><br />OR<br /><br />Game Drives in the Mosi-oa-Tunya National Park where Zambia's only white rhino can be spotted, full range of game drives in the National Park using an open four-wheel drive vehicle driven by your private guide.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-13.133897, 27.849332), "Zambia", description, "9");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -26.204102;
+					var minLng = 23.0965064;
+					var maxLat = -13.133897;
+					var maxLng = 28.0473051;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- Classic ChinaPopup Content End Here -->
+<!-- DISCOVER BEIJING AND XIAN Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/discover-beijing-xian.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/china-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<h1>DISCOVER BEIJING AND XIAN</h1>
+<div class="popupbanner"><img src="../images/china-inner4.jpg" alt="DISCOVER BEIJING AND XIAN" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 9 days</p>
+<p>A special interest itinerary exploring China's fascinating capital, the excavated terracotta army at Xian and a portion of the Great Wall of China.</p>
+<p><strong>Highlights:</strong> Beijing, the Terracotta Warriors and Horses excavation at Xian, and the Great Wall of China.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE BEIJING</h5>
+<p>
+This evening, you will arrive at Beijing Airport where you will be met and transferred to your hotel.</p>
+<p>
+<strong>Overnight:</strong> The Peninsula</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>BEIJING</h5>
+<p>
+Begin your morning with a lesson in Tai Chi, which is held in one of Beijing's largest public parks. Tai Chi is one of China's most popular forms of exercise and is practiced by both young and old.</p>
+<p>
+In the afternoon, you will meet one of Beijing's leading art critics/curators. You will spend the afternoon together at 798 and Coachangdi to learn about the burgeoning world of contemporary Chinese art.</p>
+<p>
+<strong>Overnight:</strong> The Peninsula<br />
+<strong>Meal Plan: </strong>B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>BEIJING</h5>
+<p>
+This morning, see the Chinese flag being raised in Tiananmen Square. Following the flag raising, take in a tour of Tiananmen Square with an expert guide.</p>
+<p>
+You will spend the rest of the morning on the campus of Peking University, regarded as China's finest university.</p>
+<p>
+In the evening, enjoy a sumptuous dinner in one of Beijing's notable restaurants.</p>
+<p>
+<strong>Overnight:</strong> The Peninsula<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>XIAN</h5>
+<p>
+You will fly to Xian this morning. Upon arrival you will be transferred directly by vehicle to the single greatest archaeological find of the 20th century: The Terracotta Warriors and Horses Excavation.</p>
+<p>
+After a dumpling lunch at a local restaurant, you will continue your exploration of Xian. See the Great Mosque of Xian, one of the most beautiful and unusual structures in Xian. The area around the mosque is generally considered to be the "Muslim quarter".</p>
+<p>
+Transfer back to Xian Airport and return to Beijing.</p>
+<p>
+<strong>Overnight:</strong> The Peninsula
+<strong>Meal Plan: </strong>B,L</p>
+</li>
+
+<li>
+<h4>Day 5</h4>
+<h5>BEIJING</h5>
+<p>
+Today begins with an early morning bicycle ride through an older Beijing neighbourhood.</p>
+
+<p>After your scenic bike ride, you will visit some of the Beijing's famous buildings: the Urban Planning Centre, the National Theatre, the CCTV Building, and the Olympic Stadium. </p>
+<p>
+This afternoon, visit a master class to learn a bit about the timely traditions of tea and its importance to Chinese culture. Then you will meet a Beijing historian for a walking tour of one of Beijing's most celebrated neighborhoods. The tour will take you through the hutongs, the network of residential lanes that once criss-crossed much of pre-1911 China.</p>
+<p>
+<strong>Overnight:</strong> The Peninsula<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>BEIJING</h5>
+<p>
+This morning, you will join a local fitness instructor for an early morning power walk that will take you through one of the city's more historic districts. Then spend the rest of the morning learning about the world of Chinese cuisine as you take part in a class run by the Beijing Culinary Institute.</p>
+<p>
+This afternoon, you will be getting on the mat for a session in Chinese Wushu, a type of martial arts.</p>
+<p>
+<strong>Overnight:</strong> The Peninsula<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>BEIJING</h5>
+<p>
+Start the day off at the Panjiayuan weekend market, the biggest and best market experience in Beijing. Then visit the extraordinary Forbidden City. Centre of the Chinese world for nearly 500 years, the imperial palace remains the most complete and best preserved collection of ancient buildings in China. </p>
+<p>
+After a wonderful lunch at the famous Fang Shan, you can enjoy one of the following walking tours to learn more about China's tradition of arts:</p>
+<p> &bull &nbsp;&nbsp;Artists on the edge
+&bull &nbsp;&nbsp;Mind for meditation
+&bull &nbsp;&nbsp;Along the alleyways of history        </p>  
+<p>Following dinner in a local restaurant enjoy a performance by one of the city's finest acrobatics troupes.</p>
+<p>
+<strong>Overnight: </strong>The Peninsula<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>BEIJING</h5>
+<p>
+Start the day early with a visit to the Mutianyu site of the Great Wall. Enjoy time to walk around and explore the ramparts and battlement towers that once stood at the vanguard of Chinese civilisation.</p>
+<p>
+Enjoy dinner at a beautifully restored courtyard house situated in the former imperial city.</p>
+<p>
+<strong>Overnight:</strong> The Peninsula<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>DEPART BEIJING</h5>
+<p>
+Today you will be transferred to the airport for your departure flight.</p>
+
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary </h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="China"/>
+<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Discover Beijing Xian"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="discover-beijing-xian.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="China"/>
+<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Discover Beijing Xian"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>On arrival at Johannesburg O.R Tambo International Airport, you'll be met by a representative who'll hand over further documentation and transfer you to your hotel. The transfer time is approximately 45 minutes (depending on traffic).<br /><br />Meet your representative in the Polo Lounge from where you will proceed to La Belle Taresse Restaurant, for a "Welcome dinner" hosted by a representative. You will enjoy a demonstration by a professional photographer on camera usage and tips on photography.&nbsp;<br /><br />Dinner includes a 3 course restricted choice menu with wine, beer, (excluding premium brands e.g champagne &amp; imported spirits) mineral water, soft drinks and tea/coffee.<br /><br /> The Westcliff by Orient-Express offers a quiet hideaway close to the city centre with terracotta buildings set around cool swimming pools and well manicured gardens. The elegant and opulent accommodation evokes a bygone era of leisure and refinement.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-26.204102, 28.0473051), "Arrive in Johannesburg", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>The dining room will open at 6.30am for breakfast where breakfast will be taken. There is an additional charge should clients wish to have in-room breakfast and this additional charge will be for their own account.</p><p>Meet your representative in the reception area of the hotel for your transfer to O.R Tambo International Airport.&nbsp; The transfer time is approximately 45 minutes (depending on traffic).</p><p>On arrival at Maun Airport, the Botswana guide will meet and assist clients to their shared light aircraft transfer to Stanley's Camp.&nbsp; This flying time is approximately 15 minutes.<br /><br />On arrival a Stanley's Camp a representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 20 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game Drives - Enjoy thrilling guided game drives in customized open-sided 4X4 vehicles. As Sanctuary Stanley's Camp is situated on a private concession, night drives are offered and are usually combined with the afternoon activity.<br /><br />Walking Safaris - Explore the area on foot with skilled, armed professional guides and experience the bush from a different perspective.<br /><br />Mokoro Safaris - Explore the Delta in a traditional dug-out canoe, or mokoro. Glide through reeds and lily ponds to get up close and personal with wildlife (subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.994169, 23.4184), "Johannesburg to Maun", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>This morning you will have the opportunity to meet and interact with three semi-habituated elephants - Jabu, Thembi and Morula on a morning walk.&nbsp; Observe them up close in their natural environment as they feed, take mud baths and swim, whilst learning about them and discovering their unique personalities.<br /><br />The remainder of your day is at leisure to enjoy the game viewing activities available at the camp.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-22.328474, 24.684866), "Okavango Delta", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for a light aircraft transfer to Chief's Camp.&nbsp; This transfer time will be advised to them locally and the flying time is approximately 15 minutes.<br /></p><p>On arrival a Chief's Camp representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 10 minutes. The remainder of your day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game-drives are conducted in custom built open 4 X 4 vehicles, which offer individual seating. Game drives are conducted in the early morning and late afternoon or as otherwise requested (subject to availability). The accompanying professional guides are among the best in Botswana.<br /><br />Mokoro (dugout canoe) activities: the permanent water of the camp will reveal a world of floating safaris (this excursion is offered in high season only, subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Okavango Delta", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.267394, 23.0965064), "Okavango Delta", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for your shared light aircraft transfer to Kasane Airport.&nbsp; This transfer time will be advised locally and the flying time is approximately 1 hour 30 minutes.<br /><br />On arrival at Kasane Airport, a Chobe Chilwero Lodge representative will meet and transfer clients to the lodge.&nbsp; The transfer time is approximately 10 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The lodge manager will advise details of all the activities available.<br /><br />Activities available include:<br /><br />Game-drives - Highly qualified professional guides lead thrilling game drives in open sided 4X4 vehicles that bring guests to the heart of Africa's largest concentration of elephants.<br /><br />Motorised Boat Safaris and Sundowner Cruises- Explore the Chobe River by specially adapted safari motorboats. Subject to water levels.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Chobe National Park", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.70420, 24.6192899), "Chobe National Park", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Time permitting you to enjoy an early morning game viewing activity before being transferred to Victoria Falls, clearing Botswana &amp; Zimbabwe customs and immigration formalities en-route.&nbsp; The approximate transfer time is 1 hour and 30 minutes.<br /><br />As clients will be entering Zimbabwe, a single entry visa will be required.<br /><br />Enjoy a guided walking Tour of the Falls.&nbsp; The walk is approximately 1&frac12; hours in duration (3km), through the rainforest, stopping at the various viewing points. There are however, 3 exit paths along the way in case clients get tired.<br /><br />We advise clients to wear appropriate clothing and shoes for the walk, as well as bring along suitable waterproof protection for camera equipment.<br /><br />You are likely to see abundant bird life in the rainforest, as well as bushbuck, monkeys, baboons and families of mongoose.<br /><br />On completion of the Tour of the Falls clients will be transferred by road to Sanctuary Sussi &amp; Chuma Lodge, clearing Zimbabwe and Zambia customs and immigration formalities en-route.&nbsp; The approximate transfer time is 50 minutes.<br /><br /> This afternoon clients will enjoy a Sundowner Cruise on the Zambezi River.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Chobe National Park to Livingstone", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning the clients will meet the Sussi &amp; Chuma guide in the reception area of the lodge for their transfer to the Musi-oa-Tunya National Park for a walking Tour of the Falls from the Zambian side.<br /></p><p>Return to the lodge for lunch. &nbsp;<br /><br />This afternoon clients will enjoy a Cultural tour of Livingstone.<br /><br />Simonga Village lies to the West of the Mosi-oa-Tunya National Park on the outskirts of Livingstone Town close the famed Victoria Falls in Zambia. This simple fishing village comprises of around 3000 people who live in simple but comfortable mud and brick houses. From the near by Sussi and Chuma village tours are included, where the village scouts and guides show guests around the village which generally includes a courtesy visit to Elizabeth Inongo's house. Elizabeth is one of the few head ladies in Zambia and is responsible for the well being of her ward and of the village in general, and is one of the area Chief's (Chief Sekute's) primary advisors.<br /><br />OR<br /><br />Game Drives in the Mosi-oa-Tunya National Park where Zambia's only white rhino can be spotted, full range of game drives in the National Park using an open four-wheel drive vehicle driven by your private guide.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-13.133897, 27.849332), "Zambia", description, "9");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -26.204102;
+					var minLng = 23.0965064;
+					var maxLat = -13.133897;
+					var maxLng = 28.0473051;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- DISCOVER BEIJING AND XIAN Start Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

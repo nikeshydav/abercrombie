@@ -1,0 +1,755 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Itineraries Alaska Tour, Alaska Travel Itineraries, Holidays Itineraries Alaska, A&K Alaska Itineraries Alaska Travel Itineraries"/>
+<meta name="description" content="Find the best luxury travel itineraries of Alaska for adventurous cruise tours, which is customized to your individual interests and are required not only for luxury but also for short break." />
+<title>Alaska Tours & Holidays Itineraries - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--POP UP-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=12; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		    
+	        if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="block";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+	}
+}
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--POP UP-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/alaska-banner5.jpg" alt="Alaska" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+<!-- Container Part Start Here -->
+<div id="Container"> 
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="north-america.html">North America</a></li>
+<li><a href="alaska.html">Alaska</a></li>
+<li>Recommended Itineraries</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="north-america.html">North America</a></h5>
+        <ul>
+          <li><a href="alaska.html" title="Alaska">- Alaska</a>
+          <ul>
+              <li><a href="alaska.html" title="Introduction to Alaska"><span>-</span> Introduction to Alaska</a></li>
+              <li><a href="alaska-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="alaska-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+             <!-- <li><a href="#" class="cursorauto" title="Travel Tips"><span>-</span> Travel Tips</a></li>-->
+ <li><a href="alaska-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>  <!--<li><a href="#" class="cursorauto" title="News"><span>-</span> News</a></li>-->
+              <!-- <li><a href="#" class="cursorauto" title="Special Offers"><span>-</span> Special Offers</a></li>-->
+ <li><a href="alaska-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+       <li><a href="../journeystyles/extreme-adventures.html"  title="Extreme Adventures"><span>-</span> Extreme Adventures</a></li> 
+          <li><a href="../journeystyles/private-journeys.html" title="Private Luxury Journeys"><span>-</span> Private Luxury Journeys</a></li> 
+ </ul>
+          </li>
+         
+          <li><a href="canada.html" title="Canada"><span>+</span> Canada</a>             
+          </li>
+	<li><a href="usa.html" title="USA"><span>+</span> USA</a>             
+          </li>
+		   </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+     <option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+              <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/private-jet.html">Private Jet Journeys</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+          <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/Private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Recommended Itineraries</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="count-page">
+<a href="alaska-recommended-itineraries1.html"> < Prev</a>  |
+<a href="alaska-recommended-itineraries.html">1 </a> |
+<a href="alaska-recommended-itineraries1.html">2</a> | 
+<a href="alaska-recommended-itineraries2.html"><strong>3</strong></a>  
+ </div>
+
+<div class="Clr"></div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/alaska-recommended5.jpg" alt="ALASKA CRUISE SAFARI EXPLORER" /></div>
+<div class="rightbox"><h2>
+ALASKA CRUISE SAFARI EXPLORER</h2>
+<p><strong>Duration:</strong> 7 Nights<br />
+<strong>Highlights:</strong> Cruise 60 miles upbay to Grand Pacific and Margerie glaciers; View an astounding variety of native species; Take time for skiff operations and sea kayaking in Saginaw Bay</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/alaska-recommended2.jpg" alt="ALASKAN INSIDE PASSAGE" width="326" height="210" /></div>
+<div class="rightbox"><h2>ALASKAN INSIDE PASSAGE</h2>
+<p><strong>Duration:</strong> 6 Nights<br />
+  <strong>Highlights:</strong> Discover the glacier by helicopter; Bear Watching at Hoonah; Hike or bike around Prince of Wales Island </p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="count-page">
+<a href="alaska-recommended-itineraries1.html"> < Prev</a>  |
+<a href="alaska-recommended-itineraries.html">1 </a> |
+<a href="alaska-recommended-itineraries1.html">2</a> | 
+<a href="alaska-recommended-itineraries2.html"><strong>3</strong></a> 
+ </div>
+
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--ALASKA CRUISE SAFARI EXPLORER Start Here -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<!--<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/classic_china.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li-->
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/alaska-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<h1>ALASKA CRUISE SAFARI EXPLORER</h1>
+<div class="popupbanner"><img src="../images/alaska-inner5.jpg" alt="Ancient and Modern" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  7 Nights</p>
+<p>2 days of in-depth exploration of Glacier Bay, including kayaking and small boat exploration. Plus quiet nights at anchor in secluded bays,beachcombing and guided hikes.</p>
+
+</li>
+<li><h4>Day 1</h4>
+<h5>Juneau, Alaska </h5>
+<p>Arrive in Juneau,where you are transferred from the airport to board your luxury adventure yacht. Cruise to a secluded wilderness to drop anchor this evening.
+</p>
+</li>
+<li>
+<h4>Day 2-3</h4>
+<h5>Glacier Bay National Park</h5>
+<p>Over the next two days, cruise 60 miles upbay to Grand Pacific and Margerie glaciers, which frequently calve colossal icebergs into the frigid waters. Conditions permitting, weave among the freshly fallen icebergs on an inflatable raft. Spend evenings peacefully anchored in hidden coves and mornings paddling your kayak in this quiet wilderness. View an astounding variety of native species, including puffin, sea lion, mountain goat,bear, moose and eagle.
+</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5> Icy Strait</h5>
+<p>Set out on the ultimate day of exploration. This morning, join the captain on the bridge or out on deck to scour the nutrient-rich waters in search for humpback whales, porpoise, sea lion and other wildlife. Marvel at the grand scenery of the Alaskan wilderness as our crew expertly guides us through those areas 'not found in guide books'. Later this afternoon,drop the skiffs and kayaks to further explore the shoreline of a remote bay. Spend the afternoon and evening at Point Adolphus,famous for being a popular feeding area for humpback whales. Watch for the telltale blow of humpback while cruising through Icy Strait. Before retiring for the evening,enjoy the wilderness solitude while relaxing in the upper deck hot tub, or enjoy a nightcap with your fellow travellers in the salon.
+</p>
+
+</li>
+<li>
+<h4>Day 5</h4>
+<h5> Frederick Sound </h5>
+<p>Cruise around Admiralty Island to more prime humpbackviewing waters in Frederick Sound. Take time for skiff operations and sea kayaking in Saginaw Bay, and cruise up-close to a sea lion colony at the Brothers Islands. Tonight anchor in a remote and picturesque bay. 
+</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Admiralty Island</h5>
+<p>Tuck into Gambier Bay, a large, island-speckled body of water on the south coast of Admiralty Island National Monument. Explore this cool forested bay up-close on kayaks and skiffs.Never logged, the thick evergreen forest crowds right down to the gravel beaches. Here is an outstanding opportunity to spot the brown or grizzly bears for which Admiralty Island is famous. At low tide, they congregate right on the beaches, seeking a shellfish supper. Once againunder way, watch for humpback whale before anchoring at Wood Spit for more exploration by kayak and skiff.
+</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Ford's Terror/Endicott Arm</h5>
+<p>Marvel at landscapes of cliff-walled fjords slicing into the mountainous mainland as the yacht tucks into an area widely acclaimed as the most beautiful in all of Alaska. Snow gleams on mountain tops overhead as bears amble on the shoreline and mountain goats cling to precarious perches. Every few hundred yards, another sparkling waterfall seems to tumble down the cliffs. Tonight, anchor at Taku Harbor to enjoy a special farewell dinner.
+</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5> Juneau</h5>
+<p>After breakfast, you transfer to the airport before returning to Seattle (where we'd recommend you spend a few days exploring) and then on to the UK.
+</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id=1;?>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Alaska"/>
+<input type="hidden" name="region_email" id="region_email" value="North America"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Alaska"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Alaska.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Alaska"/>
+<input type="hidden" name="region_quote" id="region_quote" value="North America"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Alaska"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>After a leisurely breakfast your driver/guide will transfer you to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, transfer to Norfolk Hotel where dayrooms have been reserved for you. The rest of the day is free for you to relax and freshen up or go sightseeing and shopping.<br /><br />This evening transfer to Jomo Kenyatta International Airport for your international departure flight.&nbsp; <strong><br /><br />Option to extend to Tanzania.</strong></p><p>On arrival in Nairobi take a connecting schedule flight to Kilimanjaro Airport in Tanzania. Today enjoy lunch at Kia Lodge before returning to the airport for your flight to Manyara. On arrival in Manyara you will be transferred to Ngorongoro Crater Lodge.<br /><br />Situated on the edge of the ancient crater rim above the cool, swirling mists, the Ngorongoro Crater Lodge is a return to the noble elegance of the traveling colonials. Inspired in design by the Masai manyatta, three separate camps of 6 to 12 suites each remember a bygone era. The stilted structures are adorned with graceful antiques, grand chandeliers and treasures collected from travels through Africa. Each suite is discreetly tended by a personal butler, who will bring you tea in bed, stoke your fireplace and even draw your bath, scattering the water with rose petals, ready for your return from your safari.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Masai Mara - Depart Nairobi OR Extend to Tanzania", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrols the flat crater floor. A world of wide grassland plains, acacia copses, pools and streams, elephant, buffalo, lion, leopard and even rhino can be seen here. The central soda lake attracts birds and sometimes flocks of flamingo.<br /><br />Full day game viewing in the Crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>This morning after breakfast drive to Olduvai Gorge to see the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />After your visit drive to the Serengeti, one of the most magnificent parks in Africa. On arrival drive to Kusini which is perfectly sited in a cluster of kopjes (beautiful outcrops of granite rock). Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.&nbsp;<br /><br />Serengeti is the home of the great Wildebeest migration and the short grass plains around Kusini provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.4052990, 34.727783), "Ngorongoro - Serengeti", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport. After clearing customs and immigration formalities, you will be transferred to the Norfolk Hotel. Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904.<br /><br />Just south of the equator, Nairobi's main avenues blaze with colour from tropical bushes and vines. Nairobi was established by 1907 and quickly grew as a white farming community. It also attracted world attention as the centre of big-game safaris for the rich and famous. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets.There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49397, 36.8261718), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, transfer to Nairobi's Wilson Airport for your private charter flight to Borana.<br /><br />Fly northwards through the rift and up the western wall of the great escarpment on to the Laikipia plateau. The Laikipia region is a broad swathe of game rich grasslands and hills that reach Mount Kenya to one side and the wild deserts of the north to the other.<br /><br />On arrival at Borana, you will be met at the airstrip and transferred to the lodge. Borana is a large private conservancy which has been the home of the Dyer family since the 1920s. The ranch was originally started as a cattle concern; however, in the last twenty years they have turned much of their energy to conservation and have a thriving predator population, elephant, plains game and smaller beasts. Borana Lodge is set on the edge of a valley with panoramic views across the plains and overlooks a watering hole for wildlife in the area. Your days will be busy with day and night game drives, walks, picnics and bush dinners, horse riding for both experienced riders and novices, mountain biking, or visits to the working ranch or the various community and conservation projects Borana is involved in. The ranch is an accredited member of the Eco Tourism Society of Kenya, is certified organic and plays an extremely active role in regional conservation.<br /></p><p>There is time to freshen up and relax before lunch.Your hosts will be at hand to discuss your preferences and plan your activities for your stay. Spend the afternoon game viewing, relaxing or exploring the area.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.3606063, 36.7819505), "Nairobi - Laikipia", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>After a leisurely breakfast take a scheduled flight to the Masai Mara, one of Africa's greatest parks.<br /><br />On landing at the airstrip, your driver/guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />We have selected Olonana for you accordingly for its small size and privacy. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net windows and river view verandahs. Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Laikipia - Masai Mara", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.727783;
+					var maxLat = 0.3606063;
+					var maxLng = 36.8261718;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+				//gmapInitialize();
+			//});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--ALASKA CRUISE SAFARI EXPLORER End Here -->
+
+<!--Alaskan Inside Passage Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/AotearoaCultural.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/alaska-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<h1>ALASKAN INSIDE PASSAGE</h1>
+<div class="popupbanner"><img src="../images/alaska-inner2.jpg" alt="Alaska" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  6 Nights</p>
+<p>Land on a glacier by helicopter, experience unforgettable bear watching at Hoonah and hike or bike round Prince of Wales Island.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Juneau</h5>
+<p>On arrival this morning at Juneau airport your driver will take you to the Westmark Hotel. After some time to settle in, take a helicopter ride to experience a glacier from the optimum vantage point. Landing on the glacier enjoy a 1 hour guided walk, with ample time for photo opportunities, before returning to your hotel. </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Juneau/Gustavus</h5>
+<p>After breakfast take a short flight to Gustavus, enjoying the spectacular views en-route. On arrival you will be driven to Glacier Bay Bear Track Inn. This afternoon fly to Hoonah with your private guide in search of brown bear. </p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Gustavus</h5>
+<p>The adventure today starts with a boat trip up the waterways of Glacier Bay National Park, as your guide explains the natural wonders surrounding you. Look out for a variety of marine wildlife, such as the tufted puffins and pigeon guillemots. You also pass Marble Island to see the sea lions. </p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Gustavus/Lodge at Whale Pass</h5>
+<p>This morning journey through Juneau and Ketchikan and continue another 60 minutes by seaplane to the remote lodge at Whale Pass, you home for the next three days. The lodge is perfectly located on the north-west corner of Prince of Wales Island, providing you with the perfect base from which to enjoy and explore the fascinating landscape and wildlife.</p>
+</li>
+<li>
+<h4>Day 5-7</h4>
+<h5>Lodge at Whale Pass</h5>
+<p>Over the next three days relax and enjoy the facilities at the Lodge at Whale Pass. Both freshwater and saltwater fishing are on offer and your guide and captain will take you in search of king salmon, rainbow trout and silver salmon. Hiking, sea-kayaking and mountain biking are a great way to see the island. You also get the chance to see the wildlife of the Inside Passage - keep an eye out for harbour seals, black tail deer, grey whale and mink. After your active days, why not unwind in the lodge's recreation room, or indulge in a soothing massage from the lodge's resident massage therapist. Soak in the outdoor hot tub as the sun sets and relish the serene atmosphere of this idyllic location. </p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Lodge at Whale Pass/UK</h5>
+<p>Time for one more activity or a stroll down to the beach before being driven to the airport in time for your return flight home.</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Alaska"/>
+<input type="hidden" name="region_email" id="region_email" value="North America"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Alaska"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Alaska.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Alaska"/>
+<input type="hidden" name="region_quote" id="region_quote" value="North America"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Alaska"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy the day doing as much or as little as you please. You may like to take an optional trip to explore the old Stone Town, a spice farm or Jozani Forest to see the Red colobus monkey which is endemic to Zanzibar (tours not included). Alternatively you may prefer to just relax at your resort or pamper yourself at the spa, enjoy yoga or meditation. There is also a water sports centre for snorkeling, windsurfing, sailing or canoeing and a licensed PADI dive centre.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Enjoy another full day at your idyllic beach resort.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Kilimanjaro International airport where you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Lake Manyara Serena Lodge in time for lunch. This afternoon enjoy a game drive in Lake Manyara National Park in search of the elusive tree-climbing lion.&nbsp;<br /><br />Lake Manyara Serena Lodge is dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley. The 66 rooms blend gracefully with the serene natural surroundings and the lodge is located only a few minutes from Lake Manyara National Park. For those who want some time out of their vehicles, the lodge supports a number of nature trails and also has a resident naturalist to enhance the experience. Guests may also choose to relax at an observation post or by the pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arusha - Lake Manyara", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>This morning is at leisure before transferring to Gibbs Farm, located in the Ngorongoro Crater highlands, for lunch. Continue to the Ngorongoro Crater, the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Sopa Lodge is situated on the eastern rim of the crater. The 92 rooms of the lodge are built in the traditional African rondavel style. There is a beautifully designed dining room, a bar, a well-stocked gift shop and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Lake Manyara - Ngorongoro Crater", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue the drive to your lodge, centrally located in the Serengeti National Park. Enjoy game viewing en route.<br /><br />Serengeti Serena Lodge is located high on a hill offering magnificent views of the Serengeti Plains. The lodge is pure Africa. Rustic and natural, circular like an African village, its 66 rooms make up a series of rondavels. The simple style is enhanced with sophisticated detail in the form of traditional handicraft, such as wood carvings, beadwork and pottery designs. The lodge offers its own unique game trails devised in conjunction with park consultants to allow enjoyment of the Serengeti's unequalled variety of game.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip, the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 square kilometers, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, when 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other game that follow close behind make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast, transfer to the airstrip for your flight to Zanzibar. Upon arrival you will be met and transferred by private vehicle to your beach resort.<br /><br />Breezes Beach Club is situated along a pristine, untouched beach, stretching as far as the eye can see. It is located on the eastern side of the island, near the village of Bwejuu approximately one hour from the airport. The hotel has a swimming pool, fitness and aerobics centre, water sports centre, floodlit tennis court, scuba diving, Makuti a-la carte restaurant, Breakers lunch restaurant, The Safari bar, Upepo Lounge and Mutiny Pool Bar.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Serengeti - Zanzibar", description, "6");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -6.165917;
+					var minLng = 34.6856509;
+					var maxLat = -2.416213;
+					var maxLng = 39.202641;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Alaskan Inside Passage Start Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

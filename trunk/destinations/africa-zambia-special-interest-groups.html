@@ -1,0 +1,896 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Customized Trips Zambia, Escorted Journeys Zambia, Guided Tour to Zambia, Private Journeys, Group Tours, Group Travel, Special Interest Group to Zambia"/>
+<meta name="description" content="Abercrombie & Kent specializes in group travel in African safari and adventure in Zambia. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Zambia." />
+<title>Group Tours & Luxury Travel Zambia - Abercrombie & Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--POP UP-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=12; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		    
+	        if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="block";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+	}
+}
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--POP UP-->
+
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/zambia-banner7.jpg" alt="zambia" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="africa.html">Africa</a></li>
+<li><a href="africa-zambia.html">Zambia</a></li>
+<li>Special Interest Groups</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="africa.html">Africa</a></h5>
+        <ul>
+          <li><a href="africa-kenya.html" title="Kenya">+ Kenya</a></li>
+          <li><a href="africa-tanzania.html" title="Tanzania"><span>+</span> Tanzania</a></li>
+          <li><a href="africa-uganda.html" title="Uganda"><span>+</span> Uganda</a></li>
+          <li><a href="africa-southafrica.html" title="South Africa"><span>+</span> South Africa</a></li>
+          <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a>		  
+		  </li> <li><a href="africa-zimbabwe.html" title="Zimbabwe"><span>+</span> Zimbabwe</a></li>
+          <li><a href="africa-zambia.html" title="Zambia" ><span>-</span> Zambia</a>
+          <ul>
+              <li><a href="africa-zambia.html" title="Introduction to zambia"><span>-</span> Introduction to Zambia</a></li>
+              <li><a href="africa-zambia-highlights.html" title="Highlights"><span>- </span>Highlights</a></li>
+              <li><a href="africa-zambia-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="africa-zambia-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+              <li><a href="../about/zambia-office.html" title="A&amp;K office in Zambia"><span>-</span> A&amp;K office in Zambia</a></li>
+              <li><a href="africa-zambia-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>
+              <li><a href="africa-news.html?id=8" title="News"><span>-</span> News</a></li>
+              <li><a href="africa-zambia-special-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+              <li><a href="africa-zambia-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+              <li><a href="../journeystyles/honeymoon.html" title="Honeymoon"><span>-</span> Honeymoon</a></li>
+<li><a href="africa-zambia-special-interest-groups.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+			   <li><a href="../journeystyles/zambia-sanctuary-retreats.html" title="Sanctuary Retreats"><span>-</span> Sanctuary Retreats</a></li>
+              <li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
+            </ul>
+          </li><li><a href="africa-rwanda.html" title="Rwanda">+  Rwanda</a></li>
+<li><a href="javascript:void(0)" class="cursorauto" title="Namibia"><span>+</span> Namibia</a></li>
+          </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Special Interest Groups</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/livingstone-adventure.jpg" alt="The Best of Uganda" width="326" height="210" /></div>
+<div class="rightbox"><h2>Livingstone Adventure</h2>
+<p><strong>Duration:</strong> 5 days<br />
+<strong>Highlights:</strong> Johannesburg, Zambia, Livingstone and Botswana </p>
+<p>This itinerary allows you to experience the natural wonders of Zambia, and its customised according to your interests of great wildlife viewing.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/zambia-walking-safari.jpg" alt="Classic East Africa" width="326" height="210" /></div>
+<div class="rightbox"><h2>An African Walking Safari</h2>
+<p><strong>Duration:</strong>  8 days<br />
+<strong>Highlights:</strong> Johannesburg, Zambia, South Luangwa National Park and Zambezi River </p>
+<p>This itinerary is ideal for those seeking a remote bush experience coupled with great hospitality and spectacular opportunities to explore.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+
+</div>
+</div>
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!-- Livingstone Adventure Content Start Here -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/livingstoneadventure.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<div class="logoinner1"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>Livingstone Adventure</h1>
+<div class="popupbanner"><img src="../images/livingstone-inner.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 5 days</p>
+<p>This itinerary allows you to experience the natural wonders of Zambia, and its customised according to your interests of great wildlife viewing.</p>
+<p><strong>Highlights:</strong>  Johannesburg, Zambia, Livingstone and Botswana</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive in Johannnesburg</h5>
+<p>On arrival at OR Tambo the group should be able to proceed through transit directly into the International departures terminal where they will board the flight for Livingstone. This procedure however depends on which airline they arrive into OR Tambo on, and whether or not their luggage can be checked all the way through to Livingstone.</p>
+<p>
+On arrival in Livingstone the group will have to clear customs and immigration and will have to purchase their double entry visas for Zambia.</p>
+<p><strong>Please note:</strong> Due to foreign currency laws in South Africa, we unable to carry the funds for the Visas - this amount would have to be transferred directly to our offices in Zimbabwe.</p>
+<p>
+Your representative will escort you to the waiting air conditioned coaches and transferred to the Royal Livingstone Hotel.</p>
+<p>
+On arrival at the Royal Livingstone Hotel a ROYAL reception awaits the group.  On arrival at the hotel they will be escorted down to the magnificent lawns of the Royal Livingstone hotel where canapés and cocktails await them. A separate check in desk will be setup for the group. African maidens will welcome them with Nyami Nyami necklaces - the traditional Zambian River g-d symbol.
+David Livingstone explored this land of potent beauty and discovered one of the seven natural wonders of the world. In his footprints, only moments away from the mighty Zambezi River with the dramatic torrent of the Victoria Falls as its natural milieu, a magnificent Resort has been created as a testament to his discovery and in reverence to the splendour of this World Heritage site. Journey to this magical place and witness the greatest mass of falling water on earth as it plunges down a sheer rock face, spraying its mystical mist hundreds of meters in the air. The awesome Victoria Falls is much closer to you here - literally on the doorstep of The Falls Resort - it feels as if you could reach out and touch it, as it plummets into the chasm far below.</p>
+<p>
+The local tribe's people call it Mosi-Oa-Tunya - the Smoke that Thunders. On the forested banks of the great Zambezi River, upstream of the mighty cataract where it thunders into the Batoka Gorge, is The Royal Livingstone, pride of Zambian hospitality. In its cool lounges and shaded verandahs, you will encounter the elegance and luxury of an earlier, more courteous age.</p>
+<p>
+The Royal Livingstone is a serene and gracious refuge from the heat of the African sun. The 173 luxurious rooms with their comfortable furnishings are tastefully decorated in the soft earth tones of the bushveld, with spreading views of the river and Acacia forest.  For the discerning traveler in search of luxury, extravagance and sheer indulgence, the Royal Livingstone Hotel will set your heart on fire and soothe your soul.</p>
+<p>
+The innate heritage of the land offers guests nail-biting experiences ranging from water-rafting to bungee jumping, a paradise for wildlife lovers with daily land and water safaris, and exceptional angling and fly-fishing.</p>
+<p>
+This magnificent Falls Resort allows you the chance to be at one with the uninhibited majesty of the Victoria Falls, a time to regroup, to find your inner core and to leave enriched and empowered, promising to return.</p>
+<p>
+A light lunch can then be served from the terrace of the Royal Livingstone hotel. The rest of the afternoon will be at leisure to relax and explore this amazing resort.</p>
+<p>
+Early evening we will place surprise outfits for each person in their rooms which they will have to wear that evening to Dinner. The group meets in the reception area and when they are all gathered they will be startled by a "War Raid". African warriors will come out of the darkness and do a tribal ritual dance for the group and they will then escort them singing and dancing down to the Boma where a true African Feast awaits. (Please note that the Boma Dinner can only be done as a buffet dinner)
+Tonight they will dine under the African Skies. During this magnificent feast they will be serenaded by a local marimba band.
+As an option the group can take the opportunity to learn a traditional dance move from one of the local dancers.
+ </p>
+<p>
+<strong>Overnight:</strong> Royal Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Zambezi River</h5>
+<p>Breakfast this morning will be served on the terrace and in the dining room at the Royal Livingstone.</p>
+
+<p>Today is a day to explore a variety of activities that Livingstone has on offer. For a group of this size our suggestion would be as follows:</p>
+
+<p>Tour of the Victoria Falls<br />
+Flight of Angels - Helicopter flip<br />
+Mkuni Village - Village Tour<br />
+Visit to the local craft market</p>
+
+<p>The main group would be split into 4 smaller groups and would rotate through the activities. They would then all meet for lunch and an elephant interaction at the elephant Boma.</p>
+
+<p>A tea / Coffee break can be arranged during the morning activities.</p>
+
+<p><strong>NOTE:</strong> The group is to large to do elephant back safaris for the entire group which is why I suggest rather doing an elephant interaction. They can touch / feed the elephants have their pictures taken with them.</p>
+
+<p>The day will end with a spectacular sunset train journey to the Victoria Falls Bridge. The train stops for 10 minutes on the bridge and the group can disembark to take pictures and enjoy a cocktail.</p>
+<p>The train is a Victorian Steam Train.</p>
+<p>
+Dinner this evening will be a served dinner in the conference room. Alternatively a buffet dinner can be served at the Zambezi Sun around the pooldeck - a white mischief dinner. Everyone dresses in white, the tables are laid in white with candles all around.
+A resident band will play during the dinner this evening.</p>
+<p>In Africa, when you hear drumming in the distance, you know there is something happening and your curiosity is awakened, your pulse speeds up and the adventure commences. Tonight you will get the chance to beat your own drums at your "interactive drumming circle" which will take place at the Zambezi Sun Dinner tonight will be served in the conference room at the Zambezi Sun and entertainment will be provided by a band. Once dinner has been eaten and it is completely dark outside - after dinner cocktails will be accompanied by a fire spinning show.</p>
+
+<p>
+<strong>Overnight:</strong> Royal Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Chobe National Park </h5>
+<p>Breakfast this morning will be served on the terrace and in the dining room at the Royal Livingstone.</p>
+
+<p>After breakfast the group will depart in their coaches for the Kazungula Border Post en route to Botswana & Chobe National Park.
+</p>
+<p>Today will be a relaxed day with the group crossing over the Zambian border into Botswana to go and spend the day in Chobe National Park.The crossing from Zambia into Botswana is done on small speedboats as you cross over the Zambezi / Chobe River into Botswana. The transfer time is ± 2 hours to Chobe.</p>
+
+<p>The departure from the hotel is done at staggered intervals so as to not congest the groups at the border and to allow an easy crossing in the boats. The boat trip takes about 3 minutes across the Chobe River - and ± 45 pax at 1 crossing can be accommodated.</p>
+
+<p>On arrival in Botswana the group will split with ½ the group proceeding directly into Chobe National Park in 4x4 Game Drive vehicles and the other ½ of the group proceeding to the river to commence their river safari.</p>
+
+<p>Lunch today will be a buffet lunch at Mowana Safari Lodge and the entire group will meet for lunch.</p>
+
+<p>After lunch the groups split again with ½ proceeding down to the jetty to board Safari Boats and to commence their River Safari and the other ½ proceeding to safari vehicles to commence their land safari in the Chobe National Park.</p>
+Drinks will be served on the Safaris.
+
+<p>Return to Mowana in the late afternoon for Sundowner drinks before transferring back to the border post to clear immigration, to board the speedboat and cross back over into Zambia.</p>
+
+<p>DINNER<br />
+When the group gets back to the Royal Livingstone tonight it will be to discover pith helmets for the gentleman and white silk scarves for the ladies in their rooms. They must don their costumes and dinner will be served on the lawns under the trees on the banks of the Zambezi River. Dinner tonight is a David Livingstone Dinner.
+Entertainment tonight will be a classical flautist.</p>
+
+<p>CHOBE NATIONAL PARK<br />
+The Chobe National Park covers an area of approximately 11.700 square kilometers.  Established in 1961 with the first Game Warden Mr. Pat Hepburn appointed April 1962.  It is home to the largest concentration of Elephants in Africa, estimated at 45, 000.  Indigenous to the park is the puku and Chobe Bushbuck, other game such as lion, leopard, buffalo, cheetah, kudu, giraffe and an abundant bird life of approximately 450 species, add theatre to the magical kingdom.</p>
+
+<p>Ihaha camp, 20 km north of the Ngoma gate, the Chobe's most accessible campsite.  According to game drivers, Ihaha was once an inhabited village, which was uprooted and shifted to Kasane when Chobe became a national Park.  By day, campers are under constant surveillance by cheeky baboons, which long ago leant that all the best pickings come from tents and backpacks.</p>
+
+<p>One of the best ways to enjoy the riverfront is to take a river trip in the late afternoon, when the hippos amble onto dry land and the riverfront fills elephants heading down for a drink and a romp in the water. A Chobe visit will probably entail a cruise or game drive during which you will have an excellent change of observing lions and cheetah, and by day, the water is full of hippos which submerge at dawn and emerge at dusk.  Buffaloes are present in their thousands, and amid the scrub live numerous giraffes and zebra.</p>
+
+<p><strong>Overnight:</strong> Royal Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Zambezi River</h5>
+<p>Breakfast this morning will be served on the terrace and in the dining room at the Royal Livingstone.</p>
+
+<p>An optional light lunch can be served at the hotel prior to departure for the airport - this however would depend on the flight departure time. Currently the flights depart Livingstone at around lunch time - meaning that the departure from the hotel would have to be at around 11am.</p>
+
+<p>On arrival at Livingstone Airport the group would check in for their flight - clear customs and immigration and board their flight to OR Tambo International Airport in Johannesburg. Currently the group would have to disembark in Johannesburg, collect their luggage and then proceed to the International Departures terminal to check in for their flight back home - you cannot check through from Livingstone.</p>
+<p><strong>Meal Plan:</strong> B,L</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<h1>Send itinerary </h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Zambia"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Livingstone Adventure"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="livingstoneadventure.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Zambia"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Livingstone Adventure"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>On arrival at Johannesburg O.R Tambo International Airport, you'll be met by a representative who'll hand over further documentation and transfer you to your hotel. The transfer time is approximately 45 minutes (depending on traffic).<br /><br />Meet your representative in the Polo Lounge from where you will proceed to La Belle Taresse Restaurant, for a "Welcome dinner" hosted by a representative. You will enjoy a demonstration by a professional photographer on camera usage and tips on photography.&nbsp;<br /><br />Dinner includes a 3 course restricted choice menu with wine, beer, (excluding premium brands e.g champagne &amp; imported spirits) mineral water, soft drinks and tea/coffee.<br /><br /> The Westcliff by Orient-Express offers a quiet hideaway close to the city centre with terracotta buildings set around cool swimming pools and well manicured gardens. The elegant and opulent accommodation evokes a bygone era of leisure and refinement.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-26.204102, 28.0473051), "Arrive in Johannesburg", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>The dining room will open at 6.30am for breakfast where breakfast will be taken. There is an additional charge should clients wish to have in-room breakfast and this additional charge will be for their own account.</p><p>Meet your representative in the reception area of the hotel for your transfer to O.R Tambo International Airport.&nbsp; The transfer time is approximately 45 minutes (depending on traffic).</p><p>On arrival at Maun Airport, the Botswana guide will meet and assist clients to their shared light aircraft transfer to Stanley's Camp.&nbsp; This flying time is approximately 15 minutes.<br /><br />On arrival a Stanley's Camp a representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 20 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game Drives - Enjoy thrilling guided game drives in customized open-sided 4X4 vehicles. As Sanctuary Stanley's Camp is situated on a private concession, night drives are offered and are usually combined with the afternoon activity.<br /><br />Walking Safaris - Explore the area on foot with skilled, armed professional guides and experience the bush from a different perspective.<br /><br />Mokoro Safaris - Explore the Delta in a traditional dug-out canoe, or mokoro. Glide through reeds and lily ponds to get up close and personal with wildlife (subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.994169, 23.4184), "Johannesburg to Maun", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>This morning you will have the opportunity to meet and interact with three semi-habituated elephants - Jabu, Thembi and Morula on a morning walk.&nbsp; Observe them up close in their natural environment as they feed, take mud baths and swim, whilst learning about them and discovering their unique personalities.<br /><br />The remainder of your day is at leisure to enjoy the game viewing activities available at the camp.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-22.328474, 24.684866), "Okavango Delta", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for a light aircraft transfer to Chief's Camp.&nbsp; This transfer time will be advised to them locally and the flying time is approximately 15 minutes.<br /></p><p>On arrival a Chief's Camp representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 10 minutes. The remainder of your day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game-drives are conducted in custom built open 4 X 4 vehicles, which offer individual seating. Game drives are conducted in the early morning and late afternoon or as otherwise requested (subject to availability). The accompanying professional guides are among the best in Botswana.<br /><br />Mokoro (dugout canoe) activities: the permanent water of the camp will reveal a world of floating safaris (this excursion is offered in high season only, subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Okavango Delta", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.267394, 23.0965064), "Okavango Delta", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for your shared light aircraft transfer to Kasane Airport.&nbsp; This transfer time will be advised locally and the flying time is approximately 1 hour 30 minutes.<br /><br />On arrival at Kasane Airport, a Chobe Chilwero Lodge representative will meet and transfer clients to the lodge.&nbsp; The transfer time is approximately 10 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The lodge manager will advise details of all the activities available.<br /><br />Activities available include:<br /><br />Game-drives - Highly qualified professional guides lead thrilling game drives in open sided 4X4 vehicles that bring guests to the heart of Africa's largest concentration of elephants.<br /><br />Motorised Boat Safaris and Sundowner Cruises- Explore the Chobe River by specially adapted safari motorboats. Subject to water levels.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Chobe National Park", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.70420, 24.6192899), "Chobe National Park", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Time permitting you to enjoy an early morning game viewing activity before being transferred to Victoria Falls, clearing Botswana &amp; Zimbabwe customs and immigration formalities en-route.&nbsp; The approximate transfer time is 1 hour and 30 minutes.<br /><br />As clients will be entering Zimbabwe, a single entry visa will be required.<br /><br />Enjoy a guided walking Tour of the Falls.&nbsp; The walk is approximately 1&frac12; hours in duration (3km), through the rainforest, stopping at the various viewing points. There are however, 3 exit paths along the way in case clients get tired.<br /><br />We advise clients to wear appropriate clothing and shoes for the walk, as well as bring along suitable waterproof protection for camera equipment.<br /><br />You are likely to see abundant bird life in the rainforest, as well as bushbuck, monkeys, baboons and families of mongoose.<br /><br />On completion of the Tour of the Falls clients will be transferred by road to Sanctuary Sussi &amp; Chuma Lodge, clearing Zimbabwe and Zambia customs and immigration formalities en-route.&nbsp; The approximate transfer time is 50 minutes.<br /><br /> This afternoon clients will enjoy a Sundowner Cruise on the Zambezi River.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Chobe National Park to Livingstone", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning the clients will meet the Sussi &amp; Chuma guide in the reception area of the lodge for their transfer to the Musi-oa-Tunya National Park for a walking Tour of the Falls from the Zambian side.<br /></p><p>Return to the lodge for lunch. &nbsp;<br /><br />This afternoon clients will enjoy a Cultural tour of Livingstone.<br /><br />Simonga Village lies to the West of the Mosi-oa-Tunya National Park on the outskirts of Livingstone Town close the famed Victoria Falls in Zambia. This simple fishing village comprises of around 3000 people who live in simple but comfortable mud and brick houses. From the near by Sussi and Chuma village tours are included, where the village scouts and guides show guests around the village which generally includes a courtesy visit to Elizabeth Inongo's house. Elizabeth is one of the few head ladies in Zambia and is responsible for the well being of her ward and of the village in general, and is one of the area Chief's (Chief Sekute's) primary advisors.<br /><br />OR<br /><br />Game Drives in the Mosi-oa-Tunya National Park where Zambia's only white rhino can be spotted, full range of game drives in the National Park using an open four-wheel drive vehicle driven by your private guide.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-13.133897, 27.849332), "Zambia", description, "9");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -26.204102;
+					var minLng = 23.0965064;
+					var maxLat = -13.133897;
+					var maxLng = 28.0473051;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- Livingstone Adventure Content End Here -->
+<!-- AN AFRICAN WALKING SAFARI Content Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/african-walking-safari.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<div class="logoinner1"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>AN AFRICAN WALKING SAFARI</h1>
+<div class="popupbanner"><img src="../images/african-walking-safari-inner.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 8 days</p>
+<p>This itinerary is ideal for those seeking a remote bush experience coupled with great hospitality and spectacular opportunities to explore.</p>
+<p><strong>Highlights:</strong> Johannesburg, Zambia, South Luangwa National Park and Zambezi River</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive in Zambia</h5>
+<p>On arrival at Lusaka International Airport, a representative will meet you, hand over further documentation and assist you onto your Proflight flight to Mfuwe.  The flying time from Lusaka to Mfuwe is approximately 1 hour.  </p>
+
+<p>On arrival at Mfuwe Airport, a representative will meet and transfer you to Sanctuary Chichele Presidential Lodge.  The road transfer time is approximately 2 hours, subject to game viewing enroute.</p>
+
+<p>This historic property, once the bush retreat of President Kenneth Kaunda of Zambia, has a magnificent hilltop location in Zambia's premier game viewing area, the South Luangwa National Park. Carefully restored by Sanctuary Retreats to preserve its turn-of-the-century elegance, Sanctuary Chichele Presidential Lodge is approached through a majestic arched entrance leading to a huge colonial-style lounge.  Its long terrace, with commanding views across the valleys of the South Luangwa, is the perfect place to enjoy breakfast or afternoon tea. Chichele has ten air-conditioned suites, each with French doors onto individual balconies overlooking the valley. The lodge is accessible all year around and the ideal base for exploring the prolific wildlife that populates the mosaic of different habitats surrounding the Luangwa River.</p>
+
+<p>Game drives in the lodge's customized 4 x 4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.</p>
+
+<p>This part of Zambia is also renowned for being the original home of the walking safari.  A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified Park Ranger as guests learn about the bush from a different perspective, up close and personal with the environment.  </p>
+
+
+<p><strong>Overnight:</strong> Sanctuary Chichele Presidential Lodge<br />
+<strong>Meal Plan:</strong> D</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>South Luangwa National Park</h5>
+<p>After an early morning game viewing activity, you will set off to Sanctuary Zebra Plains Walking Camp for your next adventure.</p>
+
+<p>Sanctuary Zebra Plains is located in a beautiful and untouched area of the South Luangwa, perched on a sand bank at the confluence of the Luangwa and Chibembe Rivers. There are just four traditional tents. The camp accommodates a maximum of six guests, allowing for an intimate exploration of the South Luangwa. All tents have real beds, campaign furniture, mosquito nets, and en-suite facilities. Water for al fresco showers is mixed to your preferred temperature by a tent attendant. The main mess tent has a dining area although most of the meals will be served in the open in carefully selected vantage points. There is also a small library and bar area.</p>
+
+<p>This seasonal camp will operate from June to October each year. The camp has been  designed to leave the lowest possible carbon footprint and will be packed up completely each year with no trace that it was ever there between seasons.</p>
+
+<p>In order to fully explore the South Luangwa, guests will spend three nights at the camp with set departures on Monday or Thursday.</p>
+
+<p><strong>Overnight:</strong> Sanctuary Zebra Plains Walking Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>South Luangwa National Park </h5>
+<p>Garth Hovell, a safari guide with almost twenty years of experience, will lead walks twice a day. There will be a morning and afternoon walk each day. Garth will share with you some of the most fascinating, yet easily missed, sights and sounds of the bush.</p>
+<p>
+One morning you might wander along a river bank, observing hippos before canoeing across to a large island across from camp to get up close to plains game. Later that day you may choose to explore nearby Zebra Plains where buffalo, elephant and eland gather in large herds on the open savannah, a rarity in the wooded terrain of the South Luangwa. Another day your destination might be the Changwa Channel, featured in David Attenborough's "Life" series and home to one of the largest hippo populations on earth.
+However it's not just the big animals that are fascinating - termites, dung beetles, chameleons and the prolific bird life all have their stories to tell.</p>
+<p>
+You will be also be accompanied by an armed games scout as well as a Sanctuary tea bearer who will make fresh cups of tea or coffee in the middle of the bush using a stainless steel kettle and traditional fire making skills.</p>
+<p>
+<strong>Meal Plan:</strong> D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>lower Zambezi National Park</h5>
+
+<p>Today you will enjoy your last activity before departing for Mfuwe Airport for your flight to the Lower Zambezi.</p>
+
+<p>On arrival at Jeki Airstrip, a representative will meet and transfer you to the camp.</p>
+
+<p>Chiawa Camp is a must for any visit to Zambia. Superb accommodation, magnificent game viewing and scenery, and a large variety of activities are complemented by a modern infrastructure and an attentive, professional staff.  Resting peacefully on the river bank, in a grove of mahogany and acacia trees, the lodge is constructed essentially of natural materials, and is designed to ensure its idyllic setting can be fully appreciated.  All tents are under thatch, have en-suite facilities with hot & cold running water, twin or double beds, insect screens and solar powered lighting.</p>
+<p>
+Guests can be accommodated in 8 well- appointed safari tents, each on a raised timber deck with private veranda. Access paths to the tents run through a grove of Mahoganey trees behind them, maximizing privacy.  The honeymoon suite has a beautiful private view of the Zambezi, the escarpment and the Chiawa River bed.  The tent is light and spacious and the en-suite facilities are to die for. Victorian bath, his and hers wash basins and a shower for two all in wood and brass.</p>
+<p>
+The spacious lounge and bar area has an observation platform built into its roof, providing one of the best views in the valley. Of course the dining area also looks out onto the river and the animals which regularly come to drink and feed at and near the lodge.  Enjoy barbeques under the stars on our al-fresco dining veranda, while your hosts oversee your comfort and the preparation of Chiawa's renowned cuisine.  </p>
+<p>
+After dinner, retire to the campfire and enjoy a cocktail or two while taking in the sounds and magic of the African night.</p>
+<p>
+Another viewing platform has been constructed in the quietest corner of the lodge, overlooking the confluence of the Chiawa & Zambezi rivers.  Sip a cup of tea or a Pimm's while watching nature move at nature's pace and savour the tranquility of Real Africa.</p>
+<p>
+<strong>Overnight:</strong> Chiawa Camp
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>lower Zambezi National Park</h5>
+<p>
+At Chiawa Camp it is all about the wildlife, the bush and the river, and an impressive variety of safari activities are available, led by our award winning team of Africa-born guides with an unmatched fleet of vehicles, boats and canoes at their disposal - for all of which our safari operation has become world-renowned.</p>
+<p>
+This means that guests will enjoy levels of choice & convenience not found elsewhere and where the duration of a safari activity is determined by the rhythm of the bush (& enthusiasm of our guests) rather than by the clock.</p>
+<p>
+Not only that, your guides who are to differing extents products of our own in house training program, will guide sympathetically with the best interests of the wildlife, the environment and you at heart meaning that you will get the very best out of your visit to the Lower Zambezi National Park.</p>
+<p>
+Safety is always a priority so all guides have recurrent Advanced first aid training and all boats and vehicles, canoe trips and walks carry first comprehensive first aid kits and are linked to both camps by our VHF radio network.</p>
+<p>
+This is the safest and most effective way to view big game. Drives are conducted in open 4wd vehicles that have been specially adapted for safari use with comfy seats, pockets to stow your gear and bean bags to steady your camera for those all important photos. Usually departing in the early morning, drives can last anywhere from 2 to 4 hours depending on what's seen and the requirements of the guests. In the late afternoon drives set off for an hour or so before stopping at a scenic point for sundowners.</p>
+<p>
+Pioneered in Zambia, bush walks are essentially a "micro-safari". An armed ranger with your qualified and experienced pro guide will guide you through the wilderness on foot, interpreting spoor, identifying the various flora and fauna, and highlighting conservation issues. However elephants and buffalo are seen on most walks and sometimes the big cats so expect anything at anytime.</p><p> The pace is leisurely and the duration is determined by guests' requirements - and what is seen on the walk. Typically, a few hours are sufficient.</p>
+
+<p>One of the great aspects of a visit to Chiawa Camp is the variety of activities offered by virtue of our presence on the Zambezi river.</p>
+<p><strong>Overnight:</strong> Chiawa Camp<br />
+<strong>Meal Plan: </strong>B,L,D</p>
+
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>lower Zambezi National Park</h5>
+<p>Enjoy game activities at leisure.</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Depart Zambia</h5>
+<p>After a morning activity, you will be transferred to Jeki Airstrip for your flight to Lusaka and connecting onto your homeward International flight. </p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary </h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Zambia"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="African Walking Safari"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="african-walking-safari.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Zambia"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="African Walking Safari.pdf"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>On arrival at Johannesburg O.R Tambo International Airport, you'll be met by a representative who'll hand over further documentation and transfer you to your hotel. The transfer time is approximately 45 minutes (depending on traffic).<br /><br />Meet your representative in the Polo Lounge from where you will proceed to La Belle Taresse Restaurant, for a "Welcome dinner" hosted by a representative. You will enjoy a demonstration by a professional photographer on camera usage and tips on photography.&nbsp;<br /><br />Dinner includes a 3 course restricted choice menu with wine, beer, (excluding premium brands e.g champagne &amp; imported spirits) mineral water, soft drinks and tea/coffee.<br /><br /> The Westcliff by Orient-Express offers a quiet hideaway close to the city centre with terracotta buildings set around cool swimming pools and well manicured gardens. The elegant and opulent accommodation evokes a bygone era of leisure and refinement.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-26.204102, 28.0473051), "Arrive in Johannesburg", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>The dining room will open at 6.30am for breakfast where breakfast will be taken. There is an additional charge should clients wish to have in-room breakfast and this additional charge will be for their own account.</p><p>Meet your representative in the reception area of the hotel for your transfer to O.R Tambo International Airport.&nbsp; The transfer time is approximately 45 minutes (depending on traffic).</p><p>On arrival at Maun Airport, the Botswana guide will meet and assist clients to their shared light aircraft transfer to Stanley's Camp.&nbsp; This flying time is approximately 15 minutes.<br /><br />On arrival a Stanley's Camp a representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 20 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game Drives - Enjoy thrilling guided game drives in customized open-sided 4X4 vehicles. As Sanctuary Stanley's Camp is situated on a private concession, night drives are offered and are usually combined with the afternoon activity.<br /><br />Walking Safaris - Explore the area on foot with skilled, armed professional guides and experience the bush from a different perspective.<br /><br />Mokoro Safaris - Explore the Delta in a traditional dug-out canoe, or mokoro. Glide through reeds and lily ponds to get up close and personal with wildlife (subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.994169, 23.4184), "Johannesburg to Maun", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>This morning you will have the opportunity to meet and interact with three semi-habituated elephants - Jabu, Thembi and Morula on a morning walk.&nbsp; Observe them up close in their natural environment as they feed, take mud baths and swim, whilst learning about them and discovering their unique personalities.<br /><br />The remainder of your day is at leisure to enjoy the game viewing activities available at the camp.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-22.328474, 24.684866), "Okavango Delta", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for a light aircraft transfer to Chief's Camp.&nbsp; This transfer time will be advised to them locally and the flying time is approximately 15 minutes.<br /></p><p>On arrival a Chief's Camp representative will meet and transfer you to the camp.&nbsp; The transfer time is approximately 10 minutes. The remainder of your day is at leisure to enjoy the game viewing activities on offer.&nbsp; The camp manager will advise details of all the activities available.<br /><br />Game-drives are conducted in custom built open 4 X 4 vehicles, which offer individual seating. Game drives are conducted in the early morning and late afternoon or as otherwise requested (subject to availability). The accompanying professional guides are among the best in Botswana.<br /><br />Mokoro (dugout canoe) activities: the permanent water of the camp will reveal a world of floating safaris (this excursion is offered in high season only, subject to water levels).<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Okavango Delta", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-19.267394, 23.0965064), "Okavango Delta", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Time permitting you can enjoy an early morning game viewing activity before being transferred to the airstrip for your shared light aircraft transfer to Kasane Airport.&nbsp; This transfer time will be advised locally and the flying time is approximately 1 hour 30 minutes.<br /><br />On arrival at Kasane Airport, a Chobe Chilwero Lodge representative will meet and transfer clients to the lodge.&nbsp; The transfer time is approximately 10 minutes.<br /><br />The remainder of the day is at leisure to enjoy the game viewing activities on offer.&nbsp; The lodge manager will advise details of all the activities available.<br /><br />Activities available include:<br /><br />Game-drives - Highly qualified professional guides lead thrilling game drives in open sided 4X4 vehicles that bring guests to the heart of Africa's largest concentration of elephants.<br /><br />Motorised Boat Safaris and Sundowner Cruises- Explore the Chobe River by specially adapted safari motorboats. Subject to water levels.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.704207, 24.6192899), "Chobe National Park", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Your day is at leisure to enjoy the game viewing activities on offer.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-18.70420, 24.6192899), "Chobe National Park", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Time permitting you to enjoy an early morning game viewing activity before being transferred to Victoria Falls, clearing Botswana &amp; Zimbabwe customs and immigration formalities en-route.&nbsp; The approximate transfer time is 1 hour and 30 minutes.<br /><br />As clients will be entering Zimbabwe, a single entry visa will be required.<br /><br />Enjoy a guided walking Tour of the Falls.&nbsp; The walk is approximately 1&frac12; hours in duration (3km), through the rainforest, stopping at the various viewing points. There are however, 3 exit paths along the way in case clients get tired.<br /><br />We advise clients to wear appropriate clothing and shoes for the walk, as well as bring along suitable waterproof protection for camera equipment.<br /><br />You are likely to see abundant bird life in the rainforest, as well as bushbuck, monkeys, baboons and families of mongoose.<br /><br />On completion of the Tour of the Falls clients will be transferred by road to Sanctuary Sussi &amp; Chuma Lodge, clearing Zimbabwe and Zambia customs and immigration formalities en-route.&nbsp; The approximate transfer time is 50 minutes.<br /><br /> This afternoon clients will enjoy a Sundowner Cruise on the Zambezi River.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Chobe National Park to Livingstone", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning the clients will meet the Sussi &amp; Chuma guide in the reception area of the lodge for their transfer to the Musi-oa-Tunya National Park for a walking Tour of the Falls from the Zambian side.<br /></p><p>Return to the lodge for lunch. &nbsp;<br /><br />This afternoon clients will enjoy a Cultural tour of Livingstone.<br /><br />Simonga Village lies to the West of the Mosi-oa-Tunya National Park on the outskirts of Livingstone Town close the famed Victoria Falls in Zambia. This simple fishing village comprises of around 3000 people who live in simple but comfortable mud and brick houses. From the near by Sussi and Chuma village tours are included, where the village scouts and guides show guests around the village which generally includes a courtesy visit to Elizabeth Inongo's house. Elizabeth is one of the few head ladies in Zambia and is responsible for the well being of her ward and of the village in general, and is one of the area Chief's (Chief Sekute's) primary advisors.<br /><br />OR<br /><br />Game Drives in the Mosi-oa-Tunya National Park where Zambia's only white rhino can be spotted, full range of game drives in the National Park using an open four-wheel drive vehicle driven by your private guide.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-13.133897, 27.849332), "Zambia", description, "9");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -26.204102;
+					var minLng = 23.0965064;
+					var maxLat = -13.133897;
+					var maxLng = 28.0473051;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- AN AFRICAN WALKING SAFARI Content End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

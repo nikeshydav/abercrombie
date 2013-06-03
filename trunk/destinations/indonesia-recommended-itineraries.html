@@ -1,0 +1,542 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Itineraries Indonesia Tour, Indonesia Travel Itineraries, Holidays Itineraries Indonesia, A&K Indonesia Itineraries, Indonesia -Bali- Lombok Travel Itineraries"/>
+<meta name="description" content="Find the best luxury travel itineraries of classic Bali, Lombok, Indonesia for holidays, which is customized to your individual interests and are required not only for luxury but also for culture." />
+<title>Indonesia Tour & Holidays Itineraries - A & K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--POP UP-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=12; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		    
+	        if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="block";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+	}
+}
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--POP UP-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/indonesia-banner2.jpg" alt="Indonesia" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="theorient.html">The Orient</a></li>
+<li><a href="indonesia.html">Indonesia</a></li>
+<li>Recommended Itineraries</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="theorient.html">The Orient</a></h5>
+        <ul>
+          <li><a href="cambodia.html"  title="Cambodia"> <span>+</span> Cambodia</a>
+          
+          </li>
+<li><a href="china.html" title="China"><span>+</span> China</a>     
+  </li>
+ <li><a href="myanmar.html" title="Myanmar"> <span>+</span> Myanmar</a></li>
+          <li><a href="thailand.html" title="Thailand"> <span>+ </span>Thailand</a></li>
+           <li><a href="japan.html" title="Japan"> <span>+</span> Japan</a></li>
+          <li><a href="laos.html" title="Laos"> <span>+ </span>Laos</a>
+                    </li>
+         <li><a href="bhutan.html" title="Bhutan"> <span>+ </span>Bhutan</a></li>
+          <li><a href="tibet.html"  title="Tibet"> <span>+</span> Tibet</a></li>
+          <li><a href="vietnam.html"  title="Vietnam"> <span>+</span> Vietnam</a>         
+          </li>
+            <li><a href="indonesia.html"  title="Indonesia"> <span>- </span> Indonesia</a>  
+                    <ul>
+              <li><a href="indonesia.html" title="Introduction to Indonesia"><span>-</span> Introduction to Indonesia</a></li>
+              <li><a href="indonesia-highlights.html"  title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="indonesia-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <!--<li><a href="#" class="cursorauto" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+               <li><a href="#" class="cursorauto" title="A&amp;K office in Indonesia"><span>-</span> A&amp;K office in Indonesia</a></li>-->
+               <li><a href="indonesia-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>  <!--<li><a href="#" class="cursorauto" title="News"><span>-</span> News</a></li>-->
+                <li><a href="indonesia-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+               <li><a href="indonesia-hotel-portfolio.html"title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+               <li><a href="../journeystyles/extreme-adventures.html"  title="Special Interest Groups"><span>-</span> Extreme Adventures</a></li>
+               <!--<li><a href="#" class="cursorauto" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>-->
+               
+<li><a href="../journeystyles/private-journeys.html" title="Private Journey"><span>-</span> Private Journey</a></li>
+ </ul>
+          </li>
+     </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Indonesia Recommended Itineraries</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/indonesia-itineraries1.jpg" alt="CLASSIC BALI AND LOMBOK" /></div>
+<div class="rightbox"><h2>CLASSIC BALI AND LOMBOK</h2>
+<p><strong>Duration:</strong> 11 Nights<br />
+<strong>Highlights:</strong> Classic Bali and Lombok highlights * Beautiful beaches * Fascinating culture * Colourful markets</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+
+
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--CLASSIC BALI AND LOMBOK Start Here -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Classic-Bali-Lombok.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/indonesia-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<h1>CLASSIC BALI AND LOMBOK</h1>
+<div class="popupbanner"><img src="../images/laos-inner1.jpg" alt="Classic China" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li><p><strong>Duration:</strong> 11 Nights</p>
+<p>Classic Bali and Lombok highlights * Beautiful beaches * Fascinating culture * Colourful markets</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>India/Denpasar, Bali/ Jimbaran Bay</h5>
+<p>Board your flight from India to Denpasar, Bali. Upon arrival, meeting and assistance and transfer to the Four Seasons Jimbaran Bay for four nights.</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Jimbaran Bay</h5>
+<p>Enjoy a day of leisure at this lovely resort. Walk on the beach, relax by the pool or pamper yourself with a spa treatment.</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Jimbaran Bay</h5>
+<p>Today, gain an insight into the daily lives of the Balinese people. Drive to the small capital, Denpasar. Enjoy a morning visit to the Bali Museum, the Bali Art Centre and a traditional market - great for souvenir shopping. Return to the hotel for an afternoon at leisure.
+</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>  Jimbaran Bay</h5>
+<p>After a morning at leisure, visit Uluwatu on the southern tip of the island, where you will find a temple balanced precariously on the cliff-edge, dropping 70 metres down to the ocean. The PuraLuhurUlawatu is one of Bali's most important and holiest temples, and is dedicated to the spirits of the sea. Visit Garuda WisnuKencana, a private cultural park on the Bukit Peninsula, before returning to the hotel.
+ </p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Jimbaran Bay/Ubud</h5>
+<p>After a leisurely start, transfer to the Four Seasons Sayan, located above the sacred Ayung River just outside of Ubud, for three nights. Ubud has become the centre for Balinese arts and is an atmospheric little town. Enjoy the rest of the day at leisure with a swim in the pool or perhaps learn the art of meditation.</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Ubud</h5>
+<p>This morning, experience the thrill of white-water rafting on the Ayung River - suitable for all ages. After lunch at a local restaurant, visit the art and crafts centre of Bali including Celuk (the village of silversmiths), Mas (the village of wood-carvers) and Ubud (the home of artists). You will also be able to stop and enjoy the stunning rice terrace scenery.
+</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Ubud</h5>
+<p>After breakfast, drive to the beautiful Taman Ayun Temple at Mengwi, then proceed to the picturesque mountain resort of Bedugul, on the shores of Lake Beratan. En route, stop at Bukit Mungsu Market where villagers sell lovely roses, wild orchids and fresh vegetables. Enjoy lunch at a local restaurant and continue to Jatiluwih Village, to see breathtaking rice terraces. End the day with a visit to Tanah Lot Temple. Pura Tanah Lot perches on a huge rock carved out by the incoming tide, and dissolves into a striking silhouette against the setting sun. The multi-tiered shrines have become an unofficial symbol of Bali, only true devotees are allowed to enter the compound itself.</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Ubud/Lombok</h5>
+<p>Rise early to transfer to the coast for an express boat to Lombok. Arrive late morning and check-in to the Oberoi Lombok for four nights. Enjoy an afternoon at leisure to settle in.</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5> Lombok</h5>
+<p>This morning, drive to the south of the island to explore some local villages. You will visit the pottery village of Banyumulek, a traditional market in Kediri, and Sukarara, known for its weaving activities. Also stop at Rembitan, a traditional Sasak village, to see a typical Sasak house and meet the local people. You will also enjoy some time relaxing on the peaceful white sands of Kuta Beach. Have lunch in a local restaurant.</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>Lombok</h5>
+<p>Enjoy a full-day tour beginning at the colourfulLendangBajur morning market. Continue to BaunPusuk forest to see the monkeys. Have lunch at a local restaurant before visiting the beautiful island of GiliMeno, famous for its colourful fish and coral reef, not far from Lombok's mainland.</p>
+</li>
+<li>
+<h4>Day 11</h4>
+<h5>Lombok</h5>
+<p>Spend your last full day at leisure, lazing by the pool or strolling on the beach.</p>
+</li>
+<li>
+<h4>Day 12</h4>
+<h5>Lombok/India</h5>
+<p>Check-out of the hotel and transfer to the jetty for your boat transfer back to Bali. Board the flight back  to India.
+</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id=1;?>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Indonesia"/>
+<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Bali and Lombok"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classic-Bali-Lombok.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Indonesia"/>
+<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Bali and Lombok"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>After a leisurely breakfast your driver/guide will transfer you to the airstrip for your scheduled flight back to Nairobi. Upon arrival at Wilson Airport, transfer to Norfolk Hotel where dayrooms have been reserved for you. The rest of the day is free for you to relax and freshen up or go sightseeing and shopping.<br /><br />This evening transfer to Jomo Kenyatta International Airport for your international departure flight.&nbsp; <strong><br /><br />Option to extend to Tanzania.</strong></p><p>On arrival in Nairobi take a connecting schedule flight to Kilimanjaro Airport in Tanzania. Today enjoy lunch at Kia Lodge before returning to the airport for your flight to Manyara. On arrival in Manyara you will be transferred to Ngorongoro Crater Lodge.<br /><br />Situated on the edge of the ancient crater rim above the cool, swirling mists, the Ngorongoro Crater Lodge is a return to the noble elegance of the traveling colonials. Inspired in design by the Masai manyatta, three separate camps of 6 to 12 suites each remember a bygone era. The stilted structures are adorned with graceful antiques, grand chandeliers and treasures collected from travels through Africa. Each suite is discreetly tended by a personal butler, who will bring you tea in bed, stoke your fireplace and even draw your bath, scattering the water with rose petals, ready for your return from your safari.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Masai Mara - Depart Nairobi OR Extend to Tanzania", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrols the flat crater floor. A world of wide grassland plains, acacia copses, pools and streams, elephant, buffalo, lion, leopard and even rhino can be seen here. The central soda lake attracts birds and sometimes flocks of flamingo.<br /><br />Full day game viewing in the Crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>This morning after breakfast drive to Olduvai Gorge to see the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />After your visit drive to the Serengeti, one of the most magnificent parks in Africa. On arrival drive to Kusini which is perfectly sited in a cluster of kopjes (beautiful outcrops of granite rock). Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.&nbsp;<br /><br />Serengeti is the home of the great Wildebeest migration and the short grass plains around Kusini provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.4052990, 34.727783), "Ngorongoro - Serengeti", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport. After clearing customs and immigration formalities, you will be transferred to the Norfolk Hotel. Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904.<br /><br />Just south of the equator, Nairobi's main avenues blaze with colour from tropical bushes and vines. Nairobi was established by 1907 and quickly grew as a white farming community. It also attracted world attention as the centre of big-game safaris for the rich and famous. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets.There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49397, 36.8261718), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, transfer to Nairobi's Wilson Airport for your private charter flight to Borana.<br /><br />Fly northwards through the rift and up the western wall of the great escarpment on to the Laikipia plateau. The Laikipia region is a broad swathe of game rich grasslands and hills that reach Mount Kenya to one side and the wild deserts of the north to the other.<br /><br />On arrival at Borana, you will be met at the airstrip and transferred to the lodge. Borana is a large private conservancy which has been the home of the Dyer family since the 1920s. The ranch was originally started as a cattle concern; however, in the last twenty years they have turned much of their energy to conservation and have a thriving predator population, elephant, plains game and smaller beasts. Borana Lodge is set on the edge of a valley with panoramic views across the plains and overlooks a watering hole for wildlife in the area. Your days will be busy with day and night game drives, walks, picnics and bush dinners, horse riding for both experienced riders and novices, mountain biking, or visits to the working ranch or the various community and conservation projects Borana is involved in. The ranch is an accredited member of the Eco Tourism Society of Kenya, is certified organic and plays an extremely active role in regional conservation.<br /></p><p>There is time to freshen up and relax before lunch.Your hosts will be at hand to discuss your preferences and plan your activities for your stay. Spend the afternoon game viewing, relaxing or exploring the area.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.3606063, 36.7819505), "Nairobi - Laikipia", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>After a leisurely breakfast take a scheduled flight to the Masai Mara, one of Africa's greatest parks.<br /><br />On landing at the airstrip, your driver/guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />We have selected Olonana for you accordingly for its small size and privacy. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net windows and river view verandahs. Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Laikipia - Masai Mara", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.727783;
+					var maxLat = 0.3606063;
+					var maxLng = 36.8261718;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+				//gmapInitialize();
+			//});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--CLASSIC BALI AND LOMBOK End Here -->
+
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

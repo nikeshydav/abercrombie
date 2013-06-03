@@ -1,0 +1,344 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=3; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById("img"+i).style.display="";
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById("img"+i).style.display="none";
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquery-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="img1"><img src="../images/egypt-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img2" style="display:none;"><img src="../images/jordan-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img3" style="display:none;"><img src="../images/morocco-news-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="middle-east-north-africa.html">Middle East &amp; North Africa</a></li>
+<li>News</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>News</h4>
+<ul>
+<li><a href="africa-news.html" title="Africa">Africa</a></li>
+<li><a href="middle-east-north-africa-news.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="europe-news.html" title="Europe">Europe</a></li>
+<li><a href="australasia-news.html" title="Australasia">Australasia</a></li>
+<li><a href="china-orient-news.html" title="The Orient">The Orient</a></li>
+<li><a href="south-america-news.html" title="South America">South America</a></li>
+<li><a href="../news.html?id=7" title="North America">North America</a></li>
+<li><a href="../news.html?id=8" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="../news.html?id=9" title="Antarctica">Antarctica</a></li>
+</ul>
+<h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/famity-holday.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="#">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Middle East &amp; North Africa News</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="Egypt"><span>Egypt</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Jordan"><span>Jordan</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Morocco"><span>Morocco</span></a></li>
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top"></div>
+<div class="tabtxtHolder-mid">
+<div id="tab1">
+<div style="float:right;"><a href="egypt.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Egypt Homepage</a></div>
+<h3><strong style="text-decoration:underline;">A Diver's Haven</strong></h3>
+<p>If you love exotic marine life and are a diving enthusiast there is great news for you! The Egyptian coastal town of Sharm El Sheikh has been awarded the World's Leading Dive Destination in the recently announced 2011 World Travel Awards. The vibrant city of Sharm el-Sheikh, located in South Sinai, was recognised for its incredible aquatic life and was selected over other top diving spots such as the Maldives, the Great Barrier Reefs in Australia, Belize and Sulawesi in Indonesia. A little piece of diver's heaven, the Red Sea boasts ivory soft sand, unbelievably clear bright blue waters, stunning coral gardens and vast shoals of exotic fish. And if you're lucky you might spot a turtle leisurely swimming by or even come across a pod of dolphins.</p>
+<p>
+Need a place to stay? The Four Seasons Resort Sharm El Sheikh, has also been voted the top ranked resort in the world in the annual Condé Nast Traveler Readers' Choice Awards. Ranked as number one in Africa and the Middle East, and as number three in the Top 100 hotels and resorts in the world, the Four Seasons Resort Sharm El Sheikh offers both a desert and beachside hideaway, combining the best of Sinai's romantic desert landscapes, year round sunshine and a sun-seekers paradise.</p>
+<p>With Abercrombie & Kent, we can make this the trip of a lifetime. </p>
+<h3><strong style="text-decoration:underline;">Singer's Tomb Unearthed in Egypt</strong></h3>
+<p>A fascinating discovery in Egypt's magnificent Valley of the Kings! Archaeologists have unearthed a 3000-year-old tomb of a female singer, it is the only tomb of a woman not related to the ancient Egyptian royal families that has ever been found there, said Mansour Boraik, the top government official for the Antiquities Ministry in the city of Luxor. The coffin of the female singer, remarkably intact, is said to be Nehmes Bastet, and believed to be protected by the feline deity Bastet - seen as the defender of the pharaoh. The tomb was found by accident, according to Elina Paulin-Grothe, Field Director of the excavation at the Valley of the Kings with Switzerland's University of Basel.
+Archaeologists have concluded from artifacts that she sang in the glorious Karnak Temple, one of the most famous and largest open-air sites from the Pharaonic era.</p>
+<p>
+Interested in the ancient world and the ancient Egyptian civilization? Why not take one of our luxurious Nile cruises and see the Valley of the Kings and the beautifully inscribed towering columns in Karnak Temple for yourself! </p>
+
+<h3><strong style="text-decoration:underline;">Ringing in the New Year on the Nile</strong></h3>
+<p>Celebrating the holiday season has always been fun. But now, you can really treat the family in style, by enjoying the season's festivities with a spectacular cruise down the Nile. Whether you wish to step back into Egypt's fabulous history, indulge in sweet treats on the decks of our luxurious boats, or enjoy exemplary service and fine dining - A&amp;K can offer you that memorable cruise you've always wanted. </p>
+<h3><strong style="text-decoration:underline;">The Return of Egypt's Glory Days</strong></h3>
+<p>Agatha Christie did it, and now you can too. With the fabulous multimillion dollar refurbishment of the historic Old Cataract Hotel in Aswan, you can relive the glory days of the 30's and 40's, when Egypt was the playground of the rich and famous. With spectacular terraces,  spacious rooms and huge corridors that whisper the secrets of days gone by, you can indulge in a pampering, exotic experience that will leave memories for years to come. For more information on a fabulous getaway to Aswan, including a wonderful Nile Cruise.</p>
+
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab2" style="display:none">
+<div style="float:right;"><a href="jordan.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Jordan Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Did you know?...99 things to do in Amman!</strong></h3>
+<p>In preparation for this summer's tourism season, a new guidebook has been developed to show vacationers where to go and what to do in the beautiful capital of Jordan, Amman.</p>
+<p>The brochure '99 things to do in Amman' is geared towards both Jordanians and international visitors. As the title suggests, the book gives readers 99 ideas on where to go and what to do in Amman and is an ideal guide on where to shop, eat and sightsee. It will also include a map of Amman, a useful tool for getting around.</p>
+<p>Here at A&K Jordan we recommend you get your own copy of this must have brochure. You can pick up your copy at the Queen Alia International Airport, the border crossings and in shopping malls across the city. Hoteliers in the area have also been trained on the guidebook and are at your service should you need to seek advice.</p>
+<p>Want to have a read before you arrive? Download a copy here: <a href="http://visitjordan.com/99things/" target="_blank">http://visitjordan.com/99things/</a></p>
+<p>For an insightful tour of Amman, <a href="../contact/contact.html">contact us</a> to arrange a programme specific to your needs. A&K Jordan will provide an expert guide to accompany you on every step of your journey, telling what you need to know about Amman and answer any queries you may have.</p>
+<h3><strong style="text-decoration:underline;">Jerash Festival Is Back!</strong></h3>
+<p>The Jerash Festival for Culture and Arts is back again for 2012. The festival will run from July 4th until July 29th and will feature music, poetry, theatre and dance performances by prominent artists from 30 different countries, including Jordan and the Arab regions.</p>
+<p>Since 1981, the old city of Jerash has been hosting this major international festival, a three week long summer program of dance, music, and theatrical performances. The festival is frequently attended by members of the royal family of Jordan and is hailed as one of the largest cultural activities in the region.</p>
+<p>This year, Jerash Festival will take place in two different places; From July the 4th till July the 14th it will take place in Jerash, and from July the 23rd till July the 29th it will take place in Royal Cultural Center.</p>
+<p>Inaugurated by Queen Noor Al-Hussein, the festival has become the premiere showcase for Jordanian performing artists. The ancient Greco-Roman City provides an unforgettable backdrop to this cultural carnival, and this year the venues include the North and South Theatres, the colonnaded streets, Byzantine churches and the steps of the Artemis Temple,  all within walking distance of modern Jerash.</p>
+<p>The Jerash Festival takes place during a traditionally quiet season for tourism in Jordan, (July - August) making it easy to book hotel rooms and air travel at attractive prices. So, don't miss the chance to enjoy this unforgettable experience! </p>
+<h3><strong style="text-decoration:underline;">Souk Jara</strong></h3>
+<p>Souk Jara, a local heritage market in the central district of Jabal Amman (considered as one of Amman's classical quarters) is now running until 28th September. Run by the Jabal Amman Residents Association (Jara) the market opens its stalls every Friday from 10am to 10pm and offers visitors a taste of the colourful Jordanian culture.
+As you explore Souk Jara you will pass by retailers offering souvenirs, handicrafts, antiques, paintings and handmade. Booths will be the ornaments decorating the old neighborhood creating an amusing shopping experience.</p>
+<p>Souk Jara offers you a unique experience of Jabal Amman. Walk its oldest streets and discover unique merchandise that you cannot find in regular shops, listen to great music, and enjoy a cup of coffee along with a Shisha.</p>
+<p>For more information and details about the events that taking place in Souk Jara, please visit <a href="http://www.facebook.com/SOUKJARA" target="_blank">http://www.facebook.com/SOUKJARA</a></p>
+<h3><strong style="text-decoration:underline;">Archaeologist's friends remember Father Piccirillo</strong></h3>
+<p>Dignitaries, researchers and friends from across the region gathered this month to pay tribute to the person many regard to be the "godfather" of Jordanian mosaics. A Franciscan father, professor, archaeologist and peace-builder, Abuna (Father) Piccirillo was a man known to wear many hats.</p>
+<p>Michele Piccirillo left behind a body of work that forced scholars and clerics alike to rethink historical coexistence between Christians and Muslims in the holy lands, proving that Christian communities flourished during the zenith of the Umayyad era.</p>
+<h3><strong style="text-decoration:underline;">New Itineraries</strong></h3>
+<p>Are your clients looking for a super luxury or culturally themed tour to Jordan? We've just introduced two new itineraries.</p>
+<p><a href="http://akdmc.com/jordan/recommendeditineraries/luxurious-tour-of-jordan.cfm" target="_blank">Click here</a> for details of our new "luxury Jordan" itinerary - perfect if you're looking for a VIP moments at Jordan with our VIP services, cars and the most luxury hotels in Jordan.</p>
+<p>Or if culture is further up the agenda, then walk and learn more from locals and make your own Jordanian food on our exclusive "A Jordan Cultural Journey" itinerary, <a href="http://akdmc.com/jordan/recommendeditineraries/jordan-cultural-experience.cfm" target="_blank">click here for details</a>.</p>
+<h3><strong style="text-decoration:underline;">Kunafeh is now officially part of the 'Jordan experience'</strong></h3>
+<p>Confectioners report that kunafeh has become a must-buy treat for tourists when they visit Amman on account of its popularity in the Kingdom. Kunafeh is an Arabic sweet, made of very fine shreds of pastry that is layered with soft cheese and topped with sugary syrup.</p>
+<p>Since the early days of modern Amman, Jordanians have become very attached to kunafeh, serving it during national celebrations and at all kinds of social events. During the 1930s, Jordanians used to prepare this dish at home, however, with the Palestinian influx after the 1948 Arab-Israeli several families arrived specialising in making kunafeh. Throughout the 40s different sweet stores opened up such as Abu Seir, Shahrazad and Habibah. Since then, these shops have attracted Jordanians and visitors alike, with various sweet offerings. And people keep coming back for more!</p>
+<h3><strong style="text-decoration:underline;">Madaba prepares for Christmas</strong></h3>
+<p>In Jordan's capital of Amman, the joys of Christmas is nothing but contagious for Christians and non-Christians alike. As the weather beings to get colder, glimpses of red and green start sparkling with excitement all the way from Amman through to Jordan's every last village, bringing the residents together in pure celebration.</p>
+<p>Madaba is a focal point for such celebrations in Jordan. Here, countless events will take place:</p>
+<p>This weekend we witnessed the lighting of the Christmas Tree under the Patronage of H.E The Minister Of Tourism &amp; Antiquities and heard the Christmas Choir with Santas sing, followed by a Christmas Bazaar. Wine tastings and musical bands were also helped the crowds enter into the festive spirit.</p>
+<p>More activities will take place on Friday the 16th and 23rd of December 2011 - to be announced in due course. We're already looking forward to them.</p>
+<h3><strong style="text-decoration:underline;">Christmas spirit at Abercrombie &amp; Kent Jordan</strong></h3>
+<p>As Christmas draws closer and everyone begins preparing for the seasonal celebrations, we too in the Abercrombie &amp; Kent Jordan office have lit our Christmas tree and have busied ourselves making handmade Christmas gifts for all our guests.</p>
+<p>Everyone who'll be in Jordan over Christmas Eve will receive something - easing them into the spirit of this beautiful holy night.</p>
+<p>Each present we give will come from a charity organisation, set up to support the ladies who make such beautiful handicrafts - from soaps, towels, picture frames, and cards showing off the sites of Jordan, along with sand bottles for children, decorated and personalised with their names. In everything we do we like to draw a smile on guests' faces and to keep them remembering their trip to Jordan with us. This is all just part of the service.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab3" style="display:none">
+<div style="float:right;"><a href="Morroco.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Morocco Homepage</a></div>
+<h3><strong style="text-decoration:underline;">Come and visit the "Best African destination of the year" nominated by the World Travel Awards</strong></h3>
+<p>The 19th World Travel Awards rewarded Marrakech as the Best African destination for 2012. The Red city was distinguished for its incredible charm and excellence in the field of tourism and travel, with the ability to attract and mesmerise its guests. This year Marrakech surpassed Cape Town who previously reigned supreme on the list with 12 titles to its credit. Amongst the nominees were Cape Town, Durban and Johannesburg (South Africa), Luxor (Egypt), Moont Kilimanjaro (Tanzania) and Victoria (Zambia). It follows on the footsteps of the nomination by Trip Advisor of Marrakech as the 6th best destination in the world in 2012. The cosmopolitan city surrounded by the Atlas Mountains, features beautiful historical sites, providing at the same time a world class comfort with luxury accommodation and thrilling night life with restaurants and bars. No wonder that it is the best of the best!</p>
+<h3><strong style="text-decoration:underline;">The Unique & Mesmerising Djemaa El Fna square.</strong></h3>
+<p>This May Jemaa El Fna will celebrate its 11th anniversary since its proclamation for its Oral and Intangible Heritage of Humanity by UNESCO.</p>
+<p>But here celebration is an everyday occurrence as you will not find a place that so effortlessy captures the essence, like the Djemaa El Fna Square does. </p> 
+<p>Alive at both day and night, but for completely different reasons. During the day watch out for performances of all kinds, from snake's charmers to storytellers and healers to orange juice sellers who squeeze the fruit right before your eyes! At night a completely different atmosphere is created, the food stalls are carried in and treats for the taste buds are cooked all night long, anything you desire cooked within just a few minutes.</p>
+<h3><strong style="text-decoration:underline;">The Moroccan Capital celebrates music.</strong></h3>
+<p>Usually known for its peace and quiet, the beautiful city of Rabat is transformed to welcome once again the international music festival of Mawazine, from the 18th till 26th May.</p>
+<p>The capital will pulsate on the rhythms of Moroccan and international artist performing during the weeklong festival on 13 different stages. Besides Moroccan singers, performers from all corners of the globe will be gracing Rabat. From Jamaica, Turkey, USA, Lebanon, Australia and the UK. Those familiar with popular Arabic music will sing "Aicha" on the unmissable show of Algerian famous artist Cheb Khaled. Don't miss this exceptional event !</p>
+<h3><strong style="text-decoration:underline;">A great big Thank You for all our partners for have participated in Earth Hour 2012!</strong></h3>
+<p>On the 31st of March, 152 countries and territories and more than 6,700 cities took part in Earth Hour 2012. Hundreds of millions of people across the world switched off their lights at home and at work, during the one hour and participated in one of the world's largest public environmental action events.</p>
+<p>Abercrombie & Kent Morocco and partners were proud to be amongst them, helping save the planet. We all switched off our lights and tried to increase awareness to our partners and clients. A special thank you to one of our favourite partners, Riad Joya. The team communicated about Earth Hour to all their clients and switched off their own lights, having just candles create the cosy atmosphere. </p>
+<p>We hope that next year you will join us in this amazing event for Earth Hour on the Saturday 30th March from 8:30 to 9:30 pm.</p>
+<h3><strong style="text-decoration:underline;">Property of the Month: Sofitel Essaouira Mogador & SPA</strong></h3>
+<p>Head to the Moroccan coast, this luxurious resort is an ideal place to enjoy relaxing holidays for families, couples and friends. Gorgeous rooms, suites and private villas offer breathtaking views on to the Atlantic ocean, golf course or Mogador Island. Decorated with a style featuring contemporary design with little traditional details reminding us of the Souiri culture. Its 18 holes golf course, 4 restaurants, kids club, a night club and of course gorgeous private beaches will make happy everyone. </p>
+<p>Located, just 10 minutes from the bustling harbour of Essaouira, famous for its old squala and brightly decorated fishing boasts. Stroll through the medina's colourful alleyways, visit artists' studios and admire their traditional and exuberant modern art pieces.  </p>
+<h3><strong style="text-decoration:underline;">"One of the most amazing and productive trade shows"</strong></h3>
+<p>Which one are we talking about?  PURE Life Experiences - that took place from the 1st till the 4th November 2011 in Marrakech.</p>
+<p>Magical Marrakech warmly welcomed agents from around the globe offering a positive and dynastic atmosphere during the show and at the events organised in the evenings.</p>
+<p>The Pure team have confirmed that next year PURE will take place in our beautiful city from the 12th till the 15th November 2012. We hope to see you there for another unforgettable experience.</p>
+<p>"One of the most amazing and productive trade shows"  
+This is the major feedback from travel professionals who took part this fabulous event. The 3rd edition was a real success with a great selection of representatives from the travel industry, and a lot of wonderful opportunities to make good business and meet some interesting people.</p>
+<h3><strong style="text-decoration:underline;">International Brands: New hotels in Morocco</strong></h3>
+<p>Morocco attracts a number of International brands of hotel business, and in the few next years we will see new luxury hotels pop up like mushrooms. Some prestigious brands such as the Ritz Carlton, Taj Hotels, Hilton and the Marriott are planning to increase investment in this beautiful country full of promise and development for the tourism business.</p>
+<p>Other brands known worldwide, already established in Morocco are planning to expand such as the Hyatt Group. Well known for its luxury hotel in Casablanca: the Hyatt Regency, plans are now in place for a new one in Marrakech.  And Four Seasons is also set to open in Casablanca.</p>
+<p>The OetkerD family known for the Bristol in Paris Brenners Park Hotel in Baden-Baden; is also dropping its suitcases in the Red City with the opening of a luxury palace forecasted for the coming year.</p>
+<p>We will be following all the latest news and will keep you posted on these and other new openings.</p>
+<h3><strong style="text-decoration:underline;">Spend New Years Eve in magical Marrakech.</strong></h3>
+<p>When the clock strikes midnight don't forget to make a wish! If you wish to be transported to one of the most magical places in the world then why not spend New Years Eve here?</p>
+<p>Welcomed by the famous Dakka Marrakechia, the evening will be animated by beautiful and enchanting belly dancers and mesmerizing folkloric troops. You'll be served up a real feast for this special dinner with delicious pigeon pastille, a traditional Moroccan tajine or lamb couscous.  Music and a special live show will delight those who want to dance the night away until the first sun rise of 2012.</p>
+<p><strong>Our Favourite: The Royal Mansour Marrakech</strong><br />
+A Royal experience to celebrate an unforgettable last night of the year in a unique place. Under the sound of live music you will be entertained  with a gastronomic dinner prepared by a three starred Michelin chef.  Festival of savours and emotions.</p>
+<h3><strong style="text-decoration:underline;">The property of the month: Marrakech Classic - Villa des Orangers</strong></h3>
+<p>What is the perfect time and place to enjoy a peaceful retreat in wonderful and thrilling Marrakech?</p>
+<p>This month we would like you to rediscover one of our favourite Riads: Villa des Orangers.</p>
+<p>This Relais &amp; Chateau property is located in the heart of city near to historical symbols representing Marrakech, the Koutoubia Mosque and Djemaa El Fna Square. This property is a perfect combination offering the true experience of a traditional Riad and privacy that can be found in boutique hotels.</p>
+<p>Little patios with fountains and orange trees are ideal areas to relax. Gracious rooms refurbished in a traditional Moroccan style offers a warm and cosy atmosphere. Our favourite place is the swimming pool on the roof terrace with wonderful view's over the famous Koutoubia mosque.</p>
+<p>Make the most of your sojourn and our exceptional offers with more that 30% discount until the 20th December only for A&amp;K clients and up to 20% reduction from 8th January until 15th March.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+</div>
+
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
