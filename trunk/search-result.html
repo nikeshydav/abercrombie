@@ -1,0 +1,196 @@
+<?php
+include("config.php");
+include("classes/search.class.php");
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--Flag-->
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+</script>
+<!--Flag-->
+<!--pop up-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popup2.js"></script>
+<!--pop up-->
+<!--header-->
+<link rel="stylesheet" type="text/css" href="fade-example_data/fade-plugin.css">
+<script type="text/javascript" src="fade-example_data/jquery.js"></script>
+<script type="text/javascript" src="fade-example_data/fade-plugin.js"></script>
+<script type="text/javascript">
+      (function($) {
+        function init() {
+
+          $("#example1 .effectContainer").fadeTransition({pauseTime: 2000,
+                                                 transitionTime: 2000,
+                                                 ignore: "#introslide",
+                                                 delayStart: 7000,
+                                                 pauseOnMouseOver: true,
+                                                 createNavButtons: true});
+                                                 
+          $("#example2 .effectContainer").fadeTransition({pauseTime: 2000,
+                                                  transitionTime: 2000,
+                                                  delayStart: 7000,
+                                                  pauseOnMouseOver: true,
+                                                  createNavButtons: true});
+                                                 
+          $("#example3 .effectContainer").fadeTransition({pauseTime: 2000,
+                                                  transitionTime: 2000,
+                                                  manualNavigation: true});
+                                                  
+          var example3 = $("#example3 .effectContainer").fadeTransition().fader();          
+          $("#back").click(function(e) { example3.prev(); e.preventDefault(); });
+          $("#next").click(function(e) { example3.next(); e.preventDefault(); });
+        }
+        
+        
+        $(document).ready(init);
+      })(jQuery);
+ </script>
+    <!--header-->
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<div class="tickerHolder">
+<a href="enquiry-form.html"><img src="images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="request-brochure.html"><img src="images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+   <?php include('header.html'); ?>
+  <!-- Header Part End Here -->
+  <!-- Banner Part Start Here -->
+  <div id="Banner"><img src="images/about-banner.jpg" alt="Abercrombie &amp; Kent" /></div>
+  <!-- Banner Part End Here -->
+  <!-- Container Part Start Here -->
+  <div id="Container">
+    <!-- Left Container Part Start Here -->
+    <div class="LeftContaner">
+      <div class="Breadcrumb">
+        <ul>
+          <li>You are here</li>
+          <li><a href="index.html">Home</a></li>          
+          <li>Search Result </li>
+        </ul>
+      </div>
+      
+         <div class="LeftList">
+        <h4><a href="destinations/destinations.html">TRAVEL Destinations</a></h4>
+        <ul>
+          <li><a href="destinations/africa.html" title="Africa">Africa</a></li>
+          <li><a href="destinations/middle-east-north-africa.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+          <li><a href="destinations/europe.html" title="Europe" >Europe</a></li>
+		  <li><a href="destinations/australasia.html" title="Australasia" >Australasia</a></li>
+          <li><a href="destinations/theorient.html" title="The Orient" >The Orient</a></li>
+          <li><a href="destinations/south-america.html" title="South America" >South America</a></li>
+          <li><a href="destinations/central-america.html"  title="Central America">Central America</a></li>
+          <li><a href="destinations/north-america.html" title="North America">North America</a></li>
+                    <li><a href="destinations/beach-island-escapes.html" title="Beach &amp; Island Escapes" >Beach &amp; Island Escapes</a></li>
+		  <li><a href="destinations/antartica.html" title="Antarctica">Antarctica</a></li>
+          <li><a href="destinations/arctic.html" title="Arctic" >Arctic</a></li>
+        </ul>
+        <h4>CHOOSE YOUR STYLE</h4>
+        <ul>
+          <li><a href="journeystyles/private-journeys.html" title="Private Journeys">Private Journeys</a></li>
+          <li><a href="journeystyles/extreme-adventures.html" title="Extreme Adventures">Extreme Adventures</a></li>
+          <li><a href="journeystyles/small-ship-cruising.html" title="Small Ship Cruising">Small Ship Cruising</a></li>
+          <li><a href="journeystyles/Luxury-rail-journey.html" title="Luxury Rail Journeys">Luxury Rail Journeys</a></li>
+          <li><a href="journeystyles/family-holidays.html" title="Family Holidays">Family Holidays</a></li>
+          <li><a href="journeystyles/rest-revive.html" title="Rest &amp; Revive">Rest &amp; Revive</a></li>
+          <li><a href="journeystyles/celebration.html" title="Celebrations">Celebrations</a></li>
+           <li><a href="journeystyles/honeymoon.html" title="Honeymoon">Honeymoon</a></li>
+          <li><a href="journeystyles/special-interst-groups.html" title="Special Interest Groups">Special Interest Groups</a></li>
+          <li><a href="journeystyles/private-mob-copm.html" title="Private Mobile Camping">Private Mobile Camping</a></li>
+          <li><a href="journeystyles/ak-villas.html" title="A&amp;K Villas">A&amp;K Villas</a></li>
+          <li><a href="journeystyles/sanctuary-retreats.html" title="Sanctuary Retreats">Sanctuary Retreats</a></li>
+        </ul>
+      </div>
+      <div class="SpecialOffer">
+        <h4>A&K's iPad Travel App</h4>
+        <div><img src="images/ipad-homepage.jpg" alt="iPad Travel App" title="iPad Travel App" /></div>
+        <div class="Txt">
+        <p><strong>The World of A&K for iPad®</strong></p>
+          <ul>
+          <li><img src="images/bullet.gif" alt="bullet" />  Explore 26 A&K destinations through &nbsp;&nbsp;&nbsp;photos and video</li>
+          <li><img src="images/bullet.gif" alt="bullet" />  Share through Facebook and Twitter </li>
+          <li><img src="images/bullet.gif" alt="bullet" />  Send beautiful electronic postcards </li>
+          <li><img src="images/bullet.gif" alt="bullet" />  Create your own customized travel &nbsp;&nbsp;&nbsp;map </li>
+          <li><img src="images/bullet.gif" alt="bullet" />  Available FREE from the App Store <sup>SM</sup> </li>
+          </ul>
+          <div class="More2">
+            <a href="http://www.abercrombiekent.com/ipad-travel-apps/" target="_blank" title="iPad App Learn More"><img src="images/learn-more.jpg" alt="learn more"/>Learn more</a>
+          <a href="http://itunes.apple.com/us/app/world-of-a-k/id449045086?mt=8" target="_blank" title="iPad App Download"> <img src="images/download.jpg" alt="iPad App download"/>Download</a>
+        
+          </div>
+        </div>
+      </div>
+      <div style="margin:25px 0 15px 0;"><a href="http://www.facebook.com/AbercrombieKent?ref=hl" target="_blank"><img src="images/follow-us-facebook.gif" alt="facebook" width="102" height="31" border="0" /></a> <a href="https://twitter.com/AKTravel_IN" target="_blank"><img src="images/follow-us-twitter.gif" alt="twitter" width="102" height="31" border="0"/></a></div>
+      
+      <?php include('brochure_left.html'); ?>
+    </div>
+    <!-- Left Container Part End Here -->
+    <!-- Center Container Part Start Here -->
+    <div class="CenterContainerInner">
+      <h1>Your Result</h1>
+
+      <div class="Clr"></div>
+	  <?php 
+	  if(count($linkArr)>0){
+	  ?>
+	  <span class="errormsg"> <?php echo count($linkArr);?> records found</span>
+      <ul class="jobmainsec"> 
+        <?php 
+		for($i=0; $i < count($linkArr); $i++){
+		?>
+		<li>
+		  <?php echo $linkArr[$i]['link'];?>
+        </li>
+		<li>&nbsp;</li>
+		<?php }?>    
+      </ul> 
+	  <?php } else {?>
+	  <span class="errormsg">No, record found</span>
+	  <?php }?>
+    </div> 
+    <!-- Center Container Part End Here -->
+    <div class="Clr"></div>
+  </div>
+  <!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('footer.html'); ?>
+<!-- Footer Part End Here -->
+</body>
+</html>

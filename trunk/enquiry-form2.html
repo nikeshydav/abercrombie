@@ -1,0 +1,832 @@
+<?php
+include("config.php");
+include("classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--Flag-->
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+</script>
+<!--Flag-->
+<script type="text/javascript" src="js/tabcontent.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/enquiry.js"></script>
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics End here -->
+
+
+<!-- Script start here for Check boxes -->
+<script>
+function showMe (it, box) {
+  var vis = (box.checked) ? "block" : "none";
+  document.getElementById(it).style.display = vis;
+}
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="yahoo.html">
+                 
+     <img src="images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+<div class="tickerHolder">
+<a href="enquiry-form.html"><img src="images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="request-brochure.html"><img src="images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('header.html'); ?>
+  <!-- Header Part End Here -->
+  <!-- Banner Part Start Here -->
+  <div id="Banner"><img src="images/enquiry-banner.jpg" alt="Abercrombie &amp; Kent" /></div>
+  <!-- Banner Part End Here -->
+  <!-- Container Part Start Here -->
+  <div id="Container">
+    <!-- Left Container Part Start Here -->
+    <div class="LeftContaner">
+      <div class="Breadcrumb">
+        <ul>
+          <li>You are here</li>
+          <li><a href="index.html">Home</a></li>          
+          <li>Online Enquiry Form</li>
+        </ul>
+      </div>
+      <div class="LeftList">
+        <h4>About A&amp;K</h4>
+        <ul>
+          <li><a href="about/difference.html">A&amp;K Difference</a></li>
+          <li><a href="about/philanthropy.html">A&amp;K Philanthropy</a></li>
+          <li><a href="about/team.html" class="Active">A&amp;K Team</a></li>
+          <li><a href="enquiry-form.html">Jobs in A&amp;K</a></li>
+          <li><a href="#">A&amp;K Traveler Testimonials</a></li>
+          <li><a href="about/press.html">Press</a></li>
+          <li><a href="about/ground-offices.html">A&amp;K Ground Offices</a></li>
+        </ul>
+        <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+    	  <option value="journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="journeystyles/celebration.html">Celebrations</option>
+          <option value="journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select>
+
+<h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="destinations/africa.html">Africa</option>
+		<option value="destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="destinations/europe.html">Europe</option>
+		<option value="destinations/australasia.html">Australasia</option>
+		<option value="destinations/theorient.html">The Orient</option>
+		<option value="destinations/south-america.html">South America</option>
+		<option value="destinations/north-america.html">North America</option>
+         <option value="destinations/central-america.html">Central America</option>
+		<option value="destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="destinations/antartica.html">Antarctica</option>
+        <option value="destinations/arctic.html">Arctic</option>
+    </select>
+      </div>
+      <?php include('brochure_left.html'); ?>
+    </div>
+    <!-- Left Container Part End Here -->
+    <!-- Center Container Part Start Here -->
+    <div class="CenterContainerInner">
+      <h1>Online Enquiry FORM </h1>
+      <div class="Right">
+        <div class="RightIcons">
+		  <?php include('share.html'); ?>
+		</div>
+        <div class="NewsletterBox">
+         <?php include('newsletterform.html'); ?>
+        </div>
+      </div>
+      <div class="Clr"></div>
+      <ul class="jobmainsec"> 
+        <li>
+          <dl>
+            <p>Please complete the form below indicating when and where you would like to go on your holiday. The more detail you are able to provide us the better as we will be able to send your enquiry to the consultant best suited to assist you with your travel plans. </p>
+          </dl>  </li>
+		<li>
+		  <h2 class="blue14">Your enquiry</h2>
+		   <?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1){?>
+		  
+		  <br />
+		  <?php }?>
+		  <form id="loginform"name="loginform" method="post" action="thanks.php" onsubmit="return checkfield(this)">
+		 
+          <li class="dottedBorder">
+		  <dl>
+            <dt><strong>*</strong> What type of holiday are you looking for?<br />
+              <span class="font11"> e.g. safari, beach, city break, tour etc</span></dt>
+            <dd>
+              <input type="text" name="type_of_holiday" id="type_of_holiday" class="inptxt" maxlength="32"/>
+              <br />
+              <span class="errormsg" id="span_type_of_holiday"></span> </dd>
+          </dl>
+          <dl>
+            <dt><strong>*</strong> Where would you like to go?<br />
+            </dt>
+            <dd>
+              <input type="text" name="like_to_go" id="like_to_go" class="inptxt" maxlength="32"/>
+              <br />
+              <span class="errormsg" id="span_like_to_go"></span> </dd>
+          </dl>
+          <dl>
+            <dt><strong>*</strong> When would you like to go?<br />
+            </dt>
+            <dd><span class="Left mright10"><b>Day</b><br />
+              <select class="selectmenu-s" name="like_to_go_day" id="like_to_go_day" maxlength="32">
+                 <option value=""> -- </option>
+				  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+				   <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+				  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">29</option>
+                  <option value="30">30</option>
+				  <option value="31">31</option>
+              </select>
+              </span> <span class="Left mright10"><b>Month</b><br />
+              <select class="selectmenu-s" name="like_to_go_month" id="like_to_go_month">
+                <option value=""> -- </option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="July">Jul</option>
+                <option value="August">Aug</option>
+                <option value="September">Sep</option>
+                <option value="October">Oct</option>
+                <option value="November">Nov</option>
+                <option value="December">Dec</option>
+              </select>
+              </span> <span class="Left mright10"><b>Year</b><br />
+              <select class="selectmenu-s" name="like_to_go_year" id="like_to_go_year">
+                <option value=""> --- </option>
+				
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+              </select>
+              </span> <br />
+              <span class="errormsg" id="span_to_go_date"></span> </dd>
+          </dl>
+          <dl>
+            <dt>Flexible on dates, can you travel a couple of 
+              days either side the above mentioned date? <br />
+            </dt>
+            <dd>
+              <input type="checkbox" name="mentioned_date" id="mentioned_date" value="1" />
+              <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> How long do you want your holiday to be?<br />
+            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="how_long_holiday" id="how_long_holiday" maxlength="15" />
+              <br />
+              <span class="errormsg" id="span_how_long_holiday"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Have you travelled to this country before?<br />
+            </dt>
+            <dd>
+              <select class="selectmenu-b" name="travelled_country_before" id="travelled_country_before">
+                <option value=""> -Select- </option>
+				 <option value="Yes">Yes</option>
+				 <option value="No">No</option>
+              </select>
+              <br />
+              <span class="errormsg" id="span_travelled_country_before"></span> </dd>
+          </dl>
+          <dl>
+            <dt>How many people in your party?<br />
+            </dt>
+            <dd><span class="Left width100"><span class="Left mright10"><b>Adults</b><br />
+              <select class="selectmenu-s" name="adults" id="adults">
+                <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+              </select>
+              </span> <span class="Left mright10"><b>12-18 YRS</b><br />
+              <select class="selectmenu-s" name="8_11_yrs" id="12_16_yrs">
+                 <option value="0">0</option>
+                <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+              </select>
+              </span></span> <span class="Left width100 top10"><span class="Left mright10"><b>2-12 YRS</b><br />
+              <select class="selectmenu-s" name="3_7_yrs" id="3_7_yrs">
+                 <option value="0">0</option>
+                <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+              </select>
+              </span> <span class="Left"><b>0-2 YRS</b><br />
+              <select class="selectmenu-s" name="0_2_yrs" id="3_7_yrs">
+                 <option value="0">0</option>
+                <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+              </select>
+              </span> </span> <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+		  <dl>
+            <dt>Is there any particular place/experience you <br />
+
+specifically want to include in your itinerary,<br />
+
+or any special interests you have that you'd<br />
+
+like accommodated? Please provide details.            </dt>
+            <dd>
+              <textarea class="txtarea" name="experience_details" id="experience_details" maxlength="1000"></textarea>
+              <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+		  <dl>
+            <dt>What kind of accommodation do you like?
+Tick as many as you wish<br />
+            </dt>
+            <dd>
+			
+              <span class="Left width100">
+			  
+				  <span class="Left width125">
+					  <input type="checkbox" name="five_star"  value="Five star luxury" /> Five star luxury
+				  </span>
+				  <span class="Left mleft10 width125">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort"/> Beach resort
+				 </span>
+			 </span>
+			  
+			  <span class="Left width100 top10">
+			  
+			  <span class="Left width125">
+			  	<input type="checkbox" name="boutique_hotel" id="boutique_hotel" value="Boutique hotel" /> Boutique hotel</span>
+			  <span class="Left mleft10 width125">
+			  	<input type="checkbox" name="heritage_hotel" id="heritage_hotel" value="Heritage hotel" /> Heritage hotel
+			  </span>			  
+			  </span>
+			  
+			  <span class="Left width100 top10">
+			  <span class="Left width125">
+			  	<input type="checkbox" name="spa_hotel" id="spa_hotel" value="Spa hotel" /> Spa hotel</span>
+			  <span class="Left mleft10 width125">
+			  	<input type="checkbox" name="eco_lodge" id="eco_lodge" value="Eco-lodge" /> Eco-lodge</span></span>
+			  
+			  <span class="Left width100 top10"><span class="Left width125">
+			  	<input type="checkbox" name="under_canvas" id="under_canvas" value="Under canvas" /> Under canvas
+				</span>
+			  </span>
+			  <span class="Left width100 top10">
+			  	<span class="Left">Other 
+				  <input type="text" name="other" id="other" class="inptxt" style="width:210px;" /></span>			  </span>
+			  
+              <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+			  
+              
+		  <h2 class="blue14">Your details</h2>
+          <li class="dottedBorder">
+		  <dl>
+            <dt><strong>*</strong> Title</dt>
+            <dd>
+             <select class="selectmenu-b" name="title" id="title">
+                <option value="">Select </option>
+				<option value="Mr">Mr</option>
+				<option value="Mrs">Mrs</option>
+				<option value="Ms">Ms</option>
+				<option value="Miss">Miss</option>
+	
+				<option value="Dr">Dr</option>
+				<option value="Professor">Professor</option>
+				<option value="Sir">Sir</option>
+				<option value="Lord">Lord</option>
+				<option value="Lady">Lady</option>
+				<option value="Captain">Captain</option>
+              </select>
+              <br />
+              <span class="errormsg" id="span_title"></span> </dd>
+          </dl>
+          <dl>
+            <dt><strong>*</strong> First Name<br />
+            </dt>
+            <dd>
+              <input type="text" name="first_name" id="first_name" class="inptxt" maxlength="32" />
+              <br />
+              <span class="errormsg" id="span_first_name"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Surname<br />
+            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="sur_name" id="sur_name" maxlength="32" />
+              <br />
+              <span class="errormsg" id="span_sur_name"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Email<br />
+            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="email" id="email"  maxlength="64"/>
+              <br />
+              <span class="errormsg" id="span_email"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Confirm Email<br />
+            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="cnf_email" id="cnf_email" maxlength="64" />
+              <br />
+              <span class="errormsg" id="span_cnf_email"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Daytime Telephone<br />
+            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="telephone" id="telephone" maxlength="15"/>
+              <br />
+              <span class="errormsg" id="span_telephone"></span> </dd>
+          </dl> 
+		  <dl><p>Please ensure the telephone number includes the area code and contains numbers only (no brackets).</p></dl> 
+		  <dl>
+            <dt><strong>*</strong> Address 1            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="address1" id="address1"  maxlength="100"/>
+              <br />
+              <span class="errormsg" id="span_address1"></span> </dd>
+          </dl>
+		  <dl>
+            <dt>&nbsp;&nbsp;Address 2            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="address2" id="address2" maxlength="100" />
+              <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+		  <dl>
+            <dt>&nbsp;&nbsp;Address 3            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="address3" id="address3" maxlength="100"/>
+              <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Town/City            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="town_city" id="town_city" maxlength="32"/>
+              <br />
+              <span class="errormsg" id="span_town_city"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Country:            </dt>
+            <dd>
+              <select class="selectmenu-b" name="country" id="country">
+                <option value="INDIA">INDIA</option>
+				<option value="ANDORRA">ANDORRA</option>
+				<option value="AUSTRALIA">AUSTRALIA</option>
+				<option value="AUSTRIA">AUSTRIA</option>
+	    	    <option value="BELARUS">BELARUS</option>
+				<option value="BELGIUM">BELGIUM</option>
+				<option value="BOSNIA AND HERZEGOVINA">BOSNIA AND HERZEGOVINA</option>
+				<option value="BULGARIA">BULGARIA</option>
+				<option value="CANADA">CANADA</option>
+				<option value="CROATIA">CROATIA</option>
+				<option value="CYPRUS">CYPRUS</option>
+				<option value="CZECH REPUBLIC">CZECH REPUBLIC</option>
+				<option value="DENMARK">DENMARK</option>
+				<option value="FAROE ISLANDS">FAROE ISLANDS</option>
+				<option value="FINLAND">FINLAND</option>
+				<option value="FRANCE">FRANCE</option>
+				<option value="GERMANY">GERMANY</option>
+				<option value="GIBRALTAR">GIBRALTAR</option>
+				<option value="GREECE">GREECE</option>
+				<option value="GREENLAND">GREENLAND</option>
+				<option value="GUERNSEY">GUERNSEY</option>
+				<option value="HOLY SEE (VATICAN CITY STATE)">HOLY SEE (VATICAN CITY STATE)</option>
+				<option value="HONG KONG">HONG KONG</option>
+				<option value="HUNGARY">HUNGARY</option>
+				<option value="ICELAND">ICELAND</option>
+				<option value="INDIA">INDIA</option>
+				<option value="IRELAND">IRELAND</option>
+				<option value="ISLE OF MAN">ISLE OF MAN</option>
+				<option value="ISRAEL">ISRAEL</option>
+				<option value="ITALY">ITALY</option>
+				<option value="JERSEY">JERSEY</option>
+				<option value="LATVIA">LATVIA</option>
+				<option value="LEBANON">LEBANON</option>
+				<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+				<option value="LITHUANIA">LITHUANIA</option>
+				<option value="LUXEMBOURG">LUXEMBOURG</option>
+				<option value="MACEDONIA, FRM YUGOSLAV REP OF">MACEDONIA, FRM YUGOSLAV REP OF</option>
+				<option value="MALTA">MALTA</option>
+				<option value="MEXICO">MEXICO</option>
+				<option value="MONACO">MONACO</option>
+				<option value="MONTENEGRO">MONTENEGRO</option>
+				<option value="MONTSERRAT">MONTSERRAT</option>
+				<option value="NETHERLANDS">NETHERLANDS</option>
+				<option value="POLAND">POLAND</option>
+				<option value="PORTUGAL">PORTUGAL</option>
+				<option value="ROMANIA">ROMANIA</option>
+				<option value="RUSSIA">RUSSIA</option>
+				<option value="SAN MARINO">SAN MARINO</option>
+				<option value="SERBIA">SERBIA</option>
+				<option value="SINGAPORE">SINGAPORE</option>
+				<option value="SOUTH AFRICA">SOUTH AFRICA</option>
+				<option value="SPAIN">SPAIN</option>
+				<option value="SWEDEN">SWEDEN</option>
+				<option value="SWITZERLAND">SWITZERLAND</option>
+				<option value="TURKEY">TURKEY</option>
+				<option value="UNITED KINGDOM">UNITED KINGDOM</option>
+				<option value="UNITED STATES">UNITED STATES</option>
+				<option value="UNITED ARAB EMIRATES">UNITED ARAB EMIRATES</option>
+              </select>
+              <br />
+              <span class="errormsg" id="span_country"></span> </dd>
+          </dl>
+		  <dl>
+            <dt><strong>*</strong> Postcode            </dt>
+            <dd>
+              <input type="text" class="inptxt" name="post_code" id="post_code" maxlength="10" />
+              <br />
+              <span class="errormsg" id="span_post_code"></span> </dd>
+          </dl>
+		  </li>      
+		  
+          <li>
+		  <dl>
+            <dt><strong>*</strong> Have you travelled with us before?</dt>
+            <dd>
+             <select class="selectmenu-b" name="have_travelled_before" id="have_travelled_before">
+                <option value=""> Select </option>
+				<option value="YES">YES</option>
+				<option value="NO">NO</option>
+              </select>
+              <br />
+              <span class="errormsg" id="span_have_travelled_before"></span> </dd>
+          </dl>
+          <dl>
+            <dt> How did you hear about A&amp;K? </dt>
+            <dd>
+             <table>
+              <tr>
+              <td  width="300"> <span class="Left mleft10 width165" id="chk1"><input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('div1', this)"/> 
+              A&amp;K Communications
+				 </span></td>
+              </tr>
+           <tr>   <td>
+              <div id="div1" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Email
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('divothers', this)"/> Others
+				 </span></td>
+</tr>
+<tr><td><div id="divothers" class="Left mleft20 width165"style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><input name="txt_other"  class="inptxt2" id="txt_other" type="text" /></td>
+</tr>
+</table>
+</div></td></tr>
+</table>
+</div>
+              </td>
+              </tr>
+              
+              <tr>
+              <td > <span class="Left mleft10 width165" id="chk3">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('div2', this)"/> Repeat Client
+				 </span></td>
+                 </tr>
+                 <tr>
+              <td>
+              <div id="div2" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><span class="Left mleft20 width165" id="chk3">Name <br /> <input name="txt_friend" class="inptxt2"  id="txt_friend" type="text" /></span></td>
+</tr>
+</table>
+</div>
+              </td>
+              </tr>
+              <tr>
+              <td> <span class="Left mleft10 width165" id="chk4">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('div4', this)"/>   
+					  Magazine
+				 </span></td>
+              </tr>
+                 <tr>   <td>
+              <div id="div4" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><span class="Left mleft20 width165" id="chk4">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Condè Nast Traveller
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk4">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Vogue
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk4">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Travel + Leisure
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox"  name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('divothers2', this)"/> Others
+				 </span></td>
+</tr>
+<tr><td><div id="divothers2" class="Left mleft20 width165" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><input name="txt_other" class="inptxt2" id="txt_other" type="text" /></td>
+</tr>
+</table>
+</div></td></tr>
+</table>
+</div>
+              </td>
+              </tr>
+              <tr>
+              <td> <span class="Left mleft10 width165" id="chk4">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('div5', this)"/> Events
+				 </span></td></tr>
+                 <tr>
+                 <td>
+              <div id="div5" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><span class="Left mleft20 width165" id="chk3"> <input name="txt_friend" class="inptxt2" id="txt_friend" type="text" /></span></td>
+</tr>
+</table>
+</div>
+              </td>
+              </tr>
+              <tr>
+              <td > <span class="Left mleft10 width165" id="chk3">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('div7', this)"/> Recommended by Friend / Family
+				 </span></td>
+                 </tr>
+                 <tr>
+              <td>
+              <div id="div7" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><span class="Left mleft20 width165" id="chk3">Name <br /><input name="txt_friend" class="inptxt2" id="txt_friend" type="text" /></span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk3">Email Address <br /><input name="txt_friend" class="inptxt2" id="txt_friend" type="text" /></span></td>
+</tr>
+</table>
+</div>
+              </td>
+              </tr>
+<tr>
+              <td  width="300"> <span class="Left mleft10 width165" id="chk1"><input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('div6', this)"/> 
+           Online
+				 </span></td>
+              </tr>
+           <tr>   <td>
+              <div id="div6" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Google
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Yahoo
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Bing
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Twitter
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" /> Facebook
+				 </span></td>
+</tr>
+<tr>
+<td><span class="Left mleft20 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('divothers3', this)"/> Others
+				 </span></td>
+</tr>
+<tr><td><div id="divothers3" class="Left mleft20 width165" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><input name="txt_other" class="inptxt2" id="txt_other" type="text" /></td>
+</tr>
+</table>
+</div></td></tr>
+</table>
+</div>
+              </td>
+              </tr>
+ 
+           <tr>
+<td><span class="Left mleft10 width165" id="chk2">
+					  <input type="checkbox" name="beach_resort" id="beach_resort" value="Beach resort" onclick="showMe('divothers4', this)"/> Others
+				 </span></td>
+</tr>
+<tr><td><div id="divothers4" class="Left mleft20 width165" style="display:none">
+<table border=0 id="t1">
+<tr>
+<td><input name="txt_other" id="txt_other" class="inptxt2" type="text" /></td>
+</tr>
+</table>
+</div></td></tr>
+              </tr>
+              </table>
+              <br />
+              <span class="errormsg" id="span_how_hear_about"></span> </dd>
+          </dl>
+          <!--<dl>
+            <dt><strong>*</strong> How did you hear about A&amp;K? </dt>
+            <dd>
+             <select class="selectmenu-b" name="how_hear_about" id="how_hear_about">
+                <option value=""> Select </option>
+				<?php echo $how_hear_about_list;?>
+              </select>
+              <br />
+              <span class="errormsg" id="span_how_hear_about"></span> </dd>
+          </dl>--><dl>
+            <dt>Is there any other information that would help <br />
+
+us design the perfect holiday for you, such as <br />
+
+health and fitness considerations, dietary <br />
+
+requirements etc.?            </dt>
+            <dd>
+              <textarea class="txtarea" name="help_information" id="help_information" maxlength="1000"></textarea>
+              <br />
+              <span class="errormsg"></span> </dd>
+          </dl>
+		  </li>
+		<dl><p>From time to time we will use the above information to send you relevant news, updates and offers from A&amp;K's network of offices around the world. Each time we send you something, we will give you an opportunity to opt out of this service. We will not pass your information on to other companies.</p></dl>
+		<dl>
+		<span class="Left">
+		<input type="image" name="submit" src="images/submit-btn.jpg" /></span>
+		</dl>
+		</form>
+      </ul> 
+    </div> 
+    <!-- Center Container Part End Here -->
+    <div class="Clr"></div>
+  </div>
+  <!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script>
+</body>
+</html>

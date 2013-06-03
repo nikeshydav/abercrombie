@@ -1,0 +1,526 @@
+<?php
+include("config.php");
+include("classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Summer Travel - Abercrombie & Kent India</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--Flag pop up-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/spinners.js"></script>
+<script type="text/javascript" src="js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lightview/lightview.css" />
+<!--Flag pop up-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=11; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="yahoo.html">
+                 
+     <img src="images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+<div class="tickerHolder">
+<a href="enquiry-form.html"><img src="images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="request-brochure.html"><img src="images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+   <?php include('header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="img1"><img src="images/news.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img2" style="display:none;"><img src="images/middle-east.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img3" style="display:none;"><img src="images/europe-banner.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img4" style="display:none;"><img src="images/australia-newzealand.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img5" style="display:none;"><img src="images/china-orient.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img6" style="display:none;"><img src="images/south-america-banner2.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img7" style="display:none;"><img src="images/north-america.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img8" style="display:none;"><img src="images/beach-island-banner.jpg" alt="Abercrombie &amp; Kent" /></div>
+<div id="img9" style="display:none;"><img src="images/antarctica-news.jpg" alt="Abercrombie &amp; Kent" /></div>
+
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="index.html">Home</a></li>
+<li>News</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>News</h4>
+<ul>
+<li><a href="destinations/africa-news.html" title="Africa">Africa</a></li>
+<li><a href="destinations/middle-east-north-africa-news.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="destinations/europe-news.html" title="Europe">Europe</a></li>
+<li><a href="destinations/australasia-news.html" title="Australasia">Australasia</a></li>
+<li><a href="destinations/china-orient-news.html" title="China &amp; Orient">China &amp; Orient</a></li>
+<li><a href="destinations/south-america-news.html" title="South America">South America</a></li>
+<li><a href="news.html?id=7" title="Central America">Central America</a></li>
+<li><a href="news.html?id=8" title="North America">North America</a></li>
+<li><a href="news.html?id=9" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="news.html?id=10" title="Antarctica">Antarctica</a></li>
+<li><a href="news.html?id=11" title="Arctic" >Arctic</a></li>
+</ul>
+ <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+    	    <option value="journeystyles/private-journeys.html">Private Luxury Journeys</option>
+          <option value="journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="journeystyles/celebration.html">Celebrations</option>
+          <option value="journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select>
+
+<h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="destinations/africa.html">Africa</option>
+		<option value="destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="destinations/europe.html">Europe</option>
+		<option value="destinations/australasia.html">Australasia</option>
+		<option value="destinations/theorient.html">The Orient</option>
+		<option value="destinations/south-america.html">South America</option>
+        <option value="destinations/central-america.html">South America</option>
+		<option value="destinations/north-america.html">North America</option>
+		<option value="destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="destinations/antartica.html">Antarctica</option>
+        <option value="destinations/arctic.html">Arctic</option>
+    </select>
+</div>
+<?php include('brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>News</h1>
+<div class="Right">
+<div class="RightIcons">
+<?php include('share.html'); ?>
+</div>
+<div class="NewsletterBox">
+ <?php include('newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="Africa"><span>Africa</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Middle East &amp; North Africa"><span>Middle East &amp; North Africa</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Europe"><span>Europe</span></a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');" title="Australasia"><span>Australasia</span></a></li>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');" title="The Orient"><span>The Orient</span></a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');" title="South America"><span>South America</span></a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');" title="Central America"><span>Central America</span></a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');" title="North America"><span>North America</span></a></li>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');" title="Beach &amp; Island Escapes"><span>Beach &amp; Island Escapes</span></a></li>
+<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');" title="Antarctica"><span>Antarctica</span></a></li>
+<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');" title="Arctic"><span>Arctic</span></a></li>
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top"></div>
+<div class="tabtxtHolder-mid">
+<div id="tab1">
+<h3><strong style="text-decoration:underline;">A&K wins more awards</strong></h3>
+<p>We are proud and honoured that Abercrombie &amp; Kent has been recognised as "Best Tour Operator - Africa"" by the readers of Recommend.... for the 12th consecutive year!!  Travel professionals have once again recognised the strong teamwork that sets A&K apart.  We have received an unprecedented series of prestigious awards this year.  "Africa's Leading Luxury Tour Operator" at the the World Travel Awards, "Best Africa Tour Operator" at the Travel Weekly Readers Choice Awards and TravelAge West WAVE Awards, and the Conde Nast Traveller World Savers Award for "Doing It All."</p>
+<h3><strong style="text-decoration:underline;">Kenya : The Great Wildebeest Migration has arrived !</strong></h3>
+<p>Excitement and anticipation fill the air in the Masai Mara. Thousands of zebra have been seen crossing the Sand and Keekorok Rivers in the Mara, tell-tale signs that the much-awaited wildebeest migration from the Serengeti to the Mara has arrived!</p>
+<p>Every year over 3 million wildebeest and zebra move from the Serengeti in Tanzania to the Masai Mara in Kenya in search of life-giving pasture.  The sheer numbers of this movement as it makes its way across the Mara is nothing short of spectacular.  Along with them are the teams of predators who take advantage of the enormous number of prey in their vicinity, setting the stage for dramatic kills in every corner.  Not to be missed are the river crossings as the wildebeest and zebra attempt to cross the brimming Mara river with its giant Nile crocodiles.  The scenes that follow are what make the period between June and October the best time to be in Kenya!
+</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+<a href="destinations/africa-news.html" class="Right">Read More...</a></div>
+
+
+<div id="tab2" style="display:none">
+<h3><strong style="text-decoration:underline;">Ringing in the New Year on the Nile</strong></h3>
+<p>Celebrating the holiday season has always been fun. But now, you can really treat the family in style, by enjoying the season's festivities with a spectacular cruise down the Nile. Whether you wish to step back into Egypt's fabulous history, indulge in sweet treats on the decks of our luxurious boats, or enjoy exemplary service and fine dining - A&K can offer you that memorable cruise you've always wanted.</p>
+<h3><strong style="text-decoration:underline;">The Return of Egypt's Glory Days</strong></h3>
+<p>Agatha Christie did it, and now you can too. With the fabulous multimillion dollar refurbishment of the historic Old Cataract Hotel in Aswan, you can relive the glory days of the 30's and 40's, when Egypt was the playground of the rich and famous. With spectacular terraces,  spacious rooms and huge corridors that whisper the secrets of days gone by, you can indulge in a pampering, exotic experience that will leave memories for years to come. For more information on a fabulous getaway to Aswan, including a wonderful Nile Cruise.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+<a href="destinations/middle-east-north-africa-news.html" class="Right">Read More...</a>
+</div>
+
+
+<div id="tab3" style="display:none">
+<h3><strong style="text-decoration:underline;">Youth Winter Olympics to take place in Innsbruck</strong></h3>
+<p>The first ever Winter Youth Olympics will take place in Innsbruck, Austria from 13th - 22nd January 2012. Highlights are to include ski jumping, bobsleigh and skeleton.</p>
+<h3><strong style="text-decoration:underline;">Le Saint Paul awarded 5*</strong></h3>
+<p>The Relais And Chateaux property Le Saint Paul in France has been awarded 5* status. Reopening on 1st March 2012, the boutique hotel, with only 3 rooms and 13 suites, promises an exquisite and personal experience in the heart of St Paul de Vence.</p>
+<h3><strong style="text-decoration:underline;">Berlin biennale art event returns in 2012</strong></h3>
+<p>The 7th Berlin Biennial Art Exhibition will take place in 2012. An excellent forum for contemporary art, the exhibition promises to explore known and unknown artistic developments. Internationally acclaimed artist Artur Zmijewski is to develop the concept for next year's event. </p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+<a href="destinations/europe-news.html" class="Right">Read More...</a>
+</div>
+
+
+<div id="tab4" style="display:none">
+<h3><strong style="text-decoration:underline;">NEW: Sydney Opera House Tour &amp; Chef's Plate</strong></h3>
+<p>Begin your journey by exploring underneath the sails with a spectacular Sydney Opera House Tour, taking you inside one of the world's greatest performance venues. You will see inside the theatres, discover the stories, history and magic of the House and learn of how architect Jorn Utzon's heritage-listed masterpiece came to life.</p>
+<p>You can also decide when to take your Opera Kitchen three-tier gourmet tasting plate, before or after your tour as lunch or return for dinner at dusk or a late supper. There's nothing more to do than sit back at Sydney's newest dining spot and indulge in famous oysters, mini wagyu Burgers or dumplings and soak in the Sydney Harbour views.</p>
+<p>Opera Kitchen is home to Sydney's best chefs, food artisans and producers that will tantalise your tastebuds and leave you spoilt for choice. The perfect way to experience one of the world's most stunning icons and Sydney's newest dining destination.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+<a href="destinations/australasia-news.html" class="Right">Read More...</a>
+</div>
+
+
+
+<div id="tab5" style="display:none">
+<h3><strong style="text-decoration:underline;">MICE Destination - Macau</strong></h3>
+<p>Macau is one of the hottest MICE destinations in China where we offer you seamless arrangements ranging from international meetings to university alumni conferences.  With the appropriate top-of-the-range audio and visual facilities and computer systems, we can cater for seminars to fit any specific purpose.</p>
+<p>Macau is a vibrant one-time Portuguese colony that boasts a great variety of hotels such as the luxury Venetian Hotel with its famous Grand Canal, and the more relaxing Western Resort.  One of the great places that MICE attendees will find to visit during meetings is the Ruins of St. Paul's Church - a beautiful old church and college constructed in the 17th century, or The House of Dancing Water show - a beautifully conveyed, epic love story depicted with dazzling costumes, special effects and record breaking acts.  Of course, a trip to Macau can only be completed with a visit to its world class casinos - try the Wynn or Sands.  With its colonial history, Macau is famous for its unique Macau-Portuguese food that you can find nowhere else.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4> 
+<a href="destinations/china-orient-news.html" class="Right">Read More...</a>
+</div>
+
+<div id="tab6" style="display:none">
+<h3><strong style="text-decoration:underline;">Latest news from A&amp;K Argentina</strong></h3>
+<h3><strong style="text-decoration:underline;">Casa Bemberg opens in Iguassu!</strong></h3>
+<p>Posada Puerto Bemberg is one of the best-known names for lodging near Iguassu Falls, and now this famous marque is set to unveil the recently refurbished Casa Bemberg, a fabulous and luxurious home perfect for families and small groups.</p>
+<h3><strong style="text-decoration:underline;">Buenos Aires awarded by Travel+Leisure</strong></h3>
+<p>Once again Argentina's capital city, Buenos Aires, was elected as the number 1 city in Latin America and Mexico by the readers of Travel+Leisure Magazine, in their World's Best Awards 2011. With a score of 87.77 Buenos Aires shares the 11th position in the world with Jerusalem. The selection criteria involved areas such as tourist attractions, cultural events and gastronomy. The city also counts with 7 properties awarded among the 500 World's Best Hotels for 2011.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4>
+<a href="destinations/south-america-news.html" class="Right">Read More...</a>
+ </div>
+
+<div id="tab7" style="display:none">
+<p>Coming Soon</p>
+</div>
+<div id="tab8" style="display:none">
+<p>Coming Soon</p>
+</div>
+<div id="tab9" style="display:none">
+<h3><strong style="text-decoration:underline;">Jumeirah Vittaveli opens December 2011</strong></h3>
+<p>Jumeirah Vittaveli, the ultra luxury resort catering for couples, families and small groups, is the second Jumeirah property to open in the Maldives this year. Located a mere 20 minutes by speedboat from Male International Airport, Jumeirah Vittaveli is a convenient option for travellers visiting the Maldives. Nestled in a spot of astounding beauty, the resort offers unmatched diversity, subtle luxury and personalised exploration. Impeccable choice and seamless service shape the character of this resort paradise, where every detail has been meticulously crafted to inspire journeys of discovery and enjoyment. </p>
+<p>Consisting of 91 villa-suites, all with their own spacious private pool, Jumeirah Vittaveli offers a variety of accommodation options on the island and over water, ranging from 184m2 to 800m2. The resort also features three restaurants, a 10,800 square foot Talise Spa and comprehensive facilities for young children and teenagers.</p>
+<p>Jumeirah Vittaveli will be in a soft opening phase until the middle of January 2012. By the 20th December, all three restaurants, gym, spa and kids and teenagers clubs will be 100% operational and the only remaining area of focus will be the Lagoon Suites, which are located independently offshore and only internal design work will be carried out at this time, ensuring guests are completely unaffected. The Lagoon suites will be completed by the 15th  January 2012. </p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+<div id="tab10" style="display:none">
+<h3><strong style="text-decoration:underline;">A thousand miles beyond the end of the world lies a land where women are rare and bikinis are unheard of. Then we showed up... </strong></h3>
+<p>The next time you're in Antarctica with a supermodel in a swimsuit, swing by Vernadsky Station, one of the scientific research bases where the hole in the ozone layer was discovered three decades ago but is more recently renowned for its convivial bar, behind which is a model ship decorated with a dozen bras.</p>
+<p>
+Those bras are a poignant reminder of the few women who have visited this lonely continent at the bottom of the world, as are the pinup posters on the bedroom doors at Vernadsky, where 11 Ukrainian men live year-round in a building the size of a suburban ranch house. It is a measure of their monastic existence that the scientists, despite their limited living space, maintain a dedicated ladies' room in the idle hope that a lady might one day visit.</p>
+<p>
+That any ever do is a relatively recent phenomenon. No woman had set foot on Antarctica as of 1928, when the American admiral Richard Byrd took an expedition there. "Little America is the most peaceful spot in the world," he said of the base camp he established on the Ross Ice Shelf, "due to the absence of women." Mortality and insanity being frequent side effects of any expedition to Antarctica, Byrd had taken with him two caskets and 12 straitjackets. Eighty-four years later I was traveling to Antarctica with Hair and Makeup, and the model Kate Upton, whom the English explorer Apsley Cherry-Garrard might have had in mind in 1912, when Robert Falcon Scott's ill-fated Terra Nova expedition was unraveling, and frostbite and the specter of death were setting in. "We thought of a pretty girl, or girls," Cherry-Garrard wrote in The Worst Journey in the World. "But that was all impossible now." To the icicle-bearded daredevils who traveled to Antarctica between 1895 and 1922, in the so-called Heroic Age of Antarctic Exploration, women had to be forgotten, consigned to their dreams. Antarctica would remain the most male place on Earth, a continent where the toilet seat was always up, until 1935, when Caroline Mikkelsen, wife of a Norwegian whaler, became the first of her sex to grace that benighted land.</p>
+<p>
+Twelve years later Jennie Darlington and Jackie Ronne, both Americans, were the first women to spend a winter in Antarctica, having joined their husbands aboard the expedition ship Port of Beaumont. And even then Jennie's husband, Harry Darlington, protested. "There are some things women don't do," he said. "They don't become pope or president or go down to the Antarctic."</p>
+<p>
+When I related those words to Miss Upton, the 20-year-old model bracing for the first Swimsuit Issue shoot on Antarctica, she said, "That quote needs to be at the top of your story."</p>
+<p>
+We were in a café off Calle Florida in Buenos Aires. As we entered, old men blowholed their cappuccinos. Bankers sneezed out their Malbecs. Busboys crashed into one another, trays clanging like cymbals. Kate, oblivious, had already left a vapor trail of stupefied men: Upon landing in Buenos Aires that morning, after our overnight flight from New York City, the captain of our widebody emerged from the cockpit and handed her his business card. "Big fan," said the silver fox.</p>
+<p>
+Eighteen hours later, in the lobby of the Buenos Aires Marriott at 2:30 a.m., nervous bellmen posed for snapshots with her. At the domestic airport in the Argentine capital for our predawn flight south to Tierra del Fuego, Kate tried gamely not to look like herself while passing newsstands festooned with her face gazing out from the cover of Cosmopolitan.</p>
+<p>
+In the year since she'd been on the cover of the 2012 SI Swimsuit Issue, there were few places in the world Miss Upton could go without being papped or snapped or otherwise photographed. She'd been on the covers of American GQ, Italian Vogue, Mexican Esquire and the front page of The New York Times, surrounded by other charismatic world figures. Two short video clips of her -- dancing to "Cat Daddy" by Rej3ctz, and doing the Dougie at a Clippers game -- were viewed more than 23 million times on YouTube, or 18 million more times than Barack Obama's first inaugural address.</p>
+<p>
+All of which is to say it was a small relief when our flight finally took off from Buenos Aires and left the wired world behind, landing four hours later in Ushuaia, Argentina, the southernmost city in the world, at the very tip of Tierra del Fuego, where all the millions of miles of roads on two continents abruptly run out at the terminus of Argentina's Highway 3, like a long book that ends in midsentence.</p>
+<p>
+Ushuaia bills itself as Fin del Mundo, an ominous phrase that didn't frighten our intrepid model. "I'm not afraid of anything," she said, before copping to a deadly fear of snakes.</p>
+</p>
+<p>
+On the vast mass of rock and ice that is Antarctica -- equal in square mileage to the U.S. and Mexico combined -- there are no snakes, nor polar bears, nor wolves, nor any other land mammals, with the singular exception of men, whose only companions until relatively recently have been manifold penguins, leopard seals, killer whales and exotic seabirds.</p>
+<p>
+Miss Upton's visit could not remediate an eternity of female absence from Antarctica, but it might have brought a measure of warmth to the coldest place on Earth. Our planet's alltime record low of -128.6º was set at Vostok Station in Antarctica in 1983, though we would be visiting in the Antarctic summertime, with high temperatures in the upper 20s. "I'm Floridian," said Kate, whose family moved to Melbourne from Michigan when she was seven. "I don't know anything about base layers. But I did bring a robber's mask." And so it was with a black balaclava and a bagful of bikinis that Kate Upton, on Nov. 29, 2012, boarded the French megayacht Le Boreal, walking up the gangplank to wolf whistles from the salty seafarers in wool watch caps hoisting shipping containers onto an adjacent cargo vessel.</p>
+<p>
+With a long blast of its mournful foghorn, Le Boreal eased away from the pier, and we set off at a stately 15 knots down the sheltered Beagle Channel, toward the fabled Cape Horn. From the deck we waved goodbye to Fin del Mundo and wondered what lay in store for us, a thousand miles beyond the End of the World.</p>
+<p>
+To get to Antarctica from Tierra del Fuego, you spend two days on Earth's most fearsome sea, the Drake Passage, which exists between extremes of placidity and violence: "Sometimes it's the Drake Lake," said our cruise director, Jannie Cloete, "but sometimes it's the Drake Shake." In anticipation of the latter I wore a scopolamine patch behind my right ear like a daub of perfume, even though our expedition leader -- a mystical American biologist named Larry Hobbs, 28-year veteran of Antarctica -- warned me against it, perhaps with good reason: I'd heard it was used as a truth drug to make soldiers talk a century ago.</p>
+<p>
+I didn't care. On some ships passengers are seat-belted into their berths for the two-night crossing of the Drake. But at least one member of our 12-person SI contingent, cinematographer Robb Riley, eschewed the scopolamine patch in favor of a more foolproof pharmaceutical remedy.</p>
+<p>
+"I'm taking a Viagra," Robb told me. "Just so I don't roll out of bed."</p>
+<p>
+Asleep in the Drake's spin cycle, I woke to find a pair of expedition boots outside my cabin, and a quote from A.A. Milne: "As soon as he saw the Big Boots, Pooh knew that an Adventure was going to happen."</p>
+<p>
+Antarctica has a long history of misadventure, as 37-year-old Chris Srigley well knew. When he was growing up in the Toronto area, his mother bought him books about the early Antarctic explorers, foremost among them Ernest Shackleton, whose 497-day odyssey there from 1914 to '16 remains one of the great stories of leadership and survival in human history.</p>
+<p>
+Inspired by these century-old explorers brought to life by his mother's books, Srigley now worked aboard Le Boreal, just as he had once worked aboard the Canadian liner MS Explorer, a warhorse of the Antarctic cruising industry. Srigley was on that ship in 2007 when it struck submerged ice, listed and began to sink beneath the frigid depths of the Southern Ocean.</p>
+<p>
+He and the 153 others on board abandoned ship, only to have the motors fail on three of the four lifeboats. Undaunted, Srigley commandeered a motorized rubber raft called a Zodiac and towed one of the lifeboats behind it. Two other crewmen did the same with the remaining disabled lifeboats. For 41.2 hours they bobbed in the ocean like bath toys in the hands of a malevolent toddler, until two ships came to their rescue. My laptop and wallet are still 1,300 meters down on the ocean floor, Srigley said. But everything went quite smoothly. It sounds worse than it was.</p>
+<p>
+We were staring into the Drake. Anyone who falls into that blackvinyl abyss will be dead in a few minutes, or will wish they were. Russ Manning, a British naturalist who looks exactly like former Van Halen frontman Sammy Hagar, recalled the research dives he used to make beneath the Antarctic ice. Even in a fleeced frog suit, he was only allotted eight minutes in the water, during which time his core temperature would drop two degrees.</p>
+<p>
+The Lonely Planet guidebook to Antarctica gives sage advice about such a hostile environment. Because death by drowning is thought preferable to death by freezing, the guidebook suggests anyone who falls overboard in Antarctic waters swim as fast as possible for the bottom.</p>
+<p>
+As it happened, our passage was relatively smooth. Le Boreal is a state-of-the-art vessel, a floating Four Seasons, equipped with gyroscopic stabilizers that made our transit uncomfortably comfortable. I had half hoped to travel -- as many do -- on a Russian icebreaker, if only so I could employ a Rushin icebreaker when introducing myself to Miss Upton. (Under the circumstances, "Do you come here often?" seemed not quite right.)</p>
+<p>
+But I'd long since made Kate's acquaintance and instead introduced myself to the next most glamorous passenger on board, our host, 70-year-old Geoffrey Kent.</p>
+<p>
+Le Boreal had been chartered by his exotic travel company, Abercrombie & Kent, which was celebrating its 50th year of bringing modern luxuries to the most hostile environments. Beneath a glazed mane of swept-back hair, Kent was regal as we sat down to lunch in the ship's formal dining room, opposite his wife, Otavia.</p>
+<p>
+At age 16, Kent -- born in Zambia, raised in Kenya -- rode his motorbike from Nairobi to Cape Town. His father promptly punished him by dispatching Kent to Sandhurst, Britain's equivalent of West Point. In the Royal Army, as a member of the 5th Royal Inniskilling Dragoon Guards, he was made aide-de-camp to Gen. John Frost, hero of the Battle of Arnhem, memorialized in the film A Bridge Too Far, in which Frost was played by Anthony Hopkins.</p>
+<p>
+In 1962, at Kufra in the Libyan desert, General Frost told Kent he wanted ice and every other modern amenity brought to their training base. When Kent wondered how he might conjure refrigeration in the desert, the general said, "Geoffrey, only a bloody fool should be uncomfortable anywhere." Kent instantly adopted that as his life's motto.</p>
+<p>
+"At the time," said Kent, eating a fresh garden salad as Antarctic waves crashed against the glass portals of Le Boreal's five-star restaurant, "we would bring the finest silverware and china everywhere, so that any place in the world could be made to resemble White's, or any other gentlemen's club of London."</p>
+<p>
+He started Abercrombie & Kent as a 20-year-old in Kenya, when he first began taking Americans on safari with a single Land Rover. "I tried to think of the most dangerous things you could do, do them myself, then make them less dangerous," he said. "I thought, The most dangerous thing an American does each day is run an amber light on the way to work."</p>
+<p>
+Kent found the perfect business partner in Abercrombie, a man who doesn't exist. "I made him up," Kent conceded. "That name put us at the top of the Yellow Pages and gave me someone to blame when things went wrong."</p>
+<p>
+Over the years, as one billionaire recommended Kent's services to another, his exotic travel business grew. When not playing polo with Prince Charles, he was taking Bill Gates whitewater rafting or guiding David Rockefeller up the Nile.
+</p>
+<p>
+Geoffrey Kent doesn't like to name-drop famous clients, but the famous surely love to name-drop Geoffrey Kent. While on safari with Richard Burton in the 1960s, the two watched lionesses kill a buffalo a few yards in front of their tent. After closing his own mouth manually, an astonished Burton turned to Kent and said, "If I bring Elizabeth next time, could you arrange the same thing for her?"</p>
+<p>
+In October 2014, Kent will host a 28-day around-the-world tour on a chartered jet, making stops in Easter Island, Madagascar, the Amazon, Samoa, Sri Lanka, Kenya and his new home, Monaco.</p>
+<p>
+The "megayacht" of our Antarctic voyage, despite its modern gym and spa and swimming pool, was a kind of oceangoing Orient Express, its nine-star opulence echoing the Golden Age of Travel, replete with chandeliers and Chateau Mouton Rothschild and its manifest of polyglot passengers from Australia, Belgium, Canada, China, India, Japan, Mexico, New Zealand, Poland, Portugal, Romania, the U.K. and the U.S. -- and that's not including Kent, of Monte Carlo by way of Kenya by way of Zambia.</p>
+<p>
+He makes the Dos Equis guy seem like the Least Interesting Man in the World. Seinfeld's J. Peterman is, by comparison, a shrinking violet. "There are still places to be discovered," he said. "Otavia and I just did the Silk Road to China. If you're not living on the edge, you're taking up too much space."</p>
+<p>
+Fearing that was my cue, I yielded my space at his table. He was pleased to host us, he said, and looked forward to the history-making swimsuit shots. Having begun his career in the Libyan desert bringing a cold thing to a hot place, Kent was happy to find himself, 50 years later, doing the reverse.</p>
+<p>
+The word "hot" in this context requires air quotes, marking it out as a retrograde, fashion-shoot adjective that this middle-aged father of four means ironically. The fact is, there's nothing you can say as a bystander to a swimsuit shoot that doesn't play as self-parody.</p>
+<p>
+Or so I discovered on Dec. 1, when we finally landed at King George Island in the South Shetlands, just north of the Antarctic continent. There, Kate climbed out of a quilted onesie, club music began to issue from an iPod speaker dock -- Antarctic dubstep -- and photographer Derek Kettela first photographed our moon-booted model on a carapace of ice.</p>
+<p>
+On another frozen slab of Antarctica, on another day, a penguin would waddle into frame, and swimsuit editor MJ Day would shout, "The light is perfect, and the penguin is giving good penguin!" Kate, posing in a white bikini, managed somehow to look at home, a seal sunning herself on a rock. By way of encouragement, our Sovietborn, Auckland-raised makeup artist affected the voice of the Men's Wearhouse guy: "You're gonna like the way you look," said Valery Gherman. "I guarantee it."</p>
+<p>
+A historic mood prevailed. I told Derek that this shoot could result in the first penguin featured on the cover of SI since Mario Lemieux. It was 30º when we started, but snow abruptly began to fall at a severe angle, and the windchill free-fell to -1. Kate was rewrapped in the onesie and hugged herself so that she appeared to be in one of Admiral Byrd's straitjackets, assuming any of them came in fuchsia.</p>
+<p>
+Later, in the lounge on Le Boreal, her hands strangling a steaming mug of something scalding, she smiled and said, "I was not dressed appropriately out there." She took a sip and said, "To say the least."</p>
+<p>
+We spent the twilit night cruising south through the Antarctic Sound, through a narrow channel called Iceberg Alley, whose magnificent bergs -- some clear as Lucite, others the blue of Bombay Sapphire bottles -- floated like cubes in some great frozen cocktail.</p>
+<p>
+The wonders of this area are often described as indescribable. Antarctica is named only for what it isn't, the anti-Arctic. For a century men have struggled even to express the inexpressibility of this otherworldly world. The deprivations of Antarctica cannot be articulated -- "This journey had beggared our language," wrote Cherry-Garrard; "no words could express its horror" -- but neither can its delights.</p>
+<p>
+Ernest Shackleton: "Tongue and pen fail in attempting to describe the magic." Shackleton's surgeon, Alexander Macklin: "I could not possibly convey an accurate impression of these splendours."</p>
+<p>
+Still, we should try. Antarctica is all stark contrasts, a frozen desert, the driest and wettest place on Earth, with 70% of the Earth's fresh water, frozen though it is. The sea is a rippling trash bag, gray-black, its surface broken by tuxedoed penguins and snow petrels, purewhite birds with onyx-black eyes in a world as black-and-white as the Sunday crossword.</p>
+<p>
+"If a heaven exists," said Le Boreal's charismatic French captain, Étienne Garcia, "it will look like Antarctica." And while Antarctica is heavenly, it's the heaven of the movies, where every surface is blinding white and Morgan Freeman plays God in a white tuxedo. The snow has gone soft in summertime, like the center of a roasted marshmallow, and blankets everything in its texture of soft-serve ice cream. At midnight the sky is still veined with pinks and blues, the eyeshadow pastels of a diner waitress.</p>
+<p>
+Sally Escanilla, our assistant cruise director, from New Zealand by way of England, a 15-year veteran of Antarctic travel: "It's as close as you'll come to visiting another planet."</p>
+<p>
+If so, it's a planet closer to the sun than Earth is, and not just because we were directly beneath the hole in the ozone. My sunglasses were 100% UV blocking goggles that -- so claimed the salesman at EMS -- "are illegal to drive in." We applied a pump-spray sunblock like stucco daily. Russ Manning, who spent 28 months as a winter base commander on Signy Island in the South Orkneys, said he once watched a man work shirtless out of doors in the Antarctic summertime: "He was burnt in 12 minutes."</p>
+<p>
+It was against this psychological backdrop -- and the physical backdrop of snow-capped peaks, every one of them looking like the Paramount or Prudential logos -- that we arrived on Antarctica proper on Dec. 2, 2012, at 7:54 in the morning.</p>
+<p>
+Or rather, that's what time we pretended it was. There are no time zones on Antarctica: The "correct local time" is whatever you decide it is, which can make it difficult to schedule a plumber.</p>
+<p>
+At a place called Brown Bluff, 200 yards from a colony of nesting penguins, Kate Upton became the first swimsuit model ever photographed on Antarctica. It was one small snap for man. I removed my illegal-to-drive-in sun goggles and blinked back tears, overcome with emotion or possibly snow blindness.</p>
+<p>
+A century ago Frederick Upton invented an early washing machine and cofounded with his brother the company that would become the Whirlpool Corporation. Today, his great-granddaughter Katherine Upton was realizing another epic first in the history of textiles.</p>
+<p>
+I asked Bob Burton, A&K's resident Antarctic historian, what Shackleton would have made of our James Bond yacht at anchor in the distance, and the model on the shore, and the Night-at-the-Roxbury sound track to Kate's photo shoot. "It would have boggled him," said Burton. "It used to be that only big, hairy men came to Antarctica."</p>
+<p>
+An hour later Kate was thawing out in the lounge of Le Boreal. What did her parents think of this trip, I wondered. "My mom was the one who was worried," she said. "Well, she's always worried. But this time she said, 'Do you have to go? It's so far away and you'll be so cold.' "</p>
+<p>
+In defense of Kate's mom, a swimsuit shoot on Antarctica is the ultimate realization of every mother's twin fears, namely: 1) "You're not going out in that?" and 2) "You'll catch your death from cold."</p>
+<p>
+She hadn't yet caught her death from cold. But still. "You know how when you drink a shake too fast and get brain freeze?" Kate said. "I have that all the time."</p>
+<p>
+And yet she remained, over the next several days, a consummate trouper, never complaining or losing her sense of humor, always appreciating the absurdity of the enterprise.</p>
+<p>
+On Half Moon Bay, our shoot was interrupted by a humpback whale, its fluke parting the water before returning to its primordial lair. We all stared slack-jawed for a moment at the rippling sea surface just vacated by the great beast, forgetting all about Kate, abandoned to the elements in her cream-colored bikini.</p>
+<p>
+"No hurry here," she said quietly. "I'm just lying on snow."</p>
+<p>
+As recently as 1957, when it was opened to the world's scientists, Antarctica was resigned to its fate as a Fortress of Solitude, as frozen and male as Superman's lair. That year, Rear Adm. George Dufek of the U.S. Navy said, "Women will not be allowed in the Antarctic until we can provide one woman for every man."</p>
+<p>
+Women have since had an indelible impact on Antarctica, as scientists and explorers and writers. Just last year, 34-year-old Felicity Aston of England became the first woman to cross Antarctica alone, skiing across the continent in 59 days. An Ohio-born doctor named Jerri Nielsen was the physician at the Amundsen-Scott South Pole Station in the Antarctic winter of 1999 when she diagnosed herself with breast cancer and began treating the disease with supplies airdropped by U.S. Navy planes. Sara Wheeler's Terra Incognita is an indispensable account of modern Antarctica, a classic like Cherry- Garrard's The Worst Journey in the World.</p>
+<p>
+But like the other six, Antarctica remains a lovelorn continent. Port Lockroy, a refuge for whalers and sailors since its discovery in 1904, remained redolent of lonely mariners as we pulled up to its shore in a Zodiac. Our driver, a naturalist from Long Island named Jennifer Clement, pointed out a small sailboat, only a few hundred yards away, but still iced in by surrounding floes.</p>
+<p>
+"A few years ago a guy sailed here and decided to spend the winter," she said as we drew closer to Bransfield House, the former British Base A, where nine or more male scientists wintered over almost continuously from 1944 to '62 and which remains open now as a museum. "So I brought him all the paperbacks we had on our ship. I think he had just broken up with his girlfriend."</p>
+<p>
+The interior walls of the two bedrooms in this tiny house were festooned with color renderings of Jane Russell, Ava Gardner and Diana Dors, each painted by Evan Watson, a British diesel mechanic who wintered here in 1960. The renderings remained as they were 50 years ago, preserved like ancient frescoes.</p>
+<p>
+The bookcase in the adjacent bar -- with its spent shells of empty gin bottles -- was littered with magazines like Woman's Illustrated. "The men would request magazines with women in them, and they'd receive 'women's magazines,' these publications full of knitting patterns and recipes," said Burton, who first worked on Antarctica in 1963.</p>
+<p>
+There were other objects of beauty in the bar: a working gramophone and a stack of 78s and sheet music for Beethoven's piano sonatas, as well as enough White Horse Whisky bottles to sustain an English gentleman in the waning Age of Empire.</p>
+<p>
+When this base closed in 1962, the Brits still had their Base F at nearby Marina Point. One summer 12 scientists there were charged with building a jetty. "But they decided, Screw it, who needs another one of those?" said Jannie Cloete. "And so they built a bar instead." In 1996 the Brits sold Base F to the Ukrainians for a single pound -- right down to the bar, named for Michael Faraday, the Englishman who discovered electromagnetic induction. That pound coin is embedded between the beer pumps at the bar, which the Ukrainians have maintained in all its glory.</p>
+<p>
+Watching a game of pool at the base -- it's now called Vernadsky Station -- I could scarcely believe my stupidity for not inviting Kate over from the ship. She might have materialized on Vernadsky's shore like some frozen mermaid, offspring of Daryl Hannah and Mrs. Paul.</p>
+<p>
+The 11 men of Vernadsky Station live here for a year, through the Antarctic winter, literally dreaming of their beds back home and the attendant comforts of domestic life. "Every Saturday night," a Ukrainian scientist named Bogdan said, "we dress in coat and tie, we shave and we eat a holiday meal, to remind us of home."</p>
+<p>
+Just outside the upstairs bar, up a ladder to a hole in the roof, sits the spectrometer, an instrument that measures the ozone hole. Every half hour, 24 hours a day, a reading is taken. In 2012 the ozone hole was the second smallest it has been in the last 20 years.</p>
+<p>
+This happy news improved my mood, as did the two shots of Stoli I'd just done at nine o'clock in the morning, the booze having been brought over from Le Boreal. I stole a last look at the model ship behind the Faraday bar -- the bras hanging from the mast like apparitions -- and admired the power of positive thinking at the station, with its just-in-case ladies' room and its water tower emblazoned vernadsky -- the V formed by a hand flashing the peace sign, the uprights of the D and K formed by palm trees.</p>
+<p>
+This was the southernmost point of our journey, at 65º 15' latitude, 14 hours by air and two full days by sea from New York. And still we were 2,000 miles from the South Pole. Next time someone says, "Small world," you might reply, "It isn't."</p>
+<p>
+On Dec. 6, at the Almirante Brown Base on Antarctica, beneath a steep snow-covered mountain, Kate posed for the last of several thousand swimsuit snaps. "That's a wrap!" shouted Derek, the photographer. "Can someone wrap me?" Kate called back. In celebration, we all hiked to the peak of the mountain, and the braver ones slid down on our bellies in the timeless manner of penguins and Pete Rose.</p>
+<p>
+That night, at the captain's farewell dinner aboard Le Boreal, the maître d' appeared at our table unbidden with something the French chefs slaving in their galley kitchen had been working on in their spare time. It was -- voilà! -- a giant watermelon carved into the likeness of Kate Upton. We had other, less perishable, souvenirs too. Earlier in the week Dr. Patricia Silva, a Uruguayan-born ornithologist, expert on seabirds and our resident penguin whisperer, had warned that the continent's trademark smell of penguin scat would not soon leave our nostrils. "When you go home," she said, "the thing you'll remember most is the penguin guano. Even in your hair, you're going to smell penguin. Please, take a shower."</p>
+<p>
+And yet, for all the fear we might have had of snapping like Jack Nicholson in The Shining after too many months in this remote and frozen place, we experienced something like the opposite. "Some have gone mad here," said Burton. "But most of us think being in Antarctica is the most wonderful time in our lives. Many of my contemporaries are starting to bring their wives down now to show them why they've been secondary in their affections for all these years."</p>
+<p>
+The bad news is that Antarctica is a harbinger of our future: The loss of ice in Western Antarctica and the growth of ice in Eastern Antarctica (from increased precipitation) are both consistent with patterns of global warming.</p>
+<p>
+The good news? Antarctica is a harbinger of our future -- or still can be. It is governed by the Antarctic Treaty of 1961, to which 46 countries (representing 80% of the planet's population) are signatories. The treaty is essentially a pledge to promote international scientific cooperation while keeping the continent peaceful -- and free from nuclear testing, territorial claims, radioactive waste and the like.</p>
+<p>
+"For 50 years now Antarctica has been a great experiment," said Larry Hobbs, on our final night. "Human beings set aside this continent as the one place on Earth where we'll all work together for peaceful purposes only."</p>
+<p>
+There are no armies, billboards, landfills, condos, wars, malls, murders or cellphones, largely because there are no permanent citizens, just groups of scientists working in shifts to make the planet better, while there's still time.</p>
+<p>
+Which is what Larry charged us with doing when we all disembarked in Ushuaia -- back where we started, at the End of the World.</p>
+<p>
+Except that now, of course, it was the beginning.</p>
+
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+<!--<div id="tab10" style="display:none">
+<h3><strong style="text-decoration:underline;">A&amp;K Rewards Early Birds to Antarctica</strong></h3>
+<p>Marking the launch of Abercrombie & Kent's 21st year of operation in the White Continent, A&K travellers who book their spot for the 2012-13 season before 31st March 2012 receive discounts of up to US$2,755 per person.</p>
+<p>With over 150 Antarctic expeditions to its name, A&K is the obvious choice for cruising. As well as chartering luxury vessel MV Le Boreal on four departures, A&K has complete control over the operation of each expedition. The team of elite and highly qualified naturalist guides are hand-picked by A&K for their knowledge, dedication and expertise, all qualities which bring this unique destination to life.</p>
+<p>In addition, MV Le Boreal is the only all-balcony suite vessel travelling to Antarctica and carries 199 passengers. Elegant and slim-line she also boasts the greenest credentials of ships travelling there. A journey to Antarctica with A&K is hands-on exploration at its finest, joining the naturalist guides on daily Zodiac excursions to active research stations, to encounter incredible wildlife viewing and to observe mesmerising icebound landscapes and rugged scenery.</p>
+<p>Two journeys operate solely to the Antarctic Peninsula where wildlife sightings are some of the best on the continent and two also visit the remote Falkland and South Georgia Islands following in the footsteps of pioneering explorers and also encountering extraordinary bird and animal life. The Christmas and New Year expedition appeals specifically to families seeking an unforgettable yuletide experience. A dedicated Young Explorers programme brings the destination to life for youngsters with hands-on activities, fun and educational workshops onboard and a personalised scrapbook.</p>
+<p><strong>Reserve a cabin to Antarctica by 31 March 2012 and save between US$1,099 and US$2,755 per adult (twin share).</strong></p>
+<p><strong>12 day Classic Antarctica</strong> from US$9,896 per person (Normal price from US$10,995). Charter flights not included.<br />
+<strong>18 day Antarctica, Falkland Islands & South Georgia</strong> from US$15,296 per person (Normal price from US$16,995). Charter flights not included.</p>
+<p><strong>Departure dates:</strong><br />
+Classic Antarctica: 28 November-9 December 2012;<br />
+8-19 December 2012.<br />
+Antarctica, Falkland Islands & South Georgia:<br />
+18 December 2012-4 January 2013; 3-19 January 2013.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>-->
+<div id="tab11" style="display:none">
+
+<p>Coming Soon</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
