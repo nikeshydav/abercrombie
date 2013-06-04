@@ -1,0 +1,1229 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Best Honeymoon Destination, Perfect Honeymoon Destination, Romantic Places"/>
+<meta name="description" content="" />
+<title>Best Honeymoon Destination & Holidays - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--pop up-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=16; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+		}
+	}
+}
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--pop up-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/honeymoon/honeymoon-banner4.jpg" alt="Best Honeymoon Destination" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
+<li><a href="honeymoon.html">Honeymoon</a></li>
+<li><a href="honeymoon-recommended-itineraries-introduction.html">Recommended Itineraries</a></li>
+<li>For Die-Hard Romantics</li>
+</ul>
+</div>
+<div class="LeftList">
+ <h5><a href="honeymoon.html">Honeymoon</a></h5>
+     
+		  <ul>
+              <li><a href="honeymoon.html" title="Introduction to Honeymoon"> Introduction to Honeymoon</a></li>
+              <li><a href="honeymoon-recommended-itineraries-introduction.html" title="Recommended Itineraries">Recommended Itineraries</a>
+              <ul>
+              <li><a href="honeymoon-recommended-itineraries.html" title="For Die-Hard Romantics"><span>-</span> For Die-Hard Romantics</a></li>
+              <li><a href="honeymoon-recommended-itineraries1.html" title="For Nature Lovers"><span>-</span> For Nature Lovers</a></li>
+              <li><a href="honeymoon-recommended-itineraries2.html" title="For Culture Enthusiasts"><span>-</span> For Culture Enthusiasts</a></li>
+               <li><a href="honeymoon-recommended-itineraries3.html" title="For Foodies"><span>-</span> For Foodies</a></li>
+            </ul>
+              </li>
+              <li><a href="honeymoon-hotelportfolio.html" title="Hotel Portfolio">Hotel Portfolio</a></li>
+               <li><a href="honeymoon-special-offers.html" title="Special Offers">Special Offers</a></li>
+            </ul>
+	
+        <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+    	  <option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+           <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+                 <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1> For Die-Hard Romantics</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="count-page"> <a href="honeymoon-recommended-itineraries.html"> <strong>1</strong></a> | <a href="honeymoon-recommended-itineraries_1.html">2</a> | <a href="honeymoon-recommended-itineraries_1.html"> Next > </a> </div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/honeymoon2.jpg" alt="PRAGUE FAIRYTALE CITY" /></div>
+<div class="rightbox">
+<h2>PRAGUE FAIRYTALE CITY </h2>
+<p><strong>Duration:</strong> 4 Days <br />
+<strong>Highlights: </strong> Explore Prague's charming Old Town, stroll along the Charles Bridge and discover the wonderful Baroque architecture of the Little Quarter</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/honeymoon1.jpg" alt="BOHEMIAN PARIS" /></div>
+<div class="rightbox"><h2>BOHEMIAN PARIS</h2>
+<p><strong>Duration:</strong>   4 Days<br />
+A special 4 day tour of the French capital, exploring all the main sights of one of the most romantic cities in the world.<br /><br />
+<strong>Highlights:</strong> Eiffel Tower, Arc de Triomphe, Champs Elysées, Notre Dame Cathedral, Versailles </p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/honeymoon4.jpg" alt="CROATIA BEACH" /></div>
+<div class="rightbox"><h2>CROATIA BEACH</h2>
+<p><strong>Duration:</strong>   4 Days<br />
+A luxurious and relaxing 4 day visit to the stunning Croatian coastal town of Split.<br />
+<strong>Highlights:</strong> Explore the Ancient city of Split and enjoy plenty of time at leisure to make the most of your wonderful hotel facilities. </p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/Land-of-the-Kasbahs.jpg" alt="Morocco: Land of the Kasbahs" /></div>
+<div class="rightbox"><h2>Morocco: Land of the Kasbahs</h2>
+<p><strong>Duration:</strong>  7 Nights<br />
+<strong>Highlights:</strong> The land of the Kasbah's, busy ports, nomadic Berbers, high mountains and expansive desert offers a romantic escape from the world as you know it.</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="count-page"> <a href="honeymoon-recommended-itineraries.html"> <strong>1</strong></a> | <a href="honeymoon-recommended-itineraries_1.html">2</a> | <a href="honeymoon-recommended-itineraries_1.html"> Next > </a> </div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--PRAGUE FAIRYTALE CITY-->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onClick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/Prague-Fairytale-City.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/europe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<div class="logoinner1"></div>
+<h1>PRAGUE FAIRYTALE CITY</h1>
+<div class="popupbanner"><img src="../images/prague-inner.jpg" alt="Prague" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 4 Days</p>
+<p>A fantastic 4 day visit to the romantic, fairy-tale city of Prague. Meander through the cobbled streets flanked with beautiful architecture and take in the magic of Prague's history and culture.</p>
+<p><strong>Highlights:</strong> Explore Prague's charming Old Town, stroll along the Charles Bridge and discover the wonderful Baroque architecture of the Little Quarter</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE IN PRAGUE</h5>
+<p>Upon arrival at Prague airport you will be met in the arrival hall by your driver and privately transferred to your hotel.
+The hotel Augustine exudes history and elegance and has been created from 7 different buildings including the 13th century Augustinian monastery after which the hotel has been named.</p>
+<p>Within short walking distance of the character and enchanting history of Prague's old town, you may enjoy a romantic evening stroll, or a quiet drink in the hotel's intimate St Thomas brewery bar, housed in the cellar.</p>
+<p>For your honeymoon enjoy a complimentary rose petal bath and breakfast in bed on your first morning. You will also receive 50% off couples massage treatments to ensure you can fully relax and feel pampered during your stay.*</p>
+<p>*honeymoon promotion valid throughout 2013</p>
+<p><strong>Overnight:</strong> Augustine Hotel </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>PRAGUE</h5>
+<p>Meet your English-speaking local guide and enjoy a half-day walking tour (4 hours) of the Old Town with its winding cobbled streets and fairy-tale charm and the fascinating Jewish Quarter, birthplace of Franz Kafka.
+See the striking Gothic Town Hall in Old Town Square, famous for its unique astronomical clock, and visit the Jewish Museum which houses the largest collection of Judaica in Europe, the Old-New Synagogue and the very moving Jewish Cemetery. You may also enjoy a walk across the romantically picturesque 14th century Charles Bridge.
+This afternoon is at your leisure for you to relax and enjoy the facilities of your hotel. Or, for those keen to explore this delightful city further, why not venture to Prague's Castle District. Hradcany Castle was the seat of Bohemian kings and Holy Roman emperors. See the Cathedral of St. Vitus, one of the finest and most richly endowed in central Europe, and the Basilica of St. George which was founded in 905. Stroll along the Golden Lane, a row of tiny and colourful houses dating from the 16th century.</p>
+ 
+<p><strong>Overnight:</strong> Augustine Hotel<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5> PRAGUE</h5>
+<p>Meet your local guide and enjoy a walking tour (3 hours) of the picturesque Lesser Town (Mala Strana). Also known as The Pearl of Baroque Architecture, the Lesser Town is one of Prague's oldest districts and full of captivating history and hidden gems which can't fail to enchant you. The most extensive and unforgettable building of this era is Albrecht von Wallenstein's Palace with five courtyards and a magnificent garden set as a French Park (please note that the palace is only open on Saturdays & Sundays and garden is opened daily from April till October).</p>
+<p>You may also like to see the Lesser Town square with the beautiful baroque St Nicholas Church and perhaps visit the Carmelitan church, The Church of Our Lady Victorious, with the famous statue of the Holy Infant Jesus of Prague. Or take a visit to the lovely Vrtba's Gardens, near the Church of Our Lady Victorious (open daily from April till October).</p>
+<p>If music is the food of love, what better way to spend the afternoon that with a private musical tour of Prague. The location of the Czech Museum of Music is within the former Baroque church of St. Mary Magdalene in the Little Quarter, the National Museum has taken the unique opportunity to update this space - once decorated with Baroque masterpieces and resounding with supposedly one of the biggest organs of 17th-century Prague. Also enjoy a visit to the Museum of Antonin Dvorak, located in a baroque Vila 'Amerika', since 1932 in an important early 18th century building of architect Kilián Ignác Dienzenhofer. End your Musical tour of Prague by a private walk-through the Estate Theatre, lasting about 60 minutes with explanation about the theatre renovation, history and work of W.A. Mozart in this theatre.</p>
+<p><strong>Overnight:</strong> Augustine Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>DEPART PRAGUE</h5>
+<p>Today you will be transferred to Prague airport by private vehicle to board your flight.</p>
+<p><strong>Overnight:</strong> Augustine Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Prague"/>
+<input type="hidden" name="region_email" id="region_email" value="Honeymoon"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Prague Fairytale City"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Prague-Fairytale-City.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Prague"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Honeymoon"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Prague Fairytale City"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Upon arrival at Kilimanjaro International airport you will be met and transferred by private vehicle to your lodge set on a coffee plantation in Arusha. The remainder of your day is at leisure.<br /><br />Arusha Coffee Lodge is located on a coffee plantation on the outskirts of Arusha. Designed around the original plantation houses but completely renovated to achieve the highest standards of comfort, the d&eacute;cor is luxuriant and stylish with undertones of the bygone days of early exploration. Each of the 18 plantation houses has been lavishly furnished and features a split level living area and a private deck. The lodge also boasts a coffee shop, patisserie, conference facilities and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arrive Kilimanjaro - Arusha", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today meet your private driver/guide in the lobby of your lodge for a short briefing before transferring to Swala Camp located within Tarangire National Park. This afternoon enjoy a game drive in Tarangire National Park. Tarangire is noted for its elephant population and spectacular baobabs of every shape creating a beautiful setting for your safari.<br /><br />Swala Camp is located under a majestic umbrella of acacia trees at the southwestern part of the park. The camp offers a peaceful setting for the traveller after a long day of game viewing. The camp is comprised of nine double tents and a mess tent with a common room. All tents face east overlooking the marshland and watering hole which are regularly visited by lions, buffalo and elephants.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Arusha - Tarangire", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>You will be awoken this morning with a steaming hot cup of tea or coffee served on the decking of your tent looking out over the waterhole. Enjoy an early breakfast before venturing out into Tarangire National Park by 4WD vehicle on exciting morning and afternoon game drives.&nbsp;<br /><br />The appeal of Tarangire National Park lies not only in the herds of migrating animals but also in the beauty of the landscape with its grand baobabs and acacia trees. During the dry season the animals migrate from as far north as Lake Natron, resulting in the resident population of wildebeest, zebra, eland, elephant, hartebeest, buffalo and fringe-eared oryx swelling and competing for Tarangire's permanent water pools.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Tarangire", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following an early breakfast, head out on a game drive before leaving Tarangire for Ngorongoro Crater highlands. Transfer to your lodge located adjacent to the Ngorongoro Conservation area. This afternoon is at leisure to participate in one of the many activities on offer at your lodge including coffee tasting, guided walks on the estate, bike riding or horse back riding.&nbsp;<br /><br />The Manor at Ngorongoro is reminiscent of an elegant, up country farm home in the Cape Dutch style of architecture. With its 20 luxurious guest cottage suites, this is a luxury safari experience fusing East African safari hospitality with old world Afro-European architecture and d&eacute;cor.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Tarangire - Ngorongoro Crater", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before transferring to the Ngorongoro Crater. Descend to the crater floor by 4WD safari vehicle for a game drive unlike any other you will experience in Africa with the forest-covered crater walls rising around you. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -4.0295777;
+					var minLng = 35.566932;
+					var maxLat = -3.172344;
+					var maxLng = 36.67445;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--PRAGUE FAIRYTALE CITY-->
+<!-- Bohemian-Paris Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Bohemian-Paris.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/europe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>BOHEMIAN PARIS</h1>
+<div class="popupbanner"><img src="../images/paris-inner.jpg" alt="BOHEMIAN PARIS" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 4 Days</p>
+<p>A special 4 day tour of the French capital, exploring all the main sights of one of the most romantic cities in the world.</p>
+<p><strong>Overnight</strong>: Eiffel Tower, Arc de Triomphe, Champs Elysées, Notre Dame Cathedral, Versailles </p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE PARIS</h5>
+<p>Upon arrival at Paris airport you will be met in the arrival hall by your driver and privately transferred to your hotel.
+You will find a complimentary bottle of champagne in your room upon your arrival to celebrate the beginning of your mini-moon.</p>
+<p>On the Rue de Rivoli overlooking the beautiful Tuileries Gardens, the Hotel Meurice boasts an excellent location in the heart of Paris as it is nestled between the Place de la Concorde and the Grand Louvre. Also nearby are the Opéra Garnier, the Jewellery stores on the rue de la Paix, and the Place Vendôme. Original antiques and paintings are featured throughout the hotel and every floor is decorated in a distinctive style.</p>
+<p><strong>Overnight:</strong> Hotel Le Meurice
+</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>PARIS</h5>
+<p>This morning you will enjoy a half day (4 hours) sightseeing tour in Paris with your private vehicle and English-speaking guide. This overview tour will include famous Parisian sights such as the Eiffel Tower, Arc de Triomphe, Champs Elysées and the Ile de la Cité, where you will visit the beautiful Notre Dame Cathedral.</p>
+<p>This afternoon is at your leisure - you may like to explore Montmartre. This district is forever associated with the idealistic Bohemian lifestyles of the late 19th and early 20th centuries. Parisians call it the 'Butte' (knoll) as it is the highest point in the city. Discover Montmartre's romantic charms along the winding back streets, small squares and terraces. Many artists paint quick-fire portraits in the 'Place du Tertre'. Walk up to the Sacré-Coeur Basilica for spectacular views over the city. Other famous landmarks of Montmartre include the 'Moulin Rouge', a 19-century windmill transformed into a world-famous cabaret and immortalized by the painter Toulouse-Lautrec, the 'Place des Abbesses', a picturesque square which is now a hub of the fashion world, or the Dalí Centre, a unique exhibition entirely devoted to the master of surrealism, and more particularly to his sculptures and engravings.</p>
+<p><strong>Overnight:</strong> Hotel Le Meurice <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>PARIS - VERSAILLES - PARIS</h5>
+<p>Enjoy a full-day (up to 8 hours) excursion tour to Versailles with your private vehicle and English-speaking guide. Situated to the west of Paris, Versailles is the location of the huge palace that was constructed in the 17th century for Louis XIV, the 'Sun King'. It became the model for grand houses of royalty all over Europe. Take a tour of the opulent State Apartments that culminate in the magnificent Gallery of Mirrors.</p>
+<p>Enjoy a stroll in the formal ornamental gardens that are embellished with many fountains, and see the Grand Canal that stretches into the distance across the park; a beautiful spot to indulge in an intimate picnic for two which has been especially prepared for you. Return to Paris following your visit.</p>
+<p><strong>Overnight:</strong> Hotel Le Meurice<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>DEPART PARIS</h5>
+<p>Today you will be transferred to the Paris airport by private vehicle to board your flight.
+</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Bohemian Paris"/>
+<input type="hidden" name="region_email" id="region_email" value="Honeymoon"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Bohemian Paris"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Bohemian-Paris.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Bohemian Paris"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Honeymoon"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Bohemian Paris"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize1() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas1"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!-- Bohemian-Paris End Here -->
+<!-- CROATIA BEACH Start Here -->
+<div id="popup3" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli12"><a href="javascript:void(0)" onclick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Croatia-Beach.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/italy-crotia-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab9">
+
+<h1>CROATIA BEACH</h1>
+<div class="popupbanner"><img src="../images/croatia-inner.jpg" alt="Croatia" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 4 Days</p>
+<p>A luxurious and relaxing 4 day visit to the stunning Croatian coastal town of Split. </p>
+<p><strong>Highlights:</strong> Explore the Ancient city of Split and enjoy plenty of time at leisure to make the most of your wonderful hotel facilities.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE IN SPLIT</h5>
+<p>Meet your Chauffeur at Split airport and transfer to your hotel which overlooks the bay of Split, the Adriatic sea and the iconic island of Brac.</p>
+<p> Le Meridien Lav, Split is located at Podstrana, five miles south of Split. The beautiful setting features 800 metres of beach frontage, gardens landscaped by award-winning designer Jim Nicolay of Hawaii, and fantastic sea views overlooking Split and the surrounding islands.</p>
+<p><strong>Overnight:</strong> Le Meridien Lav
+</p></li>
+<li>
+<h4>Day 2</h4>
+<h5>SPILT</h5>
+<p>Today is at your leisure to enjoy the facilities of your beachfront hotel. The hotel facilities include an outdoor and an indoor pool, tennis courts and a Water Sports Centre which offers scuba diving, waterskiing, sailing, and more.
+The exclusive spa and wellness centre is a magnificent space offering treatment rooms, relaxation areas and a fitness centre, the perfect place to unwind and feel pampered.</p>
+<p><strong>Overnight:</strong> Le Meridien Lav<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>SPLIT</h5>
+<p>Today you may wish to explore the ancient city of Split, including the palace which was the 'retirement home' of the roman emperor Hadrian. Alternatively why not enjoy a romantic dinner of fresh oysters overlooking the marina.</p>
+<p><strong>Overnight:</strong> Le Meridien Lav <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>SPLIT</h5>
+<p>Your chauffeur will bring you back in style to Split Airport today.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Urubamba/Machu Picchu</h5>
+<p>Board the deluxe Hiram Bingham train, the most luxurious way to travel the breathtaking landscape to Machu Picchu. Step on board, and you are immersed in an elegant world of polished wood, gleaming cutlery and glittering glass that evokes a romantic ambience. After a light lunch on board, arrive at the breathtaking Incan citadel and begin exploring the ruins in the company of your expert guide. Feel the pulse of this magical place as you visualize the lives of the priests, craftsmen, and servants who inhabited this seemingly uninhabitable citadel and then left, leaving no written records about its destruction. After a busy day of sightseeing, return to your beautiful mountainside retreat, high in the lush Andean clouds forest. It features the look and feel of a rural Andean village set in spectacular grounds with paths that wind past waterfalls and gardens, and trails that wander through wild forest. Snuggle under a thick alpaca blanket in your suite, which offers incredible views of the exotic gardens or the dramatic Vilcanota River.
+
+</p>
+<p><strong>Overnight:</strong> Inkaterra Machu Picchu Pueblo Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Machu Picchu/Cusco</h5>
+<p>Return to Machu Picchu with your guide this morning for a final look at the ruins - and for an even more meaningful event for you. A shaman joins you to perform a vow renewal ceremony for you. Stand before the spirits of the Incas and reaffirm your love in this magical place. Afterward, return to the hotel, renewed and refreshed, for lunch. This afternoon, return to Cusco by Vista dome train and settle in at your hotel, where you receive VIP amenities.</p>
+<p><strong>Overnight:</strong> Hotel Monasterio   <br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Cusco</h5>
+<p>A morning city tour takes you to the Cathedral on the Plaza de Armas and the Santo Domingo Temple, a Dominican church and convent built on the foundations of the Koricancha (place of gold), where the Incas worshipped the sun. Continue just outside Cusco to the ruins of Sacsayhuaman, a testimonial to the Incan architectural skills. Try to slip a piece of paper between the cracks of the massive stone blocks, cut and fitted together with incredible precision without a single drop of mortar to hold them in place. Your afternoon is at leisure. Make sure to visit the hotel spa for a relaxing couple's massage. This evening, enjoy a romantic dinner at Limo restaurant, overlooking the main plaza.</p>
+<p><strong>Overnight:</strong> Hotel Monasterio    <br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Cusco/Lima</h5>
+<p>Fly to Lima and transfer to your hotel. The remainder of the day is at leisure to do some last-minute shopping, take a walk along the ocean or enjoy the views from your suite.</p>
+<p><strong>Overnight:</strong> Miraflores Park Hotel <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5> Lima/India</h5>
+<p>Transfer to the airport &Board your international departure flight.</p>
+<p><strong>Overnight:</strong> Breakfast, Lunch & Dinner<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+</ul>
+</div>
+
+<div id="tab10" style="display:none;">
+<?php $id =3;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Italy &amp; Croatia"/>
+<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Croatia Beach"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Croatia-Beach.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab11" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Italy &amp; Croatia"/>
+<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Croatia Beach"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab12" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize2() {
+if (GBrowserIsCompatible()) {
+	map = new GMap2(document.getElementById("map_canvas2"));
+	map.setUIToDefault();
+	
+	
+		description = '<div style="width:300px;">Day 1 - ';
+		description = description + "<p>As you will be entering Zambia, a single entry visa will be required and is obtainable at the point of entry at a cost of USD 50.00 per person, payable in cash. The visa fee is subject to change at the discretion of the Zambian Government.<br /><br />Depart by scheduled light aircraft transfer from Lusaka Airport to Mfuwe Airport. The flying time is approximately 1 hour and 10 minutes.<br /><br />Upon arrival, transfer to Chichele Presidential Lodge. This historic property, once the bush retreat of President Kenneth Kaunda, has a magnificent hilltop location in Zambia's premier game viewing area, the South Luangwa National Park. Its long terrace, with commanding views across the valleys of the South Luangwa, is the perfect place to enjoy breakfast or afternoon tea. Chichele has ten air-conditioned suites, each with French doors onto individual balconies overlooking the valley. The lodge is accessible all year around and the ideal base for exploring the prolific wildlife that populates the mosaic of different habitats surrounding the Luangwa River.<br /><br />The afternoon is at leisure to enjoy one of the game viewing activities on offer.<br /></p>";
+		description = description + '</div>';
+		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "Arrive Zambia", description, "1");
+		map.addOverlay(mark);
+	
+		description = '<div style="width:300px;">Day 2 - ';
+		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.<br /></p>";
+		description = description + '</div>';
+		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "2");
+		map.addOverlay(mark);
+	
+		description = '<div style="width:300px;">Day 3 - ';
+		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.</p>";
+		description = description + '</div>';
+		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "3");
+		map.addOverlay(mark);
+	
+		description = '<div style="width:300px;">Day 4 - ';
+		description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to the Mfuwe airstrip. The transfer time will be confirmed to you locally by the camp management.<br /><br />Depart by scheduled light aircraft transfer from Mfuwe Airport to Livingstone Airport via Lusaka Airport. The flying time is approximately 2 hours and 45 minutes.<br /><br />On arrival at Livingstone Airport please clear customs and immigration and collect your luggage. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to Sussi &amp; Chuma. The transfer time is approximately 30 minutes.<br /><br />Sussi &amp; Chuma is named after David Livingstone's faithful companions and consists of an intimate lodge and two exclusive houses, both of which are situated to make the most of the amazing views that the sweeping Zambezi River provides.<br /><br />The central lodge building features a raised bar/lounge deck, open air dining area, swimming pool and a spa which provide incredible views of the mighty Zambezi.<br />&nbsp;<br />The afternoon is at leisure to enjoy an activity on offer.<br /></p>";
+		description = description + '</div>';
+		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "South Luangwa - Livingstone", description, "4");
+		map.addOverlay(mark);
+	
+		description = '<div style="width:300px;">Day 5 - ';
+		description = description + "<p>The day is at leisure to enjoy the activities on offer.</p><p>Activities offered at the lodge include game drives in the Mosi-oa-Tunya National Park, where guests can see a variety of game, including white rhino, elephant, buffalo and giraffe. Tours of the incredible Victoria Falls, a World Heritage Site, are another must as they give guests an opportunity to experience one of the seven great natural wonders of the world.</p>";
+		description = description + '</div>';
+		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Livingstone", description, "5");
+		map.addOverlay(mark);
+	
+	
+	var minLat = -17.857719;
+	var minLng = 25.85845;
+	var maxLat = -12.693842;
+	var maxLng = 31.8107079;
+						
+	botLeft = new GLatLng(minLat, minLng);
+	topRight = new GLatLng(maxLat, maxLng);
+	
+	bounds = new GLatLngBounds(botLeft, topRight);
+	origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+	zoom = map.getBoundsZoomLevel(bounds);
+	map.setCenter(origin, zoom);
+	zoom = map.getZoom();
+}
+}
+
+function createMarker(point, title, html, day) {
+var markerOpts = {};
+var mIcon = new GIcon();
+//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+
+//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+mIcon.iconSize = new GSize(20, 34);
+mIcon.iconAnchor = new GPoint(10, 34);
+mIcon.infoWindowAnchor = new GPoint(10, 1);
+
+markerOpts = {
+	"icon": mIcon,
+	"clickable": true,
+	"title": title
+	};
+var newPoint = point;
+var marker = new GMarker(newPoint, markerOpts);
+
+GEvent.addListener(marker, "click", function() {
+	marker.openInfoWindowHtml(html);
+});
+
+markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+
+return marker;
+}
+
+//$(document).ready(function(){
+//gmapInitialize();
+//});
+
+$(window).unload(function(){
+GUnload();
+});
+
+</script>
+
+
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!-- CROATIA BEACH End Here -->
+<!-- Morocco: Land of the Kasbahs Start Here -->
+<div id="popup4" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli13"><a href="javascript:void(0)" onClick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli14"><a href="javascript:void(0)" onClick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli15"><a href="javascript:void(0)" onClick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli16"><a href="javascript:void(0)" onClick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Morocco-Land-of-the-Kasbahs.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/morroco-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab13">
+<div class="logoinner1"></div>
+<h1>Morocco: Land of the Kasbahs (2012)</h1>
+<div class="popupbanner"><img src="../images/morroco-inner.jpg" alt="Morocco" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 7 Nights</p>
+<p> The land of the Kasbah's, busy ports, nomadic Berbers, high mountains and expansive desert offers a romantic escape from the world as you know it. Visit ancient mosques and walk hand in hand through lively city squares, follow mountain slopes and feel the breeze coming from picturesque lakes. Then share your nights in amazing kasbahs, palace hotels and intimate desert tents that all reflect the ambience of a bygone era.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>India/Casablanca, Morocco</h5>
+<p>You are met on arrival and given VIP assistance in clearing customs formalities and collecting your luggage; then travel by private vehicle to your unique vintage townhouse hotel, located in the heart of the city. Originally settled by Berbers in the seventh century, Casablanca today is a bustling, French-influenced center. This afternoon, join your guide for a tour of this port city, stopping at the formidable Hassan II Grand Mosque. Its minaret is the tallest religious structure in the world, and part of the mosque's floor is glass, enabling worshippers to kneel directly over the sea. Enjoy dinner at Rick's Café, housed in a 1930's mansion and based on the café everybody came to in the famous film Casablanca.</p>
+<p><strong>Overnight:</strong> Le Doge <br />
+<strong>Meal Plan:</strong> B,D
+</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Casablanca/Er-Rachida/Merzouga</h5>
+<p>Meet your private A&K guide, an affable local resident and an expert on Morocco's culture and traditions, who accompanies you throughout your journey in Morocco. Board a charter flight to Er-Rachidia, and on arrival have lunch in Erfoud. Hop into a four-wheel-drive vehicle for a drive across the stunning Erg Chebbi Dunes to your exclusive A&K Desert Tented Camp in a remote area of the Sahara Desert. You are welcomed with mint tea and pastries and led to your private Moroccan caidal-styled tent that combines elements of Berber and Bedouin styles. Decorated with colorful carpets, it comfortably sleeps two, and has its own private bathroom with a shower and toilet next door. Set off on camelback in the evening and begin exploring the sand dunes. Return to your nomadic accommodations before sitting down to a Bedouin dinner served around the campfire.</p>
+<p><strong>Overnight:</strong> Desert Tented Camp <br />
+<strong>Meal Plan:</strong> B,L,D
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5> Merzouga/Erfoud/Skoura</h5>
+<p>The drive today takes you across the southern slopes of the High Atlas range and through the Dades Valley. Along the way, stop at some of the many date palmeries and a small, private museum that houses exhibits showcasing local art, culture and history. Travel the "Road of a Thousand Kasbahs" and view the amazing 17th-century Amerhidl Kasbah; its façade appears on the Moroccan 50-dirham note. After lunch, continue to your home for the next two nights - a luxurious 19th-century Kasbah that was part of a sultan's private hunting ground in the Skoura Oasis. Dar Ahlam means "house of dreams," and the name suits it well. Enter what seems like a dreamscape, where colorful veils, lanterns and candles - and only 12 rooms - ensure complete privacy, setting the mood for romance. Sit by the fireplace, surrounded by a kaleidoscope of colors; have lunch in the garden or olive grove; or dine in a secluded corner of the Kasbah or even on a hidden terrace.</p>
+<p><strong>Overnight:</strong> Dar Ahlam<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Skoura</h5>
+<p>Not far from the desert oasis of Skoura is Ouarzazate Lake, where you take a walk and then sit down to a delightful picnic lunch on its shores. If you look across the lake you can see the mountains and desert; on a windy day, the waters toss and swell like the ocean. Afterward, return to your Kasbah for a refreshing swim and maybe a massage. This evening, savor a romantic dinner in an equally romantic setting: in the gardens under the almond trees, in the palm grove or on the riverbank.</p>
+<p><strong>Overnight:</strong> Dar Ahlam<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5> Skoura/Ouarzazate/Ait Benhaddou/Marrakech</h5>
+<p>Spend some time wandering around Ouarzazate, a city originally built as a French garrison in the 1920s and now known for its pottery and carpets. Afterward, visit the Glaoui Kasbah of Taourit. One of Morocco's most beautiful Kasbahs, it consists of a network of luxury apartments, simple clay houses and crenellated towers decorated with geometric motifs. Continue to the fortified village of Ait Benhaddou, where some of the world's most elaborate and decorative kasbahs are found. See how they seem to defy the laws of gravity as they perch upon the sleep slope. Ait Benhaddou's charms have also reached all the way to Hollywood. Many popular movies, including Lawrence of Arabia, Jesus of Nazareth, Gladiator and The Mummy have been filmed here. After lunch in a local restaurant, continue to exotic Marrakech, the "Pearl of the South," and your Moorish-style palace hotel.</p>
+<p><strong>Overnight:</strong> Ksar Char Bagh <br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Marrakech</h5>
+<p>Morocco's most famous city, Marrakech is veiled in mystery and magic. Visit the medina, the old walled section of the city, where most of the architectural attractions are located. Begin with a stop at Koutoubia Mosque and its 12th-century minaret, which dominates the local skyline. Make your way to vibrant Djemaa el-Fna, Marrakech's main square. Watch as fire-eaters, mime artists, snake charmers and street musicians perform at every turn. Continue walking and look for the Saadian Tombs, decorated in Granada-style carving and hidden away behind high walls. Discover how the privileged lived in the 19th century when you wander Bahia Palace to see the beautiful mosaics, fountains and courtyards. At the Museum of Moroccan Arts and Crafts, housed in the beautiful Dar Si Said palace, view stunning traditional woven carpets and Berber silver jewelry. Afterward, return to your hotel to experience a very important part of Moroccan culture and life: a hammam (steam bath). More than a steam bath, the hammam is a ritual. Soak in hot, soft water, lather up with a special penetrating black soap and exfoliate for revived skin. Follow up with a cold shower and an incredibly relaxing massage in a warm, darkened room - total bliss.</p>
+<p><strong>Overnight:</strong> Ksar Char Bagh <br />
+<strong>Meal Plan:</strong> Meals: B,L</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Marrakech/Atlas Mountains/Marrakech</h5>
+<p>High up in the Atlas Mountains, Morocco's tallest and most majestic range, see traditional villages clinging to the almost vertical sides of the valley. Spend your day exploring the Atlas Mountains and its flora and fauna with your private guide, and gain insight into the daily lives of the villagers. While you have lunch at Sir Richard Branson's Kasbah Tamadot, admire the fabulous views of the mountains. Later this afternoon, return to your hotel for a relaxing massage. Conclude your romantic holiday with dinner for two served in a private room or under the stars in the hotel's garden</p>
+<p><strong>Overnight:</strong> Ksar Char Bagh<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5> Marrakech/India</h5>
+<p>Privately transfer to the airport to board your departure flight.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab14" style="display:none;">
+<?php $id =4;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Morocco"/>
+<input type="hidden" name="region_email" id="region_email" value="Egypt"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Morocco: Land of the Kasbahs"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Morocco-Land-of-the-Kasbahs.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab15" style="display:none;">
+<h1>Request a quote</h1>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Morocco"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Egypt"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Morocco: Land of the Kasbahs"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab16" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize3() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas3"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>This morning awake to a steaming hot cup of tea or coffee served on the decking of your tent before enjoying breakfast at the main tent. Enjoy a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 sq km, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, where 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other plains game that follow close behind, make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Serengeti", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Today enjoy another full day discovering the spirit of the Serengeti by 4WD vehicle with exciting morning and afternoon game drives.&nbsp;<br /><br />The Serengeti National Park lies between the Ngorongoro Highlands, Lake Victoria and Tanzania's northern border with Kenya. The name comes from the Maasai meaning "endless plains". The Serengeti contains about three million large animals, most taking part in seasonal migrations, unparalleled in nature. Be sure to have your camera constantly at hand as life in the Serengeti is always action packed.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Serengeti", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Dar es Salaam International airport where you will be met and assisted with your onward flight. Fly from Dar es Salaam to the remote Selous Game Reserve. Upon arrival you are met by a camp representative and transferred to your camp to settle in. This afternoon explore the Selous either by foot on a walking safari, by boat on the Rufiji and Lake Tagala, or in open 4WD vehicles. All excursions are escorted by an experienced armed guide.<br /><br />Selous Sand Rivers is situated on the banks of the Rufiji River, offering a unique combination of adventure, comfort and exclusivity. This small luxury lodge, crafted out of local materials, comprises six individually designed cottages with en-suite bathrooms. Spaced along the river bank, each has its own private view of the wide sand-banked river with its hippos, crocodiles and birdlife. Near the dining area a large baobab tree shades the swimming pool in which guests can escape the heat of the sun or cool off after a game walk.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Arrive Selous Game Reserve", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today enjoy morning and afternoon game activities in the bush where your game sightings will rarely be interrupted by other vehicles. Enjoy the solitude whilst observing elephants, lions, buffalo, hippos and crocodiles. Game drives are conducted by 4WD vehicles or from your river boat, the more adventurous of you may like to stretch your legs with a walking safari.<br /><br />The Selous Game Reserve is the largest game reserve in the world and has some of the finest virgin bush left in Africa, where the last of the really big-tusked elephants and large-maned lions roam. The Selous supports around one million game animals, is bigger than Switzerland and is a World Heritage site. From March to May floods sweep the valley, forcing the game on to the 'islands' of higher ground, where elephant, buffalo, lion, leopard, crocodile, puku, buck, eland, sable and others concentrate.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Selous", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Enjoy another day at leisure to be as active as you like. You may like to explore the Selous overland by 4WD vehicle or on a bush walk, or take to the river on a boat trip. Alternatively you may like to relax at your camp with a book on your private verandah or cool off in the camp's pool.<br /><br />The Selous is Africa's largest wildlife sanctuary and one of its least known treasures. Covering 21,000 square miles of completely undeveloped land, the Selous is one of the last great tracts of true wilderness left in Africa.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Selous", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Wake up early this morning as you prepare for a long day of travel to Ngorongoro. Transfer to the airstrip for your flight from the Selous to Arusha. Upon arrival at Arusha airport you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Ngorongoro Crater Lodge located on the rim with spectacular views across the crater. The Ngorongoro Crater is the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Crater Lodge is situated on the edge of the ancient crater rim above the cool, swirling mists. The lodge is a return to the noble elegance of the travelling colonials. Inspired in design by the Maasai Manyatta, three separate camps of 6 to 12 suites each remember a bygone era when characters such as Lord Delamere adorned the stilted, handcrafted structures with graceful antiques, grand chandeliers and treasures collected from travels through Africa.<br /><br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Selous - Arusha - Lake Manyara", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 sq miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can often be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals. Gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue to your camp located in the southern reaches of Serengeti National Park.<br /><br />Kusini Camp is built in and around a large kopje. The camp offers spectacular views across Tortillis woodland situated on the edge of the short grass plains. The camp is comprised of nine double tents scattered around the kopje with the mess tent and common area as the central feature. Privacy between tents is guaranteed as they are at a substantial distance from each other and are generally concealed by a tree or kopje.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Ngorongoro Crater - Serengeti", description, "6");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -7.2833;
+					var minLng = 34.685650;
+					var maxLat = -2.416213;
+					var maxLng = 36.0667;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas3" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!-- Morocco: Land of the Kasbahs End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

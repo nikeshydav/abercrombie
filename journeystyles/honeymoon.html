@@ -1,0 +1,237 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Luxury Honeymoon, Luxury Honeymoon Destination, Luxury Honeymoon Planners, Romantic Journey"/>
+<meta name="description" content="" />
+<title>Romantic Journeys | Honeymoon Destination Planner - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--gallery-->
+<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
+<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(function() {
+        
+    $('#slideshow').before('<div id="nav" class="nav">').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        before: onBefore
+    });
+    
+        function onBefore() {
+        $('#title').html(this.alt);
+    }
+});
+
+</script>
+<!--gallery-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/honeymoon/honeymon-banner.jpg" alt="Luxury Honeymoon" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
+
+<li>Honeymoon</li>
+</ul>
+</div>
+<div class="LeftList">
+        <h5><a href="celebration.html"> Honeymoon</a></h5>
+     
+		  <ul>
+              <li><a href="honeymoon.html" title="Introduction to Honeymoon"><span>-</span> Introduction to Honeymoon</a></li>
+              <li><a href="honeymoon-recommended-itineraries-introduction.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>
+              <li><a href="honeymoon-africa-hotelportfolio1.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+               <li><a href="honeymoon-special-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+            </ul>
+	
+         
+ 
+        <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+    	  <option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option> <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+                 <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>The Road to Romance: Journeys for Couples</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div style="float:left; width:100%; margin:0 0 20px 0;">
+<div id="demo2" >
+ <div id="slideshow" class="pics" style="position: relative; ">
+ <img src="../num-images/honeymoon1.jpg" alt="Romantic Honeymoon"/>
+<img src="../num-images/honeymoon2.jpg" alt="Romantic Honeymoon"/>
+<img src="../num-images/honeymoon3.jpg" alt="Luxury Honeymoon"/>
+<img src="../num-images/honeymoon4.jpg" alt="Luxury Beach Honeymoon"/>
+<img src="../num-images/honeymoon5.jpg" alt="Luxury Honeymoon"/>
+<img src="../num-images/honeymoon6.jpg" alt="Luxury Beach Honeymoon"/>
+<img src="../num-images/honeymoon7.jpg" alt="Luxury Honeymoon"/>
+<img src="../num-images/honeymoon8.jpg" alt="Luxury Beach Honeymoon"/>
+<img src="../num-images/honeymoon9.jpg" alt="Luxury Beach Honeymoon"/>
+<img src="../num-images/honeymoon10.jpg" alt="Romantic Honeymoon"/>
+
+</div>
+</div>
+</div>
+<p style="color:#00447c;font-size:14px;">"We lie in each other's arms eyes shut and fingers open and all the colors of the world pass through our bodies like strings of fire." - <em>Marge Piercy</em></p>
+<p>
+A honeymoon marks the inception of togetherness, a beautiful journey that spells commitment and vows. Abercrombie & Kent understands the significance of this amorous chapter of your life. We know that honeymoon is the quintessential start to a couple's life and it must be away from the mundane in all ways possible. From taking you on an intriguing safari to a romantic excursion, we plan it all just for you and your beloved.</p>
+<p>  
+Love, Romance, Passion and those 'butterflies-in-stomach' Moments along with our <a href="http://www.abercrombiekent.co.in/about/traveler-testimonials.html">bespoke travel experience</a> realize that dreamy yet ideal escapade just for the two of you. At Abercrombie & Kent, our travel experts have the resources, expertise and dedication to design an idyllic romantic journey <a href="http://www.abercrombiekent.co.in/)">tailor made</a> to embark you on the quest of that special spark that you share with your better half. We take care of your tastes, preferences and yearnings to sweep you off your feet. Whether you crave to refurbish those sweet memories of your honeymoon and visit the same romantic destinations once again or look forward to find a completely new adventurous kick off after years of holy matrimony, our custom made itinerary ensures to brace the bond of your love by adding that perfect zing to your travel experience. </p>
+<p style="color:#00447c;font-size:14px;">Real-life romantic holiday, tailor-made just for you</p>
+<p>The A&K Travel experts make sure that you and your better half are greeted and treated with one-of-a-kind experience throughout your romantic escapade. Travel itineraries created by experts at A&K give you an opportunity to take home unstinted memories and anecdotes that you and your sweetheart would dote on for the rest of your life. </p>
+<p>Abercrombie & Kent does not plan your honeymoon to a beautiful location; it creates an experience that lasts for a lifetime. As they say honeymoon is not when you live, but it is when you make eternal memories. Come, add a twist to your story of love with us.
+</p>
+
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

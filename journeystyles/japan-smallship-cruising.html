@@ -1,0 +1,565 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Small Ship Cruising, River Cruising, Adventure Cruising, Luxury River Cruising, Luxury Cruises"/>
+<meta name="description" content="Abercrombie & Kent India offers luxurious range of small ship adventurous river cruises of highest standard of accommodation, guiding, dining, exceptional service and fabulous on-board camaraderie." />
+<title>Small Ship River Cruising | Adventure Cruising - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=9; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById("img"+i).style.display="";
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById("img"+i).style.display="none";
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<!--popup-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=16; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+			}
+	}
+}
+</script>
+<!--popup-->
+<!--gallery-->
+<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
+<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(function() {
+        
+    $('#slideshow').before('<div id="nav" class="nav">').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        before: onBefore
+    });
+    
+        function onBefore() {
+        $('#title').html(this.alt);
+    }
+});
+
+</script>
+<!--gallery-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/clipper-tour-guides.jpg" alt="clipper-tour-guides" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="#">A&amp;K Journey Styles</a></li>
+<li><a href="small-ship-cruising.html">Small Ship Cruising</a></li>
+<li>Japan</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>CHOOSE YOUR STYLE</h4>
+<ul>
+<li><a href="ak-journey-style.html" class="Active" title="Overview">Overview</a></li>
+<li><a href="private-journeys.html" title="Private Luxury Journeys">Private Luxury Journeys</a></li><li><a href="connections.html" title="Connections">Connections</a>
+</li>
+<li><a href="extreme-adventures.html" title="Extreme Adventures">Extreme Adventures</a></li>
+<li><a href="small-ship-cruising.html" title="Small Ship Cruising">Small Ship Cruising</a></li>
+<li><a href="private-jet.html" title="Private Jet Journeys">Private Jet Journeys</a></li>
+<li><a href="Luxury-rail-journey.html" title="Luxury Rail Journeys">Luxury Rail Journeys</a></li>
+<li><a href="family-holidays.html" title="Family Holidays">Family Holidays</a></li>
+<li><a href="rest-revive.html" title="Rest &amp; Revive">Rest &amp; Revive</a></li>
+<li><a href="celebration.html" title="Celebrations">Celebrations</a></li>
+<li><a href="honeymoon.html" title="Honeymoon"> Honeymoon</a></li>
+<li><a href="special-interst-groups.html" title="Special Interest Groups">Special Interest Groups</a></li>
+<li><a href="private-mob-copm.html" title="Private Mobile Camping">Private Mobile Camping</a></li>
+<li><a href="ak-villas.html" title="A&amp;K Villas">A&amp;K Villas</a></li>
+<li><a href="sanctuary-retreats.html" title="Sanctuary Retreats">Sanctuary Retreats</a></li>
+</ul>
+
+<h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Small Ship Cruising</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div align="left">
+<div class="boldtext">Select the Location from the list below for small Ship Cruising</div>
+
+<select name="select" class="choose" onchange="ChangeValue(this)">
+<option selected="selected" value="0" >--Please Select--</option>
+<option value="../journeystyles/argentina-smallship-cruising.html">Argentina </option>
+<option value="../journeystyles/australia-smallship-cruising.html">Australia </option>
+<option value="../journeystyles/china-smallship-cruising.html">China</option>
+<option value="../journeystyles/chile-smallship-cruising.html">Chile</option>
+<option value="../journeystyles/ecuador-smallship-cruising.html">Ecuador </option>
+<option value="../journeystyles/egypt-smallship-cruising.html">Egypt </option>
+<option value="../journeystyles/japan-smallship-cruising.html">Japan </option>
+<option value="../journeystyles/myanmar-smallship-cruising.html">Myanmar </option>
+<option value="../journeystyles/peru-smallship-cruising.html">Peru </option>
+<option value="../journeystyles/rest-of-europe-smallship-cruising.html">Rest of Europe </option>
+<option value="../journeystyles/russia-smallship-cruising.html">Russia </option>
+
+</select>
+<br /><br /><br />
+</div>
+<div id="demo1">
+ <div id="slideshow" class="pics" style="position: relative; ">
+ <img src="../num-images/japan1.jpg"/>
+<img src="../num-images/japan2.jpg"/>
+<img src="../num-images/japan3.jpg"/>
+<img src="../num-images/japan4.jpg"/>
+<img src="../num-images/japan5.jpg"/>
+<img src="../num-images/japan6.jpg"/>
+<img src="../num-images/japan7.jpg"/>
+<img src="../num-images/japan8.jpg"/>
+</div>
+</div>
+<div style="float:right; border:4px solid #ccc; margin:9px 0 0 0;"><img src="../images/clipper-odyssey-map.jpg" /></div>
+<div class="Clr"></div><br /><br />
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="Africa"><span>'Clipper Odyssey'</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Middle East &amp; North Africa"><span>Aboard 'Clipper Odyssey'</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Europe"><span>'Clipper Odyssey' Guides</span></a></li>
+
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top"></div>
+<div class="tabtxtHolder-mid">
+<div id="tab1">
+<div style="width:450px; float:left;">
+<h3><strong style="text-decoration:underline;">Cruise Japan with Geoffrey Kent</strong></h3>
+<p><img src="../images/gk.jpg" width="100" style="float:left; margin:0 20px 0 0;" /> A&K is reviving its popular cruise <a href="../destinations/japan.html">journeys to Japan</a> - and I am signing on as the first guest. <br />
+  <br />
+
+I will cruise with A&K guests on board 'Clipper Odyssey' on an itinerary that takes us to Japan's most interesting and out-of-the-way sites, some of which even I have never visited. Together we will land at ports that are closed to larger cruise ships and come ashore for excursions led by the finest local guides in Japan.<br /><br />
+
+I invite you to join me on what promises to be a unique and unforgettable adventure.<br /><br />
+All the best,<br /><br />
+<img src="../images/gk-sign.png"  /></p>
+<p>
+Geoffrey Kent<br />
+Founder, Chairman & CEO<br />
+Abercrombie & Kent</p>
+
+<h4><strong style="text-decoration:underline;"><a href="../destinations/japan-recommended-itineraries.html"><strong>Clipper Odyssey: Wonders of Japan</strong></a></strong></h4>
+<p><br />With Special Guest Geoffrey Kent<br />
+May 24-June 7, 2013 | From $9,995</p>
+<p><img src="../images/clipper-odyssey-japan.jpg" style="float:left; width:100px; margin:0 10px 0 0;" />Come aboard the 118-passenger 'Clipper Odyssey' for a 12-night voyage around Japan. Join A&K founder Geoffrey Kent on an itinerary that takes you to <a href="../destinations/japan-highlights.html">Kyoto</a>, picturesque Miyajima, Okayama, <a href="../destinations/japan-highlights.html">Hiroshima</a> and stunning Kyongju, Korea. 'Clipper Odyssey' cruises to out-of-the-way islands and coasts beyond the reach of larger cruise ships, making for a unique and memorable journey.</p>
+<p><strong>Optional Post-tour Extension: </strong><br /><br />
+Tokyo Enhance your journey with a post-cruise, small-group extension to <a href="../destinations/japan-highlights.html">Tokyo</a> (3 days, from $1,695), visiting a peaceful shrine and temple, exploring designer boutiques as well as the Edo Tokyo Museum, and dining at a fine local restaurant.</p>
+<p><a href="../destinations/japan-recommended-itineraries.html">Learn more</a> about this itinerary, and see 'Clipper Odyssey' <a href="japan-smallship-cruising.html?id=2">up close.</a></p>
+</div>
+<div style="width:200px; float:right;">
+
+<h3><strong>Meet Our Experts</strong></h3>
+<p>
+On an A&K journey you can expect exceptional guidance both on board and on shore.<br /><br />
+
+<a href="japan-smallship-cruising.html?id=3">Click here</a> to learn more about our expert guides.</p>
+
+<h3><strong>'Clipper Odyssey'</strong></h3>
+<ul style="list-style-type:disc; margin:0 0 0 20px;">
+<li>118 guests</li>
+<li>All staterooms have an ocean view</li>
+<li>In-room music system and television</li>
+<li>A lounge, library, gym, outdoor pool, masseuse</li>
+<li>Better than a 1:2 crew to passenger ratio</li>
+<li>Open-seating dining room</li>
+<li>Award-winning chefs</li>
+<li>Expert Lecturers and Guides</li>
+</ul>
+<div style="background:#f4f4f4; padding:10px; margin:10px 0 20px 0;"><a href="japan-smallship-cruising.html?id=2"><img src="../images/clipper-odyssey-deck-thumb.png" width="100" style="margin:0 0 0 40px;" /> <span style="float:left; width:100%; margin:20px 0 0 0; text-align:center;"> View the 'Clipper Odyssey' <br /> deck plan </span></a></div>
+
+</div>
+</div>
+
+<div id="tab2" style="display:none">
+<div style="width:450px; float:left;">
+<h3><strong style="text-decoration:underline;">'Clipper Odyssey' Deck Plan</strong></h3>
+<p><img src="../images/clipper-odyssey-deack-plan.png" style="float:left; margin:0 0 10px 0;" /></p> 
+
+<p><strong>Cabin Categories</strong></p>
+<ul>
+<li>Category 1 - A Deck with double porthole view</li>
+<li>Category 2 - Main Deck in forward ship with window view</li>
+<li>Category 3 - Main Deck in mid-ship with window view</li>
+<li>Category 4 - Lido Deck with window view</li>
+<li>Category 5 - Bridge Deck with window view</li>
+<li>Category 6 - Bridge Deck with private veranda</li>
+<li>Category 7 - Owner's Suite on Bridge Deck with private veranda</li>
+</ul>
+<p><br /><a href="../destinations/japan-recommended-itineraries.html">Click here</a> for detailed itinerary </p>
+
+<p><strong>The Ultimate Passenger Experience</strong><br /><br />
+
+'Clipper Odyssey' provides superior comfort for her 118 guests as they sail to remote and off-the-beaten-path locations. A fleet of on-board Zodiac landing craft enables all guests to explore and land anywhere nature or curiosity dictates, and a customized glass-bottomed excursion boat affords a magnificent glimpse of the underwater world.</p>
+<p>
+On board, comfort and convenience are paramount. All staterooms have an ocean view, private, well-appointed bathroom, sitting area with sofa, individual temperature controls, in-room music system and television. A passenger elevator allows easy access to all decks and passenger areas. Public areas include an open-seating, window-lined dining room featuring international cuisine, a lounge, library, gym, outdoor pool, masseuse, and a well-stocked gift shop. An infirmary is staffed with an accredited physician on every voyage. And with an intimate atmosphere and better than a 1:2 crew to passenger ratio, your every need will be catered to by the 'Clipper Odyssey's' attentive staff.</p>
+<p>
+<strong>Fine Dining and Amenities</strong><br /><br />
+
+Nothing introduces a new destination as quickly - and as pleasurably - as a good meal, and 'Clipper Odyssey' offers many opportunities to savor unique cuisines and cultures at their authentic best. Indulge in a sit-down dinner in the open-seating dining room, casual dining by poolside or room service expertly crafted by 'Clipper Odyssey's' award-winning chefs and kitchen staff. All soft drinks, juices, coffee, bottled water, bar drinks and house wines are included in the cruise price.</p>
+<p>
+<strong>Expert Lecturers and Guides</strong><br /><br />
+
+Your 'Clipper Odyssey' voyage is highlighted by an in-depth enrichment experience. Travel in the company of some of the industry's leading experts, all hand-chosen based on their education, experience and knowledge of each port of call. Our on-board expedition team accompanies guests while on shore and conducts stimulating lectures and discussions at sea and in the evening.</p>
+</div>
+<div style="width:200px; float:right;">
+<h3><strong>'Clipper Odyssey'</strong></h3>
+
+<strong>Ship's Data</strong> <br />
+<strong>Overall Length:</strong> 338 feet<br />
+<strong>Beam:</strong> 50.5 feet<br />
+<strong>Draft:</strong> 14 feet<br />
+<strong>Cruising Speed:</strong> 14 knots<br />
+<strong>Maximum Speed:</strong> 16 knots<br />
+<strong>Number of Decks:</strong> 6<br />
+<strong>Passenger cabins:</strong> 64<br />
+<strong>Passenger capacity:</strong> 118<br />
+<strong>Crew:</strong> 73<br />
+<strong>Gross Tonnage:</strong> 5,218<br />
+<strong>Main Engine:</strong> 2 Diesel engines, Wartsila/VASA<br />
+<strong>Flag:</strong> Bahamas<br /><br /><br />
+
+<h3><strong>Information & Amenities</strong></h3>
+<ul style="list-style-type:disc; margin:0 0 0 20px;">
+<li>Onboard language: English</li>
+<li>Sun deck and promenade</li>
+<li>Outside pool and bar</li>
+<li>Air conditioning</li>
+<li>Library with reading area</li>
+<li>Two restaurants offering exquisite dining experiences</li>
+<li>Panoramic lounge and terrace</li>
+<li>Gift shop</li>
+<li>Elevator</li>
+<li>Fitness center</li>
+<li>Salon</li>
+<li>On-board medical facilities with certified doctor</li>
+<li>Open bar (excluding premium wines, premium liquors and champagne)</li>
+<li>Electricity: 110V/60Hz</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div id="tab3" style="display:none">
+<h3><strong style="text-decoration:underline;">Meet the 'Clipper Odyssey' Experts</strong></h3>
+<p>Accompanying you on your voyage to Japan are A&K's top-notch expedition staff, natural experts and cultural specialists.</p>
+<p>
+<strong>Jannie Cloete</strong> <br /><br />
+
+<img src="../images/jannie_cloete1.jpg" style="float:left; margin:0 10px 0 0;"/>Cruise Director <br />
+Jannie Cloete has been working on cruise ships in the capacity of cruise director and expedition leader for over 28 years, travelling around the globe from the Antarctic to the tropics and the remotest hidden gems in between. With his amiable and approachable, nothing-is-too-much attitude, Jannie has settled into full time work on smaller vessels that visit lesser-known spots, and where he has become a specialist of the unbeaten track.<br /></p>
+<p>
+<strong>Suzana Machado D'Oliviera</strong> <br /><br />
+
+<img src="../images/suzana_machado.jpg" width="80" style="float:left; margin:0 10px 0 0;"/>Tour Director/Field Naturalist<br />
+Suzana was born in Brazil, where she studied history at the Catholic University in Rio de Janeiro. Her main interest is the cultures and peoples that she encounters during her travels. She is an accomplished adventurer and has explored such exotic locales as the Amazon River, Antarctica, the Arctic, Greece, Indonesia, Madagascar, the Pacific Islands and more. She has worked as expedition leader, cruise director, naturalist, lecturer and Tour Director since 1988.</p>
+<p>
+<strong>Richard Harker</strong><br /><br />
+<img src="../images/richard_harker1.jpg" width="80" style="float:left; margin:0 10px 0 0;"/>
+Photography Enrichment<br />
+Richard Harker has been a professional photographer for over 20 years, specializing in wildlife and landscape photography; he also heads up Abercrombie & Kent's Expedition Cruise photo enrichment program. Richard will provide hands-on instruction and lectures on a wide range of photo techniques and strategies, whether you favor a simple point-and-shoot or a state-of-the-art digital SLR.</p>
+<p>
+<strong>Rich Pagen</strong><br /><br />
+<img src="../images/rich_pagen1.jpg" width="80" style="float:left; margin:0 10px 0 0;"/>
+Field Naturalist<br />
+Rich first became enthralled by the wonders of the natural world around the tide pools and forests of his native New York. Since then, he has embarked on a career in conservation biology that has brought him from Alaska's North Slope to the Peruvian Amazon. He has also conducted shipboard surveys for marine mammals and seabirds, as well as tagging studies of sea turtles and sharks and is a frequent field naturalist on A&K expeditions.
+</p>
+<p>
+<strong>Chieko Sakihana</strong><br /><br />
+
+Cultural Expert<br />
+Born and raised in Osaka, Japan, Chieko Sakihana jumped at the opportunity to enter a graduate program in linguistics at the University of Washington in Seattle. After teaching high school and college, Chieko decided to become a tour guide. During her 25-year career she has had the privilege of escorting European royalty, heads of state and leaders of business communities.</p>
+
+</div>
+
+
+
+
+<!--<div id="tab10" style="display:none">
+<h3><strong style="text-decoration:underline;">A&amp;K Rewards Early Birds to Antarctica</strong></h3>
+<p>Marking the launch of Abercrombie & Kent's 21st year of operation in the White Continent, A&K travellers who book their spot for the 2012-13 season before 31st March 2012 receive discounts of up to US$2,755 per person.</p>
+<p>With over 150 Antarctic expeditions to its name, A&K is the obvious choice for cruising. As well as chartering luxury vessel MV Le Boreal on four departures, A&K has complete control over the operation of each expedition. The team of elite and highly qualified naturalist guides are hand-picked by A&K for their knowledge, dedication and expertise, all qualities which bring this unique destination to life.</p>
+<p>In addition, MV Le Boreal is the only all-balcony suite vessel travelling to Antarctica and carries 199 passengers. Elegant and slim-line she also boasts the greenest credentials of ships travelling there. A journey to Antarctica with A&K is hands-on exploration at its finest, joining the naturalist guides on daily Zodiac excursions to active research stations, to encounter incredible wildlife viewing and to observe mesmerising icebound landscapes and rugged scenery.</p>
+<p>Two journeys operate solely to the Antarctic Peninsula where wildlife sightings are some of the best on the continent and two also visit the remote Falkland and South Georgia Islands following in the footsteps of pioneering explorers and also encountering extraordinary bird and animal life. The Christmas and New Year expedition appeals specifically to families seeking an unforgettable yuletide experience. A dedicated Young Explorers programme brings the destination to life for youngsters with hands-on activities, fun and educational workshops onboard and a personalised scrapbook.</p>
+<p><strong>Reserve a cabin to Antarctica by 31 March 2012 and save between US$1,099 and US$2,755 per adult (twin share).</strong></p>
+<p><strong>12 day Classic Antarctica</strong> from US$9,896 per person (Normal price from US$10,995). Charter flights not included.<br />
+<strong>18 day Antarctica, Falkland Islands & South Georgia</strong> from US$15,296 per person (Normal price from US$16,995). Charter flights not included.</p>
+<p><strong>Departure dates:</strong><br />
+Classic Antarctica: 28 November-9 December 2012;<br />
+8-19 December 2012.<br />
+Antarctica, Falkland Islands & South Georgia:<br />
+18 December 2012-4 January 2013; 3-19 January 2013.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>-->
+
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<script>
+$(function() {
+var $elem = $('#demo1');
+
+$('#nav_up').fadeIn('slow');
+$('.nav_down').fadeIn('slow');  
+
+$(window).bind('scrollstart', function(){
+$('#nav_up,.nav_down').stop().animate({'opacity':'0.2'});
+});
+$(window).bind('scrollstop', function(){
+$('#nav_up,.nav_down').stop().animate({'opacity':'1'});
+});
+
+$('.nav_down').click(
+function (e) {
+$('html, body').animate({scrollTop: $elem.height()}, 800);
+}
+);
+$('#nav_up').click(
+function (e) {
+$('html, body').animate({scrollTop: '0px'}, 800);
+}
+);
+});
+</script>
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
