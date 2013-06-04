@@ -1,0 +1,260 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Private Villas, Luxury Holidays Villas, A&K Villas, Luxury Villas, Best Villas, Abercrombie & Kent Villas"/>
+<meta name="description" content="A&K India provides luxury private villas & chalets for luxury accommodation and rental. We are offering wonderful travel experiences for almost 50 years. Visits our dedicated A&K villas and explore our range of inspiring destination." />
+<title>Private Villas | Luxury Holidays Villas - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/ank-villas.jpg" alt="Luxury Villas" title="Luxury Villas" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
+<li>A&amp;K villas</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>CHOOSE YOUR STYLE</h4>
+<ul>
+<li><a href="ak-journey-style.html" title="Overview">Overview</a></li>
+<li><a href="private-journeys.html" title="Private Luxury Journeys">Private Luxury Journeys</a></li><li><a href="connections.html" title="Connections">Connections</a>
+</li>
+<li><a href="extreme-adventures.html" title="Extreme Adventures">Extreme Adventures</a></li>
+<li><a href="small-ship-cruising.html" title="Small Ship Cruising">Small Ship Cruising</a></li>
+<li><a href="private-jet.html" title="Private Jet Journeys">Private Jet Journeys</a></li>
+<li><a href="Luxury-rail-journey.html" title="Luxury Rail Journeys">Luxury Rail Journeys</a></li>
+<li><a href="family-holidays.html" title="Family Holidays">Family Holidays</a></li>
+<li><a href="rest-revive.html" title="Rest &amp; Revive">Rest &amp; Revive</a></li>
+<li><a href="celebration.html" title="Celebrations" >Celebrations</a>
+<li><a href="honeymoon.html" title="Honeymoon"> Honeymoon</a></li>
+
+<li><a href="special-interst-groups.html" title="Special Interest Groups">Special Interest Groups</a></li>
+<li><a href="private-mob-copm.html" title="Private Mobile Camping">Private Mobile Camping</a></li>
+<li><a href="ak-villas.html" title="A&amp;K Villas" class="Active">A&amp;K Villas</a></li>
+<li><a href="sanctuary-retreats.html" title="Sanctuary Retreats">Sanctuary Retreats</a></li>
+</ul>
+
+<h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+</div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Luxury Villas by Abercrombie &amp; Kent</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+
+  <div style="text-align:justify;">
+  <p> Since its formation in 1962, Abercrombie & Kent has been offering wonderful travel experiences to one and all.</p>
+  <p>With the internet awash with villa rental possibilities with each one garnished with elaborate descriptions and claiming to be better than the rest, taking the keys to a family villa can be daunting. This is when Abercrombie & Kent comes in. We assure that our luxury villas match up to the photography, floor-plans and descriptions provided on our website and via our travel experts. Also, our team at Abercrombie & Kent meticulously checks and inspects our villas to ensure you have a safe and sound stay and a memorable experience.
+</p>
+<p>We are delighted to have been recognized by Travel + Leisure in their April 2010 issue as one of the 'Best Villa Rental Agencies' and as one of the 'Best Villa Rental Specialists' in Conde Nast Traveler's June 2010 issue. We highly value these accolades and hope that you will travel with us soon.</p>
+
+</div><br />
+<p style="color:#517390;font-size:14px;">Visit our dedicated A&amp;K Villas website to explore our range of inspiring destinations <a href="http://www.akvillas.com/" target="_blank">http://www.akvillas.com/</a></p>
+<div class="GradBox1"><p style="color:#517390;font-size:14px;">LUXURY CHALETS BY ABERCROMBIE & KENT </p>
+<p> <span style="float:right; margin:0 0 0 20px;"><img src="../images/cn-award-ac.jpg" alt="cn-award-ac"  /></span>Abercrombie & Kent was formed in 1962 and has many years of experience in offering vacation rental properties. Starting test with <strong>luxury villas</strong> across Europe we soon recognised the popularity of our ski lodge collection demanded that we launch Abercrombie & Kent Ski. Carrying out meticulous property inspections and providing the same assured service, we're confident our chalets will impress.  Whether you're an advanced skier or a novice our travel experts are there to advise you in all elements of your stay, making sure you get the most out of the resort and area you visit.</p>
+<p> 
+<img src="../images/geoffrey-founder2.jpg" alt="geoffrey-founder2"  style="float:right; margin:0 0 10px 0;"/>
+Telephone: +1800 - 111 - 010 ; Email: ptravels@abercrombiekent.co.in<br />
+European office hours apply</p>
+<p>
+<img src="../images/signature.jpg" alt="sign" /> </p>
+
+
+
+</div>
+
+<ul class="villasListing">
+<li>
+
+<dl>
+<dd><a href="http://www.akvillas.com/destinations/italy" target="_blank"><img src="../images/villas-img2.jpg" border="0" alt="Italian Villas" title="Italian Villas" /></a></dd>
+<dt>
+<a href="http://www.akvillas.com/destinations/italy" target="_blank">
+<h2>Italian Villas</h2>
+<p>Maybe the culture, cuisine, wine and countryside may entice you or perhaps, you're a seasoned traveler to Italy, a romantic destination rich in both history and passion.</p>
+</a>
+</dt>
+</dl>
+<dl>
+<dd><a href="http://www.akvillas.com/destinations/spain" target="_blank"><img src="../images/villas-img3.jpg" border="0" alt="Spanish Villas" title="Spanish Villas" /></a></dd>
+<dt>
+<a href="http://www.akvillas.com/destinations/spain" target="_blank">
+<h2>Spanish Villas</h2>
+<p>Blessed with a pleasant climate, fine cuisine, rich culture and a relaxed way of life, Spain deserves a must-visit on your holiday calendar.</p>
+</a>
+</dt>
+</dl>
+<dl>
+<dd><a href="http://www.akvillas.com/destinations/greece" target="_blank"><img src="../images/villas-img4.jpg" border="0" alt="Greek Villas" title="Greek Villas" /></a></dd>
+<dt>
+<a href="http://www.akvillas.com/destinations/greece" target="_blank">
+<h2>Greek Villas</h2>
+<p>Picture postcard is a word that describes Greece best. White-washed villages tumbling into the Mediterranean, ruins mellowed by the evening sun and an ancient civilisation that gave rise to a Western one, incredible could be an understatement if we set out to define this magnificent place.</p>
+</a>
+</dt>
+</dl>
+<!--<dl>
+<dd><a href="http://www.akvillas.com/caribbean/" target="_blank"><img src="../images/villas-img5.jpg" border="0" alt="Villas" /></a></dd>
+<dt>
+<a href="http://www.akvillas.com/caribbean/" target="_blank">
+<h2>Villas in the Americas</h2>
+<p>From the sun-drenched coastlines of Turks and Caicos to the magnificent Rocky Mountains in Wyoming.</p>
+</a>
+</dt>
+</dl>-->
+<dl>
+<dd><a href="http://www.akski.com/" target="_blank"><img src="../images/villas-img6.jpg" alt="Ski Chalets" title="Ski Chalets" border="0"/></a></dd>
+<dt>
+<a href="http://www.akski.com/" target="_blank">
+<h2>Ski Chalets</h2>
+<p>The Alps is the home to skiing in Europe. Endowed with some of the best slopes, accommodation and après-ski in the world, Europe is a magical destination in itself.</p>
+</a>
+</dt>
+</dl>
+<dl>
+<dd><a href="http://www.akvillas.com/destinations/caribbean" target="_blank"><img src="../images/mustique-villas.jpg" alt="Mustique Villas" title="Mustique Villas" border="0" /></a></dd>
+<dt>
+<a href="http://www.akvillas.com/destinations/caribbean" target="_blank">
+<h2>Mustique Villas</h2>
+<p>A&K Villas has recently launched a range of luxurious property in Mustique in the Grenadines. On-site staff would be present to address your every call.</p>
+</a>
+</dt>
+</dl>
+
+<dl>
+<dd><a href="http://www.akvillas.com/destinations/greatbritain" target="_blank"><img src="../images/greatbritain-villas.jpg" alt="Great Britain Villas" title="Great Britain Villas" border="0" /></a></dd>
+<dt>
+<a href="http://www.akvillas.com/destinations/greatbritain" target="_blank">
+<h2>Great Britain Villas</h2>
+<p>Famed for its village inns serving ale, Shakespeare, majestic castles, lush countryside and quaint little seaside towns, Great Britain offers diverse landscapes and cultures. Its temperate weather adds to the charm, allowing for comfortable sightseeing.
+</p>
+</a>
+</dt>
+</dl>
+
+<dl>
+<dd><a href="http://www.akvillas.com/destinations/portugal" target="_blank"><img src="../images/portugal-villas.jpg" alt="Portuguese Villas" title="Portuguese Villas" border="0" /></a></dd>
+<dt>
+<a href="http://www.akvillas.com/destinations/portugal" target="_blank">
+<h2>PORTUGUESE VILLAS</h2>
+<p>Warmed by the gentle currents from the Gulf Stream, Portugal enjoys a pleasant climate all through the year. Located on the Algrave Coast, A&K Villas are independent and private, complete with tennis courts and swimming pools for leisure and recreation. Resort style villas are furnished with children's clubs, restaurants, beach sports and bars.
+</p>
+</a>
+</dt>
+</dl>
+
+
+</li>
+</ul>
+ <p><strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
+</div>
+
+
+
+</div>
+
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
