@@ -236,6 +236,19 @@ $("#s_code13").val(0);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 <!-- Google Analytics End here -->
 </head>
 
@@ -562,15 +575,15 @@ $("#s_code13").val(0);
               <span class="errormsg" id="country"></span> </dd>
           </dl>
 		  <dl>
-            <dt>Security code</dt>
-            <dd>
-			<img border="0" class="Border" id="new_captcha13" src="<?php echo APP_ROOT_URL; ?>image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha13();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br>
-<input type="text" name="security_code13" id="security_code13"  class="inptxtsml mleft10" onkeyup="javascript:return checkcode8(this.value);"  onkeypress="javascript:return checkcode8(this.value);" onchange="javascript: clearField('err_security_code13')"/>
-<input type="hidden" name="s_code13" id="s_code13" />
-<span class="errormsg" id="err_security_code13"></span>
-            <!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
-			</dd>
-          </dl>
+				<dt>Security Code</dt>
+				<dd style="width:200px;">
+				<img border="0" class="Border"  id="new_captcha13" src="<?php echo APP_ROOT_URL;?>image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha13();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br/><br/>
+				<input type="text" name="security_code13" id="security_code13"   class="inptxtsml" onKeyUp="javascript:return checkcode8(this.value);" />
+				<input type="hidden" name="s_code13" id="s_code13" value="" />
+				<span class="errormsg" id="err_security_code13"></span>
+				<!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
+				</dd>
+				</dl>
 		  <dl>
             <dt>&nbsp;
             </dt>

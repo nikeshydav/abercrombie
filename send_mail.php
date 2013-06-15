@@ -7,7 +7,7 @@ if(isset($_POST['submit_x']))
 	$adminfromemail = $_REQUEST['email'];
 	$fromEmail 		= $adminfromemail;
 	$to 			= "privatetravel@abercrombiekent.co.in";
-	$cc 			= "GAjmani@abercrombiekent.co.in,ptsales@abercrombiekent.co.in";
+	$cc 			= "GAjmani@abercrombiekent.co.in, ptsales@abercrombiekent.co.in";
 	
 	$subject	 	= 'Download PDF - '.$_REQUEST['filename'];
 	//$bcc = "soni@oliveglobal.com";

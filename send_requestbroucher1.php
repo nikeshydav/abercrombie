@@ -251,20 +251,22 @@ href="yahoo.html">
 <div class="LeftList">
  <h4>CHOOSE YOUR STYLE</h4>
     <select onChange="ChangeValue(this)">
-	<option value="0" selected="selected">Choose Your Style</option>
-    	  <option value="journeystyles/private-journeys.html">Private Journeys</option>
-          <option value="journeystyles/extreme-adventures.html">Extreme Adventures</option>
-          <option value="journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
-          <option value="journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
-          <option value="journeystyles/family-holiday.html">Family Holidays</option>
-          <option value="journeystyles/rest-revive.html">Rest &amp; Revive</option>
-          <option value="journeystyles/celebration.html">Celebrations</option>
-             <option value="journeystyles/honeymoon.html">Honeymoon</option>
-          <option value="journeystyles/special-interst-groups.html">Special Interest Groups</option>
-          <option value="journeystyles/private-mob-copm.html">Private Mobile Camping</option>
-          <option value="journeystyles/ak-villas.html">A&amp;K Villas</option>
-          <option value="journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
-    </select>
+<option value="0" selected="selected">Choose Your Style</option>
+<option value="journeystyles/private-journeys.html">Private Luxury Journeys</option>
+<option value="journeystyles/connections.html">Conections</option>
+<option value="journeystyles/extreme-adventures.html">Extreme Adventures</option>
+<option value="journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+<option value="journeystyles/private-jet.html">Private Jet Journeys</option>
+<option value="journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+<option value="journeystyles/family-holidays.html">Family Holidays</option>
+<option value="journeystyles/rest-revive.html">Rest &amp; Revive</option>
+<option value="journeystyles/celebration.html">Celebrations</option>
+<option value="journeystyles/honeymoon.html">Honeymoon</option>
+<option value="journeystyles/special-interst-groups.html">Special Interest Groups</option>
+<option value="journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+<option value="journeystyles/ak-villas.html">A&amp;K Villas</option>
+<option value="journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+</select>
 
 <h4>Travel Destinations</h4>
     <select onChange="ChangeValue(this)">
