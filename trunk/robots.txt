@@ -1,0 +1,14 @@
+User-agent: *
+
+Disallow: /images/
+Disallow: /backup/
+Disallow: /captcha/
+Disallow: /cimg/
+Disallow: /css/
+Disallow: /images3jan/
+Disallow: /num-images/
+Disallow: /acc/
+Disallow: /blogx/
+Disallow: /images3jan/
+Disallow: /js/
+Disallow: /num-images/
