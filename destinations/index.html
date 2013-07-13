@@ -1,0 +1,277 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
+<meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
+<title>Luxury Travel - Abercrombie &amp; Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/destinations-banner.jpg" alt="Travel Destinations" title="Travel Destination" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li>Destinations</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+<ul>
+<li><a href="africa.html" title="Africa">Africa</a></li>
+<li><a href="middle-east-north-africa.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="europe.html"  title="Europe">Europe</a></li>
+<li><a href="australasia.html" title="Australasia">Australasia</a></li>
+<li><a href="theorient.html" title="The Orient">The Orient</a></li>
+<li><a href="south-america.html" title="South America">South America</a></li>
+<li><a href="central-america.html" title="Central America">Central America</a></li>
+<li><a href="north-america.html" title="North America">North America</a></li>
+<li><a href="beach-island-escapes.html" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="antartica.html" title="Antarctica">Antarctica</a></li>
+<li><a href="arctic.html" title="Arctic" >Arctic</a></li>
+</ul>
+
+  <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select>
+</div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>A&amp;K Destinations</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+ <?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div style="float:left; margin:0 0 20px 0;"><img src="../images/world-map.jpg" alt="worldmap" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="poly" coords="126,398" href="#" />
+<area shape="poly" coords="134,160,135,149,141,142,147,136,154,125,162,118,170,112,171,105,168,101,177,96,187,94,195,87,186,75,184,68,175,65,169,55,165,55,159,66,156,81,146,84,144,76,129,68,129,60,142,46,153,36,165,28,149,21,149,17,150,7,139,12,134,23,122,22,108,18,103,12,96,7,89,3,59,3,30,3,15,3,9,5,9,11,14,17,5,17,3,32,6,43,10,46,21,38,26,36,34,41,47,53,52,70,53,81,55,93,50,110,52,124,57,134,65,143,83,143,90,148,100,151,111,151,122,150,135,155" href="north-america.html"/>
+<area shape="poly" coords="143,197,154,194,165,198,171,198,181,205,189,210,199,217,206,223,215,226,225,228,230,238,225,246,223,258,218,267,208,273,205,279,201,286,195,295,189,304,182,312,177,316,175,324,175,334,169,345,164,338,159,333,156,308,156,285,156,261,151,253,140,242,133,233,133,221" href="south-america.html" alt="South America"/>
+<area shape="poly" coords="598,397,604,391,600,389,590,389,579,386,569,381,545,379,532,379,516,379,499,379,482,377,469,377,451,377,444,380,438,384,426,384,402,382,396,379,385,380,371,384,365,387,358,383,349,383,342,386,326,386,304,387,295,385,278,391,268,396,195,398,196,392,194,381,197,374,196,370,176,382,176,389,171,396,156,396,140,392,135,394,134,397,106,396,99,397,337,397" href="antartica.html"/>
+<area shape="poly" coords="594,307,588,299,583,296,568,299,556,303,545,299,548,290,548,280,550,271,558,266,568,260,577,253,585,249,593,245,598,249,601,256,606,259,609,248,615,247,618,264,630,273,630,292,621,306,613,315,611,320,609,331,606,335" href="australasia-australia.html" alt="australia"/>
+<area shape="poly" coords="662,307,670,312,679,318,672,335,667,337,661,343,654,352,644,352,635,353" href="australasia-newzealand.html" alt="New Zealand"/>
+<area shape="poly" coords="504,167,500,160,492,156,479,148,468,137,451,126,455,118,468,115,472,108,482,100,488,107,503,112,518,113,529,113,537,105,546,96,540,91,543,83,553,80,567,88,602,102,600,132,581,142,557,134,561,143,560,155,553,165,538,168,538,178,538,193,530,195,516,186" href="theorient.html" alt="Asia"/>
+<area shape="poly" coords="404,188,412,185,422,178,431,171,427,165,423,161,406,160,397,153,382,146,375,148,380,157" href="middle-east-north-africa.html" alt="middle east"/>
+<area shape="poly" coords="330,258,344,254,354,253,343,248,355,246,372,247,356,239,359,233,347,222,350,214,386,206,383,197,390,190,403,199,407,203,395,218,391,231,391,244,390,254,380,261,380,266,377,275,372,283,363,293,352,294,343,294,336,278" href="africa.html" alt="Africa" />
+<area shape="poly" coords="319,205,295,206,277,196,270,188,273,172,278,156,286,149,296,143,311,138,321,136,329,140,337,147,348,147,359,145,368,147,375,159,382,169,386,173,389,180" href="middle-east-north-africa.html" alt="North Africa"/>
+<area shape="poly" coords="293,141,299,137,305,132,310,125,317,119,325,123,333,127,345,133,367,135,385,135,393,131,395,123,401,113,401,103,405,97,420,97,421,90,440,87,451,88,470,94,488,93,486,57,446,27,432,15,394,15,357,34,352,51,321,62,293,82,289,89" href="europe.html" alt="Europe"/>
+<area shape="poly" coords="491,83" href="russia.html" />
+<area shape="poly" coords="489,49" href="russia.html" />
+<area shape="poly" coords="482,48,433,2,536,6,568,4,610,4,632,14,613,59,570,58,526,87,500,82" href="europe-russia.html" />
+<area shape="rect" coords="421,225,487,241" href="beach-island-escapes-seychelles.html" />
+<area shape="rect" coords="424,260,490,275" href="beach-island-escapes-mauritius.html" />
+<area shape="rect" coords="677,228,710,243" href="beach-island-escapes-tahiti.html" />
+<area shape="rect" coords="675,248,698,259" href="beach-island-escapes-fiji.html" />
+<area shape="poly" coords="110,186,93,181,79,173,75,162,68,151,75,147,88,150,98,155" href="central-america-mexico.html" />
+</map></div>
+
+<h4>From Argentina to Zambia, Iceland to Italy and Chile to China, Abercrombie &amp; Kent (A&amp;K) is widely known and highly respected for attention to detail, imagination to create new travel ideas,</h4>
+<p>implantation of these ideas to deliver the very best personal service and top-quality tours. In every destination, A&amp;K's travel experiences are designed to excite, educate, entertain, intrigue, surprise and delight. A&amp;K sets the standard - the standard by which superior touring and travel is defined.</p>
+<p>Abercrombie &amp; Kent journeys touch all seven continents, ranging from the bustling souks of Morocco and the mysterious ruins in Peru to the ancient pyramids of Egypt and the idyllic French countryside. We understand that a memorable journey isn't just about where you go - it's also how you get there. With A&amp;K, discover the world's most enchanting luxury travel destinations in peerless comfort and style, while never sacrificing authenticity.</p>
+<p>The A&amp;K formula of providing a "luxury cocoon" from which to explore the world attracts the discerning travelers from all corners and these travelers have journeyed to the wildest and most remote corners of the globe with A&amp;K.</p>
+<p>Whether you travel with a small group of like-minded adventurers or an intimate party of family and friends, our full-time staff is on call around the clock, ready at any time to provide you with everything you need for the journey of a lifetime. Where will your travels take you?</p>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<div id="Footer">
+<div class="FooterInner">
+<div class="Copyright">
+<div class="Heading">Abercrombie &amp; Kent</div>
+<p>&copy; Copyright 2011-12<br />
+Abercrombie &amp; Kent</p>
+</div>
+
+<div class="FooterLink">
+<h4>A &amp; K DESTINATIONS</h4>
+<ul>
+<li><a href="africa.html" title="Africa">Africa</a></li>
+<li><a href="#" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="#" title="Europe">Europe</a></li>
+<li><a href="#" title="China &amp; Orient">China &amp; Orient</a></li>
+<li><a href="#" title="Australia &amp; New zealand ">Australia &amp; New zealand </a></li>
+<li><a href="#" title="South America">South America</a></li>
+<li><a href="#" title="Antarctica">Antarctica</a></li>
+<li><a href="#" title="North America">North America</a></li>
+<li><a href="#" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+</ul>
+</div>
+
+<div class="FooterLink">
+<h4>A &amp; K STYLES</h4>
+<ul>
+<li><a href="../journeystyles/private-journeys.html" title="Private Journeys">Private Journeys</a></li>
+<li><a href="../journeystyles/extreme-adventures.html" title="Extreme Adventures">Extreme Adventures</a></li>
+<li><a href="../journeystyles/small-ship-cruising.html" title="Small Ship Cruising">Small Ship Cruising</a></li>
+<li><a href="../journeystyles/Luxury-rail-journey.html" title="Luxury Rail Journeys">Luxury Rail Journeys</a></li>
+<li><a href="../journeystyles/famity-holday.html" title="Family Holidays">Family Holidays</a></li>
+<li><a href="../journeystyles/rest-revive.html" title="Rest &amp; Revive">Rest &amp; Revive</a></li>
+<li><a href="../journeystyles/celebration.html" title="Celebrations">Celebrations</a></li>
+<li><a href="../journeystyles/special-interst-groups.html" title="Special Interest Groups">Special Interest Groups</a></li>
+<li><a href="../journeystyles/private-mob-copm.html" title="Private Mobile Camping">Private Mobile Camping</a></li>
+<li><a href="../journeystyles/ak-villas.html" title="A&amp;K Villas">A&amp;K Villas</a></li>
+<li><a href="../journeystyles/sanctuary-retreats.html" title="Sanctuary Retreats">Sanctuary Retreats</a></li>
+</ul>
+</div>
+
+<div class="FooterLinkLast">
+<h4>SITEMAP</h4>
+<ul>
+<li><a href="../index.html" title="Home">Home</a></li>
+<li><a href="../about/about.html" title="About A&amp;K">About a&amp;K</a></li>
+<li><a href= title="Destinations">Destinations</a></li>
+<li><a href="../journeystyles/ak-journey-style.html" title="A&amp;K Journey Styles">A&amp;K Journey Styles</a></li>
+<li><a href="../news.html" title="News">News</a></li>
+<li><a href="special-offers.html" title="Special Offers">Special Offers</a></li>
+<li><a href="../travel-tools/travel-calendar.html" title="Travel Tools">Travel Tools</a></li>
+<li><a href="../legal/legal.html" title="Legal">Legal</a></li>
+<li><a href="../contact/contact.html" title="Contact Us">Contact Us</a></li>
+</ul>
+</div>
+
+<div class="FollowBox">
+<h4><strong>Follow Us Online</strong></h4>
+<div class="SocialIcon">
+<a href="http://www.youtube.com/user/abercrombiekent" target="_blank"><img src="../images/utube-icon.jpg" alt="YouTube" border="0" /></a><a href="http://www.facebook.com/AbercrombieKent" target="_blank"><img src="../images/facebook-icon.jpg" alt="facebook" border="0" /></a><a href="http://www.flickr.com/photos/46516818@N06/" target="_blank"><img src="../images/flickr-icon.jpg" alt="flickr" border="0" /></a><a href="http://twitter.com/#!/AKTravel_UK" target="_blank"><img src="../images/twitter-icon.jpg" alt="twitter" border="0" /></a></div>
+<p>Stay informed on the latest A&amp;K stories, news and updates. We invite you to share your best travel stories, pictures and video.</p>
+</div>
+
+<div class="Clr"></div>
+
+<div class="FooterTxt">For more information contact your travel consultant on <strong>+91 11 46001600<br />
+</strong> or email at <a href="mailto:privatetravel@abercrombiekent.co.in">PRIVATETRAVEL@ABERCROMBIEKENT.CO.IN</a></div>
+
+</div>
+</div>
+<!-- Footer Part End Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
