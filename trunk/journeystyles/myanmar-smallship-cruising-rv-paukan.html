@@ -21,28 +21,6 @@ include("../classes/mimemail.class.php");
 <script type="text/javascript" src="../js/lightview.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
 <!--Flag-->
-<!--gallery-->
-<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
-<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
-<script type="text/javascript">
-$(function() {
-        
-    $('#slideshow').before('<div id="nav" class="nav">').cycle({
-        fx:     'fade',
-        speed:  'slow',
-        timeout: 0,
-        pager:  '#nav',
-        before: onBefore
-    });
-    
-        function onBefore() {
-        $('#title').html(this.alt);
-    }
-});
-
-</script>
-<!--gallery-->
 <script type="text/javascript" src="../js/tabcontent.js"></script>
 
 <script type="text/javascript" src="../js/ddaccordion.js"></script>
@@ -72,6 +50,28 @@ ddaccordion.init({
 })
 
 </script>
+<!--gallery-->
+<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
+<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(function() {
+        
+    $('#slideshow').before('<div id="nav" class="nav">').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        before: onBefore
+    });
+    
+        function onBefore() {
+        $('#title').html(this.alt);
+    }
+});
+
+</script>
+<!--gallery-->
 <link rel="SHORTCUT ICON" href="../favicon.ico" />
 <!-- Google Analytics Start here -->
 <script type="text/javascript">
