@@ -11,6 +11,28 @@ include("../classes/mimemail.class.php");
 <title>Small Ship River Cruising | Adventure Cruising - A&K India</title>
 <link rel="stylesheet" href="../css/style.css" type="text/css" />
 <!--Flag-->
+<!--gallery-->
+<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
+<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(function() {
+        
+    $('#slideshow').before('<div id="nav" class="nav">').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        before: onBefore
+    });
+    
+        function onBefore() {
+        $('#title').html(this.alt);
+    }
+});
+
+</script>
+<!--gallery-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 <!--[if lt IE 9]>
@@ -254,6 +276,20 @@ href="../yahoo.html">
 
 <div style="float:right;"><a href="../destinations/south-america-chile.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Chile Homepage</a></div>
 <div class="Clr"></div>
+
+<div class="Clr"></div>
+<div id="demo">
+ <div id="slideshow" class="pics" style="position: relative; ">
+ <img src="../num-images/argentina1.jpg"/>
+<img src="../num-images/argentina2.jpg"/>
+<img src="../num-images/argentina3.jpg"/>
+<img src="../num-images/argentina4.jpg"/>
+<img src="../num-images/argentina5.jpg"/>
+<img src="../num-images/argentina6.jpg"/>
+</div>
+</div>
+<div class="Clr"></div>
+
 <div class="small-cruise">
 
 <h4>Expeditionary Cruising | Patagonia & Cape Horn</h4>
