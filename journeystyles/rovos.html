@@ -20,6 +20,35 @@ include("../classes/mimemail.class.php");
 <script type="text/javascript" src="../js/lightview.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
 <!--Flag-->
+<!--tab-->
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/ddaccordion.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+//Initialize first demo:
+ddaccordion.init({
+	headerclass: "mypets", //Shared CSS class name of headers group
+	contentclass: "thepet", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openpet"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+</script>
+<!--tabcontent-->
 <link rel="SHORTCUT ICON" href="../favicon.ico" />
 <!-- Google Analytics Start here -->
 <script type="text/javascript">
@@ -228,12 +257,14 @@ href="../yahoo.html">
 <p>Possessing the largest train suites in the world, comfort is assured aboard the sleeper carriages. All the amenities you would expect in a modern five star hotel are provided. Each suite boasts of period Edwardian features, complete with en suite bathroom as well as double or twin beds. For an extra special experience, the Rovos Rail has Royal Suites, each of which take up half a carriage and possess their own private lounge area, full bathroom with Victorian bath and separate shower, all to make your luxury train journey an unforgettable experience. 
 </p>
 
-
+<div class="thepet">
 <p>
 <strong style="font-size:14px;">Accommodation</strong><br />
 <br />
 There is no love sincerer than the love of food. Indulge in Rovos Rail’s fine cuisine as you travel past breathtaking scenery. Dress code is smart-casual during the day and jacket and tie for the evenings. One of three trains, the 'Pride of Africa' links some of Africa's most exciting destinations, from the 48-hour journey between Cape Town and Pretoria to the 13 day journey linking Cape Town to Dar-es-Salaam in Tanzania. Other journeys include the game reserves of Mpumalanga, the mighty Victoria Falls, desert landscapes of Namibia, the lush canefields of KwaZulu Natal, the glorious Garden Route, but perhaps the most impressive - the Cape to Cairo.</p>
-<strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong>
+</div>
+    <h3 class="mypets">Read more</h3>
+    <strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong>
 </div>
 
 <!-- Center Container Part End Here -->

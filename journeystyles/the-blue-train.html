@@ -11,6 +11,35 @@ include("../classes/mimemail.class.php");
 <title>The Blue Train</title>
 <link rel="stylesheet" href="../css/style.css" type="text/css" />
 <!--Flag-->
+<!--tab-->
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/ddaccordion.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+//Initialize first demo:
+ddaccordion.init({
+	headerclass: "mypets", //Shared CSS class name of headers group
+	contentclass: "thepet", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openpet"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+</script>
+<!--tabcontent-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 <!--[if lt IE 9]>
@@ -230,12 +259,15 @@ href="../yahoo.html">
 <h4>The Blue Train combines the comfort of a hotel with the elegance and sophistication of luxury train travel. Since it's inception in 1946, it has become synonymous with the ultimate in luxury and personal service. Perhaps the best way to see the ever changing landscapes of South Africa, the train allows you to sit back and soak up the splendour of this diverse and interesting country.</h4><br />
 <p>All suites have en suite facilities with a choice of bath or shower and are air-conditioned. There are two categories of suite, deluxe or luxury, the latter having the addition of full size bath tubs, CD and DVD players. On board, there is a separate dining car and lounge. Dress code onboard the train is smart-casual during the day but a jacket and tie are compulsory for gentlemen in the evening. Ladies dress elegantly for dinner. A gourmet menu of freshly cooked cuisine combined with the finest of South African wines makes dining on the Blue Train a memorable experience.</p>
 
-
+<div class="thepet">
 <p>
 <strong style="font-size:14px;">Accommodation</strong><br />
 <br />
+
 The Blue Train's most popular journey is between the jacaranda city of Pretoria and the mother city of Cape Town, however it can also be privately chartered to other destinations for special groups and celebrations. There are actually two train sets to ensure there are regular scheduled departures. They are very similar in décor but have a slightly different composition. Train one sleeps 74 guests and train two 58. Both benefit from the latest suspension system which offers one of the smoothest rides that can be found on any train anywhere in the world.</p>
-<strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong>
+</div>
+<h3 class="mypets">Read more</h3>
+    <strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong>
 </div>
 
 <!-- Center Container Part End Here -->
