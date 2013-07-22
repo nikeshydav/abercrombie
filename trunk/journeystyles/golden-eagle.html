@@ -74,6 +74,29 @@ ddaccordion.init({
   })();
 
 </script>
+<!--gallery-->
+<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
+<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(function() {
+        
+    $('#slideshow').before('<div id="nav" class="nav">').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        before: onBefore
+    });
+    
+        function onBefore() {
+        $('#title').html(this.alt);
+    }
+});
+
+</script>
+<!--gallery-->
+
 </head>
 
 <body>
@@ -208,7 +231,21 @@ href="../yahoo.html">
 </div>
 </div>
 <div class="Clr"></div>
+
 <h4>Golden Eagle Luxury Train Departures 2013</h4>
+<div id="demo2" >
+ <div id="slideshow" class="pics" style="position: relative; ">
+<img src="../images/golden-eagle.jpg" alt="Blue Train South Africa "/>
+<img src="../images/golden-eagle1.jpg" alt="Blue Train Travel"/>
+<img src="../images/golden-eagle2.jpg" alt="Elegance of Blue Train"/>
+<img src="../images/golden-eagle3.jpg" alt="South Africa Train Journey "/>
+<img src="../images/golden-eagle4.jpg" alt="Blue train suite"/>
+<img src="../images/golden-eagle5.jpg" alt="Blue Train lounge"/>
+
+
+
+</div>
+</div>
 <p>We are pleased to present Luxury onboard with Golden Eagle Luxury Trains. It is the world's leading operator of exclusive, long-distance rail tours including the flagship Golden Eagle Trans-Siberian Express. Our Voyages of a Lifetime by Private TrainT operate worldwide through Russia, Kazakhstan, Uzbekistan, Turkmenistan, Mongolia and China.</p>
 <div class="thepet">
 <p>Each luxury train journey is designed and operated exclusively and we are careful to never lose sight of the little things that really matter, so that you can experience any of our Voyages of a Lifetimein a relaxed and informed manner. We take care of all the details and make accessible unforgettable destinations that are often difficult for independent travellers to visit. Each tour is meticulously planned by our experienced and knowledgeable Operations Team to offer you a unique travel experience.</p>
