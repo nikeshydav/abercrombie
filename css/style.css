@@ -713,3 +713,9 @@ margin-left: 0px;}
 
 .col_3{width: 227px; margin-left: 11px; padding: 0 0 0 10px;}
 .right_line_content{color: #5d6064; float:left; width:223px; font-weight:bold; font-size:14px;}
+.hightlight ul li{list-style:disc;}
+.heading {  color: #00447C;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
