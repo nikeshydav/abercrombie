@@ -29,7 +29,7 @@ include("../classes/mimemail.class.php");
 <script language="javascript">
 function showMe(tab)
 {		
-	for(var i=1; i<=12; i++)
+	for(var i=1; i<=16; i++)
 	{
 		var name="tab"+i;
 		var name2="divli"+i;
@@ -70,6 +70,11 @@ function showMe(tab)
 			});
 		}
 		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+                if(name == 'tab16'){
 		  $(document).ready(function(){
 				gmapInitialize2();
 			});
@@ -255,12 +260,17 @@ href="../yahoo.html">
 </div>
 </div>
 <p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
+<div class="Clr"></div>
+
+<div class="count-page"> <a href="africa-zambia-recommended-Itineraries.html"><strong>1</strong></a> | <a href="africa-zambia-recommended-Itineraries_1.html">2</a> |<a href="africa-zambia-recommended-Itineraries_1.html"> Next > </a> </div>
+<div class="Clr"></div>
+
 <div class="RecommendedBox">
 <div class="leftbox"><img src="../images/zambia-recommended1.jpg" alt="Recommended" /></div>
-<div class="rightbox"><h2>Classic Zambia</h2>
-<p><strong>Duration: </strong>9 days<br />
-<strong>Highlights:</strong>  South Luangwa National Park, Lower Zambezi National Park, Zambezi River and Mosi-oa Tunya National Park.  </p>
-<p>Spend 9 days exploring the wonders of the South Luangwa with the magnificent Zambezi River, and the wildlife</p>
+<div class="rightbox"><h2>An African Walking Safari</h2>
+<p><strong>Duration: </strong>8 days<br />
+<strong>Highlights:</strong>  Johannesburg, Zambia, South Luangwa National Park and Zambezi River  </p>
+<p>This itinerary is ideal for those seeking a remote bush experience coupled with great hospitality and spectacular opportunities to explore.</p>
 </div>
 <div class="bottom">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
@@ -276,10 +286,11 @@ href="../yahoo.html">
 
 <div class="RecommendedBox">
 <div class="leftbox"><img src="../images/zambia-recommended2.jpg" alt="Recommended" /></div>
-<div class="rightbox"><h2>Classic South Luangwa</h2>
-<p><strong>Duration:</strong>  8 days<br />
-<strong>Highlights:</strong> Zambia and South Luangwa National Park </p>
-<p>This trip offers you a great chance to enjoy a safari in the magnificent South Luangwa National Park . The South Luangwa is the home of the walking safari and here you will be able to enjoy a </p>
+<div class="rightbox"><h2>Classic Zambia</h2>
+<p><strong>Duration:</strong>  6 days<br />
+<strong>Highlights:</strong> South Luangwa National Park, Livingstone, Victoria Falls. </p>
+<p>Zambia has much to offer the visitor - exciting game drives, exclusive lodges and the mighty Victoria Falls. This itinerary is ideal for a first time
+visitor to the region.</p>
 </div>
 <div class="bottom">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
@@ -295,10 +306,11 @@ href="../yahoo.html">
 
 <div class="RecommendedBox">
 <div class="leftbox"><img src="../images/zambia-recommended3.jpg" alt="Recommended" /></div>
-<div class="rightbox"><h2>Zambia Safari</h2>
-<p><strong>Duration:</strong>  11 days<br />
-<strong>Highlights:</strong> Lusaka, Mfuwe, South Luangwa </p>
-<p>This eleven day trip is the perfect introduction to Zambia, while staying at beautiful little camps in areas known for excellent game viewing. </p>
+<div class="rightbox"><h2>Fascinating Botswana, Zambia and South Africa</h2>
+<p><strong>Duration:</strong>  15 days<br />
+<strong>Highlights:</strong> Johannesburg and the Cradle of Humankind, Cape Town, Zambezi River, Chobe National Park, Victoria Falls and the Okavango
+Delta. </p>
+<p>Discover the cities, bush and dramatic scenery of Botswana, South Africa and Zambia with this exciting programme.</p>
 </div>
 <div class="bottom">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
@@ -311,7 +323,28 @@ href="../yahoo.html">
 <a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
 </div>
 </div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/zambia-recommended3.jpg" alt="Recommended" /></div>
+<div class="rightbox"><h2>Livingstone Adventure</h2>
+<p><strong>Duration:</strong>  5 days<br />
+<strong>Highlights:</strong> Johannesburg, Zambia, Livingstone and Botswana </p>
+<p>This itinerary allows you to experience the natural wonders of Zambia, and its customised according to your interests of great wildlife viewing.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
+</div>
+</div>
+
 <div class="Clr"></div>
+<div class="count-page"> <a href="africa-zambia-recommended-Itineraries.html"><strong>1</strong></a> | <a href="africa-zambia-recommended-Itineraries_1.html">2</a> |<a href="africa-zambia-recommended-Itineraries_1.html"> Next > </a> </div>
 </div>
 <!-- Center Container Part End Here -->
 <div class="Clr"></div>
@@ -321,7 +354,7 @@ href="../yahoo.html">
 <!-- Footer Part Start Here -->
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
-<!-- Classic Zambia Content Start Here -->
+<!-- African Walking Safari Start Here -->
 <div id="popup1" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -342,127 +375,131 @@ href="../yahoo.html">
 </div>
 <div id="tab1">
 <div class="logoinner1"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
-<h1>Classic Zambia </h1>
-<div class="popupbanner"><img src="../images/zambia-inner.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<h1>An African Walking Safari </h1>
+<div class="popupbanner"><img src="../images/zambia_african_walking_safari.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong>  9 days</p>
-<p>Spend 9 days exploring the wonders of the South Luangwa with the magnificent Zambezi River, and the wildlife that gathers on its banks in the Lower Zambezi National Park.</p>
+<p><strong>Duration:</strong>  8 days</p>
+<p>This itinerary is ideal for those seeking a remote bush experience coupled with great hospitality and spectacular opportunities to explore.</p>
 <p>
-<strong>Highlights:</strong> South Luangwa National Park, Lower Zambezi National Park, Zambezi River and Mosi-oa Tunya National Park.</p>
+<strong>Highlights:</strong> Johannesburg, Zambia, South Luangwa National Park and Zambezi River</p>
 </li>
 <li><h4>Day 1</h4>
-<h5>Arrive in Lusaka</h5>
-<p>On arrival at Lusaka International Airport a representative will meet & assist you.  </p>
-<p>Depart on a scheduled light aircraft transfer from Lusaka Airport to Mfuwe Airport.</p>
-<p>On arrival at Mfuwe Airport, a representative will meet and transfer you. Road transfer to South Luangwa National Park in open 4x4 vehicles on a tarmacced road. The approximate transfer time is 45 minutes.</p>
-<p>45 minute gravel road game drive transfers to Sanctuary Puku Ridge Camp.</p>
+<h5>Arrive in Zambia</h5>
+<p>On arrival at Lusaka International Airport, a representative will meet you, hand over further documentation and assist you onto your Proflight
+flight to Mfuwe. The flying time from Lusaka to Mfuwe is approximately 1 hour. </p>
+<p>On arrival at Mfuwe Airport, a representative will meet and transfer you to Sanctuary Chichele Presidential Lodge. The road transfer time is
+approximately 2 hours, subject to game viewing enroute.</p>
+<p>This historic property, once the bush retreat of President Kenneth Kaunda of Zambia, has a magnificent hilltop location in Zambia's premier
+game viewing area, the South Luangwa National Park. Carefully restored by Sanctuary Retreats to preserve its turn-of-the-century elegance,
+Sanctuary Chichele Presidential Lodge is approached through a majestic arched entrance leading to a huge colonial-style lounge. Its long
+terrace, with commanding views across the valleys of the South Luangwa, is the perfect place to enjoy breakfast or afternoon tea. Chichele has
+ten air-conditioned suites, each with French doors onto individual balconies overlooking the valley. The lodge is accessible all year around and
+the ideal base for exploring the prolific wildlife that populates the mosaic of different habitats surrounding the Luangwa River.</p>
+<p>Game drives in the lodge's customized 4 x 4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its
+frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft
+giraffe and Cookson's wildebeest.</p>
 <p>
 The remainder of the day is at leisure to enjoy the game viewing activities on offer.  The camp manager will advise details of all the activities available.</p>
-<p>       
-Activities available include:<br />
-Game Drives - A full range of game drives and night drives in the South Luangwa National Park using open 4X4 vehicles driven by a knowledgeable guide. On night game drives, guests will return to camp by 8pm.</p>
-<p>
-Walking Safaris - The emphasis in this area is on the wonderful opportunities for walking safaris. Guided walks are led by a professional Sanctuary guide and an armed national parks scout.</p>
-<p>
-<strong>Overnight:</strong> Sanctuary Puku Ridge Camp<br />
-<strong>Meal Plan:</strong> L,D
-</p>
+<p>This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out
+on foot with a Zambian professional guide and qualified Park Ranger as guests learn about the bush from a different perspective, up close and
+personal with the environment.</p>
+<p><strong>Overnight:</strong> Sanctuary Chichele Presidential Lodge<br />
+<strong>Meal Plan:</strong> D</p>
 </li>
 <li>
 <h4>Day 2</h4>
 <h5>South Luangwa National Park</h5>
-<p>This day is at leisure to enjoy the game viewing activities on offer.</p>
-<p>
-Overnight: Sanctuary Puku Ridge Camp<br />
-Meal Plan: B,L,D</p>
+<p>After an early morning game viewing activity, you will set off to Sanctuary Zebra Plains Walking Camp for your next adventure.</p>
+<p>Sanctuary Zebra Plains is located in a beautiful and untouched area of the South Luangwa, perched on a sand bank at the confluence of the
+Luangwa and Chibembe Rivers. There are just four traditional tents. The camp accommodates a maximum of six guests, allowing for an
+intimate exploration of the South Luangwa. All tents have real beds, campaign furniture, mosquito nets, and en-suite facilities. Water for al
+fresco showers is mixed to your preferred temperature by a tent attendant. The main mess tent has a dining area although most of the meals
+will be served in the open in carefully selected vantage points. There is also a small library and bar area.</p>
+<p>This seasonal camp will operate from June to October each year. The camp has been designed to leave the lowest possible carbon footprint
+and will be packed up completely each year with no trace that it was ever there between seasons.</p>
+<p>In order to fully explore the South Luangwa, guests will spend three nights at the camp with set departures on Monday or Thursday.</p>
+<p><strong>Overnight:</strong>Sanctuary Zebra Plains Walking Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
 <h4>Day 3</h4>
 <h5>South Luangwa National Park</h5>
-<p>This days at leisure to enjoy the game viewing activities on offer.</p>
-<p>
-<strong>Overnight:</strong> Sanctuary Puku Ridge Camp <br />
-<strong>Meal Plan:</strong> B,L,D
+<p>Garth Hovell, a safari guide with almost twenty years of experience, will lead walks twice a day. There will be a morning and afternoon walk each
+day. Garth will share with you some of the most fascinating, yet easily missed, sights and sounds of the bush.</p>
+<p>One morning you might wander along a river bank, observing hippos before canoeing across to a large island across from camp to get up close
+to plains game. Later that day you may choose to explore nearby Zebra Plains where buffalo, elephant and eland gather in large herds on the
+open savannah, a rarity in the wooded terrain of the South Luangwa. Another day your destination might be the Changwa Channel, featured in
+David Attenboroughs Life series and home to one of the largest hippo populations on earth.<br>
+However its not just the big animals that are fascinating termites, dung beetles, chameleons and the prolific bird life all have their stories to tell.</p>
+<p>You will be also be accompanied by an armed games scout as well as a Sanctuary tea bearer who will make fresh cups of tea or coffee in the
+middle of the bush using a stainless steel kettle and traditional fire making skills.</p>
+<p><strong>Overnight:</strong> Sanctuary Puku Ridge Camp <br />
+<strong>Meal Plan:</strong>D</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>South Luangwa to lower Zambezi</h5>
-<p>You will enjoy an early morning game viewing activity before being transferred to Mfuwe Airport for a scheduled shared light aircraft transfer to Kulefu.  45 minute gravel road game drive transfer followed by a 45 min tarmacced road transfer to Mfuwe in open 4x4 vehicles.</p>
-<p>Depart Mfuwe on a scheduled shared light aircraft transfer to Kulefu via Lusaka.  On arrival at Lusaka Airport, a representative will meet and assist you to your onward flight.</p>
-<p>Kulefu airstrip: 10-15 minute boat transfer from airstrip to camp. The transfer may take longer depending on game viewing opportunities en route.</p>
-<p>Jeki Airstrip: The transfer from Jeki is 1 hour 30 minutes with an option of a 30 minute game drive followed by a 1 hour boat transfer.</p>
-<p>Royal Zambezi Airstrip: The transfer from Royal Zambezi Airstrip is a 20 minute road transfer followed by a boat 2 hour transfer.</p>
-<p>The remainder of the day is at leisure to enjoy the game viewing activities on offer.</p>
-<p>Activities available include:<br />
-Game Drives - guests can take professionally guided day and night drives through the riverine woodlands in customised 4x4 vehicles.</p>
-<p>Walking Safaris - game walks offer a perfect way to experience the bush up close and personal. Walking safaris are conducted by a professional guide and are always escorted by an armed national parks scout.</p>
-<p>Motorised boat - early morning or sunset river cruises are available as well as fishing in the Zambezi River (subject to water levels).</p>
-<p>Canoeing Excursions - enjoy an unforgettable canoe ride down the river to see the local wildlife from the river level.</p>
-<p>Fishing Excursions- fishing trips for game fish such as catfish, bream or the renowned tiger fish on a catch and release basis can be organized.</p>
-<p><strong>Overnight:</strong>Sanctuary Zambezi Kulefu <br />
+<h5>Lower Zambezi National Park</h5>
+<p>Today you will enjoy your last activity before departing for Mfuwe Airport for your flight to the Lower Zambezi.</p>
+<p>On arrival at Jeki Airstrip, a representative will meet and transfer you to the camp.</p>
+<p>Chiawa Camp is a must for any visit to Zambia. Superb accommodation, magnificent game viewing and scenery, and a large variety of activities
+are complemented by a modern infrastructure and an attentive, professional staff. Resting peacefully on the river bank, in a grove of mahogany
+and acacia trees, the lodge is constructed essentially of natural materials, and is designed to ensure its idyllic setting can be fully appreciated.
+All tents are under thatch, have en-suite facilities with hot & cold running water, twin or double beds, insect screens and solar powered lighting.</p>
+<p>Guests can be accommodated in 8 well- appointed safari tents, each on a raised timber deck with private veranda. Access paths to the tents run
+through a grove of Mahoganey trees behind them, maximizing privacy. The honeymoon suite has a beautiful private view of the Zambezi, the
+escarpment and the Chiawa River bed. The tent is light and spacious and the en-suite facilities are to die for. Victorian bath, his and hers wash
+basins and a shower for two all in wood and brass.</p>
+<p>The spacious lounge and bar area has an observation platform built into its roof, providing one of the best views in the valley. Of course the
+dining area also looks out onto the river and the animals which regularly come to drink and feed at and near the lodge. Enjoy barbeques under
+the stars on our al-fresco dining veranda, while your hosts oversee your comfort and the preparation of Chiawa's renowned cuisine.</p>
+<p>After dinner, retire to the campfire and enjoy a cocktail or two while taking in the sounds and magic of the African night.</p>
+<p>Another viewing platform has been constructed in the quietest corner of the lodge, overlooking the confluence of the Chiawa & Zambezi rivers.
+Sip a cup of tea or a Pimm's while watching nature move at nature's pace and savour the tranquility of Real Africa.</p>
+<p><strong>Overnight:</strong>Chiawa Camp <br />
 <strong>Meal Plan:</strong>B,L,D</p>
 </li>
 <li>
 <h4>Day 5</h4>
-<h5>Lower Zambezi </h5>
-<p>The Zambezi shares a heady mix of strength and tranquility with all who come close to it - and it is this very special essence which Sanctuary Zambezi Kulefu Camp manages to capture. Kulefu, which<br />
-means "the faraway place", is an Eden of wild places, located on a permanent channel of the Zambezi in the cool shade of a grove of Winterthorn Acacias.</p>
-<p>This day is at leisure to enjoy the game viewing activities on offer.</p>
-<p><strong>Overnight:</strong>Sanctuary Zambezi Kulefu Camp<br />
+<h5>Lower Zambezi National Park </h5>
+<p>At Chiawa Camp it is all about the wildlife, the bush and the river, and an impressive variety of safari activities are available, led by our award
+winning team of Africa-born guides with an unmatched fleet of vehicles, boats and canoes at their disposal - for all of which our safari operation
+has become world-renowned.</p>
+<p>This means that guests will enjoy levels of choice & convenience not found elsewhere and where the duration of a safari activity is determined
+by the rhythm of the bush (& enthusiasm of our guests) rather than by the clock.</p>
+<p>Not only that, your guides who are to differing extents products of our own in house training program, will guide sympathetically with the best
+interests of the wildlife, the environment and you at heart meaning that you will get the very best out of your visit to the Lower Zambezi National
+Park.</p>
+<p>Safety is always a priority so all guides have recurrent Advanced first aid training and all boats and vehicles, canoe trips and walks carry first
+comprehensive first aid kits and are linked to both camps by our VHF radio network.</p>
+<p>This is the safest and most effective way to view big game. Drives are conducted in open 4wd vehicles that have been specially adapted for
+safari use with comfy seats, pockets to stow your gear and bean bags to steady your camera for those all important photos. Usually departing in
+the early morning, drives can last anywhere from 2 to 4 hours depending on what's seen and the requirements of the guests. In the late
+afternoon drives set off for an hour or so before stopping at a scenic point for sundowners.</p>
+<p>Pioneered in Zambia, bush walks are essentially a "micro-safari". An armed ranger with your qualified and experienced pro guide will guide you
+through the wilderness on foot, interpreting spoor, identifying the various flora and fauna, and highlighting conservation issues. However
+elephants and buffalo are seen on most walks and sometimes the big cats so expect anything at anytime. The pace is leisurely and the duration
+is determined by guests' requirements and what is seen on the walk. Typically, a few hours are sufficient.</p>
+<p>One of the great aspects of a visit to Chiawa Camp is the variety of activities offered by virtue of our presence on the Zambezi river.</p>
+<p><strong>Overnight:</strong>Chiawa Camp<br />
 <strong>Meal Plan:</strong>B,L,D </p>
 </li>
 <li>
 <h4>Day 6</h4>
 <h5>Lower Zambezi National Park</h5>
-<p>This day is at leisure to enjoy the game viewing activities on offer.</p>
-<p><strong>Overnight:</strong>Sanctuary Zambezi Kulefu<br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<p>Enjoy game activities at leisure.</p>
+<p><strong>Overnight:</strong><br />
+<strong>Meal Plan:</strong> </p>
 </li>
 <li>
 <h4>Day 7</h4>
-<h5>Lower Zambezi to Livingstone </h5>
-<p>Time permits you to enjoy an early morning game viewing activity before being transferred to Kulefu airstrip.
-On arrival at Livingstone airport, a Sussi & Chuma representative will meet and transfer you to the lodge.  The transfer time is approximately 20 minutes.</p>
-<p>
-The rest of their day is at leisure to enjoy the game viewing activities on offer.</p>
-<p>
-Sanctuary Sussi & Chuma, located in the Mosi-oa-Tunya National Park on the banks of the Zambezi River, only 12km from Victoria Falls, consists of an exclusive upmarket lodge and two spacious two bedroom houses.</p>
-<p>
-The remainder of the day is at leisure to enjoy the activities on offer. <br />
-Activities include:</p>
-<p>
-A guided tour of Victoria Falls from the Zambian Side. </p>
-<p>
-A cultural Simonga Village Visit where the village scouts and guides show guests around the village.</p>
-<p>
-Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehicles, accompanied by a professional guide.</p>
-<p>Motorised Boat Safaris and Sundowner Cruises: Early morning or sunset river cruises are available.</p>
-
-<p><strong>Overnight:</strong> Sanctuary Sussi & Chuma<br />
-<strong>Meal Plan:</strong>B,L,D</p>
+<h5>Depart Zambia </h5>
+<p>After a morning activity, you will be transferred to Jeki Airstrip for your flight to Lusaka and connecting onto your homeward International flight.</p>
+<p><strong>Overnight:</strong><br />
+<strong>Meal Plan:</strong></p>
 </li>
-<li>
-<h4>Day 8</h4>
-<h5>Livingstone </h5>
-<p>Your day is at leisure to enjoy the activities on offer.</p>
-
-<p><strong>Overnight:</strong> Sanctuary Sussi & Chuma<br />
-<strong>Meal Plan:</strong>B,L,D</p>
-</li>
-<li>
-<h4>Day 9</h4>
-<h5>Livingstone to Johannesburg</h5>
-<p>Time permitting you to enjoy an early morning activity before their transfer to Livingstone Airport.  The transfer time is approximately 20 minutes.</p>
-<p>On arrival at Tambo International Airport, a representative will meet and assist clients to their onward flight.</p>
-<p>You will have access to the Premier Lounge.</p>
-
-<p>
-<strong>Meal Plan:</strong>B</p>
-</li>
-
 </ul>
 </div>
 
@@ -588,8 +625,8 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 
 </div>   
 </div>
-<!-- Classic Zambia Content End Here -->
-<!-- Classic South Luangwa Content Start Here -->
+<!-- African Walking Safari End Here -->
+<!--  Classic Zambia & Victoria Falls Start Here -->
 <div id="popup2" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -610,106 +647,100 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 </div>
 <div id="tab5">
 <div class="logoinner1"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
-<h1>Classic South Luangwa</h1>
-<div class="popupbanner"><img src="../images/southluangwa-inner.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<h1>Classic Zambia</h1>
+<div class="popupbanner"><img src="../images/fascinating-botswana.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong>  8 days</p>
-<p>This trip offers you a great chance to enjoy a safari in the magnificent South Luangwa National Park . The South Luangwa is the home of the walking safari and here you will be able to enjoy a game-rich, wild and remote experience with some of the best game viewing on the continent.</p>
-<p><strong>Highlights:</strong> Zambia and South Luangwa National Park</p>
+<p><strong>Duration:</strong>  6 days</p>
+<p>Zambia has much to offer the visitor - exciting game drives, exclusive lodges and the mighty Victoria Falls. This itinerary is ideal for a first time
+visitor to the region.</p>
+<p><strong>Highlights:</strong> South Luangwa National Park, Livingstone, Victoria Falls.</p>
 
 </li>
 <li><h4>Day 1</h4>
-<h5>Arrive in Lusaka</h5>
-<p>On arrival in Lusaka, a representative will meet and assist you to your onward flight.</p>
+<h5>Arrive Zambia</h5>
+<p>As you will be entering Zambia, a single entry visa will be required and is obtainable at the point of entry at a cost of USD 50.00 per person,
+payable in cash. The visa fee is subject to change at the discretion of the Zambian Government.</p>
 
-<p>Depart by Proflight scheduled light aircraft transfer from Lusaka Airport to Mfuwe Airport. The flying time is approximately 1 hour and 10 minutes.</p>
+<p>Depart by scheduled light aircraft transfer from Lusaka Airport to Mfuwe Airport. The flying time is approximately 1 hour and 10 minutes.</p>
 
-<p>Arrive at Mfuwe Airport where a representative will meet and transfer you to the camp. Access to Puku Ridge Camp is by air to Mfuwe Airport. The transfer time from the airport to the lodge is</p>
-<p>approximately 2 hours in 4 X 4 vehicles (45 minute road transfer through the village of Mfuwe and then 45 minutes game drive in the South Luangwa National Park).</p>
+<p>Upon arrival, transfer to Chichele Presidential Lodge. This historic property, once the bush retreat of President Kenneth Kaunda, has a
+magnificent hilltop location in Zambia's premier game viewing area, the South Luangwa National Park. Its long terrace, with commanding views
+across the valleys of the South Luangwa, is the perfect place to enjoy breakfast or afternoon tea. Chichele has ten air-conditioned suites, each
+with French doors onto individual balconies overlooking the valley. The lodge is accessible all year around and the ideal base for exploring the
+prolific wildlife that populates the mosaic of different habitats surrounding the Luangwa River.</p>
+<p>The afternoon is at leisure to enjoy one of the game viewing activities on offer.</p>
 
-<p>Sanctuary Puku Ridge Camp is situated in a remote part of South Luangwa National Park.</p>
-<p>This small and intimate camp has been constructed to blend into the local surroundings. The camp offers seven luxury oversized tents with a wrap around view of the floodplains. Each of the</p>
-<p>comfortably furnished tents boasts en-suite facilities which provide the option of taking a shower with the sun on your shoulders. All tents feature mosquito nets, private deck, ceiling fan and hairdryer.    </p>
-
-<p>The remainder of clients day is at leisure to enjoy the game viewing activities on offer.</p>
-
-<p><strong>Overnight:</strong> Sanctuary Puku Ridge Camp<br />
+<p><strong>Overnight:</strong> Chichele Presidential Lodge<br />
 <strong>Meal Plan:</strong> L,D</p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>South Luangwa National Park</h5>
-<p> A full day at leisure to enjoy the game viewing activities on offer.</p>
-
-
-<p><strong>Overnight:</strong> Sanctuary Puku Ridge Camp<br />
+<h5>South Luangwa</h5>
+<p> Today is at leisure to enjoy the game viewing activities on offer.</p>
+<p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its
+frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft
+giraffe and Cookson's wildebeest.</p>
+<p>This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on
+foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with
+the environment.</p>
+<p><strong>Overnight:</strong> Chichele Presidential Lodge<br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5>South Luangwa National Park</h5>
-<p>A full day at leisure to enjoy the game viewing activities on offer.</p>
-<p>Wildlife to be seen includes elephant, hippo, lion, wild dog, buffalo and a wide variety of antelope in addition to endemic species such as the Thornicroft's giraffe. This is an excellent area for spotting leopards.</p>
+<h5>South Luangwa</h5>
+<p>Today is at leisure to enjoy the game viewing activities on offer.</p>
+<p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its
+frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft
+giraffe and Cookson's wildebeest.</p>
 
-<p>A full range of game drives and night drives in the South Luangwa National Park are available using open 4X4 vehicles driven by a knowledgeable guide. On night game drives, and you will return to camp by 8pm.    </p>   
+<p>This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on
+foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with
+the environment.</p>   
 
-<p><strong>Overnight:</strong> Sanctuary Puku Ridge Camp<br />
+<p><strong>Overnight:</strong> Chichele Presidential Lodge<br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>South Luangwa National Park</h5>
-<p>Clients will enjoy a game drive transfer in open vehicles to Sanctuary Zebra Plains.  Time and details of the transfer will be advised locally and the approximate transfer time is 3 hours.</p>
-<p>
-Sanctuary Zebra Plains is located in a particularly untouched and beautiful area of the South Luangwa, perched on a sandbank at the confluence of the Luangwa and Chibembe Rivers.</p>
-
-<p>Sanctuary Zebra Plains is a luxury walking safari camp with just four traditional tents, two twins and two doubles. The camp accommodates a maximum of six guests, allowing for an intimate exploration of the park.</p>
-
-<p>Each tent features real, comfortable beds, campaign furniture, mosquito nets and a luggage rack. All tents have a bathroom with wash basin and running water (hot water will be provided on request) as well as flush toilets. Water for al fresco showers is prepared to your preferred temperature by a tent attendant.</p>
-
-<p>The main area offers a library, bar and dining area. Power is supplied by solar panels and a battery inverter system. Lighting is predominantly by paraffin lanterns throughout. You will be able to charge batteries for cameras in the main area.</p>
-<p><strong>Overnight:</strong> Sanctuary Zebra Plains<br />
+<h5>South Luangwa Livingstone</h5>
+<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to the Mfuwe airstrip. The transfer time will be
+confirmed to you locally by the camp management.</p>
+<p>Depart by scheduled light aircraft transfer from Mfuwe Airport to Livingstone Airport via Lusaka Airport. The flying time is approximately 2 hours
+and 45 minutes.</p>
+<p>On arrival at Livingstone Airport please clear customs and immigration and collect your luggage. Proceed through into the Arrivals Hall, where a
+representative will meet and transfer you to Sussi & Chuma. The transfer time is approximately 30 minutes.</p>
+<p>Sussi & Chuma is named after David Livingstone's faithful companions and consists of an intimate lodge and two exclusive houses, both of
+which are situated to make the most of the amazing views that the sweeping Zambezi River provides.</p>
+<p>The central lodge building features a raised bar/lounge deck, open air dining area, swimming pool and a spa which provide incredible views of
+the mighty Zambezi.</p>
+<p>The afternoon is at leisure to enjoy an activity on offer.</p>
+<p><strong>Overnight:</strong> Sussi &amp; Chuma<br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 
+<li>
+<h4>Day 5</h4>
+<h5>Livingstone</h5>
+<p>The day is at leisure to enjoy the activities on offer.</p>
+<p>Activities offered at the lodge include game drives in the Mosi-oa-Tunya National Park, where guests can see a variety of game, including white
+rhino, elephant, buffalo and giraffe. Tours of the incredible Victoria Falls, a World Heritage Site, are another must as they give guests an
+opportunity to experience one of the seven great natural wonders of the world.</p>
+<p><strong>Overnight:</strong> Sussi &amp; Chuma<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
 <li>
 <h4>Day 6</h4>
-<h5>South Luangwa National Park</h5>
-<p>Enjoy this day exploring the area on foot.</p>
-<p>The concentration of wildlife in the area is simply awe-inspiring - zebra, antelope, buffalo and puku congregate on the plains alongside endemic species such as the Thornicroft's giraffe, Cookson's wildebeest and unique Crawshay's zebra. Predators here include lion, leopard and the elusive wild dog whilst the rivers and tributaries are teeming with hippo, elephant and crocodile. There are also over 400 species of birds.</p>
-<p><strong>Overnight:</strong> Sanctuary Zebra Plains<br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>Depart Livingstone</h5>
+<p>After breakfast this morning you will be transferred by a camp manager to the Livingstone airport. The transfer time is approximately 30 minutes.</p>
+<p>The flying time from Livingstone Airport to Lusaka Airport is approximately 1 hour 10 Minutes.</p>
+<p>On arrival at Lusaka International Airport, a representative will meet and assist you with check-in for your onward flight.</p>
+<p><strong>Overnight:</strong><br />
+<strong>Meal Plan:</strong> B</p>
 </li>
-<li>
-<h4>Day 7</h4>
-<h5>South Luangwa National Park to Lusaka</h5>
-<p>Enjoy a game drive transfer back to Sanctuary Puku Ridge Camp from where you will be transferred to Mfuwe Airport.</p>
-
-<p>Depart Mfuwe Airport on a shared light aircraft transfer to Lusaka.  The approximate flying time is 1 hour.</p>
-
-<p>On arrival at Lusaka Airport, a representative will meet and transfer you to the Taj Pamodzi Hotel.</p>
-
-<p>The remainder of the evening is at leisure.</p>
-
-<p>Overnight: Taj Pamodzi Hotel<br />
-Meal Plan: D</p>
-</li>
-<li>
-<h4>Day 8</h4>
-<h5>Lusaka </h5>
-<p>
-This morning a representative will meet and transfer you to Lusaka International Airport for their departure flight.</p>
-<p>Enjoy an exciting safari at two of Zambia's best National Parks. The game drives and walking safaris in the South Luangwa combine perfectly with the water-based safari activities of the Lower Zambezi.</p>
-
-<p>The combination of the South Luangwa and North Luangwa National Park offers a deep insight into the African bush and is perfect if you don't want to sit in a safari vehicle all day. There is stunning game viewing in the South Luangwa, combined with </p><p>expeditions to remote bush camps and exploring the park on foot, on mountain bike and even by microlight. Heading north, you will discover one of Africa's most pristine wildernesses on foot, giving you a deep understanding of the animals and the land they live in.</p>
-
-
-</li>
-
-
 </ul>
 </div>
 
@@ -889,8 +920,8 @@ This morning a representative will meet and transfer you to Lusaka International
 
 </div>   
 </div>
-<!-- Classic South Luangwa Content End Here -->
-<!-- Zambi Safari Content Start Here -->
+<!--  Classic Zambia & Victoria Falls End Here -->
+<!--  Fascinating Botswana, Zambia and South America Start Here -->
 <div id="popup3" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -911,117 +942,292 @@ This morning a representative will meet and transfer you to Lusaka International
 </div>
 <div id="tab9">
 <div class="logoinner1"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
-<h1>Zambi Safari</h1>
-<div class="popupbanner"><img src="../images/zambia-inner.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<h1>Fascinating Botswana, Zambia and South Africa</h1>
+<div class="popupbanner"><img src="../images/fascinating-botswana.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong> 11 days</p>
-<p>
-This eleven day trip is the perfect introduction to Zambia, while staying at beautiful little camps in areas known for excellent game viewing. </p>
-<p>
-<strong>Highlights:</strong> Lusaka, Mfuwe, South Luangwa</p>
+<p><strong>Duration:</strong> 15 days</p>
+<p>Discover the cities, bush and dramatic scenery of Botswana, South Africa and Zambia with this exciting programme.</p>
+<p><strong>Highlights:</strong> Johannesburg and the Cradle of Humankind, Cape Town, Zambezi River, Chobe National Park, Victoria Falls and the Okavango
+Delta.</p>
 </li>
 <li><h4>Day 1</h4>
-<h5>Arrive in Lusaka</h5>
-<p>On arrival at Lusaka International Airport, please clear customs and immigration and collect your luggage. </p>
-<p>
-Proceed through into the Arrivals Hall where a representative will meet and assist you to check-in for your onward flight.</p>
-<p>
-Please note that there is a luggage restriction of 33lbs (15kg) per person including hand luggage and all camera equipment on flights within Zambia.</p>
-<p>
-Depart Lusaka on a scheduled light aircraft flight to Mfuwe.</p>
-<p>
-On arrival at Mfuwe Airport, a representative will meet and transfer you to the camp. The transfer time is approximately 2 hours, subject to game viewing en-route.</p>
-<p>
-Nsefu is in the heart of the national park and the game viewing is spectacular. The Camp offers charm and total comfort in remoteness and seclusion. The perennial Luangwa River is the very life-blood of the Park and, together with its many oxbow lagoons, it ensures a permanent supply of water to support high concentrations of wildlife.</p>
-<p>
-Nsefu is a lovely camp with a nostalgic ambience and a wonderful location. As at all Robin Pope camps, the atmosphere is intimate, the camp staff friendly and professional, and the service highly personalized.</p>
-<p>
-Non premium brands of spirits, beer, wine, bottled water and soft drinks are included at all times.</p>
-<p>
-<strong>Overnight:</strong> Nsefu Camp<br />
-<strong>Meal Plan:</strong> L,D</p>
+<h5>	Arrive in Johannesburg</h5>
+<p>On arrival at OR Tambo International Airport a representative will meet you, hand over your documents and then it's on to the hotel.</p>
+<p>The transfer time is approximately 1 hour and 45 minutes. Please NOTE that South Africa immigrations require you to have two completely blank
+visa pages in your passport per entry; without this you will be denied entry.</p>
+<p>Please note that check in at the hotel is 14h00, an early check in has been requested but cannot be guaranteed, thus please store your luggage
+with the concierge until your room becomes available.</p>
+<p>Located only 45 minutes from the bustling city of Johannesburg in the peaceful valley of Sterkfontein, South Africa, lies the Cradle of Humankind,
+home to the five star Forum Homini. The Cradle of Humankind is a World Heritage site and the world's richest hominid site.</p> 
+<p>The twelve luxury suites at Forum Homini are partly submerged by veld grass roots forming part of the view of the rolling landscapes. These
+rooms are like luxurious caves with shutter concrete roofs that open up onto the view beyond. These suites included handmade stalactite lights,
+magnificent fireplaces, a luxury king size bed, large oval baths and open air showers.</p>
+<p>The remainder of the day is at leisure.</p>
+<p><strong>Overnight:</strong> Forum Homini<br />
+<strong>Meal Plan</strong> None
+</p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>South Luangwa National Park</h5>
-<p>
-Your days are at leisure to enjoy the game viewing activities on offer.</p>
-<p><strong>Overnight:</strong> Nsefu Camp<br />
+<h5>Arrive in Livingstone</h5>
+<p>Please meet the representative in the reception area of the hotel for your transfer to OR Tambo International.</p>
+<p>Depart Johannesburg on a scheduled flight to Livingstone. As you will be entering Zambia, a single entry visa will be required and is obtainable
+at the point of entry at a cost of US $50 per person, payable in cash. The visa fee is subject to change at the discretion of the Zambian
+Government.</p>
+<p>On arrival at Livingstone Airport a lodge representative will meet and transfer you to the lodge. The transfer time is approximately 25 minutes.</p>
+<p>Sanctuary Sussi & Chuma Camp is named after David Livingstone's faithful companions and consists of an intimate lodge and two exclusive
+houses, both of which are situated to make the most of the amazing views that the sweeping Zambezi River provides.</p>
+<p>Guest accommodation consists of twelve luxury tree houses and two two-bedroomed houses, built into the canopy of majestic ebony trees,
+which shelter a stunning variety of bird life. Each unit has a private view of the Zambezi and is en suite with air conditioning, mini bar, mosquito
+nets, overhead fan and hairdryer.</p>
+<p>The central lodge building features a raised bar/lounge deck, open air dining area, curio shop, swimming pool and a spa which provide incredible
+views of the mighty Zambezi. Meals are table d'hote with a wide variety of dishes available, served alfresco, often around a roaring fire in the
+evening.</p>
+<p>Activities offered at the lodge include, game drives in the Mosi-oa-Tunya National Park, where guests can see a variety of game, including white
+rhino, elephant, buffalo and giraffe. Tours of the incredible Victoria Falls, a World Heritage Site, are a must as they give guests an opportunity to
+experience one of the seven great natural wonders of the world.</p>
+<p>The afternoon is at leisure to enjoy the activity on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Sussi &amp; Chuma - Tree house<br />
+<strong>Meal Plan:</strong> B,L,D
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5> Botswana&#39;s wilderness Sanctuary Chobe Chilwero</h5>
+<p>Time permitting the morning is at leisure to enjoy an activity on offer. After breakfast a lodge representative will transfer you to Livingstone
+Airport. The transfer time will be advised to you locally.</p>
+<p>Please note that there is a luggage restriction of 20kg per person including hand luggage and all camera equipment on all the inter-camp flights
+within Botswana. Should you have excess luggage there is a luggage storage facility at O.R. Tambo International Airport. Please settle all
+storage costs directly.</p>
+<p>Depart Livingstone on a Mack Air shared light aircraft charter flight to Kasane Airport. The flying time to Kasane is approximately 25 minutes.</p>
+<p>Deep in the heart of the Botswana wilderness lies Sanctuary Chobe Chilwero, one of the most enchanting places on earth.</p>
+<p>Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock
+overlooking the magnificent Chobe River. Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's
+largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe
+River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.</p>
+<p>Accommodation is in 15 bungalows, 6 king and 9 twin. Each bungalow measures 61 square metres and has its own en suite bathroom with a
+modern bath, indoor and outdoor showers, private garden with hammock, "sala" or private balcony, mosquito nets, ceiling fans, air-conditioning,
+hairdryer, minibar as well as an in-room safe.</p>
+<p>The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The wine cellar is temperature controlled
+and houses a large variety of the finest South African and European wines. The new Spa has opened and offers a range of spa and
+hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and
+a communications centre, which offers telephone, fax and internet access.</p>
+<p>The afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Chobe Chilwero <br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Sanctuary Chobe Chilwero</h5>
+<p>The day is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Chobe Chilwero <br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
 <h4>Day 5</h4>
-<h5>Depart Mfuwe to lower Zambezi National Park</h5>
-<p>Time permitting you will enjoy an early morning activity.  After breakfast, a camp representative will meet you in the reception area of the lodge and transfer you to Mfuwe Airport.  The departure time will be advised to you locally. The transfer time is approximately 2 hours, subject to game viewing en-route.</p>
-<p>Depart Mfuwe on Proflight scheduled light aircraft flight to Lusaka.</p>
-
-<p>On arrival at Lusaka International Airport, please collect your luggage and proceed through into the Arrivals Hall where a representative will meet and assist you to check in for your onward flight.  </p>
-
-<p>Depart Lusaka on a scheduled light aircraft flight.</p>
-
-<p>On arrival at Royal airstrip, a representative will meet and transfer you to the camp. The transfer time is approximately 20 minutes by road followed by 30 minutes by boat, subject to game viewing en-route.</p>
-<p>The family owned and operated Chiawa Camp in the incredible Lower Zambezi National Park is Zambia's premier luxury safari camp and offers unusually varied activities such as game drives, walking, canoeing, boating and angling in the company of Africa's finest guides.</p>
-<p>
-Indulge in attentive yet unpretentious, personalised service, fabulous cuisine and fantastic "tents" with spectacular views of the Zambezi and its resident wildlife. All this in a beautiful setting with leopards, lions, elephants, hippos and other wildlife as your neighbours. Along with Chiawa's renowned dedication to its guests, staff, local communities and conservation, share in Chiawa's passion and experience so that you can enjoy one of Africa's very finest safari camps and the wildlife adventure of a lifetime.</p>
-
-<p>The remainder of your day is at leisure to enjoy the game viewing activities on offer.</p>
-
-<p>Non premium brands of beer, wine, spirits, bottled water and soft drinks are included at all times.</p>
-<p>
-<strong>Overnight:</strong> Chiawa Camp<br />
+<h5> Sanctuary Chobe Chilwero to Sanctuary Baines&#39; Camp</h5>
+<p>The morning is at leisure to enjoy the game viewing activity on offer. After breakfast a lodge representative will transfer you to Kasane Airport.
+The transfer time will be advised to you locally by the lodge management.</p>
+<p>Depart Kasane on a Mack Air shared light aircraft charter flight to Sanctuary Baines' Camp. The flying time to Sanctuary Baines' Camp is
+approximately 1 hour 30 minutes.</p>
+<p>Kindly note, however, that all inter-camp flights are subject to multiple pickups and drop offs en route to your destination which could affect the
+flying time. On arrival at the airstrip a camp representative will transfer you to the camp. The transfer time is approximately 45 minutes.</p>
+<p>Sanctuary Baines' Camp is located on the Boro River, set amongst the shady trees and water of the Okavango Delta, on a 260,000 acre private
+concession neighbouring the Moremi Game Reserve. The camp, named after the famous 19th century explorer Thomas Baines, features five
+luxurious suites set on elevated platforms in the tree line with wooden decks that offer expansive views over the permanent water of the river and
+a lagoon teaming with life.</p>
+<p>The elevated suites feature a luxury bedroom, en suite facilities and private viewing deck. The four-poster beds are fully mobile, giving guests
+the choice of slumber under star laden skies. Each room is equipped with a hairdryer, ceiling fan, in-room safe as well as a personally stocked
+minibar. Avid astronomers will delight in stargazing from the privacy of their own deck.</p>
+<p>The main area features an oversized deck for outdoor dining and views over the permanent water of the lagoon. There is a rim flow swimming
+pool with two thatched salas on either side for refreshing sunbathing. The camp offers informative walking safaris with an armed professional
+guide, wonderful game drives in open-sided 4X4 vehicles as well as motorised boat and mokoro excursions, subject to water levels.</p>
+<p>The afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Baines&#39; Camp <br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
 <h4>Day 6</h4>
-<h5>Lower Zambezi national Park</h5>
-<p>Your days are at leisure to enjoy the game viewing activities on offer.</p>
-<p>
-<strong>Overnight:</strong> Chiawa Camp<br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>Sanctuary Baines&#39; Camp</h5>
+<p>This morning you will have the opportunity to meet and interact with three semi- habituated elephants, Jabu, Thembi and Morula on a morning
+walk.</p>
+<p>Observe them up close in their natural environment as they feed, take mud baths and swim, whilst learning about them and discovering their
+unique personalities.</p>
+<p>You are invited to discover the elephants from the ends of their bristled tails to the tip of their powerful yet sensitive trunks. Explore the
+astonishing kinship between the elephants and their guardians.</p>
+<p>A delicate blink of Morula's long lashed reveals her sensitive yet powerful personality. Jabu, takes you trunk in hand, with his bold and generous
+nature and together you slowly uncover the age old secrets of Africa's Elephants. Tembi, cute boisterous and impossible to ignore, infatuates
+you and transforms your understanding of elephants to a deeper and more personal level.</p>
+<p>The afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Baines&#39; Camp <br />
+<strong>Meal Plan:</strong> Meals: B,L,D</p>
 </li>
-
 <li>
 <h4>Day 7</h4>
-<h5>Lower Zambezi national Park</h5>
-<p>Your days are at leisure to enjoy the game viewing activities on offer.</p>
-
-<p><strong>Overnight:</strong> Chiawa Camp<br />
+<h5>Sanctuary Baines&#39; Camp and Sanctuary Chief&#39;s Camp</h5>
+<p>The morning is at leisure to enjoy the game viewing activity on offer. After breakfast a camp representative will transfer you to the airstrip. The
+transfer time will be advised to you locally by the camp management.</p>
+<p>Depart Sanctuary Baines' Camp on a Mack Air shared light aircraft charter flight to Sanctuary Chief's Camp. The flying time to Sanctuary Chief's
+Camp is approximately 15 minutes.</p>
+<p>Kindly note, however, that all inter-camp flights are subject to multiple pickups and drop offs en route to your destination which could affect the
+flying time.</p>
+<p>On arrival at the airstrip a camp representative will meet and transfer you to the camp. The transfer time is approximately 10 minutes. Sanctuary
+Chief's Camp is a luxury bush lodge situated on Chief's Island in the exclusive Mombo Concession of the Moremi Game Reserve. This region is
+known as the "predator capital" of Africa and is considered to have the finest game viewing in Southern Africa including the Big Five.</p>
+<p>Guest accommodation comprises of twelve secluded, permanent luxury bush pavilions. Each unit features a thatched roof, spacious seating
+area, en suite facilities with indoor and outdoor shower as well as a private game viewing deck with hammock and deck chairs. Each unit boasts
+a generous mosquito net on a four-poster bed, two wardrobes, a book shelf, writing desk and mini bar. The main lodge complex houses the
+dining area, bar, curio shop, library and reception area. This structure has been built into the existing landscape, under a heavy canopy of
+mature Jackal berry, Sausage and Rain trees.</p>
+<p>The main deck area is split-level and offers expansive views over the floodplain while the lower level of the deck houses an exquisite swimming
+pool. A range of spa treatments are offered in the treatment room.</p>
+<p>Activities include game drives and seasonal mokoro excursions subject to water levels.</p>
+<p>The afternoon is at leisure to enjoy the game viewing activity on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Chief&#39;s Camp  <br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
 <h4>Day 8</h4>
-<h5>Arrive in Kafue National Park</h5>
-<p>Time permitting you will enjoy an early morning game viewing activity.  After breakfast a camp representative will meet you in the reception area of the lodge and transfer you to the Royal airstrip.  The departure time from the lodge will be advised to you locally.</p>
-<p>Depart Royal on a scheduled light aircraft flight to Lusaka.</p>
-<p>On arrival at Lusaka International Airport, please collect your luggage and proceed through into the Arrivals Hall, where a representative will meet and assist you to check-in for your onward flight.  </p>
-<p>Shumba Camp is situated in the northwestern corner of the 22,500-square-km Kafue National Park, in the famed Busanga Plains area. The Plains, covering approximately 750 square kilometres, is considered one of Zambia's most important wetlands, as well as a wildlife paradise with a wealth of plains game, predators and birds. The Kafue National Park is one of the largest and most spectacular national parks in Africa.</p>
-<p>This camp is perfectly situated to see large numbers of plains game and their predators - including some of the best lion and cheetah viewing in Africa!</p>
-<p>For those interested in birding, Busanga Plains boasts some 390 species, including such specials as Wattled and Crowned Cranes, Fulleborn's and Rosy-throated Longclaws, Lanner Falcon and large flocks of Open-billed and Yellow-billed Storks.</p>
-<p>Depart Lusaka Airport on Wilderness Air to Busanga. </p>
-<p>On arrival at Busanga airstrip, a Shumba Camp representative will meet and transfer you, by helicopter to the camp.  The helicopter transfer is approximately 10 minutes.</p>
-<p>Your afternoon is at leisure to enjoy the game viewing activities on offer.</p>
-<p>
-<strong>Overnight</strong>: Shumba Camp<br />
+<h5>Sanctuary Chief&#39;s Camp</h5>
+<p>The day is at leisure to enjoy the game viewing activities on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Chief&#39;s Camp <br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
 <h4>Day 9</h4>
-<h5>Kafue National Park </h5>
-<p>Your days are at leisure to enjoy the game viewing activities on offer.</p>
-
-<p><strong>Overnight:</strong> Shumba Camp<br />
+<h5>Sanctuary Chief&#39;s Camp</h5>
+<p>The day is at leisure to enjoy the game viewing activities on offer.</p>
+<p><strong>Overnight:</strong> Sanctuary Chief&#39;s Camp <br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
+<h4>Day 10</h4>
+<h5>Sanctuary Chiefs Camp to Cape Town</h5>
+<p>The morning is at leisure to enjoy the game viewing activity on offer. After breakfast a camp representative will transfer you to the airstrip. The
+transfer time will be advised to you locally by the camp management.</p>
+<p>Depart Sanctuary Chief's Camp on a Mack Air shared light aircraft charter flight to Maun Airport. The flying time to Maun is approximately 25
+minutes.</p>
+<p>Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the
+flying time.</p>
+<p>Depart Maun on a scheduled flight to Johannesburg.</p>
+<p>On arrival at OR Tambo International Airport a representative will meet and assist you to your onward flight to Cape Town.</p>
+<p>On arrival at Cape Town International Airport a representative will meet and transfer you to your hotel. This transfer time is approximately 25
+minutes.</p>
+<p>With its classically inspired exterior and gracefully elegant interior, Cape Grace is set on its own private quay on Cape Town's vibrant Victoria &
+Alfred Waterfront. Cape Grace's charm lies in its intimate atmosphere, stylish dÃ©cor and unique personalised hospitality.</p>
+<p>Double-glazed French doors in all guest rooms open to beautiful views of the international yacht marina, Table Mountain or Waterfront harbour.
+Elegant in style and generous in size, the overall tone is warm and inviting, with care and consideration given to making guest rooms as
+comfortable and relaxing as possible.</p>
+<p>Dine in the comfort of the hotel's award-winning restaurant overlooking the harbour and Signal Hill, savour a single malt from Bascule Bar's
+whisky collection (the largest in the southern hemisphere) or indulge in an African-influenced treatment in The Spa on the top floor. Treat yourself
+to a lazy day around the outdoor heated pool. Soak up Africa's warm sun, surrounded by trellised gardens and a private terrace.</p>
+<p>The evening is at leisure.</p>
+<p><strong>Overnight:</strong> Cape Grace Hotel <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
 <h4>Day 11</h4>
-<h5>Depart Kafue</h5>
-<p>Time permitting you will enjoy an early morning game viewing activity.  After breakfast a camp representative will meet you in the reception area of the camp and transfer you to the Busanga airstrip.  The departure time from the lodge will be advised to you locally.</p>
-<p>
-Depart Busanga  to Lusaka, to connect with your onward flight home.</p>
- <p><strong>Meal Plan:</strong> B</p></li>
+<h5>Cape Town City Tour</h5>
+<p>Please meet your representative in the reception area of the hotel from where you depart on a morning tour of Cape Town City.</p>
+<p>You will be driven through the Cape Town suburb of Tamboerskloof ("Drummers' Ravine") to the lower cable car station on the slopes of Table
+Mountain. Weather permitting you will make the short and comfortable ascent to the top of the mountain by cable car. The panoramic view of the
+sea and city from the summit is magnificent.</p>
+<p>Then you begin our tour of historic Cape Town. After the excitement of "summiting" Table Mountain, you may need some refreshments, so our
+first stop will be the Bo Kaap area for an exclusive, traditional Cape Malay tea experience. Our host will tell you about her life growing up in the
+charming Bo Kaap where bulbous minarets rise up above buildings festooned with cast-iron adornments from another age and cobble stoned
+streets lead into cosy squares.</p>
+<p>You will then take an easy walk through the tranquil Company Gardens (the remnants of the Dutch East India Company's fruit and vegetable
+gardens) with notable important buildings including the Houses of Parliament, the Tuynhuis ("Townhouse" or Cape Town's "White House"),
+National Art Gallery and National Library. From here we make our way to the Castle of Good Hope. Built between 1666 and 1679 by the Dutch
+East India Company, this pentagonal fortification replaced a small clay and timber fort, built in 1652 by Commander Jan van Riebeeck, founder
+of the maritime replenishment station at the Cape of Good Hope. The Castle Military Museum depicts the military history of the Cape, the Castle
+and Cape Regiments. Also worth a visit is the William Fehr collection consisting of artwork reflecting many aspects of cultural life at the Cape
+from the early VOC days until the middle of the 19th century.</p>
+<p>End your tour visiting the notorious dungeon. As a result of rising damp, the dungeon was not fit to store gun powder as intended and was later
+used as a prison for the accused awaiting trial.</p>
+<p>The tour will end at the hotel or at the bustling Victoria & Alfred Waterfront, built around the old harbour. A hugely popular destination with
+tourists and locals alike (80% of visitors are from Cape Town itself) the Waterfront is unique in terms of being a working harbour while still
+boasting a varied selection of eclectic shops, restaurants and tourist attractions from scenic helicopter rides to boat cruises.</p>
+<p>The remainder of the day is at leisure</p>
+<p><strong>Overnight:</strong> Cape Grace Hotel <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 12</h4>
+<h5>Cape Point Tour</h5>
+<p>Please meet your representative in the reception area of the hotel and depart on a full day tour to Cape Point.</p>
+<p>Hugging the Atlantic coast road we journey past the "bikini beaches" of Clifton and Camps Bay, beautifully located at the base of the towering
+Twelve Apostles Mountains. We travel over the Suikerbossie ("Sugar Bush") Pass and descend into the bucolic Hout Bay valley, with its bustling
+fishing harbour and white sand beach.</p>
+<p>From here we travel over the famous Chapman's Peak Drive (subject to road conditions) to join the sea again at the town of Noordhoek. This
+historic road, high on the mountainside overlooking the sea, was once considered "impossible to build", but Charl Marais (mining surveyor) rose
+to the challenge and made it happen at an estimated cost of Â£20 000 using 700 convict labourers.</p>
+<p>Our journey continues to the Cape of Good Hope Nature Reserve at the end of the Cape Peninsula. The reserve, which covers 22000 acres of
+land, converges in the south at Cape Point, a great pinnacle of rock. You can climb the steps or ride a funicular railway - the "Flying Dutchman" -
+to the top from where you MAY see Southern Right whales in spring and early summer, dolphins and a variety of seabirds. The original
+lighthouse at Cape Point was built in 1860. The present lighthouse, one of the most powerful in the southern hemisphere, is closer to the point
+itself than the original.</p>
+<p>We travel back through the reserve looking out for some of the animals that live here, including the rare Bontebok, Eland and Cape Mountain
+Zebra.</p>
+<p>En route to lunch we visit Boulders, a lovely beach sheltered from the wind and famous for its colony of endangered Jackass Penguins on the
+coast of False Bay near Simon's Town. Boulders, had just two breeding pairs in 1982 but thanks to careful management the population has
+grown to about 3000 in recent years. This is a rare and rewarding experience.</p>
+<p>Pass through Simon's Town, which was the Royal Navy's main base in the south Atlantic from 1815 until 1957 and has the feel of a small English
+seaside village with steep narrow streets and cobbled alleyways. You will learn about the famous hound called "Just Nuisance", the most
+renowned animal in the annals of the Royal Navy.</p>
+<p>Continue to Kalk Bay a quaint fishing hamlet on the False Bay coast with a protected little harbour of brightly painted wooden boats. At around
+1pm the fishermen offload their catch and it is possible to buy your supper straight from the boat.</p>
+<p>Travel back towards Cape Town passing through the attractive, upmarket suburb of Constantia, the cradle of the South African wine industry
+boasting famous estates like Klein Constantia. At Kirstenbosch the world-renowned National Botanical Garden, recently voted one of the Top
+Ten gardens in the World by the curators of Kew Gardens in London, a private, local guide ensures that you learn about some of the more
+fascinating aspects of the gardens and get as much as possible out of the visit. We return to the hotel passing interesting sites such as the
+University of Cape Town, Rhodes Memorial and Mostert's Mill, a Dutch windmill dating back to 1797.</p>
+<p>The evening is at leisure.</p>
+<p><strong>Overnight:</strong> Cape Grace Hotel <br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 13</h4>
+<h5>Cape Town</h5>
+<p>The day is at leisure.</p>
+<p><strong>Overnight:</strong> Cape Grace Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 14</h4>
+<h5>Gourmet Tour of the Winelands</h5>
+<p>Please meet your representative in the reception area of the hotel from where you will depart on a full day gourmet tour of the Winelands.</p>
+<p>The Western Cape is blessed with a climate, which enables world-class wines to be made here in the midst of scenery - and on historic estates -
+which even jaded eyes agree are breathtakingly beautiful.</p>
+<p>The region is also an epicurean's dream with a host of top quality restaurants ready and able to seduce the palate with a myriad of taste
+sensations, which are both internationally classic and yet uniquely local. On this exclusive gourmet experience you will sample some of the
+award winning wines - and tastes - of the Western Cape.</p>
+<p>Depart the hotel - and travel along the N1 National Highway to Anura Estate. Anura is situated in the foothills of the Simonsberg mountain range.
+Here you will be able to sample their wines - and award-winning hand crafted Forest Hill cheeses.</p>
+<p>Continue on to Waterford Wine Estate via the picturesque historic town of Stellenbosch - the second oldest town in South Africa - and also
+known as the âtown of oaksâ. When you arrive at Waterford Wine Estate, you will have the opportunity to sample their award winning wines
+complimented by a chocolate tasting.</p>
+<p>After the wine and chocolate tasting you will enjoy lunch on the Kleine Zalze Estate at the Cape Winelands restaurant Terroir, which scooped the
+year's most prestigious accolade on the gastronomic calendar. The Provencal-inspired chalkboard menu is dictated to seasonal, fresh and
+organic produce from the region accompanied by wines from the area.</p>
+<p>Once you have relaxed after lunch, continue to Somerset West, which lies in the valley beneath the Hottentot's Holland Mountains. Visit
+Morgenster Estate for a wine, olive and olive oil tasting. Morgenster produces an extra virgin olive oil, which has been judged the best in the
+world at a prestigious competition in Italy. The wines are also top ranking.</p>
+<p>After this day of gourmet experiences, return to your hotel in the late afternoon and the evening is at leisure.</p>
+<p><strong>Overnight:</strong> Cape Grace Hotel <br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 15</h4>
+<h5>Depart Cape Town</h5>
+<p>Please meet your representative in the reception area of the hotel for your transfer to Cape Town International Airport.</p>
+<p>Depart Cape Town on an outbound flight.</p>
+<p><strong>Overnight:</strong> Sanctuary Chief&#39;s Camp <br />
+<strong>Meal Plan:</strong> B</p>
+</li>
 
 </ul>
 </div>
@@ -1209,7 +1415,338 @@ Depart Busanga  to Lusaka, to connect with your onward flight home.</p>
 
 </div>   
 </div>
-<!--Zambi Safari Content End Here -->
+<!-- Fascinating Botswana, Zambia and South America End Here -->
+<!--   Livingstone Adventure Start Here -->
+<div id="popup4" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli13"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli14"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli15"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli16"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Classic-SouthLuangwa.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab13">
+<div class="logoinner1"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>Livingstone Adventure</h1>
+<div class="popupbanner"><img src="../images/zambia_livingstone_adventure.jpg" alt="Banner" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  5 days</p>
+<p>This itinerary allows you to experience the natural wonders of Zambia, and its customised according to your interests of great wildlife viewing.</p>
+<p><strong>Highlights:</strong> Johannesburg, Zambia, Livingstone and Botswana</p>
+
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive in Johannesburg</h5>
+<p>On arrival at OR Tambo the group should be able to proceed through transit directly into the International departures terminal where they will
+board the flight for Livingstone. This procedure however depends on which airline they arrive into OR Tambo on, and whether or not their
+luggage can be checked all the way through to Livingstone.</p>
+<p>On arrival in Livingstone the group will have to clear customs and immigration and will have to purchase their double entry visas for Zambia.
+Please note: Due to foreign currency laws in South Africa, we unable to carry the funds for the Visas this amount would have to be transferred
+directly to our offices in Zimbabwe.</p>
+<p>Your representative will escort you to the waiting air conditioned coaches and transferred to the Royal Livingstone Hotel.</p>
+<p>On arrival at the Royal Livingstone Hotel a ROYAL reception awaits the group. On arrival at the hotel they will be escorted down to the
+magnificent lawns of the Royal Livingstone hotel where canapes and cocktails await them. A separate check in desk will be setup for the group.
+African maidens will welcome them with Nyami Nyami necklaces the traditional Zambian River g-d symbol.</p>
+<p>David Livingstone explored this land of potent beauty and discovered one of the seven natural wonders of the world. In his footprints, only
+moments away from the mighty Zambezi River with the dramatic torrent of the Victoria Falls as its natural milieu, a magnificent Resort has been
+created as a testament to his discovery and in reverence to the splendour of this World Heritage site. Journey to this magical place and witness
+the greatest mass of falling water on earth as it plunges down a sheer rock face, spraying its mystical mist hundreds of meters in the air. The
+awesome Victoria Falls is much closer to you here - literally on the doorstep of The Falls Resort - it feels as if you could reach out and touch it, as
+it plummets into the chasm far below.</p>
+<p>The local tribes people call it Mosi-Oa-Tunya the Smoke that Thunders. On the forested banks of the great Zambezi River, upstream of the
+mighty cataract where it thunders into the Batoka Gorge, is The Royal Livingstone, pride of Zambian hospitality. In its cool lounges and shaded
+verandahs, you will encounter the elegance and luxury of an earlier, more courteous age.<br>
+The Royal Livingstone is a serene and gracious refuge from the heat of the African sun. The 173 luxurious rooms with their comfortable
+furnishings are tastefully decorated in the soft earth tones of the bushveld, with spreading views of the river and Acacia forest. For the discerning
+traveler in search of luxury, extravagance and sheer indulgence, the Royal Livingstone Hotel will set your heart on fire and soothe your soul.</p>
+<p>The innate heritage of the land offers guests nail-biting experiences ranging from water-rafting to bungee jumping, a paradise for wildlife lovers
+with daily land and water safaris, and exceptional angling and fly-fishing.<br>
+This magnificent Falls Resort allows you the chance to be at one with the uninhibited majesty of the Victoria Falls, a time to regroup, to find your
+inner core and to leave enriched and empowered, promising to return.</p>
+<p>A light lunch can then be served from the terrace of the Royal Livingstone hotel. The rest of the afternoon will be at leisure to relax and explore
+this amazing resort.</p>
+<p>Early evening we will place surprise outfits for each person in their rooms which they will have to wear that evening to Dinner. The group meets
+in the reception area and when they are all gathered they will be startled by a “War Raid”. African warriors will come out of the darkness and do a
+tribal ritual dance for the group and they will then escort them singing and dancing down to the Boma where a true African Feast awaits. (Please
+note that the Boma Dinner can only be done as a buffet dinner)<br>
+Tonight they will dine under the African Skies. During this magnificent feast they will be serenaded by a local marimba band.<br>
+As an option the group can take the opportunity to learn a traditional dance move from one of the local dancers.</p>
+
+<p><strong>Overnight:</strong> Royal Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Zambezi River</h5>
+<p>Breakfast this morning will be served on the terrace and in the dining room at the Royal Livingstone.</p>
+<p>Today is a day to explore a variety of activities that Livingstone has on offer. For a group of this size our suggestion would be as follows:</p>
+<p>Tour of the Victoria Falls<br>
+Flight of Angels Helicopter flip<br>
+Mkuni Village Village Tour<br>
+Visit to the local craft market</p>
+<p>The main group would be split into 4 smaller groups and would rotate through the activities. They would then all meet for lunch and an elephant
+interaction at the elephant Boma.</p>
+<p>A tea / Coffee break can be arranged during the morning activities.</p>
+<p><strong>NOTE:</strong> The group is to large to do elephant back safaris for the entire group which is why I suggest rather doing an elephant interaction. They
+can touch / feed the elephants have their pictures taken with them.</p>
+<p>The day will end with a spectacular sunset train journey to the Victoria Falls Bridge. The train stops for 10 minutes on the bridge and the group
+can disembark to take pictures and enjoy a cocktail.<br>
+The train is a Victorian Steam Train.</p>
+<p>Dinner this evening will be a served dinner in the conference room. Alternatively a buffet dinner can be served at the Zambezi Sun around the
+pooldeck – a white mischief dinner. Everyone dresses in white, the tables are laid in white with candles all around.<br>
+A resident band will play during the dinner this evening.</p>
+<p>In Africa, when you hear drumming in the distance, you know there is something happening and your curiosity is awakened, your pulse speeds
+up and the adventure commences. Tonight you will get the chance to beat your own drums at your interactive drumming circle which will take
+place at the Zambezi Sun Dinner tonight will be served in the conference room at the Zambezi Sun and entertainment will be provided by a band.
+Once dinner has been eaten and it is completely dark outside after dinner cocktails will be accompanied by a fire spinning show.</p>
+
+<p><strong>Overnight:</strong> Royal Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Chobe National Park</h5>
+<p>Breakfast this morning will be served on the terrace and in the dining room at the Royal Livingstone.</p>
+<p>After breakfast the group will depart in their coaches for the Kazungula Border Post en route to Botswana & Chobe National Park.</p>
+<p>Today will be a relaxed day with the group crossing over the Zambian border into Botswana to go and spend the day in Chobe National Park.The
+crossing from Zambia into Botswana is done on small speedboats as you cross over the Zambezi / Chobe River into Botswana. The transfer time
+is ± 2 hours to Chobe.</p>
+<p>The departure from the hotel is done at staggered intervals so as to not congest the groups at the border and to allow an easy crossing in the
+boats. The boat trip takes about 3 minutes across the Chobe River and ± 45 pax at 1 crossing can be accommodated.</p>
+<p>On arrival in Botswana the group will split with ½ the group proceeding directly into Chobe National Park in 4x4 Game Drive vehicles and the
+other ½ of the group proceeding to the river to commence their river safari.</p>
+<p>Lunch today will be a buffet lunch at Mowana Safari Lodge and the entire group will meet for lunch.</p>
+<p>After lunch the groups split again with ½ proceeding down to the jetty to board Safari Boats and to commence their River Safari and the other ½
+proceeding to safari vehicles to commence their land safari in the Chobe National Park.<br>
+Drinks will be served on the Safaris.</p>
+<p>Return to Mowana in the late afternoon for Sundowner drinks before transferring back to the border post to clear immigration, to board the
+speedboat and cross back over into Zambia.</p>
+<p><strong>DINNER</strong><br>
+When the group gets back to the Royal Livingstone tonight it will be to discover pith helmets for the gentleman and white silk scarves for the
+ladies in their rooms. They must don their costumes and dinner will be served on the lawns under the trees on the banks of the Zambezi River.
+Dinner tonight is a David Livingstone Dinner.<br>
+Entertainment tonight will be a classical flautist.</p>
+<p><strong>CHOBE NATIONAL PARK</strong><br>
+The Chobe National Park covers an area of approximately 11.700 square kilometers. Established in 1961 with the first Game Warden Mr. Pat
+Hepburn appointed April 1962. It is home to the largest concentration of Elephants in Africa, estimated at 45, 000. Indigenous to the park is the
+puku and Chobe Bushbuck, other game such as lion, leopard, buffalo, cheetah, kudu, giraffe and an abundant bird life of approximately 450
+species, add theatre to the magical kingdom.</p>
+<p>Ihaha camp, 20 km north of the Ngoma gate, the Chobes most accessible campsite. According to game drivers, Ihaha was once an inhabited
+village, which was uprooted and shifted to Kasane when Chobe became a national Park. By day, campers are under constant surveillance by
+cheeky baboons, which long ago leant that all the best pickings come from tents and backpacks.</p>
+<p>One of the best ways to enjoy the riverfront is to take a river trip in the late afternoon, when the hippos amble onto dry land and the riverfront fills
+elephants heading down for a drink and a romp in the water. A Chobe visit will probably entail a cruise or game drive during which you will have
+an excellent change of observing lions and cheetah, and by day, the water is full of hippos which submerge at dawn and emerge at dusk.
+Buffaloes are present in their thousands, and amid the scrub live numerous giraffes and zebra.</p>
+
+<p><strong>Overnight:</strong> Royal Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Zambezi River</h5>
+<p>Breakfast this morning will be served on the terrace and in the dining room at the Royal Livingstone.</p>
+<p>An optional light lunch can be served at the hotel prior to departure for the airport this however would depend on the flight departure time.
+Currently the flights depart Livingstone at around lunch time meaning that the departure from the hotel would have to be at around 11am.</p>
+<p>On arrival at Livingstone Airport the group would check in for their flight clear customs and immigration and board their flight to OR Tambo
+International Airport in Johannesburg. Currently the group would have to disembark in Johannesburg, collect their luggage and then proceed to
+the International Departures terminal to check in for their flight back home – you cannot check through from Livingstone.</p>
+<p><strong>Overnight:</strong> <br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+</ul>
+</div>
+
+<div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php $id=4;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Zambia"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic SouthLuangwa"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classic-SouthLuangwa.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab15" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Zambia"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic-SouthLuangwa"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab16" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize3() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas3"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport. After clearing customs and immigration formalities, you will be transferred to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904.<br /><br />Just south of the equator, Nairobi's main avenues blaze with colour from tropical bushes and vines. Nairobi became established by 1907 and quickly grew as a white farming community. It also attracted world attention as the centre of big-game safaris for the rich and famous. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Tortilis Camp in time for lunch. Named after the trees from which it takes shade, Tortilis Camp lies on the boundary of Amboseli Game Reserve. The snow-domed Mount Kilimanjaro sets the stage for excellent game viewing and magnificent sunrises. The accommodation tents are spacious and thoughtfully spaced at some distance from each other offering total privacy and breathtaking views across the plains to Africa's highest mountain. Perched on a look out hill, the main house offers relaxation, attentive service and delightful home-cooked Italian food.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Amboseli lies south-east of Nairobi, at the foot of Africa's highest mountain, Mount Kilimanjaro. The snow-capped peak rising above a saucer of clouds dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. The National Park has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /><br />Today explore Amboseli National Park. In addition to game drives, guests at Tortilis can enjoy bush walks with a Maasai guide - an experience which brings the sights, sounds and smells of the bush to life. Simply relax by the swimming pool or watch a dazzling array of bird life from your verandah.&nbsp;<br /><br /><strong>Option to stay at Chyulu Hills:</strong><br /><br />Ol Donyo Waus is nestled in the Chyulu Hills, between Amboseli and Tsavo National Parks. The Chyulu Hills are the youngest range of volcanic hills in Africa. Ol Donyo Wuas Lodge is a 22 bed eco lodge in the heart of the Mbirikani Maasai conservation area on the slopes of the Hills. The lodge was recently rebuilt and original ethos and character remains with a focus on comfort and amenities. All but two of the cottages have their own plunge pool and all have star beds, stunning views of Mount Kilimanjaro, efficient solar powered lighting, and solar heated showers in the ensuite bathrooms which feature a d&eacute;cor that is both modern and luxurious as well as rustic and comfortable. Ol Donyo Wuas was one of the first eco lodges in Kenya and has a longstanding working relationship with the local Maasai community, with great emphasis on education, development and conservation<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>After breakfast, transfer to the airstrip for your flight to Nairobi. Take a connecting flight and fly north to Lewa Downs at the foothills of Mount Kenya.<br /><br />On arrival take a game viewing drive en-route to your luxury mobile camp. Our mobile camps offer the ultimate and most authentic form of a safari. We position your camp as close to the wildlife action as possible, taking you into prime game viewing areas and the secret hideaways.<br /></p><p>Each tent is set with campaign furniture and hand woven rugs in warm organic colours to blend in with the environment. Your personal tent attendant will make sure that the Egyptian cotton sheets on your large, comfortable bed are crisp and that a hot water bottle is slipped beneath your duvet on a chilly night. While you are at supper, he will have turned down your bed and drawn around your mosquito net. On your verandah are two chairs and a butler table for you to enjoy a drink whilst catching up with your book or watching animals.&nbsp;<br /><br />The tents are solar powered so that you have two bright bedside reading lamps and an overhead light in your bedroom and bathroom. Your tent attendant will be at hand to make sure that your naval bucket shower is mixed to the perfect temperature for whatever time of day or night you choose to bathe. You have a fully flushing, ceramic toilet and even running water in the basin. He will take care of your laundry which will be delivered, weather permitting, to your tent each morning, pressed beautifully by an old fashioned charcoal iron. He will also take any shoes that require cleaning in the evening returning them to you with your morning tea or coffee.&nbsp;<br /><br />Three main meals are served each day. We will even prepare delicious picnics for you to take with you in to the bush if you so choose. Our expert cooks take full advantage of vegetables and salads that are in season and are up before anyone else in camp to bake the finest breads and pastries for your breakfast.&nbsp;<br /><br />After freshening up, lunch is served al fresco. This afternoon is free to enjoy a siesta before embarking on a late afternoon game viewing drive in the Conservancy.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.2229225, 37.4467952), "Amboseli - Nairobi - Lewa Downs", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend two full days in Lewa Downs to explore the conservancy and its resident wildlife. Your days will be as flexible as you wish with possibilities of a picnic lunch, traditional African sundowners or dinner in the middle of the African bush.<br /><br />Lose yourself in the magical atmosphere of Lewa, which was one of Kenya's original ranches and has been the home of the Craig family since 1924. The Conservancy is now one of East Africa's major conservation successes and is host to approximately 10 percent of Kenya's endangered black rhino. Game viewing is exceptional with a variety of animals and you will also find several animal species not seen in the southern hemisphere, including reticulated giraffe, Grevy zebra and the graceful Gerenuk antelope with its long neck.<br /><br />A wide variety of activities are available - ride on horseback alongside herds of giraffe, zebra and antelope, take a night game drive, walk with armed rangers, or take a camel ride with a local Samburu guide.&nbsp;<br /><br />In between game viewing there is the opportunity to visit the on-going conservation projects and also the craft centre run by the local community.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.2229225, 37.4467952), "Lewa Downs", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.2229225, 37.4467952), "Lewa Downs", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>After a leisurely breakfast transfer to the airstrip for a scheduled flight to the Masai Mara, one of Africa's greatest parks.<br /><br />On landing you will meet your Olonana guide and enjoy a game drive en-route to Olonana. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains' game.<br /><br />We have selected Olonana for you accordingly for its small size and privacy. Your 'room' is canvas but a permanent structure, very spacious and has a flush lavatory, solar lights and a good hot shower. Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Lewa Downs - Masai Mara", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>You have the next two days to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert Olonana driver/guide. A wide range of activities are offered at Olonana,your day can be as active or as leisurely as you wish. You can visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest and topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge to snort and grumble while crocodiles sunbathe on the riverbanks. Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands and nearby breakfast is already being prepared and, of course, glasses of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure: An early start this morning with a transfer to take you to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>On arrival in Entebbe you will be met and transferred to the Emin Pasha Hotel in Kampala.<br /><br />Emin Pasha Hotel is a unique boutique hotel in the bustling capital city of Uganda. The hotel evokes another era and offers a harmonious balance between old and new - from the architecture and the furnishings, to those modern amenities that today's business and leisure traveller requires. The hotel is set in tropical gardens with big mature trees, flowering shrubs and scented vines abound, yet is within walking distance to the Commercial Business District.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.314269, 32.572871), "Nairobi - Entebbe - Kampala", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 12 - ';
+						description = description + "<p>After breakfast transfer to the airport for a private charter flight to Bwindi. On arrival you will be met and transferred to Gorilla Forest Camp.<br /><br />Gorilla Forest Camp is located in Bwindi Impenetrable National Park, which is a UNESCO World Heritage Site and the natural habitat for just over half the world's last surviving population of mountain gorillas. Gorilla Forest Camp is the perfect base for your tracking experience.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "Kampala - Bwindi", description, "12");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>The gorilla tracking experience is arguably one of the most exhilarating wildlife experiences. Seeing these gentle giants in their natural habitat is a unique opportunity afforded only to a select few, as just eight visitors are allowed to view each habituated group each day.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.0360366, 29.7194377), "Bwindi", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -2.666667;
+					var minLng = 29.7194377;
+					var maxLat = 0.314269;
+					var maxLng = 37.4467952;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+		<div id="map_canvas3" style="width:625px; height:450px;overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--   Livingstone Adventure End Here -->
 <script language="javascript1.1" type="text/javascript">
 function ChangeValue(val)
 { 
