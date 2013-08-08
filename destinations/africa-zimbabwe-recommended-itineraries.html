@@ -29,7 +29,7 @@ include("../classes/mimemail.class.php");
 <script language="javascript">
 function showMe(tab)
 {		
-	for(var i=1; i<=12; i++)
+	for(var i=1; i<=16; i++)
 	{
 		var name="tab"+i;
 		var name2="divli"+i;
@@ -72,6 +72,11 @@ function showMe(tab)
 		if(name == 'tab12'){
 		  $(document).ready(function(){
 				gmapInitialize2();
+			});
+		}
+                if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
 			});
 		}
 	}
@@ -262,9 +267,10 @@ href="../yahoo.html">
 
 <div class="RecommendedBox">
 <div class="leftbox"><img src="../images/zimbabwe-itineraries.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
-<div class="rightbox"><h2>Wings over Zambia & Zimbabwe</h2>
-<p><strong>Duration:</strong>  7 Nights</p>
-<p>A safari in wild Africa. Prolific wildlife. Up close with nature on walking safaris. Mana Pools National Park in the heart of the Zambezi Valley. Water-based safari activities.</p>
+<div class="rightbox"><h2>Classic Zimbabwe Safari</h2>
+<p><strong>Duration:</strong>  8 Nights<br>
+<strong>Highlights:</strong> Victoria Falls, Hwange National Park, Lake Kariba</p>
+<p>Experience the awesome power of nature in comfort with this eight day itinerary giving you the best Zimbabwe has to offer.</p>
 <div class="Clr"></div>
 
 </div>
@@ -280,6 +286,69 @@ href="../yahoo.html">
 </div>
 </div>
 
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/zimbabwe-itineraries.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
+<div class="rightbox"><h2>Deluxe Zimbabwe</h2>
+<p><strong>Duration:</strong>  6 Nights<br>
+<strong>Highlights:</strong>Malilangwe Wildlife Reserve, Victoria Falls, Chobe National Park (Botswana)</p>
+<p>Experience the potential of Southern Africa with this carefully planned itinerary exposing your clients to stunning natural scenery, perfect for first
+time visitors to Zimbabwe.</p>
+<div class="Clr"></div>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/zimbabwe-itineraries.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
+<div class="rightbox"><h2>Ultimate Zimbabwe</h2>
+<p><strong>Duration:</strong>  10 Nights<br>
+<strong>Highlights:</strong> Harare, The Great Zimbabwe Ruins, Matobo Hills National Park, Hwange National Park</p>
+<p>A diverse itinerary of nature, culture and history combined into 10 days for an epic Zimbabwe experience.</p>
+<div class="Clr"></div>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/zimbabwe-itineraries.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
+<div class="rightbox"><h2>Wings over Zambia & Zimbabwe</h2>
+<p><strong>Duration:</strong>  7 Nights<br>
+<strong>Highlights:</strong> Victoria Falls, Hwange National Park, Lake Kariba</p>
+<p>A safari in wild Africa. Prolific wildlife. Up close with nature on walking safaris. Mana Pools National Park in the heart of the Zambezi Valley. Water-based safari activities.</p>
+<div class="Clr"></div>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
+</div>
+</div>
+
 <div class="Clr"></div>
 </div>
 <!-- Center Container Part End Here -->
@@ -290,6 +359,7 @@ href="../yahoo.html">
 <!-- Footer Part Start Here -->
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
+<!-- Classic Zimbabwe Safari Stars -->
 <div id="popup1" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -309,6 +379,511 @@ href="../yahoo.html">
 <div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
 <div id="tab1">
+
+<h1>Classic Zimbabwe Safari</h1>
+<div class="popupbanner"><img src="../images/classic_zimbabwe_safari.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 8 Nights<br>
+<strong>Highlights:</strong>Victoria Falls, Hwange National Park, Lake Kariba</p>
+<p>Experience the awesome power of nature in comfort with this eight day itinerary giving you the best Zimbabwe has to offer.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Johannesburg / Victoria Falls</h5>
+<p>Arrive Johannesburg.</p>
+<p>Connecting flight to Victoria Falls.</p>
+<p>Meet and greet transfer to your hotel.</p>
+<p>Experience luxury and hospitality that only the Stanley & Livingstone at Victoria Falls can offer. This is a hotel for the discerning traveller
+seeking true grace and style. Accommodation is in exquisitely decorated suites overlooking a waterhole frequented by a variety of game. The
+hotel is located on the 6,000 acre Nakavango private reserve on the outskirts of Victoria Falls a stones throw from Mosi oa Tunya the
+smoke that thunders. This small luxury hotel is a grand experience fit for royalty.</p>
+<p>Evening sundowner cruise.</p>
+<p>Unwind at the end of the day on board a cruise boat on the mighty Zambezi River. The sundowner cruise takes you through some of the
+channels of the river, offering an opportunity to see animals such as hippopotamus, elephant, crocodile as well as a variety of birdlife that inhabit
+the riverine vegetation.</p>
+<p>A selection of drinks and snacks are served.</p>
+<p><strong>Overnight:</strong> Stanley &amp; Livingstone Hotel<br />
+<strong>Meal Plan</strong>D</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Victoria Falls</h5>
+<p>Guided Tour of the mighty Victoria Falls.</p>
+<p>Wander through the rainforest and view the largest curtain of falling water from a number of panoramic viewing points. The evergreen rainforest
+is home to monkeys, baboons and other small animals such as the bushbuck. The Falls themselves vary in height from the Devils Cataract
+is home to monkeys, baboons and other small animals such as the bushbuck. The Falls themselves vary in height from the Devils Cataract
+being the lowest at 70 metres high to the Rainbow Falls at 108 metres. The Falls are split into five sections namely the Devils Cataract, Main
+Falls, Horseshoe Falls, Rainbow Falls and the Eastern Cataract which make up this world wonder which is also a World Heritage Site.</p>
+<p>Afternoon at leisure for optional activities.</p>
+<p>There are a variety of activities to choose from our tour menu ranging from soft to hard adventure options.</p>
+<p>Suggestions include Flight of Angels (scenic flight over the Falls by helicopter), white water rafting, bunji jumping, canoeing, elephant back
+safaris, lion walks, traditional village tours among others.</p>
+<p><strong>Overnight:</strong> Stanley &amp; Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,D </p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Victoria Falls / Hwange National Park</h5>
+<p>Charter flight or road transfer to Hwange National Park.</p>
+<p>The charter flight will take approximately 30 minutes, while a road transfer takes approximately two and a half hours.</p>
+<p>The largest of Zimbabwe's eleven national parks, Hwange National Park offers unrivalled game viewing opportunities. Home to the Presidential
+herd of elephant, plains game, buffalo, and big cats this park is a wildlife enthusiast's haven.</p>
+<p>Situated in one of Hwange National Parks most outstanding locations, bordering ancient elephant paths and a vast grassland corridor, is The
+Hide. Herds of elephant, buffalo and a myriad of other game are drawn to the constant waters of the Hides waterhole, and the spectacle of great
+predators making a sudden appearance is not uncommon.</p>
+<p><strong>Overnight:</strong> The Hide<br />
+<strong>Meal Plan:</strong> L,D  </p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5> Hwange National Park</h5>
+<p>Morning and afternoon game drives.</p>
+<p>Take a game drive through the park where you will come face to face with lions, elephants, giraffes and many other game species. Other
+activities include walking safaris escorted by a professional guide, and night game drives on the private concession which offers a thrilling
+chance to see leopard and other nocturnal species.</p>
+<p><strong>Overnight:</strong> The Hide<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Hwange National Park</h5>
+<p>Morning and afternoon game activities.</p>
+<p><strong>Overnight:</strong>The Hide<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5> Hwange / Lake Kariba</h5>
+<p>Charter flight to Bumi Hills airstrip at Lake Kariba.</p>
+<p>The duration of the flight is approximately 45 minutes.</p>
+<p>Bumi Hills Safari Lodge - the gem of Lake Kariba is set in a unique wilderness area overlooking the waters of the lake. Great game viewing
+opportunities from both land and water and a chance to catch the illusive tiger fish for those who are up to the challenge.</p>
+<p><strong>Overnight:</strong>Bumi Hills Safari Lodge<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5> Lake Kariba</h5>
+<p>Morning and afternoon game activities.</p>
+<p>Game viewing options include game drives along the shoreline, fishing<br>
+and game viewing by boat. In addition to game viewing activities, the<br>
+lodge also offers cultural tours in the form of visits to a nearby village in the Omay Communal lands.</p>
+<p><strong>Overnight:</strong>Bumi Hills Safari Lodge<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5> Kariba / Victoria Falls / Johannesburg</h5>
+<p>Morning charter flight to Victoria Falls airport.</p>
+<p>The flying time is approximately one and a half hours.</p>
+<p>Connecting flight to Johannesburg.</p>
+<p>Optional - South African extension.</p>
+<p>Connecting flight to outbound international destinations.</p>
+<p><strong>Overnight:</strong><br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<?php $id=1; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Wings-Over-Zambia-Zimbabwe.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<iframe width="625" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- Classic Zimbabwe Safari end -->
+<!--  Deluxe Zimbabwe Stars -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Wings-Over-Zambia-Zimbabwe.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>Deluxe Zimbabwe</h1>
+<div class="popupbanner"><img src="../images/deluxe_zimbabwe.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 6 Nights<br>
+<strong>Highlights:</strong>Malilangwe Wildlife Reserve, Victoria Falls, Chobe National Park (Botswana)</p>
+<p>Experience the potential of Southern Africa with this carefully planned itinerary exposing your clients to stunning natural scenery, perfect for first
+time visitors to Zimbabwe.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive in Johannesburg</h5>
+<p>Arrive in Johannesburg then onto a Charter flight to Singita Pamushana private airstrip in the south-eastern Lowveld of Zimbabwe, bordering
+South Africa.</p>
+<p>One of Africas best-kept secrets Singita Pamushana is found within the Malilangwe Wildlife Reserve. Nestling beneath the trees, the lodge
+incorporates the natural environment. All the rooms offer incredible views of the Malilangwe Dam. This all suite lodge also offers a spa & yoga
+room, bird watching and black rhino tracking, San Bushman and Rock Art educational tours, game fishing for tiger fish, bass, bream (tilapia) and
+catfish, tennis and golf (there is a 9 hole golf course approximately 45 minutes away.)</p>
+<p>Afternoon game activity.</p>
+<p>Malilangwe Wildlife Reserve is teeming with birds and wildlife including rare and endangered species such as the Roan and Sable antelopes
+and the black rhino. Famous for its cathedral Mopane forests and majestic baobab trees, Malilangwe is an area where you will find over 100 rock
+sites dating back over 2000 years.</p>
+<p><strong>Overnight:</strong>Singita Pamushama<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>South Eastern Lowveld</h5>
+<p>Morning and afternoon game activities.</p>
+<p><strong>Overnight:</strong>Singita Pamushama<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>South Eastern Lowveld to Victoria Falls</h5>
+<p>Morning game activity.</p>
+<p>Charter flight to Victoria Falls.</p>
+<p>Transfer to your hotel.</p>
+<p>Experience luxury and hospitality that only the Stanley & Livingstone at Victoria Falls can offer. This is a hotel for the discerning traveller
+seeking true grace and style. Accommodation is in exquisitely decorated suites overlooking a waterhole frequented by a variety of game. The
+hotel is located on the 6000 acre Nakavango private reserve on the outskirts of Victoria Falls a stones throw from Mosi oa Tunya the
+smoke that thunders. This small luxury hotel is a grand experience fit for royalty.</p>
+<p>Unwind at the end of the day on board a cruise boat on the mighty Zambezi River. The sundowner cruise takes you through some of the
+channels of the river, offering an opportunity to see animals such as hippopotamus, elephant, crocodile as well as a variety of birdlife that inhabit
+the riverine vegetation. A selection of drinks & snacks are served.</p>
+<p><strong>Overnight:</strong>Stanley &amp; Livingstone Hotel<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5> Victoria Falls</h5>
+<p>Guided Tour of the mighty Victoria Falls. Wander through the rainforest and view the largest curtain of falling water from a number of panoramic
+viewing points. The evergreen rainforest is home to monkeys, baboons and other small animals such as the bushbuck. The Falls themselves
+vary in height from the Devils Cataract being the lowest at 70 metres high to the Rainbow Falls at 108 metres. The Falls are split into five
+sections namely the Devil’s Cataract, Main Falls, Horseshoe Falls, Rainbow Falls and the Eastern Cataract which make up this world wonder
+which is also a World Heritage Site.</p>
+<p>Afternoon at leisure for optional activities.<br>
+There are a variety of activities to choose from our tour menu ranging from soft to hard adventure options.</p>
+<p>Suggestions include Flight of Angels (scenic flight over the Falls by helicopter), white water rafting, bunji jumping, canoeing, elephant back
+safaris, lion walks and traditional village tours among others.</p>
+<p>Dinner at the Boma Restaurant - the award-winning restaurant offers and unforgettable African experience.</p>
+<p><strong>Overnight:</strong>Stanley &amp; Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Victoria Fall to Chobe National park</h5>
+<p>Early breakfast.</p>
+<p>Enjoy a full day trip to Chobe National Park in Kasane Botswana - approximately one and a half hours drive from Victoria Falls. Chobe National
+Park boasts some of the largest elephant herds in Southern Africa as the park is home to over 100,000 elephant as well as lions, leopards,
+giraffes and other plains game.</p>
+<p>The day trip affords the visitor two game viewing options - 4x4 safari in the morning and after a sumptuous lunch, a boat safari on the Chobe
+River.</p>
+<p><strong>Overnight:</strong>Stanley &amp; Livingstone Hotel<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5> Victoria Falls to Johannesburg</h5>
+<p>Transfer to Victoria Falls Airport.</p>
+<p>Departure flight to Johannesburg.</p>
+<p>Depart Johannesburg on your outbound flight.</p>
+<p><strong>Overnight:</strong><br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id=2; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Wings-Over-Zambia-Zimbabwe.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<iframe width="625" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!--  Deluxe Zimbabwe end -->
+<!--  Ultimate Zimbabwe Stars -->
+<div id="popup3" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli12"><a href="javascript:void(0)" onclick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Wings-Over-Zambia-Zimbabwe.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab9">
+
+<h1>Ultimate Zimbabwe</h1>
+<div class="popupbanner"><img src="../images/deluxe_zimbabwe.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 10 Nights<br>
+<strong>Highlights:</strong>Harare, The Great Zimbabwe Ruins, Matobo Hills National Park, Hwange National Park</p>
+<p>A diverse itinerary of nature, culture and history combined into 10 days for an epic Zimbabwe experience.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Johannesburg to Harare</h5>
+<p>Meet & greet then transfer to your hotel.</p>
+<p>One of the Leading Hotels of the world, this hotel offers five star luxury and comfort in Harare. Located in the central business and shopping
+districts of the city, overlooking the Africa Unity Square and colourful flower markets the hotel is a great choice for the discerning traveller.
+Facilities at the hotel include a beauty centre with sauna, swimming pool, gym, a number of restaurants including the award winning La Fontaine
+Grill Room and is less than 5km from three top golf courses.</p>
+<p>Afternoon city tour.</p>
+<p>Harare is a city of contrasts combining the old and the new. The new section of the city is characterized by high rise buildings, tree-lined
+avenues while the older section of the town boasts buildings dating back to the early 1900s. Drive through the city and see the various landmarks
+such as the Parliament Buildings, the Supreme Court, Africa Unity Square (the historic place where the Union Jack Flag was raised by the first
+settlers), the Kopjie and finally a traditional African market.</p>
+<p><strong>Overnight:</strong>Meikles Hotel<br />
+<strong>Meal Plan:</strong> D</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Harare to Great Zimbabwe</h5>
+<p>After breakfast depart by coach for a three hour drive to the south of the capital Harare to Masvingo.</p>
+<p>Arrive at your hotel.</p>
+<p>Situated 5 minutes drive from the Great Zimbabwe Ruins is the Lodge at the Ancient City. You will be accommodated in spectacular stone and
+thatch lodges set on granite outcrops with huge boulders forming an integral part of the overall architecture. The lounge area offers views across
+a valley to the Great Enclosure of the Ruins.</p>
+<p>Afternoon visit to the Great Zimbabwe Ruins - evidence of a bygone dynasty that lived in this area. Wander through the mystical ruins and view
+artefacts in the museum which depict the way of life of the inhabitants of this National Monument. The ruins have been dated back to 1200 AD.</p>
+<p><strong>Overnight:</strong>Lodge at Ancient city<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Great Zimbabwe to Bulawayo</h5>
+<p>Continue to Bulawayo, the capital of Matabeleland Province, and the second largest city in Zimbabwe. The drive from Great Zimbabwe is
+approximately three and a half hours.</p>
+<p>Some of the most majestic granite scenery in the world is found in the Matobo Hills. Nestled in this unique range of hills is Camp Amalinda. This
+lodge has gained an excellent reputation for its African hospitality and bushveld charm. The lodge consists of individually thatched suites carved
+into the huge boulders.</p>
+<p>Facilities include a swimming pool, safari spa, library, boma and a natural cave wine cellar for the wine enthusiasts.</p>
+<p>After lunch visit the Matobo Hills National Park, home to large granite boulder outcrops (balancing rocks), historic bushman paintings, the grave
+of Cecil John Rhodes - the founder of Rhodesia (now Zimbabwe). The park is also home to the elusive rhinoceros as well as other plains' game.</p>
+<p>Other activities that are available include tracking Black and White Rhino, horse-riding, walking and hiking and night game drives.</p>
+<p><strong>Overnight:</strong>Camp Amalinda<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Bulawayo to Hwange National Park</h5>
+<p>After breakfast, set off north through the rural areas towards Hwange National Park a driving time of approximately 3 hours.</p>
+<p>The largest of Zimbabwe's eleven national parks, Hwange National Park offers unrivalled game viewing opportunities. Home to the Presidential
+herd of elephant, plains game, buffalo, and big cats this park is a wildlife enthusiast's haven.</p>
+<p>Situated in one of Hwange National Parks most outstanding locations, bordering ancient elephant paths and a vast grassland corridor, is The
+Hide.</p>
+<p>Herds of elephant, buffalo and a myriad of other game are drawn to the constant waters of The Hides waterhole, and the spectacle of great
+predators making a sudden appearance is not uncommon.</p>
+<p><strong>Overnight:</strong>The Hide<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Hwange National Park</h5>
+<p>Morning and afternoon game drives.</p>
+<p>Take a game drive through the park where you will come face to face with lions, elephants, giraffes and many other game species. Other
+activities include walking safaris escorted by a professional guide, and night game drives on the private concession which offers a thrilling
+chance to see leopard and other nocturnal species.</p>
+<p><strong>Overnight:</strong>The Hide<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5> Hwange National Park</h5>
+<p>Enjoy morning and afternoon game activities.</p>
+<p><strong>Overnight:</strong>The Hide<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5> Hwange National Park to Victoria Falls</h5>
+<p>Depart for Victoria Falls - a drive of approximately two and a half hours from Hwange National park.</p>
+<p>Evening sundowner cruise on the mighty Zambezi River.</p>
+<p>Unwind at the end of the day on board a cruise boat on the mighty Zambezi River. The sundowner cruise takes you through some of the
+channels of the river, offering an opportunity to see animals such as ippopotamus, elephant, crocodile as well as a variety of birdlife that inhabit
+the riverine vegetation.</p>
+<p>A selection of drinks & snacks are served.</p>
+<p><strong>Overnight:</strong>Stanley &amp; Livingstone<br />
+<strong>Meal Plan:</strong> L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5> Victoria Falls</h5>
+<p>Guided Tour of the mighty Victoria Falls. Wander through the rainforest and view the largest curtain of falling water from a number of panoramic
+viewing points. The evergreen rainforest is home to monkeys, baboons and other small animals such as the bushbuck. The Falls themselves
+vary in height from the Devils Cataract being the lowest at 70 metres high to the Rainbow Falls at 108 metres. The Falls are split into 5 sections
+namely the Devils Cataract, Main Falls, Horseshoe Falls, Rainbow Falls and the Eastern Cataract which make up this world wonder which is
+also a World Heritage Site.</p>
+<p>Afternoon at leisure for optional activities.</p>
+<p>There are a variety of activities to choose from our tour menu ranging from soft to hard adventure options.</p>
+<p>Suggestions include Flight of Angels (scenic flight over the Falls by helicopter), white water rafting, bunji jumping, canoeing, elephant back
+safaris, lion walks and traditional village tours among others.</p>
+<p><strong>Overnight:</strong>Stanley &amp; Livingstone<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5> Victoria Falls</h5>
+<p>Village tour visit an authentic traditional village on the outskirts of Victoria Falls and have an opportunity to see firsthand the way of life of some
+of the ethnic groups and learn about their customs & culture. You will also have the opportunity to buy some local handicrafts made in the
+village.</p>
+<p>Afternoon at leisure for optional activities.</p>
+<p><strong>Overnight:</strong>Stanley &amp; Livingstone<br />
+<strong>Meal Plan:</strong> B,D</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5> Victoria Falls to Johannesburg</h5>
+<p>Transfer to Victoria Falls airport.</p>
+<p>Depart Victoria Falls and fly to Johannesburg.</p>
+<p>Connect to outbound international flights.</p>
+<p><strong>Overnight:</strong><br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab10" style="display:none;">
+<?php $id=3; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Wings-Over-Zambia-Zimbabwe.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab11" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab12" style="display:none;">
+<iframe width="625" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!--  Ultimate Zimbabwe end -->
+<!-- Wings over Zambia & Zimbabwe Stars -->
+<div id="popup4" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli13"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli14"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli15"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli16"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Wings-Over-Zambia-Zimbabwe.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab13">
 
 <h1>Wings over Zambia & Zimbabwe</h1>
 <div class="popupbanner"><img src="../images/zimbabwe-inner1.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
@@ -362,8 +937,8 @@ href="../yahoo.html">
 </ul>
 </div>
 
-<div id="tab2" style="display:none;">
-<?php $id=1; ?>
+<div id="tab14" style="display:none;">
+<?php $id=4; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
@@ -376,7 +951,7 @@ href="../yahoo.html">
 </form>
 </div>
 
-<div id="tab3" style="display:none;">
+<div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
@@ -388,7 +963,7 @@ href="../yahoo.html">
 </form>
 </div>
 
-<div id="tab4" style="display:none;">
+<div id="tab16" style="display:none;">
 <iframe width="625" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 
 <div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
@@ -398,7 +973,7 @@ href="../yahoo.html">
 
 </div>   
 </div>
-
+<!-- Wings over Zambia & Zimbabwe end -->
 <script language="javascript1.1" type="text/javascript">
 function ChangeValue(val)
 { 
