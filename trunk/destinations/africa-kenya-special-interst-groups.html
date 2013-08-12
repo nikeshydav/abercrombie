@@ -1,0 +1,868 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="customized trips, Escorted Journeys, guided tour, Private Journeys, Group Tours, Group Travel, Special Interest Group"/>
+<meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Kenya and its people, and includes visits to a school in Masai village." />
+<title>Group Tours & Travel Kenya - Abercrombie & Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=8; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		    
+	        if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="active";
+			}
+			
+			if(document.getElementById(name) != null)	
+			{
+			document.getElementById(name).style.display="block";
+			}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+	}
+}
+</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/kenya-special-interest-groups.jpg" alt="Special Interest Groups" title="Special Interest Groups" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="africa.html">Africa</a></li>
+<li><a href="africa-kenya.html">Kenya</a></li>
+<li>Special Interest Groups</li>
+</ul>
+</div>
+<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+        <h5><a href="africa.html">Africa</a></h5>
+        <ul>
+          <li><a href="africa-kenya.html" title="Kenya">- Kenya</a>
+            <ul>
+              <li><a href="africa-kenya.html" title="Introduction to Kenya"><span>-</span> Introduction to Kenya</a></li>
+              <li><a href="africa-kenya-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
+              <li><a href="africa-kenya-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <li><a href="africa-kenya-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>
+              <li><a href="../about/kenya-office.html" title="A&amp;K office in Kenya"><span>-</span> A&amp;K office in Kenya</a></li>
+              <li><a href="africa-kenya-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>  <li><a href="africa-news.html?id=1" title="News"><span>-</span> News</a></li>
+              <li><a href="africa-kenya-special-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+              <li><a href="africa-kenya-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li>
+              <!--<li><a href="../journeystyles/extreme-adventures.html" title="Extreme adventures"><span>-</span> Extreme adventures</a></li>-->
+             <li><a href="../journeystyles/family-holidays.html" title="Family Holidays"><span>-</span> Family Holidays</a></li>
+              <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>
+               <li><a href="../journeystyles/honeymoon.html" title="Honeymoon "><span>-</span> Honeymoon</a></li>
+              <li><a href="africa-kenya-special-interst-groups.html" title="Special Interest Groups"><span>-</span> Special Interest Groups</a></li>
+              <li><a href="../journeystyles/private-mob-copm.html" title="Private Mobile Camping"><span>-</span> Private Mobile Camping</a></li> <li><a href="../journeystyles/kenya-sanctuary-retreats.html" title="Sanctuary Retreats"><span>-</span> Sanctuary Retreats</a></li>
+              <li><a href="../journeystyles/private-journeys.html" title="Private Luxury Journeys"><span>-</span> Private Luxury Journeys</a></li>
+            </ul>
+          </li>
+          <li><a href="africa-tanzania.html" title="Tanzania"><span>+</span> Tanzania</a></li>
+		  <li><a href="africa-uganda.html" title="Uganda"><span>+</span> Uganda</a></li>
+		  <li><a href="africa-southafrica.html" title="South Africa"><span>+</span> South Africa</a></li>
+		  <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a></li>   <li><a href="africa-zimbabwe.html" title="Zimbabwe" ><span>+</span> Zimbabwe</a></li><li><a href="africa-zambia.html" title="Zambia" ><span>+</span> Zambia</a></li><li><a href="africa-rwanda.html" title="Rwanda">+  Rwanda</a></li>
+<li><a href="javascript:void(0)" class="cursorauto" title="Namibia"><span>+</span> Namibia</a></li>          
+        </ul>
+          <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+     <option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+              <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+          <option value="../journeystyles/private-jet.html">Private Jet Journeys</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+          <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/Private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Special Interest Groups</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/people-culture-kenya.jpg" alt="People and Culture in Kenya" title="People and Culture in Kenya" width="326" height="210" /></div>
+<div class="rightbox"><h2>People and Culture in Kenya</h2>
+<p><strong>Duration:</strong>  8 days<br />
+<strong>Highlights:</strong>  Nairobi, Ol Pejeta Conservancy, Samburu, Masai Mara.</p>
+<p>This special interest programme provides fascinating insight into Kenya and its people, and includes visits to a school, a Maasai village and a number of conservation projects.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/images-kenya.jpg" alt="Images of Kenya" title="Images of Kenya" width="326" height="210" /></div>
+<div class="rightbox"><h2>Images of Kenya</h2>
+<p><strong>Duration:</strong>  9 days<br />
+<strong>Highlights:</strong> Nairobi, Amboseli, Nakuru, Masai Mara. </p>
+<p>This special interest itinerary includes overnight stays in several of Kenya's parks and is ideal for anyone with an interest in wildlife photography.</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="Clr"></div>
+</div>
+
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<!-- People and Culture in Kenya Popup Content Start Here -->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+
+<li><a href="" onClick="javascript:CallPrint('tab1');" ><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/people-culture-kenya.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/kenya-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1">
+<div class="logoinner1"><img src="../images/kenya-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>People and Culture in Kenya </h1>
+<div class="popupbanner"><img src="../images/wildlife-luxury-kenya.jpg" alt="Wildlife and Luxury in Kenya" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  8 days</p>
+<p>This special interest programme provides fascinating insight into Kenya and its people, and includes visits to a school, a Maasai village and a number of conservation projects.</p>
+<p><strong>Highlights:</strong> Nairobi, Ol Pejeta Conservancy, Samburu, Masai Mara. </p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive Nairobi </h5>
+<p>This morning arrive at Jomo Kenyatta International Airport. After clearing immigration and customs formalities you will be transferred to the Serena Hotel.</p>
+<p>Spend the rest of the day relaxing or sightseeing. There are various options for sightseeing depending on the time you have. Some of the places you could visit are:</p>
+<p>The Karen Blixen Museum: once part of Karen Blixen's vast coffee estate, 'Mbogani' was Karen's home from 1917 until 1931. The house and grounds were made famous by the film Out of Africa and have been restored by the Danish community of Kenya. Visitors have a glimpse of typical colonial life in Kenya at the turn of the 20th century.</p>
+<p>The Giraffe Centre: the headquarters for AFEW, the African Fund for Endangered Wildlife. Made famous by Daisy Rothschild, a giraffe calf rescued from Soi. The Giraffe Centre was established in 1983 and the breeding programme has been a great success. Visitors can watch these gentle giants at eye level from a raised platform and hand-feed them.</p>
+<p>David Sheldrick's: Daphne, the widow of pioneer wildlife ranger David Sheldrick, set up this orphanage on the edge of Nairobi National Park to successfully raise orphaned wild animals (mainly elephant and rhino) and reintroduce them into the wild. It is important to note that entrance is usually between 11.00 am and noon when the animals come to the waterhole and are bottle fed with milk.</p>
+<p><strong>Overnight:</strong> Serena Hotel<br />
+<strong>Meal Plan:</strong> </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Nairobi - Ol Pejeta Conservancy</h5>
+<p>This morning your guide will give a short safari briefing before you begin your drive through rich farming lands towards the foothills of Mount Kenya. Your destination is the private Ol Pejeta Conservancy which is one of Kenya's leading conservation successes.</p>
+<p>Continue your drive and arrive at Sweetwaters Tented Camp in time for lunch. Sweetwaters is a sheltered oasis, clustered around a waterhole. All tents face a waterhole which is set in the shadows of Mount Kenya. A cleverly hidden electric fence prevents animals from entering the grounds but allows for a wonderful experience of being close to game without any danger.</p>
+<p>Both night and day game drives allow guests to explore the sanctuary, whilst interpretive bush walks offer the chance to learn the signs of the bush. Horse and camel riding are also offered. One of the highlights here is a visit to the Chimpanzee Sanctuary where chimpanzees rescued from traumatic situations are being carefully nursed back to health so they can enjoy the rest of their days in the safety of a vast natural enclosure. This is the only place in Kenya to see these intelligent animals</p>
+<p>After lunch there is time to relax, you can spend time by the pool or observing game at the waterhole, before your afternoon game viewing drive and visit to the Chimp Sanctuary.</p>
+<p>Return to camp for dinner.</p>
+<p><strong>Overnight:</strong> Sweetwaters Tented Camp <br />
+<strong>Meal Plan:</strong> B,L,D </p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Ol Pejeta Conservancy - Samburu</h5>
+<p>After a hearty breakfast, drive to Nanyuki and make a stop at the Nanyuki Spinners &amp; Weavers, which is a women's self-help project started in 1977 in the highlands area around Nanyuki. The project was started with the aim of training poor widowed and single women to spin and weave sheep's wool on handlooms and sell the rugs and blankets they made to generate income for their families and at the same time become self-reliant. Over 282 women have been trained at the centre to date and some women have even started their own projects in other parts of the country, while others sell spun yarn to weavers and knitters to form sister groups. Spend time at the centre, talk to the women and learn how this project has changed their lives.</p>
+<p>Continue further north to Samburu, a harsh, savagely beautiful wilderness that depends on the steady flow of the Uaso Nyiro River for its existence.</p><br />
+<p>Arrive at Samburu Intrepids in time for lunch. Perched on the banks of the Uaso Nyiro River in the arid wilderness of Samburu National Park, Samburu Intrepids has long been a popular base for exploring the ancient wilds of Kenya's northern frontier.The tents offer simple but luxurious accommodation, with large four-poster beds, modern bathrooms, and secluded balconies overlooking the riverbanks where elephant and buffalo regularly come to drink. The acclaimed Adventurers' Club offers an innovative array of educational games and activities for younger visitors.</p>
+<p>Relax after lunch before departing for a game viewing drive in the reserve. This evening, before dinner, a Samburu warrior will give a talk and slide show on the Samburu tribe, their culture and traditional way of life which they still practice today.</p>
+<p><strong>Overnight:</strong> Samburu Intepids<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Samburu</h5>
+<p>Full day to explore Samburu.</p>
+<p>The river waters a wide variety of animal species not found south of the equator, including the majestic Beisa oryx, the reticulated giraffe, the thin-striped Grevy's zebra, and the 'giraffe-necked' gerenuk antelope which stands on its hind legs to feed. Elephant, buffalo, lion and leopard can all be seen along the river, and the 400-plus species of birds are positively spectacular.</p>
+<p>Samburu, Buffalo Springs and Shaba national reserve are adjacent to each other and lie within the lands of the Samburu tribe. The Samburu, like the Maasai, live a nomadic, cattle-herding existence, with strict adherence to their age-old rites and customs.</p>
+<p>You will also visit the school in a nearby village where you will donate some school supplies and spend time singing with the children and chatting with the teachers.</p>
+<p>Your game viewing drive ends with one of Kenya's oldest traditions - a sundowner. Take in the rapid sunset which transforms the world in a matter of minutes. As the sun begins to set, relax and enjoy a drink and the warmth of the fire as you watch the spectacular setting sun on the horizon.</p>
+<p>Before dinner come together for a drink and a discussion with your guide on the different tribes in Kenya. Many people forget that there are over 40 ethnic groups in Kenya and your guide will be able to tell you about the different cultures and the role of the different ethnic groups in Kenya.</p>
+<p><strong>Overnight:</strong> Samburu Intrepids<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Masai Mara</h5>
+<p>This morning, after breakfast, transfer to the airstrip for your flight to the famous Masai Mara.</p>
+<p>On arrival in the Mara your driver guide will be waiting and you will be transferred to the camp.</p>
+<p>Sheltered in a shady indigenous forest on a broad sweep of the Talek River, Mara Intrepids is a delightful camp. The tents are arranged in small clusters along the river banks and are a picture of old-world elegance, with large four-poster beds and elegant furniture. All tents have modern en suite bathrooms with flush toilets. The camp's amiable staff will pamper to your every need, while the very knowledgeable guides offer game drives and walking safaris. The acclaimed Adventurers' Club offers an innovative array of educational games and activities for younger visitors.</p>
+<p>After lunch, venture out for a game viewing drive.</p>
+<p><strong>Overnight:</strong> Mara Intrepids<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Masai Mara</h5>
+<p>Two full days to enjoy the splendours of the Maasai Mara.</p>
+<p>The jewel in Africa's crown, the Masai Mara is host to the most spectacular array of wildlife. Her open savannah, woodlands and tree-lined rivers create an eco-system which supports huge numbers of bird and mammal species. Lion are found in abundance throughout the park as are elephant, giraffe, a variety of gazelle species and zebra. Cheetah and leopard are also regularly seen and, if lucky, you may also spot rhino. The annual wildebeest migration traditionally is present in the Mara from July to September and at this time nature's dramas unfold before your very eyes. As well as wildlife, the Masai Mara is also home to many members of the colourful Maasai tribe.</p>
+<p>On one of these days you will visit a Maasai Village, where the village elder will invite you to learn about the Maasai culture in a relaxed and friendly atmosphere. The Maasai still live a very traditional lifestyle and they will talk to you about the medicinal uses of the trees and herbs in the area, the social structure of the homestead, the role of women in their society and other aspects of their daily life. Interaction and discussion is encouraged and often guests join in the dance or try to learn how to make fire using sticks and stone.</p>
+<p>You will also spend an afternoon with one of the field staff from Friends of Conservation, an organisation committed to working with local communities to develop and promote a balance between their needs and those of the wildlife with which they share the natural habitat.</p>
+<p>There are also options for a morning balloon safari or a half-day visit to Lake Victoria.</p>
+<p>Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands and nearby breakfast is already being prepared and, of course, glasses of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers. </p>
+<p>Lake Victoria Adventure : An early start this morning with a transfer to take you to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.</p>
+<p><strong>Overnight:</strong> Mara Intrepids<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Masai Mara</h5>
+<p>As Above</p>
+<p>In addition, on your last night in the Mara a private and secluded clearing will be prepared for an elegant dinner, illuminated by a magnificent log fire as candles flicker in the darkness. After a delicious dinner, retire to the crackling campfire absorbing the peace and beauty of an African night.</p>
+<p><strong>Overnight:</strong> Mara Intrepids<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Masai Mara - Nairobi</h5>
+<p>After breakfast your guide will transfer you to the airstrip for your scheduled flight back to Nairobi. Upon arrival you will be transferred to the Nairobi Serena where we have reserved dayrooms for you.</p>
+<p>This afternoon there is an option to spend time with the children from Nyumbani Children's Home. Nyumbani, which is Swahili for "home", was Kenya's first facility for HIV+ children and was founded by Reverend Angelo D'Agostino (affectionately called Father D'Ag), a physician, psychiatrist and Jesuit priest. The home is located in the beautiful Nairobi suburb of Karen, where the Nyumbani community create a safe and secure environment for each child by emphasising the importance of family style living - for some of these children, this is the first and only family that they will ever know. The home has a 'wish list' and you guide can assist you if you decide to purchase some items on the wish list.</p>
+<p>Transfer back to the hotel to freshen up before transfer to Jomo Kenyatta International Airport for your international departure flight.</p>
+<p><strong>Overnight:</strong><br />  
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+<?php $id=10; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Kenya"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="People and Culture in Kenya"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="people-culture-kenya.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Kenya"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="People and Culture in Kenya"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>As above.</p><p>In addition, on your last night in the Mara a private and secluded clearing will be prepared for an elegant dinner, illuminated by a magnificent log fire as candles flicker in the darkness. After a delicious dinner, retire to the crackling campfire absorbing the peace and beauty of an African night.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>After breakfast your guide will transfer you to the airstrip for your scheduled flight back to Nairobi. Upon arrival you will be transferred to the Nairobi Serena where we have reserved dayrooms for you.&nbsp;<br /><br />This afternoon there is an option to spend time with the children from Nyumbani Children's Home. Nyumbani, which is Swahili for 'home', was Kenya's first facility for HIV+ children and was founded by Reverend Angelo D'Agostino (affectionately called Father D'Ag), a physician, psychiatrist and Jesuit priest. The home is located in the beautiful Nairobi suburb of Karen, where the Nyumbani community create a safe and secure environment for each child by emphasising the importance of family style living - for some of these children, this is the first and only family that they will ever know. The home has a 'wish list' and you guide can assist you if you decide to purchase some items on the wish list.<br /><br />Transfer back to the hotel to freshen up before transfer to Jomo Kenyatta International Airport for your international departure flight.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Masai Mara - Nairobi", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>This morning arrive at Jomo Kenyatta International Airport. After clearing immigration and customs formalities you will be transferred to the Serena Hotel.<br /><br />Spend the rest of the day relaxing or sightseeing. There are various options for sightseeing depending on the time you have. Some of the places you could visit are:<br /><br />The Karen Blixen Museum: once part of Karen Blixen's vast coffee estate, 'Mbogani' was Karen's home from 1917 until 1931. The house and grounds were made famous by the film <em>Out of Africa</em> and have been restored by the Danish community of Kenya. Visitors have a glimpse of typical colonial life in Kenya at the turn of the 20th century.<br /><br />The Giraffe Centre: the headquarters for AFEW, the African Fund for Endangered Wildlife. Made famous by Daisy Rothschild, a giraffe calf rescued from Soi. The Giraffe Centre was established in 1983 and the breeding programme has been a great success. Visitors can watch these gentle giants at eye level from a raised platform and hand-feed them.<br /><br />David Sheldrick's: Daphne, the widow of pioneer wildlife ranger David Sheldrick, set up this orphanage on the edge of Nairobi National Park to successfully raise orphaned wild animals (mainly elephant and rhino) and reintroduce them into the wild. It is important to note that entrance is usually between 11.00 am and noon when the animals come to the waterhole and are bottle fed with milk.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>This morning your guide will give a short safari briefing before you begin your drive through rich farming lands towards the foothills of Mount Kenya. Your destination is the private Ol Pejeta Conservancy which is one of Kenya's leading conservation successes.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />Continue your drive and arrive at Sweetwaters Tented Camp in time for lunch. Sweetwaters is a sheltered oasis, clustered around a waterhole. All tents face a waterhole which is set in the shadows of Mount Kenya. A cleverly hidden electric fence prevents animals from entering the grounds but allows for a wonderful experience of being close to game without any danger.<br /><br />Both night and day game drives allow guests to explore the sanctuary, whilst interpretive bush walks offer the chance to learn the signs of the bush. Horse and camel riding are also offered. One of the highlights here is a visit to the Chimpanzee Sanctuary where chimpanzees rescued from traumatic situations are being carefully nursed back to health so they can enjoy the rest of their days in the safety of a vast natural enclosure. This is the only place in Kenya to see these intelligent animals<br /><br />After lunch there is time to relax, you can spend time by the pool or observing game at the waterhole, before your afternoon game viewing drive and visit to the Chimp Sanctuary.<br /><br />Return to camp for dinner.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(0.02984, 36.9111057), "Nairobi - Ol Pejeta Conservancy", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>After a hearty breakfast, drive to Nanyuki and make a stop at the Nanyuki Spinners &amp; Weavers, which is a women's self-help project started in 1977 in the highlands area around Nanyuki. The project was started with the aim of training poor widowed and single women to spin and weave sheep's wool on handlooms and sell the rugs and blankets they made to generate income for their families and at the same time become self-reliant. Over 282 women have been trained at the centre to date and some women have even started their own projects in other parts of the country, while others sell spun yarn to weavers and knitters to form sister groups. Spend time at the centre, talk to the women and learn how this project has changed their lives.<br /><br />Continue further north to Samburu, a harsh, savagely beautiful wilderness that depends on the steady flow of the Uaso Nyiro River for its existence.<br /><br />Arrive at Samburu Intrepids in time for lunch. Perched on the banks of the Uaso Nyiro River in the arid wilderness of Samburu National Park, Samburu Intrepids has long been a popular base for exploring the ancient wilds of Kenya's northern frontier.The tents offer simple but luxurious accommodation, with large four-poster beds, modern bathrooms, and secluded balconies overlooking the riverbanks where elephant and buffalo regularly come to drink. The acclaimed Adventurers' Club offers an innovative array of educational games and activities for younger visitors.<br /><br />Relax after lunch before departing for a game viewing drive in the reserve. This evening, before dinner, a Samburu warrior will give a talk and slide show on the Samburu tribe, their culture and traditional way of life which they still practice today.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.778638, 39.2789), "Ol Pejeta Conservancy - Samburu", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Full day to explore Samburu.&nbsp;<br /><br />The river waters a wide variety of animal species not found south of the equator, including the majestic Beisa oryx, the reticulated giraffe, the thin-striped Grevy's zebra, and the 'giraffe-necked' gerenuk antelope which stands on its hind legs to feed. Elephant, buffalo, lion and leopard can all be seen along the river, and the 400-plus species of birds are positively spectacular.<br /><br />Samburu, Buffalo Springs and Shaba national reserve are adjacent to each other and lie within the lands of the Samburu tribe. The Samburu, like the Maasai, live a nomadic, cattle-herding existence, with strict adherence to their age-old rites and customs.<br /><br />You will also visit the school in a nearby village where you will donate some school supplies and spend time singing with the children and chatting with the teachers.<br /><br />Your game viewing drive ends with one of Kenya's oldest traditions - a sundowner. Take in the rapid sunset which transforms the world in a matter of minutes. As the sun begins to set, relax and enjoy a drink and the warmth of the fire as you watch the spectacular setting sun on the horizon.<br /><br />Before dinner come together for a drink and a discussion with your guide on the different tribes in Kenya. Many people forget that there are over 40 ethnic groups in Kenya and your guide will be able to tell you about the different cultures and the role of the different ethnic groups in Kenya.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.778638, 39.2789), "Samburu", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning, after breakfast, transfer to the airstrip for your flight to the famous Masai Mara.<br />&nbsp;<br />On arrival in the Mara your driver guide will be waiting and you will be transferred to the camp.<br /><br />Sheltered in a shady indigenous forest on a broad sweep of the Talek River, Mara Intrepids is a delightful camp. The tents are arranged in small clusters along the river banks and are a picture of old-world elegance, with large four-poster beds and elegant furniture. All tents have modern en suite bathrooms with flush toilets. The camp's amiable staff will pamper to your every need, while the very knowledgeable guides offer game drives and walking safaris. The acclaimed Adventurers' Club offers an innovative array of educational games and activities for younger visitors.<br /><br />After lunch, venture out for a game viewing drive.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Samburu - Masai Mara", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Two full days to enjoy the splendours of the Maasai Mara.<br /><br />The jewel in Africa's crown, the Masai Mara is host to the most spectacular array of wildlife. Her open savannah, woodlands and tree-lined rivers create an eco-system which supports huge numbers of bird and mammal species. Lion are found in abundance throughout the park as are elephant, giraffe, a variety of gazelle species and zebra. Cheetah and leopard are also regularly seen and, if lucky, you may also spot rhino. The annual wildebeest migration traditionally is present in the Mara from July to September and at this time nature's dramas unfold before your very eyes. As well as wildlife, the Masai Mara is also home to many members of the colourful Maasai tribe.<br /><br />On one of these days you will visit a Maasai Village, where the village elder will invite you to learn about the Maasai culture in a relaxed and friendly atmosphere. The Maasai still live a very traditional lifestyle and they will talk to you about the medicinal uses of the trees and herbs in the area, the social structure of the homestead, the role of women in their society and other aspects of their daily life. Interaction and discussion is encouraged and often guests join in the dance or try to learn how to make fire using sticks and stone.<br /><br />You will also spend an afternoon with one of the field staff from Friends of Conservation, an organisation committed to working with local communities to develop and promote a balance between their needs and those of the wildlife with which they share the natural habitat.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands and nearby breakfast is already being prepared and, of course, glasses of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to take you to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "6");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.778638;
+					var minLng = 35.143889;
+					var maxLat = 0.02984;
+					var maxLng = 39.2789;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+
+<div id="map_canvas" style="width:625px; height: 450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- People and Culture in Kenya Popup Content End Here -->
+
+<!-- Images of Kenya Popup Content Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/images-kenya.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer" id="tab12">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/kenya-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<div class="logoinner1"><img src="../images/kenya-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<h1>Images of Kenya</h1>
+<div class="popupbanner"><img src="../images/wildlife-luxury-kenya.jpg" alt="Images of Kenya" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  9 days</p>
+<p>This special interest itinerary includes overnight stays in several of Kenya's parks and is ideal for anyone with an interest in wildlife photography.</p>
+<p><strong>Highlights:</strong> Nairobi, Amboseli, Nakuru, Masai Mara.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>Arrive Nairobi </h5>
+<p>Arrive at Jomo Kenyatta International Airport. After clearing immigration and customs formalities you will be met and transferred the short distance to the Norfolk Hotel, probably Kenya's most famous hotel.</p>
+<p>The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.</p>
+<p>The afternoon is free to relax or if time permits, sightseeing.</p>
+<p>Option: We can arrange for a talk by a professional wildlife photographer to share experiences and give some tips on photographing wildlife and scenery in Africa.</p>
+<p><strong>Overnight:</strong> The Norfolk Hotel  <br />
+<strong>Meal Plan:</strong> </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Nairobi - Amboseli</h5>
+<p>After breakfast, begin your drive south to Amboseli.</p>
+<p>Arrive at Amboseli Serena Lodge in time for lunch. Sitting in the formidable shadow of Africa's highest mountain, the lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of lion, buffalo, giraffe and wildebeest, even some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.</p>
+<p><strong>Overnight:</strong> Amboseli Serena Safari Lodge <br />
+<strong>Meal Plan:</strong> B,L,D </p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>Amboseli</h5>
+<p>A full day to explore Amboseli National Park.</p>
+<p>Amboseli lies south-east of Nairobi, at the foot of Africa's highest mountain, Mount Kilimanjaro at 5895 metres (19,340ft). The Tanzanian border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.</p>
+<p>A photographer's paradise, the snow-capped peak of Mount Kilimanjaro rises above the clouds and dominates every aspect of the park, providing a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game.</p>
+
+<p><strong>Overnight:</strong> Amboseli Serena Safari Lodge<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Amboseli - Nairobi - Nakuru</h5>
+<p>Amboseli is beautiful at sunrise, providing excellent photo opportunities. After an early breakfast drive to Nairobi for lunch. Then continue to Lake Nakuru, descending into the Great Rift Valley taking in the stunning scenery.</p>
+<p>Drive through Lake Nakuru National Park, famous for its visiting flocks of flamingoes, to Lion Hill Lodge.</p>
+<p>Your lodge is set on a plateau overlooking the lake. It is the perfect place to experience one of the world's largest ornithological spectacles, the pink flamingo, and there is also a rich concentration of wildlife including the endangered rhino.</p>
+<p>After lunch there is time to relax or take a dip in the pool before your game viewing drive.</p>
+<p><strong>Overnight:</strong> Lion Hill Lodge<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>Nakuru</h5>
+<p>Spend today exploring Lake Nakuru National Park.</p>
+<p>The park is host to what is widely regarded as the world's greatest bird spectacle - more than a million flamingoes flock to the lake seasonally, painting the green waters of the lake a fluttering pink.</p>
+<p>Nakuru is also home to some of East Africa's rarest creatures, including fast-growing populations of black and white rhino, the endangered Rothschild's giraffe, buffalo, waterbuck and lion.</p>
+<p>Lake Nakuru enjoys a reputation as one of the best places in the country to spot the elusive leopard.</p>
+<p>For the photographer, in addition to the amazing wildlife and birdlife, the park offers a diversity of landscapes from the beautiful wooded and bush grasslands around the soda lake, to rocky escarpments and clusters of yellow thorn acacias under carpets of beautiful green grass.</p>
+<p><strong>Overnight:</strong> Lion Hill Lodge<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Nakuru - Masai Mara</h5>
+<p>Early breakfast this morning before beginning your drive to the famous Masai Mara, driving through beautiful scenery and past small towns and villages on the way.</p>
+<p>Sarova Mara Camp is nestled in the hills overlooking the wide plains of the southeastern section of the Masai Mara. The luxurious tents are beautifully decorated and set amidst lush gardens. All tents have en suite bathrooms with flush toilet, shower and washbasin.</p>
+<p>Freshen up and enjoy lunch at the camp before your afternoon game viewing drive.</p>
+<p><strong>Overnight:</strong> Sarova Mara Camp<br />
+<strong>Meal Plan:</strong> B,L,D  </p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Masai Mara </h5>
+<p>You have the next two days to enjoy game viewing as you venture out into the park led by your driver/guide.</p>
+<p>The Mara is a photographer's dream, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest and topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion; leopard; hyena and cheetah. In the Mara River, hippos submerge to snort and grumble while crocodiles sunbathe on the riverbanks. Between July and September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity as drama unfolds at every corner.</p>
+<p>On one of these days we will visit a Maasai village, where the village elder will invite you to learn about the Maasai culture in a relaxed and friendly atmosphere. The Maasai still live a very traditional lifestyle and they will talk to you about the medicinal uses of the trees and herbs in the area, the social structure of the homestead, the role of women in their society and other aspects of their daily life. Interaction and discussion is encouraged and often guests join in the dance or try to learn how to make fire using sticks and stone.</p>
+<p>There are also options for a morning balloon safari or a half-day visit to Lake Victoria.</p>
+<p>Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands and nearby breakfast is already being prepared and, of course, glasses of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers</p>
+<p>Lake Victoria Adventure: An early start this morning with a transfer to take you to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.</p>
+<p><strong>Overnight:</strong> Sarova Mara Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Masai Mara</h5>
+<p>You have the next two days to enjoy game viewing as you venture out into the park led by your driver/guide.</p>
+<p>The Mara is a photographer's dream, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest and topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion; leopard; hyena and cheetah. In the Mara River, hippos submerge to snort and grumble while crocodiles sunbathe on the riverbanks. Between July and September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity as drama unfolds at every corner.</p>
+<p>On one of these days we will visit a Maasai village, where the village elder will invite you to learn about the Maasai culture in a relaxed and friendly atmosphere. The Maasai still live a very traditional lifestyle and they will talk to you about the medicinal uses of the trees and herbs in the area, the social structure of the homestead, the role of women in their society and other aspects of their daily life. Interaction and discussion is encouraged and often guests join in the dance or try to learn how to make fire using sticks and stone.</p>
+<p>There are also options for a morning balloon safari or a half-day visit to Lake Victoria.</p>
+<p>Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands and nearby breakfast is already being prepared and, of course, glasses of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers</p>
+<p>Lake Victoria Adventure: An early start this morning with a transfer to take you to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.</p>
+<p><strong>Overnight:</strong> Sarova Mara Camp<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>Masai Mara - Nairobi</h5>
+<p>After breakfast, you will be transferred to the airstrip for your flight back to Nairobi. On arrival you will be met and driven to the Norfolk Hotel where we have reserved dayrooms for you. The rest of the day is free for you to relax or go sightseeing and shopping.</p>
+<p>This evening you will be transferred to Jomo Kenyatta International Airport for your international departure flight.</p>
+<p><strong>Overnight:</strong> <br />  
+<strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id=11; ?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Kenya"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Images of Kenya"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="images-kenya.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Kenya"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Images of Kenya"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport. After clearing immigration and customs formalities you will be met and transferred the short distance to the Norfolk Hotel, probably Kenya's most famous hotel.<br /><br />The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />The afternoon is free to relax or if time permits, sightseeing.<br /><br />Option: We can arrange for a talk by a professional wildlife photographer to share experiences and give some tips on photographing wildlife and scenery in Africa.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch. Sitting in the formidable shadow of Africa's highest mountain, the lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of lion, buffalo, giraffe and wildebeest, even some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies south-east of Nairobi, at the foot of Africa's highest mountain, Mount Kilimanjaro at 5895 metres (19,340ft). The Tanzanian border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /><br />A photographer's paradise, the snow-capped peak of Mount Kilimanjaro rises above the clouds and dominates every aspect of the park, providing a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Amboseli is beautiful at sunrise, providing excellent photo opportunities. After an early breakfast drive to Nairobi for lunch. Then continue to Lake Nakuru, descending into the Great Rift Valley taking in the stunning scenery.<br /><br />Drive through Lake Nakuru National Park, famous for its visiting flocks of flamingoes, to Lion Hill Lodge.<br /><br />Your lodge is set on a plateau overlooking the lake. It is the perfect place to experience one of the world's largest ornithological spectacles, the pink flamingo, and there is also a rich concentration of wildlife including the endangered rhino.<br /><br />After lunch there is time to relax or take a dip in the pool before your game viewing drive.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-0.27979, 36.068958), "Amboseli - Nairobi - Nakuru", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend today exploring Lake Nakuru National Park.</p><p>The park is host to what is widely regarded as the world's greatest bird spectacle - more than a million flamingoes flock to the lake seasonally, painting the green waters of the lake a fluttering pink.<br /><br />Nakuru is also home to some of East Africa's rarest creatures, including fast-growing populations of black and white rhino, the endangered Rothschild's giraffe, buffalo, waterbuck and lion.<br /><br />Lake Nakuru enjoys a reputation as one of the best places in the country to spot the elusive leopard.<br /><br />For the photographer, in addition to the amazing wildlife and birdlife, the park offers a diversity of landscapes from the beautiful wooded and bush grasslands around the soda lake, to rocky escarpments and clusters of yellow thorn acacias under carpets of beautiful green grass.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-0.27979, 36.068958), "Nakuru", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Early breakfast this morning before beginning your drive to the famous Masai Mara, driving through beautiful scenery and past small towns and villages on the way.<br />&nbsp;<br />Sarova Mara Camp is nestled in the hills overlooking the wide plains of the southeastern section of the Masai Mara. The luxurious tents are beautifully decorated and set amidst lush gardens. All tents have en suite bathrooms with flush toilet, shower and washbasin.<br /><br />Freshen up and enjoy lunch at the camp before your afternoon game viewing drive.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Nakuru - Masai Mara", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>You have the next two days to enjoy game viewing as you venture out into the park led by your driver/guide.<br /><br />The Mara is a photographer's dream, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest and topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion; leopard; hyena and cheetah. In the Mara River, hippos submerge to snort and grumble while crocodiles sunbathe on the riverbanks. Between July and September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity as drama unfolds at every corner.<br /><br />On one of these days we will visit a Maasai village, where the village elder will invite you to learn about the Maasai culture in a relaxed and friendly atmosphere. The Maasai still live a very traditional lifestyle and they will talk to you about the medicinal uses of the trees and herbs in the area, the social structure of the homestead, the role of women in their society and other aspects of their daily life. Interaction and discussion is encouraged and often guests join in the dance or try to learn how to make fire using sticks and stone.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands and nearby breakfast is already being prepared and, of course, glasses of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure: An early start this morning with a transfer to take you to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>After breakfast, you will be transferred to the airstrip for your flight back to Nairobi. On arrival you will be met and driven to the Norfolk Hotel where we have reserved dayrooms for you. The rest of the day is free for you to relax or go sightseeing and shopping.<br /><br />This evening you will be transferred to Jomo Kenyatta International Airport for your international departure flight.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Masai Mara - Nairobi", description, "9");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -2.666667;
+					var minLng = 35.143889;
+					var maxLat = -0.27979;
+					var maxLng = 37.283333;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+<!-- Images of Kenya Popup Content End Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

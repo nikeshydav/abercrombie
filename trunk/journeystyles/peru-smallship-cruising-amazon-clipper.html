@@ -1,0 +1,869 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Small Ship Cruising, River Cruising, Adventure Cruising, Luxury River Cruising, Luxury Cruises"/>
+<meta name="description" content="Abercrombie & Kent India offers luxurious range of small ship adventurous river cruises of highest standard of accommodation, guiding, dining, exceptional service and fabulous on-board camaraderie." />
+<title>Amazon Cruise Peru | Adventure Small Ship River Cruising - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--popup-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=16; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+			}
+	}
+}
+</script>
+<!--popup-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--gallery-->
+<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
+<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(function() {
+        
+    $('#slideshow').before('<div id="nav" class="nav">').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        before: onBefore
+    });
+    
+        function onBefore() {
+        $('#title').html(this.alt);
+    }
+});
+
+</script>
+<!--gallery-->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/peru-banner.jpg" alt="Amazon Peru Small Ship Cruising" title="Peru Aqua Cruises" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="#">A&amp;K Journey Styles</a></li>
+<li><a href="small-ship-cruising.html">Small Ship Cruising</a></li>
+<li><a href="small-ship-cruising.html">Peru</a></li>
+<li>Amazon Clipper Premium Cruise</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>CHOOSE YOUR STYLE</h4>
+<ul>
+<li><a href="ak-journey-style.html" class="Active" title="Overview">Overview</a></li>
+<li><a href="private-journeys.html" title="Private Luxury Journeys">Private Luxury Journeys</a></li><li><a href="connections.html" title="Connections">Connections</a>
+</li>
+<li><a href="extreme-adventures.html" title="Extreme Adventures">Extreme Adventures</a></li>
+<li><a href="small-ship-cruising.html" title="Small Ship Cruising">Small Ship Cruising</a></li>
+<li><a href="private-jet.html" title="Private Jet Journeys">Private Jet Journeys</a></li>
+<li><a href="Luxury-rail-journey.html" title="Luxury Rail Journeys">Luxury Rail Journeys</a></li>
+<li><a href="family-holidays.html" title="Family Holidays">Family Holidays</a></li>
+<li><a href="rest-revive.html" title="Rest &amp; Revive">Rest &amp; Revive</a></li>
+<li><a href="celebration.html" title="Celebrations">Celebrations</a></li>
+<li><a href="honeymoon.html" title="Honeymoon"> Honeymoon</a></li>
+<li><a href="special-interst-groups.html" title="Special Interest Groups">Special Interest Groups</a></li>
+<li><a href="private-mob-copm.html" title="Private Mobile Camping">Private Mobile Camping</a></li>
+<li><a href="ak-villas.html" title="A&amp;K Villas">A&amp;K Villas</a></li>
+<li><a href="sanctuary-retreats.html" title="Sanctuary Retreats">Sanctuary Retreats</a></li>
+</ul>
+
+<h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Amazon Clipper Premium Cruise</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div align="left">
+<div class="boldtext">Select the Location from the list below for small Ship Cruising</div>
+<select name="select" class="choose" onchange="ChangeValue(this)">
+<option selected="selected" value="0" >--Please Select--</option>
+<option value="../journeystyles/argentina-smallship-cruising.html">Argentina </option>
+<option value="../journeystyles/australia-smallship-cruising.html">Australia </option>
+<option value="../journeystyles/china-smallship-cruising.html">China</option>
+<option value="../journeystyles/chile-smallship-cruising.html">Chile</option>
+<option value="../journeystyles/ecuador-smallship-cruising.html">Ecuador </option>
+<option value="../journeystyles/egypt-smallship-cruising.html">Egypt </option>
+<option value="../journeystyles/japan-smallship-cruising.html">Japan </option>
+<option value="../journeystyles/myanmar-smallship-cruising.html">Myanmar </option>
+<option value="../journeystyles/peru-smallship-cruising.html">Peru </option>
+<option value="../journeystyles/rest-of-europe-smallship-cruising.html">Rest of Europe </option>
+<option value="../journeystyles/russia-smallship-cruising.html">Russia </option>
+
+</select>
+</div>
+<div class="Clr"></div>
+
+<div style="float:right;"><a href="../destinations/south-america-peru.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Peru Homepage</a></div>
+<div class="Clr"></div>
+<div id="demo2" >
+ <div id="slideshow" class="pics" style="position: relative; ">
+ <img src="../images/amazon-gallery1.jpg" alt="Private Jet"/>
+<img src="../images/amazon-gallery2.jpg" alt="Private Jet"/>
+<img src="../images/amazon-gallery3.jpg" alt="Private Jet"/>
+<img src="../images/amazon-gallery4.jpg" alt="Private Jet"/>
+<img src="../images/amazon-gallery5.jpg" alt="Private Jet"/>
+<img src="../images/amazon-gallery6.jpg" alt="Private Jet"/>
+</div>
+</div>
+<div class="small-cruise">
+
+<div class="heading">Amazon Clipper Premium Cruise</div>
+<p>Amazon Clipper Cruises offer distinctly Amazonian boats for touring this incredibly eco-diverse region. We recommend travel aboard the Amazon Clipper Premium. This traditional style boat provides a classic vessel in which to explore the narrow tributaries of the Amazon in safety, comfort, and reliability.</p>
+<p>The Amazon Clipper Premium is a comfortable traditional river boat that contains 4 decks. On the main deck are located 8 Cabins, on the 2nd deck you will find 8 further cabins and a window-lined air-conditioned dining room which seats all passengers leisurely at same time as well as a bar with library. The third deck offers a spacious area for relaxing as well as an air-conditioned lecture room, bar and library. Up on this deck, you will also find a large covered area for outdoor sightseeing, complete with Jacuzzi and outdoor showers for relaxing after excursions into the rainforest. Finally the top deck is a large sundeck with a fantastic 360° panoramic view.</p>
+<p>Accommodation for all guests is in spacious air-conditioned outside cabins with lower beds and private bathroom facilities with hot shower. The trip offers excellent fresh fare prepared with utmost care by our experienced kitchen staff. The boat's kitchens are fully equipped with freezers, filters and a large supply of mineral water. All meals, accommodation and excursions are included on your Amazon cruise.</p>
+<strong>Please <a href="http://www.abercrombiekent.co.in/contact/contact.html">contact us </a>for full details or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> here to send an email </strong>
+</div>
+<div class="Clr"></div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--Discover Peru-->
+<div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onClick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/Roya-Journey-Through-UK.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div><img src="../images/thailand-logo.jpg" /></div>
+</div>
+<div id="tab1">
+
+<h1>CLASSIC THAILAND</h1>
+<div class="popupbanner"><img src="../images/thailand-inner4.jpg" alt="CLASSIC THAILAND" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>   10 days</p>
+<p>Ideal for first time visitors to Thailand, this programme includes the vibrant capital city of Bangkok, the culturally rich northern city of Chiang Mai and the tropical island of Phuket.</p>
+<p><strong>Highlights:</strong> Bangkok, Chiang Mai, Phuket.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE BANGKOK</h5>
+<p>Your travel experience starts the minute you disembark when a representative will be there to breeze you through immigration and customs through a special channel. After clearing immigration and customs, you will be transferred to the legendary Mandarin Oriental Hotel.</p>
+<p>Upon arrival explore the many facilities the hotel has or just relax in the comfort of your room until your welcome dinner at Sala Rim Naam, Mandarin Oriental's signature Thai restaurant. A lavish Thai set dinner menu accompanied by the region's most spectacular cultural performance and dance show awaits you.</p>
+<p>
+<strong>Overnight:</strong> Mandarin Oriental<br />
+<strong>Meal Plan:</strong> D </p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>BANGKOK</h5>
+<p>This morning experience an important part of Thai culture by offering food to the monks at a local temple. Afterwards cruise along Chao Phraya and its canals where you will see family homes and temples dotted along the waterways, making it clear why Bangkok is referred to as the "Venice of the East".</p>
+<p>Your exciting journey continues once you disembark at the public pier, here you will take a short ride on a Tuk Tuk (a motorised tricycle, one of the symbols of Bangkok) to visit the Grand Palace and Emerald Buddha Temple, perhaps the greatest spectacle for any
+visitor to Bangkok. It consists of over 100 brightly coloured buildings, golden spires and glittering mosaics, and dates back to 1782 when Bangkok was founded. Wat Phra Kaew (Temple of Emerald Buddha) itself, is Thailand's most important and sacred temple.</p>
+<p>
+This afternoon visit the Arts of the Kingdom exhibition at the Ananda Samakhom Throne Hall (closed on Mondays). The Arts of the Kingdom is an exhibition of exquisite but rarely seen traditional Thai crafts created by artists under The Foundation for the Promotion of
+Supplementary Occupations and Related Techniques under the Royal Patronage of Her Majesty Queen Sirikit of Thailand.</p>
+<p>
+<strong>Overnight:</strong> Mandarin Oriental<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>BANGKOK</h5>
+<p>This morning you will visit the home of the American adventurer, Jim Thompson. Credited with re-establishing the Thai silk industry, Mr. Thompson was an enigmatic figure who had great passion for all things oriental. After settling in Thailand following the Second World War, he set about developing the silk industry as well as amassing a considerable collection of oriental antiques and artworks. Mr. Thompson mysteriously disappeared in Malaysia in 1967 and today his home has been opened to the public for visits.</p>
+<p>
+In the afternoon visit the Prasart Museum, a private family gallery that highlights the artistic splendour of Thai culture. The complex is made up of two exquisite teak houses built in the traditional Thai style, which display a wealth of handicrafts. There is also a mansion in the style of 19th century France which exhibits an extensive collection of objets d'art from both Europe and the Thai royal family's personal collection. After visiting the gallery, chat with Khun Prasart Vongsakul, owner of the Prasart Museum and ardently devoted to preserving Thai antiquity. The opportunity to meet Khun Prasart is dependent on your travelling dates and Khun Prasart's availability.</p>
+<p>This evening you will be alfresco dining by the river at Sirocco. What a great way to bid goodbye to Bangkok, the city of angels.</p>
+<p>
+<strong>Overnight:</strong> Mandarin Oriental<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>BANGKOK - CHIANG MAI</h5>
+<p>After breakfast, transfer to the airport for flight from Bangkok to Chiang Mai. Upon arrival in Chiang Mai our representative will be there to accompany you to the fabulous Four Seasons Resort.</p>
+<p>
+After lunch, visit Waroros Market and experience the northern Thai way of life. From the market ride along Tapae Road down through the city walls and along Rajdamnern Road to Wat Phra Singh which houses a very old and sacred Buddha image. Drive from Wat Phra Singh to Wat Phrathad Doi Suthep, which stands at 3,500 feet above sea level and is the most important temple in Chiang Mai.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Resort<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>CHIANG MAI</h5>
+<p>Leave for Mae Kampong village, a perfect destination to experience the unspoiled beauty of nature. A stop will be made at a local market where you will have a chance to buy ingredients for a self-cooked dinner at the village in the afternoon.
+The village is 1,300 metres above sea level with an average temperature of 10-18�C throughout the year.</p>
+<p>Upon arrival you will walk through the community forest, where the villagers grow tea and coffee, to see how they preserve their forest and how they live in harmony with nature. It is a good example of the Thai king's self sufficient economy theory.
+</p>
+<p>After a picnic lunch at a waterfall you will return to the village to relax with a one hour Thai traditional massage. These massages are given by the homemakers of the villages, this is another initiative by Mae Kampong to provide extra income for households. Then walk around the village to witness the process of fermenting tea leaves.</p>
+<p>In the evening you will prepare and cook your dinner with local people in their home.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Resort<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>CHIANG MAI</h5>
+<p>This morning is at leisure.</p>
+<p>
+This afternoon, visit an elephant camp where you will be taken through a private manhout training course to learn the basic commands required to guide an elephant through its daily tasks.</p>
+<p>
+This evening dine along the scenic river of Mae Ping. Mae Ping River has a long history of over 700 years. The river is known as the lifeline of the Chiang Mai Province and was once used for the transport of timber from pier to pier.</p>
+<p>
+After dinner, explore the bustling outdoor night market of Chiang Mai.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Resort<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+
+<li>
+<h4>Day 7</h4>
+<h5>CHIANG MAI - PHUKET</h5>
+<p>This morning is free at leisure until your transfer to Chiang Mai airport for your flight to Phuket.</p>
+<p>
+Phuket is Thailand 's largest island. Located in balmy Andaman Sea waters on Thailand's western coastline 862 kilometres south of Bangkok, Phuket is blessed with magnificent coves and bays, palm-fringed beaches, sparkling island-dotted seas, hospitable people,fresh seafood, delightful turn of-the-century Sino-Portuguese architecture, numerous sporting and leisure opportunities and a lush tropical landscape - all of which combine to create a delightful ambience for a truly memorable holiday.</p>
+<p>
+Upon arrival in Phuket our representative will be there to accompany you to Amanpuri. Nestled amid coconut palms and overlooking its very own beach, Amanpuri is a tranquil haven where relaxation and regeneration come naturally.</p>
+<p>
+<strong>Overnight:</strong> Amanpuri Resort<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>PHUKET</h5>
+<p>Today is at leisure to enjoy the sun, sand and sea on offer in Phuket.</p>
+<p>
+<strong>Overnight:</strong> Amanpuri Resort<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>PHUKET</h5>
+<p>Today is at leisure to enjoy the sun, sand and sea on offer in Phuket.</p>
+<p>
+<strong>Overnight:</strong> Amanpuri Resort<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>DEPART PHUKET</h5>
+<p>Enjoy some free time this morning to reflect on the incredible journey that you have experienced till your departure transfer to the airport for your flight home. Upon arrival at Bangkok airport, our representative will be there with you to assist you with your transfer flight back home.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Tanzania"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classic-tanzania.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Tanzania"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Tanzania"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Upon arrival at Kilimanjaro International airport you will be met and transferred by private vehicle to your lodge set on a coffee plantation in Arusha. The remainder of your day is at leisure.<br /><br />Arusha Coffee Lodge is located on a coffee plantation on the outskirts of Arusha. Designed around the original plantation houses but completely renovated to achieve the highest standards of comfort, the d&eacute;cor is luxuriant and stylish with undertones of the bygone days of early exploration. Each of the 18 plantation houses has been lavishly furnished and features a split level living area and a private deck. The lodge also boasts a coffee shop, patisserie, conference facilities and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arrive Kilimanjaro - Arusha", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today meet your private driver/guide in the lobby of your lodge for a short briefing before transferring to Swala Camp located within Tarangire National Park. This afternoon enjoy a game drive in Tarangire National Park. Tarangire is noted for its elephant population and spectacular baobabs of every shape creating a beautiful setting for your safari.<br /><br />Swala Camp is located under a majestic umbrella of acacia trees at the southwestern part of the park. The camp offers a peaceful setting for the traveller after a long day of game viewing. The camp is comprised of nine double tents and a mess tent with a common room. All tents face east overlooking the marshland and watering hole which are regularly visited by lions, buffalo and elephants.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Arusha - Tarangire", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>You will be awoken this morning with a steaming hot cup of tea or coffee served on the decking of your tent looking out over the waterhole. Enjoy an early breakfast before venturing out into Tarangire National Park by 4WD vehicle on exciting morning and afternoon game drives.&nbsp;<br /><br />The appeal of Tarangire National Park lies not only in the herds of migrating animals but also in the beauty of the landscape with its grand baobabs and acacia trees. During the dry season the animals migrate from as far north as Lake Natron, resulting in the resident population of wildebeest, zebra, eland, elephant, hartebeest, buffalo and fringe-eared oryx swelling and competing for Tarangire's permanent water pools.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Tarangire", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following an early breakfast, head out on a game drive before leaving Tarangire for Ngorongoro Crater highlands. Transfer to your lodge located adjacent to the Ngorongoro Conservation area. This afternoon is at leisure to participate in one of the many activities on offer at your lodge including coffee tasting, guided walks on the estate, bike riding or horse back riding.&nbsp;<br /><br />The Manor at Ngorongoro is reminiscent of an elegant, up country farm home in the Cape Dutch style of architecture. With its 20 luxurious guest cottage suites, this is a luxury safari experience fusing East African safari hospitality with old world Afro-European architecture and d&eacute;cor.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Tarangire - Ngorongoro Crater", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before transferring to the Ngorongoro Crater. Descend to the crater floor by 4WD safari vehicle for a game drive unlike any other you will experience in Africa with the forest-covered crater walls rising around you. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -4.0295777;
+					var minLng = 35.566932;
+					var maxLat = -3.172344;
+					var maxLng = 36.67445;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Discover Peru-->
+<!--Archaeological Treasures-->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/London.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div><img src="../images/thailand-logo.jpg" /></div>
+</div>
+<div id="tab5">
+<h1>BEST OF THAILAND</h1>
+<div class="popupbanner"><img src="../images/thailand-inner4.jpg" alt="BEST OF THAILAND" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  10 days </p>
+<p>A 10-day itinerary showcasing the best of Thailand, including the bustling Bangkok, cultural Chiang Mai, and idyllic Koh Samui.</p>
+<p><strong>Highlights:</strong> Bangkok, Chiang Mai, Koh Samui.</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE BANGKOK</h5>
+<p>Your travel experience starts the minute you disembark when our representative will breeze you through immigration and customs, before accompanying you to an oasis in Bangkok, the Four Seasons Hotel.</p>
+<p>
+Upon arrival pamper yourself in the flower bath that has been drawn for you while enjoying light afternoon snacks. Afterwards explore the many facilities the hotel has to offer or simply relax in the comfort of your room. This evening is free at your leisure.</p>
+<p><strong>Overnight:</strong> Four Seasons Hotel</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>BANGKOK</h5>
+<p>This morning you will be transferred to a traditional Thai house to learn about the spiritual origins of Thailand's art and culture. You will learn about the movements and gestures of Thai dance, how to sit, walk and wai (pay respect by raising the hands with palms together), make traditional flower offerings by folding banana leaves, draw classical patterns using gold leaf and cook classic cuisine.</p>
+<p>
+For dinner tonight, enjoy a sampling of local cuisines at a local restaurant. After dinner, go backstage to meet some of the main performers in the Siam Niramit Show. This must see spectacular is performed on the gigantic stage now listed in the Guinness World Records, featuring over 150 performers with as many as 500 costumes. On top of this, enhanced special effects with the world's most advanced technology are used to produce a stimulating and inspiring experience. This is a journey to the enchanted kingdom of Thailand that no visitor should miss.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>BANGKOK</h5>
+<p>This morning experience an important part of Thai culture by offering food to the monks at a local temple. Afterwards cruise along Chao Phraya River and canals where you will see family homes and temples dotted along the waterways which inspired Bangkok's reference as the "Venice of the East".</p>
+<p>
+Your exciting journey continues once you disembark at the public pier, here you will take a short ride on a tuk tuk (a motorised tricycle, one of the symbols of Bangkok) to visitthe Grand Palace and Emerald Buddha Temple. Perhaps the greatest spectacle for any visitor to Bangkok, it consists of over 100 brightly coloured buildings, golden spires and glittering mosaics, and dates back to 1782, when Bangkok was founded. Wat Phra Kaew (Temple of the Emerald Buddha) itself, is Thailand's most important and sacred temple.</p>
+<p>
+After lunch at a local restaurant, visit the Arts of the Kingdom Exhibition at the Ananda Samakhom Throne Hall (closed on Mondays). The Arts of the Kingdom is an exhibition of exquisite but rarely seen traditional Thai crafts created by artists under The Foundation for the Promotion of Supplementary Occupations and Related Techniques under the Royal Patronage of Her Majesty Queen Sirikit of Thailand.</p>
+<p>
+This evening you will be alfresco dining by the river at Sirocco, what a great way to bid goodbye to Bangkok, the city of angels.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Hotel<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>BANGKOK - CHIANG MAI</h5>
+<p>This morning fly from Bangkok to Chiang Mai. Upon arrival in Chiang Mai a representative will be there to accompany you to the fabulous Four Seasons Resort.</p>
+<p>
+After lunch at Doi Kham, visit Waroros Market to get your first taste of the northern Thai way of life. From the market continue along Tapae Road down through the city walls and to Rajdamnern Road to Wat Phra Singh which houses a very old and sacred Buddha image. Drive from Wat Phra Singh to Wat Phrathad Doi Suthep. Set 3,500 feet above sea level, it is the most important temple in Chiang Mai.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Resort<br />
+<strong>Meal Plan:</strong> B,L</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>CHIANG MAI</h5>
+<p>After breakfast, start your day by visiting the local market to pick up your ingredients for your cooking lesson at the hotel.</p>
+<p>
+This evening dine along the scenic river of Mae Ping. Mae Ping River has a long history over 700 years. The river is considered the lifeline of Chiang Mai Province and was once used for the transport of timbers from pier to pier.</p>
+<p>After dinner, explore Chiang Mai's bustling outdoor night market.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Resort<br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>CHIANG MAI</h5>
+<p>This morning is at your leisure.</p>
+<p>
+In the afternoon, visit an elephant camp where you will be taken through a private mahout training course to learn the basic commands required to guide an elephant through its daily tasks. Here you will also discover the artistic side of these gentle giants, with the opportunity to paint together and take home the painting that you created with an elephant.</p>
+<p>
+In the evening return to the comfort of your hotel and pamper yourself with a two hour spa package.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Resort<br />
+<strong> Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>CHIANG MAI - KOH SAMUI</h5>
+<p>Free at leisure until your transfer to Chiang Mai airport for your flight to Koh Samui.</p>
+<p>Upon arrival in Koh Samui our representative will be there to escort you to Four Seasons Resorts.</p>
+<p>Nestled amid coconut palms overlooking its very own beach, Four Seasons is a tranquil haven where relaxation and regeneration come naturally.</p>
+<p><strong> Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>KOH SAMUI</h5>
+<p>Today is at leisure, to enjoy the sun, sand and sea that Koh Samui has to offer.</p>
+<p><strong>Overnight:</strong> Four Seasons Resort<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>KOH SAMUI</h5>
+<p>Today is at leisure, to enjoy the sun, sand and sea that Koh Samui has to offer.</p>
+<p>
+<strong>Overnight:</strong> Four Seasons Resort<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>KOH SAMUI - DEPART BANGKOK</h5>
+<p>After breakfast transfer to the airport for your flight to Bangkok. A representative will assist you with any transit needs for your flight home.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Best of Tanzania"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="best-tanzania.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<h1>Send itinerary</h1>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Tanzania"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Best of Tanzania"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy the day doing as much or as little as you please. You may like to take an optional trip to explore the old Stone Town, a spice farm or Jozani Forest to see the Red colobus monkey which is endemic to Zanzibar (tours not included). Alternatively you may prefer to just relax at your resort or pamper yourself at the spa, enjoy yoga or meditation. There is also a water sports centre for snorkeling, windsurfing, sailing or canoeing and a licensed PADI dive centre.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Enjoy another full day at your idyllic beach resort.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Kilimanjaro International airport where you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Lake Manyara Serena Lodge in time for lunch. This afternoon enjoy a game drive in Lake Manyara National Park in search of the elusive tree-climbing lion.&nbsp;<br /><br />Lake Manyara Serena Lodge is dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley. The 66 rooms blend gracefully with the serene natural surroundings and the lodge is located only a few minutes from Lake Manyara National Park. For those who want some time out of their vehicles, the lodge supports a number of nature trails and also has a resident naturalist to enhance the experience. Guests may also choose to relax at an observation post or by the pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arusha - Lake Manyara", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>This morning is at leisure before transferring to Gibbs Farm, located in the Ngorongoro Crater highlands, for lunch. Continue to the Ngorongoro Crater, the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Sopa Lodge is situated on the eastern rim of the crater. The 92 rooms of the lodge are built in the traditional African rondavel style. There is a beautifully designed dining room, a bar, a well-stocked gift shop and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Lake Manyara - Ngorongoro Crater", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue the drive to your lodge, centrally located in the Serengeti National Park. Enjoy game viewing en route.<br /><br />Serengeti Serena Lodge is located high on a hill offering magnificent views of the Serengeti Plains. The lodge is pure Africa. Rustic and natural, circular like an African village, its 66 rooms make up a series of rondavels. The simple style is enhanced with sophisticated detail in the form of traditional handicraft, such as wood carvings, beadwork and pottery designs. The lodge offers its own unique game trails devised in conjunction with park consultants to allow enjoyment of the Serengeti's unequalled variety of game.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip, the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 square kilometers, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, when 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other game that follow close behind make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast, transfer to the airstrip for your flight to Zanzibar. Upon arrival you will be met and transferred by private vehicle to your beach resort.<br /><br />Breezes Beach Club is situated along a pristine, untouched beach, stretching as far as the eye can see. It is located on the eastern side of the island, near the village of Bwejuu approximately one hour from the airport. The hotel has a swimming pool, fitness and aerobics centre, water sports centre, floodlit tennis court, scuba diving, Makuti a-la carte restaurant, Breakers lunch restaurant, The Safari bar, Upepo Lounge and Mutiny Pool Bar.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Serengeti - Zanzibar", description, "6");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -6.165917;
+					var minLng = 34.6856509;
+					var maxLat = -2.416213;
+					var maxLng = 39.202641;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Archaeological Treasures-->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>

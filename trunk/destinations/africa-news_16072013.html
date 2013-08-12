@@ -1,0 +1,460 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="A&K News, Travel News, Holidays News A&K, Latest Travel News Abercrombie & Kent"/>
+<meta name="description" content="" />
+<title>Travel & Holidays News, Events - Abercrombie & Kent India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=9; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+			document.getElementById("img"+i).style.display="";
+			document.getElementById(name2).className="active";
+			document.getElementById(name).style.display="";
+		}
+		
+		else
+		{
+			document.getElementById("img"+i).style.display="none";
+			document.getElementById(name2).className="";
+			document.getElementById(name).style.display="none";
+		}
+	}
+}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    fullURL = parent.document.URL;
+	var obstring=fullURL.indexOf('?');
+	//alert(obstring);
+	if(obstring > 0)
+    {
+		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
+		showMe(objVar);
+	}
+	else
+	{
+		objVar='1';
+		showMe(objVar);
+	}
+	
+    });
+	</script>
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics End here -->
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+
+
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+<div class="tickerHolder">
+<a href="../enquery-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="img1"><img src="../images/kenya-news.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img2" style="display:none;"><img src="../images/tanzania-news.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img3" style="display:none;"><img src="../images/rwanda-news.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img4" style="display:none;"><img src="../images/uganda-news.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img5" style="display:none;"><img src="../images/namibia-news.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img6" style="display:none;"><img src="../images/southafrica-office-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img7" style="display:none;"><img src="../images/zimbabwe-office-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img8" style="display:none;"><img src="../images/zambia-office-banner.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<div id="img9" style="display:none;"><img src="../images/botswana-news.jpg" alt="Ambercrombie &amp; Kent" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="africa.html">Africa</a></li>
+<li>News</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>News</h4>
+<ul>
+<li><a href="africa-news.html" title="Africa">Africa</a></li>
+<li><a href="middle-east-north-africa-news.html" title="Middle East &amp; North Africa">Middle East &amp; North Africa</a></li>
+<li><a href="europe-news.html" title="Europe">Europe</a></li>
+<li><a href="australasia-news.html" title="Australasia">Australasia</a></li>
+<li><a href="china-orient-news.html" title="The Orient">The Orient</a></li>
+<li><a href="south-america-news.html" title="South America">South America</a></li>
+<li><a href="../news.html?id=7" title="North America">North America</a></li>
+<li><a href="../news.html?id=8" title="Beach &amp; Island Escapes">Beach &amp; Island Escapes</a></li>
+<li><a href="../news.html?id=9" title="Antarctica">Antarctica</a></li>
+</ul>
+<h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+          <option value="../journeystyles/connections.html">Connections</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+          <option value="../journeystyles/famity-holday.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="africa.html">Africa</option>
+		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="europe.html">Europe</option>
+		<option value="australasia.html">Australasia</option>
+		<option value="theorient.html">The Orient</option>
+		<option value="south-america.html">South America</option>
+		<option value="north-america.html">North America</option>
+        <option value="central-america.html">Central America</option>
+		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="antartica.html">Antarctica</option>
+        <option value="#">Arctic</option>
+    </select>
+</div>
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1> Africa News</h1>
+<div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="newTabholder">
+<div class="tabbtnHolder">
+<ul>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="KENYA"><span>Kenya</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Tanzania"><span>Tanzania</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Rwanda"><span>Rwanda</span></a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');" title="Uganda"><span>Uganda</span></a></li>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');" title="Namibia"><span>Namibia</span></a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');" title="South Africa"><span>South Africa</span></a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');" title="Zimbabwe"><span>Zimbabwe</span></a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');" title="Zambia"><span>Zambia</span></a></li>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');" title="Zambia"><span>Botswana</span></a></li>
+</ul>
+
+</div>
+<div class="tabtxtHolder">
+<div class="tabtxtHolder-top">
+</div>
+<div class="tabtxtHolder-mid">
+
+<div id="tab1">
+<div style="float:right;"><a href="africa-kenya.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Kenya Hompage</a></div>
+<h3> <strong style="text-decoration:underline;">Running wild, for the wild - Lewa marathon 2012</strong></h3>
+<p>The annual Lewa Marathon will be taking place on 30th June 2012 at the Lewa Wildlife Conservancy in Northern Kenya.  This year's theme is Running wild, for the wild.  The marathon is a unique event in that it allows participants from all over the globe to compete while running through some of  Africa's most amazing scenery. </p>
+<p>More importantly it helps raise funds to support the communities that have been co-existing with the wildlife for decades.  Since its inception in 2000, the marathon has raised over US 2 million for a range of education, health and wildlife conservation projects across Kenya.</p>
+<h3><strong style="text-decoration:underline;">Kempinski set to open in Kenya</strong></h3>
+<p>It is now official that the luxury hotel chain Kempinski AG will be opening 2 properties in Kenya, one in Nairobi and another in the Masai Mara National Reserve. Villa Rosa Kempinski in Nairobi will be a 202 room luxury hotel which will offer state of the art meeting and conferencing facilities, restaurants, lounges and a ballroom.  The Olare Mara Kempinski tented camp will be situated on the banks of the Ntiakntiak River in the Olare Orok Conservancy adjacent to the Masai Mara National Reserve.  Both will open later in the year.</p>
+<h3><strong style="text-decoration:underline;">Qatar Airways adds flights to Mombasa</strong></h3>
+<p>Qatar Airways has confirmed that they will be launching flights to the Indian Ocean city of Mombasa on the 15th August 2012, adding a second destination for Kenya.  These daily flights will be routing via Dar es Salaam in Tanzania.  The addition is in line with the airline's expansion strategy that kicked off at the beginning of the year. </p>
+<h3><strong style="text-decoration:underline;">Korean Air - New non-stop Nairobi to Seoul flights</strong></h3>
+<p>Korean Air has announced a new three times weekly service from Nairobi to Seoul using three-class Airbus A330-200 aircraft.  Effective  22nd June, flights will depart from Nairobi's Jomo Kenyatta International Airport (JKIA) every Wednesday, Friday and Sunday at 10.30 am, arriving in Seoul after a 10-hour nonstop flight at 4.30am the following day.
+Return flights depart from Seoul's Incheon International Airport on Tuesday, Thursday and Saturday at 10.15 pm arriving Nairobi JKIA at 5.30 am the following day.</p>
+<p>  Return flights depart from Seoul's Incheon International Airport on Tuesday, Thursday and Saturday at 10.15 pm arriving Nairobi JKIA at 5.30 am the following day.  The aircraft will be configured with 6 first class suites, 18 Prestige business class lie-flat seats and 256 economy class seats.  The airline recently won the Skytrax 'Best Economy Class in the World' award. </p>
+<h3><strong style="text-decoration:underline;">Sanctuary Olonana Guides Scoop Awards</strong></h3>
+<p>Joseph Ole Koyie and Abdul Karim both of Sanctuary Olonana in the Maasai Mara won first and second respectively in "Most Responsible Safari Guide Award 2012".  This is the only award of its kind and is a collaboration between Tribal Voice Communications, UK based responsible tourism consultants, Mara Conservancy and the Born Free Foundation.  Ole Koyie wins an all expenses paid trip to Zambia's South Luangwa National Park to train with some of the most responsible guides in Africa.</p>
+
+<h3><strong style="text-decoration:underline;">GREAT NEWS: US lifts travel warning to Lamu</strong></h3>
+<p>We are pleased to announce that the US State Department has reviewed their travel restriction for Lamu and lifted the travel warning to the Island.  This wonderful news was posted on the State Department's website on 4th April 2012. </p>
+<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and narrow streets. The island itself is characterised by rolling dunes, endless beaches and tiny villages nestled among coconut and mango plantations.  There are no vehicles on the island and the donkey and the dhow remain the dominant form of transport. 
+<h3><strong style="text-decoration:underline;">Hogmead and Kicheche Valley Camp voted Best New Hotels in Kenya</strong></h3>
+<p>Hogmead and Kicheche Valley Camp have been voted as the Best New Hotels in Kenya for 2012 by Conde Nast Traveler.  The two are among 121 properties in 49 countries that were selected by 41 Conde Nast reporters to make this year's Hot List.</p>
+<p>Opened in July 2011, Kicheche Valley Camp is located in Naboisho Conservancy in the Masai Mara Game Reserve.  The camp consists of just six tents, each with a king-size bed and with enough space to add a children's bed.</p>
+<p>Also opened in 2011, Hogmead is a new boutique property located on the border of a giraffe sanctuary in the leafy outskirts of Nairobi. The hotel has six rooms in the main house and seven in a converted stable.</p>
+
+<h3><strong style="text-decoration:underline;">New Property - Olerai Beach House</strong></h3>
+<p>Olerai Beach House is an idyllic family owned beach front house situated on a coral bed, high above the Indian Ocean, with panoramic ocean views and a cool sea breeze.  The house has a spacious dining area and veranda which opens out onto a huge green lawn which stretches down to the palm lined beach.  The house also overlooks a stunning swimming pool set around interlocking natural coral caves, one of the best features of the house.</p>
+<p>
+There are 4 large double rooms, each with their own bathroom and shower. The rooms are all tastefully decorated with views over the Indian Ocean, just 50 meters beyond. There is further space for children in the open plan upstairs area of the house, with another 4 beds, sharing a bathroom, plus a small cottage set behind the house if extra space is needed.  Olerai Beach House is fully staffed with a chef/manager, housekeeper, gardener & pool attendant plus a night-watchman and security guard. </p>
+<h3><strong style="text-decoration:underline;">Opening Soon: EKA HOTEL</strong></h3>
+<p>Situated along Mombasa Road with easy access to the city centre and airport, Eka Hotel is the newest hotel opening soon in Nairobi.  The hotel offers 170 air conditioned rooms, of these 159 are superior, 2 rooms for guests with special needs, 5 junior suites and 4 executive suites.</p>
+<p>Some of the in-room amenities include LCD flat-screen TV, complimentary high speed internet access, personal bar, in-room safety deposit box, direct dial international telephone, hairdryers and complimentary coffee/tea making facilities.</p>
+<p>Activities offered include: Nairobi National Park, City tour, visit to Giraffe Centre, Bomas of Kenya, Karen Blixen museum, day trips to Lake Nakuru/Naivasha, coffee and tea farms. </p>
+
+<h3><strong style="text-decoration:underline;">A&K wins more awards</strong></h3>
+<p>We are proud and honoured that Abercrombie & Kent has been recognised as "Best Tour Operator - Africa"" by the readers of Recommend.... for the 12th consecutive year!!  Travel professionals have once again recognised the strong teamwork that sets A&K apart.  We have received an unprecedented series of prestigious awards this year.  "Africa's Leading Luxury Tour Operator" at the the World Travel Awards, "Best Africa Tour Operator" at the Travel Weekly Readers Choice Awards and TravelAge West WAVE Awards, and the Conde Nast Traveller World Savers Award for "Doing It All."</p>
+<h3><strong style="text-decoration:underline;">The Great Wildebeest Migration has arrived !</strong></h3>
+<p>Excitement and anticipation fill the air in the Masai Mara. Thousands of zebra have been seen crossing the Sand and Keekorok Rivers in the Mara, tell-tale signs that the much-awaited wildebeest migration from the Serengeti to the Mara has arrived!</p>
+<p>Every year over 3 million wildebeest and zebra move from the Serengeti in Tanzania to the Masai Mara in Kenya in search of life-giving pasture.  The sheer numbers of this movement as it makes its way across the Mara is nothing short of spectacular.  Along with them are the teams of predators who take advantage of the enormous number of prey in their vicinity, setting the stage for dramatic kills in every corner.  Not to be missed are the river crossings as the wildebeest and zebra attempt to cross the brimming Mara river with its giant Nile crocodiles.  The scenes that follow are what make the period between June and October the best time to be in Kenya!
+</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab2" style="display:none">
+<div style="float:right;"><a href="africa-tanzania.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Tanzania Hompage</a></div>
+
+<h3> <strong style="text-decoration:underline;">A&K Philanthropy: Ilboru special needs school</strong></h3>
+<p>At A&K, we are committed to a company-wide socially responsible policy addressing pressing environmental, educational and public health needs in the regions where we operate.  Ilboru Primary School's Special Needs Unit is one of the newest projects AKP and A&K Tanzania support.  In 2001, Ilboru Primary School created a special needs education unit for six children in need of special care.  Since then, the programme has grown and unit has expanded, now caring for 70 disabled children, accommodating for deaf, blind and autistic children.</p>
+<p>AKP and A&K Tanzania have stepped in to assist the school in building a much needed additional classroom, and we are pleased to announce that the ground breaking ceremony for the new classroom took place recently.  This new classroom will provide a learning environment that will help children who are often lost in overcrowded classrooms and neglected because of their conditions.  </p>
+<h3> <strong style="text-decoration:underline;">Increase of airport tax</strong></h3>
+<p>The Tanzania government has increased the airport tax for both local travel as well as for travel outside the country. effective from 1 July 2012.  Airport tax per passenger for local travel within the country has increased to $8, previously $4, and for travel outside the country, the tax will now be  $40, previously $30.</p>
+<h3> <strong style="text-decoration:underline;">Kenya Airways launches flights to Kilimanjaro</strong></h3>
+<p>Kenya Airways has announced the launch of flights to Kilimanjaro International Airport in Northern Tanzania effective from 2 July 2012.  The airline will  operate E170 to Kilimanjaro starting with 6 flights a week until 30th September (exception of  Thursday) and growing to daily flights from 1st October.  KQ420 to Kilimanjaro will depart Nairobi at 0900hrs and KQ 421 will depart Kilimanjaro International Airport at 1040hrs.</p>
+<h3> <strong style="text-decoration:underline;">Closure of Ngorongoro Crater ascent road<</strong></h3>
+<p>Ngorongoro Conservation Area Authority (NCAA) wishes to inform you that the Ngorongoro Crater Ascent road will be closed for an estimated period of one year, commencing 5th July 2012. This due to an upgrade of the road from gravel to concrete paving. </p>
+<p>The Seneto gate will continue to be the route used for descending in to the crater and the Lemalo gate near Sopa area will be used for ascending.</p>
+<h3> <strong style="text-decoration:underline;"> Singita Open New Tented Camp - 3rd August 2012</strong></h3>
+<p>Singita Mara River Camp will be the latest property opened by the luxury property company and will be located in the far north of the Serengeti, on the banks of the iconic Mara River.  With only 6 tents it will be very exclusive, both in terms of location and size.</p>
+
+<h3>  <strong style="text-decoration:underline;">Kitela Lodge, Karatu - opening June 2012</strong></h3>
+<p>Situated in the Karatu area of Ngorongoro Conservation Area, the Kitela Lodge is an exclusive, 20 room property opening this June.  The lodge has 4 interconnecting rooms and 3 triple rooms, very ideal for families.</p>
+<p>Kitela Lodge offers guided walks in the Ngorongoro Conservation Area as well as afternoon walks around a nearby farm.  And after a long day, clients can treat themselves to a half or a full body massage at the Kitela Spa. Email us to book Kitela Lodge.</p>
+<h3> <strong style="text-decoration:underline;"> Lamai Serengeti, Residence and Emerson Spice voted Best New Hotels in Tanzania</strong> </h3>
+<p>Lamai Serengeti, The Residence and Emerson Spice Hotel have been voted the best new hotels in Tanzania by Conde Nast Traveler.  The three are among 121 properties that were selected by 41 Conde Nast reporters to make  this year's Hot List.</p>
+<p>Lamai Serengeti is tucked amongst the rocks of Kogakuria Kopje with panoramic views of the surrounding landscape in Northern Serengeti.  The lodge has 12 rooms - 8 in the main lodge  and 4 in a smaller, private lodge.</p>
+<p>Opened in April 2011, The Residence in Zanzibar is a luxurious villa resort located in the south-west coast of the island.  The resort has 66 villas distinguished by private pools and personal butlers.</p>
+<p>The yet-to-be-fully opened Emerson Spice Hotel is located at the heart of Stone Town in Zanzibar.  Five rooms are currently open and the plan is to have 12 rooms once the hotel is complete.   Already in operation, it is currently ranked the number one hotel in Stone Town on Trip Advisor.</p>
+
+<h3> <strong style="text-decoration:underline;"> Qatar to launch flights to Tanzania</strong> </h3>
+<p>Qatar Airways has announced the launch of a passenger route to Tanzania in a six month expansion programme due to start this May.  Qatar Airways Chief Executive Officer Akbar Al Baker unveiled the expansion programme at the recently concluded ITB travel show in Berlin, Germany.  The airline is anticipated to launch its flights to Kilimanjaro via Nairobi in July.  This news follows previously announced start-ups to a number of other international destinations during 2012 which include Zanzibar.  We will keep you updated on when the flights commence.</p>
+<h3> <strong style="text-decoration:underline;"> Olduvai Gorge - Increase of entry fees</strong> </h3>
+<p>Tanzania authorities have proposed an increase in the entry fee to Olduvai Gorge and the Gorge's museum from  $3 to $18 per person.  Also known as the 'Cradle of Mankind', Olduvai Gorge is one of the world's most important pre-historic sites.  The Gorge  which stretches about 50km and is up to 90km deep, was made famous by Louis and Mary Leakey when they discovered fossils of early man dating back to some 3.5 million years ago.  It is located in the eastern Serengeti plains within the boundaries of the Ngorongoro Conservation area.  The matter is in court and we will advise on the outcome of the case.</p>
+<h3> <strong style="text-decoration:underline;"> Wildebeest calving season in Serengeti</strong> </h3>
+<p>Wildebeest calving is well underway at the Serengeti and it is said there is no better time to witness the great migration. Every year between January and  March, hundreds of thousands of wildebeest are born on the plains of the Serengeti and the  Ngorongoro Conservation area.  At the peak of the calving season,  an amazing 8000 calves can be born in a day!  Apart from the wildebeest, the other star attraction at this time is the high concentration of predators that can be seen patrolling the vast short grass plains of the park.  Huge lion prides and high concentrations of cheetah and leopard trail the wildebeest as they make easy prey of the new borns.  </p>
+<h3> <strong style="text-decoration:underline;"> Kilimanjaro Airport facelift starts in January</strong> </h3>
+<p>Kilimanjaro International Airport is set to get a new look as part of its efforts to meet the demands of the increased tourist flows in Northern Tanzania.  Changes due to take place at the 40 year old airport include a modest expansion, as well as overhauling and resurfacing of the runway, taxiways and aprons.  A new taxiway will be built to increase the capacity of the airport and the terminal building will be upgraded and expanded to accommodate the growing flow of tourists into Northern Tanzania.  The face lift, the first since the airport was inaugurated in 1971, is financed by the Dutch government at an estimated cost of  U$36 million.  The work is expected to be complete in 2014.  </p>
+<h3> <strong style="text-decoration:underline;"> Tanzania voted among the top places to visit in 2012 by the New York Times</strong> </h3>
+<p>When the New York Times released their eagerly awaited top places to go in 2012, it was a delight to see Tanzania feature among the top ten destinations.  According to the NY Times, the country was finally "coming into its own as an upscale safari destination".  With attractions such as the Kilimanjaro, upscale camps  and exclusive safari reserves, things are definately looking up for this amazing destination.  Tanzania is home to some of Africa's most alluring attractions including the highest mountain in the continent, the largest wildebeest migration on earth,  as well as some of the best white sandy beaches.  The country's idyllic climate makes it the perfect year round destination.</p>
+<h3> <strong style="text-decoration:underline;"> Movenpick Royal Palm Hotel now under Serena group</strong> </h3>
+<p>The Serena chain will soon be increasing its presence in Tanzania with the acquisition of the Movenpick Royal Palm Hotel in Dar es Salaam. The 230-room facility will soon be operating under the brand name Dar es Salaam Serena Hotel. Movenpick Royal Palm Hotel first opened its doors in 1995 as Sheraton Dar es Salaam Hotel before changing business to Royal Palm Hotel under the Legacy Hotel of South Africa and later the Swiss franchise, Movenpick.  Located at the heart of Dar's central business district, the hotel is only a ten minutes drive from the Julius Nyerere International Airport and a walking distance to the city's dining, business and shopping facilities. This acquisition brings the number of Serena hotels, lodges and camps in Tanzania to 10.</p>
+<h3><strong style="text-decoration:underline;">A&K wins more awards</strong></h3>
+<p>We are proud and honoured that Abercrombie &amp; Kent has been recognized as "Best Tour Operator - Africa" by the readers of Recommend.for the 12th consecutive year!  Travel professionals have once again recognized the strong teamwork that sets A&K apart. We have received an unprecedented series of prestigious awards this year: "Africa's Leading Luxury Tour Operator" at the World Travel Awards, "Best Africa Tour Operator" at the Travel Weekly Readers Choice Awards and TravelAge West WAVE Awards, and the Conde Nast Traveller World Savers Award for "Doing It All."</p>
+<h3><strong style="text-decoration:underline;">Vote for Mount Kilimanjaro to be one of the new seven Wonders of the Natural World.</strong></h3>
+<p>Mount Kilimanjaro, which is the highest peak in Africa and the highest free standing mountain in the world, has been nominated as a candidate for the seven natural wonders of the world, in a competition organized by an organization known as Seven Natural Wonders in which tourist attractions from all over the world are voted to nominated as The Seven Natural Wonders of The World.</p>
+<p>To vote then use the following link <br /> <a href="http://www.new7wonders.com/archives/wonder/kilimanjaro" target="_blank">http://www.new7wonders.com/archives/wonder/kilimanjaro</a>.</p>
+<p>To arrange a climb up to the roof of Africa with our excellent climbing team, who boast a 87% success rate, then contact us.</p>
+<h3><strong style="text-decoration:underline;">Karafuu voted Africa's leading beach resort at World Travel Awards</strong></h3>
+<p>Karafuu Hotel Beach Resort was  recently voted Africa's leading Beach Resort by travel professionals at the World Travel Awards 2011 held last week in Egypt.  The 5 star property needed no introduction at the awards having won Tanzania's leading resort and hotel five consecutive times.  Located on the east coast of Zanzibar, Karafuu offers 26 junior suites, 35 cottages and 27 garden rooms.  Other winners at the awards were Zanzibar Palace Hotel and Ngorongoro Serena Safari Lodge for Tanzania's leading hotel and safari lodge respectively.</p>
+<h3><strong style="text-decoration:underline;">Hyatt Hotels expand into Tanzania</strong></h3>
+<p>Hyatt Hotels Corporation has announced that a Hyatt affiliate entered into an agreement with ASB  Tanzania Ltd. to manage the Hyatt Regency in Tanzania, formerly the Kilimanjaro Hotel Kempinski.  The city center hotel has commenced operating as Hyatt Regency Dar es Salaam, The Kilimanjaro, and has joined the 5 other existing Hyatt-branded hotels on the African continent.  The hotel was originally built by the Tanzanian government in 1965 and after major renovations in 2002, it re-opened in 2005 under the name The Kilimanjaro Hotel Kempinski. </p>
+<h3><strong style="text-decoration:underline;">Singita Grumeti Reserves voted best hotels in the world</strong></h3>
+<p>Sasakwa lodge, Sabora Tented Camp and Faru Faru Lodge have been voted the best hotels among the 100 best hotels in the world by the Travel+Leisure Awards 2011.  These 3 properties proved to be the best in the world based on room, location, service, food and value that they offered.</p>
+<p>Faru Faru Lodge is a contemporary and stylish lodge located on the banks of the Grumeti River.  This 'beach' front property offers eight open style suites and one Villa suite .  Lavish and luxurious best describe Singita Sabora Tented Camp. This tented camp offers opulent luxury complete with antique mahogany travel chests, Persian rugs and silk curtains.  Built  like an old English manor, the Singita Sasakwa Lodge is a complete recreation of a scene from the movie Out of Africa.  Each of the nine cottages in Singita Sasakwa has a private plunge pool which overlook the plains that stretch for miles below.  Others in the top 100 list include Kirawira Camp and Serengeti Migration Camp in position 9 and 10 respectively.</p>
+<h3><strong style="text-decoration:underline;">Melia Hotels to open resort in Zanzibar</strong></h3>
+<p>Zamani Kempinski is scheduled to re-open on 1st October 2011 under the Spanish company, Melia Hotels & Resorts. The Melia Zanzibar is built on an100 acre estate with a private beach in the northeast of the island.  The resort features 7 villas with private pools and gardens, along with a hundred rooms with lounges, large bathrooms, outdoor tropical rain shower and garden or terrace with sea views. Other amenities include 5 restaurants/bars and a spa.  There are plenty of activities on offer that include beach and water sports.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab3" style="display:none">
+
+<h3>Coming Soon....</h3>
+</div>
+
+<div id="tab4" style="display:none">
+<div style="float:right;"><a href="africa-uganda.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Uganda Hompage</a></div>
+<h3><strong style="text-decoration:underline;">Uganda: A bird-watchers paradise</strong></h3>
+<p>With over <strong>1000 species of birds</strong> identified in Uganda, the Pearl of Africa is an ornithologists dream.  Few destinations in Africa can rival the country's growing bird list with some of her birds being difficult or even impossible to find anywhere else in the region.  <strong>Queen Elizabeth National Park</strong> alone is home to over 600 species of birds.  Bwindi National Park in western Uganda was earlier in the year voted the <strong>number one bird watching site</strong> in Africa by the Africa Bird Club.  Murchison Falls and Semuliki National Parks are among the 34 important bird watching areas identified by Birdife International.
+So now there's more reason to visit the Pearl of Africa! Contact us to book your safari today.</p>
+<h3><strong style="text-decoration:underline;">New spa at Sanctuary Gorilla Forest Camp</strong></h3>
+<p>Sanctuary Gorilla Forest Camp is pleased to announce the launch of their brand new mini-spa.  The spa offers luxurious massages and treatments using the world wide recognised Africology range of products which use the healing essences of African indigenous plants. The new spa provides guests with the perfect place to unwind and relax after an exciting day of gorilla tracking.</p>
+<p>In addition, the camp has undergone a complete refurbishment of the tents and main areas to further enhance the experience at the lodge. </p>
+<h3><strong style="text-decoration:underline;">New scheduled service to operate within Ugandan Game Parks</strong></h3>
+<p>Aero Link Uganda Limited (AeroLink) a subsidiary of Airkenya Express will on 1st July 2012, subject to regulatory requirements, commence scheduled and charter flights within the Ugandan National Parks.  AeroLink will be based and operate out of Entebbe International Airport.  AeroLink will offer flights from Entebbe into Bwindi Impenetrable Forest (both Kisoro and Kihihi Airstrips), Queen Elizabeth National Park (Kasese airstrip) and Murchison Falls (Pakuba airstrip).</p>
+<p>AeroLink will start operations with two Caravans and as per Airkenya's crewing policy, the flights will be operated by two pilots.  Airkenya's General Manager, Captain Dino Bisleti said "We have had calls from so many quarters to seriously consider a Ugandan operation, we are delighted to announce its commencement come 1st July 2012.  Uganda is an exciting destination and we want to be at the forefront to open the destination".  More information to follow soon including, a Flight Schedule.  We will keep you updated as events unfold. </a></p>
+<h3><strong style="text-decoration:underline;">Uganda voted top travel destination for 2012 by Lonely Planet</strong></h3>
+<p>The list for the top 10 countries for 2012 according to Lonely Planet is out and we are excited to announce that Uganda came out tops. The 'Pearl of Africa' was voted the best travel destination for 2012 by a panel of travel experts based on her topicality, excitement, value and that special X-factor.  Indeed Uganda has the best of everything that Africa has to offer - an amazing animal population, stunning scenery, genuine hospitality not forgetting the country has the highest concentration of primates on earth and is the source of the mystical River Nile.  Book your safari to the Pearl of Africa today before the rest of the world beats you to it!</p>
+<h3><strong style="text-decoration:underline;">ITINERARY IDEA: The Batwa Cultural Experience</strong></h3>
+<p>While visiting the Bwindi Impenetrable Forest, an experience not to be missed is the Batwa Cultural Experience - a first hand introduction to one of the most unique cultures found anywhere in the world. The Batwa Pygmies are the original inhabitants of the Bwindi forest. These hunter-gatherers whose existence can be traced to over 4000 years ago have a rich history and culture which they happily share with their guests.</p>
+<p>Enjoy an incredible day hike in the rain forest with Batwa guides, learn how they lived and hunted, about medicinal plants, share a traditional meal with your hosts, hear their ancient legends and traditional songs and join in on a mock hunting party, testing your skill with a bow and arrow.</p>
+<h3><strong style="text-decoration:underline;">Two new gorilla families in Bwindi National Park</strong></h3>
+<p>The Uganda Wildlife Authority has introduced two new fully habituated gorilla families for tourist visits in Bwindi Forest National Park, increasing the number of gorilla permits per day from 56 to 72.</p>
+<p>
+The new families, Orugonzo and Kahungye, bring the total number of habituated gorilla families and clans to 10. The Orugonzo family is situated in northern Buhoma area and easily accessible from Sanctuary Gorilla Forest Camp while Kahunge family is in the southern Nkuringo area of the park near Clouds Mountain Lodge.</p>
+<p><a href="../contact/contact.html">Contact us</a> to book your gorilla tracking safari today.</p>
+<h3><strong style="text-decoration:underline;">Incredible Gorilla Footage in Uganda</strong></h3>
+<p><strong>December 2011</strong><br />
+This amazing video was taken by a guest at Sanctuary Gorilla Forest Camp in Bwindi Impenetrable Forest, Uganda. From time to time the gorillas do wander through the camp as it is located deep within the Bwindi National Park, a UNESCO World Heritage site, however this level of interaction is uncommon.</p>
+<p>A silverback male, female and three baby gorillas can be seen grooming the guest and he says he feels like "one of the gang". To see this jaw-dropping footage, please click on the video below.</p>
+<div id="video"><iframe width="560" height="315" src="http://www.youtube.com/embed/hg2hCuDy2wg" frameborder="0" allowfullscreen></iframe></div>
+
+
+<h3 style="text-decoration:underline;"><strong>Uganda's Big 5 plus unique two</strong></h3>
+<p>Africa is known for the Big 5 - African lion, African elephant, leopard, Cape buffalo and the Black or White rhino.  However,  Uganda boasts of not only the Big 5 but plus the unique two! The country has the highest number of Chimpanzees and Mountain Gorillas any where in the world.  Bwindi Impenetrable Forest in Uganda is home to 65% of the world's surviving population of mountain gorillas.  Kibale Forest National Park has the highest primate density of any area on earth, including the red-tailed money, blue monkey, olive baboon, chimpanzee, colobus (black, white and red ) and white cheeked mangabey.  Visit the 'Pearl of Africa' to see the Big 5 and more.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+<div id="tab5" style="display:none">
+
+<h3>Coming Soon....</h3>
+</div>
+
+<div id="tab6" style="display:none">
+<div style="float:right;"><a href="africa-southafrica.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< South Africa Hompage</a></div>
+<h3><strong style="text-decoration:underline;">Tsitsikamma canopy tour announces the 'Indian Express' tour</strong></h3>
+<p>As some Indian touring groups do not have enough time to do the full 2.5 hours Tsitsikamma Canopy Tour, yet would still like to enjoy the experience of sliding between 700 year old giant indigenous trees in the Tsitsikamma Forest, the Tsitsikamma Canopy Tour has announced that for the 2012 and 2013 season they will be offering a special 'Indian Express' tour.</p>
+<p>The Indian Express tour will be a shortened version of the full Tsitsikamma Canopy Tour and will take clients through the first 8 platforms and slides and then allow them to exit the forest early.</p>
+<p>The tour will not include the customary lunch and will be offered at a discounted rate to the normal Tsitsikamma Canopy Tour, yet still allow visitors to enjoy this once in a lifetime experience..</p>
+<h3 style="text-decoration:underline;"><strong>Tswalu to Cape Town flight time change!</strong></h3>
+<p>As from the 1st of July 2012, the scheduled departure time from Execujet at Cape Town International to Tswalu will change to 12h00.</p>
+<p>A number of our partners reported that clients felt a little rushed having to depart their Cape Town hotel early, and agreed that a later departure time would be well received by all. As such the flight will land at Tswalu at 14h00, and depart 14h30, arriving back in Cape Town at 16h30.</p>
+<h3 style="text-decoration:underline;"><strong>Johannesburg home converted into a Museum Guesthouse</strong></h3>
+<p>Mahatma Gandhi's historic Johannesburg home has been transformed into a museum guesthouse by French company, Voyageurs du Monde, who bought the property two years ago as an investment in 'liberation tourism'. The restored Satyagraha House in Orchards opened last week following a restoration project that has seen the re-creation of the Edwardian home along with the development of an on-site museum featuring Gandhi memorabilia and period pieces from India</p>
+<p>The guesthouse component of Satyagraha House comprises nine rooms and a restaurant offering strictly vegetarian fare in accordance with Gandhi's own dietary preference.</p>
+<p>The house tells its own compelling story but can also be integrated into a wider visitor experience by combining a visit here with visits to Soweto, Constitution Hill and Johannesburg's Old Fort Prison, a jail where Gandhi and Nelson Mandela were both held.</p>
+<h3 style="text-decoration:underline;"><strong>Table Mountain voted New7Wonder of Nature!</strong></h3>
+<p>Table Mountain has been voted onto the provisional list of  the <strong>New7Wonders of Nature</strong> and we are extremely proud to have this icon located in our very  own backyard.</p>
+<h3 style="text-decoration:underline;"><strong>Royalty Couple visit our Private Game Reserve</strong></h3>
+<p>South Africa Private Game Reserve was truly honoured to host Prince Charles, Prince of Wales and Camilla, Duchess of Cornwall for one day of their recent South African tour.</p>
+<p>The royal couple paid a special visit to andBeyond Phinda Private Game Reserve, as part of the World Wildlife Fund initiative showcasing conservation projects in KwaZulu-Natal.</p>
+<h3 style="text-decoration:underline;"><strong>New Stargazing activity in Pilanesberg National Park!</strong></h3>
+<p>Experience bush skills &amp; venomous snake handling by day and majestic telescope viewing (stargazing) of the spectacular southern skies at night.</p>
+<p>Stargazing has never been as easy in Pilanesberg National Park since telescopes are now stationed permanently. Guests and groups staying at lodges and resorts in the Park and at Sun City can now book on to these stargazing drives. These drives combine game viewing, sundowners &amp; snacks at sunset, as well as night sky telescope viewing (stargazing). Let us know how much time you have available and we'll recommend you the best tour to do while visiting the Pilanesberg area.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab7" style="display:none">
+<div style="float:right;"><a href="africa-zimbabwe.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Zimbabwe Hompage</a></div>
+<h3><strong style="text-decoration:underline;">Africa's Painted Dogs back in the wild</strong></h3>
+<p>Painted Dogs, also known as African Wild Dogs, are unique to Africa and they are among this continent's most endangered species. It is estimated that a mere 3,000 - 5,000 remain. The Painted Dog population in Zimbabwe is one of the last strongholds of the species and we are committed to their conservation. The conservation methods and  work with the local communities are beginning to have a positive effect on the outlook of the Painted Dog species.</p>
+<p>Ukusutha, which translates roughly as "very full," (as in having eaten too much), is the name given to the pups that were brought into the PDC Rehabilitation Facility in July 2009. The five pups were at their den but it was apparent that lions had killed their parents. With only an old male dog and yearling dogs evident, it was felt that the chances of the pups surviving were remote. With fire also threatening the den, the difficult decision was made to capture the pups and raise them at PDC.</p>
+<p>These dogs were integrated into the ill-fated Bambanani pack, which was released back into Hwange National Park in August. While in Zimbabwe do to forget to visit  the Hwange National Park  to see the painted dogs.</p>
+<h3><strong style="text-decoration:underline;">Remarkable Muzhingi wins the Comrades Marathon third time!</strong></h3>
+<p>33 year old Zimbabwean athlete Stephen Muzhingi has won South Africa's Comrades Marathon, becoming the first athlete in 23 years to win three successive races of this prestigious event. The Comrades Marathon is the world's oldest and toughest endurance races and now in its 86th edition was held in Pietermaritzburg, South Africa.</p>
+<p>At the finish line Olympic champion Kirsty Coventry was with Muzhingi's son, and the runner's wife and brother. Muzhingi's compatriot Point Chaza had broken away early and held a lead of more than seven minutes at the halfway mark, which he crossed in 2:36.19, on record pace.</p>
+<p>Muzhingi, who won the 'down' run the last two years, secured his maiden victory in the 'up' run to become the first athlete to win three titles in succession since Bruce Fordyce bagged his eighth straight win in 1988.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab8" style="display:none">
+<div style="float:right;"><a href="africa-zambia.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Zambia Hompage</a></div>
+<h3> <strong style="text-decoration:underline;">Emirates boosts Zambia and Zimbabwe services!</strong></h3>
+<p>Emirates has announced that its Dubai-Lusaka-Harare route will become a daily service from October 1st.</p>
+<p>The linked service, which currently operates five times a week, has performed strongly since its launch on February 1 and has to date carried over 43,000 passengers.</p>
+<p>"This latest boost to Emirates' African network is testament to the continuous upward growth in demand for our flights to and from the continent," said Jean Luc Grillet, SeniorVice President of Commercial Operations for Africa.</p>
+<p>"A daily service to Lusaka and Harare will mean greater choice for customers, while an increased cargo capacity of 40% will facilitate more export business opportunities for both countries, forging greater trade links and increasing access to key trading partners in Asia and the Middle East," he continued.  </p>
+<p>The Dubai-Lusaka-Harare service is operated by an A330-200 aircraft in a three-class configuration, offering 12 luxurious First Class seats, 42 seats in Business Class and 183 seats in Economy Class.</p>
+<p>The flight departs Dubai at 09h25, and arrives in Lusaka at 14h35. The service departs Lusaka at 16h20, and arrives in Harare at 17h20. The return flight will leave Harare at 18h50, and arrives in Lusaka at 19h50. It departs Lusaka at 21h25 and lands in Dubai at 06h40 the next day.</p>
+<p>Emirates currently serves 21 passenger and cargo destinations across the African continent. Over the next three months, the airline will launch a further four destinations: Barcelona, Lisbon, Erbil and Washington DC. </p>
+<h3> <strong style="text-decoration:underline;">New look for Chongwe River Camp</strong></h3>
+<p>Set beneath a canopy of winterthorns at the confluence of the Zambezi and Chongwe rivers, this award-winning camp combines the best of everything, from first-class service and luxurious accommodation to exceptional game viewing and enlightening cultural experiences.</p>
+<p>Chongwe River Camp have just finished an extensive refurbishment of the Chongwe "classic tents" - they have raised the roofs and the tents themselves for more light and air, new soft furnishings, extended verandah with new furniture and new bathroom fittings and lighting.</p>
+
+<h3><strong style="text-decoration:underline;">Walking safari Camp Zebra Plains is now open!</strong></h3>
+<p>Sanctuary Zebra Plains, the first true luxury walking safari camp in Zambia's fabled South Luangwa, opened on the 31st of May 2011! This is the ultimate bush adventure by foot as you experience the sights, sounds and smells of the bush while enjoying personalised service, fine dining and the most luxurious tented accommodation.</p>
+<p>Garth Hovell, one of Africa's most highly respected guides and explorers with twenty years of experience, will host guests at Sanctuary Zebra Plains and lead two walks each day. Even after twelve years of guiding walking safaris, for Garth there is simply no match for the adrenaline rush of a walking safari: "On foot your senses are heightened by all that surrounds you to give you the ultimate safari high."</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+<div id="tab9" style="display:none">
+<div style="float:right;"><a href="africa-botswana.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Botswana Hompage</a></div>
+<h3><strong style="text-decoration:underline;">Kgalagadi's Transfrontier Park best in cheetah hunting!</strong></h3>
+<p>Visitors to Kgalagadi Transfrontier Park are guaranteed to see hundreds of springbok walking along dry river beds in search of grass. According to predator expert Dr Gus Mills, the dry river beds of the Auob and Nossob are among the best places in Africa to see cheetah hunting.</p>
+<p>While Cheetahs are critically endangered in Northern Africa and Asia, the Kgalagadi Transfrontier Park is still one of the best locations to view this big cat. The large conservation area is also the study site for the Kgalagadi Cheetah Project.</p>
+<p>This is one of the last true wilderness areas in the world!</p>
+<p>Your visit to Kgalagadi Transfrontier Park while in Botswana will be a memorable experience!</p>
+<h3><strong style="text-decoration:underline;">SA Airlink to fly to Maun</strong></h3>
+<p>As from 15th June 2012 SA Airlink will fly daily from Johannesburg to Maun.</p>
+<p>Airlink was very pleased to have recently been awarded designation on this route by the South African Department of Transport. The route services a premier international African Safari market and will work in synergy with a number of other Airlink routes and touch points, notably Cape Town - Nelspruit Kruger and Livingstone, as well as those serviced by South African Airways and its Star Alliance partner airlines.</p>
+<h3><strong style="text-decoration:underline;">Special ideas in Seven Countries</strong></h3>
+<p>Summer is a special time in Africa. It is the time when there is a kaleidoscope of colour with rich landscapes, an explosion of new life with many species giving birth to their young and a myriad bird species to be seen.</p>
+<p>During this time, a phenomenal array of Wilderness and Sanctuary Retreats camps across seven African Countries (Botswana, Zambia, Namibia, Malawi, Zimbabwe, Kenya and Uganda) are giving the flexible and competitive edge to tailor-craft an infinite range of unique safari experiences for guests.  These mostly exclusive safari areas continue to offer frequent predator sightings as they take advantage of the glut of inexperienced, younger prey.</p>
+<p>Sit back and watch dramatic summer skies with imposing cumulonimbus clouds. A rich tapestry of green explodes with seasonal abundance providing ideal photographic opportunities and an endless assortment of subjects!</p>
+<h3><strong style="text-decoration:underline;">Mantis Group adds new floating boutique hotel</strong></h3>
+<p>Today the Mantis group which consists of five star boutique hotels, game reserves, eco experiences, luxury yachts and extraordinary rail journeys introduces the latest exclusive experience which will further diversify this estimable collection - the Zambezi Queen. This luxurious 45 meter floating boutique hotel situated on Botswana and Nambia's great Chobe River will now offer Mantis clients another once in a lifetime experience.</p>
+<p>Guests can now experience the thrill of an African safari from their own private suite aboard this luxurious 45 metre boat. There can be few natural wonders as synonymous with Africa's raw wilderness as this stretch of untamed waters. The Chobe River divides Botswana's Chobe National Park from Namibia's Caprivi Strip and its exotic banks boast one of the densest populations of wildlife on the African continent.</p>
+<h4>Please <a href="mailto:privatetravel@abercrombiekent.co.in">Contact us</a> for more Information.</h4></div>
+
+</div>
+<div class="tabtxtHolder-bottom"></div>
+</div>
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
