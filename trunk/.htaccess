@@ -1,15 +1,16 @@
 Options +FollowSymlinks
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www\.abercrombiekent\.co.in$
-RewriteRule (.*) http://www.abercrombiekent.co.in/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^www\.abercrombiekent\.co.in$
+#RewriteRule (.*) http://www.abercrombiekent.co.in/$1 [R=301,L]
 
 RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ http://www.abercrombiekent.co.in/$1 [R=301,L]
+#RewriteRule ^(.*)index.html$ http://www.abercrombiekent.co.in/$1 [R=301,L]
 
 RewriteCond %{THE_REQUEST} ^.*/enquery-form.html
-RewriteRule ^(.*)enquery-form.html$ http://www.abercrombiekent.co.in/enquiry-form.html$1 [R=301,L]
+#RewriteRule ^(.*)enquery-form.html$ http://www.abercrombiekent.co.in/enquiry-form.html$1 [R=301,L]
 
-AddType application/x-httpd-php .php .php5 .phtml .htm .html
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .php5 .phtml .htm .html 
 
 ##
 # @package		Joomla
