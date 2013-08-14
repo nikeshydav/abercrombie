@@ -4,10 +4,11 @@ session_start();
 //error_reporting(E_ALL);
 //echo $app_rootpath = getcwd();
 //exit;
+//Abercrombie;
 $serAddress = array();
 $serAddress[]	=	'localhost';	
 if(in_array($_SERVER['HTTP_HOST'],$serAddress)):
-define('APP_ROOT_URL', "http://".$_SERVER['HTTP_HOST']."/Abercrombie/");
+define('APP_ROOT_URL', "http://".$_SERVER['HTTP_HOST']."/Abercrombiekent/");
 else:
 define('APP_ROOT_URL', "http://".$_SERVER['HTTP_HOST']."/");
 define('APP_ROOT_PATH', "kunden/homepages/8/d378514179/htdocs/akindia/");
