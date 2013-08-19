@@ -31,9 +31,11 @@ function checkfield(loginform)
 		alert("Please Enter Your Address.");
 		loginform.address1.focus();
 		ok=false
+	}else if($("#s_code").val() != '1' ){
+		alert("Please Enter Your Security Code");
+		loginform.security_code.focus();
+		ok=false;
 	}
-	
-	
 	return ok
 }
 function isEmailAddr(email)

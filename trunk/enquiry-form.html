@@ -2,7 +2,7 @@
 include("config.php");
 include("classes/mimemail.class.php");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -14,13 +14,84 @@ include("classes/mimemail.class.php");
 <link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
 <!-- <link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" /> -->
 <link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />
-<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
-</script>
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js"> </script>
 <!--Flag-->
 <script type="text/javascript" src="js/tabcontent.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/enquiry.js"></script>
+<script type="text/javascript" src="<?php echo APP_ROOT_URL; ?>js/jquery.js"></script>	
+
 <link rel="SHORTCUT ICON" href="favicon.ico" />
+<script type="text/javascript">
+function checkcode2(valuecode){
+  
+	var  dataString = 'val='+valuecode;
+	
+	$.ajax({
+		type: "GET",
+		url: "checkcode.php",
+		data: dataString,
+		cache: true,
+		success: function(value)
+			{  
+				if(value==0){
+					$("#s_code").val(value);	
+					$("#security_code").focus();
+					cahtchaes='no';
+					return false;
+				} else {
+				    $("#s_code").val(value);
+				    cahtchaes='yes';
+				    return true;
+				}
+				
+			}
+		});
+ }
+ function checkcode3(valuecode)
+ {
+  
+	var  dataString = 'val='+valuecode;
+	
+	$.ajax({
+		type: "GET",
+		url: "checkcode.php",
+		data: dataString,
+		cache: true,
+		success: function(value)
+			{  
+				if(value==0){
+					$("#s_code2").val(value);	
+					$("#security_code2").focus();
+					return false;
+				} else {
+				    $("#s_code2").val(value);
+				    return false;
+				}
+				
+			}
+		});
+ }
+ 
+function new_captcha3()
+{
+var c_currentTime = new Date();
+var c_miliseconds = c_currentTime.getTime();
+document.getElementById('freecap').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
+$("#s_code2").val(0);
+}
+function new_captcha4()
+{
+var c_currentTime = new Date();
+var c_miliseconds = c_currentTime.getTime();
+document.getElementById('captcha1').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
+$("#s_code2").val(0);
+}
+function formsubmit()
+{
+	document.loginform.submit();
+}
+ </script>
+<script type="text/javascript" src="js/enquiry.js"></script>
 <!-- Google Analytics Start here -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -181,14 +252,6 @@ href="yahoo.html">
         
 		
 		 <form id="loginform"name="loginform" method="post" action="sendenquiry.php" onsubmit="return checkfield(this)">
-		 
-                  
-		  
-		  
-          
-		  
-		  
-			  
               
 		  <h2 class="blue14">Your details</h2>
           <li class="dottedBorder">
@@ -247,6 +310,16 @@ href="yahoo.html">
               <br />
               <span class="errormsg"></span> </dd>
           </dl>
+          <dl>
+				<dt>Security Code</dt>
+				<dd style="width:200px;">
+				<img border="0" class="Border"  id="freecap" src="<?php echo APP_ROOT_URL;?>image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha3();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br/><br/>
+				<input type="text" name="security_code" id="security_code"   class="inptxtsml" onKeyUp="javascript:return checkcode2(this.value);" />
+				<input type="hidden" name="s_code" id="s_code" value="" />
+				<span class="errormsg" id="err_security_code"></span>
+				<!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
+				</dd>
+				</dl>
 		  </li>
 		<dl><p>&nbsp;</p></dl>
 		<dl>
