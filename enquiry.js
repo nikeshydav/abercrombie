@@ -1,53 +1,63 @@
 function checkfield(loginform)
 {
-	ok=true
+	ok=true;
 	var chek=document.getElementById("hiddenvalue").value;
 	if(loginform.first_name.value=="")
 	{
-		alert("Please Enter Your Name.")
+		alert("Please Enter Your Name1.")
 		loginform.first_name.focus()
-		ok=false
+		ok=false;
 	}
 	
 	else if (loginform.email.value == "")
 	{
 		alert("Please Enter Email Field.");
 		loginform.email.focus();
-		ok=false
+		ok=false;
 	}
 	else if (!isEmailAddr(loginform.email.value))
 	{
 		alert("Please Enter a Complete Email Address in the Form: yourname@yourdomain.com");
 		loginform.email.focus();
-		ok=false
+		ok=false;
 	}
 	else if (loginform.telephone.value == "")
 	{
 		alert("Please Enter Contact Number.");
 		loginform.telephone.focus();
-		ok=false
+		ok=false;
 	}
 	else if (loginform.address1.value == "")
 	{
 		alert("Please Enter Your Address.");
 		loginform.address1.focus();
-		ok=false
+		ok=false;
+	}
+	else if (loginform.security_code.value == "")
+	{
+		alert("Please Enter Your Security Code");
+		loginform.security_code.focus();
+		ok=false;
 	}
 	else if(loginform.validation.value=="")
 	{
 		alert("Please Enter The Validation code.")
 		loginform.validation.focus()
-		ok=false
+		ok=false;
 	}
 	
 	else if(loginform.validation.value!=chek)
 	{
 		alert("Please Enter Correct Validation code as Shown.")
 		loginform.validation.focus()
-		ok=false
+		ok=false;
+	}else if($("#s_code2").val() == '0'){
+		alert("Please Enter Correct security code as Shown.")
+		loginform.security_code.focus();
+		ok=false;
 	}
 	
-	return ok
+	return false;
 }
 function isEmailAddr(email)
 {
