@@ -92,6 +92,80 @@ function formsubmit()
 }
  </script>
 <script type="text/javascript" src="js/enquiry.js"></script>
+<<<<<<< .mine
+<script type="text/javascript" src="<?php echo APP_ROOT_URL; ?>js/jquery.js"></script>
+<script type="text/javascript">
+function checkcode21(valuecode)
+ {
+  
+	var  dataString = 'val='+valuecode;
+	
+	$.ajax({
+		type: "GET",
+		url: "checkcode.php",
+		data: dataString,
+		cache: true,
+		success: function(value)
+			{  
+				if(value==0){
+					$("#s_code").val(value);	
+					$("#security_code").focus();
+					return false;
+				} else {
+				    $("#s_code").val(value);
+				    return true;
+				}
+				
+			}
+		});
+ }
+ function checkcode31(valuecode)
+ {
+  
+	var  dataString = 'val='+valuecode;
+	
+	$.ajax({
+		type: "GET",
+		url: "checkcode.php",
+		data: dataString,
+		cache: true,
+		success: function(value)
+			{  
+				if(value==0){
+					$("#s_code2").val(value);	
+					$("#security_code2").focus();
+					return false;
+				} else {
+				    $("#s_code2").val(value);
+				    return false;
+				}
+				
+			}
+		});
+ }
+ 
+function new_captcha31()
+{
+var c_currentTime = new Date();
+var c_miliseconds = c_currentTime.getTime();
+document.getElementById('freecap').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
+$("#s_code2").val(0);
+}
+function new_captcha41()
+{
+var c_currentTime = new Date();
+var c_miliseconds = c_currentTime.getTime();
+document.getElementById('captcha1').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
+$("#s_code2").val(0);
+}
+function formsubmit()
+{
+	document.loginform.submit();
+}
+ </script>	
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+=======
+>>>>>>> .r119
 <!-- Google Analytics Start here -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -310,6 +384,18 @@ href="yahoo.html">
               <br />
               <span class="errormsg"></span> </dd>
           </dl>
+<<<<<<< .mine
+          <dl>
+				<dt>Security Code</dt>
+				<dd style="width:200px;">
+				<img border="0" class="Border"  id="freecap" src="<?php echo APP_ROOT_URL;?>image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha31();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br/><br/>
+				<input type="text" name="security_code" id="security_code"   class="inptxtsml" onKeyUp="javascript:return checkcode21(this.value);" />
+				<input type="hidden" name="s_code" id="s_code" value="" />
+				<span class="errormsg" id="err_security_code"></span>
+				<!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
+				</dd>
+				</dl>
+=======
           <dl>
 				<dt>Security Code</dt>
 				<dd style="width:200px;">
@@ -320,8 +406,10 @@ href="yahoo.html">
 				<!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
 				</dd>
 				</dl>
+>>>>>>> .r119
 		  </li>
 		<dl><p>&nbsp;</p></dl>
+        
 		<dl>
 		<span class="Left">
 		<input type="image" name="submit" src="images/submit-btn.jpg" /></span>
