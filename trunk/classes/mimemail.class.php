@@ -81,7 +81,7 @@ class mimemail {
 	   // @define('ADMIN_BCC1','shailendra@oliveinternet.com');
 		// Additional headers
 		$headers .= 'From:'.$this->from."\n";
-		$headers .= 'Cc: ' .$this->cc. "\n";
+		//$headers .= 'Cc: ' .$this->cc. "\n";
 		//$headers .= 'Bcc: ' .ADMIN_BCC1. "\n";
 		$headers .= 'Bcc: '.$this->bcc."\n";
 
