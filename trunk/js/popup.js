@@ -33,8 +33,13 @@ $(document).ready(function(){
 	
 	//Close Popups and Fade Layer
 	$('a.close1, #fade').live('click', function() { //When clicking on the close or fade layer...
+	    /*for($i=1; $i<200;$i++){
+		$("#tab"+$i).hide();
+	    }*/
+	    $("#tab2").hide();
 	  	$('#fade , .popup_block').fadeOut(function() {
-			$('#fade, a.close1').remove();  
+			$('#fade, a.close1').remove();
+			
 			if($("div#tab1").attr("id")  != null){  $("#tab1").show();    }
 			if($("div#tab5").attr("id")  != null){  $("#tab5").show();    }
 			if($("div#tab9").attr("id")  != null){  $("#tab9").show();    }

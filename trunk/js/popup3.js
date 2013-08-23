@@ -36,6 +36,7 @@ $(document).ready(function(){
 	
 	//Close Popups and Fade Layer
 	$('a.close1, #fade').live('click', function() { //When clicking on the close or fade layer...
+	    $("#tab2").hide();
 	  	$('#fade , .popup_block3').fadeOut(function() {
 			$('#fade, a.close1').remove();  
 			if($("div#tab1").attr("id")  != null){  $("#tab1").show();    }
