@@ -169,5 +169,7 @@ $how_hear_about_list = '<optgroup label="A&amp;K communications" style="font-sty
 				<option value="Twitter">&nbsp;&nbsp; Twitter</option>
 				
 				<option value="Facebook">&nbsp;&nbsp; Facebook</option>
-				</optgroup>';				
+				</optgroup>';
+				
+$security_captcha_id=1;
 	?>
