@@ -36,6 +36,17 @@ function checkfield(loginform)
 		loginform.security_code.focus();
 		ok=false;
 	}
+<<<<<<< .mine
+	else if (loginform.security_code.value == "")
+	{
+		alert("Please Enter Your Security Code");
+		loginform.security_code.focus();
+		ok=false
+	}
+	
+	
+=======
+>>>>>>> .r119
 	return ok
 }
 function isEmailAddr(email)
