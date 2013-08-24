@@ -100,10 +100,7 @@ function validate_itinerary(frm_name,fld_arr,fid){
 				if(value==0){
 				return false;
 				}else{                                    
-                                    new_captcha_1();
-                                    new_captcha_2();
-                                    new_captcha_3();
-                                    new_captcha_4();                                   
+                                   eval("new_captcha_"+fid+"()");                                  
                                 }
 				
 			}
@@ -297,11 +294,7 @@ function validate_quote(frm_name,fld_arr)
 				//alert("Thank you for Request a Quote" );
                                if(value==0){
                                     return false;                                
-				}else{                
-                                    new_captcha_1();
-                                    new_captcha_2();
-                                    new_captcha_3();
-                                    new_captcha_4();
+				}else{               
                                     eval("new_captcha6_"+fid+"()");
                                   }
 				
