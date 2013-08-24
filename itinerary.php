@@ -28,6 +28,7 @@ function new_captcha_<?php echo $id;?>()
 {
 var c_currentTime = new Date();
 var c_miliseconds = c_currentTime.getTime();
+
 document.getElementById('captcha_<?php echo $id;?>').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
 $("#s_code3_<?php echo $id;?>").val(0);
 }
