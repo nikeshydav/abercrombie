@@ -40,15 +40,7 @@ $(document).ready(function(){
         for($i=1; $i<200;$i++){
             $("#tab"+$i).hide();
         }
-        
-        new_captcha_1();
-        new_captcha_2();
-        new_captcha_3();
-        new_captcha_4();
-        new_captcha6_1();
-        new_captcha6_2();
-        new_captcha6_3();
-        new_captcha6_4();
+                
         $('#fade , .popup_block').fadeOut(function() {
             $('#fade, a.close1').remove();
 			
