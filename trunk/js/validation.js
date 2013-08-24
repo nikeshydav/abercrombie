@@ -302,10 +302,7 @@ function validate_quote(frm_name,fld_arr)
                                     new_captcha_2();
                                     new_captcha_3();
                                     new_captcha_4();
-                                    new_captcha6_1();
-                                    new_captcha6_2();
-                                    new_captcha6_3();
-                                    new_captcha6_4();
+                                    eval("new_captcha6_"+fid+"()");
                                   }
 				
 			}
@@ -346,3 +343,12 @@ function check_reg(frm_name,fld_arr){
 		} 
 		return msg;
 	} 
+        
+$(function(){
+
+    $('#quote_name').click(function(){        
+        $id = $(this).parent('li').children('img').attr('id');
+        alert($id);
+    });
+
+});
