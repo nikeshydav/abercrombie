@@ -85,8 +85,8 @@ if(isset($_POST['submit']))
 			"Mailer Error: " . $mailadmin->ErrorInfo;
 			} else {
 			
-			header("location:http://www.abercrombiekent.co.in/thanks_itinerary.html");
-			"Message sent!";
+			//header("location:http://www.abercrombiekent.co.in/thanks_itinerary.html");
+			echo "Itinerary Has Been Sent Successfully.";
 			exit;
 			}
 	

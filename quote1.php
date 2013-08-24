@@ -87,7 +87,16 @@ $("#s_code5_<?php echo $id;?>").val(0);
             <dd>
               <textarea class="txtarea" rows="" cols=""  name="quote_requirements" id="quote_requirements" maxlength="100" onBlur="changeBorder(this);"></textarea></dd>
           </dl>
-		  
+		  <dl>
+                               <dt>Security Code</dt>
+                               <dd>
+                               <img border="0" class="Border" id="captcha6_<?php echo $id;?>" src="<?php echo APP_ROOT_URL; ?>image.php" alt="" />  <a href="JavaScript: new_captcha6_<?php echo $id;?>();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br>
+                               <input type="text" name="security_codeq_<?php echo $id;?>" id="security_codeq_<?php echo $id;?>"   class="inptxtsml mleft10" onKeyUp="javascript:return checkcode3_<?php echo $id;?>(this.value);" />
+                               <input type="hidden" name="s_code5_<?php echo $id;?>" id="s_code5_<?php echo $id;?>" value="" />
+                               <span class="errormsg" id="err_security_codeq_<?php echo $id;?>"></span>
+<!--                                <img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
+                               </dd>
+                               </dl>
 		  
 		  <dl class="top20">
 		  <dt>&nbsp;</dt>

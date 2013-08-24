@@ -39,8 +39,8 @@ var fld_arr3={
 		};
 var d='';
 var d1='';
-function validate_itinerary(frm_name,fld_arr)
-   {
+//var email_fid;
+function validate_itinerary(frm_name,fld_arr,fid){
 	
    var arr_msg=Array();
    arr_msg=check_reg(frm_name,fld_arr);
@@ -59,42 +59,52 @@ function validate_itinerary(frm_name,fld_arr)
 			frm_name.email_send_itinerary.style.borderColor='red';
 			count++;
 	}
-	//if(document.getElementById("security_code_"+fid).value == ''){
-//		    arr_msg[count]="Please enter security code.";
-//			document.getElementById("security_code_"+fid).style.borderColor='red';
-//			count++;
-//   }
-//	
-//	if(document.getElementById("security_code_"+fid).value != ''){
-//	    if(document.getElementById("s_code3_"+fid).value==0){
-//	        arr_msg[count]="Security code does not match.";
-//			document.getElementById("security_code_"+fid).style.borderColor='red';
-//			count++;
-//		} 
-//    } 
+	if(document.getElementById("security_code_"+fid).value == ''){
+		    arr_msg[count]="Please enter security code.";
+			document.getElementById("security_code_"+fid).style.borderColor='red';
+			count++;
+                        
+   }
+	
+	if(document.getElementById("security_code_"+fid).value != ''){
+	    if(document.getElementById("s_code3_"+fid).value==0){
+	        arr_msg[count]="Security code does not match.";
+			document.getElementById("security_code_"+fid).style.borderColor='red';
+			count++;
+                        eval("new_captcha_"+fid+"()");
+                        document.getElementById("security_code_"+fid).value = '';
+		} 
+    } 
 	
 
 	if(arr_msg.length==0){
 	var time=Math.random();  
-	var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+frm_name.country_send_itinerary.value+"&region_send_itinerary="+frm_name.region_send_itinerary.value+"&itineraries_send_itinerary="+frm_name.itineraries_send_itinerary.value+"&submit=1"+"&time="+time;
+        var country = frm_name.country_email.value;
+        var region = frm_name.region_email.value;
+        var itineraries_email = frm_name.itineraries_email.value;
+	var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "/send_mail_itinerary.php",
+		url: "/Abercrombiekent/send_mail_itinerary.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
 		success: function(value)
 			{
 				window['d1'] = value;
-				alert("A PDF version of this itinerary will be sent to your client" );
+				alert("A PDF version of this itinerary will be sent to your client. ");
 				frm_name.email_send_itinerary.value='';
 				frm_name.subject_send_itinerary.value='';				
 				frm_name.msg_send_itinerary.value='';				
 				
 				if(value==0){
-				
 				return false;
-				}
+				}else{                                    
+                                    new_captcha_1();
+                                    new_captcha_2();
+                                    new_captcha_3();
+                                    new_captcha_4();                                   
+                                }
 				
 			}
 		});	
@@ -205,7 +215,7 @@ function validate_quote(frm_name,fld_arr)
    }
  
  //For Honemoon Request Quote
- function validate_quote1(frm_name,fld_arr)
+ function validate_quote1(frm_name,fld_arr,fid)
    {
 	 //alert(fid);
 	var arr_msg=Array();
@@ -245,32 +255,35 @@ function validate_quote(frm_name,fld_arr)
 			count++;
 	}
 	//alert(document.getElementById("security_codeq_"+fid).value);
-	//if(document.getElementById("security_codeq_"+fid).value == ''){
-//		    arr_msg[count]="Please enter security code.";
-//			document.getElementById("security_codeq_"+fid).style.borderColor='red';
-//			count++;
-//   }
-//	
-//	if(document.getElementById("security_codeq_"+fid).value != ''){
-//	    if(document.getElementById("s_code5_"+fid).value==0){
-//	        arr_msg[count]="Security code does not match.";
-//			document.getElementById("security_codeq_"+fid).style.borderColor='red';
-//			count++;
-//		} 
-//    } 
+	if(document.getElementById("security_codeq_"+fid).value == ''){
+		    arr_msg[count]="Please enter security code.";
+			document.getElementById("security_codeq_"+fid).style.borderColor='red';
+			count++;
+   }
+	
+	if(document.getElementById("security_codeq_"+fid).value != ''){
+	    if(document.getElementById("s_code5_"+fid).value==0){
+	        arr_msg[count]="Security code does not match.";
+			document.getElementById("security_codeq_"+fid).style.borderColor='red';
+			count++;
+                        eval("new_captcha6_"+fid+"()");
+                        document.getElementById("security_codeq_"+fid).value = '';
+		} 
+    } 
 	
 	if(arr_msg.length==0){
 	var time=Math.random();  
 	var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "/send_mail_quote1.php",
+		url: "/Abercrombiekent/send_mail_quote1.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
 		success: function(value)
 			{
 				window['d'] = value;
+                                alert("A PDF version of this itinerary will be sent to your client. "+ value );
 				frm_name.quote_name.value='';
 				frm_name.quote_email.value='';				
 				frm_name.quote_phone.value='';
@@ -279,11 +292,21 @@ function validate_quote(frm_name,fld_arr)
 				//frm_name.quote_age_children.value='';
 				frm_name.quote_date_travel.value='';
 				frm_name.quote_requirements.value='';
+                                document.getElementById("security_codeq_"+fid).value='';
+                                //eval( "validate_quote1"("frm_name,fld_arr,fid").value='');
 				//alert("Thank you for Request a Quote" );
-				if(value==0){
-				
-				return false;
-				}
+                               if(value==0){
+                                    return false;                                
+				}else{                
+                                    new_captcha_1();
+                                    new_captcha_2();
+                                    new_captcha_3();
+                                    new_captcha_4();
+                                    new_captcha6_1();
+                                    new_captcha6_2();
+                                    new_captcha6_3();
+                                    new_captcha6_4();
+                                  }
 				
 			}
 		});
@@ -304,7 +327,7 @@ function changeBorder(val){
 	val.style.borderColor='';
 }
 
-function check_reg(frm_name,fld_arr){		
+function check_reg(frm_name,fld_arr){	
 		var msg=Array();
 		var count=0;
 		for (var word in fld_arr){
