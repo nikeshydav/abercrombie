@@ -4,13 +4,42 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content=""/>
 <meta name="description" content="" />
-<title>The Blue Train</title>
+<title>The Eastern & Oriental Train</title>
 <link rel="stylesheet" href="../css/style.css" type="text/css" />
 <!--Flag-->
+<!--tab-->
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../js/ddaccordion.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+//Initialize first demo:
+ddaccordion.init({
+	headerclass: "mypets", //Shared CSS class name of headers group
+	contentclass: "thepet", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openpet"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+</script>
+<!--tabcontent-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 <!--[if lt IE 9]>
@@ -121,7 +150,7 @@ href="../yahoo.html">
 <!-- Header Part End Here -->
 
 <!-- Banner Part Start Here -->
-<div id="Banner"><img src="../images/the_blue_train/banner_bluetrain2.jpg" alt="Luxury Rail Journeys" /></div>
+<div id="Banner"><img src="../images/The_eastern_oriental_train/eastern-oriental-banner.jpg" alt="Luxury Rail Journeys" /></div>
 <!-- Banner Part End Here -->
 
 <!-- Container Part Start Here -->
@@ -135,26 +164,26 @@ href="../yahoo.html">
 <li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
 <li><a href="Luxury-rail-journey.html">Luxury rail journeys</a></li>
 <li><a href="train-portfolio.html">Train Portfolio </a></li>
-<li><a href="the-blue-train.html">The Blue Train</a></li>
-<li>Best Time to Go</li>
+<li>The Eastern & Oriental Train</li>
 </ul>
 </div>
 <div class="LeftList">
-        <h5><a href="train-portfolio.html"> Luxury rail journeys</a></h5>
+        <h5><a href="Luxury-rail-journey.html"> Luxury rail journeys</a></h5>
      
 		  <ul>
 		    <li><a href="train-portfolio.html" title="Train Portfolio"> Train Portfolio </a>
 		      <ul>
               <li><a href="golden-eagle.html" title="Golden Eagle "><span>Golden Eagle </span></a>
-			<li><a href="the-blue-train.html" title="Golden Eagle "><span>The Blue Train</span></a>
- 		 <ul>
-         <li><a href="besttime-blue-train.html" title=" Best Time to Go"><span>-</span> Best Time to Go</a></li>
-              <li><a href="the-bule-train-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>
-              <li><a href="#" title="Special Offers"><span>-</span> Special Offers</a></li>
+			<li><a href="the-blue-train.html" title="The Blue Train"><span>The Blue Train</span></a>
+          <li><a href="rovos.html" title="Rovos Rail"><span>Rovos Rail</span></a></li>
+          <li><a href="eastern-oriental-train.html" title="Eastern & Oriental Train "><span>The Eastern & Oriental Train </span></a></li>
+          <ul>
+          <li><a href="eastern-oriental-train.html" title="Introduction"><span>-</span> Introduction</a></li>
+         <li><a href="besttime-eastern-oriental-train.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
+              <!--<li><a href="#" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>
+              <li><a href="#" title="Special Offers"><span>-</span> Special Offers</a></li>-->
                
             </ul>
-             <li><a href="rovos.html" title="Rovos Rail"><span>Rovos Rail</span></a></li>
-             <li><a href="eastern-oriental-train.html" title="Eastern & Oriental Train "><span>The Eastern & Oriental Train </span></a></li>
 
  </ul>
 </li>
@@ -199,7 +228,7 @@ href="../yahoo.html">
 
 <!-- Center Container Part Start Here -->
 <div class="CenterContainerInner">
-<h1>Best Time To Go</h1>
+<h1>The Eastern & Oriental Train</h1>
 <div class="Right">
 <div class="RightIcons"> <?php include('../share.html'); ?></div>
 <div class="NewsletterBox">
@@ -208,24 +237,47 @@ href="../yahoo.html">
 </div>
 <div class="Clr"></div>
 
-<div style="clear:both;"></div>
-<div style="float:left; width:470px;">
-<p>October to May is the best time to visit the Cape. Game viewing is better during the drier months of April to September. <br />The wildflower season is generally from mid August to mid September. The whale watching season runs from June to November.<br /><br />
-<strong>FLY TO </strong><br />
-Cape Town/Johannesburg <br /><br />
-<!--<strong>FLYING TIME </strong><br />
-11 hours 30 minutes/10 hours 30 minutes non-stop <br /><br />
-<strong>TIME DIFFERENCE</strong> <br />
-GMT +2 hours <br /><br />
-<strong>VISAS </strong><br />
-Not required for UK passport holders <br /><br />
-<strong>HEALTH REQUIREMENTS</strong> <br />
-Yellow fever certificate if arriving from an endemic area <br />-->
-</p>
+<div style="float:left; width:100%; margin:0 0 20px 0;">
+<div id="demo2" >
+ <div id="slideshow" class="pics" style="position: relative; ">
+<img src="../images/The_eastern_oriental_train/eastern-oriental-gallery1.jpg" alt="Eastern Oriental "/>
+<img src="../images/The_eastern_oriental_train/eastern-oriental-gallery2.jpg" alt="Eastern Oriental"/>
+<img src="../images/The_eastern_oriental_train/eastern-oriental-gallery3.jpg" alt="Eastern Oriental"/>
+<img src="../images/The_eastern_oriental_train/eastern-oriental-gallery4.jpg" alt="Eastern Oriental "/>
+<img src="../images/The_eastern_oriental_train/eastern-oriental-gallery5.jpg" alt="Eastern Oriental"/>
+<img src="../images/The_eastern_oriental_train/eastern-oriental-gallery6.jpg" alt="Eastern Oriental"/>
+
 </div>
-<div style="float:right; width:228px; margin:0px;">
-<img src="../images/the_blue_train/map.jpg" alt="" />
 </div>
+</div>
+
+
+
+<h4>This lavish train with its graceful interiors provides you with the perfect setting to relax and become immersed in the
+enchanting view of the striking scenery in South East Asia. Experience the elegance of a bygone era, a romantic
+age when the time spent travelling was as anticipated as the destination. From iconic, alluring green and cream 
+carriages to admirably crafted compartments to graceful dining cars serving gourmet meals, luxury train travel evokes 
+the genial hospitality of gentler times. A lavish private cabin is a chic sanctuary for your trip with windows perfect 
+for watching the landscape unfold. A steward is on call 24 hours a day to ensure every need is met. Share your 
+experiences with fellow guests over cocktails and dinner and interact with the locals at our exciting destinations.</h4><br />
+<p>The two night journey takes you north-east from Singapore crossing Malaysia over the straits of Johor, onwards to
+Kuala Lumpur. The following morning, enjoy a guided tour of Georgetown, capital of Penang, before moving onwards 
+to Thailand. Prior to arriving in Bangkok, experience a tour on the River Kwai.</p>
+
+<div class="thepet">
+<p>
+<strong style="font-size:14px;">Accommodation</strong><br />
+<br />
+Enjoy the picturesque views from the Observation Car on board and head to the bar for a refreshing aperitif before
+dinner. Relax to the soothing sounds of the talented resident pianist before indulging in a delectable meal prepared
+by the on-board chefs. At the end of the day, retire to your luxurious private cabin, decorated in a style dating back to 
+the colonial era.</p>
+<p>The luxury train provides a year round scheduled service through the diverse countryside of Singapore, Malaysia and
+Thailand, including the following journeys between Bangkok - Singapore, Bangkok - Vientiane, Chiang Mai - Bangkok
+- Singapore.</p>
+</div>
+<h3 class="mypets">Read more</h3>
+    <strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong>
 </div>
 
 <!-- Center Container Part End Here -->
