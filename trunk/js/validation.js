@@ -85,7 +85,7 @@ function validate_itinerary(frm_name,fld_arr,fid){
 	var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "/Abercrombiekent/send_mail_itinerary.php",
+		url: "/send_mail_itinerary.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
@@ -273,7 +273,7 @@ function validate_quote(frm_name,fld_arr)
 	var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "/Abercrombiekent/send_mail_quote1.php",
+		url: "/send_mail_quote1.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
