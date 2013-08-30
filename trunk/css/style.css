@@ -698,7 +698,10 @@ border-radius:4px; width:204px;
 -xhtml-border-radius:4px;
 }
 .kate img{width:200px;}
-
+.footer_speak strong {
+    float: left;
+    margin: 10px 0 0;
+}
 #demo3{padding: 12px;
 width: 226px;
 -moz-border-radius: 6px;
