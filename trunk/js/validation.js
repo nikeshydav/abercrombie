@@ -341,6 +341,7 @@ $(function(){
     
     $('.closethis').live('click',function(){
 	$('.popup_block, #fade').css({'display':'none'});
+	$('.close1').remove();
 	return false;
     });
 
