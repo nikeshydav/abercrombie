@@ -463,12 +463,12 @@ This exclusive itinerary allows for up close and personal experiences with Afric
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2);">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post" onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Kenya"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Kenya Family Safari"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -750,12 +750,12 @@ This exclusive itinerary allows for up close and personal experiences with Afric
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Kenya"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="In the Wilds of Kenya"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1090,12 +1090,12 @@ This exclusive itinerary allows for up close and personal experiences with Afric
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2)">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Kenya"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
