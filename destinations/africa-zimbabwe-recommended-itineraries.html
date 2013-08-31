@@ -45,21 +45,8 @@ function showMe(tab)
 			{
 			document.getElementById(name).style.display="block";
 			}
-		}
-		
-		else
-		{
-		    if(document.getElementById(name2) != null)	
-		    {
-			document.getElementById(name2).className="";
-			}
-			
-			if(document.getElementById(name) != null)	
-		   {
-			document.getElementById(name).style.display="none";
-			}
-		}
-		if(name == 'tab4'){
+                        
+                        if(name == 'tab4'){
 		  $(document).ready(function(){
 				gmapInitialize();
 			});
@@ -79,6 +66,21 @@ function showMe(tab)
 				gmapInitialize3();
 			});
 		}
+		}
+		
+		else
+		{
+		    if(document.getElementById(name2) != null)	
+		    {
+			document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+			document.getElementById(name).style.display="none";
+			}
+		}
+		
 	}
 }
 </script>
@@ -506,13 +508,13 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -657,13 +659,13 @@ River.</p>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -851,13 +853,13 @@ village.</p>
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -961,13 +963,13 @@ village.</p>
 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
