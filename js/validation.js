@@ -1,5 +1,3 @@
-// JavaScript Document
-
 var fld_arr2={
 		'quote_name':'Please enter Name.',
 		'quote_email':'Please enter Email.',	
@@ -85,23 +83,22 @@ function validate_itinerary(frm_name,fld_arr,fid){
 	var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "/send_mail_itinerary.php",
+		url: "send_mail_itinerary.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
-		success: function(value)
-			{
-				window['d1'] = value;
-				alert("A PDF version of this itinerary will be sent to your client. ");
-				frm_name.email_send_itinerary.value='';
+		success: function(value){
+				window['d1'] = value;frm_name.email_send_itinerary.value='';
 				frm_name.subject_send_itinerary.value='';				
 				frm_name.msg_send_itinerary.value='';				
+				frm_name.sender_email.value='';
 				
 				if(value==0){
-				return false;
+				    return false;
 				}else{                                    
                                    eval("new_captcha_"+fid+"()");                                  
-                                }
+                                }				
+				frm_name.innerHTML = "For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
 				
 			}
 		});	
@@ -116,8 +113,7 @@ function validate_itinerary(frm_name,fld_arr,fid){
 	}
 	
    }
-function validate_quote(frm_name,fld_arr)
-   {
+function validate_quote(frm_name,fld_arr){
 	 //alert(fid);
 	var arr_msg=Array();
 	  arr_msg=check_reg(frm_name,fld_arr);
@@ -175,7 +171,7 @@ function validate_quote(frm_name,fld_arr)
 	var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_no_children="+frm_name.quote_no_children.value+"&quote_age_children="+frm_name.quote_age_children.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "/send_mail_quote.php",
+		url: "send_mail_quote.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
@@ -273,14 +269,13 @@ function validate_quote(frm_name,fld_arr)
 	var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "/send_mail_quote1.php",
+		url: "send_mail_quote1.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
 		success: function(value)
 			{
 				window['d'] = value;
-                                alert("A PDF version of this itinerary will be sent to your client. "+ value );
 				frm_name.quote_name.value='';
 				frm_name.quote_email.value='';				
 				frm_name.quote_phone.value='';
@@ -297,6 +292,10 @@ function validate_quote(frm_name,fld_arr)
 				}else{               
                                     eval("new_captcha6_"+fid+"()");
                                   }
+				
+				var htm ="Thank You for showing interest in this itinerary, a quote for this itinerary will be shared with you soon. <br />";
+				htm	    +="For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
+				frm_name.innerHTML = htm;
 				
 			}
 		});
@@ -341,7 +340,12 @@ $(function(){
 
     $('#quote_name').click(function(){        
         $id = $(this).parent('li').children('img').attr('id');
-        alert($id);
+        //alert($id);
+    });
+    
+    $('.closethis').live('click',function(){
+	$('.popup_block, #fade').css({'display':'none'});
+	return false;
     });
 
 });
