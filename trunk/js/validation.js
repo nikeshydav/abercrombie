@@ -1,40 +1,38 @@
 var fld_arr2={
-		'quote_name':'Please enter Name.',
-		'quote_email':'Please enter Email.',	
-		//'quote_residence':'Please select country of residence.',
-		'quote_phone':'Please enter Telephone.',
-		'quote_adult':'Please enter number of adults.',
-		'quote_no_children':'Please enter number of children.',
-		'quote_age_children':'Please enter Ages of children.',
-		'quote_date_travel':'Please enter Date of travel.',	
-		'quote_requirements':'Please enter Requirements.'	
+'quote_name':'Please enter Name.',
+'quote_email':'Please enter Email.',	
+//'quote_residence':'Please select country of residence.',
+'quote_phone':'Please enter Telephone.',
+'quote_adult':'Please enter number of adults.',
+'quote_no_children':'Please enter number of children.',
+'quote_age_children':'Please enter Ages of children.',
+'quote_date_travel':'Please enter Date of travel.',	
+'quote_requirements':'Please enter Requirements.'	
+
+};
+//For Honeymoon Request Form
+var fld_arr22={
+'quote_name':'Please enter Name.',
+'quote_email':'Please enter Email.',	
+//'quote_residence':'Please select country of residence.',
+'quote_phone':'Please enter Telephone.',
+'quote_adult':'Please enter number of adults.',
+//'quote_no_children':'Please enter number of children.',
+//'quote_age_children':'Please enter Ages of children.',
+'quote_date_travel':'Please enter Date of travel.',	
+'quote_requirements':'Please enter Requirements.'	
+
+};
 		
-		};
-		//For Honeymoon Request Form
-		var fld_arr22={
-		'quote_name':'Please enter Name.',
-		'quote_email':'Please enter Email.',	
-		//'quote_residence':'Please select country of residence.',
-		'quote_phone':'Please enter Telephone.',
-		'quote_adult':'Please enter number of adults.',
-		//'quote_no_children':'Please enter number of children.',
-		//'quote_age_children':'Please enter Ages of children.',
-		'quote_date_travel':'Please enter Date of travel.',	
-		'quote_requirements':'Please enter Requirements.'	
-		
-		};
 		
 		
-		
-var fld_arr3={
-		
-		'email_send_itinerary':'Please enter Email.',
-		'sender_email':'Please enter sender Email.',
-		'subject_send_itinerary':'Please enter Subject.',
-		'msg_send_itinerary':'Please enter Message.'
-			
-		
-		};
+var fld_arr3={		
+'email_send_itinerary':'Please enter Email.',
+'sender_email':'Please enter sender Email.',
+'subject_send_itinerary':'Please enter Subject.',
+'msg_send_itinerary':'Please enter Message.'
+};
+
 var d='';
 var d1='';
 //var email_fid;
@@ -83,7 +81,7 @@ function validate_itinerary(frm_name,fld_arr,fid){
 	var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "send_mail_itinerary.php",
+		url: "../send_mail_itinerary.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
@@ -96,7 +94,7 @@ function validate_itinerary(frm_name,fld_arr,fid){
 				if(value==0){
 				    return false;
 				}else{                                    
-                                   eval("new_captcha_"+fid+"()");                                  
+                                   eval("new_captcha_"+fid+"()"); 
                                 }				
 				frm_name.innerHTML = "For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
 				
@@ -171,7 +169,7 @@ function validate_quote(frm_name,fld_arr){
 	var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_no_children="+frm_name.quote_no_children.value+"&quote_age_children="+frm_name.quote_age_children.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "send_mail_quote.php",
+		url: "../send_mail_quote.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
@@ -269,7 +267,7 @@ function validate_quote(frm_name,fld_arr){
 	var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
 	var doc=$.ajax({
 		type: "POST",
-		url: "send_mail_quote1.php",
+		url: "../send_mail_quote1.php",
 		data: dataString,
 		cache: false,
 		asynch: true,
