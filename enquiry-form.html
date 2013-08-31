@@ -2,8 +2,8 @@
 include("config.php");
 include("classes/mimemail.class.php");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
@@ -48,47 +48,39 @@ function checkcode2(valuecode)
 			}
 		});
  }
- function checkcode3(valuecode)
- {
-  
-	var  dataString = 'val='+valuecode;
-	
+ function checkcode3(valuecode){
+  	var  dataString = 'val='+valuecode;
 	$.ajax({
 		type: "GET",
 		url: "checkcode.php",
 		data: dataString,
 		cache: true,
-		success: function(value)
-			{  
-				if(value==0){
-					$("#s_code2").val(value);	
-					$("#security_code2").focus();
-					return false;
-				} else {
-				    $("#s_code2").val(value);
+		success: function(value){  
+			    if(value==0){
+				    $("#s_code2").val(value);	
+				    $("#security_code2").focus();
 				    return false;
-				}
-				
-			}
+			    } else {
+				$("#s_code2").val(value);
+				return false;
+			    }
+		    }
 		});
  }
  
-function new_captcha3()
-{
-var c_currentTime = new Date();
-var c_miliseconds = c_currentTime.getTime();
-document.getElementById('freecap').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
-$("#s_code2").val(0);
+function new_captcha3(){
+    var c_currentTime = new Date();
+    var c_miliseconds = c_currentTime.getTime();
+    document.getElementById('freecap').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
+    $("#s_code2").val(0);
 }
-function new_captcha4()
-{
-var c_currentTime = new Date();
-var c_miliseconds = c_currentTime.getTime();
-document.getElementById('captcha1').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
-$("#s_code2").val(0);
+function new_captcha4(){
+    var c_currentTime = new Date();
+    var c_miliseconds = c_currentTime.getTime();
+    document.getElementById('captcha1').src = '<?php echo APP_ROOT_URL; ?>image.php?x='+ c_miliseconds;
+    $("#s_code2").val(0);
 }
-function formsubmit()
-{
+function formsubmit(){
 	document.loginform.submit();
 }
  </script>
@@ -130,44 +122,25 @@ function showMe (it, box) {
 
 <body>
 <span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" href="yahoo.html"><img src="images/livechaticon.png" alt="live chat" /></a>
+<script language=JavaScript type=text/javaScript>
+var win = null;
 
+function NewWindow(mypage, myname, w, h, scroll) {
+   var winl = (screen.width - w) / 2;
+   var wint = (screen.height - h) / 2;
+   var settings = 'height=' + h + ',';
+   settings += 'width=' + w + ',';
+   settings += 'top=' + wint + ',';
+   settings += 'left=' + winl + ',';
+   settings += 'scrollbars=' + scroll + ',';
+   settings += 'resizable=yes';
+   win = window.open(mypage, myname, settings);
 
-<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
-href="yahoo.html">
-                 
-     <img src="images/livechaticon.png" alt="live chat" /></a>
-     <SCRIPT language=JavaScript type=text/JavaScript>
-
-    var win = null;
-
-    function NewWindow(mypage, myname, w, h, scroll) {
-
-        var winl = (screen.width - w) / 2;
-
-        var wint = (screen.height - h) / 2;
-
-        var settings = 'height=' + h + ',';
-
-        settings += 'width=' + w + ',';
-
-        settings += 'top=' + wint + ',';
-
-        settings += 'left=' + winl + ',';
-
-        settings += 'scrollbars=' + scroll + ',';
-
-        settings += 'resizable=yes';
-
-        win = window.open(mypage, myname, settings);
-
-        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
-
-    }
-
-</SCRIPT></span>
-<div class="tickerHolder">
-<a href="enquiry-form.html"><img src="images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
-<br />
+   if (parseInt(navigator.appVersion) >= 4){ win.window.focus(); }
+}
+</script></span>
+<div class="tickerHolder"><a href="enquiry-form.html"><img src="images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" /><br />
 <a href="request-brochure.html"><img src="images/ticker-brochure.jpg" alt="Brochure" /></a></div>
 <div id="Wrap">
   <!-- Header Part Start Here -->
@@ -248,94 +221,73 @@ href="yahoo.html">
         </div>
       </div>
       <div class="Clr"></div>
-      <ul class="jobmainsec"> 
-        
-		
-		 <form id="loginform"name="loginform" method="post" action="sendenquiry.php" onsubmit="return checkfield(this)">
-		 
-                  
-		  
-		  
-          
-		  
-		  
-			  
-              
-		  <h2 class="blue14">Your details</h2>
-          <li class="dottedBorder">
-		  
-          <dl>
-            <dt><strong>*</strong>  Name<br />
-            </dt>
-            <dd>
-              <input type="text" name="first_name" id="first_name" class="inptxt" maxlength="32" />
-              <br />
-              <span class="errormsg" id="span_first_name"></span> </dd>
-          </dl>
-		  
+       <form id="loginform" name="loginform" method="post" action="sendenquiry.php" onsubmit="return checkfield(this);" >    
+      <ul class="jobmainsec">
+	           
+	      <h2 class="blue14">Your details</h2>
+	      <li class="dottedBorder">
+
 		  <dl>
-            <dt><strong>*</strong> Email<br />
-            </dt>
-            <dd>
-              <input type="text" class="inptxt" name="email" id="email"  maxlength="64"/>
-              <br />
-              <span class="errormsg" id="span_email"></span> </dd>
-          </dl>
-		  
+		      <dt><strong>*</strong>  Name<br />
+		      </dt>
+		      <dd>
+			  <input type="text" name="first_name" id="first_name" class="inptxt" maxlength="32" />
+			  <br />
+			  <span class="errormsg" id="span_first_name"></span> </dd>
+		  </dl>
+
 		  <dl>
-            <dt><strong>*</strong> Phone<br />
-            </dt>
-            <dd>
-              <input type="text" class="inptxt" name="telephone" id="telephone" maxlength="15"/>
-              <br />
-              <span class="errormsg" id="span_telephone"></span> </dd>
-          </dl> 
-		   
+		      <dt><strong>*</strong> Email<br />
+		      </dt>
+		      <dd>
+			  <input type="text" class="inptxt" name="email" id="email"  maxlength="64"/>
+			  <br />
+			  <span class="errormsg" id="span_email"></span> </dd>
+		  </dl>
+
 		  <dl>
-            <dt><strong>*</strong> Address           </dt>
-            <dd>
-              <input type="text" class="inptxt" name="address1" id="address1"  maxlength="100"/>
-              <br />
-              <span class="errormsg" id="span_address1"></span> </dd>
-          </dl>
-		  </li>      
-		  
-          <li>
-		  
-            <!--<dl>
-            <dt><strong>*</strong> How did you hear about A&amp;K? </dt>
-            <dd>
-             <select class="selectmenu-b" name="how_hear_about" id="how_hear_about">
-                <option value=""> Select </option>
-				<?php echo $how_hear_about_list;?>
-              </select>
-              <br />
-              <span class="errormsg" id="span_how_hear_about"></span> </dd>
-          </dl>--><dl>
-            <dt>Please share your travel requirement/enquiry</dt>
-            <dd>
-              <textarea class="txtarea" name="help_information" id="help_information" maxlength="1000"></textarea>
-              <br />
-              <span class="errormsg"></span> </dd>
-          </dl>
-          <dl>
-				<dt>Security Code</dt>
-				<dd style="width:200px;">
-				<img border="0" class="Border"  id="freecap" src="<?php echo APP_ROOT_URL;?>image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha3();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br/><br/>
-				<input type="text" name="security_code" id="security_code"   class="inptxtsml" onKeyUp="javascript:return checkcode2(this.value);" />
-				<input type="hidden" name="s_code" id="s_code" value="" />
-				<span class="errormsg" id="err_security_code"></span>
-				<!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
-				</dd>
-				</dl>
-		  </li>
-		<dl><p>&nbsp;</p></dl>
-		<dl>
-		<span class="Left">
-		<input type="image" name="submit" src="images/submit-btn.jpg" /></span>
-		</dl>
-		</form>
-      </ul> 
+		      <dt><strong>*</strong> Phone<br />
+		      </dt>
+		      <dd>
+			  <input type="text" class="inptxt" name="telephone" id="telephone" maxlength="15"/>
+			  <br />
+			  <span class="errormsg" id="span_telephone"></span> </dd>
+		  </dl> 
+
+		  <dl>
+		      <dt><strong>*</strong> Address           </dt>
+		      <dd>
+			  <input type="text" class="inptxt" name="address1" id="address1"  maxlength="100"/>
+			  <br />
+			  <span class="errormsg" id="span_address1"></span> </dd>
+		  </dl>
+	      </li>      
+
+	      <li><dl>
+		      <dt>Please share your travel requirement/enquiry</dt>
+		      <dd>
+			  <textarea class="txtarea" name="help_information" id="help_information" maxlength="1000"></textarea>
+			  <br />
+			  <span class="errormsg"></span> </dd>
+		  </dl>
+		  <dl>
+		      <dt>Security Code</dt>
+		      <dd style="width:200px;">
+			  <img border="0" class="Border"  id="freecap" src="<?php echo APP_ROOT_URL;?>image.php" alt="" /> &nbsp;<a href="JavaScript: new_captcha3();" style="text-decoration:none"><img border="0" alt="" src="<?php echo APP_ROOT_URL; ?>refresh.png" align="bottom" /></a><br/><br/>
+			  <input type="text" name="security_code" id="security_code"   class="inptxtsml" onKeyUp="javascript:return checkcode2(this.value);" />
+			  <input type="hidden" name="s_code" id="s_code" value="" />
+			  <span class="errormsg" id="err_security_code"></span>
+			  <!--<img src="images/capcha.gif" alt="Capcha" class="Left" /><input type="text" class="inptxtsml mleft10" />-->
+		      </dd>
+		  </dl>
+	      </li>
+	      <dl><p>&nbsp;</p></dl>
+	      <dl>
+		  <span class="Left">
+		      <input type="image" name="submit" src="images/submit-btn.jpg" /></span>
+	      </dl>
+	  
+      </ul> </form>
     </div> 
     <!-- Center Container Part End Here -->
     <div class="Clr"></div>
