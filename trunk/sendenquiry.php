@@ -44,7 +44,7 @@ $subject = 'Enquiry From Abercrombie & Kent India';
 	//mail($to1, $subject, $body, $headers);
 	//mail($to2, $subject, $body, $header1);
 //}
-header("location:http://www.abercrombiekent.co.in/thanks.html"); 
+#header("location:http://www.abercrombiekent.co.in/thanks.html"); 
 }
 else
 {
