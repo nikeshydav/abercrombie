@@ -28,7 +28,7 @@ include("../classes/mimemail.class.php");
 <script language="javascript">
 function showMe(tab)
 {		
-	for(var i=1; i<=12; i++)
+	for(var i=1; i<=16; i++)
 	{
 		var name="tab"+i;
 		var name2="divli"+i;
@@ -71,6 +71,11 @@ function showMe(tab)
 		if(name == 'tab12'){
 		  $(document).ready(function(){
 				gmapInitialize2();
+			});
+		}
+                if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
 			});
 		}
 	}
@@ -428,7 +433,6 @@ Ideal for the first time visitor to Egypt, this programme provides a comprehensi
 <div id="tab2" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=1;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Egypt"/>
 <input type="hidden" name="region_email" id="region_email" value="Middle East &amp; north Africa"/>
@@ -436,19 +440,19 @@ Ideal for the first time visitor to Egypt, this programme provides a comprehensi
 
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Egypt-Love-on-the-Nile.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Egypt"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Middle East &amp; north Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Egypt Love on the Nile"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -768,7 +772,6 @@ Take-off on your international flight.</p>
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php $id=2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Egypt"/>
@@ -776,19 +779,19 @@ Take-off on your international flight.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Total Egypt Sites Seas Deserts"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="totalegypt_sites-seas-deserts.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Egypt"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Middle East &amp; north Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Total Egypt Sites Seas Deserts"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1122,6 +1125,7 @@ Enjoy breakfast at hotel.</p>
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Egypt"/>
@@ -1129,7 +1133,6 @@ Enjoy breakfast at hotel.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classical Egypt"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classical-egypt.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1352,14 +1355,14 @@ GUnload();
 </div>
 
 <div id="tab14" style="display:none;">
-<?php $id =3;?>
+<h1>Send itinerary</h1>
+<?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Egypt"/>
 <input type="hidden" name="region_email" id="region_email" value="Middle East &amp; north Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Family Egypt"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Family-Egypt.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1384,9 +1387,9 @@ var map = '';
 var zoom = 10;
 var origin = 0;
 
-function gmapInitialize2() {
+function gmapInitialize3() {
 if (GBrowserIsCompatible()) {
-	map = new GMap2(document.getElementById("map_canvas2"));
+	map = new GMap2(document.getElementById("map_canvas3"));
 	map.setUIToDefault();
 	
 	
@@ -1476,7 +1479,7 @@ GUnload();
 </script>
 
 
-<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas3" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>

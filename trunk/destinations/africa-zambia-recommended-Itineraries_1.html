@@ -476,14 +476,13 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 <div id="tab2" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=1;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Kenya"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Zambia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classic-Zambia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -722,7 +721,6 @@ This morning a representative will meet and transfer you to Lusaka International
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php $id=2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zambia"/>
@@ -730,7 +728,7 @@ This morning a representative will meet and transfer you to Lusaka International
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic SouthLuangwa"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classic-SouthLuangwa.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -1036,14 +1034,13 @@ Depart Busanga  to Lusaka, to connect with your onward flight home.</p>
 <div id="tab10" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=3;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zambia"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Zambia Safari"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ZambiaSafari.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
