@@ -502,7 +502,7 @@ Today visit a typical Tuscan farmhouse, located in the hearth of Val d'Orcia, cl
 </ul>
 </div>
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
@@ -510,7 +510,6 @@ Today visit a typical Tuscan farmhouse, located in the hearth of Val d'Orcia, cl
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Italy A Family Tour"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Italy-AFamilyTour.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -518,12 +517,12 @@ Today visit a typical Tuscan farmhouse, located in the hearth of Val d'Orcia, cl
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Italy A Family Tour"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -703,6 +702,7 @@ Today visit a typical Tuscan farmhouse, located in the hearth of Val d'Orcia, cl
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
@@ -710,7 +710,6 @@ Today visit a typical Tuscan farmhouse, located in the hearth of Val d'Orcia, cl
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Capri VIP Island"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Capri-VIPIsland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -718,12 +717,12 @@ Today visit a typical Tuscan farmhouse, located in the hearth of Val d'Orcia, cl
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Capri VIP Island"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -920,6 +919,7 @@ Fully satiated, your chauffeur will bring you back to the paradise of your hotel
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
@@ -927,7 +927,6 @@ Fully satiated, your chauffeur will bring you back to the paradise of your hotel
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Tuscany Fine Wine"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TuscanyFineWine.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -935,12 +934,12 @@ Fully satiated, your chauffeur will bring you back to the paradise of your hotel
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Tuscany Fine Wine"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1201,6 +1200,7 @@ The exclusive spa and wellness centre is a magnificent space offering treatment 
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
@@ -1208,7 +1208,6 @@ The exclusive spa and wellness centre is a magnificent space offering treatment 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Croatia Beach"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Croatia-Beach.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1217,13 +1216,13 @@ The exclusive spa and wellness centre is a magnificent space offering treatment 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Croatia Beach"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

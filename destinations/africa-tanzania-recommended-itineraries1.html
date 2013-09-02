@@ -436,7 +436,7 @@ Afterward, you are transferred to the airport to begin your return journey home.
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
@@ -444,7 +444,6 @@ Afterward, you are transferred to the airport to begin your return journey home.
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Tanzania"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Proposal_Based_on_Umbwe_Route.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -652,6 +651,7 @@ Afterward, you are transferred to the airport to begin your return journey home.
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
@@ -659,7 +659,6 @@ Afterward, you are transferred to the airport to begin your return journey home.
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Tanzania"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classic-tanzania.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>

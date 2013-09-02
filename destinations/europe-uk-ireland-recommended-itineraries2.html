@@ -508,7 +508,7 @@ Time permitting, you may visit the Italianate village of Portmeirion. This 'idea
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -516,7 +516,6 @@ Time permitting, you may visit the Italianate village of Portmeirion. This 'idea
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="England Wales"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="England-Wales.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -524,12 +523,12 @@ Time permitting, you may visit the Italianate village of Portmeirion. This 'idea
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="England Wales"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -788,6 +787,7 @@ Visit Castletown House, Ireland's largest and earliest Palladian style house. It
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -795,7 +795,6 @@ Visit Castletown House, Ireland's largest and earliest Palladian style house. It
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Ireland"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Ireland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -803,12 +802,12 @@ Visit Castletown House, Ireland's largest and earliest Palladian style house. It
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ireland"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1041,6 +1040,7 @@ Later, if history is your passion you could choose to visit St. Patrick's Cathed
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -1048,7 +1048,6 @@ Later, if history is your passion you could choose to visit St. Patrick's Cathed
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Summer Escape Scotland Ireland"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Summer-Escape-Scotland-Ireland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1056,12 +1055,12 @@ Later, if history is your passion you could choose to visit St. Patrick's Cathed
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Summer Escape Scotland Ireland"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1363,6 +1362,7 @@ Also near Gleneagles are the beautiful formal gardens of Drummond Castle where a
 </ul>
 </div>
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -1370,7 +1370,6 @@ Also near Gleneagles are the beautiful formal gardens of Drummond Castle where a
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Scottish Private Estate"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Scottish-Private-Estate.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1379,13 +1378,13 @@ Also near Gleneagles are the beautiful formal gardens of Drummond Castle where a
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Scottish Private Estate"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 <div id="tab16" style="display:none;">

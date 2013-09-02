@@ -483,7 +483,7 @@ This afternoon you will be privately transferred to your hotel in Granada.</p>
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Spain & Portugal"/>
@@ -491,7 +491,6 @@ This afternoon you will be privately transferred to your hotel in Granada.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Tour of Barcelona MadridAndalucia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="tour-of-Barcelona-MadridAndalucia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -499,12 +498,12 @@ This afternoon you will be privately transferred to your hotel in Granada.</p>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Spain & Portugal"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Tour of Barcelona MadridAndalucia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -752,7 +751,7 @@ But if your are not such a wine lover then a fascinating option can be to travel
 </div>
 
 <div id="tab6" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Spain Portugal"/>
@@ -760,7 +759,6 @@ But if your are not such a wine lover then a fascinating option can be to travel
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="From Flamenco To Fado"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Flamenco-to-Fado.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -768,12 +766,12 @@ But if your are not such a wine lover then a fascinating option can be to travel
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Spain Portugal"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="From Flamenco To Fado"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1010,6 +1008,7 @@ Add-on Option : Today enjoy a full day (10-12hr) excursión by private vehicle an
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Spain Portugal"/>
@@ -1017,7 +1016,6 @@ Add-on Option : Today enjoy a full day (10-12hr) excursión by private vehicle an
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="From City to Coast Spanish Tour"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="From-City-to-Coast-Spanish-Tour.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1025,12 +1023,12 @@ Add-on Option : Today enjoy a full day (10-12hr) excursión by private vehicle an
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Spain Portugal"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="From City to Coast Spanish Tour"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

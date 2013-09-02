@@ -375,7 +375,7 @@ After a lunch break, walk down through the Jewish Quarter via the Cardo and the 
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Israel"/>
@@ -383,7 +383,6 @@ After a lunch break, walk down through the Jewish Quarter via the Cardo and the 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classical Israel"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classical-Israel-Platinum.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -391,12 +390,12 @@ After a lunch break, walk down through the Jewish Quarter via the Cardo and the 
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Israel"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Middle East & North Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classical Israel"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -574,6 +573,7 @@ After a lunch break, walk down through the Jewish Quarter via the Cardo and the 
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Israel"/>
@@ -581,7 +581,6 @@ After a lunch break, walk down through the Jewish Quarter via the Cardo and the 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Israel The Holy Land Platinum"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Israel-The-Holy-Land-Platinum.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -589,12 +588,12 @@ After a lunch break, walk down through the Jewish Quarter via the Cardo and the 
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Israel"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Middle East & North Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Israel The Holy Land Platinum"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
