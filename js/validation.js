@@ -93,8 +93,10 @@ var count=arr_msg.length;
 				 return false;
 			     }else{                                    
 				eval("new_captcha_"+fid+"()"); 
-			     }				
-			     frm_name.innerHTML = "For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
+			     }	
+                             var email_ite_msg = "<strong>A PDF version of this itinerary has been mailed to the Recipient's email Id.</strong> <br />";
+                             email_ite_msg += "For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
+			     frm_name.innerHTML = email_ite_msg;
 			     //frm_name.style.display = 'none';
 
 		     }
