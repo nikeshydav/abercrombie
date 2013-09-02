@@ -35,7 +35,7 @@ var d='';
 var d1='';
 //var email_fid;
 function validate_itinerary(frm_name,fld_arr,fid){
-	
+//console.log( $(frm_name).parent() );
 var arr_msg=Array();
 arr_msg=check_reg(frm_name,fld_arr);
 
@@ -95,6 +95,7 @@ var count=arr_msg.length;
 				eval("new_captcha_"+fid+"()"); 
 			     }				
 			     frm_name.innerHTML = "For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
+			     //frm_name.style.display = 'none';
 
 		     }
 	     });	
@@ -213,37 +214,27 @@ function validate_quote(frm_name,fld_arr){
 	 var count=arr_msg.length;
 
        if(frm_name.quote_name.value && isValidName(frm_name.quote_name.value)==false){
-	     //  getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
 		       arr_msg[count]="Please enter valid name (Alphabet only).";
 		       frm_name.quote_name.style.borderColor='red';
 		       count++;
        } 
        if(frm_name.quote_email.value && isValidEmail(frm_name.quote_email.value)==false){
-	     //  getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
 		       arr_msg[count]="Please enter valid email.";
 		       frm_name.quote_email.style.borderColor='red';
 		       count++;
        }
        if(frm_name.quote_phone.value && isNumeric(frm_name.quote_phone.value)==true){
-	     //  getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
 		       arr_msg[count]="Please enter valid telephone (Numeric only).";
 		       frm_name.quote_phone.style.borderColor='red';
 		       count++;
        }	
-       /*if(frm_name.quote_phone.value && isNumeric(frm_name.quote_phone.value)==false && frm_name.quote_phone.value.length < 10){
-	     //  getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
-		       arr_msg[count]="Please enter minimum 10 digit telephone number.";
-		       frm_name.quote_phone.style.borderColor='red';
-		       count++;
-       }	*/
 
        if(frm_name.quote_date_travel.value && checkdate(frm_name.quote_date_travel)==false){
-	     //  getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
 		       arr_msg[count]="Invalid Day, Month, or Year range detected. Please enter correct format(DD/MM/YYYY).";
 		       frm_name.quote_date_travel.style.borderColor='red';
 		       count++;
        }
-       //alert(document.getElementById("security_codeq_"+fid).value);
+       
        if(document.getElementById("security_codeq_"+fid).value == ''){
 		   arr_msg[count]="Please enter security code.";
 		       document.getElementById("security_codeq_"+fid).style.borderColor='red';
@@ -276,13 +267,10 @@ function validate_quote(frm_name,fld_arr){
 			       frm_name.quote_email.value='';				
 			       frm_name.quote_phone.value='';
 			       frm_name.quote_adult.value='';
-			       //frm_name.quote_no_children.value='';
-			       //frm_name.quote_age_children.value='';
 			       frm_name.quote_date_travel.value='';
 			       frm_name.quote_requirements.value='';
 			       document.getElementById("security_codeq_"+fid).value='';
-			       //eval( "validate_quote1"("frm_name,fld_arr,fid").value='');
-			       //alert("Thank you for Request a Quote" );
+			       
 			      if(value==0){
 				   return false;                                
 			       }else{               
@@ -292,6 +280,7 @@ function validate_quote(frm_name,fld_arr){
 			       var htm ="Thank You for showing interest in this itinerary, a quote for this itinerary will be shared with you soon. <br />";
 			       htm	    +="For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
 			       frm_name.innerHTML = htm;
+			       
 
 		       }
 	       });
@@ -299,11 +288,8 @@ function validate_quote(frm_name,fld_arr){
 
 	       return false;
        }else{
-	       //var message=display_message(arr_msg);
-	       //alert(message)
 	       alert(arr_msg.join('\n'))
 	       return false;
-
        }
 
  }
@@ -316,17 +302,14 @@ function check_reg(frm_name,fld_arr){
     var msg=Array();
     var count=0;
     for (var word in fld_arr){
-
 	    if(frm_name[word].value==""){
 		    if(count==0)
 		    frm_name[word].focus();
 		    frm_name[word].style.borderColor='red';
 		    msg[count] = fld_arr[word];
-		    //getObject(word+'_error').innerHTML=fld_arr[word];
 		    count++;
 	    }else{
 		    frm_name[word].style.borderColor='';
-		    //getObject(word+'_error').innerHTML="";
 	    }
     } 
     return msg;
