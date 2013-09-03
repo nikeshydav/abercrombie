@@ -279,11 +279,11 @@ href="../yahoo.html">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
 
-<!--<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>-->
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -364,7 +364,7 @@ href="../yahoo.html">
 <li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/classic_china.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/classic_china.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -499,7 +499,7 @@ After your visit of Cai Rang disembark mid-morning and after a visit to Can Tho 
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Vietnam"/>
@@ -507,7 +507,6 @@ After your visit of Cai Rang disembark mid-morning and after a visit to Can Tho 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Vietnam"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Vietnam.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -515,12 +514,12 @@ After your visit of Cai Rang disembark mid-morning and after a visit to Can Tho 
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Vietnam"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Vietnam"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -692,6 +691,7 @@ After your visit of Cai Rang disembark mid-morning and after a visit to Can Tho 
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Vietnam"/>
@@ -699,7 +699,6 @@ After your visit of Cai Rang disembark mid-morning and after a visit to Can Tho 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Con Dao Extension"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Con-Dao-Extension.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -707,12 +706,12 @@ After your visit of Cai Rang disembark mid-morning and after a visit to Can Tho 
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Vietnam"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Con Dao Extension"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -959,6 +958,7 @@ The cruise comes to an end as the ship reaches Siem Reap, home to the fabled Ang
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Vietnam"/>
@@ -966,7 +966,6 @@ The cruise comes to an end as the ship reaches Siem Reap, home to the fabled Ang
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Cruising the Mekong"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Cruising-the-Mekong.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -974,12 +973,12 @@ The cruise comes to an end as the ship reaches Siem Reap, home to the fabled Ang
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Vietnam"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Cruising the Mekong"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1260,7 +1259,7 @@ Dinner this evening is at one of Hue's beautiful garden houses known locally as 
 <h5>  Hue</h5>
 <p>This morning you are collected from the hotel by cyclo and head to Tinh Tam Lake which is full of lotus flowers in summer and surrounded by local coffee shops frequented by students. Continue by cyclo to Tay Loc Market, a typical local market. Transfer by vehicle to the beautiful pagoda of Tu Hieu which dates back to 1843. Located in a forest of pine trees this monastery was once the home of Zen master Thich Nhat Hanh who now resides in France and has many followers worldwide. What is most interesting at the pagoda are the eunuch tombs from the former Royal Court which in the whole city of Hue are only found here. If in Hue on Thursday or Sunday mornings between 0900-1000 Tu Hieu is the gathering place for up to 200 Buddhist monks and nuns who gather together to pray and read aloud scriptures. This is a fascinating time to be at Tu Hieu and highly recommended.</p>
 <p>
-Next visit Ho Quyen, formerly an arena where duels between elephants and tigers were fought for the entertainment of former kings. At the end of the tour visit the recently restored An Dinh Palace where magnificent murals can be seen, as well as the stunning façade where oriental and European designs are integrated.</p>
+Next visit Ho Quyen, formerly an arena where duels between elephants and tigers were fought for the entertainment of former kings. At the end of the tour visit the recently restored An Dinh Palace where magnificent murals can be seen, as well as the stunning fa?ade where oriental and European designs are integrated.</p>
 <p>
 Finish the morning with lunch in the home of a local personality and expert on cultural aspects of Hue. Born in Hue in 1940 to an aristocratic family your host is a respected historian who has devoted his life to researching the former imperial capital of Vietnam. Your host has also collected and conserved a large collection of valuable photographs as archives on Hue's culture and architecture through different periods of time.</p>
 <p>
@@ -1306,6 +1305,7 @@ Or a journey to Cai Be, The tour will start with a visit to the colourful Cai Be
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Vietnam"/>
@@ -1313,7 +1313,6 @@ Or a journey to Cai Be, The tour will start with a visit to the colourful Cai Be
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Highlights of Vietnam"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Highlights-of-Vietnam.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1322,13 +1321,13 @@ Or a journey to Cai Be, The tour will start with a visit to the colourful Cai Be
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Vietnam"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Highlights of Vietnam"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

@@ -425,7 +425,7 @@ After a morning exploring native species and terrain, return to 'Le Boreal' for 
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Antarctica"/>
@@ -433,7 +433,7 @@ After a morning exploring native species and terrain, return to 'Le Boreal' for 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Antarctica"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classic-Antarctica.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -441,12 +441,12 @@ After a morning exploring native species and terrain, return to 'Le Boreal' for 
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Antarctica"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Antarctica"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Antarctica"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -682,6 +682,7 @@ The Captain and Expedition Leader make careful plans according to local conditio
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Antarctica"/>
@@ -689,7 +690,7 @@ The Captain and Expedition Leader make careful plans according to local conditio
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Antarctica Falklands South Georgia Island"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Antarctica-Falklands-South-Georgia-Island.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -697,12 +698,12 @@ The Captain and Expedition Leader make careful plans according to local conditio
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Antarctica"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Antarctica"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Antarctica Falklands South Georgia Island"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -952,6 +953,7 @@ The Captain and Expedition Leader make careful plans according to local conditio
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Antarctica"/>
@@ -959,7 +961,7 @@ The Captain and Expedition Leader make careful plans according to local conditio
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Antarctica Falklands South Georgia Island "/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Antarctica-Falklands-SouthGeorgiaIsland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -967,12 +969,12 @@ The Captain and Expedition Leader make careful plans according to local conditio
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Antarctica"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Antarctica"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Antarctica Falklands South Georgia Island "/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1178,7 +1180,7 @@ all port charges on 'Le Boreal'<br />
 </li>
 <li><h4>Day 1</h4>
 <h5>Arrive Buenos Aires, Argentina</h5>
-<p>Arrive this morning to Argentina's capital and transfer to your hotel, where immediate check-in has been arranged. Enjoy some time to relax before this afternoon's city tour. As complex as it is energetic and seductive, this port city has been the gateway to Argentina for centuries, bringing many porte�os (as locals are known) into its boundaries. Although it is reminiscent of a European city, the spirit of Buenos Aires is evident in its diverse and distinctly local neighborhoods. Meet your fellow adventurers this evening for a welcome cocktail reception.</p>
+<p>Arrive this morning to Argentina's capital and transfer to your hotel, where immediate check-in has been arranged. Enjoy some time to relax before this afternoon's city tour. As complex as it is energetic and seductive, this port city has been the gateway to Argentina for centuries, bringing many porte?os (as locals are known) into its boundaries. Although it is reminiscent of a European city, the spirit of Buenos Aires is evident in its diverse and distinctly local neighborhoods. Meet your fellow adventurers this evening for a welcome cocktail reception.</p>
 <p><strong>Overnight:</strong> Hotel Sofitel Buenos Aires <br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -1230,6 +1232,7 @@ The latter are an especially beautiful sight to behold - these birds boast a win
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Antarctica"/>
@@ -1237,7 +1240,7 @@ The latter are an especially beautiful sight to behold - these birds boast a win
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="A-K-Antarctica"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="A-K-Antarctica-13-14.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1245,12 +1248,12 @@ The latter are an especially beautiful sight to behold - these birds boast a win
 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Antarctica"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Antarctica"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="A-K-Antarctica"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

@@ -472,26 +472,26 @@ href="../yahoo.html">
 <div id="tab2" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=1;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="China"/>
 <input type="hidden" name="region_email" id="region_email" value="The Orient"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic China"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classic_china.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="China"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic China"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -711,7 +711,7 @@ Today you will be transferred to the airport for your departure flight.</p>
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+
 <?php $id=2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="China"/>
@@ -719,19 +719,19 @@ Today you will be transferred to the airport for your departure flight.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Roof of the World"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="roof-of-theWorld.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="China"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Roof of the World"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1017,26 +1017,26 @@ You will be transferred to the train station for your Maglev train to Pudong air
 <div id="tab10" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=3;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="China"/>
 <input type="hidden" name="region_email" id="region_email" value="The Orient"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Wonderful Yunnan"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="wonderful_yunnan.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="China"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wonderful Yunnan"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1422,6 +1422,7 @@ Today, you will be transferred to the airport by the hotel's Rolls Royce for you
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Family Holiday"/>
@@ -1429,7 +1430,7 @@ Today, you will be transferred to the airport by the hotel's Rolls Royce for you
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Family China"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Family-China.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>

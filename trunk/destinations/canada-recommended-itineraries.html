@@ -28,7 +28,7 @@ include("../classes/mimemail.class.php");
 <script language="javascript">
 function showMe(tab)
 {		
-	for(var i=1; i<=12; i++)
+	for(var i=1; i<=16; i++)
 	{
 		var name="tab"+i;
 		var name2="divli"+i;
@@ -254,7 +254,7 @@ href="../yahoo.html">
 <div class="rightbox"><h2>Calgary Stampede Extravaganza, Canada</h2>
 <p><strong>Duration:</strong> 4 days<br />
 <strong>Highlights:</strong>
-“ This programme enables you to experience the fever that holds Calgary in its grip during the annual Stampede. The Calgary Stampede is also known as "The Greatest Outdoor Show on Earth" and as you relive the cowboy days of the old frontier, you will be convinced of this statement’s truth. </p>
+? This programme enables you to experience the fever that holds Calgary in its grip during the annual Stampede. The Calgary Stampede is also known as "The Greatest Outdoor Show on Earth" and as you relive the cowboy days of the old frontier, you will be convinced of this statement?s truth. </p>
 
 </div>
 <div class="bottom">
@@ -367,7 +367,7 @@ Spirit Bears of Canada with Mark Carwardine</h2>
 <ul class="itinerarylist">
 <li>
 <p><strong>Duration:</strong>  4 days</p>
-<p>“ This programme enables you to experience the fever that holds Calgary in its grip during the annual Stampede. The Calgary Stampede is also known as "The Greatest Outdoor Show on Earth" and as you relive the cowboy days of the old frontier, you will be convinced of this statement’s truth. The Stampede showcases the best in rodeo with numerous events, exhibits and diverse entertainment.”</p>
+<p>? This programme enables you to experience the fever that holds Calgary in its grip during the annual Stampede. The Calgary Stampede is also known as "The Greatest Outdoor Show on Earth" and as you relive the cowboy days of the old frontier, you will be convinced of this statement?s truth. The Stampede showcases the best in rodeo with numerous events, exhibits and diverse entertainment.?</p>
 </li>
 <li><h4>Day 1</h4>
 <h5>ARRIVE CALGARY</h5>
@@ -396,7 +396,7 @@ Spirit Bears of Canada with Mark Carwardine</h2>
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Canada"/>
@@ -404,7 +404,7 @@ Spirit Bears of Canada with Mark Carwardine</h2>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Calgary Stampede"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Calgary-Stampede.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -412,12 +412,12 @@ Spirit Bears of Canada with Mark Carwardine</h2>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Canada"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Calgary Stampede"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -572,6 +572,7 @@ Spirit Bears of Canada with Mark Carwardine</h2>
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
@@ -579,7 +580,7 @@ Spirit Bears of Canada with Mark Carwardine</h2>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="The Best of Tanzania"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="best-tanzania.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -587,12 +588,12 @@ Spirit Bears of Canada with Mark Carwardine</h2>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Tanzania"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Best of Tanzania"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -787,6 +788,7 @@ The Kermode bears of British Columbia are a unique subspecies of the black bear.
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
@@ -794,7 +796,7 @@ The Kermode bears of British Columbia are a unique subspecies of the black bear.
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classic-east-africa.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -802,12 +804,12 @@ The Kermode bears of British Columbia are a unique subspecies of the black bear.
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Tanzania"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1040,6 +1042,7 @@ The Kermode bears of British Columbia are a unique subspecies of the black bear.
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post" onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Canada"/>
@@ -1047,7 +1050,7 @@ The Kermode bears of British Columbia are a unique subspecies of the black bear.
 <input type="hidden" name="itineraries_email" id="itineraries_email" value=""/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>

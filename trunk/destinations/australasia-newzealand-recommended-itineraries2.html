@@ -442,7 +442,7 @@ On arrival back in Queenstown your chauffeur will be waiting to transfer you bac
 <p>
 Soon after leaving Arrowtown you'll enter the Gibbston Valley, stopping briefly at the Kawarau Bridge, where you can visit the home of the world's first commercial bungy jump. You might even be tempted by an adrenalin rush of your own!  Enjoy the Wine Makers Tour and lunch at the Gibbston Valley Winery. Located in the Kawarau Gorge a 20 minute drive from Queenstown, Gibbston Valley Winery is the world's southernmost wine producing region. This small sophisticated winery and restaurant set in spectacular mountain surroundings.</p>
 <p>
-The Wine Makers Tour is approximately one hour and it will be up to the wine maker and the interest of the clients and they will be in both t he cave and vineyard and will maybe do some barrel tasting plus taste some older vintages back at the cellar door. Lunch is included and will be from the A la Carte menu and is a choice of an entrée plus main or a main plus desert.To end tea/coffee will be offered plus a glass of late harvest Riesling.</p>
+The Wine Makers Tour is approximately one hour and it will be up to the wine maker and the interest of the clients and they will be in both t he cave and vineyard and will maybe do some barrel tasting plus taste some older vintages back at the cellar door. Lunch is included and will be from the A la Carte menu and is a choice of an entr?e plus main or a main plus desert.To end tea/coffee will be offered plus a glass of late harvest Riesling.</p>
 <p>
 After your time at Gibbston Winery return to Queenstown to take the Skyline Gondola cable car ride to Bob's Peak for spectacular panoramic views over Lake Wakatipu.</p> 
 <p>
@@ -461,7 +461,7 @@ After your sightseeing tour, you will be transferred back to your hotel.  We rec
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
@@ -469,7 +469,7 @@ After your sightseeing tour, you will be transferred back to your hotel.  We rec
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Highlights of New Zealand"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="HighlightsNewZealand.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -477,12 +477,12 @@ After your sightseeing tour, you will be transferred back to your hotel.  We rec
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Highlights of New Zealand"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -673,6 +673,7 @@ On arrival at Auckland Airport, collect your rental car and travel south to the 
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
@@ -680,7 +681,7 @@ On arrival at Auckland Airport, collect your rental car and travel south to the 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Aotearoa Cultural"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AotearoaCultural.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -688,12 +689,12 @@ On arrival at Auckland Airport, collect your rental car and travel south to the 
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Aotearoa Cultural"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -892,7 +893,7 @@ Depart on a trek through the magnificent Waitakere Ranges, a subtropical forest 
 <li>
 <h4>Day 6</h4>
 <h5>Abel Tasman National Park - Christchurch</h5>
-<p>Fly to Christchurch. Upon arrival visit the International Antarctic Centre and take an exciting outdoor ride on a genuine Antarctic vehicle - the Hagglund.  Enjoy a light lunch at a local café before a relaxing cruise on a punt on the tree-lined Avon River.</p>
+<p>Fly to Christchurch. Upon arrival visit the International Antarctic Centre and take an exciting outdoor ride on a genuine Antarctic vehicle - the Hagglund.  Enjoy a light lunch at a local caf? before a relaxing cruise on a punt on the tree-lined Avon River.</p>
 <p><strong>Overnight:</strong> The George Hotel</p>
 </li>
 <li>
@@ -910,6 +911,7 @@ Depart on a trek through the magnificent Waitakere Ranges, a subtropical forest 
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
@@ -917,7 +919,7 @@ Depart on a trek through the magnificent Waitakere Ranges, a subtropical forest 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="New Zealand Up Close"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="NewZealandUpClose.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -925,12 +927,12 @@ Depart on a trek through the magnificent Waitakere Ranges, a subtropical forest 
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="New Zealand Up Close"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1148,6 +1150,7 @@ Depart on a trek through the magnificent Waitakere Ranges, a subtropical forest 
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
@@ -1155,7 +1158,7 @@ Depart on a trek through the magnificent Waitakere Ranges, a subtropical forest 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Hawkes Bay Food"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="HawkesBayFood.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1164,13 +1167,13 @@ Depart on a trek through the magnificent Waitakere Ranges, a subtropical forest 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Hawkes Bay Food"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

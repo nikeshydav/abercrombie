@@ -734,7 +734,7 @@ This exclusive itinerary allows for up close and personal experiences with Afric
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+
 <?php $id=2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Kenya"/>
@@ -742,7 +742,7 @@ This exclusive itinerary allows for up close and personal experiences with Afric
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="In the Wilds of Kenya"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="in-wilds-kenya.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -1075,14 +1075,14 @@ This exclusive itinerary allows for up close and personal experiences with Afric
 <div id="tab10" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=3;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Kenya"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classic-east-africa.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -1385,6 +1385,7 @@ Optional: Ngorongoro Crater, Serengeti. </p>
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Kenya"/>
@@ -1392,7 +1393,7 @@ Optional: Ngorongoro Crater, Serengeti. </p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="wildlife luxury kenya"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="wildlife-luxury-kenya.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>

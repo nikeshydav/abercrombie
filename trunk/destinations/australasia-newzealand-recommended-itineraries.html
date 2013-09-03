@@ -449,7 +449,7 @@ Villa - Twin / Double Occupancy<br />
 <p><strong>Insider Access Old Antarctic Explorer Tour</strong><br />
 Join an Old Antarctic Explorer on an exclusive and personalised tour of Christchurch's International Antarctic Centre discovering New Zealand's Scott Base, The Snow & Ice Experience and the Antarctic Storm where you will experience extreme wind chill Antarctic conditions. Enjoy a cruise to Antarctica on board an Antarctic Cruise Ship in the brand new 4D Extreme Theatre or enjoy watching the penguins being fed in the New Zealand Penguin Encounter.
 </p>
-<p>Rations are available in the Antarctic Café & Bar and a signed copy of an Antarctic book is yours to take away at the end of your 3-hour personalised Antarctic experience.</p>
+<p>Rations are available in the Antarctic Caf? & Bar and a signed copy of an Antarctic book is yours to take away at the end of your 3-hour personalised Antarctic experience.</p>
 <p><strong>Includes:</strong><br />
  * All day pass to Antarctic Centre including penguin feeding & all activities.<br />
   * Light lunch in cafe at reserved table with old Antarctic explorer. <br />
@@ -547,14 +547,15 @@ Deluxe Suite - Twin / Double Occupancy<br />
 </div>
 
 <div id="tab2" style="display:none;">
-<?php $id =3;?>
+<h1>Send itinerary</h1>
+<?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
 <input type="hidden" name="region_email" id="region_email" value="Australasia"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Private Guide Driver Premium Accommodation"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="120525-OPT1-PrivateGuide-DriverPremiumAccommodation.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -562,12 +563,12 @@ Deluxe Suite - Twin / Double Occupancy<br />
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Private Guide Driver Premium Accommodation"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -579,9 +580,9 @@ Deluxe Suite - Twin / Double Occupancy<br />
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize2() {
+			function gmapInitialize() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas2"));
+					map = new GMap2(document.getElementById("map_canvas"));
 					map.setUIToDefault();
 					
 					
@@ -718,7 +719,7 @@ Deluxe Suite - Twin / Double Occupancy<br />
 	
 		</script>
 
-<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>
@@ -826,7 +827,7 @@ Villa - Twin / Double Occupancy
 <p>On arrival in Christchurch you will be met by your A&K guide and taken on a private afternoon sightseeing tour. Today's sightseeing tour includes a scenic drive along the River Avon the Botanical Gardens. Drive to the top of the Port Hills for a wonderful vista of Christchurch and the surrounding countryside including quaint Lyttleton Harbour. Visit the International Antarctic Centre that focuses on the great southern continent and join an exclusive tour. Enjoy a leisurely punt on the Avon River before being returned to your accommodation.</p>
 <p><strong>Insider Access Old Antarctic Explorer Tour</strong><br/>
 Join an Old Antarctic Explorer on an exclusive and personalised tour of Christchurch's International Antarctic Centre discovering New Zealand's Scott Base, The Snow & Ice Experience and the Antarctic Storm where you will experience extreme wind chill Antarctic conditions. Enjoy a cruise to Antarctica on board an Antarctic Cruise Ship in the brand new 4D Extreme Theatre or enjoy watching the penguins being fed in the New Zealand Penguin Encounter.</p>
-<p>Rations are available in the Antarctic Café & Bar and a signed copy of an Antarctic book is yours to take away at the end of your 3-hour personalised Antarctic experience.</p>
+<p>Rations are available in the Antarctic Caf? & Bar and a signed copy of an Antarctic book is yours to take away at the end of your 3-hour personalised Antarctic experience.</p>
 <p><strong>Includes:</strong><br />
  * All day pass to Antarctic Centre including penguin feeding & all activities. <br/>
  * Light lunch in cafe at reserved table with old Antarctic explorer. <br/>
@@ -923,14 +924,15 @@ Deluxe Suite - Twin / Double Occupancy<br />
 </div>
 
 <div id="tab6" style="display:none;">
-<?php $id =4;?>
+    <h1>Send itinerary</h1>
+<?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
 <input type="hidden" name="region_email" id="region_email" value="Australasia"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Self Drive Premium Accommodation"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="120525-OPT3-SelfDrivePremiumAccommodation.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -939,13 +941,13 @@ Deluxe Suite - Twin / Double Occupancy<br />
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Self Drive Premium Accommodation"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -957,9 +959,9 @@ Deluxe Suite - Twin / Double Occupancy<br />
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize3() {
+			function gmapInitialize1() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas3"));
+					map = new GMap2(document.getElementById("map_canvas1"));
 					map.setUIToDefault();
 					
 					
@@ -1066,7 +1068,7 @@ Deluxe Suite - Twin / Double Occupancy<br />
 	
 		</script>
 
-<div id="map_canvas3" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>
@@ -1268,15 +1270,15 @@ Premium Executive Room - Twin / Double
 </div>
 
 <div id="tab10" style="display:none;">
-
-<?php $id =1;?>
+<h1>Send itinerary</h1>
+<?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
 <input type="hidden" name="region_email" id="region_email" value="Australasia"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Two Islands Many Faces Affordable Luxury"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TwoIslandsManyFaces-AffordableLuxury.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1284,12 +1286,12 @@ Premium Executive Room - Twin / Double
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Two Islands Many Faces Affordable Luxury"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1301,9 +1303,9 @@ Premium Executive Room - Twin / Double
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize() {
+			function gmapInitialize2() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas"));
+					map = new GMap2(document.getElementById("map_canvas2"));
 					map.setUIToDefault();
 					
 					
@@ -1392,7 +1394,7 @@ Premium Executive Room - Twin / Double
 	
 		</script>
 
-<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>
@@ -1481,7 +1483,7 @@ Select from a number of activity options, including a Dart River jet boat safari
 <h5>Queenstown - Christchurch</h5>
 <p>Board a flight to Christchurch where you will be met at the airport by your guide.</p> 
 <p>
-Depart on a sightseeing tour of this very English city situated on the Canterbury Plains. Visit the International Antarctic Centre and take an exciting outdoor ride on a genuine Antarctic vehicle - the Hagglund.  Enjoy a light lunch at a local café before a relaxing cruise on a punt on the tree-lined Avon River.</p>
+Depart on a sightseeing tour of this very English city situated on the Canterbury Plains. Visit the International Antarctic Centre and take an exciting outdoor ride on a genuine Antarctic vehicle - the Hagglund.  Enjoy a light lunch at a local caf? before a relaxing cruise on a punt on the tree-lined Avon River.</p>
 <p><strong>Overnight:</strong> The George</p>
 </li>
 <li>
@@ -1493,14 +1495,15 @@ Depart on a sightseeing tour of this very English city situated on the Canterbur
 </div>
 
 <div id="tab14" style="display:none;">
-<?php $id =2;?>
+    <h1>Send itinerary</h1>
+<?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
 <input type="hidden" name="region_email" id="region_email" value="Australasia"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Twin Island Journey"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TwinIslandJourney.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1508,12 +1511,12 @@ Depart on a sightseeing tour of this very English city situated on the Canterbur
 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Twin Island Journey"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1525,9 +1528,9 @@ Depart on a sightseeing tour of this very English city situated on the Canterbur
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize1() {
+			function gmapInitialize3() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas1"));
+					map = new GMap2(document.getElementById("map_canvas3"));
 					map.setUIToDefault();
 					
 					
@@ -1634,7 +1637,7 @@ Depart on a sightseeing tour of this very English city situated on the Canterbur
 	
 		</script>
 
-<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas3" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>

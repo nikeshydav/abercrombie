@@ -409,7 +409,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 4</h4>
 <h5>Alice Springs/Uluru</h5>
-<p>Today is full of educational activities, beginning with a visit to the School of the Air, a radio instruction program that brings homeschooling to isolated children living in the vast Outback. Continue on to The Royal Flying Doctor Service - a service providing medical care to those residing in Australia's furthest reaches - and the Alice Springs Telegraph Station. Later this afternoon, board a flight to Uluru (Ayers Rock), and visit this sacred Aboriginal site. Walk along its base, viewing hallowed locales and paintings of ancient Aboriginal tribal myths. End a day of new discoveries and welcome the evening over canapés and beverages at sunset.</p>
+<p>Today is full of educational activities, beginning with a visit to the School of the Air, a radio instruction program that brings homeschooling to isolated children living in the vast Outback. Continue on to The Royal Flying Doctor Service - a service providing medical care to those residing in Australia's furthest reaches - and the Alice Springs Telegraph Station. Later this afternoon, board a flight to Uluru (Ayers Rock), and visit this sacred Aboriginal site. Walk along its base, viewing hallowed locales and paintings of ancient Aboriginal tribal myths. End a day of new discoveries and welcome the evening over canap?s and beverages at sunset.</p>
 <p><strong>Overnight:</strong> Sails in the Desert<br />
  <strong>Meal Plan:</strong> B</p>
 </li>
@@ -444,7 +444,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -452,7 +452,7 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="MELBOURNE NOW"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -460,12 +460,12 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="MELBOURNE NOW"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -622,7 +622,7 @@ After meeting your guide visit Cook's Cottage before taking a walk through the u
 <h5>Melbourne - Coliban Park - Melbourne</h5>
 <p>This morning drive into the countryside travelling to one of Victoria's oldest and most delightful country properties, Coliban Park. At this private sheep station, established in 1917, watch sheep being shorn and learn first hand about one of Australia's most important industries. Enjoy lunch with the Barber family in their traditional family homestead. A highlight will be a tour of the property, perhaps seeing kangaroos in the wild.</p>
 <p>
-This evening enjoy drinks and canapés in the Club lounge.</p>
+This evening enjoy drinks and canap?s in the Club lounge.</p>
 <p>
 <strong>Overnight:</strong> Park Hyatt Melbourne, Club Lounge King Room<br />
 <strong>Meal Plan:</strong> B,L </p>
@@ -686,7 +686,7 @@ Led by either Lyle or Ann, the Directors of the Island's Research Station, watch
 <h5>Lizard Island - Cairns - Sydney</h5>
 <p>After breakfast on Lizard Island farewell the Great Barrier Reef as your charter flight takes you back to Cairns to connect with a scheduled service to the picturesque city of Sydney.</p>
 <p>
-On arrival in Sydney meet your personal guide and transfer by private vehicle to the Four Seasons.  Superbly situated right on Sydney Harbour in the city's historic Rocks area, the Four Seasons Sydney Hotel has wonderful views of the Sydney Opera House and Harbour Bridge. It is only a short walk from Sydney's major shopping and business districts. Enjoy Executive Club access including evening drinks and canapés daily.</p>
+On arrival in Sydney meet your personal guide and transfer by private vehicle to the Four Seasons.  Superbly situated right on Sydney Harbour in the city's historic Rocks area, the Four Seasons Sydney Hotel has wonderful views of the Sydney Opera House and Harbour Bridge. It is only a short walk from Sydney's major shopping and business districts. Enjoy Executive Club access including evening drinks and canap?s daily.</p>
 <p>
 Your guide can suggest an array of fine harbour side restaurants for dining this evening (not included) and assist with reservations should you require them.</p>
 <p>
@@ -726,6 +726,7 @@ You may even choose to climb the Harbour Bridge, go sea kayaking or travel to th
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -733,7 +734,7 @@ You may even choose to climb the Harbour Bridge, go sea kayaking or travel to th
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Australia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ClassicAustralia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -741,12 +742,12 @@ You may even choose to climb the Harbour Bridge, go sea kayaking or travel to th
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Australia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -889,7 +890,7 @@ You may even choose to climb the Harbour Bridge, go sea kayaking or travel to th
 <li id="divli10"><a href="javascript:void(0)" onClick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli11"><a href="javascript:void(0)" onClick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli12"><a href="javascript:void(0)" onClick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/PristineWatersofNingalooReef.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/PristineWatersofNingalooReef.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -921,7 +922,7 @@ Park Hyatt Melbourne</p>
 ophisticated and contemporary, the Park Hyatt offers an exclusive sanctuary in the heart of Melbourne. It is the perfect base from which to explore this beautiful city and surrounding areas.</p>
 <p>
 The rooms are havens of luxury amidst the bustle of historic Melbourne, featuring Madrona paneled walls and rich furnishings with a hint of art deco. Room amenities reflect the hotel's exceptional standards, and include plush beds, beautiful furniture and Italian marble bathrooms with deep soaking tub and walk-in shower. Spacious rooms overlook a district awash with Victorian architecture. Conveniently situated in one of Melbourne's most historic areas, Park Hyatt is at the top of Collins Street, opposite St Patrick's Cathedral and bordered by the delightful Fitzroy Gardens. The sleek Radii Restaurant is a dining experience unlike any other, offering creative, contemporary cuisine Park Club Health and Day Spa offers the ultimate escape with a signature Elemis massage  The hotel has an exquisite 25m indoor pool. Other facilities include bars and lounges, a fitness centre and an outdoor tennis court. Babysitting is available </p>
-<p>Club Deluxe room includes club access inclusions of complimentary continental breakfast, all day refreshments and evening canapés  and aperitifs. </p>
+<p>Club Deluxe room includes club access inclusions of complimentary continental breakfast, all day refreshments and evening canap?s  and aperitifs. </p>
 <p> <strong>overnight:</strong> Park Hyatt Melbourne - Club Deluxe room </p>
 </li>
 <li>
@@ -955,7 +956,7 @@ Imagine an island so pristine, so untouched, that when you walk one of the twent
 <p>
 Choose from a wide choice of activities including guided nature walks, kayaking, private beach picnics or pamper yourself with a spa treatment at Azure Spa. Whatever your choice you'll appreciate the peace and tranquility of this natural environment. </p>
 <p>
-Most recent a ccolades include featuring in Condé Nast Traveller's 2010 Gold List as only one of two Australian hotels named for Best Hotels for Leisure Facilities and ranking 8th place in the category 'Top 20 Resorts Oceania' in the US Condé Nast Traveler Readers' Choice Awards</p>
+Most recent a ccolades include featuring in Cond? Nast Traveller's 2010 Gold List as only one of two Australian hotels named for Best Hotels for Leisure Facilities and ranking 8th place in the category 'Top 20 Resorts Oceania' in the US Cond? Nast Traveler Readers' Choice Awards</p>
 <p>Insider Access - Lizard Island Research Station<br />
 <p>Lizard Island Research Centre attracts marine scientists from around the globe in their quest to conserve and manage the world's coral reef systems. The environmental source to some 800 research publications, the Research Station is the only field station operated by the Australian Museum and is internationally recognised as a leading marine research facility. Led by one of the Directors of the Island's Research Station, watch Australian and international marine scientists at work and have a first hand look at a range of marine research projects, many of which utilise the state of the art seawater aquarium system enabling controlled experiments with living reef organisms. This first ever behind the scenes tour is an A&K exclusive.</p>  
 <p>
@@ -1064,6 +1065,7 @@ The Park Hyatt Hotel Sydney offers guests intimate, residential-style hotel with
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1071,7 +1073,7 @@ The Park Hyatt Hotel Sydney offers guests intimate, residential-style hotel with
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Australian Tour of Wonders"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1079,12 +1081,12 @@ The Park Hyatt Hotel Sydney offers guests intimate, residential-style hotel with
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Australian Tour of Wonders"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1324,6 +1326,7 @@ At Pancake Estate Wines in the Barossa Valley meet Diana Laidlaw, a retired Memb
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1331,7 +1334,7 @@ At Pancake Estate Wines in the Barossa Valley meet Diana Laidlaw, a retired Memb
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="South Australia Splendours"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SouthAustraliaSplendours.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1340,13 +1343,13 @@ At Pancake Estate Wines in the Barossa Valley meet Diana Laidlaw, a retired Memb
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="South Australia Splendours"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
