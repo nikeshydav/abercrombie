@@ -342,7 +342,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 4</h4>
 <h5>Rio de Janeiro</h5>
-<p>Rio is literally sliced down the middle by the impressive Tijuca Mountains, making it possible to go to the beach in the morning and enjoy the chill of the rainforest, natural pools and waterfalls in the afternoon. Embark on an excursion through the rainforest in open-air Jeeps along the Lagoa Rodrigo de Freitas lagoon and past the Jardim Botânico, finally stopping at the Vista Chinesa in Tijuca National Park for wonderful views. This large urban forest is one of the last few remnants of the Atlantic Rainforest that at one time dominated the southern coast of Brazil. Also in the park is the Mayrink Chapel, boasting murals painted by Cândido Portinari, one of Brazil's best-known 20th-century artists. From there you can hike one of the many trails while your guide points out the rich variety of fauna and flora.</p>
+<p>Rio is literally sliced down the middle by the impressive Tijuca Mountains, making it possible to go to the beach in the morning and enjoy the chill of the rainforest, natural pools and waterfalls in the afternoon. Embark on an excursion through the rainforest in open-air Jeeps along the Lagoa Rodrigo de Freitas lagoon and past the Jardim Bot?nico, finally stopping at the Vista Chinesa in Tijuca National Park for wonderful views. This large urban forest is one of the last few remnants of the Atlantic Rainforest that at one time dominated the southern coast of Brazil. Also in the park is the Mayrink Chapel, boasting murals painted by C?ndido Portinari, one of Brazil's best-known 20th-century artists. From there you can hike one of the many trails while your guide points out the rich variety of fauna and flora.</p>
 <p><strong>Overnight:</strong> Sofitel Rio de Janeiro Copacabana<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -357,7 +357,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 6</h4>
 <h5>Rio de Janeiro - Brasilia</h5>
-<p> Fly to Brasília, the country's capital and "city of the future." A creation of mid-century politicians and architects, it was designed to draw Brazilians away from their much-loved coastal cities. From above, Brasilia looks like an aeroplane with a central avenue of government buildings intersected by a boomerang of residential streets; its "fuselage" is lined with spectacular modern architecture, including the National Congress and Senate and the Presidential Palace, set among reflecting pools and soaring modern sculpture. See these and more attractive local landmarks on an introductory tour. Designed by Oscar Niemeyer, the gleaming architectural masterpieces are an audacious symbol of the country's still-unfulfilled dreams of inland expansion.</p>
+<p> Fly to Bras?lia, the country's capital and "city of the future." A creation of mid-century politicians and architects, it was designed to draw Brazilians away from their much-loved coastal cities. From above, Brasilia looks like an aeroplane with a central avenue of government buildings intersected by a boomerang of residential streets; its "fuselage" is lined with spectacular modern architecture, including the National Congress and Senate and the Presidential Palace, set among reflecting pools and soaring modern sculpture. See these and more attractive local landmarks on an introductory tour. Designed by Oscar Niemeyer, the gleaming architectural masterpieces are an audacious symbol of the country's still-unfulfilled dreams of inland expansion.</p>
 <p><strong>Overnight:</strong> Melia Brasil 21<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -389,7 +389,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Brazil"/>
@@ -397,7 +397,6 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Rainforest to Rio"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Brazil-Rainforest-to-Rio.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -405,12 +404,12 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Brazil"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Rainforest to Rio"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

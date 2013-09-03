@@ -267,11 +267,11 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
 
-<!--<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>-->
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -286,11 +286,11 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
 
-<!--<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>-->
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -303,12 +303,12 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <div class="bottom">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
-<!--
+
 <strong class="Left" style="width:250px;" ><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>-->
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -321,12 +321,12 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <div class="bottom">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
-<!--
+
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
 <a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>-->
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -352,7 +352,7 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="../popup-page.html?page=pdf/California.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="../popup-page.html?page=pdf/California.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -415,7 +415,7 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="USA"/>
@@ -423,7 +423,6 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value=""/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -431,12 +430,12 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="USA"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value=""/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -561,7 +560,7 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="../popup-page.html?page=pdf/Musandam-Post-Tour-Extension.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="../popup-page.html?page=pdf/Musandam-Post-Tour-Extension.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -632,12 +631,13 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <li>
 <h4>Day 11</h4>
 <h5>Drive to Las Vegas Airport / Depart</h5>
-<p>After breakfast, the drive to Las Vegas Airport is about 2 ½ hours. Return your hire car and depart.</p>
+<p>After breakfast, the drive to Las Vegas Airport is about 2 ? hours. Return your hire car and depart.</p>
 </li>
 </ul>
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="USA"/>
@@ -645,7 +645,6 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value=""/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -653,12 +652,12 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="USA"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value=""/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -801,7 +800,7 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <li id="divli10"><a href="javascript:void(0)" onClick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli11"><a href="javascript:void(0)" onClick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli12"><a href="javascript:void(0)" onClick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Musandam-Pre-Tour-Extension.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Musandam-Pre-Tour-Extension.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -867,6 +866,7 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="USA"/>
@@ -874,7 +874,6 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value=""/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -882,12 +881,12 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="USA"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value=""/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1060,7 +1059,7 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <li id="divli14"><a href="javascript:void(0)" onClick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli15"><a href="javascript:void(0)" onClick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli16"><a href="javascript:void(0)" onClick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Salalah-Extension.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Salalah-Extension.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -1163,6 +1162,7 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="USA"/>
@@ -1170,7 +1170,6 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value=""/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1179,13 +1178,13 @@ WOLVES OF YELLOWSTONE GROUP TRIP</h2>
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="USA"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value=""/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

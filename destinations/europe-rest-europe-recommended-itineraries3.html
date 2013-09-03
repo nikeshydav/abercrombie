@@ -428,7 +428,7 @@ This afternoon is at your leisure for you to relax and enjoy the facilities of y
 <h5> PRAGUE</h5>
 <p>Meet your local guide and enjoy a walking tour (3 hours) of the picturesque Lesser Town (Mala Strana). Also known as The Pearl of Baroque Architecture, the Lesser Town is one of Prague's oldest districts and full of captivating history and hidden gems which can't fail to enchant you. The most extensive and unforgettable building of this era is Albrecht von Wallenstein's Palace with five courtyards and a magnificent garden set as a French Park (please note that the palace is only open on Saturdays & Sundays and garden is opened daily from April till October).</p>
 <p>You may also like to see the Lesser Town square with the beautiful baroque St Nicholas Church and perhaps visit the Carmelitan church, The Church of Our Lady Victorious, with the famous statue of the Holy Infant Jesus of Prague. Or take a visit to the lovely Vrtba's Gardens, near the Church of Our Lady Victorious (open daily from April till October).</p>
-<p>If music is the food of love, what better way to spend the afternoon that with a private musical tour of Prague. The location of the Czech Museum of Music is within the former Baroque church of St. Mary Magdalene in the Little Quarter, the National Museum has taken the unique opportunity to update this space - once decorated with Baroque masterpieces and resounding with supposedly one of the biggest organs of 17th-century Prague. Also enjoy a visit to the Museum of Antonin Dvorak, located in a baroque Vila 'Amerika', since 1932 in an important early 18th century building of architect Kilián Ignác Dienzenhofer. End your Musical tour of Prague by a private walk-through the Estate Theatre, lasting about 60 minutes with explanation about the theatre renovation, history and work of W.A. Mozart in this theatre.</p>
+<p>If music is the food of love, what better way to spend the afternoon that with a private musical tour of Prague. The location of the Czech Museum of Music is within the former Baroque church of St. Mary Magdalene in the Little Quarter, the National Museum has taken the unique opportunity to update this space - once decorated with Baroque masterpieces and resounding with supposedly one of the biggest organs of 17th-century Prague. Also enjoy a visit to the Museum of Antonin Dvorak, located in a baroque Vila 'Amerika', since 1932 in an important early 18th century building of architect Kili?n Ign?c Dienzenhofer. End your Musical tour of Prague by a private walk-through the Estate Theatre, lasting about 60 minutes with explanation about the theatre renovation, history and work of W.A. Mozart in this theatre.</p>
 <p><strong>Overnight:</strong> Augustine Hotel<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -443,7 +443,7 @@ This afternoon is at your leisure for you to relax and enjoy the facilities of y
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Prague"/>
@@ -451,7 +451,6 @@ This afternoon is at your leisure for you to relax and enjoy the facilities of y
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Prague Fairytale City"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Prague-Fairytale-City.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -692,6 +691,7 @@ You will be confirmed for 3 nights at the Rocco Forte Hotel de Rome, inclusive o
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -699,7 +699,6 @@ You will be confirmed for 3 nights at the Rocco Forte Hotel de Rome, inclusive o
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Oktoberfest Cultural Highlights"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Oktoberfest-Cultural-Highlights.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -707,12 +706,12 @@ You will be confirmed for 3 nights at the Rocco Forte Hotel de Rome, inclusive o
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Oktoberfest Cultural Highlights"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -891,7 +890,7 @@ Also visit the Kaiser Wilhelm Memorial Church whose ruins stand as a dramatic re
 <p>
 After your lunch at leisure your guide will once again be on hand for up to 4 hours to give you an orientation tour on foot of some more of the best Christmas markets this city has to offer. There are in fact in excess of 50 markets, some of which are magical and traditional and others more trendy and lively - feel free to tell your guide your preferences so they can adapt the tour for you. However, we would strongly recommend you include the WeihnachtsZauber on Gendarmenmarkt, located in one of the most beautiful squares in the city where you will be greeted with the smells of roasted almonds, hot cocoa and mulled wine. As well as the market stalls offering traditional handicrafts and culinary temptations, enjoy the entertainment and atmosphere created by the many jugglers, acrobats and musical ensembles in the square.</p>
 <p>
-The evening is at your leisure, so why not spend the evening exploring the markets further, which look especially festive when all lit-up. Or take advantage of one of the many cafes with outdoor heaters and blankets to keep you warm whilst enjoying a glass of Glühwein.</p>
+The evening is at your leisure, so why not spend the evening exploring the markets further, which look especially festive when all lit-up. Or take advantage of one of the many cafes with outdoor heaters and blankets to keep you warm whilst enjoying a glass of Gl?hwein.</p>
 <p><strong>Overnight:</strong> Hotel de Rome<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -938,7 +937,7 @@ This afternoon your guide will take you the more intimate Christmas market at Na
 <h5>PRAGUE - MUNICH</h5>
 <p>Your local representative will collect you from your hotel and will be privately transferred to Prague Railway Station to begin your 6 hour Concierge Rail journey to Munich. First class seating has been pre-arranged for you and our luggage handlers will look after your bags - allowing you to concentrate on settling into your seats for the journey. When you arrive in Munich you will be met directly off the train and once again our luggage handler will look after your bags, in readiness for your private transfer to your hotel. We will assist you with you check-in.</p>
 <p>
-On arrival at The Charles Hotel you will be enjoy a festive and warming glass of Glühwein on the terrace.</p>
+On arrival at The Charles Hotel you will be enjoy a festive and warming glass of Gl?hwein on the terrace.</p>
 <p>
 You will then be met by your guide who will be at your disposal for 2 hours. As the streets will already be dark you will pass the beautiful lit and decorated window displays on the Maximilianstrasse (a city centre street with luxurious shopping opportunities) and then up to Maffeistrasse where the Loden-Frey fashion house is located, having been established in 1842. Your guide will then accompany you to the Dallmayr Delikatessen - a great place to pick up some gifts or just thoroughly spoil yourself. The extensive and authentic store has designated departments for delicacies including wine, spirits, coffee, honey & jam, confectionary, caviar & salmon, meat, tobacco, fish and much more.</p>
 <p>
@@ -982,6 +981,7 @@ Your return transfer will drop you back to your hotel so that you can enjoy your
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -989,7 +989,6 @@ Your return transfer will drop you back to your hotel so that you can enjoy your
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Three Winter Wonderlands Berlin Prague Munich"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ThreeWinterWonderlands-BerlinPragueMunich.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -997,12 +996,12 @@ Your return transfer will drop you back to your hotel so that you can enjoy your
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Three Winter Wonderlands Berlin Prague Munich"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1263,7 +1262,7 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 <li>
 <h4>Day 9</h4>
 <h5>ST PETERSBURG</h5>
-<p> You will begin your day (8 hours) with your English-speaking guide by driving along the coast to Petrodvorets, the summer palace of Peter the Great. Entry for the early opening at the Grand Palace has been arranged. The lavish décor of the buildings is rivaled only by its famous Grand Cascade of fountains.  After lunch at leisure return by hydrofoil (summer months only) to St Petersburg, where you will be visiting the Russian Museum.</p>
+<p> You will begin your day (8 hours) with your English-speaking guide by driving along the coast to Petrodvorets, the summer palace of Peter the Great. Entry for the early opening at the Grand Palace has been arranged. The lavish d?cor of the buildings is rivaled only by its famous Grand Cascade of fountains.  After lunch at leisure return by hydrofoil (summer months only) to St Petersburg, where you will be visiting the Russian Museum.</p>
 <p>
 <strong>Overnight:</strong> Hotel Astoria<br />
 <strong>Meal Plan:</strong> B</p>
@@ -1278,6 +1277,7 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -1285,7 +1285,6 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Berlin Prague St.Petersburg"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Berlin-Prague-St.Petersburg.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1294,13 +1293,13 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Berlin Prague St.Petersburg"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

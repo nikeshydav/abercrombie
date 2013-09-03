@@ -491,7 +491,7 @@ Charter a private yacht for a romantic day sailing off the coast of Kyllini and 
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -499,7 +499,6 @@ Charter a private yacht for a romantic day sailing off the coast of Kyllini and 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Idyllic Greece"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Idyllic-Greece.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -507,12 +506,12 @@ Charter a private yacht for a romantic day sailing off the coast of Kyllini and 
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Idyllic Greece"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -731,7 +730,7 @@ Mykonos is the most popular island of Cyclades Group, famous from the internatio
 <li>
 <h4>Day 9</h4>
 <h5>IOS</h5>
-<p>Ios is a small island in the heart of the Cyclades. IOS is said to be the island of youth, where young people from all over the world meet and enjoy their summers. Ios is famous for its vivid nightlife with an uncountable number of bars, cafés, clubs and restaurants and for its beaches with crystal clear water. The little port of Ios, with the domed Church of Ayia Irini (17th c.) lies in a sheltered bay on the west coast of the island. One kilometre up the fertile Kato Kampos Valley, conspicuously and picturesquely situated on the hillside, is the chief place on the island, Ios.</p>
+<p>Ios is a small island in the heart of the Cyclades. IOS is said to be the island of youth, where young people from all over the world meet and enjoy their summers. Ios is famous for its vivid nightlife with an uncountable number of bars, caf?s, clubs and restaurants and for its beaches with crystal clear water. The little port of Ios, with the domed Church of Ayia Irini (17th c.) lies in a sheltered bay on the west coast of the island. One kilometre up the fertile Kato Kampos Valley, conspicuously and picturesquely situated on the hillside, is the chief place on the island, Ios.</p>
 <p>
 <strong>Overnight:</strong> Iraklis L<br />
 <strong>Meal Plan:</strong> B,L,D
@@ -790,6 +789,7 @@ Kythnos is an unspoiled island.  The coast is much indented - with many beautifu
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -797,7 +797,6 @@ Kythnos is an unspoiled island.  The coast is much indented - with many beautifu
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Private Tour of Athens Cyclades Islands"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="PrivateTour-of-AthensCycladesIslands.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -805,12 +804,12 @@ Kythnos is an unspoiled island.  The coast is much indented - with many beautifu
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Private Tour of Athens Cyclades Islands"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1059,6 +1058,7 @@ Spend the rest of the day at leisure after being privately transferred back to y
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -1066,7 +1066,6 @@ Spend the rest of the day at leisure after being privately transferred back to y
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Ancient Greece"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AncientGreece.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1074,12 +1073,12 @@ Spend the rest of the day at leisure after being privately transferred back to y
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ancient Greece"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1342,6 +1341,7 @@ Spend the rest of the day at leisure after being privately transferred back to y
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -1349,7 +1349,6 @@ Spend the rest of the day at leisure after being privately transferred back to y
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Tailor Made Greece"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TailorMadeGreece.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1358,13 +1357,13 @@ Spend the rest of the day at leisure after being privately transferred back to y
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Tailor Made Greece"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

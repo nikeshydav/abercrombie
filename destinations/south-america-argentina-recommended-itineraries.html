@@ -284,7 +284,7 @@ href="../yahoo.html">
 <div class="leftbox"><img src="../images/Spas-and-Estancias.jpg" alt="Spas and Estancias" width="326" height="210" /></div>
 <div class="rightbox"><h2>Spas and Estancias</h2>
 <p><strong>Duration:</strong> 11 days<br />
-<strong>Highlights:</strong> Buenos Aires, Córdoba, Bariloche, Carmelo (Uruguay). </p>
+<strong>Highlights:</strong> Buenos Aires, C?rdoba, Bariloche, Carmelo (Uruguay). </p>
 <p>A relaxing itinerary visiting spas and estancias in Argentina and Uruguay.</p>
 </div>
 <div class="bottom">
@@ -370,9 +370,9 @@ href="../yahoo.html">
 <h5>BUENOS AIRES</h5>
 <p>After breakfast, embark on a sightseeing excursion of the older areas of Argentina's capital city with your guide.</p>
 <p>
-There will be special emphasis on the historical parts of the city, such as San Telmo where you may visit the Plaza Dorrego market (open on Sundays). The tour will also include a visit to "El Zanjón". In 1986 work began on the renovation of this 19th century house in San Telmo. A section of tunnel was discovered underneath, and it was soon apparent that it formed part of the Buenos Aires sewer system abandoned in the mid 1880s. The building is spectacular inside, and gives an interesting insight into the Buenos Aires of old. Continue to Puerto Madero district to enjoy lunch at exclusive restaurant.</p>
+There will be special emphasis on the historical parts of the city, such as San Telmo where you may visit the Plaza Dorrego market (open on Sundays). The tour will also include a visit to "El Zanj?n". In 1986 work began on the renovation of this 19th century house in San Telmo. A section of tunnel was discovered underneath, and it was soon apparent that it formed part of the Buenos Aires sewer system abandoned in the mid 1880s. The building is spectacular inside, and gives an interesting insight into the Buenos Aires of old. Continue to Puerto Madero district to enjoy lunch at exclusive restaurant.</p>
 <p>
-Return to the hotel, where the remainder of the afternoon is at leisure. Freshen up and prepare for a special view of the city by night. You will be transferred to Café Tortoni. Founded in 1858, it is the oldest coffee shop in the whole country and has a very rich history. Then continue to El Querandi, the most famous tango restaurant where you will have dinner and appreciate a tango show.</p>
+Return to the hotel, where the remainder of the afternoon is at leisure. Freshen up and prepare for a special view of the city by night. You will be transferred to Caf? Tortoni. Founded in 1858, it is the oldest coffee shop in the whole country and has a very rich history. Then continue to El Querandi, the most famous tango restaurant where you will have dinner and appreciate a tango show.</p>
 <p>
 <strong>Overnight:</strong> Four Seasons Hotel<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -390,8 +390,8 @@ Your sightseeing tour in Bariloche will take you up into the surrounding mountai
 <li>
 <h4>Day 4</h4>
 <h5>BARILOCHE</h5>
-<p>After breakfast, depart for a visit to Villa La Angostura. This village is located 82 kilometres from Bariloche at South Neuquén on the banks northwest of Nahuel Huapi Lake.</p>
-<p>Visit this charming village where the exclusive Hostería Las Balsas (Relais & Chateaux) is found, this is where you will have lunch. After lunch, board a boat and navigate the Nahuel Huapi Lake as far as Puerto Pañuelo. From here it is only a short drive back to your accommodation.</p>
+<p>After breakfast, depart for a visit to Villa La Angostura. This village is located 82 kilometres from Bariloche at South Neuqu?n on the banks northwest of Nahuel Huapi Lake.</p>
+<p>Visit this charming village where the exclusive Hoster?a Las Balsas (Relais & Chateaux) is found, this is where you will have lunch. After lunch, board a boat and navigate the Nahuel Huapi Lake as far as Puerto Pa?uelo. From here it is only a short drive back to your accommodation.</p>
 <p><strong>Overnight:</strong> El Casco Art Hotel<br />
 <strong>Meal Plan:</strong> B,L</p>
 </li>
@@ -446,7 +446,7 @@ Upon arrival in Carmelo, you will be transferred to the exclusive Four Seasons H
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Argentina"/>
@@ -454,7 +454,6 @@ Upon arrival in Carmelo, you will be transferred to the exclusive Four Seasons H
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Introducing Argentina Uruguay"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Introducing-Argentina-Uruguay.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -462,12 +461,12 @@ Upon arrival in Carmelo, you will be transferred to the exclusive Four Seasons H
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Argentina"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Introducing Argentina Uruguay"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -609,31 +608,31 @@ Upon arrival in Carmelo, you will be transferred to the exclusive Four Seasons H
 <li>
 <p><strong>Duration:</strong>  11 days</p>
 <p>A relaxing itinerary visiting spas and estancias in Argentina and Uruguay.</p>
-<p><strong>Highlights:</strong> Buenos Aires, Córdoba, Bariloche, Carmelo (Uruguay).</p>
+<p><strong>Highlights:</strong> Buenos Aires, C?rdoba, Bariloche, Carmelo (Uruguay).</p>
 </li>
 <li><h4>Day 1</h4>
 <h5>ARRIVE BUENOS AIRES</h5>
 <p>Upon arrival in Buenos Aires, your English-speaking representative will be on hand to escort you to your waiting private motor coach for the transfer to the hotel. After check-in, time to freshen up and then start a special sightseeing tour of the Argentine capital.</p>
 <p>
-The tour will take in all the major sights including a behind-the-scenes visit to the Teatro Colón Opera House, the Metropolitan Cathedral, the Government Palace (Casa Rosada), the colourful La Boca district, the tough port barrio and picturesque working class heart of Buenos Aires, and San Telmo, home and birthplace of the sultry tango.</p>
+The tour will take in all the major sights including a behind-the-scenes visit to the Teatro Col?n Opera House, the Metropolitan Cathedral, the Government Palace (Casa Rosada), the colourful La Boca district, the tough port barrio and picturesque working class heart of Buenos Aires, and San Telmo, home and birthplace of the sultry tango.</p>
 <p>
-Tonight's dinner will be at at La Cabañas (an Orient Express Restaurant).</p>
+Tonight's dinner will be at at La Caba?as (an Orient Express Restaurant).</p>
 <p>
 <strong>Overnight:</strong> Four Seasons<br />
 <strong>Meal Plan:</strong> D</p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>BUENOS AIRES - CÓRDOBA</h5>
-<p>This morning transfer to the airport for your flight to Córdoba. Upon arrival at Córdoba airport El Colibrí staff will be waiting to transfer you to the estancia.</p>
+<h5>BUENOS AIRES - C?RDOBA</h5>
+<p>This morning transfer to the airport for your flight to C?rdoba. Upon arrival at C?rdoba airport El Colibr? staff will be waiting to transfer you to the estancia.</p>
 <p>
-Estancia El Colibrí is located in the centre of Argentina in the province of Córdoba and is located on 170 hectares of private property bordered by the Santa Catalina River.</p>
+Estancia El Colibr? is located in the centre of Argentina in the province of C?rdoba and is located on 170 hectares of private property bordered by the Santa Catalina River.</p>
 <p>
-<strong>Overnight:</strong> Estancia El Colibrí<br />
+<strong>Overnight:</strong> Estancia El Colibr?<br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
-<h4>CÓRDOBA</h4>
+<h4>C?RDOBA</h4>
 <p>
 This is much more than just a working Argentine "Estancia" which farms crops and raises cattle, you will also have a chance to experience the local culture.</p>
 <p>
@@ -661,13 +660,13 @@ Optional activities<br />
 -   Golf<br />
 </p>
 <p>
-<strong>Overnight:</strong> Estancia El Colibrí<br />
+<strong>Overnight:</strong> Estancia El Colibr?<br />
 <strong>Meal Plan:</strong> B,L,D
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>CÓRDOBA - BARILOCHE</h5>
-<p>This morning depart Córdoba to fly to the city of Bariloche. On arrival you are met and transferred to your hotel. This is Argentina's "Little Switzerland," a region with strong ties to Central Europe; many local families originally immigrated here from Germany, Switzerland and Northern Italy.</p>
+<h5>C?RDOBA - BARILOCHE</h5>
+<p>This morning depart C?rdoba to fly to the city of Bariloche. On arrival you are met and transferred to your hotel. This is Argentina's "Little Switzerland," a region with strong ties to Central Europe; many local families originally immigrated here from Germany, Switzerland and Northern Italy.</p>
 <p>Your hotel is located in the heart of Argentinean Patagonia, in the south of the province of Neuquen. Las Balsas is set within Nahuel Huapi National Park. Surrounded by the eternally snow capped mountains, natural forest and the deep blue Nahuel Huapi Lake, Las Balsas offers one of the most beautiful landscapes in Patagonia.</p>
 <p>On your arrival at the hotel you will be welcomed by the resident managers who will brief you with the daily activities.</p>
 <p><strong>Overnight:</strong> Las Balsas, Relais & Chateaux<br />
@@ -739,6 +738,7 @@ You will have free access to the exclusive spa and swimming pool. Other activiti
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Argentina"/>
@@ -746,7 +746,6 @@ You will have free access to the exclusive spa and swimming pool. Other activiti
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Spas Estancias"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Spas-Estancias.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -754,12 +753,12 @@ You will have free access to the exclusive spa and swimming pool. Other activiti
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Argentina"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Spas Estancias"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -925,9 +924,9 @@ You will have free access to the exclusive spa and swimming pool. Other activiti
 <h5>ARRIVE BUENOS AIRES</h5>
 <p>Upon arrival in Buenos Aires, a guide will be waiting to escort you on a comprehensive sightseeing excursion of the Argentine capital.</p>
 <p>
-The tour will take in all the major sights including a behind-the-scenes visit to the Teatro Colón Opera House (re-opening in 2010), the Metropolitan Cathedral, the Government Palace (Casa Rosada), the colourful La Boca district, the tough port barrio and working class heart of Buenos Aires, and San Telmo, home and birthplace of the sultry tango. Lunch will be served at a restaurant in the fashionable Puerto Madero district of the city.</p>
+The tour will take in all the major sights including a behind-the-scenes visit to the Teatro Col?n Opera House (re-opening in 2010), the Metropolitan Cathedral, the Government Palace (Casa Rosada), the colourful La Boca district, the tough port barrio and working class heart of Buenos Aires, and San Telmo, home and birthplace of the sultry tango. Lunch will be served at a restaurant in the fashionable Puerto Madero district of the city.</p>
 <p>
-The legacy of "Peronismo" is not only the subject of books or mere memories. It has left its mark in the very buildings, squares and neighborhoods that grace this fine city. The second part of your tour includes those landmarks connected with this crucial political movement, with the emphasis being on its major figure: Eva Perón. Her life, her political activity, her tragic death, the myth. Everything framed by a story that helps to understand contemporary Argentina. Included in this tour will of course be the incredible Recoleta Cemetery, where Evita is buried.</p>
+The legacy of "Peronismo" is not only the subject of books or mere memories. It has left its mark in the very buildings, squares and neighborhoods that grace this fine city. The second part of your tour includes those landmarks connected with this crucial political movement, with the emphasis being on its major figure: Eva Per?n. Her life, her political activity, her tragic death, the myth. Everything framed by a story that helps to understand contemporary Argentina. Included in this tour will of course be the incredible Recoleta Cemetery, where Evita is buried.</p>
 <p>Later transfer to the Park Hyatt Palacio Duhau, where you will spend the next two nights.</p>
 <p><strong>Overnight:</strong> Park Hyatt Palacio Duhau</p>
 </li>
@@ -944,7 +943,7 @@ The legacy of "Peronismo" is not only the subject of books or mere memories. It 
 <li>
 <h4>Day 3</h4>
 <h5>BUENOS AIRES - IGUAZU</h5>
-<p>This morning transfer to the domestic airport for the flight to Iguazu. This will be the starting point for your three day stay in the Iguazu Falls National Park. Four times wider than Niagara Falls, and undoubtedly the most spectacular in South America, the Iguazu Falls in Paraná is where the powerful river Iguazu hurtles into a deep canyon, carved into the shape of a horseshoe in the gigantic basalt flow. Starting its course near the Atlantic seaboard, the Iguazu River crosses the western highlands of the states of São Paulo and Paraná and arrives at the edge of the plateau to discharge its waters at a rate, which can reach 150,000 m³ per second.</p>
+<p>This morning transfer to the domestic airport for the flight to Iguazu. This will be the starting point for your three day stay in the Iguazu Falls National Park. Four times wider than Niagara Falls, and undoubtedly the most spectacular in South America, the Iguazu Falls in Paran? is where the powerful river Iguazu hurtles into a deep canyon, carved into the shape of a horseshoe in the gigantic basalt flow. Starting its course near the Atlantic seaboard, the Iguazu River crosses the western highlands of the states of S?o Paulo and Paran? and arrives at the edge of the plateau to discharge its waters at a rate, which can reach 150,000 m? per second.</p>
 <p>The Iguazu River divides Argentina and Brazil, so both nations get to claim one of the world's most dramatic waterfalls, or rather 275 waterfalls. The river pours into the fissure for four kilometres along the canyon rim on the Argentina side. As the water level drops in the dry season, April through October, the river splits into dozens of channels and multiple falls form along the cliff face. But regardless of the time of the year, the panoramic view is astonishing.</p>
 <p>Upon arrival to Iguazu Airport, transfer to the Sheraton Iguazu where you will spend the next two nights. The first day will be at leisure, stroll along the pathways inside the hotel complex and enjoy those first views of the falls at your own pace.
 </p>
@@ -964,7 +963,7 @@ The legacy of "Peronismo" is not only the subject of books or mere memories. It 
 <li>
 <h4>Day 5</h4>
 <h5>IGUAZU - BUENOS AIRES</h5>
-<p>After breakfast, venture out to visit the Brazilian side of the national park, including the spectacular Itaipu Dam. This side of the falls offers by far the best panoramic views, and arguably the most spectacular jungle landscapes. Created in 1939 and covering 170,000 hectares, the Brazilian National Park embraces four municipalities, including Foz do Iguaçu, a name of indigenous origin meaning big water. Even today, the legend of how the falls were formed is part of local folklore. The Naipi and Taroba Indians were a sort of Romeo and Juliet and were pursued by the irascible serpent of the waters, M' Boi, who transformed himself into the various cataracts.</p>
+<p>After breakfast, venture out to visit the Brazilian side of the national park, including the spectacular Itaipu Dam. This side of the falls offers by far the best panoramic views, and arguably the most spectacular jungle landscapes. Created in 1939 and covering 170,000 hectares, the Brazilian National Park embraces four municipalities, including Foz do Igua?u, a name of indigenous origin meaning big water. Even today, the legend of how the falls were formed is part of local folklore. The Naipi and Taroba Indians were a sort of Romeo and Juliet and were pursued by the irascible serpent of the waters, M' Boi, who transformed himself into the various cataracts.</p>
 <p>After lunch at a restaurant on the Brazilian side of the falls, continue to the incredible Itaipu Hydroelectric Dam. Itaipu is the largest power plant on Earth, and generates some 12.6MW of power, enough to supply a staggering 38% of Brazilian and Paraguayan demand. Through this fascinating visit, one can grasp the magnitude of the efforts involved in creating this miracle of engineering.</p>
 <p>Later, transfer to Iguazu Airport for the afternoon flight to Buenos Aires.</p>
 <p><strong>Overnight:</strong> Park Hyatt Palacio Duhau<br />
@@ -974,7 +973,7 @@ The legacy of "Peronismo" is not only the subject of books or mere memories. It 
 <h4>Day 6</h4>
 <h5>BUENOS AIRES - EL CALAFATE</h5>
 <p>This morning transfer to the airport for the flight to El Calafate. Upon arrival, you will be transferred toyour hotel. There will be a short briefing given by the guide about the activities planned for the next three days.</p>
-<p>El Calafate is known for the scenery of imposing glaciers descending from the continental ice field. Thirteen glaciers on the Atlantic side break into huge ice towers onto the waters of the lakes Viedma and Argentino. The front faces of the glaciers Perito Moreno, Mayo, Spegazzini and Upsala fall upon the latter, at a short distance from the shores of the glaciers Agassiz, Onelli, Ameghino and Frías. Tertiary granite elevations covered with thick Andean forests are part of this spectacle. You can go sailing across the lakes to appreciate more closely the front face of the glaciers, or go trekking and climbing.</p>
+<p>El Calafate is known for the scenery of imposing glaciers descending from the continental ice field. Thirteen glaciers on the Atlantic side break into huge ice towers onto the waters of the lakes Viedma and Argentino. The front faces of the glaciers Perito Moreno, Mayo, Spegazzini and Upsala fall upon the latter, at a short distance from the shores of the glaciers Agassiz, Onelli, Ameghino and Fr?as. Tertiary granite elevations covered with thick Andean forests are part of this spectacle. You can go sailing across the lakes to appreciate more closely the front face of the glaciers, or go trekking and climbing.</p>
 <p>The rest of the day is at leisure.</p>
 <p><strong>Overnight:</strong> Los Notros<br />
 <strong>Meal Plan:</strong> B</p>
@@ -1005,6 +1004,7 @@ After 45 minutes or so, head for the Estancia Cristina where a typical, Patagoni
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Argentina"/>
@@ -1012,7 +1012,6 @@ After 45 minutes or so, head for the Estancia Cristina where a typical, Patagoni
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Buenos Aires Iguazu ElCalafate"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="BuenosAires-Iguazu-ElCalafate.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1020,12 +1019,12 @@ After 45 minutes or so, head for the Estancia Cristina where a typical, Patagoni
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Argentina"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Buenos Aires Iguazu ElCalafate"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

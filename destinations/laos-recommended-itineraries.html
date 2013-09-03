@@ -376,7 +376,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 2</h4>
 <h5>Vientiane - Luang Prabang</h5>
-<p>The day's adventure starts with a morning flight north to the imperial capital, Luang Prabang, serenely situated at the junction of the Mekong and Nam Khan Rivers and surrounded by mountains. Explore the city with your guide on board a tuk tuk. Start your city tour at the former Royal Palace, now the National Museum, where you will explore the history of Laos. Continue on foot to Wat Mai, a temple renowned for its golden bas-relief, and WatSensoukarahm, which features a beautiful dazzling golden façade. Finish the tour at WatXieng Thong, the most revered temple in Luang Prabang. Located at the end of the peninsula, close to the Mekong, this temple was built in 1560 by King Setthathirat and is decorated with ornate carvings and mosaics.</p>
+<p>The day's adventure starts with a morning flight north to the imperial capital, Luang Prabang, serenely situated at the junction of the Mekong and Nam Khan Rivers and surrounded by mountains. Explore the city with your guide on board a tuk tuk. Start your city tour at the former Royal Palace, now the National Museum, where you will explore the history of Laos. Continue on foot to Wat Mai, a temple renowned for its golden bas-relief, and WatSensoukarahm, which features a beautiful dazzling golden fa?ade. Finish the tour at WatXieng Thong, the most revered temple in Luang Prabang. Located at the end of the peninsula, close to the Mekong, this temple was built in 1560 by King Setthathirat and is decorated with ornate carvings and mosaics.</p>
 <p>
 After that, climb the 328 stairs of Mount Phousi and watch the sun set over the city and surrounding hills. Visit the hill tribe evening market for some shopping. This colourful market takes place every evening around 5pm along the main streets of town and is a great place to look for mementos of your visit 
 </p>
@@ -431,26 +431,25 @@ Your guide will meet you at the hotel and transfer you to Yensabai Books and Art
 <div id="tab2" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=1;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Laos"/>
 <input type="hidden" name="region_email" id="region_email" value="The Orient"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Jewel of the Mekong"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Jewel-of-the-Mekong.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Laos"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Jewel of the Mekong"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -649,7 +648,6 @@ Continue to the impressive Lippi Falls which are wedged between Don Khone Island
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php $id=2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Laos"/>
@@ -657,19 +655,19 @@ Continue to the impressive Lippi Falls which are wedged between Don Khone Island
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Southern Laos Extension"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Southern-Laos-Extension.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Laos"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Southern Laos Extension"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

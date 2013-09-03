@@ -336,7 +336,7 @@ Join A&K's seasoned expedition team for an enriching experience like no other to
 <li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="../popup-page.html?page=pdf/classic-tanzania.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="../popup-page.html?page=pdf/classic-tanzania.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -386,7 +386,7 @@ Enjoy an Ice Fjord cruise the same day. The Ice Fjord contains one of the bigges
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Greenland"/>
@@ -394,7 +394,7 @@ Enjoy an Ice Fjord cruise the same day. The Ice Fjord contains one of the bigges
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Greenland Glacier Experience"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Greenland Glacier Experience.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -402,12 +402,12 @@ Enjoy an Ice Fjord cruise the same day. The Ice Fjord contains one of the bigges
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Greenland"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Arctic"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Greenland Glacier Experience"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -532,7 +532,7 @@ Enjoy an Ice Fjord cruise the same day. The Ice Fjord contains one of the bigges
 <li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="../popup-page.html?page=pdf/best-tanzania.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="../popup-page.html?page=pdf/best-tanzania.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -583,6 +583,7 @@ local people.
 </ul>
 </div>
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Greenland"/>
@@ -590,7 +591,7 @@ local people.
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Greenland Igloo Adventure"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Greenland Igloo Adventure.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -598,12 +599,12 @@ local people.
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Greenland"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Arctic"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Greenland Igloo Adventure"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -746,7 +747,7 @@ local people.
 <li id="divli10"><a href="javascript:void(0)" onClick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli11"><a href="javascript:void(0)" onClick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli12"><a href="javascript:void(0)" onClick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<!--<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/classic-east-africa.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>-->
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/classic-east-africa.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -819,6 +820,7 @@ local people.
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Greenland"/>
@@ -826,7 +828,7 @@ local people.
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Arctic Adventure: Polar Bear Country"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value=""/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -834,12 +836,12 @@ local people.
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Greenland"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Arctic"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Arctic Adventure: Polar Bear Country"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

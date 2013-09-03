@@ -384,7 +384,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 2</h4>
 <h5>Rio de Janeiro</h5>
-<p>Take in the city sights this morning including the famous cable car ride up Sugar Loaf for 360° views, Guanabara Bay and the legendary golden beaches of Copacabana, Ipanema and Leblon. After a typical Brazilian BBQ lunch visit the Statue of Christ the Redeemer, one of the seven 'new' wonders of the world. Atop Corcovado Hill the views from here are breathtaking. Time also to explore the hilly streets of Santa Teresa with its colonial architecture, home to many artists, intellectuals and handicraft studios</p>
+<p>Take in the city sights this morning including the famous cable car ride up Sugar Loaf for 360? views, Guanabara Bay and the legendary golden beaches of Copacabana, Ipanema and Leblon. After a typical Brazilian BBQ lunch visit the Statue of Christ the Redeemer, one of the seven 'new' wonders of the world. Atop Corcovado Hill the views from here are breathtaking. Time also to explore the hilly streets of Santa Teresa with its colonial architecture, home to many artists, intellectuals and handicraft studios</p>
 <p>
 <strong>Overnight:</strong> Copacabana Palace (Deluxe Ocean View)<br />
 <strong>Meal Plan:</strong> B,L</p>
@@ -407,7 +407,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 5</h4>
 <h5>Salvador da Bahia</h5>
-<p>Today you leave the city behind to explore the nearby farming hinterland, full of sugarcane plantations, peaceful colonial towns and busy country markets. Stop at the country market town of Santo Amaro and on through rolling hills to Cachoeira, the jewel of the Bahian hinterland nestled deep in the valley of the Paraguaçu River. After lunch take a walking tour of the town, with opportunities to browse for local wood carvings and see cigars being expertly rolled</p>
+<p>Today you leave the city behind to explore the nearby farming hinterland, full of sugarcane plantations, peaceful colonial towns and busy country markets. Stop at the country market town of Santo Amaro and on through rolling hills to Cachoeira, the jewel of the Bahian hinterland nestled deep in the valley of the Paragua?u River. After lunch take a walking tour of the town, with opportunities to browse for local wood carvings and see cigars being expertly rolled</p>
 <p>
 <strong>Overnight:</strong> Villa Bahia (Deluxe)<br />
 <strong>Meal Plan:</strong> B,L</p>
@@ -447,7 +447,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Brazil"/>
@@ -455,7 +455,6 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Best of Brazil"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Best-of-Brazil.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -463,12 +462,12 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Brazil"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Best of Brazil"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -634,6 +633,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Brazil"/>
@@ -641,7 +641,6 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Buzios Extension"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Buzios-Extension.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -649,12 +648,12 @@ href="../yahoo.html">
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Brazil"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Buzios Extension"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -839,6 +838,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Brazil"/>
@@ -846,7 +846,6 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Kiaroa Extension"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Kiaroa-Extension.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -854,12 +853,12 @@ href="../yahoo.html">
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Brazil"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Kiaroa Extension"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1075,6 +1074,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Brazil"/>
@@ -1082,7 +1082,6 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Ponta dos Ganchos Extension"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Ponta-dos-Ganchos-Extension.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1091,13 +1090,13 @@ href="../yahoo.html">
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Brazil"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ponta dos Ganchos Extension"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

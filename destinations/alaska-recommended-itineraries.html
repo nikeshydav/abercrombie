@@ -306,10 +306,10 @@ EXPERIENCE DENALI NAT PARK AND KANTISHNA TOUR</h2>
 <a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -324,10 +324,10 @@ EXPERIENCE DENALI NAT PARK AND KANTISHNA TOUR</h2>
 <a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
 </div>
 </div>
 <div class="Clr"></div>
@@ -429,26 +429,26 @@ All meals are included today (alcoholic beverages are not included).<br /><br />
 <div id="tab2" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=1;?>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Alaska"/>
 <input type="hidden" name="region_email" id="region_email" value="North America"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Alaska"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="alaska_ednpkt.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Alaska"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Alaska"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -632,6 +632,7 @@ After returning about 4:00pm, the evening is free to explore the Visitor Center 
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Alaska"/>
@@ -639,7 +640,7 @@ After returning about 4:00pm, the evening is free to explore the Visitor Center 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Alaska"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="alaska_taste_denali_tour.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -647,12 +648,12 @@ After returning about 4:00pm, the evening is free to explore the Visitor Center 
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Alaska"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Alaska"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -791,11 +792,11 @@ After returning about 4:00pm, the evening is free to explore the Visitor Center 
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
-<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li id="divli9"><a href="javascript:void(0)" onClick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli10"><a href="javascript:void(0)" onClick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli11"><a href="javascript:void(0)" onClick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli12"><a href="javascript:void(0)" onClick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
 <li><a href="../popup-page.html?page=pdf/alaska _winterlake_tutka_bay_wilderness_lodge_combination_favorite.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
@@ -804,7 +805,7 @@ After returning about 4:00pm, the evening is free to explore the Visitor Center 
 <div class="popupheader">
 <div class="logoinner"><img src="../images/alaska-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
-<div id="tab5">
+<div id="tab9">
 <h1>WINTERLAKE & TUTKA BAY WILDERNESS LODGE COMBINATION FAVORITE</h1>
 <div class="popupbanner"><img src="../images/alaska3.jpg" alt="Alaska" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
@@ -827,7 +828,7 @@ Private transfer from the hotel to the air taxi company in Anchorage from where 
 All meals during the stay at Winterlake Lodge are included. (Alcoholic beverages are not included).<br /><br />
 <strong>Winterlake Lodge</strong><br /><br />
 <strong>Lodge Information:</strong> Beautiful Winterlake Lodge is located on the southern boundary of Denali National Park, on the historic Iditarod Trail. It is one of the best lodges in Alaska and offers seclusion and spectacular scenery. Trimble and Hayes Glacier, as well as the entrance to Rainy Pass can all be seen from the lake. Guests enjoy opportunities for hiking and wildlife viewing with many species of Alaska birds, wildflowers, and berries that are rarely seen in other locales. As the lodge is located on the Iditarod Trail it also is a check point during the famous dog sled race (Iditarod) every March. <br /><br />
-<strong>Lodge setting and accommodation: </strong>The main lodge offers a comfortable main room for relaxing by the fire and viewing the lake from large picture windows. There is a cozy dining area and large kitchen for the preparation of the lodge’s signature gourmet cuisine. Facilities also include a large meditation yoga room, hot tub on the main deck, and a wood-burning sauna. These are the sites of a wellness program that includes massage therapy. There are 5 guest cabins on the property, each with private bath, including a family cabin with 3 sleeping rooms. There is wireless internet access in the main lodge.<br /><br />
+<strong>Lodge setting and accommodation: </strong>The main lodge offers a comfortable main room for relaxing by the fire and viewing the lake from large picture windows. There is a cozy dining area and large kitchen for the preparation of the lodge?s signature gourmet cuisine. Facilities also include a large meditation yoga room, hot tub on the main deck, and a wood-burning sauna. These are the sites of a wellness program that includes massage therapy. There are 5 guest cabins on the property, each with private bath, including a family cabin with 3 sleeping rooms. There is wireless internet access in the main lodge.<br /><br />
 <strong>Fine Dining:</strong> Lodge owner and renowned chef Kirsten Dixon offers world-class culinary classes at the lodge with visiting chefs and specialized culinary programs throughout the year. Gourmet meals are served from a daily menu (changed every day and posted in the main lodge). In keeping with tradition, Alaska regional cuisine is featured. Guests are welcome to come into the kitchen at any time and help cook! Special dishes may be made on request. The lodge also offers frequent lakeside barbecues of Alaska salmon and King Crab. <br /><br />
 <strong>Activities:</strong> Most activities are included; daily activity sheets are posted in each cabin. Daily activities may include narrated walks, hiking, canoeing and kayaking; watching wild birds; berry picking. A helicopter has been dedicated at the lodge that takes guests on flightseeing tours, fishing, glacier trekking or to the dog camp up on top of a glacier (helicopter excursions are NOT included and at additional costs; fishing license is not included and at additional cost). <br /><br />
 There is also plenty of time to relax and spoil the senses: cooking classes (offered daily); wine and cheese tastings; Yoga and stretch classes, therapeutic massages, soaking in the hot tub or swimming in the lake are other options! <br /><br />
@@ -878,32 +879,33 @@ Upon arrival in Anchorage, private transfer to your hotel.<br /><br />
 </ul>
 </div>
 
-<div id="tab6" style="display:none;">
-<?php $id =2;?>
+<div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
+<?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Alaska"/>
 <input type="hidden" name="region_email" id="region_email" value="North America"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Alaska"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="alaska_taste_denali_tour.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
-<div id="tab7" style="display:none;">
+<div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Alaska"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Alaska"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
-<div id="tab8" style="display:none;">
+<div id="tab12" style="display:none;">
 <script type="text/javascript">
 	
 			var markerLetter = 'A';
@@ -911,9 +913,9 @@ Upon arrival in Anchorage, private transfer to your hotel.<br /><br />
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize1() {
+			function gmapInitialize2() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas1"));
+					map = new GMap2(document.getElementById("map_canvas2"));
 					map.setUIToDefault();
 					
 					
@@ -1020,7 +1022,7 @@ Upon arrival in Anchorage, private transfer to your hotel.<br /><br />
 	
 		</script>
 
-<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>
@@ -1074,7 +1076,7 @@ Upon arrival in Anchorage, private transfer to your hotel.<br /><br />
 <p>Private transfer from the hotel to the air taxi company in Anchorage from where you take a scenic flight in a floatplane to Winterlake Lodge. Flight time from Anchorage to Winterlake Lodge (approx. 50 minutes)<br />
 All meals during the stay at Winterlake Lodge are included. (Alcoholic beverages are not included).<br /><br />
 <strong>Winterlake Lodge</strong><br /><br />
-<strong>Lodge Information:</strong> Beautiful Winterlake Lodge is located on the southern boundary of Denali National Park, on the historic Iditarod Trail. It is one of the best lodges in Alaska and offers seclusion and spectacular scenery. Trimble and Hayes Glacier, as well as the entrance to Rainy Pass can all be seen from the lake. Guests enjoy opportunities for hiking and wildlife viewing with many species of Alaska birds, wildflowers, and berries that are rarely seen in other locales. As the lodge is located on the Iditarod Trail it also is a check point during the famous dog sled race (Iditarod) every March. Lodge setting and accommodation: The main lodge offers a comfortable main room for relaxing by the fire and viewing the lake from large picture windows. There is a cozy dining area and large kitchen for the preparation of the lodge’s signature gourmet cuisine. Facilities also include a large meditation yoga room, hot tub on the main deck, and a wood-burning sauna. These are the sites of a wellness program that includes massage therapy. There are 5 guest cabins on the property, each with private bath, including a family cabin with 3 sleeping rooms. There is wireless internet access in the main lodge.<br /><br />
+<strong>Lodge Information:</strong> Beautiful Winterlake Lodge is located on the southern boundary of Denali National Park, on the historic Iditarod Trail. It is one of the best lodges in Alaska and offers seclusion and spectacular scenery. Trimble and Hayes Glacier, as well as the entrance to Rainy Pass can all be seen from the lake. Guests enjoy opportunities for hiking and wildlife viewing with many species of Alaska birds, wildflowers, and berries that are rarely seen in other locales. As the lodge is located on the Iditarod Trail it also is a check point during the famous dog sled race (Iditarod) every March. Lodge setting and accommodation: The main lodge offers a comfortable main room for relaxing by the fire and viewing the lake from large picture windows. There is a cozy dining area and large kitchen for the preparation of the lodge?s signature gourmet cuisine. Facilities also include a large meditation yoga room, hot tub on the main deck, and a wood-burning sauna. These are the sites of a wellness program that includes massage therapy. There are 5 guest cabins on the property, each with private bath, including a family cabin with 3 sleeping rooms. There is wireless internet access in the main lodge.<br /><br />
 <strong>Fine Dining:</strong> Lodge owner and renowned chef Kirsten Dixon offers world-class culinary classes at the lodge with visiting chefs and specialized culinary programs throughout the year. Gourmet meals are served from a daily menu (changed every day and posted in the main lodge). In keeping with tradition, Alaska regional cuisine is featured. Guests are welcome to come into the kitchen at any time and help cook! Special dishes may be made on request. The lodge also offers frequent lakeside barbecues of Alaska salmon and King Crab.<br /><br />
 <strong>Activities: </strong>Most activities are included; daily activity sheets are posted in each cabin. Daily activities may include narrated walks, hiking, canoeing and kayaking; watching wild birds; berry picking. A helicopter has been dedicated at the lodge that takes guests on flightseeing tours, fishing, glacier trekking or to the dog camp up on top of a glacier (helicopter excursions are NOT included and at additional costs fishing license is not included and at additional cost).<br />
 There is also plenty of time to relax and spoil the senses: cooking classes (offered daily); wine and cheese tastings; Yoga and stretch classes, therapeutic massages, soaking in the hot tub or swimming in the lake are other options!<br />
@@ -1104,32 +1106,33 @@ Upon arrival in Anchorage, private transfer to your hotel.<br /><br />
 </ul>
 </div>
 
-<div id="tab6" style="display:none;">
-<?php $id =2;?>
+<div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
+<?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Alaska"/>
 <input type="hidden" name="region_email" id="region_email" value="North America"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Alaska"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="alaska_winterlake_lodge_experience.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
-<div id="tab7" style="display:none;">
+<div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Alaska"/>
 <input type="hidden" name="region_quote" id="region_quote" value="North America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Alaska"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
-<div id="tab8" style="display:none;">
+<div id="tab16" style="display:none;">
 <script type="text/javascript">
 	
 			var markerLetter = 'A';
@@ -1137,9 +1140,9 @@ Upon arrival in Anchorage, private transfer to your hotel.<br /><br />
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize1() {
+			function gmapInitialize3() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas1"));
+					map = new GMap2(document.getElementById("map_canvas3"));
 					map.setUIToDefault();
 					
 					
@@ -1246,7 +1249,7 @@ Upon arrival in Anchorage, private transfer to your hotel.<br /><br />
 	
 		</script>
 
-<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas3" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>

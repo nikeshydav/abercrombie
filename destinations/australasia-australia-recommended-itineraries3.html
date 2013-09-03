@@ -562,7 +562,7 @@ Nothing you have ever experienced will prepare you for the awe inspiring views f
 <li>
 <h4>Day 16</h4>
 <h5>Melbourne </h5>
-<p>Private Lanes & Arcades - 2 course Lunch - (3-4 hours) 3 people only. This morning you will be met in the hotel lobby for your private half day walking tour of Melbourne. This tour takes in Melbourne's 'hidden secrets' - the fabulous places that only the locals know about. Discover her celebrated arcades & alleyways - home to the café culture, the independent fashion labels, the hippest bars, the finest architecture, the multicultural restaurants, the commissioned street art & the heartbeat of this city. Differing from Sydney, Melbourne needs to be explored & discovered - so join your local guide & see the best of Melbourne. You will conclude your walk with lunch at a local restaurant, with the afternoon at your leisure to relax - or continue the exploration on your own.</p>
+<p>Private Lanes & Arcades - 2 course Lunch - (3-4 hours) 3 people only. This morning you will be met in the hotel lobby for your private half day walking tour of Melbourne. This tour takes in Melbourne's 'hidden secrets' - the fabulous places that only the locals know about. Discover her celebrated arcades & alleyways - home to the caf? culture, the independent fashion labels, the hippest bars, the finest architecture, the multicultural restaurants, the commissioned street art & the heartbeat of this city. Differing from Sydney, Melbourne needs to be explored & discovered - so join your local guide & see the best of Melbourne. You will conclude your walk with lunch at a local restaurant, with the afternoon at your leisure to relax - or continue the exploration on your own.</p>
 <p>
 <strong>Overnight:</strong> Park Hyatt Melbourne, Twin interconnecting with a Park Suite<br />
 <strong>Meal Plan:</strong> B,L</p>
@@ -592,7 +592,7 @@ A sumptuous lunch is served at Apollo Bay before we make our way to the Shipwrec
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -600,7 +600,7 @@ A sumptuous lunch is served at Apollo Bay before we make our way to the Shipwrec
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Australian Family Adventure"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AustralianFamilyAdventure.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -608,12 +608,12 @@ A sumptuous lunch is served at Apollo Bay before we make our way to the Shipwrec
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Australian Family Adventure"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -768,7 +768,7 @@ A sumptuous lunch is served at Apollo Bay before we make our way to the Shipwrec
 <li>
 <h4>Day 2</h4>
 <h5>Adelaide - Flinders Ranges</h5>
-<p>Board your private aircraft and fly north over the Flinders Ranges, viewing Wilpena Pound en-route to Arkaba Station at the foothills of the Elder Range. The afternoon is at leisure.  Take a bush walk, laze by the pool or try mountain biking. Keep your eye out for the colonies of Yellow-footed Rock Wallabies that reside in the Elder Range.  Later, champagne and canapés will be served on McClouds Hill with views over the Flinders Ranges followed by a gourmet dinner prepared by your private chef.</p>
+<p>Board your private aircraft and fly north over the Flinders Ranges, viewing Wilpena Pound en-route to Arkaba Station at the foothills of the Elder Range. The afternoon is at leisure.  Take a bush walk, laze by the pool or try mountain biking. Keep your eye out for the colonies of Yellow-footed Rock Wallabies that reside in the Elder Range.  Later, champagne and canap?s will be served on McClouds Hill with views over the Flinders Ranges followed by a gourmet dinner prepared by your private chef.</p>
 <p>
 <strong>Overnight:</strong> Arkaba Station<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -809,6 +809,7 @@ Travel home from Alice Springs Airport or extend your journey to another Austral
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -816,7 +817,7 @@ Travel home from Alice Springs Airport or extend your journey to another Austral
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Art by Air South Australia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ArtbyAirSouthAustralia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -824,12 +825,12 @@ Travel home from Alice Springs Airport or extend your journey to another Austral
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Art by Air South Australia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1031,7 +1032,7 @@ Pool Suites<br />
 On Levels 1, 2 and 3 of the Pool Wing, overlooking the famous Hayman Pool and tropical gardens. Suites on Level 3 also offer views of the Hayman Beach and Coral Sea. Each suite has a separate bedroom, dressing room and lounge/dining room. Special features include a double balcony and large marble bathroom with separate shower and bath. The suite area is 75 square metres. An adjoining twin bedroom can be added to selected suites to create a 2-bedroom suite. Suite guests receive the personalised concierge service.</p>
 <p>
 Lagoon Suites<br />
-On Levels 1, 2 and 3 of the Lagoon Wing, overlooking the Lily Lagoon, Lagoon Pool and tropical gardens. Suites on Level 3 also offer views of Hayman Beach and the Coral Sea. Each of these luxurious suites has a separate bedroom, dressing room area, guest bathroom and lounge room. Décor reflects a relaxed resort feel, featuring soft, natural textures, cool marbles and rich, warm woods. A large balcony is furnished with an outdoor teakwood setting. Special features include a double balcony, spacious living/dining room, walk-in robe and open plan bathroom with centrepiece bath and double vanity. The suite area is 90 square metres. An adjoining twin bedroom can be added to selected suites to create a 2-bedroom suite. Suite guests receive the personalised concierge service.</p>
+On Levels 1, 2 and 3 of the Lagoon Wing, overlooking the Lily Lagoon, Lagoon Pool and tropical gardens. Suites on Level 3 also offer views of Hayman Beach and the Coral Sea. Each of these luxurious suites has a separate bedroom, dressing room area, guest bathroom and lounge room. D?cor reflects a relaxed resort feel, featuring soft, natural textures, cool marbles and rich, warm woods. A large balcony is furnished with an outdoor teakwood setting. Special features include a double balcony, spacious living/dining room, walk-in robe and open plan bathroom with centrepiece bath and double vanity. The suite area is 90 square metres. An adjoining twin bedroom can be added to selected suites to create a 2-bedroom suite. Suite guests receive the personalised concierge service.</p>
 <p>
 <strong>Overnight:</strong> Hayman Island, Pool or Lagoon Suite<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -1054,6 +1055,7 @@ On Levels 1, 2 and 3 of the Lagoon Wing, overlooking the Lily Lagoon, Lagoon Poo
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australasia"/>
@@ -1061,7 +1063,7 @@ On Levels 1, 2 and 3 of the Lagoon Wing, overlooking the Lily Lagoon, Lagoon Poo
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Hayman Island and Descarada Relaxation"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="HaymanIslandandDescaradaRelaxation.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1069,12 +1071,12 @@ On Levels 1, 2 and 3 of the Lagoon Wing, overlooking the Lily Lagoon, Lagoon Poo
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australasia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Hayman Island and Descarada Relaxation"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1321,7 +1323,7 @@ The Park Hyatt Melbourne is the city's most deluxe hotel. It is located at the '
 <li>
 <h4>Day 4</h4>
 <h5>Melbourne - Port Fairy</h5>
-<p>This morning you will be met in the hotel lobby by historian and raconteur Kenneth Park for a private look at elegant Melbourne. This 1.5 walking tour takes in Melbourne's 'hidden secrets' - the fabulous places that only the locals know about. Discover her celebrated arcades & alleyways - home to the café culture, the independent fashion labels, the hippest bars, the finest architecture, the multicultural restaurants, the commissioned street art & the heartbeat of this city. Differing from Sydney, Melbourne needs to be explored & discovered - so join your local guide & see the best of Melbourne.</p>
+<p>This morning you will be met in the hotel lobby by historian and raconteur Kenneth Park for a private look at elegant Melbourne. This 1.5 walking tour takes in Melbourne's 'hidden secrets' - the fabulous places that only the locals know about. Discover her celebrated arcades & alleyways - home to the caf? culture, the independent fashion labels, the hippest bars, the finest architecture, the multicultural restaurants, the commissioned street art & the heartbeat of this city. Differing from Sydney, Melbourne needs to be explored & discovered - so join your local guide & see the best of Melbourne.</p>
 <p>
 Returning to your hotel to check out, collect your vehicle & begin your self-drive adventure along the Great Ocean Road!</p>
 <p>
@@ -1354,7 +1356,7 @@ Southern Ocean Lodge is Kangaroo Island's only world-class wilderness lodge. Loc
 <li>
 <h4>Day 7</h4>
 <h5>Kangaroo Island</h5>
-<p>These 2 days are at your leisure to participate in Lodge eco-touring including 4WD touring to Flinders Chase National Park, the Remarkable Rocks, Seal Bay, beach fishing, cliff top coastal walks, canapés with kangaroos and Kelly Hill Caves. Or you may choose to simply relax at the lodge, choose a bottle of South Australian wine from the cellar & sit in the Grand Room overlooking the Southern Ocean with a book.</p>
+<p>These 2 days are at your leisure to participate in Lodge eco-touring including 4WD touring to Flinders Chase National Park, the Remarkable Rocks, Seal Bay, beach fishing, cliff top coastal walks, canap?s with kangaroos and Kelly Hill Caves. Or you may choose to simply relax at the lodge, choose a bottle of South Australian wine from the cellar & sit in the Grand Room overlooking the Southern Ocean with a book.</p>
 <p>
 <strong>Overnight:</strong> Southern Ocean Lodge<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -1398,7 +1400,7 @@ On arrival into this remote & rugged region you will be introduced to your hosts
 <li>
 <h4>Day 12</h4>
 <h5>Flinders Ranges</h5>
-<p>Today is at your leisure to join your Arkaba eco-guide in the open-top 4WD to explore this outstanding landscape. Journey to the top of the ridge & take in the most spectacular views of this untouched part of Australia. Kangaroos & wallabies abound - and it is impossible to take a bad photograph. End the day with champagne & canapés by a billabong (waterhole) and as you listen to the native Australian birdlife sing. You will conclude the day back at the homestead for a gourmet meal with matching Australian wines.</p>
+<p>Today is at your leisure to join your Arkaba eco-guide in the open-top 4WD to explore this outstanding landscape. Journey to the top of the ridge & take in the most spectacular views of this untouched part of Australia. Kangaroos & wallabies abound - and it is impossible to take a bad photograph. End the day with champagne & canap?s by a billabong (waterhole) and as you listen to the native Australian birdlife sing. You will conclude the day back at the homestead for a gourmet meal with matching Australian wines.</p>
 <p>
 <strong>Overnight:</strong> Arkaba Station<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -1443,6 +1445,7 @@ Whilst cruising this iconic harbour you will have the opportunity to swim, fish 
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1450,7 +1453,7 @@ Whilst cruising this iconic harbour you will have the opportunity to swim, fish 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="An Australian Adventure"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AnAustralianAdventure.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1459,13 +1462,13 @@ Whilst cruising this iconic harbour you will have the opportunity to swim, fish 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="An Australian Adventure"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

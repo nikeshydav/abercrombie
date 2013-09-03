@@ -386,7 +386,7 @@ Melbourne, the capital of the state of Victoria, is known as the Garden, Arts an
 <p>
 The remainder of the day is at your leisure in Melbourne.</p>
 <p>
-Sofitel Melbourne is located at the Paris End of Collins Street offering rooms with stunning views from levels 36 to 50, contemporary furnishings, marble bathrooms and state of the art technology. The 35th Floor provides contemporary dining in Cafe La and cocktails in the Atrium Bar. Sumptuous high teas are available in Sofi's on Level 1 and the new executive lounge on Level 35, Club Sofitel, offers private check in, evening drinks and canapés.</p>
+Sofitel Melbourne is located at the Paris End of Collins Street offering rooms with stunning views from levels 36 to 50, contemporary furnishings, marble bathrooms and state of the art technology. The 35th Floor provides contemporary dining in Cafe La and cocktails in the Atrium Bar. Sumptuous high teas are available in Sofi's on Level 1 and the new executive lounge on Level 35, Club Sofitel, offers private check in, evening drinks and canap?s.</p>
 <p>
 <strong>Overnight:</strong> Sofitel Melbourne<br />
 <strong>Meal Plan:</strong> B</p>
@@ -467,7 +467,7 @@ Southern Ocean Lodge offers guests a complete Kangaroo Island experience. With e
 <p>
 The Lodge activity programme allows guests to experience Kangaroo Island in a stylish and relaxed manner - there is no need to spend hours travelling between attractions quite simply because the lodge is located at the heart if the Island's major attractions. In order to ensure an intimate, private and personal experience, tours will operate with no more than 10 guests per group, in customised four-wheel drive vehicles with private naturalist guides. Visits to natural attractions will be carefully timed at visitor quiet times to maintain a private safari feel.</p>
 <p>
-Activities include watching the sea-lions at sunrise with a morning coffee, fresh fruit or danish before arriving back at the lodge in time for a gourmet breakfast, Kangaroo Island wildlife tours and drives, sunset sundowners and canapés, beach fishing, clifftop nature walks and koala spotting/stargazing night walks amongst other activities.</p>
+Activities include watching the sea-lions at sunrise with a morning coffee, fresh fruit or danish before arriving back at the lodge in time for a gourmet breakfast, Kangaroo Island wildlife tours and drives, sunset sundowners and canap?s, beach fishing, clifftop nature walks and koala spotting/stargazing night walks amongst other activities.</p>
 <p>
 <strong>Overnight:</strong> Southern Ocean Lodge<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -566,7 +566,7 @@ Superbly situated right on Sydney Harbour in the city's historic Rocks area, the
 <h5>Sydney</h5>
 <p>Meet your guide and chauffeur in the lobby. Today's tour of Sydney begins with a visit to Taronga Zoo.</p>
 <p>
-Enjoy a private 'behind the scenes' visit to Taronga Zoo with your own expert senior Zoo Keeper. This special tour has been designed to encourage interaction between visitors and Australian animals. Enjoy a close-up introduction to Australia's unusual wildlife including excellent photographic opportunities with koalas, kangaroos and echidnas. Spend time in the Zoo';s kitchen preparing lunch for its animals before venturing into the Nightlife House to enjoy close encounters with Australia's unique nocturnal creatures. On completion of the tour morning tea will be served at Treetops Café with your Zoo Keeper.</p>
+Enjoy a private 'behind the scenes' visit to Taronga Zoo with your own expert senior Zoo Keeper. This special tour has been designed to encourage interaction between visitors and Australian animals. Enjoy a close-up introduction to Australia's unusual wildlife including excellent photographic opportunities with koalas, kangaroos and echidnas. Spend time in the Zoo';s kitchen preparing lunch for its animals before venturing into the Nightlife House to enjoy close encounters with Australia's unique nocturnal creatures. On completion of the tour morning tea will be served at Treetops Caf? with your Zoo Keeper.</p>
 <p>
 Continue on for lunch at one of Sydney's finest local restaurants.  After lunch, visit the world-famous Bondi Beach, Paddington and the Rocks region of Sydney.</p>
 <p>
@@ -621,7 +621,7 @@ While staying at the resort, guests are free to do as much or as little as they 
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -629,7 +629,7 @@ While staying at the resort, guests are free to do as much or as little as they 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="The Romance of Australia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TheRomanceofAustralia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -637,12 +637,12 @@ While staying at the resort, guests are free to do as much or as little as they 
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Romance of Australia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -799,7 +799,7 @@ Park Hyatt Melbourne</p>
 <p>
 The Park Hyatt Melbourne is the city's most deluxe hotel. It is located at the 'top end' of Collins Street, directly opposite Melbourne's grandest cathedral and a few steps from Parliament House, the central business district and the beautiful Fitzroy Gardens. The luxurious oversized rooms are a haven for relaxation and comfort.</p>
 <p>
-Club lounge rooms occupy the top floors of the Park Tower and enjoy premium views of the city and surrounding Fitzroy Gardens. Guest in the Club lounge Rooms are invited to utilise our exclusive Park Lounge, located on level 19. Park Lounge offers a private sanctuary with floor-to-ceiling windows and breathtaking views over Melbourne. An open fireplace creates an atmosphere of warmth and provides the perfect setting to enjoy a leisurely glass of wine or a casual coffee in the afternoon. Park lounge offers a full buffet breakfast (served in Trilogy Bistro), evening drinks with canapés, and all day service of tea and coffee.</p>
+Club lounge rooms occupy the top floors of the Park Tower and enjoy premium views of the city and surrounding Fitzroy Gardens. Guest in the Club lounge Rooms are invited to utilise our exclusive Park Lounge, located on level 19. Park Lounge offers a private sanctuary with floor-to-ceiling windows and breathtaking views over Melbourne. An open fireplace creates an atmosphere of warmth and provides the perfect setting to enjoy a leisurely glass of wine or a casual coffee in the afternoon. Park lounge offers a full buffet breakfast (served in Trilogy Bistro), evening drinks with canap?s, and all day service of tea and coffee.</p>
 <p>
 For dinner this evening we recommend a restaurant reservation at The Press Club</p>
 <p>
@@ -841,7 +841,7 @@ Southern Ocean Lodge Southern Ocean Lodge is Kangaroo Island's only world-class 
 <li>
 <h4>Day 4</h4>
 <h5>Kangaroo Island</h5>
-<p>These 2 days are at your leisure to participate in the Lodge experiences & eco-sightseeing including Seal Bay, Flinders Chase National Park, Remarkable Rocks, beach fishing, cliff top guided walks, canapés with the kangaroos at dusk, star gazing - or of course you may simply choose to pick a South Australia wine from the cellar, sit in the Great Room & take in the spectacular Southern Ocean.</p>
+<p>These 2 days are at your leisure to participate in the Lodge experiences & eco-sightseeing including Seal Bay, Flinders Chase National Park, Remarkable Rocks, beach fishing, cliff top guided walks, canap?s with the kangaroos at dusk, star gazing - or of course you may simply choose to pick a South Australia wine from the cellar, sit in the Great Room & take in the spectacular Southern Ocean.</p>
 <p>
 <strong>Overnight:</strong> Southern Ocean Lodge<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -861,8 +861,8 @@ Southern Ocean Lodge Southern Ocean Lodge is Kangaroo Island's only world-class 
 <p>
 The giant red monolith has come to represent Australia itself. The massive sandstone rock - the summit of a buried mountain - generates an almost mystical power. 'The Rock' is 8.8 kilometres around the base, 3.6 kilometres long, 2.4 kilometres wide and towers 348 metres above the surrounding plain. The Anangu people believe they are the direct descendents of the ancestral spirits who gave them the laws and rules that they live by. They believe they are responsible for the protection of the lands and ask visitors to respect their wishes not to climb the rock. Its significant power can be felt particularly in the early morning or at sunset as the Rock undergoes an extraordinary transformation of colour.</p>
 <p>
-After arriving at Longitude 131° and settling in, meet in the Dune House for a 3pm departure to the Cultural Centre where you will learn the cultural and spiritual meanings of Uluru & Kata Tjuta. Afterwards you will travel to Uluru, where we will take a short walk into Kantju Gorge. On arrival at the gorge we will serve refreshments 'inside' Uluru and watch the sunset. You will return to Longitude 131° at approximately 7.15pm.<br />
-On your return, relax in the Dune House over pre-dinner drinks and canapés before enjoying a gourmet dinner with your fellow travellers or for a special occasion a private dinner by the pool or on the Dune Top.</p>
+After arriving at Longitude 131? and settling in, meet in the Dune House for a 3pm departure to the Cultural Centre where you will learn the cultural and spiritual meanings of Uluru & Kata Tjuta. Afterwards you will travel to Uluru, where we will take a short walk into Kantju Gorge. On arrival at the gorge we will serve refreshments 'inside' Uluru and watch the sunset. You will return to Longitude 131? at approximately 7.15pm.<br />
+On your return, relax in the Dune House over pre-dinner drinks and canap?s before enjoying a gourmet dinner with your fellow travellers or for a special occasion a private dinner by the pool or on the Dune Top.</p>
 <p>
 Longitude 131 The new 'safari' style luxury tented site is the first of its kind in Australia. Built on the very edge of Uluru Kata Tjuta National Park, the fifteen individual tents have uninterrupted views over Uluru. Relax in the free-form swimming pool and enjoy an aperitif on the balcony as the sunsets over the desert, or simply lie in bed and watch the stars rise over the outback. Inside the tent, the atmosphere is lavish with expansive stone floors, beautiful bed linen and unique bathrooms and air conditioning. This is a special place where you will connect with the desert landscape and its magnificent natural wonders. At the Dune House enjoy a quiet drink, good food and the company of newfound friends.</p>
 <p>
@@ -873,11 +873,11 @@ Longitude 131 The new 'safari' style luxury tented site is the first of its kind
 <h4>Day 7</h4>
 <h5>Ayers Rock</h5>
 <p>
-Depart Longitude 131° at 6am bound for Kata Tjuta. Upon arrival you will begin your journey with a guided tour of Walpa Gorge, where the natural history of Kata Tjuta is explained in great detail, learning how eons of weathering and continental upheaval have created what is seen today. You will return to Longitude 131° at approximately 10am.</p>
+Depart Longitude 131? at 6am bound for Kata Tjuta. Upon arrival you will begin your journey with a guided tour of Walpa Gorge, where the natural history of Kata Tjuta is explained in great detail, learning how eons of weathering and continental upheaval have created what is seen today. You will return to Longitude 131? at approximately 10am.</p>
 <p>
 Spend your afternoon at leisure, perhaps have a swim in the pool or take the opportunity to enjoy any of our optional tours, such as a camel ride, Harley ride or helicopter tour over Uluru and Kata Tjuta.</p>
 <p>
-Enjoy sunset drinks and canapés on the Dune Top from 6pm. You will then be transferred to our outdoor dining venue - Table 131°, where you'll have an unforgettable dining experience under the stars. Return to the Dune House for complimentary after dinner drinks.</p>
+Enjoy sunset drinks and canap?s on the Dune Top from 6pm. You will then be transferred to our outdoor dining venue - Table 131?, where you'll have an unforgettable dining experience under the stars. Return to the Dune House for complimentary after dinner drinks.</p>
 <p>
 <strong>Overnight:</strong> Longitude 131<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -926,7 +926,7 @@ Choose from a wide choice of activities including guided nature walks, kayaking,
 <p>
 Picture yourself sipping French champagne while taking full advantage of the seascape views at idyllic Ospreys Restaurant. With an accent on fresh seafood and superb local produce, the daily changing menus draw on the flavours of modern Australian, Asian and European cuisine.</p>
 <p>
-Most recent accolades include featuring in Condé Nast Traveller's 2010 Gold List as only one of two Australian hotels named for Best Hotels for Leisure Facilities and ranking 8th place in the category 'Top 20 Resorts Oceania' in the US Condé Nast Traveller Readers' Choice Awards</p>
+Most recent accolades include featuring in Cond? Nast Traveller's 2010 Gold List as only one of two Australian hotels named for Best Hotels for Leisure Facilities and ranking 8th place in the category 'Top 20 Resorts Oceania' in the US Cond? Nast Traveller Readers' Choice Awards</p>
 <p>
 <strong>Overnight: </strong>Lizard Island<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -984,7 +984,7 @@ For dinner this evening we recommend a restaurant reservation at Aria.</p>
 <h5>Sydney</h5>
 <p>Meet your driver in the hotel lobby for your transfer to the waterfront suburb of Rose Bay. Here your seaplane awaits for a journey to lunch that your will never forget, affording your truly breathtaking views of Sydney, her harbour & all the Sydney icons.</p>
 <p>
-A mere 20 minutes flying time from the hustle and bustle of Sydney is the exquisitely tranquil and award winning Cottage Point Inn. This beautiful restaurant is perched on the water's edge in the heart of the Ku-ring-gai Chase National Park and is renowned for offering exceptional modern Australian cuisine. Upon landing, your pilot taxis the aircraft to the restaurant's seaplane dock, where Cottage Point Inn's friendly staff offers a warm welcome and any number of great Australian wines! After a leisurely 3 course à la carte lunch reboard your seaplane and return to Sydney Harbour. To top off a magical afternoon we offer you an incredible photo opportunity flying a circuit of the Harbour Bridge and Opera House, before landing at Rose Bay. Your driver awaits to return you to your hotel at around 4.00pm.</p>
+A mere 20 minutes flying time from the hustle and bustle of Sydney is the exquisitely tranquil and award winning Cottage Point Inn. This beautiful restaurant is perched on the water's edge in the heart of the Ku-ring-gai Chase National Park and is renowned for offering exceptional modern Australian cuisine. Upon landing, your pilot taxis the aircraft to the restaurant's seaplane dock, where Cottage Point Inn's friendly staff offers a warm welcome and any number of great Australian wines! After a leisurely 3 course ? la carte lunch reboard your seaplane and return to Sydney Harbour. To top off a magical afternoon we offer you an incredible photo opportunity flying a circuit of the Harbour Bridge and Opera House, before landing at Rose Bay. Your driver awaits to return you to your hotel at around 4.00pm.</p>
 <p>
 For dinner this evening we recommend a restaurant reservation at Tetsuya or Icebergs at Bondi.</p>
 <p><strong>Overnight:</strong> Four Seasons Hotel Sydney<br />
@@ -1001,6 +1001,7 @@ For dinner this evening we recommend a restaurant reservation at Tetsuya or Iceb
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1008,7 +1009,7 @@ For dinner this evening we recommend a restaurant reservation at Tetsuya or Iceb
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="A platinum programme"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Aplatinumprogramme.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1016,12 +1017,12 @@ For dinner this evening we recommend a restaurant reservation at Tetsuya or Iceb
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="A platinum programme"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1247,6 +1248,7 @@ Coral Bay is as idyllic as the name suggests. With a sweeping bay, bobbing yacht
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1254,7 +1256,7 @@ Coral Bay is as idyllic as the name suggests. With a sweeping bay, bobbing yacht
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Pristine Waters of Ningaloo Reef"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="PristineWatersofNingalooReef.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1262,12 +1264,12 @@ Coral Bay is as idyllic as the name suggests. With a sweeping bay, bobbing yacht
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Pristine Waters of Ningaloo Reef"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1468,7 +1470,7 @@ Melbourne, the capital of the state of Victoria, is known as the garden, arts an
 <p>
 After meeting your guide visit Cook's Cottage before taking a walk through the unique Royal Botanic Gardens, laid out over 150 years ago and reputed to be the finest in the Southern Hemisphere. Delight in the over 10,000 species and 50,000 individual plants in the 38 hectare gardens, including trees and plants of great cultural value. Many of these plants are irreplaceable, endangered or even extinct in the wild and have become a natural sanctuary for native wild life including black swans, bell birds, cockatoos and kookaburras that fill the air with their distinctive song. Travel past Victorian terrace houses, the city's exclusive suburbs and the Arts precinct before returning to the hotel at the 'Paris End' of the city.</p>
 <p>
-The Park Hyatt Melbourne is the city's most deluxe hotel. It is located at the 'top end' of Collins Street, directly opposite Melbourne's grandest cathedral and a few steps from Parliament House, the central business district and the beautiful Fitzroy Gardens. The luxurious oversized rooms are a haven for relaxation and comfort. This evening enjoy all inclusive evening drinks and canapés in the Club lounge.</p>
+The Park Hyatt Melbourne is the city's most deluxe hotel. It is located at the 'top end' of Collins Street, directly opposite Melbourne's grandest cathedral and a few steps from Parliament House, the central business district and the beautiful Fitzroy Gardens. The luxurious oversized rooms are a haven for relaxation and comfort. This evening enjoy all inclusive evening drinks and canap?s in the Club lounge.</p>
 <p>
 <strong>Overnight:</strong> Park Hyatt Melbourne</p>
 </li>
@@ -1479,7 +1481,7 @@ The Park Hyatt Melbourne is the city's most deluxe hotel. It is located at the '
 <p>
 Explore Federation Square - a mixed-use development covering an area of 3.2 hectare and centred around two major public spaces.  The entire precinct is built on top of a concrete deck over busy railway lines and was opened in 2002.  It is Victoria's second most popular tourist attraction, attracting 8.41 million visitors in 2009.  Its design has caused much controversy since its first planning and continued to divide opinion after its opening. Despite this, the precinct continues to expand.  Federation square is the site at which Oprah Winfrey was greeted by thousands of fans on her visit to Melbourne in December 2010. Kenneth also takes you through the city's labyrinth of atmospheric arcades and alleyways - a wonderful way to learn Melbourne's architectural and cultural heritage. Have a special interest? Kenneth will tailor-make his walk just for you!</p>
 <p>
-This evening enjoy drinks and canapés in the Club lounge.</p>
+This evening enjoy drinks and canap?s in the Club lounge.</p>
 <p>
 <strong>Overnight:</strong> Park Hyatt Melbourne<br />
 <strong>Meal Plan:</strong> B</p>
@@ -1511,13 +1513,13 @@ This afternoon enjoy the facilities at Southern Ocean Lodge or take a quiet bush
 <li>
 <h4>Day 5</h4>
 <h5>Kangaroo Island - Adelaide - Uluru</h5>
-<p>This morning depart Kangaroo Island for Uluru (Ayers Rock) via Adelaide. On arrival into Uluru you will be met by a representative of Longitude 131° and transferred to your accommodation.</p>
+<p>This morning depart Kangaroo Island for Uluru (Ayers Rock) via Adelaide. On arrival into Uluru you will be met by a representative of Longitude 131? and transferred to your accommodation.</p>
 <p>
 The new 'safari' style luxury tented site is the first of its kind in Australia. Built on the very edge of Uluru Kata Tjuta National Park, the fifteen individual tents have uninterrupted views over Uluru. Relax in the free-form swimming pool and enjoy an aperitif on the balcony as the sunsets over the desert, or simply lie in bed and watch the stars rise over the outback. Inside the tent, the atmosphere is lavish with expansive stone floors, beautiful bed linen and unique bathrooms and air conditioning. This is a special place where you will connect with the desert landscape and its magnificent natural wonders. At the Dune House enjoy a quiet drink, good food and the company of newfound friends.</p>
 <p>
 Uluru is a giant red monolith that has come to represent Australia itself. The massive sandstone rock - the summit of a buried mountain - generates an almost mystical power. The Rock is 8.8 kilometres around the base, 3.6 kilometres long, 2.4 kilometres wide and towers 348 metres above the surrounding plain. The Anangu people believe they are the direct descendents of the ancestral spirits who gave them the laws and rules that they live by. They believe they are responsible for the protection of the lands and ask visitors to respect their wishes not to climb the rock. Its significant power can be felt particularly in the early morning or at sunset as the Rock undergoes an extraordinary transformation of colour.</p>
 <p>
-This afternoon is at your leisure at Longitude 131°. You will have the opportunity to select your touring in the Red Centre upon check-in.</p>
+This afternoon is at your leisure at Longitude 131?. You will have the opportunity to select your touring in the Red Centre upon check-in.</p>
 <p>
 <strong>Overnight:</strong> Longitude 131<br />
 <strong>Meal Plan:</strong> B,D</p>
@@ -1529,9 +1531,9 @@ This afternoon is at your leisure at Longitude 131°. You will have the opportuni
 <p>
 To climb the world's largest monolith is against the wishes of the traditional owners, the Anangu, because the path you would otherwise follow is the traditional route taken by their ancestral Mala (rufus hare-wallaby men) on their arrival at this scared place. A base walk will, however, offer you a deeply personal, moving and lasting experience.</p>
 <p>
-Departing Longitude 131° mid-afternoon, this tour travels into the Uluru-Kata Tjuta National Park Cultural Centre, a vibrant and engaging place of learning with more than a few surprises (don't miss the bulging folder of letters from previous visitors apologising for souveniring pieces of rock - the tales of regret and 'mysterious ill fortune' are fascinating). With a greater understanding of one of the world's truly ancient cultures, guests drive around Uluru and see for themselves the sites, which are so sacred to the traditional owners. A walk into the Mutitjulu waterhole offers each guest a unique insight into the sheer physical and spiritual enormity of Uluru. During the walk, the guide will point out cave paintings and other relevant sites important to Anangu and the early explorers.</p>
+Departing Longitude 131? mid-afternoon, this tour travels into the Uluru-Kata Tjuta National Park Cultural Centre, a vibrant and engaging place of learning with more than a few surprises (don't miss the bulging folder of letters from previous visitors apologising for souveniring pieces of rock - the tales of regret and 'mysterious ill fortune' are fascinating). With a greater understanding of one of the world's truly ancient cultures, guests drive around Uluru and see for themselves the sites, which are so sacred to the traditional owners. A walk into the Mutitjulu waterhole offers each guest a unique insight into the sheer physical and spiritual enormity of Uluru. During the walk, the guide will point out cave paintings and other relevant sites important to Anangu and the early explorers.</p>
 <p>
-You will be returned to Longitude 131° to freshen up before enjoying sunset champagne and canapés atop our secluded sand dune with stunning 360° views of Uluru and Kata Tjuta. From there, you will be taken to an exclusive desert setting where dinner will be served under a glittering canopy of stars. A resident astronomer will join you to explain how our sun, earth and galaxy interact, the almost unfathomable distances involved in space travel, and how our ancestors navigated land and sea on countless voyages of discovery. Guests are regaled with tales of the southern night sky and famous constellations such as the signs of the zodiac, Seven Sisters, Southern Cross and Orion's Belt.</p>
+You will be returned to Longitude 131? to freshen up before enjoying sunset champagne and canap?s atop our secluded sand dune with stunning 360? views of Uluru and Kata Tjuta. From there, you will be taken to an exclusive desert setting where dinner will be served under a glittering canopy of stars. A resident astronomer will join you to explain how our sun, earth and galaxy interact, the almost unfathomable distances involved in space travel, and how our ancestors navigated land and sea on countless voyages of discovery. Guests are regaled with tales of the southern night sky and famous constellations such as the signs of the zodiac, Seven Sisters, Southern Cross and Orion's Belt.</p>
 <p>
 <strong>Overnight:</strong> Longitude 131<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -1541,11 +1543,11 @@ You will be returned to Longitude 131° to freshen up before enjoying sunset cham
 <h5>Uluru - Sydney</h5>
 <p>Enjoy a morning at leisure to laze by the pool or join a sunrise camel ride across the dunes (optional extra).</p>
 <p>
-Later this morning a representative of Longitude 131° will meet you and transfer you to Ayers Rock Airport for your flight to Sydney.  On arrival meet your driver and guide for transfer to your accommodation.</p>
+Later this morning a representative of Longitude 131? will meet you and transfer you to Ayers Rock Airport for your flight to Sydney.  On arrival meet your driver and guide for transfer to your accommodation.</p>
 <p>
 Superbly situated right on Sydney Harbour in the city's historic Rocks area, the Four Seasons Sydney Hotel has wonderful views of the Sydney Opera House and Harbour Bridge. It is only a short walk from Sydney's major shopping and business districts.</p>
 <p>
-Enjoy evening drinks and canapés in the Executive Club lounge.</p>
+Enjoy evening drinks and canap?s in the Executive Club lounge.</p>
 <p>
 <strong>Overnight:</strong> Four Seasons<br />
 <strong>Meal Plan:</strong> B</p>
@@ -1560,7 +1562,7 @@ Sydney, the capital of the state of New South Wales, is Australia's most well kn
 <p>
 Transfer to nearby Rushcutters Bay where you board a private yacht for an afternoon sail on Sydney Harbour. Enjoy spectacular scenery including the Opera House, Harbour Bridge and the many lovely homes built around this magnificent harbour while relaxing on the deck soaking up the sun and the fresh sea air. If the weather is warm enough enjoy a swim.</p>
 <p>
-Enjoy evening drinks and canapés in the Executive Club lounge.</p>
+Enjoy evening drinks and canap?s in the Executive Club lounge.</p>
 <p>
 <strong>Overnight:</strong> Four Seasons<br />
 <strong>Meal Plan:</strong> B</p>
@@ -1570,7 +1572,7 @@ Enjoy evening drinks and canapés in the Executive Club lounge.</p>
 <h5>Sydney </h5>
 <p>Meet your guide in the lobby this morning. Today's tour of Sydney begins with a visit to the Sydney Opera House for a private 'behind the scenes' tour. Situated on the foreshore of Sydney Harbour; the Sydney Opera House is one of the world's most recognisable buildings.</p>
 <p>
-Later this afternoon please make your way to the Bridge Climb Office at 5 Cumberland Street for a twilight Bridge Climb.  The Sydney Harbour Bridge Climb is a 3.5 hour guided journey to the top of the harbour cities most famous landmark.  Climb the world-renowned Harbour Bridge - one of Sydney's most exciting activities. Built in 1932, it took almost 70 years for the Bridge to open to people with a sense of adventure. Feel the excitement while walking over the catwalk to climb the pylon and then across the arch on the way to the summit - 134 metres above sea level. Marvel at the spectacular 360 degrees views of one of the worlds' great harbour cities. Back at the Executive Club Lounge enjoy drinks and canapés as you recount the wonders of Sydney City.</p>
+Later this afternoon please make your way to the Bridge Climb Office at 5 Cumberland Street for a twilight Bridge Climb.  The Sydney Harbour Bridge Climb is a 3.5 hour guided journey to the top of the harbour cities most famous landmark.  Climb the world-renowned Harbour Bridge - one of Sydney's most exciting activities. Built in 1932, it took almost 70 years for the Bridge to open to people with a sense of adventure. Feel the excitement while walking over the catwalk to climb the pylon and then across the arch on the way to the summit - 134 metres above sea level. Marvel at the spectacular 360 degrees views of one of the worlds' great harbour cities. Back at the Executive Club Lounge enjoy drinks and canap?s as you recount the wonders of Sydney City.</p>
 <p>
 <strong> Overnight:</strong> Four Seasons<br />
 <strong>Meal Plan:</strong> B,L</p>
@@ -1617,6 +1619,7 @@ After breakfast enjoy time at leisure for a last swim or maybe a spa treatment (
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1624,7 +1627,7 @@ After breakfast enjoy time at leisure for a last swim or maybe a spa treatment (
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="No thing Like Australia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="NothingLikeAustralia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1633,13 +1636,13 @@ After breakfast enjoy time at leisure for a last swim or maybe a spa treatment (
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="No thing Like Australia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

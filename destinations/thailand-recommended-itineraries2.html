@@ -415,7 +415,7 @@ The Russian Market is popular among tourists, local expatriates and Cambodians a
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Thailand"/>
@@ -423,7 +423,6 @@ The Russian Market is popular among tourists, local expatriates and Cambodians a
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Cambodia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ClassicCambodia1.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -431,12 +430,12 @@ The Russian Market is popular among tourists, local expatriates and Cambodians a
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Thailand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Cambodia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -628,7 +627,7 @@ After lunch, visit Waroros Market and experience the northern Thai way of life. 
 <h4>Day 5</h4>
 <h5>CHIANG MAI</h5>
 <p>Leave for Mae Kampong village, a perfect destination to experience the unspoiled beauty of nature. A stop will be made at a local market where you will have a chance to buy ingredients for a self-cooked dinner at the village in the afternoon.
-The village is 1,300 metres above sea level with an average temperature of 10-18°C throughout the year.</p>
+The village is 1,300 metres above sea level with an average temperature of 10-18?C throughout the year.</p>
 <p>Upon arrival you will walk through the community forest, where the villagers grow tea and coffee, to see how they preserve their forest and how they live in harmony with nature. It is a good example of the Thai king's self sufficient economy theory.
 </p>
 <p>After a picnic lunch at a waterfall you will return to the village to relax with a one hour Thai traditional massage. These massages are given by the homemakers of the villages, this is another initiative by Mae Kampong to provide extra income for households. Then walk around the village to witness the process of fermenting tea leaves.</p>
@@ -690,6 +689,7 @@ Upon arrival in Phuket our representative will be there to accompany you to Aman
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>    
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Thailand"/>
@@ -697,7 +697,6 @@ Upon arrival in Phuket our representative will be there to accompany you to Aman
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Thailand"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ClassicThailand.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -705,12 +704,12 @@ Upon arrival in Phuket our representative will be there to accompany you to Aman
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Thailand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Thailand"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

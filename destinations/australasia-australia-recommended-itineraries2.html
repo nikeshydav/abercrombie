@@ -425,9 +425,9 @@ After lunch the afternoon is spent exploring the Flinders Ranges which are some 
 <h5>Flinders Ranges - Uluru</h5>
 <p>Begin today with a scenic flight that takes you to the Outback township of Coober Pedy. After lunch embark on a private tour of the underground Opal mines. Continue to Uluru (Ayers Rock) for a sunset scenic flight over the Rock and Kata Tjuta (the Olgas) before landing and bidding farewell to your pilot and host.</p>
 <p>
-On arrival you will be met and transferred to the magical Longitude 131°, the ultimate in accommodation in the Red Centre. This evening, enjoy sunset drinks and canapés on the Dune Top before transferring to an exclusive outdoor location for an unforgettable dining experience under the stars. Return to the Dune House for after dinner drinks.</p>
+On arrival you will be met and transferred to the magical Longitude 131?, the ultimate in accommodation in the Red Centre. This evening, enjoy sunset drinks and canap?s on the Dune Top before transferring to an exclusive outdoor location for an unforgettable dining experience under the stars. Return to the Dune House for after dinner drinks.</p>
 <p>
-<strong>Overnight:</strong> Longitude 131°<br />
+<strong>Overnight:</strong> Longitude 131?<br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
@@ -435,9 +435,9 @@ On arrival you will be met and transferred to the magical Longitude 131°, the ul
 <h5>Uluru</h5>
 <p>Embark on an exclusive tour showcasing the spectacular geography and biodiversity of Central Australia, as well as the ancient culture of the Anangu (Aboriginal people) who have traversed the land for thousands of years. Visit Kata Tjuta and take a guided tour of Walpa Gorge, where the natural history of Kata Tjuta is explained in great detail.</p>
 <p>
-In the afternoon depart Longitude 131°, for the Cultural Centre where you will learn the cultural and spiritual meanings of Uluru and Kata Tjuta. Afterwards travel to Uluru, and take a short walk into Kantju Gorge. On arrival at the gorge, enjoy refreshments 'inside' Uluru and watch the sunset.</p>
+In the afternoon depart Longitude 131?, for the Cultural Centre where you will learn the cultural and spiritual meanings of Uluru and Kata Tjuta. Afterwards travel to Uluru, and take a short walk into Kantju Gorge. On arrival at the gorge, enjoy refreshments 'inside' Uluru and watch the sunset.</p>
 <p>
-<strong>Overnight:</strong> Longitude 131°<br />
+<strong>Overnight:</strong> Longitude 131?<br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
 <li>
@@ -471,7 +471,7 @@ After lunch at a local restaurant, continue by exploring the historic Rocks area
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -479,7 +479,7 @@ After lunch at a local restaurant, continue by exploring the historic Rocks area
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="The Australian Outback by Private Air"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TheAustralianOutbackbyPrivateAir.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -487,12 +487,12 @@ After lunch at a local restaurant, continue by exploring the historic Rocks area
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Australian Outback by Private Air"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -688,6 +688,7 @@ Walking approximately 9km, 4 hours.</p>
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -695,7 +696,7 @@ Walking approximately 9km, 4 hours.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Bay of Fires Walk"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="BayofFiresWalk.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -703,12 +704,12 @@ Walking approximately 9km, 4 hours.</p>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Bay of Fires Walk"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -925,6 +926,7 @@ The floodplains of the Mary River region form one of the most significant ecosys
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -932,7 +934,7 @@ The floodplains of the Mary River region form one of the most significant ecosys
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="The Untamed Top End"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TheUntamedTopEnd.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -940,12 +942,12 @@ The floodplains of the Mary River region form one of the most significant ecosys
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Untamed Top End"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1199,6 +1201,7 @@ In Home Valley Station, you are welcomed by local Aboriginal guides before settl
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1206,7 +1209,7 @@ In Home Valley Station, you are welcomed by local Aboriginal guides before settl
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="An Epic Journey"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AnEpicJourney.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1215,13 +1218,13 @@ In Home Valley Station, you are welcomed by local Aboriginal guides before settl
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="An Epic Journey"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

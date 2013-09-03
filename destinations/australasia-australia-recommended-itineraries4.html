@@ -452,7 +452,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -460,7 +460,7 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Australian Red Heart"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AustralianRedHeart.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -468,12 +468,12 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Australian Red Heart"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -677,6 +677,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -684,7 +685,7 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="The Kimberley Far Away"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TheKimberleyFarAway.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -692,12 +693,12 @@ href="../yahoo.html">
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Kimberley Far Away"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -868,7 +869,7 @@ Melbourne, the capital of the state of Victoria, is known as the Garden, Arts an
 <p>
 After some time to check-in, perhaps have a late breakfast, relax & refresh - meet your representative in the hotel lobby for your unique afternoon orientation of Melbourne.</p>
 <p>
-With your entertaining local guide take a leisurely ride through Melbourne's character filled districts like Fitzroy, Carlton, Southbank and Docklands. Visit major sites like the Queen Victoria Markets, St. Patrick's Cathedral, Victoria Parliament, Melbourne Cricket Ground and Federation Square. Stop to take in a funky Fitzroy café for a quick drink! Over 3.5-4 hours riding around 17 kilometres at a very easy pace with plenty of stops you'll take in all the iconic sights and get a feel for the living city. You will return to your hotel in the late afternoon.</p>
+With your entertaining local guide take a leisurely ride through Melbourne's character filled districts like Fitzroy, Carlton, Southbank and Docklands. Visit major sites like the Queen Victoria Markets, St. Patrick's Cathedral, Victoria Parliament, Melbourne Cricket Ground and Federation Square. Stop to take in a funky Fitzroy caf? for a quick drink! Over 3.5-4 hours riding around 17 kilometres at a very easy pace with plenty of stops you'll take in all the iconic sights and get a feel for the living city. You will return to your hotel in the late afternoon.</p>
 <p>
 Park Hyatt Melbourne The Park Hyatt Melbourne is the city's most deluxe hotel. It is located at the 'top end' of Collins Street, directly opposite Melbourne's grandest cathedral and a few steps from Parliament House, the central business district and the beautiful Fitzroy Gardens. The luxurious oversized rooms are a haven for relaxation and comfort.</p>
 <p>
@@ -1011,6 +1012,7 @@ This afternoon you will be met at the famous Bondi Beach by a 'true blue' Aussie
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1018,7 +1020,7 @@ This afternoon you will be met at the famous Bondi Beach by a 'true blue' Aussie
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="An Aussie Family Holiday"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AnAussieFamilyHoliday.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1026,12 +1028,12 @@ This afternoon you will be met at the famous Bondi Beach by a 'true blue' Aussie
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="An Aussie Family Holiday"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1275,7 +1277,7 @@ Southern Ocean Lodge Southern Ocean Lodge is Kangaroo Island's only world-class 
 <li>
 <h4>Day 4</h4>
 <h5>Kangaroo Island</h5>
-<p>These 2 days are at your leisure to participate in the Lodge experiences & eco-sightseeing including Seal Bay, Flinders Chase National Park, Remarkable Rocks, beach fishing, cliff top guided walks, canapés with the kangaroos at dusk, star gazing - or of course you may simply choose to pick a South Australia wine from the cellar, sit in the Great Room & take in the spectacular Southern Ocean.</p>
+<p>These 2 days are at your leisure to participate in the Lodge experiences & eco-sightseeing including Seal Bay, Flinders Chase National Park, Remarkable Rocks, beach fishing, cliff top guided walks, canap?s with the kangaroos at dusk, star gazing - or of course you may simply choose to pick a South Australia wine from the cellar, sit in the Great Room & take in the spectacular Southern Ocean.</p>
 <p>
 <strong>Overnight:</strong> Southern Ocean Lodge<br />
 <strong>Meal Plan: </strong>B,L,D</p>
@@ -1283,7 +1285,7 @@ Southern Ocean Lodge Southern Ocean Lodge is Kangaroo Island's only world-class 
 <li>
 <h4>Day 5</h4>
 <h5>Kangaroo Island</h5>
-<p>These 2 days are at your leisure to participate in the Lodge experiences & eco-sightseeing including Seal Bay, Flinders Chase National Park, Remarkable Rocks, beach fishing, cliff top guided walks, canapés with the kangaroos at dusk, star gazing - or of course you may simply choose to pick a South Australia wine from the cellar, sit in the Great Room & take in the spectacular Southern Ocean.</p>
+<p>These 2 days are at your leisure to participate in the Lodge experiences & eco-sightseeing including Seal Bay, Flinders Chase National Park, Remarkable Rocks, beach fishing, cliff top guided walks, canap?s with the kangaroos at dusk, star gazing - or of course you may simply choose to pick a South Australia wine from the cellar, sit in the Great Room & take in the spectacular Southern Ocean.</p>
 <p>
 <strong>Overnight:</strong> Southern Ocean Lodge<br/>
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -1405,6 +1407,7 @@ For dinner this evening we recommend a restaurant reservation at Aria or Iceberg
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1412,7 +1415,7 @@ For dinner this evening we recommend a restaurant reservation at Aria or Iceberg
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="A gold program"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Agoldprogram.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1421,13 +1424,13 @@ For dinner this evening we recommend a restaurant reservation at Aria or Iceberg
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="A gold program"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
