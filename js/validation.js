@@ -76,6 +76,7 @@ var count=arr_msg.length;
      var country = frm_name.country_email.value;
      var region = frm_name.region_email.value;
      var itineraries_email = frm_name.itineraries_email.value;
+     //var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
      var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
      var doc=$.ajax({
 	     type: "POST",
@@ -316,7 +317,95 @@ function check_reg(frm_name,fld_arr){
     } 
     return msg;
 }
-        
+
+
+function showMe(tab)
+{		
+	for(var i=1; i<=20; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i){	
+			    if(document.getElementById(name2) != null)	
+				{
+					     document.getElementById(name2).className="active";
+				}
+				if(document.getElementById(name) != null)	
+				{
+					     document.getElementById(name).style.display="";
+				}
+				
+		   switch(i){
+		    case 2:
+			eval("new_captcha_1()");
+			break;
+		    case 6:
+			eval("new_captcha_2()");
+			break;
+		    case 10:
+			eval("new_captcha_3()");
+			break;
+		    case 14:
+			eval("new_captcha_4()");
+			break;
+			
+		    case 3:
+			eval("new_captcha6_1()");
+			break;
+		    case 7:
+			eval("new_captcha6_2()");
+			break;
+		    case 11:
+			eval("new_captcha6_3()");
+			break;
+		    case 15:
+			eval("new_captcha6_4()");
+			break;
+			
+			
+		}
+		
+		
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+		}
+		if(name == 'tab20'){
+		  $(document).ready(function(){
+				gmapInitialize4();
+			});
+		}
+	}
+}
+
+
 $(function(){
 
     $('#quote_name').click(function(){        
