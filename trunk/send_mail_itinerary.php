@@ -6,7 +6,7 @@ $root_path = getcwd();
 if(isset($_POST['submit']))
 {
 			
-			$my_file = $_REQUEST['itineraries_email_pdf'];
+			$my_file = 'Morocco-Land-of-the-Kasbahs';//$_REQUEST['itineraries_email_pdf'];
 	        $toemail  = $_REQUEST['email_send_itinerary'];
 			$mail              = new PHPMailer(); // defaults to using php "mail()"
 			ob_end_clean();
