@@ -4,7 +4,7 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content=""/>
 <meta name="description" content="" />
 <title>Abercrombie & Kent India</title>
@@ -389,7 +389,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 4</h4>
 <h5>Vienna</h5>
-<p>Depart on a walking tour, visiting the Hofburg Palace, the historic former seat of the emperors and their governments. Admire the glittering collection of imperial regalia in the Treasury. Continue to the soaring Gothic St. Stephen's Cathedral. This afternoon, explore the impressive summer palace of the Habsburgs, magnificent Schönbrunn Palace. It was here - amid frescoed ceilings, crystal chandeliers and gilded ornaments - that the six-year-old Mozart played to the court.</p>
+<p>Depart on a walking tour, visiting the Hofburg Palace, the historic former seat of the emperors and their governments. Admire the glittering collection of imperial regalia in the Treasury. Continue to the soaring Gothic St. Stephen's Cathedral. This afternoon, explore the impressive summer palace of the Habsburgs, magnificent Schï¿½nbrunn Palace. It was here - amid frescoed ceilings, crystal chandeliers and gilded ornaments - that the six-year-old Mozart played to the court.</p>
 <p><strong>Overnight:</strong> Hotel Imperial Vienna (Gold) or Grand Hotel Wien (Silver)<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -411,7 +411,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 7</h4>
 <h5>Prague</h5>
-<p>Stroll through Josefov, the city's Jewish quarter, which remained a walled ghetto until 1848. Visit the Old New Synagogue and the Old Jewish Cemetery. Wander through the charming Old Town Square and pause to admire the 15th-centuryastronomical clock adorning the façade of the Gothic Town Hall. You may wish to stroll across the 14th-century Charles Bridge. Privately visit the Estates Theater (subject to rehearsal schedules). It was here in October of 1787 that Mozart conducted the première of Don Giovanni.</p>
+<p>Stroll through Josefov, the city's Jewish quarter, which remained a walled ghetto until 1848. Visit the Old New Synagogue and the Old Jewish Cemetery. Wander through the charming Old Town Square and pause to admire the 15th-centuryastronomical clock adorning the faï¿½ade of the Gothic Town Hall. You may wish to stroll across the 14th-century Charles Bridge. Privately visit the Estates Theater (subject to rehearsal schedules). It was here in October of 1787 that Mozart conducted the premiï¿½re of Don Giovanni.</p>
 <p><strong>Overnight:</strong> Four Seasons Hotel Prague (Gold) or Hotel Aria (Silver)<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -432,15 +432,16 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
 <input type="hidden" name="region_email" id="region_email" value="A&amp;k Journeystyle"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature Budapest, Vienna & Prague"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignatureBudapest-ViennaPrague.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -448,12 +449,12 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;k Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature Budapest, Vienna & Prague"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -693,6 +694,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
@@ -700,7 +702,6 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature China & the Yangtze"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignatureChina-theYangtze.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -708,13 +709,13 @@ href="../yahoo.html">
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature China & the Yangtze"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -862,19 +863,19 @@ $(window).unload(function(){
 <li><h4>Day 1</h4>
 <h5>Arrive Split, Croatia/Podstrana</h5>
 <p>Arrive in Split after an overnight flight. You are met and driven to your resort hotel, nestled on the beach front in Podstrana. The balance of your day is at leisure to relax or enjoy the hotel's facilities: beautiful landscaped gardens, a casino, night club, tennis courts, and indoor and outdoor swimming pools, as well as a spa and wellness center.</p>
-<p><strong>Overnight:</strong> Le Méridien Lav</p>
+<p><strong>Overnight:</strong> Le Mï¿½ridien Lav</p>
 </li>
 <li>
 <h4>Day 2</h4>
 <h5>Split</h5>
 <p>This morning, meet your local guide for a sightseeing tour of the lively seaport of Split that takes you to the imposing Palace of Diocletian. Built in the third century on the shores of the Adriatic, this looming building with its cavernous interior is a unique remnant of the great days of the Empire. The octagonal St. Dominus Cathedral stands next door. Stroll through Split's Old Town and the palm-lined harbor-front promenade. The remainder of the day is at leisure.</p>
-<p><strong>Overnight:</strong> Le Méridien Lav<br />
+<p><strong>Overnight:</strong> Le Mï¿½ridien Lav<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
 <li>
 <h4>Day 3</h4>
 <h5>Podstrana/Split/Hvar</h5>
-<p>This morning, cruise by ferry along the stunning Dalmatian coast to picturesque Hvar, whose Venetian palaces are hidden among the narrow backstreets of the town. Croatia's longest island, Hvar is lush and green, filled with lavender, pines and aromatic Mediterranean flora. On arrival, join your local guide for a walking tour of the town's small historical center, built by the Venetian Doges. Best known for its medieval buildings that are the legacy of four centuries of Venetian rule, it is also the site of the oldest municipal theater in Europe, which opened in 1612. View the gleaming white limestone walls of the medieval Spanjol Fortress, perched high on a hill overlooking the town. Continue to the Cathedral and the Arsenal. You might want to walk along Hvar's stone-paved harbor front and stop in one of the many cafés, or choose a restaurant located in the Venetian piazza or yacht harbor for views across the sparkling Adriatic
+<p>This morning, cruise by ferry along the stunning Dalmatian coast to picturesque Hvar, whose Venetian palaces are hidden among the narrow backstreets of the town. Croatia's longest island, Hvar is lush and green, filled with lavender, pines and aromatic Mediterranean flora. On arrival, join your local guide for a walking tour of the town's small historical center, built by the Venetian Doges. Best known for its medieval buildings that are the legacy of four centuries of Venetian rule, it is also the site of the oldest municipal theater in Europe, which opened in 1612. View the gleaming white limestone walls of the medieval Spanjol Fortress, perched high on a hill overlooking the town. Continue to the Cathedral and the Arsenal. You might want to walk along Hvar's stone-paved harbor front and stop in one of the many cafï¿½s, or choose a restaurant located in the Venetian piazza or yacht harbor for views across the sparkling Adriatic
 Sea. Afterward, return to your contemporary hotel, located on Hvar's beautiful waterfront, where the remainder of the evening is at leisure.
 </p>
 <p><strong>Overnight:</strong> Adriana Hvar Marina Hotel & Spa<br />
@@ -911,6 +912,7 @@ Sea. Afterward, return to your contemporary hotel, located on Hvar's beautiful w
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
@@ -918,7 +920,6 @@ Sea. Afterward, return to your contemporary hotel, located on Hvar's beautiful w
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature Croatia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignatureCroatia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -926,12 +927,12 @@ Sea. Afterward, return to your contemporary hotel, located on Hvar's beautiful w
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature Croatia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1074,7 +1075,7 @@ GUnload();
 <ul class="itinerarylist">
 <li>
 <p><strong>Duration:</strong> 10 days</p>
-<p><strong>Highlights:</strong> Explore Egypt's legendary pyramids from the inside out, literally - your trip includes guaranteed entry into one of these monuments. Avoid crowds and the hassle of navigating around other ships, thanks to private Nile docking facilities in Luxor and Aswan. Cruise off the beaten path to Denderah, site of one of Egypt's best-preserved and less-frequented temples. Cruise for four nights on board the luxurious Nile cruiser, Sanctuary 'Sun Boat IV,' named top small cruise ship by Condé Nast Traveler. Wind your way around the lush Aswan islands in a felucca (sailboat), taking time to appreciate the relaxed pace of the Nile and the scenery on its banks. Discover Egypt's ancient capital of Memphis, founded by King Menes around 3000 BC, and the famous Step Pyramid of Zoser in Sakkara. Accompanied by an expert Egyptologist, pay a visit to the Egyptian Museum of Antiquities, exhibiting the largest collection of ancient Egyptian artifacts</p>
+<p><strong>Highlights:</strong> Explore Egypt's legendary pyramids from the inside out, literally - your trip includes guaranteed entry into one of these monuments. Avoid crowds and the hassle of navigating around other ships, thanks to private Nile docking facilities in Luxor and Aswan. Cruise off the beaten path to Denderah, site of one of Egypt's best-preserved and less-frequented temples. Cruise for four nights on board the luxurious Nile cruiser, Sanctuary 'Sun Boat IV,' named top small cruise ship by Condï¿½ Nast Traveler. Wind your way around the lush Aswan islands in a felucca (sailboat), taking time to appreciate the relaxed pace of the Nile and the scenery on its banks. Discover Egypt's ancient capital of Memphis, founded by King Menes around 3000 BC, and the famous Step Pyramid of Zoser in Sakkara. Accompanied by an expert Egyptologist, pay a visit to the Egyptian Museum of Antiquities, exhibiting the largest collection of ancient Egyptian artifacts</p>
 </li>
 <li><h4>Day 1</h4>
 <h5>Arrive Cairo, Egypt/Giza</h5>
@@ -1126,7 +1127,7 @@ GUnload();
 <li>
 <h4>Day 8</h4>
 <h5>Aswan/Abu Simbel/Cairo</h5>
-<p>Bid farewell to 'Sun Boat IV' and disembark to catch your flight to Abu Simbel, site of the commanding temples of Ramses II and his wife Nefertari. The former's façade is dominated by four imposing statues of the pharaoh. Afterward, return to Cairo for an afternoon at leisure.</p>
+<p>Bid farewell to 'Sun Boat IV' and disembark to catch your flight to Abu Simbel, site of the commanding temples of Ramses II and his wife Nefertari. The former's faï¿½ade is dominated by four imposing statues of the pharaoh. Afterward, return to Cairo for an afternoon at leisure.</p>
 <p><strong>Overnight:</strong> Four Seasons Hotel Cairo at the First Residence<br />
 <strong>Meal Plan:</strong> B,L</p>
 </li>
@@ -1147,6 +1148,7 @@ GUnload();
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
@@ -1154,7 +1156,6 @@ GUnload();
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature Egypt & the Nile"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignatureEgypt-theNile.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1162,12 +1163,12 @@ GUnload();
 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyles"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature Egypt & the Nile"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
