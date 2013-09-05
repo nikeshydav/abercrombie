@@ -4,7 +4,7 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content=""/>
 <meta name="description" content="" />
@@ -444,7 +444,7 @@ to the Khan El-Khalili, the city's famous bazaar, where you may browse and haggl
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Connections"/>
@@ -452,7 +452,7 @@ to the Khan El-Khalili, the city's famous bazaar, where you may browse and haggl
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Connections Egypt Ancient Kingdoms"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ConnectionsEgypt-AncientKingdoms.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -460,12 +460,12 @@ to the Khan El-Khalili, the city's famous bazaar, where you may browse and haggl
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Connections"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;k Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Connections Egypt Ancient Kingdoms"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -670,6 +670,7 @@ authentic Roman piazziaolo. Visit a traditional Florentine enoteca, where the ow
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Connections"/>
@@ -677,7 +678,6 @@ authentic Roman piazziaolo. Visit a traditional Florentine enoteca, where the ow
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Italy: Renaissance Cities"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ConnectionsItaly-RenaissanceCities.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -685,13 +685,13 @@ authentic Roman piazziaolo. Visit a traditional Florentine enoteca, where the ow
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Connections"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Italy: Renaissance Cities"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -931,6 +931,7 @@ into the cli face, before continuing to delightful Amalfi. Visit the 10th-centur
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Connections"/>
@@ -938,7 +939,7 @@ into the cli face, before continuing to delightful Amalfi. Visit the 10th-centur
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Connections Italy South to North"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ConnectionsItaly-SouthtoNorth.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -946,12 +947,12 @@ into the cli face, before continuing to delightful Amalfi. Visit the 10th-centur
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Connections"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Connections Italy South to North"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1156,6 +1157,7 @@ GUnload();
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Connections"/>
@@ -1163,7 +1165,7 @@ GUnload();
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Connections Morocco Kasbahs Medinas"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ConnectionsMorocco-KasbahsMedinas.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1171,12 +1173,12 @@ GUnload();
 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Connections"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyles"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Connections Morocco Kasbahs Medinas"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

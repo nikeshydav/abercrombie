@@ -4,7 +4,7 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content=""/>
 <meta name="description" content="" />
 <title>Abercrombie & Kent India</title>
@@ -457,7 +457,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
@@ -465,7 +465,7 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature Indochina & Angkor Wat"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignatureIndochina-AngkorWat.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -473,12 +473,12 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;k Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature Indochina & Angkor Wat"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -631,7 +631,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 2</h4>
 <h5>Rome and Vatican City</h5>
-<p>Your local guide joins you in a discovery of the evocative remains of the Imperial City, starting with the Palatine Hill. Continue to the imposing Arch of Constantine; then visit the mighty Colosseum, constructed in AD 80 to seat 50,000 spectators who reveled in gladiatorial contests. Enjoy lunch at leisure before visiting Vatican City. Admire the stunning collection of antiquities, objets d'art in the vast museum; then gaze at Michelangelo's famous painted ceiling in the Sistine Chapel and wander through St. Peter's Basilica, housing Michelangelo'sPietà and Bernini's exuberant baldachin.</p>
+<p>Your local guide joins you in a discovery of the evocative remains of the Imperial City, starting with the Palatine Hill. Continue to the imposing Arch of Constantine; then visit the mighty Colosseum, constructed in AD 80 to seat 50,000 spectators who reveled in gladiatorial contests. Enjoy lunch at leisure before visiting Vatican City. Admire the stunning collection of antiquities, objets d'art in the vast museum; then gaze at Michelangelo's famous painted ceiling in the Sistine Chapel and wander through St. Peter's Basilica, housing Michelangelo'sPietï¿½ and Bernini's exuberant baldachin.</p>
 <p><strong>Overnight:</strong> The St. Regis Rome (Gold) or Rose Garden Palace (Silver)<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -688,6 +688,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
@@ -695,7 +696,7 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature Italy"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignatureItaly.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -703,13 +704,13 @@ href="../yahoo.html">
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature Italy"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -939,6 +940,7 @@ $(window).unload(function(){
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
@@ -946,7 +948,7 @@ $(window).unload(function(){
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature Kenya & Tanzania"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignatureKenya-Tanzania.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -954,12 +956,12 @@ $(window).unload(function(){
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyle"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature Kenya & Tanzania"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1106,7 +1108,7 @@ GUnload();
 </li>
 <li><h4>Day 1</h4>
 <h5>Arrive Lima, Peru</h5>
-<p>Arrive in Lima this evening and transfer to your hotel. Founded in 1533, the "City of Kings" is a mélange of colonial structures, pre-Columbian sites and modern conveniences.</p>
+<p>Arrive in Lima this evening and transfer to your hotel. Founded in 1533, the "City of Kings" is a mï¿½lange of colonial structures, pre-Columbian sites and modern conveniences.</p>
 <p><strong>Overnight:</strong> Miraflores Park Hotel (Gold) or The Westin Lima (Silver)</p>
 </li>
 <li>
@@ -1126,8 +1128,8 @@ GUnload();
 <li>
 <h4>Day 4</h4>
 <h5>Sacred Valley</h5>
-<p>Start your exploration of the Sacred Valley of the Incas with a visit to the imposing fortress of Ollantaytambo, a formidable stone structure of massive terraces that hug the mountain slopes. A traditional lifestyle continues in the charming nearby town of Chinchero. Afterward, delve deeper into the rich local culture when you visit expert Andean weaver Nilda Callañaupa Alvarez, who leads a women's weaving collective where you learn firsthand about ancient techniques and about their role in contemporary Andean culture. Return to your hotel.</p>
-<p>Continue to the Kuychi Center, a charity that supports underprivileged children at Niños del Arco Iris (Children of the Rainbow), a project supported by A&K Philanthropy. Enjoy a barbecue lunch in the gardens.</p>
+<p>Start your exploration of the Sacred Valley of the Incas with a visit to the imposing fortress of Ollantaytambo, a formidable stone structure of massive terraces that hug the mountain slopes. A traditional lifestyle continues in the charming nearby town of Chinchero. Afterward, delve deeper into the rich local culture when you visit expert Andean weaver Nilda Callaï¿½aupa Alvarez, who leads a women's weaving collective where you learn firsthand about ancient techniques and about their role in contemporary Andean culture. Return to your hotel.</p>
+<p>Continue to the Kuychi Center, a charity that supports underprivileged children at Niï¿½os del Arco Iris (Children of the Rainbow), a project supported by A&K Philanthropy. Enjoy a barbecue lunch in the gardens.</p>
 <p><strong>Overnight:</strong> Sol y Luna Lodge & Spa (Gold) or Aranwa Sacred Valley Hotel & Wellness (Silver)<br />
 <strong>Meal Plan:</strong> B,L</p>
 </li>
@@ -1170,6 +1172,7 @@ GUnload();
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Private Journey"/>
@@ -1177,7 +1180,7 @@ GUnload();
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Signature Peru & Machu Picchu"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SignaturePeru-MachuPicchu.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1185,12 +1188,12 @@ GUnload();
 
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Private Journey"/>
 <input type="hidden" name="region_quote" id="region_quote" value="A&amp;K Journeystyles"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Signature Peru & Machu Picchu"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
