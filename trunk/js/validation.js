@@ -334,6 +334,32 @@ function showMe(tab)
 				{
 					     document.getElementById(name).style.display="";
 				}
+                                
+                                if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+		}
+		if(name == 'tab20'){
+		  $(document).ready(function(){
+				gmapInitialize4();
+			});
+		}
 				
 		   switch(i){
 		    case 2:
@@ -377,31 +403,31 @@ function showMe(tab)
 				document.getElementById(name).style.display="none";
 			}
 		}
-		if(name == 'tab4'){
-		  $(document).ready(function(){
-				gmapInitialize();
-			});
-		}
-		if(name == 'tab8'){
-		  $(document).ready(function(){
-				gmapInitialize1();
-			});
-		}
-		if(name == 'tab12'){
-		  $(document).ready(function(){
-				gmapInitialize2();
-			});
-		}
-		if(name == 'tab16'){
-		  $(document).ready(function(){
-				gmapInitialize3();
-			});
-		}
-		if(name == 'tab20'){
-		  $(document).ready(function(){
-				gmapInitialize4();
-			});
-		}
+//		if(name == 'tab4'){
+//		  $(document).ready(function(){
+//				gmapInitialize();
+//			});
+//		}
+//		if(name == 'tab8'){
+//		  $(document).ready(function(){
+//				gmapInitialize1();
+//			});
+//		}
+//		if(name == 'tab12'){
+//		  $(document).ready(function(){
+//				gmapInitialize2();
+//			});
+//		}
+//		if(name == 'tab16'){
+//		  $(document).ready(function(){
+//				gmapInitialize3();
+//			});
+//		}
+//		if(name == 'tab20'){
+//		  $(document).ready(function(){
+//				gmapInitialize4();
+//			});
+//		}
 	}
 }
 
