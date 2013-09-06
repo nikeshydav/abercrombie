@@ -27,62 +27,62 @@ include("../classes/mimemail.class.php");
 <script type="text/javascript" src="../js/jquery1.js"></script>
 <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
 <script language="javascript">
-function showMe(tab)
-{		
+    function showMe(tab)
+    {		
 	for(var i=1; i<=16; i++)
 	{
-		var name="tab"+i;
-		var name2="divli"+i;
-		if(tab==i)
-		{
-		    
+            var name="tab"+i;
+            var name2="divli"+i;
+            if(tab==i)
+            {
+                
 	        if(document.getElementById(name2) != null)	
-		    {
-			document.getElementById(name2).className="active";
-			}
-			
-			if(document.getElementById(name) != null)	
-			{
-			document.getElementById(name).style.display="block";
-			}
-                        
-                        if(name == 'tab4'){
-		  $(document).ready(function(){
-				gmapInitialize();
-			});
+                {
+                    document.getElementById(name2).className="active";
+                }
+                
+                if(document.getElementById(name) != null)	
+                {
+                    document.getElementById(name).style.display="block";
+                }
+                
+                if(name == 'tab4'){
+                    $(document).ready(function(){
+                        gmapInitialize();
+                    });
 		}
 		if(name == 'tab8'){
-		  $(document).ready(function(){
-				gmapInitialize1();
-			});
+                    $(document).ready(function(){
+                        gmapInitialize1();
+                    });
 		}
 		if(name == 'tab12'){
-		  $(document).ready(function(){
-				gmapInitialize2();
-			});
+                    $(document).ready(function(){
+                        gmapInitialize2();
+                    });
 		}
                 if(name == 'tab16'){
-		  $(document).ready(function(){
-				gmapInitialize3();
-			});
+                    $(document).ready(function(){
+                        gmapInitialize3();
+                    });
 		}
-		}
-		
-		else
-		{
-		    if(document.getElementById(name2) != null)	
-		    {
-			document.getElementById(name2).className="";
-			}
-			
-			if(document.getElementById(name) != null)	
-		   {
-			document.getElementById(name).style.display="none";
-			}
-		}
-		
+            }
+            
+            else
+            {
+                if(document.getElementById(name2) != null)	
+                {
+                    document.getElementById(name2).className="";
+                }
+                
+                if(document.getElementById(name) != null)	
+                {
+                    document.getElementById(name).style.display="none";
+                }
+            }
+            
 	}
-}
+    }
 </script>
 <script language="javascript">
 function CallPrint(strid)
@@ -268,7 +268,7 @@ href="../yahoo.html">
 <p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
 
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/zimbabwe-itineraries.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
+<div class="leftbox"><img src="../images/zimbabwe-itineraries.jpg" alt="Classic Zimbabwe Safari" title="Zimbabwe" width="326" height="210" /></div>
 <div class="rightbox"><h2>Classic Zimbabwe Safari</h2>
 <p><strong>Duration:</strong>  8 days<br>
 <strong>Highlights:</strong> Victoria Falls, Hwange National Park, Lake Kariba</p>
@@ -289,7 +289,7 @@ href="../yahoo.html">
 </div>
 
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/zimbabwe-itineraries2.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
+<div class="leftbox"><img src="../images/zimbabwe-itineraries2.jpg" alt="Deluxe Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
 <div class="rightbox"><h2>Deluxe Zimbabwe</h2>
 <p><strong>Duration:</strong>  6 days<br>
 <strong>Highlights:</strong>Malilangwe Wildlife Reserve, Victoria Falls, Chobe National Park (Botswana)</p>
@@ -311,7 +311,7 @@ time visitors to Zimbabwe.</p>
 </div>
 
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/zimbabwe-itineraries3.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
+<div class="leftbox"><img src="../images/zimbabwe-itineraries3.jpg" alt="Ultimate Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
 <div class="rightbox"><h2>Ultimate Zimbabwe</h2>
 <p><strong>Duration:</strong>  10 days<br>
 <strong>Highlights:</strong> Harare, The Great Zimbabwe Ruins, Matobo Hills National Park, Hwange National Park</p>
@@ -331,7 +331,7 @@ time visitors to Zimbabwe.</p>
 </div>
 
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/zimbabwe-itineraries4.jpg" alt="Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
+<div class="leftbox"><img src="../images/zimbabwe-itineraries4.jpg" alt="Wings over Zambia & Zimbabwe" title="Zimbabwe" width="326" height="210" /></div>
 <div class="rightbox"><h2>Wings over Zambia & Zimbabwe</h2>
 <p><strong>Duration:</strong>  7 Nights<br>
 <strong>Highlights:</strong> Victoria Falls, Hwange National Park, Lake Kariba</p>
@@ -383,7 +383,7 @@ time visitors to Zimbabwe.</p>
 <div id="tab1">
 
 <h1>Classic Zimbabwe Safari</h1>
-<div class="popupbanner"><img src="../images/classic_zimbabwe_safari.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="popupbanner"><img src="../images/classic_zimbabwe_safari.jpg" alt="Classic Zimbabwe Safari" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
@@ -551,7 +551,7 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 <div id="tab5">
 
 <h1>Deluxe Zimbabwe</h1>
-<div class="popupbanner"><img src="../images/deluxe_zimbabwe.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="popupbanner"><img src="../images/deluxe_zimbabwe.jpg" alt="Deluxe Zimbabwe" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
@@ -702,7 +702,7 @@ River.</p>
 <div id="tab9">
 
 <h1>Ultimate Zimbabwe</h1>
-<div class="popupbanner"><img src="../images/deluxe_zimbabwe.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="popupbanner"><img src="../images/deluxe_zimbabwe.jpg" alt="Ultimate Zimbabwe" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
@@ -896,7 +896,7 @@ village.</p>
 <div id="tab13">
 
 <h1>Wings over Zambia & Zimbabwe</h1>
-<div class="popupbanner"><img src="../images/zimbabwe-inner1.jpg" alt="Discover Uganda" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="popupbanner"><img src="../images/zimbabwe-inner1.jpg" alt="Wings over Zambia & Zimbabwe" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
