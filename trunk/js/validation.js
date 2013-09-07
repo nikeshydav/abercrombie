@@ -321,114 +321,88 @@ function check_reg(frm_name,fld_arr){
 
 function showMe(tab)
 {		
-	for(var i=1; i<=20; i++)
-	{
-		var name="tab"+i;
-		var name2="divli"+i;
-		if(tab==i){	
-			    if(document.getElementById(name2) != null)	
-				{
-					     document.getElementById(name2).className="active";
-				}
-				if(document.getElementById(name) != null)	
-				{
-					     document.getElementById(name).style.display="";
-				}
-                                
-                                if(name == 'tab4'){
-		  $(document).ready(function(){
-				gmapInitialize();
-			});
-		}
-		if(name == 'tab8'){
-		  $(document).ready(function(){
-				gmapInitialize1();
-			});
-		}
-		if(name == 'tab12'){
-		  $(document).ready(function(){
-				gmapInitialize2();
-			});
-		}
-		if(name == 'tab16'){
-		  $(document).ready(function(){
-				gmapInitialize3();
-			});
-		}
-		if(name == 'tab20'){
-		  $(document).ready(function(){
-				gmapInitialize4();
-			});
-		}
+    for(var i=1; i<=20; i++)
+    {
+        var name="tab"+i;
+        var name2="divli"+i;
+        if(tab==i){	
+            if(document.getElementById(name2) != null)	
+            {
+                document.getElementById(name2).className="active";
+            }
+            if(document.getElementById(name) != null)	
+            {
+                document.getElementById(name).style.display="";
+            }
 				
-		   switch(i){
-		    case 2:
-			eval("new_captcha_1()");
-			break;
-		    case 6:
-			eval("new_captcha_2()");
-			break;
-		    case 10:
-			eval("new_captcha_3()");
-			break;
-		    case 14:
-			eval("new_captcha_4()");
-			break;
+            switch(i){
+                case 2:
+                    eval("new_captcha_1()");
+                    break;
+                case 6:
+                    eval("new_captcha_2()");
+                    break;
+                case 10:
+                    eval("new_captcha_3()");
+                    break;
+                case 14:
+                    eval("new_captcha_4()");
+                    break;
 			
-		    case 3:
-			eval("new_captcha6_1()");
-			break;
-		    case 7:
-			eval("new_captcha6_2()");
-			break;
-		    case 11:
-			eval("new_captcha6_3()");
-			break;
-		    case 15:
-			eval("new_captcha6_4()");
-			break;
+                case 3:
+                    eval("new_captcha6_1()");
+                    break;
+                case 7:
+                    eval("new_captcha6_2()");
+                    break;
+                case 11:
+                    eval("new_captcha6_3()");
+                    break;
+                case 15:
+                    eval("new_captcha6_4()");
+                    break;
 			
-			
-		}
+            }
+            
+            if(name == 'tab4'){
+    		  $(document).ready(function(){
+    				gmapInitialize();
+    			});
+    		}
+    		if(name == 'tab8'){
+    		  $(document).ready(function(){
+    				gmapInitialize1();
+    			});
+    		}
+    		if(name == 'tab12'){
+    		  $(document).ready(function(){
+    				gmapInitialize2();
+    			});
+    		}
+    		if(name == 'tab16'){
+    		  $(document).ready(function(){
+    				gmapInitialize3();
+    			});
+    		}
+    		if(name == 'tab20'){
+    		  $(document).ready(function(){
+    				gmapInitialize4();
+    			});
+    		}
 		
-		
-		} else {
-		    if(document.getElementById(name2) != null)	
-		    {
-				document.getElementById(name2).className="";
-			}
+        } else {
+            if(document.getElementById(name2) != null)	
+            {
+                document.getElementById(name2).className="";
+            }
 			
-			if(document.getElementById(name) != null)	
-		   {
-				document.getElementById(name).style.display="none";
-			}
-		}
-//		if(name == 'tab4'){
-//		  $(document).ready(function(){
-//				gmapInitialize();
-//			});
-//		}
-//		if(name == 'tab8'){
-//		  $(document).ready(function(){
-//				gmapInitialize1();
-//			});
-//		}
-//		if(name == 'tab12'){
-//		  $(document).ready(function(){
-//				gmapInitialize2();
-//			});
-//		}
-//		if(name == 'tab16'){
-//		  $(document).ready(function(){
-//				gmapInitialize3();
-//			});
-//		}
-//		if(name == 'tab20'){
-//		  $(document).ready(function(){
-//				gmapInitialize4();
-//			});
-//		}
-	}
+            if(document.getElementById(name) != null)	
+            {
+                document.getElementById(name).style.display="none";
+            }
+        }
+    		
+    }
 }
 
 
