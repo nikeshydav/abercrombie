@@ -23,7 +23,7 @@ include("../classes/mimemail.class.php");
 <!--Flag-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script language="javascript">
-function showMe(tab)
+function showMe1(tab)
 {		
 	for(var i=1; i<=9; i++)
 	{
@@ -53,12 +53,12 @@ function showMe(tab)
 	if(obstring > 0)
     {
 		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
-		showMe(objVar);
+		showMe1(objVar);
 	}
 	else
 	{
 		objVar='1';
-		showMe(objVar);
+		showMe1(objVar);
 	}
 	
     });
@@ -209,15 +209,15 @@ href="../yahoo.html">
 <div class="newTabholder">
 <div class="tabbtnHolder">
 <ul>
-<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="KENYA"><span>Kenya</span></a></li>
-<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Tanzania"><span>Tanzania</span></a></li>
-<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Rwanda"><span>Rwanda</span></a></li>
-<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');" title="Uganda"><span>Uganda</span></a></li>
-<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');" title="Namibia"><span>Namibia</span></a></li>
-<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');" title="South Africa"><span>South Africa</span></a></li>
-<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');" title="Zimbabwe"><span>Zimbabwe</span></a></li>
-<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');" title="Zambia"><span>Zambia</span></a></li>
-<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');" title="Zambia"><span>Botswana</span></a></li>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe1('1');" title="KENYA"><span>Kenya</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe1('2');" title="Tanzania"><span>Tanzania</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe1('3');" title="Rwanda"><span>Rwanda</span></a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe1('4');" title="Uganda"><span>Uganda</span></a></li>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe1('5');" title="Namibia"><span>Namibia</span></a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe1('6');" title="South Africa"><span>South Africa</span></a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe1('7');" title="Zimbabwe"><span>Zimbabwe</span></a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe1('8');" title="Zambia"><span>Zambia</span></a></li>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe1('9');" title="Zambia"><span>Botswana</span></a></li>
 </ul>
 
 </div>
