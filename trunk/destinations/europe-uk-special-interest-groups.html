@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips UK, Ireland, Escorted Journeys London, Guided Tour to Scotland, Private Journeys, Group Tours, Group Travel, Special Interest Group to Uk & Ireland"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into UK & Ireland and its people, and includes visit to London." />
@@ -400,7 +400,7 @@ href="../yahoo.html">
 <p>
 In the late afternoon join your Ghillie on board one of the estate boats to try your hand at fishing for trout and perch on the estate's lake.</p>
 <p>
-Your evening meal tonight will be at Fig Tree Restaurant, on the grounds of the estate, a relaxed restaurant with a fresh and contemporary décor.</p>
+Your evening meal tonight will be at Fig Tree Restaurant, on the grounds of the estate, a relaxed restaurant with a fresh and contemporary dÃ©cor.</p>
 <p><strong>Overnight:</strong> Dromoland Castle<br />
 <strong>Meal Plan:</strong> B,D</p>
 </li>
@@ -478,7 +478,7 @@ Once you have been transferred back to Gleneagles the group will enjoy a final m
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -486,7 +486,7 @@ Once you have been transferred back to Gleneagles the group will enjoy a final m
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Golfing Break Ireland"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Golfing-Break-Ireland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -494,12 +494,12 @@ Once you have been transferred back to Gleneagles the group will enjoy a final m
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Golfing Break Ireland"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -677,7 +677,7 @@ This afternoon, return to Dublin stopping en route at Powerscourt House where on
 <li>
 <h4>Day 4</h4>
 <h5>Cork - English Market and Blarney Castle</h5>
-<p>This morning we drive to Dublin's Heuston train station to board a train to Cork, the principal city in the south of Ireland. After a journey of nearly three hours, arrive at Kent Station and drive straight to the English Market, ironically one of the most noted food markets in Ireland. Inside the market hall there is a huge range of Irish produce available for sale, from meat and fish to fruit and vegetables. Lunch will be taken at the Farmgate Café, overlooking the hall, where fresh local ingredients are used in the carefully prepared dishes. After checking into our hotel, your tour director will lead an excursion to Blarney Castle. This 15th century tower house is famed for the eponymous stone set in the parapet that is said to give the 'Gift of the Gab' to anyone who kisses it.</p>
+<p>This morning we drive to Dublin's Heuston train station to board a train to Cork, the principal city in the south of Ireland. After a journey of nearly three hours, arrive at Kent Station and drive straight to the English Market, ironically one of the most noted food markets in Ireland. Inside the market hall there is a huge range of Irish produce available for sale, from meat and fish to fruit and vegetables. Lunch will be taken at the Farmgate CafÃ©, overlooking the hall, where fresh local ingredients are used in the carefully prepared dishes. After checking into our hotel, your tour director will lead an excursion to Blarney Castle. This 15th century tower house is famed for the eponymous stone set in the parapet that is said to give the 'Gift of the Gab' to anyone who kisses it.</p>
 <p>
 This evening, drive to the picturesque coastal village of Kinsale for dinner. This village is often considered to be the gourmet capital of Ireland on account of the large number restaurants located here.</p>
 <p>
@@ -758,6 +758,7 @@ The journey ends at our hotel in the countryside near Dublin, where we have a 'F
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -765,7 +766,7 @@ The journey ends at our hotel in the countryside near Dublin, where we have a 'F
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Taste Ireland"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Taste-Ireland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -773,12 +774,12 @@ The journey ends at our hotel in the countryside near Dublin, where we have a 'F
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Taste Ireland"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -974,7 +975,7 @@ Later continue to Wells to visit the famous cathedral and enjoy lunch at leisure
 <h5>Lunch in Prideaux Place and Private Visit to Lancarffe Manor</h5>
 <p> Set off early this morning for Cornwall, where you are to be the lunch guests of the Prideaux-Brune family in their enchanting Elizabethan home, Prideaux Place. Set in the oldest deer park in England, dating back to the 4th century, the house is also famous for its 16th century plasterwork ceiling in the Great Chamber depicting the Apocryphal story of Susannah and the Elders. Enjoy lunch in the dining room and there will be time to wander the gardens at leisure, before continuing to the town of Bodmin.</p>
 <p>
-Here enjoy a private visit of Lancarffe Manor with the owner Mr Richard Gilbert. This early manor house is set deep in a wooded valley with stunning gardens and an excellent collection of paintings. Later arrive at Tresanton, one of the West Country's most famous hotels, situated at the edge of the unspoilt village of St Mawes with stunning views across the sea. Dinner this evening is à la carte in the hotel.</p>
+Here enjoy a private visit of Lancarffe Manor with the owner Mr Richard Gilbert. This early manor house is set deep in a wooded valley with stunning gardens and an excellent collection of paintings. Later arrive at Tresanton, one of the West Country's most famous hotels, situated at the edge of the unspoilt village of St Mawes with stunning views across the sea. Dinner this evening is Ã  la carte in the hotel.</p>
 <p>
 <strong>Overnight:</strong> Hotel Tresanton<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -1032,6 +1033,7 @@ This afternoon visit Exbury Gardens, most famous for their wonderful displays of
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -1039,7 +1041,7 @@ This afternoon visit Exbury Gardens, most famous for their wonderful displays of
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Gardens Southern England"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Gardens-Southern-England.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1047,12 +1049,12 @@ This afternoon visit Exbury Gardens, most famous for their wonderful displays of
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Gardens Southern England"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1277,6 +1279,7 @@ This afternoon visit Exbury Gardens, most famous for their wonderful displays of
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="UK"/>
@@ -1284,7 +1287,7 @@ This afternoon visit Exbury Gardens, most famous for their wonderful displays of
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="London"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="London.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1293,13 +1296,13 @@ This afternoon visit Exbury Gardens, most famous for their wonderful displays of
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="UK"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="London"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

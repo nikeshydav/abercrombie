@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Group Tours & Special Luxury Travel Cambodia - Abercrombie & Kent India</title>
 <meta name="description" content="Abercrombie & Kent specializes in group travel in Cambodia. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Cambodia and its peoples." />
 <meta name="keywords" content="Customized Trips Cambodia, Escorted Journeys Cambodia, Guided Tour to Cambodia, Private Journeys, Group Tours, Group Travel, Special Interest Group to Cambodia" />
@@ -380,7 +380,7 @@ Inclusive of:<br />
 <p>&bull; &nbsp;&nbsp;Tent set-up (a backup in case of rain)</p>
 <p>&bull; &nbsp;&nbsp;Drum troupe welcome on arrival</p>
 <p>&bull; &nbsp;&nbsp;30-minute pre-dinner cocktails with soft drinks, local beer, juice, mineral water and house wine</p>
-<p>&bull; &nbsp;&nbsp;Canapé selection of three cold and three hot items</p>
+<p>&bull; &nbsp;&nbsp;CanapÃ© selection of three cold and three hot items</p>
 <p>&bull; &nbsp;&nbsp;Two hour drinks package during dinner inclusive of soft drink, local beer, juice, mineral water and house wine Stage set up</p>
 <p>&bull; &nbsp;&nbsp;One-hour Cambodian cultural performance with live music Generator</p>
 <p>&bull; &nbsp;&nbsp;Lighting decorations around the Elephant Terrace</p>
@@ -403,7 +403,7 @@ Inclusive of:<br />
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Cambodia"/>
@@ -411,7 +411,7 @@ Inclusive of:<br />
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Discovering Angkor"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="DiscoveringAngkor.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -419,12 +419,12 @@ Inclusive of:<br />
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Cambodia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Discovering Angkor"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

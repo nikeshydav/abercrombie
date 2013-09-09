@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips Botswana, Escorted Journeys Botswana, Guided Tour to Botswana, Private Journeys, Group Tours, Group Travel, Special Interest Group to Botswana"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip to Botswana. This special interest programme provides fascinating insight into Botswana and its people, and includes visit to ultimate safari." />
@@ -392,14 +392,14 @@ Alternatively direct charter flights are available in to the Limpopo Valley Airf
 </div>
 
 <div id="tab2" style="display:none;">
-<?php $id=18; ?>
+<h1>Send itinerary</h1>
+<?php $id=1; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Botswana"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Extreme Adventures"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="extreme-adventures.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -407,12 +407,12 @@ Alternatively direct charter flights are available in to the Limpopo Valley Airf
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Botswana"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Extreme Adventures"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -556,11 +556,11 @@ Alternatively direct charter flights are available in to the Limpopo Valley Airf
 <p>Depart Johannesburg on a scheduled flight to Victoria Falls.</p>
 <p>On arrival at Victoria Falls International Airport your representative will meet and transfer you to the hotel. The transfer time is approximately 25 minutes.</p>
 <p>The Victoria Falls Hotel combines the charm of the old with the comfort and convenience of today.  lt has 18 suites, 90 standard rooms and 79 deluxe rooms, and is one hotel that can truly claim to be unique.  The elegant lounges offer serenity and seclusion.  The corridors reflect all the past glories of the Empire.  The suites and rooms are superbly furnished in Edwardian style, and are all air-conditioned with every modern amenity.</p>
-<p>Enjoy dinner and dancing in the magnificent Livingstone Room with a classic à la carte menu.  Traditional high tea is served every afternoon on the Terrace, with spectacular views onto the Victoria Falls Bridge and the Victoria Falls themselves.  There is also the Jungle Junction Restaurant for informal sumptuous buffets under the stars.</p>
+<p>Enjoy dinner and dancing in the magnificent Livingstone Room with a classic Ã  la carte menu.  Traditional high tea is served every afternoon on the Terrace, with spectacular views onto the Victoria Falls Bridge and the Victoria Falls themselves.  There is also the Jungle Junction Restaurant for informal sumptuous buffets under the stars.</p>
 <p>Recreational facilities include an elegant Edwardian style outdoor swimming pool and two all-weather floodlit tennis courts.  The hotel has its own private path to the Victoria Falls, which is less than 10 minutes' walk away.</p>
 <p>A full range of other sports is available nearby, including an 18 hole championship golf course, white water rafting, bungy jumping, canoeing, microlighting, game walks and drives, elephant back safaris, helicopter flights over the Victoria Falls and cruises along the Zambezi River.</p>
 <p>Please meet the your representative in the reception area of the hotel and transfer to the entrance of the Falls, which is a 5-minute drive from most hotels. We supply raincoats during high water months when clients are likely to get wet from the spray of the Falls.</p>
-<p>The walk is approximately 1½ hours in duration (3km), through the rainforest, stopping at the various viewing points. There are however, 3 exit paths along the way in case you get tired.</p>
+<p>The walk is approximately 1Â½ hours in duration (3km), through the rainforest, stopping at the various viewing points. There are however, 3 exit paths along the way in case you get tired.</p>
 <p>We advise clients to wear appropriate clothing and shoes for the walk, as well as bringing along a suitable waterproof protection for camera equipment.</p>
 <p>You are likely to see abundant bird life in the rainforest, as well as bushbuck, monkeys, baboons and families of mongoose.</p>
 <p>Return to the hotel for an evening spent at leisure.</p>
@@ -659,14 +659,15 @@ Alternatively direct charter flights are available in to the Limpopo Valley Airf
 </div>
 
 <div id="tab6" style="display:none;">
-<?php $id=19; ?>
+<h1>Send itinerary</h1>
+<?php $id=2; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Botswana"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Ultimate Safari"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ultimate-safari.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -674,12 +675,12 @@ Alternatively direct charter flights are available in to the Limpopo Valley Airf
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Botswana"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ultimate Safari"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips Zambia, Escorted Journeys Zambia, Guided Tour to Zambia, Private Journeys, Group Tours, Group Travel, Special Interest Group to Zambia"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel in African safari and adventure in Zambia. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Zambia." />
@@ -343,7 +343,7 @@ On arrival in Livingstone the group will have to clear customs and immigration a
 <p>
 Your representative will escort you to the waiting air conditioned coaches and transferred to the Royal Livingstone Hotel.</p>
 <p>
-On arrival at the Royal Livingstone Hotel a ROYAL reception awaits the group.  On arrival at the hotel they will be escorted down to the magnificent lawns of the Royal Livingstone hotel where canapés and cocktails await them. A separate check in desk will be setup for the group. African maidens will welcome them with Nyami Nyami necklaces - the traditional Zambian River g-d symbol.
+On arrival at the Royal Livingstone Hotel a ROYAL reception awaits the group.  On arrival at the hotel they will be escorted down to the magnificent lawns of the Royal Livingstone hotel where canapÃ©s and cocktails await them. A separate check in desk will be setup for the group. African maidens will welcome them with Nyami Nyami necklaces - the traditional Zambian River g-d symbol.
 David Livingstone explored this land of potent beauty and discovered one of the seven natural wonders of the world. In his footprints, only moments away from the mighty Zambezi River with the dramatic torrent of the Victoria Falls as its natural milieu, a magnificent Resort has been created as a testament to his discovery and in reverence to the splendour of this World Heritage site. Journey to this magical place and witness the greatest mass of falling water on earth as it plunges down a sheer rock face, spraying its mystical mist hundreds of meters in the air. The awesome Victoria Falls is much closer to you here - literally on the doorstep of The Falls Resort - it feels as if you could reach out and touch it, as it plummets into the chasm far below.</p>
 <p>
 The local tribe's people call it Mosi-Oa-Tunya - the Smoke that Thunders. On the forested banks of the great Zambezi River, upstream of the mighty cataract where it thunders into the Batoka Gorge, is The Royal Livingstone, pride of Zambian hospitality. In its cool lounges and shaded verandahs, you will encounter the elegance and luxury of an earlier, more courteous age.</p>
@@ -400,15 +400,15 @@ A resident band will play during the dinner this evening.</p>
 
 <p>After breakfast the group will depart in their coaches for the Kazungula Border Post en route to Botswana & Chobe National Park.
 </p>
-<p>Today will be a relaxed day with the group crossing over the Zambian border into Botswana to go and spend the day in Chobe National Park.The crossing from Zambia into Botswana is done on small speedboats as you cross over the Zambezi / Chobe River into Botswana. The transfer time is ± 2 hours to Chobe.</p>
+<p>Today will be a relaxed day with the group crossing over the Zambian border into Botswana to go and spend the day in Chobe National Park.The crossing from Zambia into Botswana is done on small speedboats as you cross over the Zambezi / Chobe River into Botswana. The transfer time is Â± 2 hours to Chobe.</p>
 
-<p>The departure from the hotel is done at staggered intervals so as to not congest the groups at the border and to allow an easy crossing in the boats. The boat trip takes about 3 minutes across the Chobe River - and ± 45 pax at 1 crossing can be accommodated.</p>
+<p>The departure from the hotel is done at staggered intervals so as to not congest the groups at the border and to allow an easy crossing in the boats. The boat trip takes about 3 minutes across the Chobe River - and Â± 45 pax at 1 crossing can be accommodated.</p>
 
-<p>On arrival in Botswana the group will split with ½ the group proceeding directly into Chobe National Park in 4x4 Game Drive vehicles and the other ½ of the group proceeding to the river to commence their river safari.</p>
+<p>On arrival in Botswana the group will split with Â½ the group proceeding directly into Chobe National Park in 4x4 Game Drive vehicles and the other Â½ of the group proceeding to the river to commence their river safari.</p>
 
 <p>Lunch today will be a buffet lunch at Mowana Safari Lodge and the entire group will meet for lunch.</p>
 
-<p>After lunch the groups split again with ½ proceeding down to the jetty to board Safari Boats and to commence their River Safari and the other ½ proceeding to safari vehicles to commence their land safari in the Chobe National Park.</p>
+<p>After lunch the groups split again with Â½ proceeding down to the jetty to board Safari Boats and to commence their River Safari and the other Â½ proceeding to safari vehicles to commence their land safari in the Chobe National Park.</p>
 Drinks will be served on the Safaris.
 
 <p>Return to Mowana in the late afternoon for Sundowner drinks before transferring back to the border post to clear immigration, to board the speedboat and cross back over into Zambia.</p>
@@ -442,7 +442,6 @@ The Chobe National Park covers an area of approximately 11.700 square kilometers
 
 <div id="tab2" style="display:none;">
 <h1>Send itinerary </h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zambia"/>
@@ -450,6 +449,7 @@ The Chobe National Park covers an area of approximately 11.700 square kilometers
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Livingstone Adventure"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="livingstoneadventure.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -457,13 +457,13 @@ The Chobe National Park covers an area of approximately 11.700 square kilometers
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zambia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Livingstone Adventure"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -728,14 +728,14 @@ Pioneered in Zambia, bush walks are essentially a "micro-safari". An armed range
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary </h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php $id =1;?>
+<?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zambia"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="African Walking Safari"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="african-walking-safari.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -743,13 +743,13 @@ Pioneered in Zambia, bush walks are essentially a "micro-safari". An armed range
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zambia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="African Walking Safari.pdf"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

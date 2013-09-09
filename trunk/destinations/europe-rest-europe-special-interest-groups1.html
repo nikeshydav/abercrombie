@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Abercrombie &amp; Kent - Safari - Luxury Rail Journeys - River Cruise - Villas - Private Travel - Beach Holidays - Island Getaways - Family Holidays - Special Interest Groups - Honeymoons - Celebrations - Antarctica - Tailor Made Travel - Luxury Travel"/>
 <meta name="description" content="Abercrombie &amp; Kent has been perfecting the art of tailor-made travel for nearly 50 years. Now in India. For the ultimate service and experience, travel with us on one of our inspiring journeys for a trip of a lifetime." />
@@ -289,10 +289,10 @@ href="../yahoo.html">
 <a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -308,10 +308,10 @@ href="../yahoo.html">
 <a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;" ><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -392,7 +392,7 @@ Afterwards drive out of Athens to Cape Sounion, the sacred headland of Homer, wh
 <h5>ATHENS - DELPHI - KYLLINI</h5>
 <p>Leave Athens this morning and drive through rugged mountain scenery along the shores of the Gulf of Corinth, arriving at the sacred religious centre of Delphi dramatically positioned on terraces against the backdrop of Mount Parnassos. Explore this extensive and fascinating archaeological site as birds of prey wheel in the clear sky above, visiting such masterpieces as the great Temple of Apollo, home of the famous oracle, the sturdy Temple of the Athenians and the extensive Ancient Theatre. Visit also the archaeological museum, a treasure trove of artefacts and boasting the Charioteer of Delphi, one of the most beautiful Greek statues from the 5th century BC.</p>
 <p>
-Later drive over the sweeping bridge that connects the Peloponnese peninsula to the mainland, passing olive groves and citrus plantations, and arrive the early evening at the hotel where you dine à la carte.</p>
+Later drive over the sweeping bridge that connects the Peloponnese peninsula to the mainland, passing olive groves and citrus plantations, and arrive the early evening at the hotel where you dine Ã  la carte.</p>
 <p>
 <strong>Overnight:</strong> Grecotel Mandola Rosa Suites &amp; Villas<br />
 <strong>Meal Plan:</strong> B,D</p>
@@ -404,7 +404,7 @@ Later drive over the sweeping bridge that connects the Peloponnese peninsula to 
 <p>
 Today your local expert guide brings to life the excitement and atmosphere of the Games as you visit the remains of the enormous Temple of Zeus, the Palaestra training centre, and the stadium itself with its 630 ft running course and surviving vaulted entrance.</p>
 <p>
-Afterwards have lunch in a local restaurant before driving through countryside rich in agricultural produce to the delightful old town of Nafplion situated on a rocky peninsula projecting into the calm waters of the Argolic Gulf. Check into your hotel and dine tonight à la carte either inside the hotel or in one of the many restaurants in the old town.</p>
+Afterwards have lunch in a local restaurant before driving through countryside rich in agricultural produce to the delightful old town of Nafplion situated on a rocky peninsula projecting into the calm waters of the Argolic Gulf. Check into your hotel and dine tonight Ã  la carte either inside the hotel or in one of the many restaurants in the old town.</p>
 <p>
 <strong>Overnight:</strong> Hotel Amphitryon<br />
 <strong>Meal Plan:</strong> B</p>
@@ -427,7 +427,7 @@ Tonight enjoy dinner in one of the town's finest restaurants.</p>
 <p>
 Later stop to view the extraordinary Corinth Canal, spectacularly hewn out of the rock and just wide enough for ships to pass, and afterwards enjoy a visit of the impressive remains of the acropolis of wealthy Corinth, testimony to the importance of the town as a trading centre in ancient times.</p>
 <p>
-Continuing to Athens, board a plane to Crete and transfer to your hotel, arriving in time for dinner à la carte.</p>
+Continuing to Athens, board a plane to Crete and transfer to your hotel, arriving in time for dinner Ã  la carte.</p>
 <p>
 <strong>Overnight:</strong> Elounda Beach Hotel<br />
 <strong>Meal Plan:</strong> B,D</p>
@@ -479,7 +479,7 @@ Returning to the hotel, the remainder of the day is at leisure to relax or you m
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -487,7 +487,7 @@ Returning to the hotel, the remainder of the day is at leisure to relax or you m
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Exploring an Ancient Civilisation"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Exploring-an-Ancient-Civilisation.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -495,12 +495,12 @@ Returning to the hotel, the remainder of the day is at leisure to relax or you m
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Exploring an Ancient Civilisation"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -718,7 +718,7 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 <li>
 <h4>Day 9</h4>
 <h5>ST PETERSBURG</h5>
-<p>  You will begin your day (8 hours) with your English-speaking guide by driving along the coast to Petrodvorets, the summer palace of Peter the Great. Entry for the early opening at the Grand Palace has been arranged. The lavish décor of the buildings is rivaled only by its famous Grand Cascade of fountains.  After lunch at leisure return by hydrofoil (summer months only) to St Petersburg, where you will be visiting the Russian Museum.</p>
+<p>  You will begin your day (8 hours) with your English-speaking guide by driving along the coast to Petrodvorets, the summer palace of Peter the Great. Entry for the early opening at the Grand Palace has been arranged. The lavish dÃ©cor of the buildings is rivaled only by its famous Grand Cascade of fountains.  After lunch at leisure return by hydrofoil (summer months only) to St Petersburg, where you will be visiting the Russian Museum.</p>
 <p>
 <strong>Overnight:</strong> Hotel Astoria<br />
 <strong>Meal Plan:</strong> B</p>
@@ -734,6 +734,7 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Rest of Europe"/>
@@ -741,7 +742,7 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="BERLIN, PRAGUE &AMP; ST. PETERSBURG"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="BerlinPrague-St.Petersburg.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -749,12 +750,12 @@ This afternoon's sightseeing (4 hours) with your private vehicle and English spe
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Rest of Europe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="BERLIN, PRAGUE &AMP; ST. PETERSBURG"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
