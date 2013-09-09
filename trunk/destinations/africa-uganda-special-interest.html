@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips Uganda, Escorted Journeys Uganda, Guided Tour to Uganda, Private Journeys, Group Tours, Group Travel, Special Interest Group to Uganda"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip in Uganda. This special interest programme provides fascinating insight into Uganda and its people." />
@@ -460,26 +460,26 @@ href="../yahoo.html">
 
 <div id="tab2" style="display:none;">
 <h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php $id=13; ?>
+<?php $id=1; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Uganda"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="The Best of Uganda"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="The-Best-of-Uganda.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Uganda"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Best of Uganda"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -725,7 +725,7 @@ href="../yahoo.html">
 <h4>Day 6</h4>
 <h5>NGORONGORO CRATER</h5>
 <p>This morning drive down the crater walls and spend the morning game viewing in the crater.</p>
-<p>The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km² (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.</p>
+<p>The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 kmÂ² (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.</p>
 <p>In the afternoon, visit a Masai village and experience their culture first hand.</p>
 <p><strong>Overnight:</strong> Ngorongoro Serena Safari Lodge<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -824,26 +824,26 @@ Your room is a permanent canvas structure. The camp comprises of just 14 spaciou
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php $id=14; ?>
+<?php $id=2; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Uganda"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ClassicEastAfrica.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Uganda"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

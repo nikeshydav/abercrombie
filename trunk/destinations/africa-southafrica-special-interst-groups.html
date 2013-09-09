@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips South Africa, Escorted Journeys South Africa, Guided Tour to South Africa, Private Journeys, Group Tours, Group Travel, Special Interest Group to South Africa"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into South Africa and its people, and includes visit to Zimbabwe safari golf." />
@@ -526,14 +526,14 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-<?php $id=17; ?>
+<h1>Send itinerary</h1>
+<?php $id=1; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="South africa"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="South Africa and Zambia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="south-africa-zambia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -541,12 +541,12 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="South Africa"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="South Africa and Zambia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -865,14 +865,14 @@ href="../yahoo.html">
 </div>
 
 <div id="tab6" style="display:none;">
-<?php $id=18; ?>
+<h1>Send itinerary</h1>
+<?php $id=2; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="South africa"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Zimbabwe Safari Golf"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="zimbabwe-safari-golf.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -880,12 +880,12 @@ href="../yahoo.html">
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="South africa"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Zimbabwe Safari Golf"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']);?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

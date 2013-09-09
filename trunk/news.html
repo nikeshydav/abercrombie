@@ -22,7 +22,7 @@ include("classes/mimemail.class.php");
 <!--Flag pop up-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 <script language="javascript">
-function showMe(tab)
+function showMe1(tab)
 {		
 	for(var i=1; i<=11; i++)
 	{
@@ -50,12 +50,12 @@ function showMe(tab)
 	if(obstring > 0)
     {
 		objVar = fullURL.substring(fullURL.indexOf('?')+4, fullURL.length) ;
-		showMe(objVar);
+		showMe1(objVar);
 	}
 	else
 	{
 		objVar='1';
-		showMe(objVar);
+		showMe1(objVar);
 	}
 	
     });
@@ -223,17 +223,17 @@ href="yahoo.html">
 <div class="newTabholder">
 <div class="tabbtnHolder">
 <ul>
-<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe('1');" title="Africa"><span>Africa</span></a></li>
-<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');" title="Middle East &amp; North Africa"><span>Middle East &amp; North Africa</span></a></li>
-<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');" title="Europe"><span>Europe</span></a></li>
-<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');" title="Australasia"><span>Australasia</span></a></li>
-<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');" title="The Orient"><span>The Orient</span></a></li>
-<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');" title="South America"><span>South America</span></a></li>
-<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');" title="Central America"><span>Central America</span></a></li>
-<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');" title="North America"><span>North America</span></a></li>
-<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');" title="Beach &amp; Island Escapes"><span>Beach &amp; Island Escapes</span></a></li>
-<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');" title="Antarctica"><span>Antarctica</span></a></li>
-<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');" title="Arctic"><span>Arctic</span></a></li>
+<li class="active" id="divli1"><a href="javascript:void(0)" onclick="showMe1('1');" title="Africa"><span>Africa</span></a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe1('2');" title="Middle East &amp; North Africa"><span>Middle East &amp; North Africa</span></a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe1('3');" title="Europe"><span>Europe</span></a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe1('4');" title="Australasia"><span>Australasia</span></a></li>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe1('5');" title="The Orient"><span>The Orient</span></a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe1('6');" title="South America"><span>South America</span></a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe1('7');" title="Central America"><span>Central America</span></a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe1('8');" title="North America"><span>North America</span></a></li>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe1('9');" title="Beach &amp; Island Escapes"><span>Beach &amp; Island Escapes</span></a></li>
+<li id="divli10"><a href="javascript:void(0)" onclick="showMe1('10');" title="Antarctica"><span>Antarctica</span></a></li>
+<li id="divli11"><a href="javascript:void(0)" onclick="showMe1('11');" title="Arctic"><span>Arctic</span></a></li>
 </ul>
 
 </div>
