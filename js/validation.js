@@ -35,82 +35,83 @@ var d='';
 var d1='';
 //var email_fid;
 function validate_itinerary(frm_name,fld_arr,fid){
-//console.log( $(frm_name).parent() );
-var arr_msg=Array();
-arr_msg=check_reg(frm_name,fld_arr);
+    //console.log( $(frm_name).parent() );
+    var arr_msg=Array();
+    arr_msg=check_reg(frm_name,fld_arr);
 
-var count=arr_msg.length;
+    var count=arr_msg.length;
 
-     if(frm_name.email_send_itinerary.value && isValidEmail(frm_name.email_send_itinerary.value)==false){
-	   //getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
-	    arr_msg[count]="Please enter valid email.";
-	    frm_name.email_send_itinerary.style.borderColor='red';
-	    count++;
-     }
-     if(frm_name.sender_email.value && isValidEmail(frm_name.sender_email.value)==false){
-	   //getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
-	    arr_msg[count]="Please enter valid sender email.";
-	    frm_name.email_send_itinerary.style.borderColor='red';
-	    count++;
-     }
-     if(document.getElementById("security_code_"+fid).value == ''){
-	    arr_msg[count]="Please enter security code.";
-	    document.getElementById("security_code_"+fid).style.borderColor='red';
-	    count++;
+    if(frm_name.email_send_itinerary.value && isValidEmail(frm_name.email_send_itinerary.value)==false){
+        //getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
+        arr_msg[count]="Please enter valid email.";
+        frm_name.email_send_itinerary.style.borderColor='red';
+        count++;
+    }
+    if(frm_name.sender_email.value && isValidEmail(frm_name.sender_email.value)==false){
+        //getObject('email').innerHTML=arr_msg[count]="Please enter valid email.";
+        arr_msg[count]="Please enter valid sender email.";
+        frm_name.email_send_itinerary.style.borderColor='red';
+        count++;
+    }
+    if(document.getElementById("security_code_"+fid).value == ''){
+        arr_msg[count]="Please enter security code.";
+        document.getElementById("security_code_"+fid).style.borderColor='red';
+        count++;
 
-}
+    }
 
-     if(document.getElementById("security_code_"+fid).value != ''){
-	 if(document.getElementById("s_code3_"+fid).value==0){
-	     arr_msg[count]="Security code does not match.";
-		     document.getElementById("security_code_"+fid).style.borderColor='red';
-		     count++;
-		     eval("new_captcha_"+fid+"()");
-		     document.getElementById("security_code_"+fid).value = '';
-	     } 
- } 
+    if(document.getElementById("security_code_"+fid).value != ''){
+        if(document.getElementById("s_code3_"+fid).value==0){
+            arr_msg[count]="Security code does not match.";
+            document.getElementById("security_code_"+fid).style.borderColor='red';
+            count++;
+            eval("new_captcha_"+fid+"()");
+            document.getElementById("security_code_"+fid).value = '';
+        } 
+    } 
 
 
-     if(arr_msg.length==0){
-     var time=Math.random();  
-     var country = frm_name.country_email.value;
-     var region = frm_name.region_email.value;
-     var itineraries_email = frm_name.itineraries_email.value;
-     //var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
-     var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
-     var doc=$.ajax({
-	     type: "POST",
-	     url: "../send_mail_itinerary.php",
-	     data: dataString,
-	     cache: false,
-	     asynch: true,
-	     success: function(value){
-			     window['d1'] = value;frm_name.email_send_itinerary.value='';
-			     frm_name.subject_send_itinerary.value='';				
-			     frm_name.msg_send_itinerary.value='';				
-			     frm_name.sender_email.value='';
+    if(arr_msg.length==0){
+        var time=Math.random();  
+        var country = frm_name.country_email.value;
+        var region = frm_name.region_email.value;
+        var itineraries_email = frm_name.itineraries_email.value;
+        //var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
+        var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
+        var doc=$.ajax({
+            type: "POST",
+            url: "../send_mail_itinerary.php",
+            data: dataString,
+            cache: false,
+            asynch: true,
+            success: function(value){
+                window['d1'] = value;
+                frm_name.email_send_itinerary.value='';
+                frm_name.subject_send_itinerary.value='';				
+                frm_name.msg_send_itinerary.value='';				
+                frm_name.sender_email.value='';
 
-			     if(value==0){
-				 return false;
-			     }else{                                    
-				eval("new_captcha_"+fid+"()"); 
-			     }	
-                             var email_ite_msg = "<strong>A PDF version of this itinerary has been mailed to the Recipient's email Id.</strong> <br />";
-                             email_ite_msg += "For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
-			     frm_name.innerHTML = email_ite_msg;
-			     //frm_name.style.display = 'none';
+                if(value==0){
+                    return false;
+                }else{                                    
+                    eval("new_captcha_"+fid+"()"); 
+                }	
+                var email_ite_msg = "<strong>A PDF version of this itinerary has been mailed to the Recipient's email Id.</strong> <br />";
+                email_ite_msg += "For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
+                frm_name.innerHTML = email_ite_msg;
+            //frm_name.style.display = 'none';
 
-		     }
-	     });	
+            }
+        });	
 
-	     return false;
-     }else{
-	     //var message=display_message(arr_msg);
-	     //alert(message)
-	     alert(arr_msg.join('\n'))
-	     return false;
+        return false;
+    }else{
+        //var message=display_message(arr_msg);
+        //alert(message)
+        alert(arr_msg.join('\n'))
+        return false;
 
-     }
+    }
 
 }
    
@@ -209,111 +210,111 @@ function validate_quote(frm_name,fld_arr){
    }
  
  //For Honemoon Request Quote
- function validate_quote1(frm_name,fld_arr,fid){
-	//alert(fid);
-       var arr_msg=Array();
-	 arr_msg=check_reg(frm_name,fld_arr);
+function validate_quote1(frm_name,fld_arr,fid){
+    //alert(fid);
+    var arr_msg=Array();
+    arr_msg=check_reg(frm_name,fld_arr);
 
-	 var count=arr_msg.length;
+    var count=arr_msg.length;
 
-       if(frm_name.quote_name.value && isValidName(frm_name.quote_name.value)==false){
-		       arr_msg[count]="Please enter valid name (Alphabet only).";
-		       frm_name.quote_name.style.borderColor='red';
-		       count++;
-       } 
-       if(frm_name.quote_email.value && isValidEmail(frm_name.quote_email.value)==false){
-		       arr_msg[count]="Please enter valid email.";
-		       frm_name.quote_email.style.borderColor='red';
-		       count++;
-       }
-       if(frm_name.quote_phone.value && isNumeric(frm_name.quote_phone.value)==true){
-		       arr_msg[count]="Please enter valid telephone (Numeric only).";
-		       frm_name.quote_phone.style.borderColor='red';
-		       count++;
-       }	
+    if(frm_name.quote_name.value && isValidName(frm_name.quote_name.value)==false){
+        arr_msg[count]="Please enter valid name (Alphabet only).";
+        frm_name.quote_name.style.borderColor='red';
+        count++;
+    } 
+    if(frm_name.quote_email.value && isValidEmail(frm_name.quote_email.value)==false){
+        arr_msg[count]="Please enter valid email.";
+        frm_name.quote_email.style.borderColor='red';
+        count++;
+    }
+    if(frm_name.quote_phone.value && isNumeric(frm_name.quote_phone.value)==true){
+        arr_msg[count]="Please enter valid telephone (Numeric only).";
+        frm_name.quote_phone.style.borderColor='red';
+        count++;
+    }	
 
-       if(frm_name.quote_date_travel.value && checkdate(frm_name.quote_date_travel)==false){
-		       arr_msg[count]="Invalid Day, Month, or Year range detected. Please enter correct format(DD/MM/YYYY).";
-		       frm_name.quote_date_travel.style.borderColor='red';
-		       count++;
-       }
+    if(frm_name.quote_date_travel.value && checkdate(frm_name.quote_date_travel)==false){
+        arr_msg[count]="Invalid Day, Month, or Year range detected. Please enter correct format(DD/MM/YYYY).";
+        frm_name.quote_date_travel.style.borderColor='red';
+        count++;
+    }
        
-       if(document.getElementById("security_codeq_"+fid).value == ''){
-		   arr_msg[count]="Please enter security code.";
-		       document.getElementById("security_codeq_"+fid).style.borderColor='red';
-		       count++;
-  }
+    if(document.getElementById("security_codeq_"+fid).value == ''){
+        arr_msg[count]="Please enter security code.";
+        document.getElementById("security_codeq_"+fid).style.borderColor='red';
+        count++;
+    }
 
-       if(document.getElementById("security_codeq_"+fid).value != ''){
-	   if(document.getElementById("s_code5_"+fid).value==0){
-	       arr_msg[count]="Security code does not match.";
-		       document.getElementById("security_codeq_"+fid).style.borderColor='red';
-		       count++;
-		       eval("new_captcha6_"+fid+"()");
-		       document.getElementById("security_codeq_"+fid).value = '';
-	       } 
-   } 
+    if(document.getElementById("security_codeq_"+fid).value != ''){
+        if(document.getElementById("s_code5_"+fid).value==0){
+            arr_msg[count]="Security code does not match.";
+            document.getElementById("security_codeq_"+fid).style.borderColor='red';
+            count++;
+            eval("new_captcha6_"+fid+"()");
+            document.getElementById("security_codeq_"+fid).value = '';
+        } 
+    } 
 
-       if(arr_msg.length==0){
-       var time=Math.random();  
-       var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
-       var doc=$.ajax({
-	       type: "POST",
-	       url: "../send_mail_quote1.php",
-	       data: dataString,
-	       cache: false,
-	       asynch: true,
-	       success: function(value)
-		       {
-			       window['d'] = value;
-			       frm_name.quote_name.value='';
-			       frm_name.quote_email.value='';				
-			       frm_name.quote_phone.value='';
-			       frm_name.quote_adult.value='';
-			       frm_name.quote_date_travel.value='';
-			       frm_name.quote_requirements.value='';
-			       document.getElementById("security_codeq_"+fid).value='';
+    if(arr_msg.length==0){
+        var time=Math.random();  
+        var dataString = 'quote_name='+frm_name.quote_name.value+"&quote_email="+frm_name.quote_email.value+"&quote_residence="+frm_name.quote_residence.value+"&quote_phone="+frm_name.quote_phone.value+"&quote_adult="+frm_name.quote_adult.value+"&quote_date_travel="+frm_name.quote_date_travel.value+"&quote_requirements="+frm_name.quote_requirements.value+"&country_quote="+frm_name.country_quote.value+"&region_quote="+frm_name.region_quote.value+"&itineraries_quote="+frm_name.itineraries_quote.value+"&submit=1"+"&time="+time;
+        var doc=$.ajax({
+            type: "POST",
+            url: "../send_mail_quote1.php",
+            data: dataString,
+            cache: false,
+            asynch: true,
+            success: function(value)
+            {
+                window['d'] = value;
+                frm_name.quote_name.value='';
+                frm_name.quote_email.value='';				
+                frm_name.quote_phone.value='';
+                frm_name.quote_adult.value='';
+                frm_name.quote_date_travel.value='';
+                frm_name.quote_requirements.value='';
+                document.getElementById("security_codeq_"+fid).value='';
 			       
-			      if(value==0){
-				   return false;                                
-			       }else{               
-				   eval("new_captcha6_"+fid+"()");
-				 }
+                if(value==0){
+                    return false;                                
+                }else{               
+                    eval("new_captcha6_"+fid+"()");
+                }
 
-			       var htm ="Thank You for showing interest in this itinerary, a quote for this itinerary will be shared with you soon. <br />";
-			       htm	    +="For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
-			       frm_name.innerHTML = htm;
+                var htm ="Thank You for showing interest in this itinerary, a quote for this itinerary will be shared with you soon. <br />";
+                htm	    +="For immediate assistance call our travel consultants <b>46001600/46001641</b><br /> <br /> <a class='closethis'>ok</a>";
+                frm_name.innerHTML = htm;
 			       
 
-		       }
-	       });
+            }
+        });
 
 
-	       return false;
-       }else{
-	       alert(arr_msg.join('\n'))
-	       return false;
-       }
+        return false;
+    }else{
+        alert(arr_msg.join('\n'))
+        return false;
+    }
 
- }
+}
 /////////////////////////////////////////////////////////////////////////
 function changeBorder(val){
-	val.style.borderColor='';
+    val.style.borderColor='';
 }
 
 function check_reg(frm_name,fld_arr){	
     var msg=Array();
     var count=0;
     for (var word in fld_arr){
-	    if(frm_name[word].value==""){
-		    if(count==0)
-		    frm_name[word].focus();
-		    frm_name[word].style.borderColor='red';
-		    msg[count] = fld_arr[word];
-		    count++;
-	    }else{
-		    frm_name[word].style.borderColor='';
-	    }
+        if(frm_name[word].value==""){
+            if(count==0)
+                frm_name[word].focus();
+            frm_name[word].style.borderColor='red';
+            msg[count] = fld_arr[word];
+            count++;
+        }else{
+            frm_name[word].style.borderColor='';
+        }
     } 
     return msg;
 }
@@ -365,30 +366,30 @@ function showMe(tab)
             }
             
             if(name == 'tab4'){
-    		  $(document).ready(function(){
-    				gmapInitialize();
-    			});
-    		}
-    		if(name == 'tab8'){
-    		  $(document).ready(function(){
-    				gmapInitialize1();
-    			});
-    		}
-    		if(name == 'tab12'){
-    		  $(document).ready(function(){
-    				gmapInitialize2();
-    			});
-    		}
-    		if(name == 'tab16'){
-    		  $(document).ready(function(){
-    				gmapInitialize3();
-    			});
-    		}
-    		if(name == 'tab20'){
-    		  $(document).ready(function(){
-    				gmapInitialize4();
-    			});
-    		}
+                $(document).ready(function(){
+                    gmapInitialize();
+                });
+            }
+            if(name == 'tab8'){
+                $(document).ready(function(){
+                    gmapInitialize1();
+                });
+            }
+            if(name == 'tab12'){
+                $(document).ready(function(){
+                    gmapInitialize2();
+                });
+            }
+            if(name == 'tab16'){
+                $(document).ready(function(){
+                    gmapInitialize3();
+                });
+            }
+            if(name == 'tab20'){
+                $(document).ready(function(){
+                    gmapInitialize4();
+                });
+            }
 		
         } else {
             if(document.getElementById(name2) != null)	
@@ -410,13 +411,15 @@ $(function(){
 
     $('#quote_name').click(function(){        
         $id = $(this).parent('li').children('img').attr('id');
-        //alert($id);
+    //alert($id);
     });
     
     $('.closethis').live('click',function(){
-	$('.popup_block, #fade').css({'display':'none'});
-	$('.close1').remove();
-	return false;
+        $('.popup_block, #fade').css({
+            'display':'none'
+        });
+        $('.close1').remove();
+        return false;
     });
 
 });
