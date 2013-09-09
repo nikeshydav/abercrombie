@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips Argentina, Escorted Journeys Argentina, Guided Tour to Argentina, Private Journeys, Group Tours, Group Travel, Special Interest Group to Argentina"/>
 <meta name="description" content="A & K specializes in group travel in Argentina. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Argentina and its peoples." />
@@ -333,7 +333,7 @@ href="../yahoo.html">
 <li>
 <h4>Day 2</h4>
 <h5>BUENOS AIRES</h5>
-<p>After breakfast, it will be time to explore Buenos Aires.This fascinating and comprehensive excursion will commence in La Boca. One of the highlights will be a visit to the iconic Caminito, with its colourful, cobbled streets. Continue to the Congress building, before heading along the 9 de Julio Avenue to the famous Plaza de Mayo, with the Metropolitan Cathedral, the Government Palace (Casa Rosada), and countless examples of fine architecture. The tour will also include leafy Recoleta, with its beautiful boulevards and legendary cemetery where Eva Perón is buried.</p>
+<p>After breakfast, it will be time to explore Buenos Aires.This fascinating and comprehensive excursion will commence in La Boca. One of the highlights will be a visit to the iconic Caminito, with its colourful, cobbled streets. Continue to the Congress building, before heading along the 9 de Julio Avenue to the famous Plaza de Mayo, with the Metropolitan Cathedral, the Government Palace (Casa Rosada), and countless examples of fine architecture. The tour will also include leafy Recoleta, with its beautiful boulevards and legendary cemetery where Eva PerÃ³n is buried.</p>
 <p>Optional:</p>
 <p>
 In La Boca we can provide a display of street football, with three young players from Boca Junior's youth team. Maybe you can answer the eternal question: Who is better? Brazil or Argentina?</p>
@@ -348,7 +348,7 @@ Later you can design your own afternoon. Each option will be 2-3 hours in durati
 <li>
 <h4>Day 3</h4>
 <h5>BUENOS AIRES</h5>
-<p>After breakfast, drive to the Estancia La Alameda, located by the Chascomús Laggon, where you will enjoy one of the best folklore shows in Argentina, a true gaucho party.</p>
+<p>After breakfast, drive to the Estancia La Alameda, located by the ChascomÃºs Laggon, where you will enjoy one of the best folklore shows in Argentina, a true gaucho party.</p>
 <p>
 At only 120 kilometres from the city of Buenos Aires, this is a chance to experience tradition and history combined with the finest style. The traditional dances performed by a young ballet, the typical colourful costumes and the songs specially staged for the occasion take you on a tour around the regions of the country with their different rhythms.</p>
 <p>
@@ -362,7 +362,7 @@ As well as seeing the gauchos show off their horseback prowess, you will also en
 <h5>BUENOS AIRES</h5>
 <p>Shopping is one of the best pastimes in Buenos Aires. Prices are low, and there are plenty of attractive items to tempt you. This morning we will provide vehicles to take you around the shopping areas of the city.</p>
 <p>For those with a specific interest (fashion, design, art, leather goods, music, wine), we can provide the services of a personal shopper who will accompany small groups to the best boutiques and stores in Buenos Aires.</p>
-<p>At 6 pm it will be time to leave the hotel for a tango class prior to this evening's Tango Experience at El Zanjón. This 19th century house forms a fascinating insight into the Buenos Aires of old. Upon arrival you will be welcomed with a glass of wine prior to your tour of this fascinating place. As you walk through the system of tunnels, you will be treated to a performance by a tenor who will make the most of the venue's unique acoustics. Dinner will be served in a beautifully decorated area of the building. At the end of dinner the you will be invited to an after dinner drink and an exclusive tango performance, bringing your Argentina experience to a stylish climax.</p>
+<p>At 6 pm it will be time to leave the hotel for a tango class prior to this evening's Tango Experience at El ZanjÃ³n. This 19th century house forms a fascinating insight into the Buenos Aires of old. Upon arrival you will be welcomed with a glass of wine prior to your tour of this fascinating place. As you walk through the system of tunnels, you will be treated to a performance by a tenor who will make the most of the venue's unique acoustics. Dinner will be served in a beautifully decorated area of the building. At the end of dinner the you will be invited to an after dinner drink and an exclusive tango performance, bringing your Argentina experience to a stylish climax.</p>
 <p>
 <strong>Overnight:</strong> AENA Hotel + Universe<br />
 <strong>Meal Plan:</strong> B,L,D</p>
@@ -377,7 +377,7 @@ As well as seeing the gauchos show off their horseback prowess, you will also en
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Argentina"/>
@@ -385,7 +385,7 @@ As well as seeing the gauchos show off their horseback prowess, you will also en
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Best of Buenos Aires"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Best-of-Buenos-Aires.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -393,12 +393,12 @@ As well as seeing the gauchos show off their horseback prowess, you will also en
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Argentina"/>
 <input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Best of Buenos Aires"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

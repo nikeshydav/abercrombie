@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Group Tours & Special Luxury Travel New Zealand - Abercrombie & Kent India</title>
 <meta name="description" content="Abercrombie & Kent specializes in group travel in New Zealand. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into New Zealand and its peoples." />
 <meta name="keywords" content="Customized Trips New Zealand, Escorted Journeys New Zealand, Guided Tour to New Zealand, Private Journeys, Group Tours, Group Travel, Special Interest Group to New Zealand" />
@@ -405,7 +405,7 @@ Continue to Auckland to your hotel.</p>
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
@@ -413,7 +413,7 @@ Continue to Auckland to your hotel.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Boutique New Zealand"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="BoutiqueNewZealand.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -421,12 +421,12 @@ Continue to Auckland to your hotel.</p>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Boutique New Zealand"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -723,6 +723,7 @@ Continue to the Gibbston Valley Winery, located in the world's southernmost wine
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="New Zealand"/>
@@ -730,7 +731,7 @@ Continue to the Gibbston Valley Winery, located in the world's southernmost wine
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="North South Discovery"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="NorthSouthDiscovery.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -738,12 +739,12 @@ Continue to the Gibbston Valley Winery, located in the world's southernmost wine
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="New Zealand"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="North South Discovery"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

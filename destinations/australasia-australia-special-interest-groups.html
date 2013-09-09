@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Group Tours & Special Luxury Travel Australia - Abercrombie & Kent India</title>
 <meta name="description" content="Abercrombie & Kent specializes in group travel in Australia. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Australia and its peoples." />
 <meta name="keywords" content="Customized Trips Australia, Escorted Journeys Australia, Guided Tour to Australia, Private Journeys, Group Tours, Group Travel, Special Interest Group to Australia" />
@@ -426,7 +426,7 @@ Renowned for its marine life, today's three hour cruise on Coral Bay invites dol
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -434,7 +434,7 @@ Renowned for its marine life, today's three hour cruise on Coral Bay invites dol
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Pristine Waters of Ningaloo Reef"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="PristineWatersofNingalooReef.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -442,12 +442,12 @@ Renowned for its marine life, today's three hour cruise on Coral Bay invites dol
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Pristine Waters of Ningaloo Reef"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -604,7 +604,7 @@ Travel past Victorian terrace houses, the city's exclusive suburbs and the Arts 
 <p>
 The Park Hyatt Melbourne is the city's most deluxe hotel. It is located at the 'top end' of Collins Street, directly opposite Melbourne's grandest cathedral and a few steps from Parliament House, the central business district and the beautiful Fitzroy Gardens. The luxurious oversized rooms are a haven for relaxation and comfort. </p>
 <p>
-This evening enjoy all inclusive evening drinks and canapés in the Club lounge.</p>
+This evening enjoy all inclusive evening drinks and canapÃ©s in the Club lounge.</p>
 <p><strong>Overnight:</strong> Park Hyatt Melbourne</p>
 </li>
 <li>
@@ -612,7 +612,7 @@ This evening enjoy all inclusive evening drinks and canapés in the Club lounge.<
 <h5>Melbourne - Coliban Park</h5>
 <p>This morning meet your guide and drive into the countryside travelling to one of Victoria's oldest and most delightful country properties - Coliban Park. At this private sheep station, watch sheep being shorn and learn first hand about one of Australia's most important industries. Enjoy lunch with the Barber family in their traditional family homestead. A highlight will be a tour of the property, perhaps seeing kangaroos in the wild.</p>
 <p>
-This evening enjoy drinks and canapés in the Club lounge.</p>
+This evening enjoy drinks and canapÃ©s in the Club lounge.</p>
 <p><strong>Overnight:</strong> Park Hyatt Melbourne</p>
 </li>
 <li>
@@ -673,14 +673,14 @@ Uluru is a giant red monolith that has come to represent Australia itself. The m
 <p>
 To climb the world's largest monolith is against the wishes of the traditional owners, the Anangu, because the path you would otherwise follow is the traditional route taken by their ancestral Mala (rufus hare-wallaby men) on their arrival at this scared place. A base walk will, however, offer you a deeply personal, moving and lasting experience.</p>
 <p>
-Departing Longitude 131° mid-afternoon, this tour travels into the Uluru-Kata Tjuta National Park Cultural Centre, a vibrant and engaging place of learning with more than a few surprises (don't miss the bulging folder of letters from previous visitors apologising for souveniring pieces of rock - the tales of regret and 'mysterious ill fortune' are fascinating).</p>
+Departing Longitude 131Â° mid-afternoon, this tour travels into the Uluru-Kata Tjuta National Park Cultural Centre, a vibrant and engaging place of learning with more than a few surprises (don't miss the bulging folder of letters from previous visitors apologising for souveniring pieces of rock - the tales of regret and 'mysterious ill fortune' are fascinating).</p>
 <p>
 With a greater understanding of one of the world's truly ancient cultures, guests drive around Uluru and see for themselves the sites, which are so sacred to the traditional owners. A walk into the Mutitjulu waterhole offers each guest a unique insight into the sheer physical and spiritual enormity of Uluru. During the walk, the guide will point out cave paintings and other relevant sites important to Anangu and the early explorers.</p>
 <p>
-You will be returned to Longitude 131° to freshen up before enjoying sunset champagne and canapés atop our secluded sand dune with stunning 360° views of Uluru and Kata Tjuta.</p>
+You will be returned to Longitude 131Â° to freshen up before enjoying sunset champagne and canapÃ©s atop our secluded sand dune with stunning 360Â° views of Uluru and Kata Tjuta.</p>
 <p>
 From there, you will be taken to an exclusive desert setting where dinner will be served under a glittering canopy of stars. A resident astronomer will join you to explain how our sun, earth and galaxy interact, the almost unfathomable distances involved in space travel, and how our ancestors navigated land and sea on countless voyages of discovery. Guests are regaled with tales of the southern night sky and famous constellations such as the signs of the zodiac, Seven Sisters, Southern Cross and Orion's Belt. </p>
-<p><strong>Overnight:</strong> Longitude 131°</p>
+<p><strong>Overnight:</strong> Longitude 131Â°</p>
 </li>
 <li>
 <h4>Day 8</h4>
@@ -746,7 +746,7 @@ Sydney, the capital of the state of New South Wales, is Australia's most well kn
 <p>
 Superbly situated right on Sydney Harbour in the city's historic Rocks area, the Four Seasons Sydney Hotel has wonderful views of the Sydney Opera House and Harbour Bridge. It is only a short walk from Sydney's major shopping and business districts.</p>
 <p>
-Enjoy evening drinks and canapés in the Executive Club lounge.</p>
+Enjoy evening drinks and canapÃ©s in the Executive Club lounge.</p>
 <p><strong>Overnight:</strong> Four Seasons</p>
 </li>
 <li>
@@ -756,13 +756,14 @@ Enjoy evening drinks and canapés in the Executive Club lounge.</p>
 <p>
 Continue on for lunch at one of Sydney's finest local restaurants. After lunch transfer to your private charter vessel for a magical cruise on Sydney Harbour. The 46 foot motor cruiser 'Highlander' is a beautifully crafted vessel with woodwork, elegant furnishings and all modern comforts to ensure that a cruise on one of the world's great harbours is a memorable experience. Upon completion, you will be transferred back to your hotel.</p>
 <p>
-Enjoy evening drinks and canapés in the Executive Club lounge.</p>
+Enjoy evening drinks and canapÃ©s in the Executive Club lounge.</p>
 <p><strong>Overnight:</strong> Four Seasons</p>
 </li>
 </ul>
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -770,7 +771,7 @@ Enjoy evening drinks and canapés in the Executive Club lounge.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="An Australian Adventure"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="AnAustralianAdventure.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -778,12 +779,12 @@ Enjoy evening drinks and canapés in the Executive Club lounge.</p>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="An Australian Adventure"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -999,6 +1000,7 @@ Bullo River Station was made famous by top-selling author Sara Henderson. Her Am
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Australia"/>
@@ -1006,7 +1008,7 @@ Bullo River Station was made famous by top-selling author Sara Henderson. Her Am
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Dreamtime Artists"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="DreamtimeArtists.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1014,12 +1016,12 @@ Bullo River Station was made famous by top-selling author Sara Henderson. Her Am
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Australia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Australasia"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Dreamtime Artists"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

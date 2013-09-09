@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips Russia, Escorted Journeys Russia, Guided Tour to Russia, Private Journeys, Group Tours, Group Travel, Special Interest Group to Russia"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel in Russia. It lets you choose group tours or customize your own escorted private trip. This special interest programme provides fascinating insight into Russia and its peoples." />
@@ -458,7 +458,7 @@ After lunch at leisure visit the heart of the festivities on Vasilievsky slope o
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Russia"/>
@@ -466,7 +466,7 @@ After lunch at leisure visit the heart of the festivities on Vasilievsky slope o
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Experience Maslenitsa Festival"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="experience-maslenitsa-festival.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -474,12 +474,12 @@ After lunch at leisure visit the heart of the festivities on Vasilievsky slope o
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Russia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Experience Maslenitsa Festival"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -635,11 +635,11 @@ After checking in and having time to freshen up, you will meet in a private bar 
 <li>
 <h4>Day 2</h4>
 <h5>Moscow - M/S Volga Dream</h5>
-<p>This morning, early entry to the State Armoury in the Kremlin ensures a private visit before the crowds. The State Armoury is the oldest museum in Russia and home to a collection of precious stones, 18th and 19th century jewelry, an impressive collection of carriages from the best Russian and European masters, precious fabrics and royal gala clothes. The Armoury is also famous for its fine collection of Fabergé eggs.</p>
+<p>This morning, early entry to the State Armoury in the Kremlin ensures a private visit before the crowds. The State Armoury is the oldest museum in Russia and home to a collection of precious stones, 18th and 19th century jewelry, an impressive collection of carriages from the best Russian and European masters, precious fabrics and royal gala clothes. The Armoury is also famous for its fine collection of FabergÃ© eggs.</p>
 <p>
 Afterwards see the dazzling exhibition of the State Diamond Fund, containing the "pride and glory" of Russia, including the crown jewels, used for centuries in coronations right up to that of Tsar Nicolas II at the end of 19th century.</p>
 <p>
-Take lunch at the nearby Café Pushkin before continuing to join the MS Volga Dream in preparation for your Volga River cruise. Your luggage will have been transferred separately to the boat.</p>
+Take lunch at the nearby CafÃ© Pushkin before continuing to join the MS Volga Dream in preparation for your Volga River cruise. Your luggage will have been transferred separately to the boat.</p>
 <p>
 This evening enjoy the Captain's Welcome Reception followed by dinner.</p>
 <p>
@@ -747,6 +747,7 @@ Farewell dinner this evening will be at The Gourmet Club.</p>
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Russia"/>
@@ -754,7 +755,7 @@ Farewell dinner this evening will be at The Gourmet Club.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="volga river cruise"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="volga-river-cruise.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -762,12 +763,12 @@ Farewell dinner this evening will be at The Gourmet Club.</p>
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Russia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="volga river cruise"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -943,7 +944,7 @@ Farewell dinner this evening will be at The Gourmet Club.</p>
 <h5>St Petersburg</h5>
 <p>This morning, enjoy a memorable guided visit to the famous Hermitage. By special arrangement you will be able to enter the museum before the official opening hour to enjoy the State Rooms of the Winter Palace in private. From here you will continue to the Small Hermitage, then to the priceless masterpieces exhibited in other areas of the Hermitage building. The Hermitage museum was the residence of the Russian Emperors in the past; nowadays it comprises five palaces and is one of the largest museums in the world.</p>
 <p>
-During the afternoon you will visit the private home of the graphic artist, Yuri Petrochenkov, to meet him and enjoy tea. For a long time he has worked with paper for drawing and engraving, and over the last 20 years he has been creating designs for porcelain including platters, plates, and especially porcelain eggs. He applies the same techniques as on paper, but using different materials. His designs have been influenced by the avant-garde periods of such artists as Malevich, Kandinsky, and Souietine. Some of his designs show the influence of the pre-revolutionary "Imperial" period. This influence is very apparent in some of his exquisite porcelain eggs. Two of which has been bought by Malcolm Forbes for his collection of Fabergé Eggs. Since 1978, Yuri Petrochenkov has been visiting Western European countries and the U.S.A., where he exhibits and sells his works, and teaches his special techniques of porcelain painting. Since 1993 he has been giving special master classes of porcelain painting in Neuilly-Sur-Seine, France.</p>
+During the afternoon you will visit the private home of the graphic artist, Yuri Petrochenkov, to meet him and enjoy tea. For a long time he has worked with paper for drawing and engraving, and over the last 20 years he has been creating designs for porcelain including platters, plates, and especially porcelain eggs. He applies the same techniques as on paper, but using different materials. His designs have been influenced by the avant-garde periods of such artists as Malevich, Kandinsky, and Souietine. Some of his designs show the influence of the pre-revolutionary "Imperial" period. This influence is very apparent in some of his exquisite porcelain eggs. Two of which has been bought by Malcolm Forbes for his collection of FabergÃ© Eggs. Since 1978, Yuri Petrochenkov has been visiting Western European countries and the U.S.A., where he exhibits and sells his works, and teaches his special techniques of porcelain painting. Since 1993 he has been giving special master classes of porcelain painting in Neuilly-Sur-Seine, France.</p>
 <p>
 <strong>Overnight:</strong> Grand Hotel Europe<br />
 <strong>Meal Plan: </strong>B </p>
@@ -989,7 +990,7 @@ The rest of the day is free to enjoy the city at leisure.</p>
 <h5>Moscow</h5>
 <p>Begin your day with a special before-hours opening visit to the Kremlin including the famous State Armoury Museum and State Diamond Fund, Cathedral Square and the Grand Kremlin Palace.</p>
 <p>
-Your tour will start with the State Armoury, the oldest museum in Russia, home to a collection of precious stones, masterpieces of 18th and 19th century jewelry, priceless artifacts dating as far back as the 14th century as well as an impressive collection of carriages from the best Russian and European masters, precious fabrics, and royal gala clothes. The Armoury is famous also for its fine collection of Fabergé eggs.  Afterwards see the dazzling exhibition of the State Diamond Fund, containing the "pride and glory" of Russia, including the crown jewels, used for centuries in coronations right up to that of Tsar Nicholas II at the end of 19th century.</p>
+Your tour will start with the State Armoury, the oldest museum in Russia, home to a collection of precious stones, masterpieces of 18th and 19th century jewelry, priceless artifacts dating as far back as the 14th century as well as an impressive collection of carriages from the best Russian and European masters, precious fabrics, and royal gala clothes. The Armoury is famous also for its fine collection of FabergÃ© eggs.  Afterwards see the dazzling exhibition of the State Diamond Fund, containing the "pride and glory" of Russia, including the crown jewels, used for centuries in coronations right up to that of Tsar Nicholas II at the end of 19th century.</p>
 <p>
 Continue your tour of the Kremlin Territory and then by special arrangement and after a security check visit the impressive Grand Kremlin Palace with its magnificent Halls of St. George, St. Vladimir and St. Andrew.</p>
 <p>
@@ -1020,6 +1021,7 @@ Dinner tonight will be at the splendid Artist Gallery Restaurant.  Located in th
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Russia"/>
@@ -1027,7 +1029,7 @@ Dinner tonight will be at the splendid Artist Gallery Restaurant.  Located in th
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Two Capitals Russia"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="two-capitals-russia.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1035,12 +1037,12 @@ Dinner tonight will be at the splendid Artist Gallery Restaurant.  Located in th
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Russia"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Two Capitals Russia"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

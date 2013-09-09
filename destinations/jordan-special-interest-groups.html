@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips Jordan, Escorted Journeys Jordan, Guided Tour to Jordan, Private Journeys, Group Tours, Group Travel, Special Interest Group to Jordan"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip for classical Jordan. This special interest programme provides fascinating insight into Jordan and its people." />
@@ -432,7 +432,7 @@ After breakfast, you will be transferred to Amman airport for your return flight
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Jordan"/>
@@ -440,7 +440,6 @@ After breakfast, you will be transferred to Amman airport for your return flight
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Jordan in Depth"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Jordan-in-Depth.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -448,12 +447,12 @@ After breakfast, you will be transferred to Amman airport for your return flight
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Jordan"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Middle East & North Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Jordan in Depth"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 

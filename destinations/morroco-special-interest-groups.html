@@ -5,7 +5,7 @@ include("../classes/mimemail.class.php");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Customized Trips Morocco, Escorted Journeys Morocco, Guided Tour to Morocco, Private Journeys, Group Tours, Group Travel, Special Interest Group to Morocco"/>
 <meta name="description" content="Abercrombie & Kent specializes in group travel. It lets you choose group tours or customize your own escorted private trip for classical Morocco. This special interest programme provides fascinating insight into Morocco and its people." />
@@ -203,13 +203,11 @@ href="../yahoo.html">
 <li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
  </ul>
           </li>
-<<<<<<< .mine
-            <li><a href="israel.html"  title="Israel"><span>+</span> Israel</a></li>
-           <li><a href="#" title="Oman"  class="cursorauto"><span>+</span> Oman</a>      
-=======
+    
+
             <li><a href="israel.html"  title="Israel"><span>+</span> Israel</a> 
-           <li><a href="#" title="Oman"><span>+</span> Oman</a>      
->>>>>>> .r169
+           <li><a href="oman.html" title="Oman"><span>+</span> Oman</a>      
+
           </li>
            
 		   </ul>
@@ -394,7 +392,7 @@ This morning, you will have a choice between several activities:</p>
  <p> &bull;&nbsp;&nbsp;   Enjoy a balloon flight over the Berber villages near Marrakech.</p>
 
 <p>
-In the late afternoon join your guide for a walk through the souk, starting with a visit to the Ben Youssef Medersa, probably the most fascinating and best kept Koranic school in Morocco, before finishing with a refreshing drink at the Djemâa el Fna, the main square in the medina. No one is really certain how it came into being, but over the years it has become the heart of Marrakech. in the early morning it is completely lifeless but as the day progresses it becomes busier. At dusk the square comes completely into its own and lines of kitchens cook a variety of dishes, musicians play, snake charmers perform and storytellers gather huge crowds. Drinks will be served on a terrace above the square.</p>
+In the late afternoon join your guide for a walk through the souk, starting with a visit to the Ben Youssef Medersa, probably the most fascinating and best kept Koranic school in Morocco, before finishing with a refreshing drink at the DjemÃ¢a el Fna, the main square in the medina. No one is really certain how it came into being, but over the years it has become the heart of Marrakech. in the early morning it is completely lifeless but as the day progresses it becomes busier. At dusk the square comes completely into its own and lines of kitchens cook a variety of dishes, musicians play, snake charmers perform and storytellers gather huge crowds. Drinks will be served on a terrace above the square.</p>
 <p>
 Tonight you will attend a 1,001 Nights farewell dinner with traditional local entertainment.</p>
 <p>
@@ -415,7 +413,7 @@ Today you are transferred to the airport for your departure flight.</p>
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Morocco"/>
@@ -423,7 +421,6 @@ Today you are transferred to the airport for your departure flight.</p>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Morocco in Style"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Morocco-in-Style.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -431,12 +428,12 @@ Today you are transferred to the airport for your departure flight.</p>
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Morocco"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Middle East & North Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Morocco in Style"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -668,6 +665,7 @@ Return back to Marrakech for your last night in Morocco. A farewell dinner will 
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Morroco"/>
@@ -675,7 +673,6 @@ Return back to Marrakech for your last night in Morocco. A farewell dinner will 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Moroccan Architecture"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Moroccan-Architecture.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -683,12 +680,12 @@ Return back to Marrakech for your last night in Morocco. A farewell dinner will 
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Morocco"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Middle East & North Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Moroccan Architecture"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
