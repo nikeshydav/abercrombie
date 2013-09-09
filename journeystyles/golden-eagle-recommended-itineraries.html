@@ -4,7 +4,7 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content=""/>
 <meta name="description" content="" />
@@ -423,7 +423,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Golden Eagle"/>
@@ -431,7 +431,6 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Baikal Express Eastbound"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="BaikalExpressEastbound.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -667,6 +666,7 @@ The highlight of our tour includes a visit to The Ark, the fortified residence o
 </div>
 
 <div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Golden Eagle"/>
@@ -674,7 +674,6 @@ The highlight of our tour includes a visit to The Ark, the fortified residence o
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Silk Road(AlmatyMoscow) Westbound"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SilkRoad(Almaty-Moscow)Westbound-2013.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -951,6 +950,7 @@ $(window).unload(function(){
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Golden Eagle"/>
@@ -958,7 +958,6 @@ $(window).unload(function(){
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Silk Road Westbound"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="SilkRoadWestbound-2013.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1192,6 +1191,7 @@ Surrounded by the majesty of the Tien Shen Mountains, we will enjoy a traditiona
 </div>
 
 <div id="tab14" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Golden Eagle"/>
@@ -1199,7 +1199,6 @@ Surrounded by the majesty of the Tien Shen Mountains, we will enjoy a traditiona
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="TheSilkRoad(Moscow-Almaty) Eastbound"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TheSilkRoad(Moscow-Almaty)-2013.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
