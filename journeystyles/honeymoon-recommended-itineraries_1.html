@@ -548,6 +548,7 @@ Note: During cocktails and dinner, gentlemen are required to wear a jacket (the 
 </div>
 
 <div id="tab2" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="NEW ZEALAND"/>
@@ -556,7 +557,7 @@ Note: During cocktails and dinner, gentlemen are required to wear a jacket (the 
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="luxury-honeymoon-in-new-zealand.pdf"/>
 
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -953,6 +954,7 @@ This morning you will be transferred to the airport for your flight back to Lima
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="SOUTH AMERICA"/>
@@ -961,7 +963,7 @@ This morning you will be transferred to the airport for your flight back to Lima
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="south-america-honeymoon.pdf"/>
 
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1191,6 +1193,7 @@ In Faanui valley you'll spot small fruit plantations and learn about some of the
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="TAHITI BORA BORA"/>
@@ -1198,7 +1201,7 @@ In Faanui valley you'll spot small fruit plantations and learn about some of the
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="TAHITI BORA BORA"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="tahiti-bora-bora-honeymoon-escape.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1417,7 +1420,7 @@ This afternoon is at your leisure for you to relax and enjoy the facilities of y
 </div>
 
 <div id="tab14" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Prague"/>
@@ -1425,7 +1428,7 @@ This afternoon is at your leisure for you to relax and enjoy the facilities of y
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Prague Fairytale City"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Prague-Fairytale-City.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>

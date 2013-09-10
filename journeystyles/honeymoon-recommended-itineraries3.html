@@ -4,7 +4,7 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Luxury Family Holidays, Family Holidays, Luxury Family Vacation, Family Hotels, Best Family Holidays"/>
 <meta name="description" content="" />
@@ -389,10 +389,10 @@ Before you return back to your hotel enjoy a romantic horse drawn carriage ride,
 <h4>Day 3</h4>
 <h5>BERLIN</h5>
 <p>Today enjoy a full day with a guide and driver (8 hours) on a food & art tour of Berlin. Start with a visit to the Turkish market in Kreuzberg on the banks of the canal (Tuesday + Friday only).</p>
-<p>Alternatively, visit the Marheineke Halle, an indoor, organic food market also in Kreuzberg which sells flowers, meat, fruit and veg as well as typical Berlin snacks (open Monday - Saturday) You will also take a trip to the Bonbon Macherei, a traditional sweet making shop, in the Heckmann Höfe - one of the hidden courtyards in the Mitte district.</p>
-<p>Finally, pay a visit to 'KaDeWe' or Kaufhaus des Westens, a prestigious department store in West Berlin that was opened in 1907. KaDeWe has a mouthwatering food court on the 6th floor with a selection of food and drink to rival Harrods in London. During your tour your guide will treat you to some delicious snacks along the way, such as a traditional Berlin currywurst (the best of these are found in Kreuzberg apparently), Berliner Weiße (beer with red or green syrup) as well as some patisserie or petit four from kadewe.</p>
+<p>Alternatively, visit the Marheineke Halle, an indoor, organic food market also in Kreuzberg which sells flowers, meat, fruit and veg as well as typical Berlin snacks (open Monday - Saturday) You will also take a trip to the Bonbon Macherei, a traditional sweet making shop, in the Heckmann HÃ¶fe - one of the hidden courtyards in the Mitte district.</p>
+<p>Finally, pay a visit to 'KaDeWe' or Kaufhaus des Westens, a prestigious department store in West Berlin that was opened in 1907. KaDeWe has a mouthwatering food court on the 6th floor with a selection of food and drink to rival Harrods in London. During your tour your guide will treat you to some delicious snacks along the way, such as a traditional Berlin currywurst (the best of these are found in Kreuzberg apparently), Berliner WeiÃŸe (beer with red or green syrup) as well as some patisserie or petit four from kadewe.</p>
 <p>This afternoon you may like to pay a visit to Tacheles, a wacky, colourful artists residence which houses a number of quirky modern works of art. The building is a former department store in the Jewish quarter (Scheunenviertel) of Berlin. It served as a Nazi prison during the Second World War and recently it was taken over by artists who called it Tacheles which is Yiddish for "straight talking." The building is a popular place for visitors, however the lease with the property owner expired at the end of 2008 and the future of the art house is now uncertain.</p>
-<p>Finally, visit the 'Hackesche Höfe,' one of the most famous and attractive of Berlin's interconnecting courtyards in the Mitte district. Formerly a rather neglected area, Hackescher Markt has developed into a cultural and commercial centre since the German reunification and has become famous for its nightlife. Return to your hotel from here.</p>
+<p>Finally, visit the 'Hackesche HÃ¶fe,' one of the most famous and attractive of Berlin's interconnecting courtyards in the Mitte district. Formerly a rather neglected area, Hackescher Markt has developed into a cultural and commercial centre since the German reunification and has become famous for its nightlife. Return to your hotel from here.</p>
 <p> <strong>Overnight:</strong> Hotel Adlon Kempinski Berlin <br /> 
 <strong>Meal Plan:</strong> B </p>
 </li>
@@ -407,7 +407,7 @@ Before you return back to your hotel enjoy a romantic horse drawn carriage ride,
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Family Holidays"/>
@@ -415,7 +415,7 @@ Before you return back to your hotel enjoy a romantic horse drawn carriage ride,
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Fine Food and Art Berlin"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Fine-FoodandArtBerlin.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -607,6 +607,7 @@ Fully satiated, your chauffeur will bring you back to the paradise of your hotel
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Family Holidays"/>
@@ -614,7 +615,7 @@ Fully satiated, your chauffeur will bring you back to the paradise of your hotel
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Tuscany Fine Wine"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TuscanyFineWine.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -798,7 +799,7 @@ $(window).unload(function(){
 <li>
 <h4>Day 4</h4>
 <h5> Cape Town/Cape Winelands/Cape Town</h5>
-<p>Today you explore the Cape Town's famous culinary scene. The Western Cape region is blessed with ideal wine-growing climate, beautiful natural scenery and historic estates - not to mention a bevy of top-notch restaurants. Start your gastronomic journey at Morgenster Estate for a cellar tour and sampling of wine and olive oil (also produced here). Enjoy lunch at the critically acclaimed Cape Winelands restaurant Terroir, on the grounds of the Kleine Zalze winery. Dine on a Provençal-inspired chalkboard menu dominated by seasonal ingredients and local wines. After lunch, visit Waterford Wine Estate, where you sample award-winning wines complemented by a chocolate tasting. Continue to picturesque Stellenbosch, the second oldest town in South Africa. Explore this lovely town's history and shops on your own as you meander its charming streets hand in hand. End the day at Anura Estate, to sample the perfect couple: award-winning wines and handcrafted Forest Hill cheeses.</p>
+<p>Today you explore the Cape Town's famous culinary scene. The Western Cape region is blessed with ideal wine-growing climate, beautiful natural scenery and historic estates - not to mention a bevy of top-notch restaurants. Start your gastronomic journey at Morgenster Estate for a cellar tour and sampling of wine and olive oil (also produced here). Enjoy lunch at the critically acclaimed Cape Winelands restaurant Terroir, on the grounds of the Kleine Zalze winery. Dine on a ProvenÃ§al-inspired chalkboard menu dominated by seasonal ingredients and local wines. After lunch, visit Waterford Wine Estate, where you sample award-winning wines complemented by a chocolate tasting. Continue to picturesque Stellenbosch, the second oldest town in South Africa. Explore this lovely town's history and shops on your own as you meander its charming streets hand in hand. End the day at Anura Estate, to sample the perfect couple: award-winning wines and handcrafted Forest Hill cheeses.</p>
 <p><strong>Overnight:</strong> Cape Grace <br />
 <strong>Meal Plan:</strong> B,L</p>
 </li>
@@ -850,6 +851,7 @@ $(window).unload(function(){
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Family Holidays"/>
@@ -857,7 +859,7 @@ $(window).unload(function(){
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="South Africa The Six Carat Safari"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="South-Africa-The-Six-Carat-Safari.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1054,7 +1056,7 @@ GUnload();
 <li>
 <h4>Day 6</h4>
 <h5>South Georgia</h5>
-<p>Today, travel deeper into the heart of the Umbrian countryside for one of the most memorable meals of your life. Dubbed the world's smallest restaurant, the one-of-a-kind Solo Per Due is dedicated to hosting and serving just you and your partner a dining experience tailored around your tastes and preferences. Your waiter serves on the call of your bell; otherwise, the restaurant and terrace are just for you, offering stunning views through Umbria's olive-tree clad hills. Continue to legendary Rome. Many say that the "Eternal City" is even more stunning as the sun goes down and the cityscape lights up. Alongside your guide and chauffeur, experience Italy's capital at night, touring the beautifully lit Trevi Fountain, Baths of Caracala and ancient Roman Forum before heading up to a lovely villa in the Borghese Gardens for the finale. At the top of the villa, champagne and canapés await you and your loved one to share in private as you gaze from your terrace out into the city that gave romance its name. Your romantic boutique hotel enjoys one of Rome's premier addresses, just across from the stunning Roman Colosseum.</p>
+<p>Today, travel deeper into the heart of the Umbrian countryside for one of the most memorable meals of your life. Dubbed the world's smallest restaurant, the one-of-a-kind Solo Per Due is dedicated to hosting and serving just you and your partner a dining experience tailored around your tastes and preferences. Your waiter serves on the call of your bell; otherwise, the restaurant and terrace are just for you, offering stunning views through Umbria's olive-tree clad hills. Continue to legendary Rome. Many say that the "Eternal City" is even more stunning as the sun goes down and the cityscape lights up. Alongside your guide and chauffeur, experience Italy's capital at night, touring the beautifully lit Trevi Fountain, Baths of Caracala and ancient Roman Forum before heading up to a lovely villa in the Borghese Gardens for the finale. At the top of the villa, champagne and canapÃ©s await you and your loved one to share in private as you gaze from your terrace out into the city that gave romance its name. Your romantic boutique hotel enjoys one of Rome's premier addresses, just across from the stunning Roman Colosseum.</p>
 <p><strong>Overnight:</strong> Palazzo Manfredi <br />
 <strong>Meal Plan:</strong> B</p>
 </li>
@@ -1097,6 +1099,7 @@ GUnload();
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Family Holiday"/>
@@ -1104,7 +1107,7 @@ GUnload();
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Italy Flavors of Venice Tuscany Rome"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Italy-Flavors-of-Venice-Tuscany-Rome.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>

@@ -4,7 +4,7 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Celebration Tours, Wedding Travel, A & K Celebration, Family Tours, Family Holidays, Royal Travels"/>
 <meta name="description" content="" />
@@ -429,7 +429,7 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Botswana"/>
@@ -437,7 +437,7 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Bostwana Romance Under the Stars"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Bostwana-Romance-Under-the-Stars.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -645,6 +645,7 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Antarcticaa"/>
@@ -652,7 +653,7 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Antarctica"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classic-Antarctica.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -889,6 +890,7 @@ $(window).unload(function(){
 </div>
 
 <div id="tab10" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Antarctica"/>
@@ -896,7 +898,7 @@ $(window).unload(function(){
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Antarctica SouthGeorgia the Falk land Islands"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Antarctica,SouthGeorgia-theFalklandIslands.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -1115,14 +1117,15 @@ GUnload();
 </div>
 
 <div id="tab14" style="display:none;">
-<?php $id =3;?>
+    <h1>Send itinerary</h1>
+<?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Thailand"/>
 <input type="hidden" name="region_email" id="region_email" value="The Orient"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Thailand Bangkok to the Golden Triangle"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Thailand-Bangkok-to-the-Golden-Triangle.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
