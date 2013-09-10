@@ -4,7 +4,7 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="keywords" content="Celebration Tours, Wedding Travel, A & K Celebration, Family Tours, Family Holidays, Royal Travels"/>
 <meta name="description" content="" />
@@ -335,14 +335,14 @@ href="../yahoo.html">
 <li>
 <h4>Day 5</h4>
 <h5>Sirince/Izmir/Cappadocia</h5>
-<p>Millennia-long volcanic activity and erosion turned the volcanic remains into a soft porous stone named tuff, creating a unique landscape in Cappadocia. The valleys of tuff filled with "fairy chimneys" became cave dwellings, monasteries, chapels and cellar villages at the hands of expert carvers. Fly to Cappadocia where you can explore this magical fairyland, marveling at the fascinating rock-carved churches and subterranean settlements. For lunch, travel by horse cart to a quiet place in the country for a picnic barbecue. Feast on a meze (an array of small plates) of salads, kebabs, fried chicken and lamb chops. Afterward, check in to your deluxe traditional Cappadocia hotel, partly carved into the tuff. Admire the antiques, elegant furniture, handmade wool and silk carpets used in the décor throughout the property. Then explore the rock-carved churches of Göreme, now an open-air museum displaying fine examples of ninth- and tenth-century Byzantine wall paintings. Later, privately visit the beautifully restored Dark Church and view its 11th-century frescoes before going on a hike in the famous Red Valley.</p>
+<p>Millennia-long volcanic activity and erosion turned the volcanic remains into a soft porous stone named tuff, creating a unique landscape in Cappadocia. The valleys of tuff filled with "fairy chimneys" became cave dwellings, monasteries, chapels and cellar villages at the hands of expert carvers. Fly to Cappadocia where you can explore this magical fairyland, marveling at the fascinating rock-carved churches and subterranean settlements. For lunch, travel by horse cart to a quiet place in the country for a picnic barbecue. Feast on a meze (an array of small plates) of salads, kebabs, fried chicken and lamb chops. Afterward, check in to your deluxe traditional Cappadocia hotel, partly carved into the tuff. Admire the antiques, elegant furniture, handmade wool and silk carpets used in the dÃ©cor throughout the property. Then explore the rock-carved churches of GÃ¶reme, now an open-air museum displaying fine examples of ninth- and tenth-century Byzantine wall paintings. Later, privately visit the beautifully restored Dark Church and view its 11th-century frescoes before going on a hike in the famous Red Valley.</p>
 <p><strong>Overnight:</strong> The Museum Hotel<br />
 <strong>Meal Plan:</strong> B,L</p>
 </li>
 <li>
 <h4>Day 6</h4>
 <h5> Cappadocia</h5>
-<p>Wake with the sunrise and embark on a thrilling hot-air balloon ride over Cappadocia, looking down over the magical landscapes. When you return to land, celebrate with a champagne toast. After a late breakfast, explore another marvel of the region: the "underground city" at Kaymakli. The extensive network of rock-carved subterranean tunnels and hallways, storage and sleeping cells, airshafts and chapels, is more than 140 feet deep. With your guide, follow a lighted route and descend to 70 feet to view the mysterious passageways and dwellings. Then join a local farmer and his family for lunch in their home. This afternoon, visit Göreme Village Weavers Association, where young girls weave traditional rugs at home.</p>
+<p>Wake with the sunrise and embark on a thrilling hot-air balloon ride over Cappadocia, looking down over the magical landscapes. When you return to land, celebrate with a champagne toast. After a late breakfast, explore another marvel of the region: the "underground city" at Kaymakli. The extensive network of rock-carved subterranean tunnels and hallways, storage and sleeping cells, airshafts and chapels, is more than 140 feet deep. With your guide, follow a lighted route and descend to 70 feet to view the mysterious passageways and dwellings. Then join a local farmer and his family for lunch in their home. This afternoon, visit GÃ¶reme Village Weavers Association, where young girls weave traditional rugs at home.</p>
 <p><strong>Overnight:</strong> The Museum Hotel<br />
 <strong>Meal Plan:</strong> B,L,D</p>
 </li>
@@ -357,7 +357,7 @@ href="../yahoo.html">
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Turkey"/>
@@ -365,7 +365,7 @@ href="../yahoo.html">
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Turkey-Turkish Delight"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Turkey-Turkish-Delight.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
