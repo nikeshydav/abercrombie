@@ -4,11 +4,11 @@ include("../classes/mimemail.class.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<meta name="keywords" content="Celebration Tours, Wedding Travel, A & K Celebration, Family Tours, Family Holidays, Royal Travels"/>
-<meta name="description" content="" />
-<title>Luxury Honeymoon Itineraries - A&K India</title>
+<meta name="keywords" content="Best Honeymoon Destination, Perfect Honeymoon Destination, Romantic Places"/>
+<meta name="description" content="Find perfect luxury honeymoon destination for romantic couples and enjoy your dream holidays in a memorable destination. A&amp;K helps you to relish inspiring journeys, customized to your individual interests and needs." />
+<title>Best Luxury Honeymoon Destination Holidays - A&amp;K India</title>
 <link rel="stylesheet" href="../css/style.css" type="text/css" />
 <!--Flag-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -26,55 +26,56 @@ include("../classes/mimemail.class.php");
 <script type="text/javascript" src="../js/jquery1.js"></script>
 <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
 <script language="javascript">
-function showMe(tab)
-{		
-	for(var i=1; i<=12; i++)
-	{
-		var name="tab"+i;
-		var name2="divli"+i;
-		if(tab==i)
-		{
-		    
-	        if(document.getElementById(name2) != null)	
-		    {
-			document.getElementById(name2).className="active";
-			}
-			
-			if(document.getElementById(name) != null)	
-			{
-			document.getElementById(name).style.display="block";
-			}
-		}
+    function showMe(tab)
+    {	
+        
+        for(var i=1; i<=16; i++){
+            var name="tab"+i;
+            var name2="divli"+i;
+            if(tab==i)
+            {
 		
-		else
-		{
-		    if(document.getElementById(name2) != null)	
-		    {
-			document.getElementById(name2).className="";
-			}
-			
-			if(document.getElementById(name) != null)	
-		   {
-			document.getElementById(name).style.display="none";
-			}
-		}
-		if(name == 'tab4'){
-		  $(document).ready(function(){
-				gmapInitialize();
-			});
+                if(document.getElementById(name2) != null)	
+                {
+                    document.getElementById(name2).className="active";
+                }
+                if(document.getElementById(name) != null)	
+                {
+                    document.getElementById(name).style.display="";
+                }
+                if(name == 'tab4'){
+                    $(document).ready(function(){
+                        gmapInitialize();
+                    });
 		}
 		if(name == 'tab8'){
-		  $(document).ready(function(){
-				gmapInitialize1();
-			});
+                    $(document).ready(function(){
+                        gmapInitialize1();
+                    });
 		}
 		if(name == 'tab12'){
-		  $(document).ready(function(){
-				gmapInitialize2();
-			});
+                    $(document).ready(function(){
+                        gmapInitialize2();
+                    });
 		}
+		if(name == 'tab16'){
+                    $(document).ready(function(){
+                        gmapInitialize3();
+                    });
+		}
+            } else {
+                if(document.getElementById(name2) != null)	
+                {
+                    document.getElementById(name2).className="";
+                }
+                
+                if(document.getElementById(name) != null)	
+                {
+                    document.getElementById(name).style.display="none";
+                }
+            }
 	}
-}
+    }
 </script>
 <script language="javascript">
 function CallPrint(strid)
@@ -163,7 +164,7 @@ href="../yahoo.html">
 <!-- Header Part End Here -->
 
 <!-- Banner Part Start Here -->
-<div id="Banner"><img src="../images/honeymoon/honeymoon-banner4.jpg" alt="Celebration" width="959" height="300" /></div>
+<div id="Banner"><img src="../images/honeymoon/honeymoon-banner4.jpg" alt="Best Honeymoon Destination" width="959" height="300" /></div>
 <!-- Banner Part End Here -->
 
 <!-- Container Part Start Here -->
@@ -176,7 +177,8 @@ href="../yahoo.html">
 <li><a href="../index.html">Home</a></li>
 <li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
 <li><a href="honeymoon.html">Honeymoon</a></li>
-<li>Recommended Itineraries</li>
+<li><a href="honeymoon-recommended-itineraries-introduction.html">Recommended Itineraries</a></li>
+<li>For Die-Hard Romantics</li>
 </ul>
 </div>
 <div class="LeftList">
@@ -185,13 +187,7 @@ href="../yahoo.html">
 		  <ul>
               <li><a href="honeymoon.html" title="Introduction to Honeymoon"> Introduction to Honeymoon</a></li>
               <li><a href="honeymoon-recommended-itineraries-introduction.html" title="Recommended Itineraries">Recommended Itineraries</a>
-              <ul>
-              <li><a href="honeymoon-recommended-itineraries.html" title="For Die-Hard Romantics"><span>-</span> For Die-Hard Romantics</a></li>
-              <li><a href="honeymoon-recommended-itineraries1.html" title="For Nature Lovers"><span>-</span> For Nature Lovers</a></li>
-              <li><a href="honeymoon-recommended-itineraries2.html" title="For Culture Enthusiasts"><span>-</span> For Culture Enthusiasts</a></li>
-               <li><a href="honeymoon-recommended-itineraries3.html" title="For Foodies"><span>-</span> For Foodies</a></li>
-            </ul>
-              </li>
+             </li>
               <li><a href="honeymoon-hotelportfolio.html" title="Hotel Portfolio">Hotel Portfolio</a></li>
               <li><a href="honeymoon-special-offers.html" title="Special Offers">Special Offers</a></li>
             </ul>
@@ -235,7 +231,7 @@ href="../yahoo.html">
 <div class="CenterContainerInner">
 <h1>Recommended Itineraries</h1>
 <div class="Right">
-<div class="RightIcons"><?php include('../share.html'); ?></div>
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
 <div class="NewsletterBox">
 <?php include('../newsletterform.html'); ?>
 </div>
@@ -244,16 +240,104 @@ href="../yahoo.html">
 
 <p>Like a bejeweled crown, marriage is that solitary gem that sparkles your life. And honeymoon is the period which adds the vivacity to this long lasting alliance. Given the special significance attached to this intimate period, Abercrombie & Kent, have your most romantic escapade planned to the very detail. Whether you want to enjoy the quietude with nature or make merry with your loved one in tow, Abercrombie & Kent has your dream etched in reality, adorned with luxury, comfort et al, customized to befit a King and his newly crowned, Queen.</p>
 
-<div align="left">
-<div class="boldtext">Select your Honeymoon style from the list below</div>
-<select onChange="ChangeValue(this)" class="choose">
-<option value="0" selected="selected">--Please Select--</option>
-      <option value="honeymoon-recommended-itineraries.html"> For Die-Hard Romantics</option>
-      <option value="honeymoon-recommended-itineraries1.html">For Nature Lovers</option>
-      <option value="honeymoon-recommended-itineraries2.html">For Culture Enthusiasts</option>
-      <option value="honeymoon-recommended-itineraries3.html">For Foodies</option>
-      
-</select>
+<div class="count-page"> 
+<a href="honeymoon-recommended-itineraries-introduction.html"><strong>1</strong></a> | 
+<a href="honeymoon-recommended-itineraries-2.html">2</a> | 
+<a href="honeymoon-recommended-itineraries-3.html">3</a> | 
+<a href="honeymoon-recommended-itineraries-4.html">4</a> | 
+<a href="honeymoon-recommended-itineraries-5.html">5</a> |
+<a href="honeymoon-recommended-itineraries-6.html">6</a> |
+<a href="honeymoon-recommended-itineraries-2.html"> Next > </a>
+</div>
+<div class="Clr"></div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/Europe_Honeymoon_Exclusiv_small.jpg" alt="Europe Honeymoon Exclusive" /></div>
+<div class="rightbox">
+<h2>Europe Honeymoon Exclusive </h2>
+<p><strong>Duration: </strong> 23 Days <br />
+<strong>Highlights: </strong>Tour at Patek Philippe museum, Excursion to  Lausanne and Montreux,<strong> </strong>Private chocolate tasting at Max Chocolatier,  Lunch cruise on Lake Lucerne, Excursion in to the Tuscany countryside, INSIDER  ACCESS: Rome by Night, INSIDER ACCESS: Learn to the secrets of authentic pizza  making.</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/french-honeymoon.jpg" alt="French Honeymoon" /></div>
+<div class="rightbox">
+<h2>French Honeymoon </h2>
+<p><strong>Duration:</strong> 20 Days <br />
+<strong>Highlights: </strong> Sightseeing of Paris city including major highlights and evening enjoy romantic 4 Course menu dinner including live musical animation.<br />
+</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/honeymoon1.jpg" alt="BOHEMIAN PARIS" /></div>
+<div class="rightbox"><h2>BOHEMIAN PARIS</h2>
+<p><strong>Duration:</strong>   4 Days<br />
+A special 4 day tour of the French capital, exploring all the main sights of one of the most romantic cities in the world.<br /><br />
+<strong>Highlights:</strong> Eiffel Tower, Arc de Triomphe, Champs ElysÃ©es, Notre Dame Cathedral, Versailles </p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/honeymoon/honeymoon5.jpg" alt="Recommended" /></div>
+<div class="rightbox"><h2>TUSCANY FINE WINE AND DINING</h2>
+<p><strong>Duration:</strong>   4 Days<br />
+<strong>Highlights:</strong>   A romantic 4 day break to the stunning Italian region of Tuscany. Relax and enjoy the luxurious spa facilities and indulge in a wine and dine experience.</p>
+<p><strong>Highlights:</strong> Florence, Chianti, Tavarnelle, Passignano</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="Clr"></div>
+<div class="count-page"> 
+<a href="honeymoon-recommended-itineraries-introduction.html"><strong>1</strong></a> | 
+<a href="honeymoon-recommended-itineraries-2.html">2</a> | 
+<a href="honeymoon-recommended-itineraries-3.html">3</a> | 
+<a href="honeymoon-recommended-itineraries-4.html">4</a> | 
+<a href="honeymoon-recommended-itineraries-5.html">5</a> |
+<a href="honeymoon-recommended-itineraries-6.html">6</a> |
+<a href="honeymoon-recommended-itineraries-2.html"> Next > </a>
 </div>
 </div>
 <!-- Center Container Part End Here -->
@@ -264,7 +348,7 @@ href="../yahoo.html">
 <!-- Footer Part Start Here -->
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
-<!--Morocco: Land of the Kasbahs-->
+<!--  Europe Honeymoon Exclusives Start Here -->
 <div id="popup1" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -275,7 +359,7 @@ href="../yahoo.html">
 <li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="../popup-page.html?page=pdf/Morocco-Land-of-the-Kasbahs.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/europe-honeymoon-exclusive.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -285,84 +369,288 @@ href="../yahoo.html">
 </div>
 <div id="tab1">
 <div class="logoinner1"></div>
-<h1>Morocco: Land of the Kasbahs (2012)</h1>
-<div class="popupbanner"><img src="../images/morroco-inner.jpg" alt="Morocco" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<h1> Europe Honeymoon Exclusive</h1>
+<div class="popupbanner"><img src="../images/Europe_Honeymoon_Exclusive.jpg" alt="Europe Honeymoon Exclusive" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong> 7 Nights</p>
-<p> The land of the Kasbah's, busy ports, nomadic Berbers, high mountains and expansive desert offers a romantic escape from the world as you know it. Visit ancient mosques and walk hand in hand through lively city squares, follow mountain slopes and feel the breeze coming from picturesque lakes. Then share your nights in amazing kasbahs, palace hotels and intimate desert tents that all reflect the ambience of a bygone era.</p>
+<p><strong>Duration:</strong> 23 Days</p>
+<p><b>Highlights :</b> Tour at Patek Philippe museum, Excursion to Lausanne and Montreux, Private chocolate tasting at Max Chocolatier, Lunch cruise on Lake Lucerne, Excursion in to the Tuscany countryside, INSIDER ACCESS: Rome by Night, INSIDER ACCESS: Learn to the secrets of authentic pizza making, Dinner at Solo per due Restaurant(only for two), Paris: Exclusive Artists Jewellery Tour, Paris: Invitation to the World Of Fashion, Paris: Versailles with Helicopter, Paris: Create Your Own Fragrance, Paris: Exclusive Private Yacht hire with dinner.</p>
 </li>
-<li><h4>Day 1</h4>
-<h5>India/Casablanca, Morocco</h5>
-<p>You are met on arrival and given VIP assistance in clearing customs formalities and collecting your luggage; then travel by private vehicle to your unique vintage townhouse hotel, located in the heart of the city. Originally settled by Berbers in the seventh century, Casablanca today is a bustling, French-influenced center. This afternoon, join your guide for a tour of this port city, stopping at the formidable Hassan II Grand Mosque. Its minaret is the tallest religious structure in the world, and part of the mosque's floor is glass, enabling worshippers to kneel directly over the sea. Enjoy dinner at Rick's Caf�, housed in a 1930's mansion and based on the caf� everybody came to in the famous film Casablanca.</p>
-<p><strong>Overnight:</strong> Le Doge <br />
-<strong>Meal Plan:</strong> B,D
+<li>
+    <h5>ITINERARY</h5>
+    <h4>Day 1</h4>
+<h5>Arrival Geneva</h5>
+<p>Arrival at Geneva airport, flight tba<br>
+Private transfer from Geneva airport to Geneva hotel</p> 
+<p>Geneva – Capital of Peace is one of its names - the European headquarters of the United Nations is located here. Another well-deserved name for this city with a humanitarian tradition, international organisations and cosmopolitan flair, is The World's Smallest Metropolis. Quays, lakeside promenades, parks, elegant stores and lively streets and alleyways in the old part of town wait to be discovered. Boat trips beckon on the lake and the Rhone River. The Alps seem close enough to touch. Geneva - small metropolis surrounded by unspoiled nature and breath-taking scenery.</p>
+<p><strong>Overnight:</strong> Hotel Mandarin Oriental <br />
+
 </p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>Casablanca/Er-Rachida/Merzouga</h5>
-<p>Meet your private A&K guide, an affable local resident and an expert on Morocco's culture and traditions, who accompanies you throughout your journey in Morocco. Board a charter flight to Er-Rachidia, and on arrival have lunch in Erfoud. Hop into a four-wheel-drive vehicle for a drive across the stunning Erg Chebbi Dunes to your exclusive A&K Desert Tented Camp in a remote area of the Sahara Desert. You are welcomed with mint tea and pastries and led to your private Moroccan caidal-styled tent that combines elements of Berber and Bedouin styles. Decorated with colorful carpets, it comfortably sleeps two, and has its own private bathroom with a shower and toilet next door. Set off on camelback in the evening and begin exploring the sand dunes. Return to your nomadic accommodations before sitting down to a Bedouin dinner served around the campfire.</p>
-<p><strong>Overnight:</strong> Desert Tented Camp <br />
-<strong>Meal Plan:</strong> B,L,D
+<h5>Geneva</h5>
+<p>Private transfer from Geneva hotel to Patek Philippe museum<br>
+Private guided tour at Patek Philippe museum (2 hours)<br>
+Private transfer from Geneva Patek Philippe museum to hotel</p>
+    <p>The Patek Philippe Museum hosts an extraordinary collection of watchmaking masterpieces 
+dating from the 16th to the 20th century. This private tour highlights the historical significance of 
+the art of watchmaking and enamelling.</p>
+<p><strong>Overnight:</strong> Hotel Mandarin Oriental <br />
+
 </p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5> Merzouga/Erfoud/Skoura</h5>
-<p>The drive today takes you across the southern slopes of the High Atlas range and through the Dades Valley. Along the way, stop at some of the many date palmeries and a small, private museum that houses exhibits showcasing local art, culture and history. Travel the "Road of a Thousand Kasbahs" and view the amazing 17th-century Amerhidl Kasbah; its fa�ade appears on the Moroccan 50-dirham note. After lunch, continue to your home for the next two nights - a luxurious 19th-century Kasbah that was part of a sultan's private hunting ground in the Skoura Oasis. Dar Ahlam means "house of dreams," and the name suits it well. Enter what seems like a dreamscape, where colorful veils, lanterns and candles - and only 12 rooms - ensure complete privacy, setting the mood for romance. Sit by the fireplace, surrounded by a kaleidoscope of colors; have lunch in the garden or olive grove; or dine in a secluded corner of the Kasbah or even on a hidden terrace.</p>
-<p><strong>Overnight:</strong> Dar Ahlam<br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5> Full Day to Lausanne</h5>
+<p>Full day excursion to Lausanne and Montreux by private transfer (max. 8 hours)<br>
+Private guided tour at Chillon Castle (1 hour)<br>
+Private guide for walking tour of Lausanne (2 hours)</p>
+<p>On your way to Lausanne, you will take the scenic road along the shores of this sparkling lake, the largest in Europe, and through the vineyards and picturesque villages and towns of this major wine-producing area of Switzerland.</p>
+<p>Built in three tiers, Lausanne has the sparkling blue waters of Lake Geneva at its feet, deep green forests at its back and snow-capped Alps in the distance. It is a city to explore with your senses, offering everything from quaint country markets to cosmopolitan shops and shows. A climb up to the Old City will take you to Lausanne's superb gothic cathedral, to the ancient castle of Saint Maire and to the university with its fine museums. Down by the waterside is the picturesque resort of Ouchy, where you can linger in one of the lakeside restaurants or visit the famous Olympic Museum. Continue to Montreux by coach. Montreux is the most frequented resort on Lac Leman (Lake of Geneva), thanks to its beautiful location and pleasant surrounding countryside. The city stretches gently along the shore of a wide, south-facing bay and rises above the lake like a huge amphitheatre amidst the wooded and vine-clad slopes. Montreux has attracted many visitors since the 18th century. Its palm trees give sample proof of its mild climate. The main features of the city tour is the Vieux Montreux (the old parts of the township) and, of course, the visit of the Castle of Chillon - one of the most impressive, medieval strongholds of Switzerland, immortalised by many famous poets.</p>
+<p><strong>Overnight:</strong> Hotel Mandarin Oriental<br />
+</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>Skoura</h5>
-<p>Not far from the desert oasis of Skoura is Ouarzazate Lake, where you take a walk and then sit down to a delightful picnic lunch on its shores. If you look across the lake you can see the mountains and desert; on a windy day, the waters toss and swell like the ocean. Afterward, return to your Kasbah for a refreshing swim and maybe a massage. This evening, savor a romantic dinner in an equally romantic setting: in the gardens under the almond trees, in the palm grove or on the riverbank.</p>
-<p><strong>Overnight:</strong> Dar Ahlam<br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>Geneva to Interlaken</h5>
+<p>Today you will pick up your self-drive car<strong> MERCEDES ML 63 AMG </strong> from hotel and you will have 
+this car from<strong> 4th till 19 Dec 13</strong>.<br>
+Self-drive from Geneva to Interlaken via scenic Gruyeres, travel time is approx.. 2 hours and 30 
+minutes.</p>
+<p>This scenic transfer takes you to the Swiss Cheese & Chocolate country. Drive along 
+picturesque vineyards to Chexbres and Chatel St. Denis, typical wine growing villages. Visit the 
+Cheese Factory where you can watch the cheese production and even taste some of it. Next 
+highlight is the visit of the famous Chocolate Factory Cailler in Broc. Perched on a hill in a 
+landscape full of grace and harmony is the picture-book, medieval town of Gruyeres with its 
+quaint houses dating from the 16th and 17th centuries, a real paradise for photographers. 
+Continue to Interlaken with you rental car.</p>
+<p>Interlaken is one of the best known and most popular summer holiday resorts in Switzerland, 
+outstandingly well-equipped to cater to the needs of visitors. The Hohematte, 700 yards long, is 
+a pedestrian paradise of shops, hotels and sidewalk cafes, interrupted only by inviting gardens. 
+For a comfortable excursion through this quaint town, take a horse-carriage ride. You will view 
+the mountains, the lakes, the endless beauty of Switzerland; all are at your fingertips in this 
+comfortable, inviting, and elegant town.</p>
+<p><strong>Overnight:</strong> Hotel Victoria Jungfrau<br />
+</p>
 </li>
 <li>
 <h4>Day 5</h4>
-<h5> Skoura/Ouarzazate/Ait Benhaddou/Marrakech</h5>
-<p>Spend some time wandering around Ouarzazate, a city originally built as a French garrison in the 1920s and now known for its pottery and carpets. Afterward, visit the Glaoui Kasbah of Taourit. One of Morocco's most beautiful Kasbahs, it consists of a network of luxury apartments, simple clay houses and crenellated towers decorated with geometric motifs. Continue to the fortified village of Ait Benhaddou, where some of the world's most elaborate and decorative kasbahs are found. See how they seem to defy the laws of gravity as they perch upon the sleep slope. Ait Benhaddou's charms have also reached all the way to Hollywood. Many popular movies, including Lawrence of Arabia, Jesus of Nazareth, Gladiator and The Mummy have been filmed here. After lunch in a local restaurant, continue to exotic Marrakech, the "Pearl of the South," and your Moorish-style palace hotel.</p>
-<p><strong>Overnight:</strong> Ksar Char Bagh <br />
-<strong>Meal Plan:</strong> B,L</p>
+<h5> Visit of Mount Jungfraujoch</h5>
+<p>Full day excursion to Mount Jungfraujoch (unescorted, without guide & vehicle),</p>
+    <p>This excursion takes you to the very heart of the Bernese Alps - the mighty "Eiger" (13'026 ft/ 3970m), "Monch" (13'449 ft/ 4099m) and "Jungfrau" (13'643 ft/ 4158m), which form an imposing nucleus of the Alpine Region. Walk to Interlaken Ost station and take the train into the Waterfall Valley of Lauterbrunnen where you change and board the train to Jungfraujoch. The travelling time from Interlaken to the Jungfraujoch is approx. 2 1/2 hours each way. At Jungfraujoch, the highest railway station in Europe, you can visit the Ice Palace and the Sphinx Terraces - reached by lift affording breathtaking view of the Aletsch Glacier, the largest river of ice in Europe. Refreshment or a meal can be obtained at the Jungfraujoch Restaurant "Top of Europe". After approx. 2<sup>1/2</sup> hours you will return to the mountaineering village of Grindelwald, the winter sports and mountaineering centre. Enjoy the view on the mighty mountains, before returning to Interlaken.</p>
+<strong>Overnight:</strong> Hotel Victoria Jungfrau<br />
+<p></p>
 </li>
 <li>
 <h4>Day 6</h4>
-<h5>Marrakech</h5>
-<p>Morocco's most famous city, Marrakech is veiled in mystery and magic. Visit the medina, the old walled section of the city, where most of the architectural attractions are located. Begin with a stop at Koutoubia Mosque and its 12th-century minaret, which dominates the local skyline. Make your way to vibrant Djemaa el-Fna, Marrakech's main square. Watch as fire-eaters, mime artists, snake charmers and street musicians perform at every turn. Continue walking and look for the Saadian Tombs, decorated in Granada-style carving and hidden away behind high walls. Discover how the privileged lived in the 19th century when you wander Bahia Palace to see the beautiful mosaics, fountains and courtyards. At the Museum of Moroccan Arts and Crafts, housed in the beautiful Dar Si Said palace, view stunning traditional woven carpets and Berber silver jewelry. Afterward, return to your hotel to experience a very important part of Moroccan culture and life: a hammam (steam bath). More than a steam bath, the hammam is a ritual. Soak in hot, soft water, lather up with a special penetrating black soap and exfoliate for revived skin. Follow up with a cold shower and an incredibly relaxing massage in a warm, darkened room - total bliss.</p>
-<p><strong>Overnight:</strong> Ksar Char Bagh <br />
-<strong>Meal Plan:</strong> Meals: B,L</p>
+<h5>Interlaken to Lucerne</h5>
+<p>Self-drive from Interlaken to Lucerne via scenic Brunig pass<br>
+Travel time is approx.1 hour.<br>
+Private chocolate tasting at Max Chocolatier (1 hour)</p>
+<p>After a scenic drive along the Lake of Brienz have a short stop at the quaint typical Swiss Village of Brienz, the center of Switzerland's wood-carving industry. Before leaving you should not forget to take one or two pictures of these beautiful wood chalets with bright splashes of the
+ geraniums in the window sills. Cross the Brunig Pass and drive along the Lakes of Lungern, Sarnen and Lucerne.</p>
+<p>The world-famous, historical city of Lucerne lies in Switzerland in the heart of Europe. Because of its central location right on Lake Lucerne, which is surrounded by grand mountains like Mount Titlis at 3000 meters high or the impressive Mount Pilatus, Lucerne is considered to be the "Switzerland in Switzerland". You will find everything here: the lake, the mountains, the city a distinctive consonance of nature and work of man, which has been preserved and carefully developed for centuries.</p>
+<p>What do you want to see while in Lucerne?<br>
+The Chapel Bridge with its gabled paintings of old battles and the adjacent quaint quarters with little streets ranging and changing from silence to abundant liveliness? The curiosities of the museums, the treasures of the many churches? Take a leisurely walk through a maze of small streets, bridges, promenades and plazas dominated by countless historical towers, fountains and frescoed buildings.</p>
+<p><strong>Overnight:</strong> Palace Luzern <br />
+</p>
 </li>
 <li>
 <h4>Day 7</h4>
-<h5>Marrakech/Atlas Mountains/Marrakech</h5>
-<p>High up in the Atlas Mountains, Morocco's tallest and most majestic range, see traditional villages clinging to the almost vertical sides of the valley. Spend your day exploring the Atlas Mountains and its flora and fauna with your private guide, and gain insight into the daily lives of the villagers. While you have lunch at Sir Richard Branson's Kasbah Tamadot, admire the fabulous views of the mountains. Later this afternoon, return to your hotel for a relaxing massage. Conclude your romantic holiday with dinner for two served in a private room or under the stars in the hotel's garden</p>
-<p><strong>Overnight:</strong> Ksar Char Bagh<br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>Excursion to Mount Pilatus</h5>
+<p>Excursion to Mount Pilatus (Self-drive) unescorted, without guide & vehicle<br>
+After a drive through Lucerne and Kriens by rental car ascend to Frakmuntegg by gondolas which sweep you over pine forests and mountain meadows and change to aerial cable car to Pilatus Kulm. On top you have time to walk up to the vista point. There will be time to admire the breathing panorama over the Swiss Alps and Lucerne and also to enjoy a delicious meal in the restaurant. Descend to Kriens by cable car and gondola again and drive back to Lucerne.
+</p>
+<p><strong>Overnight:</strong> Palace Luzern<br />
+</p>
 </li>
 <li>
 <h4>Day 8</h4>
-<h5> Marrakech/India</h5>
-<p>Privately transfer to the airport to board your departure flight.</p>
-<p><strong>Meal Plan:</strong> B</p>
+<h5> Cruise on Lake Lucerne</h5>
+<p>Lunch cruise on Lake Lucerne (2 hours)</p>
+Note:<br><p>Lunch will be chosen and paid on spot </p>
+<p>To see Central Switzerland at its best, you need only step aboard any one of the five "old-timer" paddle steamers for a journey into time. If you prefer however, there are 15 elegant saloon cruisers also available for a tour of the lake that encompasses 38 kilometres of typically Swiss scenic splendour. You will drift by peaceful meadows and idyllic bays, see dramatic inland fjords stretching to the bottom of vertical cliffs that rise majestically to the first Alpine summits. Enjoy your lunch break on the lake. The chef on board has prepared a number of delightful culinary surprises for you.
+</p>
+<p><strong>Overnight:</strong> Palace Luzern<br />
+    </p>
 </li>
+<li>
+<h4>Day 9</h4>
+<h5> Lucerne to Zurich Airport</h5>
+<p>You will drop your self- drive car at hotel and you will be privately transferred to Zurich Airport.<br>
+Departure Zurich airport.<br>
+Upon arrival at Florence airport you will be met and transferred by private vehicle to your hotel in Florence. The remainder of the day is at leisure to relax after your flight.
+</p>
+<p><strong>Overnight:</strong> Four Seasons Hotel Florence<br />
+    </p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5> Florence</h5>
+<p>Today you will pick-up your self-drive car <strong> MASERATI GRAN CABRIO</strong> from hotel which will be with you from<strong> 20th till 23rd Dec.</strong></p>
+<p>This morning you will be met in the lobby of your hotel by your Guardian Angel who will accompany you on foot to your cooking school in the centre of Florence. Experience the vibrant sights and sounds of a local food market during a guided tour (1hour) with your English-speaking tutor. Then enjoy a private three-hour hands-on lesson which can be tailored to your level of ability, your taste and interests, and will teach you some of the secrets of the local and national cuisine.</p>
+<p>This afternoon you will enjoy a half-day walking tour (4 hours) of Florence with your local English-speaking guide. Your tour will include visits to the Uffizi Gallery, housing some of the world's most important art treasures, and the Church of Santa Croce, where many famous Florentines such as Michelangelo and Galileo are buried.</p>
+<p>Vasari Corridor: Your tour will include a visit to the Uffizi Gallery, housing some of the world's most important art treasures. The Uffizi was built in 1560-80 as a suite of offices (uffici) for Duke Cosimo I's new Tuscan administration. Here you will enjoy a very special private entry to the Vasari Corridor*, the private corridor built in 1565 by Giorgio Vasari, court architect to the Medici family. Having walked through this private 'Princes' route' to the Pitti palace on the south side of the River, enjoy some time taking in the Boboli Gardens, built as a private garden to the impressive Medici residence.</p>
+<p>Inclusions: Inclusions: Services of A&K Guardian Angel to accompany by foot to cooking school;<br>
+Cooking lesson (approx. 3 hours); Services of a local English-speaking Guide up to 4 hrs; Entrance to the Santa Croce Church and Leather school; Entrance to the Uffizi Gallery; Entrance fund<br>
+Exclusions: Any meals not specified; Tips</p>
+<p><strong>Overnight:</strong> Four Seasons Hotel Florence<br />
+    </p>
+</li> 
+<li>
+<h4>Day 11</h4>
+<h5> Day at Leisure</h5>
+<p>Today if you want you can visit chianti region on your own using self drive (unescorted, no guide & vehicle)</p>
+<p>Renowned for its art, wine, history and evocative landscapes, Tuscany is a region where the past and present merge in pleasant harmony. Today's full-day tour takes in the Chianti wine region; often considered the most beautiful area in Tuscany. Hill-towns gaze across the countryside from high, many encircled by Etruscan walls and slender cypress trees. As you travel along winding roads, soak up the rich panorama comprising beautiful rolling hills, vineyards and olive groves. Admire the charming hamlets and farmhouses juxtaposed with fortified villas and castles, architectural symbols of the violence and inter-communal strife that tore Tuscany apart in the Middle Ages. Heading south of Florence towards Siena, enjoy a leisurely espresso or gelato in the historic main square of Greve, considered the principal town in Chianti. This afternoon, sit back and enjoy a stunning drive through the Chianti countryside until you reach the hilltop town of Castellina, whose noble origins date back to the thirteen century. Here you will have time to soak up the lively atmosphere as you wander through its charming streets, prior to visiting two local vineyards to sample the world-famous Chianti Classico.</p>
+<p><strong>Overnight:</strong> Four Seasons Hotel Florence<br />
+    </p>
+</li>
+<li>
+<h4>Day 12</h4>
+<h5> Day at Leisure</h5>
+<p>Today if you want you can visit Tuscany for shopping using self-drive. unescorted, no guide & vehicle)</p>
+<p>Excursion in to the Tuscany countryside to visit the various outlet stores, the ideal opportunity to be immersed into Italian haute couture. Visit the best outlets, where you can shop with savings of up to 70%. At The Mall, you can find famous names such as Gucci, Bottega Veneta, Emanuel Ungaro, Ermenegildo Zegna, Giorgio Armani, Hogan, I Pinco Pallino, La Perla, Loro Piana, Marni, Salvatore Ferragamo, Sergio Rossi, Tod's Valentino and Yves Saint Laurent. Only 5km's from The Mall is located the Fendi and Dolce &
+Gabbana outlets' then on to the Prada village "SPACE", where you'll find designers Helmut
+Lang, Miu Miu and Jil Sander. Lunch can be enjoyed in a local restaurant (payable directly).
+</p>
+<p><strong>Overnight:</strong> Four Seasons Hotel Florence<br />
+    </p>
+</li>
+<li>
+<h4>Day 13</h4>
+<h5> Florence to Rome</h5>
+<p>Car pick up from Rome hotel (you will drive from Florence hotel to Rome hotel on today).<br>
+Check-in at hotel.
+</p>
+<p>INSIDER ACCESS: Rome by Night<br>This evening you will be met at your hotel by your English-speaking guide and private vehicle for a 2-hour drive around the eternal city at dusk. As the evening progresses and the sun goes down Rome’ s city lights superbly highlight the monuments and sights of the city. Explore the most famous piazzas and fountains of Rome aglow, each of which takes on a new perspective when lit. Proceed to the Gianicolo, the eighth hill of Rome for a breathtaking view of the entire illuminated city.</p>
+<p><strong>Overnight:</strong> St. Regis, Rome<br />
+    </p>
+</li>
+<li>
+<h4>Day 14</h4>
+<h5> Rome</h5>
+<p>Enjoy a half-day tour (4 hours) which will no doubt leave you in awe as your guide shows you the heart of the Roman Empire. Visit the imposing Colosseum, commissioned by Emperor Vespasian, the stadium could accommodate up to 50,000 spectators who came to view the gladiatorial battles that lasted up to 100 days! Adjacent is the Arc of Constantine, dating from AD 315 it is a forerunner to many other Triumphal Arches around the world. Possibly even more impressive are the excavations of the vast Roman Forum, where the remains of temples, streetscapes, palaces and homes have been uncovered and can now be visited up close. Your guide will bring to life the atmosphere of Rome's pulsating heart, crowded with people from across the Roman Empire. Your guide will also explain the other nearby Emperor's forums; Traiana, Augusto and Cesare. Your visit today also includes the Palatine Hill, inhabited since the 9th century BC, archaeologists believe this to be the place where Romulus, founder of Rome, lived.</p>
+<p>Inclusions: Transport in private, air-conditioned vehicle with English speaking driver (1-2 pax = Mercedes E Class/ 3-4 pax = Mercedes Viano or similar/ 5-6 pax= Mercedes 8 seater minibus); Services of an English-speaking local Guide; Entrance to the Colosseum and Roman Forum & Palatine; Entrance fund;<br>
+Exclusions: Any meals not specified; Tips;</p>
+<p><strong>Overnight:</strong> St. Regis, Rome<br />
+    </p>
+</li>
+<li>
+<h4>Day 15</h4>
+<h5> Dinner at SOLO PER DUE</h5>
+<p style="text-decoration:underline"><strong>INSIDER ACCESS: Learn to the secrets of authentic pizza making</strong></p><br>
+<p>This morning, transfer to a popular Roman Pizzeria for a private cooking class, starting at 10:00am. You will prepare the dough, learning of the various aspects as you go from recommend flour and dough rising times, to the toppings and cooking process required for the perfect pizza! Your pizzaiolo speaks English and can give you some further insight into what it is like running a restaurant business in Rome. After your lesson (up to 3 hours), enjoy the fruits of your labour for lunch.<br>
+Later in the evening we have arranged a special dinner for you.</p><br>
+<p style="font-weight: bold; text-decoration: underline;">Solo per due Restaurant</p><br>
+Today you will be transferred by private vehicle to the smallest restaurant in the world with a table just for you spend a special moment in superb atmosphere enjoying a divine dinner. SOLO PER DUE - or "Just for Two" - is the smallest restaurant in the world: it has only one table and it takes just two people at a time. So there are no queues, no turns, and no waiting; all the attention is dedicated to the two people who have booked. The menu is entirely based on the use of fresh ingredients, chosen each day according to the season and to the clients wishes (the menu can be based on meat or fish accordingly).<br>
+After your relaxed Dinner you will be returned to your hotel in Rome.<br>
+Transfer for dinner is by Mercedes E class and driver at disposal until the end of thedinner aperitivo, 4 courses dinner, exclusively Italian cuisine, accompanied by wines from only the best cellars.
+</p>
+<p><strong>Overnight:</strong> St. Regis, Rome<br />
+    </p>
+</li>  
+<li>
+<h4>Day 16</h4>
+<h5> Half day Driver At Disposal</h5>
+<p>Today an English- Speaking Driver will be at your disposal to travel as you wish within Rome. Available for a half day up to 4 hours.</p>
+<p><strong>Overnight:</strong> St. Regis, Rome<br />
+    </p>
+</li>
+<li>
+<h4>Day 17</h4>
+<h5> Half day Vatican sightseeing</h5>
+<p>With your guide and driver, cross the Tiber River into the awe inspiring Vatican City (4 hours). The Vatican was created by the Lateran Treaty in 1929 and is the World's Smallest Independent State. Visit the Vatican Museums, part of the Papal Residence which is estimated to contain 1400 rooms, chapels and galleries. The Museums contain an extraordinarily rich collection of precious arts, maps, sculptures and antiquities however the most breath-taking masterpiece is Michelangelo's frescoed ceiling in the Sistine Chapel. At the centre of the Vatican lies the vast Basilica of St. Peter, you pass by the colourfully dressed Swiss Guard into the world's largest church. The present Cathedral is a beautiful mix of Renaissance and Baroque architecture, formed under the hands of masters such as Michelangelo. The stunning interior is an elaborate and detailed display of marble, mosaic, gilt and bronze. Your tour includes express entry to the Vatican Museums, past the regular lines. The Vatican requires visitors to cover upper arms and legs to below the knee<br>
+Inclusions: Transport in private, air-conditioned vehicle with English speaking driver (1-2 pax = Mercedes E Class/ 3-4 pax = Mercedes Viano or similar/ 5-6 pax= Mercedes 8 seater minibus); Services of an English-speaking local Guide; Entrance to Vatican Museums & Sistine Chapel, and St Peters Basilica;
+Entrance fund;<br>
+Exclusions: Any meals not specified; Tips;</p>
+<p><strong>Overnight:</strong> St. Regis, Rome<br />
+    </p>
+</li>
+<li>
+<h4>Day 18</h4>
+<h5> Rome to Paris (Flights Not Included)</h5>
+<p>Upon arrival at the Paris airport, you will be met by your Guardian Angel and transferred by private vehicle to your hotel in Paris, where you will be assisted with check-in.</p>
+<p>Inclusions: Transfer in a private, air-conditioned vehicle with English-speaking driver (1-2 pax = Mercedes E class or similar / 3-4 pax Mercedes Viano or similar / 5-6 pax = Mercedes Sprinter 15-seater or similar);<br>
+        Services of an A&K Guardian Angel including airport<br>
+        meeting; Exclusions: Any stops en route; Porterage; Tips;
+</p>
+<p><strong>Overnight:</strong> Mandarin Oriental Hotel, Paris<br />
+    </p>
+</li>
+<li>
+<h4>Day 19</h4>
+<h5>Full day Driver at Disposal</h5>
+<p>Today an English- Speaking Driver will be at your disposal to travel as you wish within Paris. Available for a full day up to 8 hours.<br>
+OR You can do following Insider access tour at optional cost.</p>
+<p><strong>Paris: Exclusive Artists Jewellery Tour</strong><br>
+In the company of your private guide, this afternoons excursion gives you the unique opportunity to meet some of the best French specialists in artists jewellery. Begin with an exclusive visit to a private Parisian apartment to admire stunning pieces, some of which have been exhibited in the best museums in the world. Continue to Les Arts Decoratifs Museum, where you can marvel at the intimate collection of jewellery created by Georges Braque, Alexandre Calder, Henri Laurens and Jean Lurçat. The excitement of your tour culminates at the MiniMasterpiece Gallery, which has been hired exclusively for you. The gallery is entirely dedicated to modern and contemporary artists' jewelry, notably that of Pablo Picasso and Anish Kapoor. You will be greeted by owner Esther de Beauce, who will share her most surprising pieces of art with you over a glass of champagne.
+</p> OR <br>
+    <p><strong>Paris: Invitation to the World Of Fashion</strong>:<br>
+This morning your private fashion guide will open the doors for you of one the legendary Parisian Fashion Houses, allowing you a privileged look inside the world of Haute Couture. On your VIP visit you will be greeted by the boutique director and given a personal behind-the-scenes tour. Throughout the day your expert guide will share the history behind the famous names of the fashion industry with you. In the afternoon your exclusive introduction to the Temples of Parisian elegance will continue with a visit to the archives of the Yves Saint Laurent Foundation (closed to the public). Following afternoon tea at the fashionable Plaza Athenee you will conclude the day with a stroll along Avenue Montaigne that best exemplifies the refined elegance of French luxury design to shop or simply to admire the fabled shop windows.
+</p>
+<p><strong>Overnight:</strong> Mandarin Oriental Hotel, Paris<br />
+    </p>
+</li>
+<li>
+<h4>Day 20</h4>
+<h5> Full Day EuroDisney</h5>
+<p>Today you will be collected from your hotel by private vehicle and Guardian Angel for a full day excursion to the Eurodisney Park.</p>
+<p><strong>Overnight:</strong> Mandarin Oriental Hotel, Paris<br />
+    </p>
+</li>  
+<li>
+<h4>Day 21</h4>
+<h5> Half Day Driver at Disposal</h5>
+<p>
+Today an English- Speaking Driver will be at your disposal to travel as you wish within Paris. Available for a half day, up to 4 hours.<br>
+OR You can do following Insider access tour at optional cost.</p>
+<p><strong>Paris: Versailles with Helicopter</strong><br>
+Today you will enjoy a half day (5 hours) sightseeing tour to Versailles with your private vehicle and English-speaking guide. You will drive out to Versailles to admire the huge palace of the great Sun King Louis XIV. Enjoy a two hour private tour of this Palace and later you may also like to stroll through the decorative gardens. After your tour you will be transferred to a local airport for you to enjoy a private 45 minute helicopter flight back to Paris taking in an unspoiled view of Paris and its most beautiful monuments from a VIP helicopter (Arc de Triomphe, Eiffel Tour, Montparnasse Tower, Invalides, the National Library, Tuileries, Versailles Palace and its gardens).
+</p> OR
+<p><strong>Paris: Versailles Private Tour</strong><br>
+
+Today you will be met by your driver at your hotel and transferred to Versailles for a sightseeing tour. The awe-inspiring residence of the great Sun King Louis XIV, with your private vehicle and English-speaking guide. Housing up to 20,000 people, the palace was the glory of the Sun King’s reign and was the epicentre of political power in France at the time.<br>
+Enjoy a private tour of the of private parts of the castle, that are not open to the general public for example the apartments of Mrs Pompadour or the famous Mrs DuBarry. Furthermore, enter the private quarters of Louis XV and Louis XVI behind the walls of the<br>
+Grand Apartments and the court’s pomp. Accompanied by a qualified guide, explore the rooms where they lived with their families: the dining room, the Cabinet de la Pendule (Clock room), the corner room with the cylinder desk of Louis XV regarded as one of the most outstanding pieces of furniture in the world, the library of Louis XVI, etc. End your tour by discovering the Opera House or the Chapel.
+</p>
+<p><strong>Overnight:</strong> Mandarin Oriental Hotel, Paris<br />
+    </p>
+</li> 
+<li>
+<h4>Day 22</h4>
+<h5> Day at leisure</h5>
+<p>Today you can do following Insider access tour at optional cost.</p>
+<p><strong>Paris: Create Your Own Fragrance</strong><br>
+Under the guidance of your highly experienced perfumer you will learn the secrets behind the making of perfume. During your workshop you will be able to select your preferred essences to create your own personalised fragrance, which will be eventually bottled and presented to you.
+</p> OR
+<p><strong>Paris: Exclusive Private Yacht hire with dinner</strong><br>
+Complete your tour of Europe with an ultimate dinner on the Seine River, on board of an exclusive private yacht, whilst passing all the famous Parisian monuments, La Palais de Justice, Notre Dame Cathedral, Le Louvre, Eiffel Tower and many more. Dinner, prepared by 2* Michelin Chef, will consist of a 10 course meal accompanied by the finest wine of France (Bordeaux or Burgundy/Chablis) served by a sommelier.
+</p>
+<p><strong>Overnight:</strong> Mandarin Oriental Hotel, Paris<br />
+    <strong>Meal Plan:</strong> Breakfast</p>
+</li> 
+<li>
+<h4>Day 23</h4>
+<h5> Depart Paris</h5>
+<p>Assisted Private Transfer to Paris CDG Airport.</p>
+</li>     
+<div style="text-align: center; font-weight: bold; font-size: 16px; line-height: 10px; margin-top: 10px;"><p>END OF ABERCROMBIE & KENT'S ARRANGEMENTS</p><p>WE TRUST YOU ENJOYED YOUR TIME WITH US AND HOPE YOU COME BACK!</p><p>Haere Ra!</p><p>Goodbye!</p></div>
 </ul>
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
-<input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Morocco Land of the Kasbahs"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Morocco-Land-of-the-Kasbahs.pdf"/>
+<input type="hidden" name="country_email" id="country_email" value="Morocco"/>
+<input type="hidden" name="region_email" id="region_email" value="Egypt"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Morocco: Land of the Kasbahs"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="europe-honeymoon-exclusive.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -370,16 +658,443 @@ href="../yahoo.html">
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Tanzania"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Tanzania"/>
+
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="EUROPE"/>
+<input type="hidden" name="region_quote" id="region_quote" value="EUROPE"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="EUROPE HONEYMOON EXCLUSIVE"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+
+<?php include("../quote1.php");?>
 </form>
 </div>
 
 <div id="tab4" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--  Europe Honeymoon Exclusive End Here -->
+<!--French Honeymoon-->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/French-Honeymoon.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/france-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+<div class="logoinner1"></div>
+<h1>French Honeymoon</h1>
+<div class="popupbanner"><img src="../images/france-inner3.jpg" alt="France" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 20 Days</p>
+<p><strong>Highlights:</strong> &bull;  Sightseeing of Paris city including major highlights and evening enjoy romantic 4 Course menu dinner including live musical animation.<br />
+&bull;  Sightseeing tour to Versailles with your private vehicle and English-speaking guide.  Situated to the west of Paris, Versailles is the location of the huge palace that was constructed in the 17th century for Louis XIV, the 'Sun King'. <br />
+&bull;  Full day (8 hour) sightseeing tour including Beaune and Nuits Saint Georges, well known as the wine capital of Burgundy.<br />
+&bull;  Opportunity to visit Aiguille du Midi by Cable Car (highest point of Europe) or visit the Mer de Glace (famous glacier which is about to disappear slowly and gradually in coming years)
+</p>
+</li>
+<li><h4>Day 1</h4>
+
+<h5>India/Paris</h5>
+<p>Arrival Paris<br />
+
+Upon arrival at the Paris airport, you will be met and transferred by your Guardian Angel and private vehicle with English-speaking driver to your hotel in Paris, where you will be assisted with check-in.<br /><br />
+
+Day at leisure.<br />
+
+This evening discover Paris, the city of lights and enjoy a dinner cruise on the Seine.<br />
+
+8:30PM board an entirely glass-encased boat for your romantic dinner including live musical animation. Your 4-course menu will include some wine (1 bottle for 4 guests) and a glass of champagne with dessert.<br />
+
+<strong>Special Offer</strong> - Value Added Honeymoon Couples - Bouquet of Flowers and Bottle of Champagne
+</p>
+<p><strong>Overnight:</strong> Sofitel Paris Le Faubourg <br />
+Luxury Double/Twin<br />
+<strong>Meal Plan:</strong> D
+</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>Paris</h5>
+<p>Today you will enjoy a full day (8 hours) sightseeing tour in Paris with your private vehicle and English-speaking guide. This morning an overview tour will include famous Parisian sights such as the Eiffel Tower, Arc de Triomphe, Champs Elysées and the Ile de la Cité, where you will visit the beautiful Notre Dame Cathedral and the Sainte Chapelle, a pearl of Gothic architecture. This afternoon visit the world-famous Louvre Museum. Originally the Royal residence of the Kings of France, the sprawling Louvre palace contains one of the most important art collections in the Western world, spanning from remotest antiquity to the mid 19th cent, with the Mona Lisa and the Venus de Milo as perhaps its two most famous exhibits, and the upturned glass pyramid by I.M. Pei at the entrance adding a contemporary touch.</p>
+<p>
+Optional/ alternative tour & NOT included in the itinerary</p>
+ 
+<p>
+This afternoon your guide will take you to a renowned "Parfumeur" for a unique private workshop (4hrs). You will step behind the scenes and learn about the key stages in the composition of a fragrance. You will discover the techniques and the ingredients before becoming a "nose" yourself! You will work with a selection of high quality ingredients and design your own personal blend of notes. You will name and label your 17.5 fl oz bottle of personal fragrance and take it away with you as a souvenir of this olfactory experience.</p>
+<p>
+9.00 PM - enjoy the cabaret theatre show at the Moulin Rouge (1/2 bottle of Champagne included). See the world-renowned showgirls and French Cancan dancers on the Moulin Rouge's historic stage.</p>
+<p>
+Make your own way back to the hotel after the show.</p>
+<p><strong>Overnight:</strong> Sofitel Paris Le Faubourg<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5> Paris/ Versailles/ Paris</h5>
+<p>Enjoy a half-day (up to 5 hours) sightseeing tour to Versailles with your private vehicle and English-speaking guide. Situated to the west of Paris, Versailles is the location of the huge palace that was constructed in the 17th century for Louis XIV, the 'Sun King'. It became the model for grand houses of royalty all over Europe. Take a tour of the opulent State Apartments that culminate in the magnificent Gallery of Mirrors. You may like to take a stroll in the formal ornamental gardens that are embellished with many fountains, and see the Grand Canal that stretches into the distance across the park. Return to Paris following your visit.</p>
+<p>
+Inclusions: Transfer in a private, air-conditioned vehicle with English-speaking driver (1-2 pax Citroen C6 or similar, Services of an English-speaking local guide, Entrance fees to Versailles Palace Gardens and State Apartments</p>
+<p>
+Exclusions: Any meals or entrance fees not specified & Tips
+</p>
+<p><strong>Overnight:</strong> Sofitel Paris Le Faubourg<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>Paris/ Dijon</h5>
+<p>Morning after breakfast, check out and you will be transferred to the station to board train to Dijon.</p>
+<p>
+Concierge Rail service from Paris to Dijon.</p>
+<p>
+After lunch at leisure, meet your local guide for a 3-hr walking tour of the city. Once the capital city of the mighty Dukes of Burgundy before coming under the control of the French crown, Dijon is still the capital of the Burgundy region and its wonderful old quarters are among the most interesting in France. Stroll through a network of narrow streets and small squares with fine 15th-16th century mansions and the 13th century gothic church of Notre-Dame before coming up behind the Ducal Palace, which houses a huge museum of French and Flemish art. Full of fascinating shops, Dijon's famous mustard is sold everywhere as well as the blackcurrant liqueur.
+</p>
+<p><strong>Overnight:</strong> Hotel Sofitel La Cloche<br />
+Superior Double<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5> Burgundy Region</h5>
+<p>This morning you will meet your private vehicle and English-speaking driver-guide for a 3-hr walking tour of the city First, visit Beaune, known as the wine capital of Burgundy, where will visit the Hospices de Beaune (also known as the Hotel Dieu) a former hospital founded in 1443 to provide free care for men who had fought in the Hundred Years War. Today Beaune is famous for its tiled roofs and Flemish architecture which have become icons of Burgundy. Continue on to the wine country between Beaune and Dijon and visit the Clos de Vougeot famous for its wine-making barn. Also see the famous villages such as Gevrey-Chambertin or Marsannay-la-Côte before returning to Dijon.</p>
+<p><strong>Overnight:</strong> Hotel Sofitel La Cloche<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Dijon/ Lyon</h5>
+<p>Today you will be met at your hotel and privately transferred with your Guardian Angel to the Dijon railway station. Here you will be shown to your pre-reserved 1st class seating.</p>
+<p>
+Upon arrival at the Lyon railway station an E/S assistant will meet you and accompany you for your transfer to the hotel.</p>
+<p>
+This afternoon embark on a HD (up to 5hrs) city tour with your guide. The capital of the Rhone-Alps region, Lyon is the second largest conurbation in France. Two broad rivers, the Saône and the Rhône run majestically through the heart of the city, south of which they merge. The long narrow strip between the two rivers is thecenter of Lyon: Place Carnot,<br />
+Place Bellecour and Place des Terreaux are linked by fashionable shopping streets and surrounded by fine Renaissance buildings. Across the Saône, Le Vieux Lyon, is a picturesque and well-restored district with numerous impressive Gothic and Renaissance buildings. Visit the The Maison des Canuts (silk workers of the 19th century) is a living museum that reveals the richness and quality of the silk industry in Lyon and it is the only place where manual looms, invented by Jacquard, are in use. Your tour will give you the opportunity to learn about the history of silk, the life of the silk workers.</p>
+<p><strong>Overnight:</strong> Sofitel Lyon Bellecour<br />
+Superior Queen Room<br />
+<strong>Meal Plan:</strong> Meals: B</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>Lyon at leisure</h5>
+<p>Full day at leisure in Lyon.<br />
+You can choose from Plenty of activities from Cruise on river or to take tram ride to visit the highest point and famous church of Lyon or may be have a leisure walk in the city to understand local people and their culture
+</p>
+<p><strong>Overnight:</strong> Sofitel Lyon Bellecour<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>Lyon / Annecy</h5>
+<p>Private transfer from Lyon to Annecy with English speaking driver. (Approx 3 hours drive)</p>
+ <p>
+
+It is the second largest lake in France, after the Lac du Bourget, if the French part of Lake Geneva (which is also partly in Switzerland) is excluded. It is known as "Europe's cleanest lake" because of strict environmental regulations introduced in the 1960s. It is a popular tourist destination known for its swimming and water sports. The lake was formed about 18,000 years ago, at the time the large alpine glaciers melted. It is fed by many small rivers from the surrounding mountains (Ire, Eau morte,  Laudon,  Bornette and  Biolon), and from a powerful underwater source, the  Boubioz, which enters at 82 m depth.</p>
+<p>
+Rest of the day at leisure to explore the place on your own.
+</p>
+<p><strong>Overnight:</strong> Hôtel Impérial, Annecy<br />
+Deluxe with park view<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>Annecy/ Chamonix</h5>
+<p>Private transfer from Annecy to Chamonix with English speaking driver.</p>
+<p>
+Rest of the day at leisure to enjoy the many activities the resort has to offer!</p>
+<p>
+Cham' is a destination popular the world over. In the streets of this high-mountain town you'll hear languages from every corner of the globe. But the people who come to this 'summit meeting' share the same way of thinking, the same love for mountaineering, its legends and its ethics. When you're out shopping in the town centre, wherever you are look up and you'll see 'it' there. 4,810 metres (15,781 ft) of rock, snow, ice and dreams of things to come.
+</p>
+<p><strong>Overnight:</strong> Hameau Albert 1<br />
+Classic Double/Twin<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>Chamonix</h5>
+<p>At leisure to go up the Aiguille du Midi by Cable Car or visit the Mer de Glace (Glacier)</p>
+<p><strong>Overnight:</strong> Hameau Albert 1<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 11</h4>
+<h5>Chamonix</h5>
+<p>At leisure on your own.</p>
+<p>You may choose from ample activities available from River rafting to Luge ride, spa to fishing etc.
+</p>
+<p><strong>Overnight:</strong> Hameau Albert 1<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 12</h4>
+<h5>Chamonix/ Geneva/ Nice
+</h5>
+<p>Private transfer from Chamonix to Geneva airport to board flight to Nice (NOT included in tour cost)</p>
+<p>
+Upon arrival in Nice you will be met by your local guardian angel and transferred to your hotel in Nice.</p>
+<p>
+Rest of the day is free on your own. Overnight stay at the hotel.
+
+</p>
+<p><strong>Overnight:</strong> Le Méridien Nice<br />
+Deluxe Double/twin<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 13</h4>
+<h5>Nice
+</h5>
+<p>Today meet your local English-speaking guide for half-day sightseeing (4hrs) in Nice. You will explore the beautiful Old Town, and colorful open-air market and take the lift up to the Château Hill (Colline du Château) area for unrivalled views of the city.</p>
+<p>
+Inclusions: Services of an English-speaking local guide, Lift to the Château Hill Exclusions: Any meals or entrance fees not specified & Tips</p>
+<p>
+After lunch at leisure, set off to spend the afternoon exploring the Principality of Monaco with your private vehicle and English-speaking guide (4hrs). This exceptional city-state is just east of Nice, a land steeped in history and also a Mediterranean mini Las Vegas. The capital, Monaco, is a fairy tale city standing on a rocky headland almost surrounded by sea, and contains the palace complete with guards, the tropical gardens offering excellent views, and the museum containing Roman antiquities and prehistory collections.</p>
+<p>
+Look around the Place du Casino, possibly the most famous casino in the world, in the center of Monte Carlo. Go on to the well-known Rock, crowned by the Palais Princier (open April through October) , where the royal family lives, seeing the extravagance of the 16th and 17th century frescoes, as well as tapestries, gilt furniture and paintings.</p>
+<p><strong>Overnight:</strong>Le Méridien Nice<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 14</h4>
+<h5>Nice/ Carcassonne
+</h5>
+<p>Private transfer from Nice to Carcassonne with English Speaking driver. Stop en route (about 1 hr) for lunch at leisure.</p>
+<p>Transfer time = approx. 5 hours</p>
+<p>
+As there is not direct train between the 2 cities, we have based the transfer by private vehicle.
+</p>
+<p><strong>Overnight:</strong> Hotel de la Cite<br />
+Deluxe Double/Twin Classic Room with city view
+<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 15</h4>
+<h5>Carcassonne/Bordeaux
+</h5>
+<p>Morning enjoy 2,5hrs hour walking tour of the medieval walled-city with a local guide.</p>
+<p>
+Evening   transfer to Carcassonne station to board a direct train to Bordeaux.</p>
+ <p>Upon arrival in Bordeaux, meet your local guardian angel and driver for your transfer to the Grand Hotel .Evening at leisure.
+</p>
+<p><strong>Overnight:</strong> Grand Hotel de Bordeaux & Spa<br />
+Superior Double
+<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 16</h4>
+<h5>Bordeaux
+</h5>
+<p>Today you experience historic Bordeaux with your guide on a walking tour (3hrs) to see some of the citys famous monuments and buildings. See the 18th-century Place de la Bourse and the 13th-century Cathedral of St. Andre, now a UNESCO World Heritage Site. Admire the neoclassical facades of the Bordeaux Law Courts, St. Andre Hospital and the 18th-century Palais Rohan, now the City Hall. When you explore Old Bordeaux, walk past the Cailhau Gate and the Grosse Cloche, the former belfry of the town hall in the Middle Ages.</p>
+<p>
+Afternoon at leisure to do some shopping or enjoy the hotels spa.</p>
+<p>
+Optional - 6hr excursion to St-Emilion with English Speaking driver-guide</p>
+<p>
+Only a short distance from Bordeaux, the village of St. Emilion was built into a limestone hill. The cobbled streets of this medieval town are lined with stores selling the wines the region is known for. In the eighth century, Emilion, a hermit, lived in a cave with an underground spring. Over the next 500 years, his cave was enlarged to create Eglise Monolithe, one of Frances largest underground rock churches. Visit the cave and then take time to stop at some of the local vineyards, like the famous Château Franc Mayne or Chateau La Tour du Pin Figeac</p>
+<p><strong>Overnight:</strong> Grand Hotel de Bordeaux & Spa<br />
+Superior Double
+<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 17</h4>
+<h5>Bordeaux/St Pierre des Corps
+</h5>
+<p>Your GA and driver will accompany you to Bordeaux station for your direct high speed train (TGV) to St Pierre des Corps.</p>
+<p>
+Upon arrival in St Pierre des Corps you will have a short transfer to Tours city center. Balance of the day at leisure.</p>
+<p>
+You may decide to look around Tours independently. Tours is a city that grew around the tomb of St Martin, its 3rd bishop at the end of the 4th century. It has now become the largest town in Touraine. Rich merchants built its Renaissance and neo-classic mansions and it is home to the Musée des Beaux Arts, a remarkable series of salons decorated in silk and wood panelling. See the Cathedral of St. Gatien with its Renaissance lanterns and 13th century stained glass as well as the Place Plumereau and Rue Briconnet, center of the old medieval quarter.</p>
+<p><strong>Overnight:</strong> Hotel de l'Univers<br />
+Superior Double
+<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 18</h4>
+<h5>St Pierre des Corps
+</h5>
+<p>Embark on a full day (8hrs) s/s excursion with your English-speaking driver-guide to explore the Loire Valley by private vehicle. You will visit the Chateau de Chenonceau that straddles
+the river and is one of the best-known Chateaux of the Loire region. Continuing on to Amboise you will visit the imposing Royal Chateau and the Clos Lucé, a handsome Renaissance manor where Leonardo da Vinci spent the last four years of his life. The museum contains working models of some of da Vinci's inventions. End the day with a visit and tasting at some renowned cellars overlooking the River Loire.
+</p>
+<p><strong>Overnight:</strong> Hotel de l'Univers<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 19</h4>
+<h5>St Pierre des Corps / Paris
+</h5>
+<p>Private transfer to St Pierre des Corps TGV station to board the train to Paris.</p>
+<p>
+Upon arrival at Paris Gare Montparnasse station, transfer to your hotel for your last overnight in France. Spend the balance of the day as you please.</p>
+<p><strong>Overnight:</strong> Sofitel Paris Le Faubourg<br />
+Luxury Double/Twin
+<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 20</h4>
+<h5>Paris
+</h5>
+<p>Departure Paris<br />
+Private transfer from Paris to Roissy CDG Airport with English Speaking driver for departure flight way back home.
+</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="France"/>
+<input type="hidden" name="region_email" id="region_email" value="Honeymoon"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="French Honeymoon"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="French-Honeymoon.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="France"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Honeymoon"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="French Honeymoon"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
 <script type="text/javascript">
 	
 			var markerLetter = 'A';
@@ -387,9 +1102,9 @@ href="../yahoo.html">
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize() {
+			function gmapInitialize1() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas"));
+					map = new GMap2(document.getElementById("map_canvas1"));
 					map.setUIToDefault();
 					
 					
@@ -477,8 +1192,8 @@ href="../yahoo.html">
 			});
 	
 		</script>
-
-<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+ 
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>
@@ -488,121 +1203,100 @@ href="../yahoo.html">
 
 </div>   
 </div>
-<!--Morocco: Land of the Kasbahs-->
-<!-- Egypt: Love on the Nile Start Here -->
-<div id="popup2" class="popup_block">
+<!--French Honeymoon-->
+<!-- Bohemian-Paris Start Here -->
+<div id="popup3" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
-<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Egypt-Love-on-the-Nile.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli12"><a href="javascript:void(0)" onclick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Bohemian-Paris.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
 <div class="popuprightcontainer">
 <div class="popupheader">
-<div class="logoinner"><img src="../images/egypt-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<div class="logoinner"><img src="../images/europe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
-<div id="tab5">
+<div id="tab9">
 
-<h1>Egypt: Love on the Nile (2012)</h1>
-<div class="popupbanner"><img src="../images/egypt-inner1.jpg" alt="Classic Botswana" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<h1>BOHEMIAN PARIS</h1>
+<div class="popupbanner"><img src="../images/paris-inner.jpg" alt="BOHEMIAN PARIS" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong> 7 Nights</p>
-<p>Relive the romance of Cleopatra and Mark Anthony's era on an adventure to unforgettable, eternally beguiling Egypt. The pharaohs of a bygone time were considered god-kings, and you too will feel like royalty as you cruise down the Nile on a tranquil four-night cruise on board a privately chartered dahabieh (traditional Egyptian sailboat). Throughout the journey, discover Egypt's most evocative and enduring monuments, including the Pyramids of Giza, the Temple of Kom Ombo and the Valley of the Kings and Queens.</p>
+<p><strong>Duration:</strong> 4 Days</p>
+<p>A special 4 day tour of the French capital, exploring all the main sights of one of the most romantic cities in the world.</p>
+<p><strong>Overnight</strong>: Eiffel Tower, Arc de Triomphe, Champs ElysÃ©es, Notre Dame Cathedral, Versailles </p>
 </li>
 <li><h4>Day 1</h4>
-<h5>India/Cairo, Egypt</h5>
-<p>Board flight to Cairo, where the history and romance of ancient Egypt still lives. Upon arrival, you are met by an Abercrombie & Kent representative and transferred to your hotel, where you are assisted with check in. The remainder of your day is at leisure.</p>
-<p><strong>Overnight:</strong> Four Seasons Hotel Cairo at the First Residence<br />
-<strong>Meal Plan:</strong> None</p>
+<h5>ARRIVE PARIS</h5>
+<p>Upon arrival at Paris airport you will be met in the arrival hall by your driver and privately transferred to your hotel.
+You will find a complimentary bottle of champagne in your room upon your arrival to celebrate the beginning of your mini-moon.</p>
+<p>On the Rue de Rivoli overlooking the beautiful Tuileries Gardens, the Hotel Meurice boasts an excellent location in the heart of Paris as it is nestled between the Place de la Concorde and the Grand Louvre. Also nearby are the OpÃ©ra Garnier, the Jewellery stores on the rue de la Paix, and the Place VendÃ´me. Original antiques and paintings are featured throughout the hotel and every floor is decorated in a distinctive style.</p>
+<p><strong>Overnight:</strong> Hotel Le Meurice
+</p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>Cairo</h5>
-<p>This morning, visit the world-famous Egyptian Museum of Antiquities, home to the relics of Egypt's glorious, bygone era. The pink-granite building was constructed in the 19th century, and original Pharaonic statues and monuments pepper the lush gardens on museum grounds. Tour this impressive museum, home to relics dating back to 4000 BC, among them the treasures of Tutankhamen and the Mummy Room. After lunch, begin your tour of the breathtaking pyramids. The Pyramid of Cheops, the largest of the three, was built around 2690 BC and is one of the Seven Wonders of the Ancient World. Marvel at the mysterious Sphinx, 190 feet long and 65 feet high, carved out of a single piece of rock. This evening, enjoy a private dinner on board a felucca (traditional sailboat), listening to the soft sounds of the oud (Egyptian lute) as you glide along the magical Nile.</p>
-<p><strong>Overnight:</strong> Four Seasons Hotel Cairo at the First Residence <br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>PARIS</h5>
+<p>This morning you will enjoy a half day (4 hours) sightseeing tour in Paris with your private vehicle and English-speaking guide. This overview tour will include famous Parisian sights such as the Eiffel Tower, Arc de Triomphe, Champs ElysÃ©es and the Ile de la CitÃ©, where you will visit the beautiful Notre Dame Cathedral.</p>
+<p>This afternoon is at your leisure - you may like to explore Montmartre. This district is forever associated with the idealistic Bohemian lifestyles of the late 19th and early 20th centuries. Parisians call it the 'Butte' (knoll) as it is the highest point in the city. Discover Montmartre's romantic charms along the winding back streets, small squares and terraces. Many artists paint quick-fire portraits in the 'Place du Tertre'. Walk up to the SacrÃ©-Coeur Basilica for spectacular views over the city. Other famous landmarks of Montmartre include the 'Moulin Rouge', a 19-century windmill transformed into a world-famous cabaret and immortalized by the painter Toulouse-Lautrec, the 'Place des Abbesses', a picturesque square which is now a hub of the fashion world, or the DalÃ­ Centre, a unique exhibition entirely devoted to the master of surrealism, and more particularly to his sculptures and engravings.</p>
+<p><strong>Overnight:</strong> Hotel Le Meurice <br />
+<strong>Meal Plan:</strong> B</p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5>Cairo/Abu Simbel/Aswan</h5>
-<p>Early this morning, fly south to Aswan and then board a short flight to Abu Simbel. Abu Simbel is home to the magnificent temple of Ramses II, with its four 60-foot-high statues of the pharaoh. After exploring this stunning temple, fly back to Aswan and continue overland to your private sailing vessel, the 'Zein Nile Chateau.' With its airy white sails and elegant interiors, this dahabieh (traditional Egyptian sailboat) is the perfect setting for a romantic getaway. Enjoy a lovely lunch on board as you set sail toward Aswan's High Dam, from which you can gaze down the huge lake created to control the floodwaters of the Nile. Continue on your gentle cruise to the exquisite Temple of Philae on the island of Agilika. End the afternoon at the granite quarries, which supplied the ancient Egyptians with most of the hard stone used in pyramids and temples. Here you will find the 1,500-ton Unfinished Obelisk, a glorious example of the technique used by the ancient Egyptians in producing these enormous monoliths.</p>
-<p><strong>Overnight:</strong> Sanctuary Zein Nile Chateau<br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>PARIS - VERSAILLES - PARIS</h5>
+<p>Enjoy a full-day (up to 8 hours) excursion tour to Versailles with your private vehicle and English-speaking guide. Situated to the west of Paris, Versailles is the location of the huge palace that was constructed in the 17th century for Louis XIV, the 'Sun King'. It became the model for grand houses of royalty all over Europe. Take a tour of the opulent State Apartments that culminate in the magnificent Gallery of Mirrors.</p>
+<p>Enjoy a stroll in the formal ornamental gardens that are embellished with many fountains, and see the Grand Canal that stretches into the distance across the park; a beautiful spot to indulge in an intimate picnic for two which has been especially prepared for you. Return to Paris following your visit.</p>
+<p><strong>Overnight:</strong> Hotel Le Meurice<br />
+<strong>Meal Plan:</strong> B</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>Aswan/Kom Ombo/Edfu </h5>
-<p>Enjoy a leisurely breakfast on board your dahabieh as you continue cruising the river, en route to Kom Ombo. Disembark and explore the lovely Greco-Roman temple dedicated to Haroeris (the Sun God) and Sobek (the Crocodile God). The temple, built in the third century BC, stands at a bend in the Nile where, in ancient times, sacred crocodiles basked in the sun on the riverbank. Afterward, return to your vessel for lunch in the shade as the 'Zein Nile Chateau' sets sail for Edfu. Arrive in the early evening at the well-preserved Temple of Horus (the Falcon God), built in 230 BC by Ptolemy III.</p>
-<p><strong>Overnight:</strong> Sanctuary Zein Nile Chateau <br />
-<strong>Meal Plan:</strong> B,L,D</p>
-</li>
-<li>
-<h4>Day 5</h4>
-<h5>Edfu/Esna/Luxor</h5>
-<p>Today, travel to Esna, home to the Greco-Roman Temple of Khnum. The beautifully preserved Great Hypostyle Hall was built during the reign of the Roman Emperor Claudius. The walls of the temple are covered with inscriptions, most of which date back to the Roman period. After contemplating this architectural marvel. Return to your vessel to enjoy another romantic lunch. The balance of your afternoon is at leisure to sit back and enjoy the breathtaking scenery passing by as the 'Zein Nile Chateau' makes her way along the Nile toward Luxor. You also catch a glimpse into daily life on the river's banks, which in many areas has remained almost unchanged for centuries.</p>
-<p><strong>Overnight:</strong> Sanctuary Zein Nile Chateau  <br />
-<strong>Meal Plan:</strong> B,L,D</p>
-</li>
-<li>
-<h4>Day 6</h4>
-<h5>Luxor</h5>
-<p>This morning, your journey takes you to the famous Valley of the Kings and Queens, where over 60 tombs have been discovered. Afterward, pause by the lovely terraced funerary temple of Queen Hatshepsut, Egypt's first female pharaoh, and pass by the fabled Colossi of Memnon. Following lunch on board the 'Zein Nile Chateau,' pay a visit to the awe-inspiring Temple of Karnak, a huge complex where 134 great columns once supported an enormous roof, an extraordinary engineering feat for the 12th century BC. Continue to the strikingly graceful Temple of Luxor, built by Amenhotep III, Tutankhamon, Haremhab and Ramses II during their respective reigns and dedicated to the god Amun. Along the front of the temple, three large statues remain of Ramses II, while the Colonnade of Amenophotep III features 14 towering papyrus-headed columns. Walk hand in hand amid these timeless temples, reflecting on a breathtaking culture and its legacy. Return to your dahabieh in the afternoon for some time at leisure before dinner.</p>
-<p><strong>Overnight:</strong> Sanctuary Zein Nile Chateau <br />
-<strong>Meal Plan:</strong> B,L,D</p>
-</li>
-<li>
-<h4>Day 7</h4>
-<h5>Luxor/Cairo</h5>
-<p>This morning, bid farewell to your 'Zein Nile Chateau' crew as you disembark and are transferred to the airport for your flight back to Cairo. The balance of the day is at leisure. You may wish to arrange a private car and driver for further explorations of the city or to complete some last-minute shopping. Tonight, dine privately in the Churchill Gardens of the historic Mena House Oberoi Hotel, where your table overlooks the magnificent pyramids.</p>
-<p><strong>Overnight:</strong> Four Seasons Hotel Cairo at the First Residence <br />
-<strong>Meal Plan:</strong> B,D</p>
-</li>
-<li>
-<h4>Day 8</h4>
-<h5>Cairo/India</h5>
-<p>After Breakfast, Transfer to the airport for your homebound flight.</p>
+<h5>DEPART PARIS</h5>
+<p>Today you will be transferred to the Paris airport by private vehicle to board your flight.
+</p>
 <p><strong>Meal Plan:</strong> B</p>
 </li>
 </ul>
 </div>
 
-<div id="tab6" style="display:none;">
-<?php $id =2;?>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="South africa"/>
-<input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Egypt Love on the Nile"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Egypt-Love-on-the-Nile.pdf"/>
-<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<div id="tab10" style="display:none;">
 <h1>Send itinerary</h1>
+<?php $id =3;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Bohemian Paris"/>
+<input type="hidden" name="region_email" id="region_email" value="Honeymoon"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Bohemian Paris"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Bohemian-Paris.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
 
-<div id="tab7" style="display:none;">
+<div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="South africa"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Botswana"/>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Bohemian Paris"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Honeymoon"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Bohemian Paris"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
-<div id="tab8" style="display:none;">
+<div id="tab12" style="display:none;">
 <script type="text/javascript">
 
 var markerLetter = 'A';
@@ -610,9 +1304,212 @@ var map = '';
 var zoom = 10;
 var origin = 0;
 
-function gmapInitialize1() {
+function gmapInitialize2() {
 	if (GBrowserIsCompatible()) {
-		map = new GMap2(document.getElementById("map_canvas1"));
+		map = new GMap2(document.getElementById("map_canvas2"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+ 
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!-- Bohemian-Paris End Here -->
+<!--FINE FOOD AND ART OF BERLIN Here -->
+
+<div id="popup4" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli13"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli14"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli15"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli16"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/TuscanyFineWine.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/italy-crotia-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab13">
+
+<h1>TUSCANY FINE WINE AND DINING</h1>
+<div class="popupbanner"><img src="../images/honeymoon/honeymoon-itineraries2.jpg" alt="Family Holidays" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong> 4 days</p>
+<p>A romantic 4 day break to the stunning Italian region of Tuscany. Relax and enjoy the luxurious spa facilities and indulge in a wine and dine experience.</p>
+<p><strong>SPECIAL OFFER - Stay for an additional night at no extra charge throughout 2013.</strong></p>
+<p><strong>Highlights:</strong> Florence, Chianti, Tavarnelle, Passignano</p>
+</li>
+<li><h4>Day 1</h4>
+<h5>ARRIVE TUSCANY</h5>
+<p>You private chauffeur will drive you from Florence Airport to your hotel in the heart of the stunning Tuscan wine producing region of Chianti.</p>
+<p>The ideal choice for both relaxation and exploration, the luxury sanctuary Castello Del Nero is located within striking distance of Florence and Siena. The carefully restored 12th century castle offers the absolute latest in modern facilities whilst maintaining the atmosphere of its historic surroundings.</p>
+<p><strong>Overnight:</strong> Castello del Nero</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>TUSCANY</h5>
+<p>Today is at your leisure to enjoy the facilities of your hotel and the archetypal Tuscan village of Tavarnelle, just a short walk away. Your hotel is located in acres of secluded grounds and boasts a large outdoor pool, extensive ESPA signature treatments, thermal suites and a fitness centre as well as two floodlit tennis courts and a heated swimming pool. Other activities include trekking, hot air ballooning and golf.</p>
+<p><strong>Overnight:</strong> Castello del Nero<br />
+ <strong>Meal Plan:</strong> B </p>
+
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>TUSCANY - WINE AND DINE EXPERIENCE</h5>
+<p>Your chauffeur will bring you into the heart of Chianti today and the fairy-tale location of Passignano. The finest of the renowned noble wines of the Antinori family are stored away in ancient cellars underneath the badia (monastery) which is entirely closed to the public - except for you!</p>
+<p>Enjoy an exclusive tour of the cellars followed by Michelin starred lunchtime dining with delicious accompanying fine wines from the Antinori cellar. The sommelier will be happy to share his in-depth knowledge with you.
+Fully satiated, your chauffeur will bring you back to the paradise of your hotel.</p>
+<p><strong>Overnight:</strong> Castello del Nero<br />
+ <strong>Meal Plan:</strong> B </p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>DEPART TUSCANY</h5>
+<p>Your chauffeur will bring you back in style to Florence Airport today.</p>
+<p> <strong>Meal Plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
+<?php $id =4;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Family Holidays"/>
+<input type="hidden" name="region_email" id="region_email" value="A&K Journey Style"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Tuscany Fine Wine"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="TuscanyFineWine.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab15" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Family Holidays"/>
+<input type="hidden" name="region_quote" id="region_quote" value="A&K Journey Style"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Tuscany Fine Wine"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab16" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize3() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas3"));
 		map.setUIToDefault();
 		
 		
@@ -702,7 +1599,7 @@ $(window).unload(function(){
 </script>
 
 
-<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas3" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>
@@ -712,243 +1609,7 @@ $(window).unload(function(){
 
 </div>   
 </div>
-<!-- Egypt: Love on the Nile End Here -->
-<!-- Peru: Mysteries of Machu Picchu Start Here -->
-<div id="popup3" class="popup_block">
-<div class="popupbox">
-<div class="popupcontainer">
-<div class="popuplefnav">
-<ul>
-<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
-<li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli12"><a href="javascript:void(0)" onclick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Peru-Mysteries-of-Machu-Picchu.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
-</ul>
-</div>
-
-<div class="popuprightcontainer">
-<div class="popupheader">
-<div class="logoinner"><img src="../images/peru-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
-</div>
-<div id="tab9">
-
-<h1>Peru: Mysteries of Machu Picchu  (2012)</h1>
-<div class="popupbanner"><img src="../images/peru-inner2.jpg" alt="Peru" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
-
-<h3>Programme Overview</h3>
-<ul class="itinerarylist">
-<li>
-<p><strong>Duration:</strong> 9 days</p>
-<p>Romance, magic and mystery all make the heart beat a little faster, and Peru is the perfect location to experience all three. Entice your sense of taste when you learn to prepare, and then sample, Peruvian specialties with a cooking lesson from an experienced chef. Explore ancient Inca sites, trying to unravel their mysteries as you feel the magic of the impressive ruins and Andean landscapes; and reconnect with each other at fabulous restaurants and hotels that welcome you as if you were on your honeymoon, capping off your time with an emotional vow renewal ceremony in the mist-shrouded citadel of Machu Picchu.
-
- </p>
-</li>
-<li><h4>Day 1</h4>
-<h5>India/Lima, Peru</h5>
-<p>Arrive in Lima, a city with remnants of colonial splendor and teeming vitality, where you are met and transferred to your hotel. Your romantic holiday begins the moment you check in and discover honeymoon amenities in your deluxe ocean-view suite.</p>
-<p><strong>Overnight:</strong> Miraflores Park Hotel<br />
-<strong>Meal Plan:</strong> None
-</p></li>
-<li>
-<h4>Day 2</h4>
-<h5>Lima</h5>
-<p>This morning, meet a Lima chef and visit a local market to shop for ingredients for your cooking class. Leave the groceries in the chef's house and take a walk around the Barranco area, known for its mansions, the Bridge of Sighs and the Dedalo Art Gallery. As you stroll, your mouth waters at the thought of the delicious lunch of ceviche and tapas that you and the chef are about to prepare. When you return home, you can recreate the tempting dishes in your own kitchen and relive memories of your romantic journey. After lunch, embark on a city tour that visits the Plaza Mayor, the heart of the city and original site on which Lima was founded. Continue to the historic Cathedral, passing by the Presidential Palace and the Church of San Francisco with its library of fine paintings and frescoes. When you are ready to settle in for the night, have your private bath butler draw a steamy bath for two - an ideal way to soothe tired muscles and share memories of your exciting day.</p>
-<p><strong>Overnight:</strong> Miraflores Park Hotel<br />
-<strong>Meal Plan:</strong> B,L</p>
-</li>
-<li>
-<h4>Day 3</h4>
-<h5>Lima/Cusco/Urubamba</h5>
-<p>Board a morning flight to Cusco, an Andean community and former capital of the Inca Empire. On arrival, you are transferred to Urubamba, the Sacred Valley of the Incas, and your hotel. The rest of the day is at leisure to adjust to the altitude. This evening, sit down to a special romantic dinner in the hotel and anticipate the amazing sights you are about to see over the next few days.</p>
-<p><strong>Overnight:</strong> Hotel Rio Sagrado <br />
-<strong>Meal Plan:</strong> B,D</p>
-</li>
-<li>
-<h4>Day 4</h4>
-<h5>Urubamba/Chincheros/Urubamba</h5>
-<p>Chincheros is a town of Inca origin, and its colorful weekly fair draws country folk from throughout the valley to exchange goods. Wander the market today and see what treasures you may find as souvenirs. Afterward, meet Nilda Calla�aupa Alvarez, a native of Chinchero. She learned to weave as a child while tending the flocks in the fields of her village and now regularly travels to the U.S. to organize weaving exhibits and workshops. View some of her work and take time to shop before you have lunch at Huayoccari Hacienda, home to an interesting collection of Colonial and folk art. After lunch, continue to the massive fortress of Ollantaytambo, a formidable stone structure that climbs massive terraces to the top of a high peak. Below the fortress lies a complete Incan town, also called Ollantaytambo, still inhabited and with its original architecture and layout preserved.</p>
-<p><strong>Overnight:</strong> Hotel Rio Sagrado <br />
-<strong>Meal Plan:</strong> B,D</p>
-</li>
-<li>
-<h4>Day 5</h4>
-<h5>Urubamba/Machu Picchu</h5>
-<p>Board the deluxe Hiram Bingham train, the most luxurious way to travel the breathtaking landscape to Machu Picchu. Step on board, and you are immersed in an elegant world of polished wood, gleaming cutlery and glittering glass that evokes a romantic ambience. After a light lunch on board, arrive at the breathtaking Incan citadel and begin exploring the ruins in the company of your expert guide. Feel the pulse of this magical place as you visualize the lives of the priests, craftsmen, and servants who inhabited this seemingly uninhabitable citadel and then left, leaving no written records about its destruction. After a busy day of sightseeing, return to your beautiful mountainside retreat, high in the lush Andean clouds forest. It features the look and feel of a rural Andean village set in spectacular grounds with paths that wind past waterfalls and gardens, and trails that wander through wild forest. Snuggle under a thick alpaca blanket in your suite, which offers incredible views of the exotic gardens or the dramatic Vilcanota River.
-
-</p>
-<p><strong>Overnight:</strong> Inkaterra Machu Picchu Pueblo Hotel<br />
-<strong>Meal Plan:</strong> B,L,D</p>
-</li>
-<li>
-<h4>Day 6</h4>
-<h5>Machu Picchu/Cusco</h5>
-<p>Return to Machu Picchu with your guide this morning for a final look at the ruins - and for an even more meaningful event for you. A shaman joins you to perform a vow renewal ceremony for you. Stand before the spirits of the Incas and reaffirm your love in this magical place. Afterward, return to the hotel, renewed and refreshed, for lunch. This afternoon, return to Cusco by Vista dome train and settle in at your hotel, where you receive VIP amenities.</p>
-<p><strong>Overnight:</strong> Hotel Monasterio   <br />
-<strong>Meal Plan:</strong> B,L,D</p>
-</li>
-<li>
-<h4>Day 7</h4>
-<h5>Cusco</h5>
-<p>A morning city tour takes you to the Cathedral on the Plaza de Armas and the Santo Domingo Temple, a Dominican church and convent built on the foundations of the Koricancha (place of gold), where the Incas worshipped the sun. Continue just outside Cusco to the ruins of Sacsayhuaman, a testimonial to the Incan architectural skills. Try to slip a piece of paper between the cracks of the massive stone blocks, cut and fitted together with incredible precision without a single drop of mortar to hold them in place. Your afternoon is at leisure. Make sure to visit the hotel spa for a relaxing couple's massage. This evening, enjoy a romantic dinner at Limo restaurant, overlooking the main plaza.</p>
-<p><strong>Overnight:</strong> Hotel Monasterio    <br />
-<strong>Meal Plan:</strong> B,L</p>
-</li>
-<li>
-<h4>Day 8</h4>
-<h5>Cusco/Lima</h5>
-<p>Fly to Lima and transfer to your hotel. The remainder of the day is at leisure to do some last-minute shopping, take a walk along the ocean or enjoy the views from your suite.</p>
-<p><strong>Overnight:</strong> Miraflores Park Hotel <br />
-<strong>Meal Plan:</strong> B</p>
-</li>
-<li>
-<h4>Day 9</h4>
-<h5> Lima/India</h5>
-<p>Transfer to the airport &Board your international departure flight.</p>
-<p><strong>Overnight:</strong> Breakfast, Lunch & Dinner<br />
-<strong>Meal Plan:</strong> B,L,D</p>
-</li>
-</ul>
-</div>
-
-<div id="tab10" style="display:none;">
-<?php $id =3;?>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="South africa"/>
-<input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Peru Mysteries of Machu Picchu"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Peru-Mysteries-of-Machu-Picchu.pdf"/>
-<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php include("../itinerary.php");?>
-</form>
-</div>
-
-<div id="tab11" style="display:none;">
-<h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="South africa"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Zambia"/>
-<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
-</form>
-</div>
-
-<div id="tab12" style="display:none;">
-<script type="text/javascript">
-
-var markerLetter = 'A';
-var map = '';
-var zoom = 10;
-var origin = 0;
-
-function gmapInitialize2() {
-if (GBrowserIsCompatible()) {
-	map = new GMap2(document.getElementById("map_canvas2"));
-	map.setUIToDefault();
-	
-	
-		description = '<div style="width:300px;">Day 1 - ';
-		description = description + "<p>As you will be entering Zambia, a single entry visa will be required and is obtainable at the point of entry at a cost of USD 50.00 per person, payable in cash. The visa fee is subject to change at the discretion of the Zambian Government.<br /><br />Depart by scheduled light aircraft transfer from Lusaka Airport to Mfuwe Airport. The flying time is approximately 1 hour and 10 minutes.<br /><br />Upon arrival, transfer to Chichele Presidential Lodge. This historic property, once the bush retreat of President Kenneth Kaunda, has a magnificent hilltop location in Zambia's premier game viewing area, the South Luangwa National Park. Its long terrace, with commanding views across the valleys of the South Luangwa, is the perfect place to enjoy breakfast or afternoon tea. Chichele has ten air-conditioned suites, each with French doors onto individual balconies overlooking the valley. The lodge is accessible all year around and the ideal base for exploring the prolific wildlife that populates the mosaic of different habitats surrounding the Luangwa River.<br /><br />The afternoon is at leisure to enjoy one of the game viewing activities on offer.<br /></p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "Arrive Zambia", description, "1");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 2 - ';
-		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.<br /></p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "2");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 3 - ';
-		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.</p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "3");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 4 - ';
-		description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to the Mfuwe airstrip. The transfer time will be confirmed to you locally by the camp management.<br /><br />Depart by scheduled light aircraft transfer from Mfuwe Airport to Livingstone Airport via Lusaka Airport. The flying time is approximately 2 hours and 45 minutes.<br /><br />On arrival at Livingstone Airport please clear customs and immigration and collect your luggage. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to Sussi &amp; Chuma. The transfer time is approximately 30 minutes.<br /><br />Sussi &amp; Chuma is named after David Livingstone's faithful companions and consists of an intimate lodge and two exclusive houses, both of which are situated to make the most of the amazing views that the sweeping Zambezi River provides.<br /><br />The central lodge building features a raised bar/lounge deck, open air dining area, swimming pool and a spa which provide incredible views of the mighty Zambezi.<br />&nbsp;<br />The afternoon is at leisure to enjoy an activity on offer.<br /></p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "South Luangwa - Livingstone", description, "4");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 5 - ';
-		description = description + "<p>The day is at leisure to enjoy the activities on offer.</p><p>Activities offered at the lodge include game drives in the Mosi-oa-Tunya National Park, where guests can see a variety of game, including white rhino, elephant, buffalo and giraffe. Tours of the incredible Victoria Falls, a World Heritage Site, are another must as they give guests an opportunity to experience one of the seven great natural wonders of the world.</p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Livingstone", description, "5");
-		map.addOverlay(mark);
-	
-	
-	var minLat = -17.857719;
-	var minLng = 25.85845;
-	var maxLat = -12.693842;
-	var maxLng = 31.8107079;
-						
-	botLeft = new GLatLng(minLat, minLng);
-	topRight = new GLatLng(maxLat, maxLng);
-	
-	bounds = new GLatLngBounds(botLeft, topRight);
-	origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
-	zoom = map.getBoundsZoomLevel(bounds);
-	map.setCenter(origin, zoom);
-	zoom = map.getZoom();
-}
-}
-
-function createMarker(point, title, html, day) {
-var markerOpts = {};
-var mIcon = new GIcon();
-//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
-
-//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
-mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
-mIcon.iconSize = new GSize(20, 34);
-mIcon.iconAnchor = new GPoint(10, 34);
-mIcon.infoWindowAnchor = new GPoint(10, 1);
-
-markerOpts = {
-	"icon": mIcon,
-	"clickable": true,
-	"title": title
-	};
-var newPoint = point;
-var marker = new GMarker(newPoint, markerOpts);
-
-GEvent.addListener(marker, "click", function() {
-	marker.openInfoWindowHtml(html);
-});
-
-markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
-
-return marker;
-}
-
-//$(document).ready(function(){
-//gmapInitialize();
-//});
-
-$(window).unload(function(){
-GUnload();
-});
-
-</script>
-
-
-<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
-</div>
-
-</div>
-
-
-</div>
-
-</div>   
-</div>
-<!-- Peru: Mysteries of Machu Picchu End Here -->
-
+<!--  FINE FOOD AND ART OF BERLIN End Here -->
 <script language="javascript1.1" type="text/javascript">
 function ChangeValue(val)
 { 
