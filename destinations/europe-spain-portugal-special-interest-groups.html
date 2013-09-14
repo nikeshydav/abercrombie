@@ -389,7 +389,7 @@ We can also offer a selection of alternative dinner venues such as 'A Trevessa' 
 </div>
 
 <div id="tab2" style="display:none;">
-
+<h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Spain & Portugal"/>
@@ -397,7 +397,7 @@ We can also offer a selection of alternative dinner venues such as 'A Trevessa' 
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Celebrate in Lisbon"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Celebrate-in-Lisbon.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -405,12 +405,12 @@ We can also offer a selection of alternative dinner venues such as 'A Trevessa' 
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Spain & Portugal"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Celebrate in Lisbon"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -676,6 +676,7 @@ Later, drive through the rolling vineyard country where every inch of the soil i
 </div>
 
 <div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Spain & Portugal"/>
@@ -683,7 +684,7 @@ Later, drive through the rolling vineyard country where every inch of the soil i
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Gastronomic Spain"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Gastronomic-Spain.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -691,12 +692,12 @@ Later, drive through the rolling vineyard country where every inch of the soil i
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Spain & Portugal"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Gastronomic Spain"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
