@@ -29,7 +29,7 @@ include("../classes/mimemail.class.php");
 <script language="javascript">
 function showMe(tab)
 {		
-	for(var i=1; i<=12; i++)
+	for(var i=1; i<=16; i++)
 	{
 		var name="tab"+i;
 		var name2="divli"+i;
@@ -318,10 +318,10 @@ href="../yahoo.html">
 <a href="#?w=920" rel="popup3" class="poplight" onclick="blockfirsttab('tab9');">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
 </div>
 </div>
 <div class="Clr"></div>
@@ -337,10 +337,10 @@ href="../yahoo.html">
 <a href="#?w=920" rel="popup4" class="poplight" onclick="blockfirsttab('tab9');">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
 </div>
 </div>
 <div class="Clr"></div>
@@ -479,7 +479,7 @@ This evening, you will be transferred to the Paris Lido, home to one of the worl
 
 <div id="tab2" style="display:none;">
 <h1>Send itinerary </h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
@@ -487,6 +487,7 @@ This evening, you will be transferred to the Paris Lido, home to one of the worl
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Italy Switzerland France"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="italy-switzerland-france.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -494,13 +495,13 @@ This evening, you will be transferred to the Paris Lido, home to one of the worl
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Italy Switzerland France"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -641,11 +642,11 @@ This evening, you will be transferred to the Paris Lido, home to one of the worl
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli1"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
 <li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli2"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli3"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli4"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
 <li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/sicilian-adventure.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
@@ -804,14 +805,15 @@ Transfer to Catania airport for your homebound flight.</p>
 
 <div id="tab6" style="display:none;">
 <h1>Send itinerary </h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php $id =1;?>
+
+<?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
 <input type="hidden" name="region_email" id="region_email" value="Europe"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Sicilian Adventure"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="sicilian-adventure.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -819,13 +821,13 @@ Transfer to Catania airport for your homebound flight.</p>
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Sicilian Adventure"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -837,9 +839,9 @@ Transfer to Catania airport for your homebound flight.</p>
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize() {
+			function gmapInitialize1() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas"));
+					map = new GMap2(document.getElementById("map_canvas1"));
 					map.setUIToDefault();
 					
 					
@@ -952,7 +954,7 @@ Transfer to Catania airport for your homebound flight.</p>
 	
 		</script>
 
-<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 </div>
 </div>
@@ -966,11 +968,11 @@ Transfer to Catania airport for your homebound flight.</p>
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli1"><a href="javascript:void(0)" onclick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
 <li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli2"><a href="javascript:void(0)" onclick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli3"><a href="javascript:void(0)" onclick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli4"><a href="javascript:void(0)" onclick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli12"><a href="javascript:void(0)" onclick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
 <li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/the-great-gardens-italy.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
@@ -1116,14 +1118,15 @@ After breakfast, transfer by private car to Rome airport for your onward journey
 
 <div id="tab10" style="display:none;">
 <h1>Send itinerary </h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php $id =1;?>
+
+<?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
 <input type="hidden" name="region_email" id="region_email" value="Europe"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="The Great Gardens Italy"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="the-great-gardens-italy.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -1131,13 +1134,13 @@ After breakfast, transfer by private car to Rome airport for your onward journey
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Great Gardens Italy"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1149,10 +1152,10 @@ After breakfast, transfer by private car to Rome airport for your onward journey
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize() {
+			function gmapInitialize2() {
 
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas"));
+					map = new GMap2(document.getElementById("map_canvas2"));
 					map.setUIToDefault();
 					
 					
@@ -1265,7 +1268,7 @@ After breakfast, transfer by private car to Rome airport for your onward journey
 	
 		</script>
 
-<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 </div>
 </div>
@@ -1279,11 +1282,11 @@ After breakfast, transfer by private car to Rome airport for your onward journey
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli1"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li id="divli13"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
 <li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli2"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli3"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli4"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li id="divli14"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli15"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli16"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
 <li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/unesco-heritage-tour.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
@@ -1446,14 +1449,15 @@ Today you will be privately transferred to Dubrovnik Airport.</p>
 
 <div id="tab14" style="display:none;">
 <h1>Send itinerary </h1>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php $id =1;?>
+
+<?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Italy"/>
 <input type="hidden" name="region_email" id="region_email" value="Europe"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Unesco Geritage Tour"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="unesco-heritage-tour.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
 </div>
@@ -1461,13 +1465,13 @@ Today you will be privately transferred to Dubrovnik Airport.</p>
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Unesco Geritage Tour"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -1479,10 +1483,10 @@ Today you will be privately transferred to Dubrovnik Airport.</p>
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize() {
+			function gmapInitialize3() {
 
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas"));
+					map = new GMap2(document.getElementById("map_canvas3"));
 					map.setUIToDefault();
 					
 					
@@ -1595,7 +1599,7 @@ Today you will be privately transferred to Dubrovnik Airport.</p>
 	
 		</script>
 
-<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas3" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 </div>
 </div>
