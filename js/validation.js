@@ -402,21 +402,29 @@ function showMe(tab) {
 	if (tab == 2) {
 	    document.getElementById("divli3").className = "";
 	    document.getElementById("tab3").style.display = "none";
+	    document.getElementById("divli4").className = "";
+	    document.getElementById("tab4").style.display = "none";
 	}
 
 	if (tab == 6) {
 	    document.getElementById("divli7").className = "";
 	    document.getElementById("tab7").style.display = "none";
+	    document.getElementById("divli8").className = "";
+	    document.getElementById("tab8").style.display = "none";
 	}
 
 	if (tab == 10) {
 	    document.getElementById("divli11").className = "";
 	    document.getElementById("tab11").style.display = "none";
+	    document.getElementById("divli12").className = "";
+	    document.getElementById("tab12").style.display = "none";
 	}
 
 	if (tab == 14) {
 	    document.getElementById("divli15").className = "";
 	    document.getElementById("tab15").style.display = "none";
+	    document.getElementById("divli16").className = "";
+	    document.getElementById("tab16").style.display = "none";
 	}
     }
 }
