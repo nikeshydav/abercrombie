@@ -334,7 +334,7 @@ href="../yahoo.html">
 </div>
 <div id="tab9" style="display:block;">
 
-<h1></h1>
+<h1>EXPLORE NEW ZEALAND</h1>
 <div class="popupbanner"><img src="../images/newzealand-inner9.jpg" alt="PRISTINE WATERS OF NINGALOO REEF" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
@@ -495,6 +495,7 @@ Mount Edward winery is situated in the Gibbston sub region of Central Otago, som
 </div>
 
 <div id="tab10" style="display:none;">
+<h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
@@ -502,7 +503,7 @@ Mount Edward winery is situated in the Gibbston sub region of Central Otago, som
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classic-east-africa.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -510,12 +511,12 @@ Mount Edward winery is situated in the Gibbston sub region of Central Otago, som
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Tanzania"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic East Africa"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
@@ -697,7 +698,7 @@ Mount Edward winery is situated in the Gibbston sub region of Central Otago, som
 <div class="logoinner"><img src="../images/newzealand-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
 <div id="tab13">
-<h1></h1>
+<h1>LUXURIOUS NEW ZEALAND</h1>
 <div class="popupbanner"><img src="../images/newzealand-inner10.jpg" alt="Hawkes Bay Food and Wine Indulgence" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
@@ -863,6 +864,7 @@ Mount Edward winery is situated in the Gibbston sub region of Central Otago, som
 </div>
 
 <div id="tab14" style="display:none;">
+    <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Tanzania"/>
@@ -870,7 +872,7 @@ Mount Edward winery is situated in the Gibbston sub region of Central Otago, som
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Tanzania Safari"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="tanzania-safari.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<h1>Send itinerary</h1>
+
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
 <?php include("../itinerary.php");?>
 </form>
@@ -879,13 +881,13 @@ Mount Edward winery is situated in the Gibbston sub region of Central Otago, som
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote(this,fld_arr2,'<?php echo $id;?>');">
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Tanzania"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Tanzania Safari"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote.php");?>
+<?php include("../quote1.php");?>
 </form>
 </div>
 
