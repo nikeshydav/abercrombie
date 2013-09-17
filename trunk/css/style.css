@@ -8,6 +8,7 @@ img {margin:0;padding:0;border:0;}
 .Clr {margin:0;padding:0;font-size:0;height:0;line-height:0;clear:both;display:block;overflow:hidden;}
 .learn-arrow a{background:url(../images/learn-arrow.jpg) no-repeat left 3px; padding:0 0 0 18px; text-decoration:underline; font-size:12px;}
 #Wrap {margin:0 auto; width:959px;}
+.h20{height: 20px}
 /*********** Header Css Start Here ***********/
 #Header {width:959px; margin:0;}
 .Logo {padding:15px 0 0 0;float:left;width:255px;height:22px;}
@@ -19,7 +20,7 @@ img {margin:0;padding:0;border:0;}
 .HeaderRight ul li a:hover {text-decoration:none;color:#000000;}
 .TollFree{text-transform:uppercase;font-size:14px;color:#b8b9bb; margin:31px 0 5px 0;}
 .livechat{text-transform:uppercase;font-size:14px;color:#b8b9bb; float:right;
- }
+}
 .SearchBg{background:#fff;width:207px;height:20px;padding:1px 5px 0 10px;margin:6px 0 0 0; border:1px solid #ccc;}
 .SearchBg .Input{background:none;border:none;padding:1px 0 0 0;font-family:Arial;font-size:12px;color:#a9a9a9;width:180px;height:17px;line-height:16px;float:left;font-weight:bold;}
 .SearchBg .Button {background:url(../images/arrow-button.gif) no-repeat 0 0;border:none;width:19px;height:19px;float:right;cursor:pointer;}
@@ -60,13 +61,13 @@ img {margin:0;padding:0;border:0;}
 /*********** Container Css Start Here ***********/
 #Container {margin:0;padding:50px 0 30px 0;width:959px;position:relative;}
 .Breadcrumb {
-	position:absolute;
-	top:19px;
-	height:20px;
-	left:2px;
-	width:660px;
-	font-size:11px;
-	z-index:1000;
+    position:absolute;
+    top:19px;
+    height:20px;
+    left:2px;
+    width:660px;
+    font-size:11px;
+    z-index:1000;
 }
 .Breadcrumb ul {}
 .Breadcrumb ul li {display:block;float:left;color:#7f8081;padding:0 6px 0 10px;background:url(../images/bread-arrow.gif) no-repeat 0 7px;}
@@ -257,7 +258,7 @@ e{float:left;margin:0 12px 4px 12px;}
 .tabcontent p{line-height:16px;overflow:hidden;}
 .tabcontent .img{border:2px solid #767676;margin:0 17px 0 0;}
 @media print {
-.tabcontent {display:block !important;}
+    .tabcontent {display:block !important;}
 }
 .borderbox{width:720px;padding:0;margin:-1px 0 0 0;background:#cccccc url(../images/tab-bg.gif) repeat-x 0 bottom;overflow:hidden;position:relative;}
 .shadetabs{margin:0;padding:0;width:720px;height:31px;font-size:14px;}
@@ -288,13 +289,13 @@ e{float:left;margin:0 12px 4px 12px;}
 .FooterLink a, .FooterLinkLast a {text-decoration:none;color:#FFFFFF;}
 .FooterLink a:hover, .FooterLinkLast a:hover {text-decoration:underline;color:#FFFFFF;}
 .FollowBox {float: left;
-padding: 7px 0 0 8px;
-width: 259px;
-height: 205px;
-font-size: 11px;
-line-height: 14px;
-font-size: 11px;
-color: #FFFFFF;}
+	    padding: 7px 0 0 8px;
+	    width: 259px;
+	    height: 205px;
+	    font-size: 11px;
+	    line-height: 14px;
+	    font-size: 11px;
+	    color: #FFFFFF;}
 .SocialIcon {margin:0 0 10px 0;padding:0;}
 .SocialIcon img {margin:0 3px 0 0;}
 .FooterTxt {text-align:center;clear:both;text-transform:uppercase;font-size:11px;margin:25px 0 0 0;line-height: 12px;color:#FFFFFF; position:relative;}
@@ -408,10 +409,10 @@ ul.travelListing li dl dd{float:left;width:40%;margin:0px;padding:5px 0px 5px 40
 
 .tabbtnHolder ul li a:hover{float:left;background:url(../images/btn-left-a.gif) no-repeat left top;padding-left:6px;margin-top:-6px;}
 .tabbtnHolder ul li a:hover span{float:left;background:url(../images/btn-right-a.gif) no-repeat right top;padding:7px 0px;font:13px Arial, Helvetica, sans-serif;
- color:#055186;padding-right:7px;}
+				 color:#055186;padding-right:7px;}
 .tabbtnHolder ul li.active a{float:left;background:url(../images/btn-left-a.gif) no-repeat left top;padding-left:6px;margin-top:-6px;}
 .tabbtnHolder ul li.active a span{float:left;background:url(../images/btn-right-a.gif) no-repeat right top;padding:7px 0px;font:13px Arial, Helvetica, sans-serif;
- color:#055186;padding-right:7px;}
+				  color:#055186;padding-right:7px;}
 
 .mtop3{margin-top:3px!important;}
 .mleft5{margin-left:5px!important;}
@@ -531,17 +532,17 @@ ul.condition li{display:block;background:url(../images/arrow.png) no-repeat 0 11
 .popup_block{display: none;background: #fff;padding:5px 10px; border: 5px solid #ddd;float: left;position:fixed; top:75px !important; left: 53%;z-index: 99999;-webkit-box-shadow: 0px 0px 20px #000;-moz-box-shadow: 0px 0px 20px #000;box-shadow: 0px 0px 20px #000;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;margin-top:0 !important; }
 .popup_block2{display: none;background: #fff;border: 2px solid #000;float: left;position:absolute;top:40px !important; left: 53%;z-index: 99999;-webkit-box-shadow: 0px 0px 20px #000;-moz-box-shadow: 0px 0px 20px #000;box-shadow: 0px 0px 20px #000;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;margin-top:0 !important; }
 .popup_block3{min-width:960px; 
-display: none; 
-background:#fff;
-border: 5px solid #ddd;
-float: left; 
-position:absolute;
-top:35px !important; 
-left: 52%;
-z-index: 99999;
- -webkit-box-shadow: 0px 0px 20px #000;-moz-box-shadow: 0px 0px 20px #000;box-shadow: 0px 0px 20px #000;-webkit-border-radius: 10px;-moz-border-radius: 10px; border-radius: 10px;
- margin-top:0 !important; 
- }
+	      display: none; 
+	      background:#fff;
+	      border: 5px solid #ddd;
+	      float: left; 
+	      position:absolute;
+	      top:35px !important; 
+	      left: 52%;
+	      z-index: 99999;
+	      -webkit-box-shadow: 0px 0px 20px #000;-moz-box-shadow: 0px 0px 20px #000;box-shadow: 0px 0px 20px #000;-webkit-border-radius: 10px;-moz-border-radius: 10px; border-radius: 10px;
+	      margin-top:0 !important; 
+}
 img.btn_close {float: right; margin: -30px -20px 0 0;}
 .popup p {padding: 5px 10px;margin: 5px 0;}
 /*--Making IE6 Understand Fixed Positioning--*/
@@ -615,74 +616,74 @@ img.corner {width: 15px;height: 15px; border: none;display: block !important;}
 
 .cursorauto{cursor:default;}
 .cursorauto:hover{background:none!important}
- 
+
 /* end here */
 .media-wrapper{float:left; margin:0 0 20px 0;}
 
 tab accordain
 .arrowlistmenu{
-width: 160px; /*width of accordion menu*/
+    width: 160px; /*width of accordion menu*/
 }
 
 .arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
-margin: 0 0 0 4px;
-color: white;
-/*bottom spacing between header and rest of content*/
+    margin: 0 0 0 4px;
+    color: white;
+    /*bottom spacing between header and rest of content*/
 
- /*header text is indented 10px*/
-cursor: hand;
-cursor: pointer;
+    /*header text is indented 10px*/
+    cursor: hand;
+    cursor: pointer;
 }
 
 .arrowlistmenu .openheader{ /*CSS class to apply to expandable header when it's expanded*/
-background-image: url(images/titlebar-active.png);
+    background-image: url(images/titlebar-active.png);
 }
 
 .arrowlistmenu ul{ /*CSS for UL of each sub menu*/
-list-style-type: none;
-margin: 0;
-padding: 0;
-margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
 }
 
 .arrowlistmenu ul li{
-padding-bottom: 2px; /*bottom spacing between menu items*/
+    padding-bottom: 2px; /*bottom spacing between menu items*/
 }
 
 .arrowlistmenu ul li a{
-color: #fff;
-background: url(images/arrowbullet.png) no-repeat center left; /*custom bullet list image*/
-display: block;
-padding: 2px 0;
-padding-left: 19px; /*link text is indented 19px*/
-text-decoration: none;
+    color: #fff;
+    background: url(images/arrowbullet.png) no-repeat center left; /*custom bullet list image*/
+    display: block;
+    padding: 2px 0;
+    padding-left: 19px; /*link text is indented 19px*/
+    text-decoration: none;
 
 }
 
 .arrowlistmenu ul li a:visited{
-color: #fff;
+    color: #fff;
 }
 
 .arrowlistmenu ul li a:hover{ /*hover state CSS*/
-color: #fff;
-background-color: #F3F3F3;
+    color: #fff;
+    background-color: #F3F3F3;
 }
 
 .connection-video{float:right; margin:0 0 0 28px; background: #F3F3F3;padding:10px;
--moz-border-radius:2px;
--xhtml-border-radius:2px;
--webkit-border-radius:2px;
--ms-border-radius:2px;
-border-radius:2px; }
+		  -moz-border-radius:2px;
+		  -xhtml-border-radius:2px;
+		  -webkit-border-radius:2px;
+		  -ms-border-radius:2px;
+		  border-radius:2px; }
 .col1{width:440px; float:left; border-right:1px solid #e4e5e6; padding:0 28px 0 0;}
 .col1 div{margin:0 0 30px 0; min-height:125px;}
 .col1 img{float:left;}
 .col2{width:223px; float:right;}
 .col2 .brochure{background:#f3f3f3; float:left; padding:4px;
-border-radius:4px;
--moz-border-radius:4px;
--webkit-border-radius:4px;
--xhtml-border-radius:4px;
+		border-radius:4px;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		-xhtml-border-radius:4px;
 }
 .col2 .brochure img{float:left; margin:0 10px 0 0;}
 .col2 .download{color:#00447C; float:left; background:url(../images/download.jpg) no-repeat left 12px; padding:10px 0 0 15px;}
@@ -692,10 +693,10 @@ border-radius:4px;
 .col3{width:440px; float:left; border-right:1px solid #e4e5e6; padding:0 28px 0 0;}
 
 .col2 .kate{background:#f3f3f3; float:left; padding:12px;
-border-radius:4px; width:204px;
--moz-border-radius:4px;
--webkit-border-radius:4px;
--xhtml-border-radius:4px;
+	    border-radius:4px; width:204px;
+	    -moz-border-radius:4px;
+	    -webkit-border-radius:4px;
+	    -xhtml-border-radius:4px;
 }
 .kate img{width:200px;}
 .footer_speak strong {
@@ -703,17 +704,39 @@ border-radius:4px; width:204px;
     margin: 10px 0 0;
 }
 #demo3{padding: 12px;
-width: 226px;
--moz-border-radius: 6px;
--webkit-border-radius: 6px;
--xhtml-border-radius: 6px;
--border-radius: 6px;
-background: #f4f4f4;
-margin-top: 0;
-margin-right: 0px;
-margin-bottom: 0;
-margin-left: 0px;}
+       width: 226px;
+       -moz-border-radius: 6px;
+       -webkit-border-radius: 6px;
+       -xhtml-border-radius: 6px;
+       -border-radius: 6px;
+       background: #f4f4f4;
+       margin-top: 0;
+       margin-right: 0px;
+       margin-bottom: 0;
+       margin-left: 0px;}
 
 .col_3{width: 227px; margin-left: 11px; padding: 0 0 0 10px;}
 .right_line_content{color: #5d6064; float:left; width:223px; font-weight:bold; font-size:14px;}
 .closethis{background: url('../images/ok.jpg') no-repeat  transparent;width: 71px;height: 28px;text-indent: -2000px;display: block}
+
+
+div.pdf_button {
+    background: transparent url('../images/btns/btn-gray-right.png') no-repeat scroll top right;
+    display: block;
+    float: left;
+    height: 30px;
+    margin-right: 6px;
+    padding-right: 20px;
+}
+
+div.pdf_button a {
+    background: transparent url('../images/btns/pdf_button.png') no-repeat;
+    display: block;
+    line-height: 19px;
+    padding: 6px 0 5px 40px;
+    font-size: 11px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
