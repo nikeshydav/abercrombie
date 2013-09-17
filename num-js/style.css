@@ -119,7 +119,7 @@ a#prev:hover, a#next:hover {
 .aop p{ margin-bottom: 0px;}
 .aop span{ color: #0F5D9D; text-decoration: underline; font-weight: bold;}
 .aoplist ul li {
-    list-style: disc inside none;
+    list-style: disc outside none;
     padding-left: 10px;
 }
 .aoplist strong { text-decoration: underline;}
