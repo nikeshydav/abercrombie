@@ -320,19 +320,15 @@ function check_reg(frm_name, fld_arr) {
 }
 
 
-function showMe(tab)
-{
-    for (var i = 1; i <= 20; i++)
-    {
+function showMe(tab) {
+    for (var i = 1; i <= 20; i++) {
 	var name = "tab" + i;
 	var name2 = "divli" + i;
 	if (tab == i) {
-	    if (document.getElementById(name2) != null)
-	    {
+	    if (document.getElementById(name2) != null) {
 		document.getElementById(name2).className = "active";
 	    }
-	    if (document.getElementById(name) != null)
-	    {
+	    if (document.getElementById(name) != null) {
 		document.getElementById(name).style.display = "";
 	    }
 
@@ -403,17 +399,25 @@ function showMe(tab)
 	    }
 	}
 
-	if (i >= 17 || tab == 2 || tab == 6 || tab == 10 || tab == 14) {
+	if (tab == 2) {
 	    document.getElementById("divli3").className = "";
 	    document.getElementById("tab3").style.display = "none";
+	}
+
+	if (tab == 6) {
 	    document.getElementById("divli7").className = "";
 	    document.getElementById("tab7").style.display = "none";
+	}
+
+	if (tab == 10) {
 	    document.getElementById("divli11").className = "";
 	    document.getElementById("tab11").style.display = "none";
+	}
+
+	if (tab == 14) {
 	    document.getElementById("divli15").className = "";
 	    document.getElementById("tab15").style.display = "none";
 	}
-
     }
 }
 
