@@ -114,3 +114,12 @@ a#prev:hover, a#next:hover {
 #slideshow1 img.last-active {
     z-index: 9;
 }
+
+
+.aop p{ margin-bottom: 0px;}
+.aop span{ color: #0F5D9D; text-decoration: underline; font-weight: bold;}
+.aoplist ul li {
+    list-style: disc inside none;
+    padding-left: 10px;
+}
+.aoplist strong { text-decoration: underline;}
