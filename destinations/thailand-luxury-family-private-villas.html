@@ -37,7 +37,7 @@ ddaccordion.init({
 	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
 	animatedefault: false, //Should contents open by default be animated into view?
 	persiststate: true, //persist state of opened contents within browser session?
-	//toggleclass: ["", "openpet"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	toggleclass: ["", "openpet"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
 	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
 	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
 	oninit:function(expandedindices){ //custom code to run when headers have initalized
@@ -75,28 +75,6 @@ ddaccordion.init({
   })();
 
 </script>
-<!--gallery-->
-<link rel="stylesheet" type="text/css" media="screen" href="../num-js/style.css">
-<script type="text/javascript" src="../num-js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="../num-js/jquery.cycle.all.min.js"></script>
-<script type="text/javascript">
-$(function() {
-        
-    $('#slideshow').before('<div id="nav" class="nav">').cycle({
-        fx:     'fade',
-        speed:  'slow',
-        timeout: 0,
-        pager:  '#nav',
-        before: onBefore
-    });
-    
-        function onBefore() {
-        $('#title').html(this.alt);
-    }
-});
-
-</script>
-<!--gallery-->
 </head>
 
 <body>
@@ -146,7 +124,7 @@ href="../yahoo.html">
   <?php include('../header.html'); ?>
   <!-- Header Part End Here -->
   <!-- Banner Part Start Here -->
-  <div id="Banner"><img src="../images/thailand-special-offers-banner.jpg" alt="Thailand Special Offers" width="959" height="300" /></div>
+  <div id="Banner"><img src="../images/thailand-banner5.jpg" alt="Thailand" width="959" height="300" /></div>
   <!-- Banner Part End Here -->
   <!-- Container Part Start Here -->
   <div id="Container">
@@ -182,7 +160,7 @@ href="../yahoo.html">
                <li><a href="../about/thailand-office.html" title="A&amp;K office in Thailand"><span>-</span> A&amp;K office in Thailand</a></li>
               <li><a href="thailand-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li> 
               <li><a href="china-orient-news.html?id=4" title="News"><span>-</span> News</a></li>
-              <!-- <li><a href="thailand-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li> -->
+               <!-- <li><a href="thailand-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li> -->
                <li><a href="thailand-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li> 
                <li><a href="thailand-luxury-rail-journey.html" title="Luxury Rail Journey"><span>-</span> Luxury Rail Journey</a></li>
             
@@ -238,11 +216,10 @@ href="../yahoo.html">
     </div>
     <!-- Left Container Part End Here -->
     <!-- Center Container Part Start Here -->
-    
     <div class="CenterContainerInner">
-<h1>Thailand Special Offers </h1>
-<div class="Right">
-<div class="RightIcons"> <?php include('../share.html'); ?></div>
+      <h1>Thailand Special Offer</h1>
+      <div class="Right">
+<div class="RightIcons"><?php include('../share.html'); ?></div>
 <div class="NewsletterBox">
 <?php include('../newsletterform.html'); ?>
 </div>
@@ -260,106 +237,121 @@ href="../yahoo.html">
 <option value="thailand-offers.html">Generic Thailand Special Offers </option>
 </select>
 </div>
-<div class="Clr"></div>
-
- <div class="clickhere"><a href="special-offers.html">Please click here for more special offers >></a></div>
+      <div class="Clr"></div>
+      <div class="clickhere"><a href="special-offers.html">Please click here for more special offers >></a></div>
 	 
-    
-
-<!-- <div style="float:right;"><a href="../destinations/south-america-peru.html" style=" background:#012e69; color:#FFFFFF; padding:3px 10px; font-size:12px; font-weight:normal;"><< Peru Homepage</a></div>   -->
-<div class="Clr"></div>
-<div id="demo2" >
- <div id="slideshow" class="pics" style="position: relative; ">
-<img src="../num-images/Thaliand-special-offers-gallery-1.jpg" alt="beach honeymoon"/>
-<img src="../num-images/Thaliand-special-offers-gallery-2.jpg" alt="Beachfront Villa"/>
-<img src="../num-images/Thaliand-special-offers-gallery-3.jpg" alt="beachfront villas in phuket"/>
-<img src="../num-images/Thaliand-special-offers-gallery-4.jpg" alt="island villa"/>
-<img src="../num-images/Thaliand-special-offers-gallery-5.jpg" alt="Islands & Beach Escapes"/>
-<img src="../num-images/Thaliand-special-offers-gallery-6.jpg" alt="Luxury Family Villas"/>
-<img src="../num-images/Thaliand-special-offers-gallery-7.jpg" alt="luxury resorts restaurant"/>
-<img src="../num-images/Thaliand-special-offers-gallery-8.jpg" alt="Luxury Train Travel"/>
-<img src="../num-images/Thaliand-special-offers-gallery-9.jpg" alt="Luxury Train"/>
-<img src="../num-images/Thaliand-special-offers-gallery-10.jpg" alt="wellness and fitness retreats"/>
-
-<img src="../num-images/Thaliand-special-offers-gallery1.jpg" alt="Luxury Family Villa"/>
-<img src="../num-images/Thaliand-special-offers-gallery2.jpg" alt="luxury holidays destination"/>
-<img src="../num-images/Thaliand-special-offers-gallery3.jpg" alt="Luxury Beachfront Villa"/>
-<img src="../num-images/Thaliand-special-offers-gallery4.jpg" alt="Pool Villa"/>
-<img src="../num-images/Thaliand-special-offers-gallery5.jpg" alt="spa and wellness"/>
-<img src="../num-images/Thaliand-special-offers-gallery6.jpg" alt="Luxury-Train-Journeys"/>
-</div>
-</div>
-<div class="Clr"></div><br>
-
-<ul class="villasListing3" style="padding:0px;">
+      <ul class="villasListing3" style="padding:0px;">
       	  <li>
 		<dl>
-                   <dt>
-			<a href="thailnad-luxury-family-private-villas.html"><h3>Luxury Family Villas / Private Luxury Villas in Thailand - Exclusive Holiday Offers</h3></a>
-              	<p>Thailand has a wide range of private villas and bungalows for rent for a perfect family or a romantic getaway. Villa rentals are available in Koh Samui, Phuket, Pattaya, Hua Hin and Krabi. Visitors can indulge in stylish holiday in the comforts of their villas, which is like "home away from Home" . Visitors can also opt for private butlers, bbq parties and romantic meals in their villas.</p>
-                <p style="color:red"><strong>Speak to a consultant on +91 11 46001641 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
- 			<a href="thailnad-luxury-family-private-villas.html"><h3 class="mypets">Read more</h3></a>
+            <dd> <img  src="../images/thailand1.jpg" alt="MISKAWAAN SPECIAL OFFERS" /></dd>
+            <dt>
+			<h3>Paresa Resort, Phuket</h3>
+              	<p><strong>Grand Villa Package: &nbsp;&nbsp; THB 4, 00,000 for 8 guests for 3 Nights </strong><br />
+            Stay 3 Nights in Grand Villa with daily breakfast for 8 guests at Diavolorestaurant along with Private airport transfers
+ </p>
+ <div class="thepet">
+ <p><strong>A&K Exclusive:</strong> Thai Set Dinner for 8 guests at Talung Thai (Food only)</p>
+ <p>*Terms & Conditions Apply.<br>
+ Above offer is Valid to book between 1-31st Oct 2013 only for the stay dates till 31st Mar 2014. Above mentioned rates are indicative and valid for stay till 31st Oct 2013 and may vary depending on the travel dates.<br>
+ No airfare is included in above price<br>
+ Rtaes are quoted in Thai Bhats
+ </p>
+ </div>
+			<h3 class="mypets">Read more</h3>
+
             </dt>
-          </dl></li>
-           
-                <li> <dl> 
-                <dt>
-			<a href="thailnad-wellness-beauty-spa.html"><h3>Wellness, Beauty & Spa Retreats - Exclusive Holiday Offers</h3></a>
-              	<p>Thailand, besides being a shopper's paradise is also well known for its beauty, spa and wellness activities.  After a day of shopping and relaxing at a spa, women travelers can choose to indulge in hand & foot spa, manicure & pedicure as well as nail painting, hair spa and hair re-bonding. The service provided is unanimous with Thai Hospitality with high quality, hygienic, reasonable pricing and no queues. It's the ultimate experience and a must try on your next visit.</p>
-                <p style="color:red"><strong>Speak to a consultant on +91 11 46001641 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
- 			<a href="thailnad-wellness-beauty-spa.html"><h3 class="mypets">Read more</h3></a>
-            </dt>
-          </dl></li>
-          
-           <li> <dl>
-           <dt>
-			<h3>Luxury Honeymoon in Thailand - Exclusive Holiday Offers </h3>
-              	<p>Thailand is country of romance. It is the perfect destination to indulge in an exclusive and romantic honeymoon.</p> 
-                <p>With Thailand's pristine beaches, white sands, and private villas, serving as a serene backdrop, it serves as the perfect getaway for an ideal honeymoon. Be it a secluded island, sun bathing under the tropical sun, elephant trekking in the jungle, pampered in luxurious spas or a sunset on the catamaran. The options for a perfect honeymoon in Thailand are endless. </p> 
-<p>The most popular option for honeymooners is the breathtaking Koh Samui with its incredible beaches and green waters, which is ideal for snorkeling and scuba diving. </p> 
-<p>Phuket is another preferred honeymoon spot, known for its gorgeous beaches and blue oceans.</p> 
-<p>Other popular honeymoon spots includes Chaing Mai, Chiang Rai (Golden Traingle). Chiang Mai is often fondly called the Rose of the North for its beauty and spirit. Chiang Rai is a natural paradise surrounded by majestic mountains, ride an elephant, take a nature stroll, and discover the customs of northern Thailand's most colourful hill tribes.</p>
-                <p style="color:red"><strong>Speak to a consultant on +91 11 46001641 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
- 			<h3 class="mypets">Read more</h3>
-            </dt>
-          </dl></li>
-          
-           <li> <dl>
-           <dt>
-			<h3>Luxury Trains in Thailand  - Exclusive Holiday Offers </h3>
-              	<p>The Eastern & Oriental Express or E&O is a luxury train operating in Singapore, Malaysia & Thailand.</p>
-<p>The train travels through dense rainforests and towering mountains past golden temples; rubber plantations and fields of flowers and mango orchards; and remote towns and villages. E & O is known for its exceptional beauty, service, dining and off-train experiences.</p>
-<p>The majesty and splendor of the E&O, with its comfortable, elegant lounges and suites, panoramic windows, delicious cuisine and service, combined with the adventure of a journey through the heart of Asia, is a truly unique experience.</p>
-<p>The oriental Express runs from Singapore to Bangkok once or twice each month from March to December.  This Journey is for 2 nights/ 3 days and includes a brief tour of Georgetown (Penang) and a visit to the Bridge on the River Kwai at Kanchanaburi (located towards the west of Bangkok). Bangkok to Singapore once or twice each month, February to December. The Journey is for 3 nights/ 4 days and includes a visit to the Bridge on the River Kwai and a brief tour of Georgetown (Penang).  Other journeys include occasional rail cruises of 3 or 6 nights, including Bangkok-Vientiane and Bangkok-Chiang Mai</p>
- <p style="color:red"><strong>Speak to a consultant on +91 11 46001641 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
- 			<h3 class="mypets">Read more</h3>
-            </dt>
-          </dl></li>
-          
-           <li> <dl>
-           <dt>
-			<h3>Private Islands & Beach Escapes - Exclusive Holiday Offers </h3>
-              	<p style="color:red"><strong>Speak to a consultant on +91 11 46001641 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
- 			<h3 class="mypets">Read more</h3>
-            </dt>
-          </dl></li>
-          
-            <li><dl>
-           <dt>
-			<h3>Generic Thailand Special Offers </h3>
-              	<p style="color:red"><strong>Speak to a consultant on +91 11 46001641 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
- 			<h3 class="mypets">Read more</h3>
-            </dt>
-          </dl>
-          
-          
+          </dl>  
 		</li>
-                </ul>
+                
+                  	  <li>
+		<dl>
+            <dd> <img  src="../images/thailand1.jpg" alt="MISKAWAAN SPECIAL OFFERS" /></dd>
+            <dt>
+			<h3>Andara Resort and Villas, Phuket</h3>
+              	<p><strong>3 Bedroom Terrace Suite Package:  &nbsp;&nbsp; USD 4260 for 2 guests for 3 Nights  </strong><br />
+            3 Nights stay at 3 Bedroom Terrace Suite with daily breakfast for 2 guests with Private Airport transfers</p>
+            <p><strong>A&K Exclusive:</strong> A complimentary choice of “a Thai Set Dinner at Silk Restaurant” OR “a 60-minute Thai Massage” (maximum 2 persons per bedroom). Inclusive of stay more save more offers & valid for stay from 06gh Sep  till 31stOct’14, Terms & Condition will apply.</p>
+             <p><strong>Special offers: Stay between </strong> 01st Nov 13 – 31st Mar 14 & avail 20% discount for minimum 4 nights stay and 25% discount for minimum 5 nights stay </p>
+             
+ <div class="thepet">
+<p><strong>4 Bedroom Pool Suite Package:    &nbsp;&nbsp; USD 5970 for 8 guests for 3 Nights  </strong><br />
+3 Nights stay at 4 Bedroom Pool Suite with daily breakfast for 8 guests with Private Airport transfers</p>
+ <p><strong>A&K Exclusive:</strong> A complimentary choice of “a Thai Set Dinner at Silk Restaurant” or “a 60-minute Thai Massage” (maximum 2 persons per bedroom). Inclusive of stay more save more offers & valid for stay till 31st Oct’13, Terms & Condition will apply.</p>
+ <p><strong>Special offers: Stay between </strong> 01st Nov 13 – 31st Mar 14 & avail 20% discount for minimum 4 nights stay and 25% discount for minimum 5 nights stay  </p>
+    <p>*Terms & Conditions Apply.<br>
+ Above offer is Valid to book between 1-31st Oct 2013 only for the stay dates till 31st Mar 2014. Above mentioned rates are indicative and valid for stay till 31st Oct 2013 and may vary depending on the travel dates.<br>
+ No airfare is included in above price<br>
+ Rtaes are quoted in Thai Bhats
+ </p>          
+ </div>
+			<h3 class="mypets">Read more</h3>
+
+            </dt>
+          </dl>  
+		</li>
+                
+                     	  <li>
+		<dl>
+            <dd> <img  src="../images/thailand1.jpg" alt="MISKAWAAN SPECIAL OFFERS" /></dd>
+            <dt>
+			<h3>Miskawaan Luxury Beachfront Villas, KohSamui</h3>
+              	<p><strong>Villa Acacia Package: &nbsp;&nbsp; USD 2950 for 3 nights stay using 4 bedroom villa acacia for 8 guests  </strong><br />
+            Stay 3 nights in Villa Acacia with daily breakfast for 8 guests with private return airport transfers.</p>
+            <p><strong>Villa Waterlily Package: nbsp;&nbsp;  USD 3300 for 3 nights stay using 5 bedroom villa waterlily for 10 guests  </strong><br />
+            Stay 3 nights in Villa Waterlily with daily breakfast for 8 guests with private return airport transfers.</p>
+              
+ <div class="thepet">
+<p><strong>A&K Exclusive: </strong><br />
+Stay for 3 nights and pay for 2 nights offer (already calculated in above cost)<br>
+Special 5% additional discount on above rates, if booked with A&K </p>
+   <p>*Terms & Conditions Apply.<br>
+ Above offer is Valid to book between 1-31st Oct 2013 only for the stay dates till 24th Dec 2013. Above mentioned rates are indicative and valid for stay till 31st Oct 2013 and may vary depending on the travel dates.<br>
+ No airfare is included in above price<br>
+ All rates mentioned are quoted in US Dollarsand subject to change
+ </p>          
+ </div>
+			<h3 class="mypets">Read more</h3>
+
+            </dt>
+          </dl>  
+		</li>
+                
+                	  <li>
+		<dl>
+            <dd> <img  src="../images/thailand1.jpg" alt="MISKAWAAN SPECIAL OFFERS" /></dd>
+            <dt>
+			<h3>Centara West Sands Resorts & Villas Phuket</h3>
+              	<p><strong>Penthouse Pool Suite 4 bedroom: &nbsp;&nbsp;   THB 62600 for 3 nights stay for 8 guests and 5 children  </strong><br />
+            Stay 3 nights in Petnhouse pool suite 4 bedroom with daily breakfast for 8 guests with private return airport transfers.</p>
+            <p><strong>Luxury Pool Villa 3 bedroom: &nbsp;&nbsp;  THB 67000 for 3 nights stay for 6 guests and 4 children  </strong><br />
+            Stay 3 nights in luxury pool villa 3 bedroom with daily breakfast for 8 guests with private return airport transfers.</p>
+              
+ <div class="thepet">
+<p><strong>A&K Exclusive: </strong><br />
+•	Unlimited access to Splash Jungle<br>
+•	Free breakfast for child under 12 years old when sharing existing bed(s) with parents. (Subject to bed option and room configuration)<br>
+•	Free round-trip airport transfers (airport-hotel-airport).<br>
+•	Extra bed are free of charge and can be provided on request. (Subject to availability)
+ </p>
+   <p>*Terms & Conditions Apply.<br>
+ Above offer is Valid to book between 1-31st Oct 2013 only for the stay dates till 31st Mar 2014. Above mentioned rates are indicative and valid for stay till 31st Oct 2013 and may vary depending on the travel dates.<br>
+ No airfare is included in above price<br>
+ All rates mentioned are quoted in Thai Bahts
+ </p>          
+ </div>
+			<h3 class="mypets">Read more</h3>
+
+            </dt>
+          </dl>  
+		</li>
+      </ul>
+	  <div class="Clr"></div><p><strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
     </div>
+    <!-- Center Container Part End Here -->
+    <div class="Clr"></div>
   </div>
   <!-- Container Part End Here -->
 </div>
-
 <!-- Footer Part Start Here -->
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
