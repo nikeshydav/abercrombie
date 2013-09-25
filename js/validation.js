@@ -76,8 +76,14 @@ function validate_itinerary(frm_name, fld_arr, fid) {
 	var country = frm_name.country_email.value;
 	var region = frm_name.region_email.value;
 	var itineraries_email = frm_name.itineraries_email.value;
+	var itineraries_email_pdf = frm_name.itineraries_email_pdf.value;
+	var sender_email = frm_name.sender_email.value;
 	//var dataString = 'email_send_itinerary='+frm_name.email_send_itinerary.value+"&subject_send_itinerary="+frm_name.subject_send_itinerary.value+"&msg_send_itinerary="+frm_name.msg_send_itinerary.value+"&country_send_itinerary="+ country +"&region_send_itinerary="+region.value+"&itineraries_send_itinerary="+itineraries_email+"&submit=1"+"&time="+time;
-	var dataString = 'email_send_itinerary=' + frm_name.email_send_itinerary.value + "&subject_send_itinerary=" + frm_name.subject_send_itinerary.value + "&msg_send_itinerary=" + frm_name.msg_send_itinerary.value + "&country_send_itinerary=" + country + "&region_send_itinerary=" + region.value + "&itineraries_send_itinerary=" + itineraries_email + "&submit=1" + "&time=" + time;
+
+	var val = document.getElementById("security_code_" + fid).value;
+	var dataString = 'email_send_itinerary=' + frm_name.email_send_itinerary.value + "&subject_send_itinerary=" + frm_name.subject_send_itinerary.value + "&msg_send_itinerary=" + frm_name.msg_send_itinerary.value + "&country_send_itinerary=" + country + "&region_send_itinerary=" + region.value + "&itineraries_send_itinerary=" + itineraries_email + "&submit=1&val=" + val + "&time=" + time;
+	dataString += '&itineraries_email_pdf=' + itineraries_email_pdf + '&region_email=' + region + '&sender_email=' + sender_email;
+	dataString += '&itineraries_email=' + itineraries_email + '&country_email=' + country;
 	var doc = $.ajax({
 	    type: "POST",
 	    url: "../send_mail_itinerary.php",
@@ -170,6 +176,7 @@ function validate_quote(frm_name, fld_arr) {
 
     if (arr_msg.length == 0) {
 	var time = Math.random();
+	var val = document.getElementById("security_code_" + fid).value;
 	var dataString = 'quote_name=' + frm_name.quote_name.value + "&quote_email=" + frm_name.quote_email.value + "&quote_residence=" + frm_name.quote_residence.value + "&quote_phone=" + frm_name.quote_phone.value + "&quote_adult=" + frm_name.quote_adult.value + "&quote_no_children=" + frm_name.quote_no_children.value + "&quote_age_children=" + frm_name.quote_age_children.value + "&quote_date_travel=" + frm_name.quote_date_travel.value + "&quote_requirements=" + frm_name.quote_requirements.value + "&country_quote=" + frm_name.country_quote.value + "&region_quote=" + frm_name.region_quote.value + "&itineraries_quote=" + frm_name.itineraries_quote.value + "&submit=1" + "&time=" + time;
 	var doc = $.ajax({
 	    type: "POST",
@@ -257,7 +264,8 @@ function validate_quote1(frm_name, fld_arr, fid) {
 
     if (arr_msg.length == 0) {
 	var time = Math.random();
-	var dataString = 'quote_name=' + frm_name.quote_name.value + "&quote_email=" + frm_name.quote_email.value + "&quote_residence=" + frm_name.quote_residence.value + "&quote_phone=" + frm_name.quote_phone.value + "&quote_adult=" + frm_name.quote_adult.value + "&quote_date_travel=" + frm_name.quote_date_travel.value + "&quote_requirements=" + frm_name.quote_requirements.value + "&country_quote=" + frm_name.country_quote.value + "&region_quote=" + frm_name.region_quote.value + "&itineraries_quote=" + frm_name.itineraries_quote.value + "&submit=1" + "&time=" + time;
+	var val = document.getElementById("security_codeq_" + fid).value;
+	var dataString = 'quote_name=' + frm_name.quote_name.value + "&quote_email=" + frm_name.quote_email.value + "&quote_residence=" + frm_name.quote_residence.value + "&quote_phone=" + frm_name.quote_phone.value + "&quote_adult=" + frm_name.quote_adult.value + "&quote_date_travel=" + frm_name.quote_date_travel.value + "&quote_requirements=" + frm_name.quote_requirements.value + "&country_quote=" + frm_name.country_quote.value + "&region_quote=" + frm_name.region_quote.value + "&itineraries_quote=" + frm_name.itineraries_quote.value + "&submit=1&val=" + val + "&time=" + time;
 	var doc = $.ajax({
 	    type: "POST",
 	    url: "../send_mail_quote1.php",
