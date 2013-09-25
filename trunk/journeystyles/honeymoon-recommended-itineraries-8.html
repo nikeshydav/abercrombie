@@ -588,7 +588,7 @@ GUnload();
 <li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Classic-Antarctica.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/ecuador_honeymoon.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -682,10 +682,10 @@ trails, and return onboard for dinner.
     <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Antarcticaa"/>
-<input type="hidden" name="region_email" id="region_email" value="Antarctica"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Antarctica"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Classic-Antarctica.pdf"/>
+<input type="hidden" name="country_email" id="country_email" value="Ecuador"/>
+<input type="hidden" name="region_email" id="region_email" value="South America"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Ecuador Honeymoon"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ecuador_honeymoon.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -696,9 +696,9 @@ trails, and return onboard for dinner.
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Antarctica"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Antarctica"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Antarctica (2012-13)"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Ecuador"/>
+<input type="hidden" name="region_quote" id="region_quote" value="South America"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ecuador Honeymoon"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <?php include("../quote1.php");?>
@@ -944,8 +944,8 @@ The trail to the highlands leaves from Bellavista and passes through the agricul
     <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Antarctica"/>
-<input type="hidden" name="region_email" id="region_email" value="Antarctica"/>
+<input type="hidden" name="country_email" id="country_email" value="Ecuador"/>
+<input type="hidden" name="region_email" id="region_email" value="South America"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Honeymoon in Ecuador"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="honeymoon_in_ecuador.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
@@ -958,8 +958,8 @@ The trail to the highlands leaves from Bellavista and passes through the agricul
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Antarctica"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Antarctica"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Ecuador"/>
+<input type="hidden" name="region_quote" id="region_quote" value="South America"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Honeymoon in Ecuador"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <?php include("../quote1.php");?>
