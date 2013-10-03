@@ -10,7 +10,7 @@ RewriteCond %{THE_REQUEST} ^.*/enquery-form.html
 #RewriteRule ^(.*)enquery-form.html$ http://www.abercrombiekent.co.in/enquiry-form.html$1 [R=301,L]
 
 RemoveHandler .html .htm
-AddType application/x-httpd-php .php .php5 .phtml .htm .html 
+AddType application/x-httpd-php .php .php5 .phtml .htm .html
 
 ##
 # @package		Joomla
