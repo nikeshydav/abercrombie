@@ -27,23 +27,26 @@ include("../classes/mimemail.class.php");
 <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
 <script language="javascript">
 function showMe(tab)
-{	
+{
 
 for(var i=1; i<=16; i++){
 		var name="tab"+i;
 		var name2="divli"+i;
 		if(tab==i)
 		{
-		
-	       if(document.getElementById(name2) != null)	
+
+	       if(document.getElementById(name2) != null)
 		   {
 				document.getElementById(name2).className="active";
 		   }
-		   if(document.getElementById(name) != null)	
+		   if(document.getElementById(name) != null)
 		   {
 				document.getElementById(name).style.display="";
 		   }
-		   		   
+
+
+
+
 		   if(name == 'tab4'){
 		  $(document).ready(function(){
 				gmapInitialize();
@@ -64,14 +67,20 @@ for(var i=1; i<=16; i++){
 				gmapInitialize3();
 			});
 		}
-		   
+
+
+
+
+
+
+
 		} else {
-		    if(document.getElementById(name2) != null)	
+		    if(document.getElementById(name2) != null)
 		    {
 				document.getElementById(name2).className="";
 			}
-			
-			if(document.getElementById(name) != null)	
+
+			if(document.getElementById(name) != null)
 		   {
 				document.getElementById(name).style.display="none";
 			}
@@ -122,9 +131,9 @@ function CallPrint(strid)
 
 <body>
 <span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
-<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false"
 href="../yahoo.html">
-                 
+
      <img src="../images/livechaticon.png" alt="live chat" /></a>
      <SCRIPT language=JavaScript type=text/JavaScript>
 
@@ -166,7 +175,7 @@ href="../yahoo.html">
 <!-- Header Part End Here -->
 
 <!-- Banner Part Start Here -->
-<div id="Banner"><img src="../images/honeymoon/honeymoon-banners7.jpg" alt="Luxury Honeymoon" width="959" height="300" /></div>
+<div id="Banner"><img src="../images/honeymoon/honeymoon-banners6.jpg" alt="Tailor Made Luxury Honeymoon" width="959" height="300" /></div>
 <!-- Banner Part End Here -->
 
 <!-- Container Part Start Here -->
@@ -184,7 +193,7 @@ href="../yahoo.html">
 </div>
 <div class="LeftList">
  <h5><a href="honeymoon.html">Honeymoon</a></h5>
-     
+
 		  <ul>
               <li><a href="honeymoon.html" title="Introduction to Honeymoon"> Introduction to Honeymoon</a></li>
               <li><a href="honeymoon-recommended-itineraries-introduction.html" title="Recommended Itineraries">Recommended Itineraries</a>
@@ -192,7 +201,7 @@ href="../yahoo.html">
               <li><a href="honeymoon-hotelportfolio.html" title="Hotel Portfolio">Hotel Portfolio</a></li>
               <li><a href="honeymoon-special-offers.html" title="Special Offers">Special Offers</a></li>
             </ul>
-	
+
         <h4>CHOOSE YOUR STYLE</h4>
     <select onChange="ChangeValue(this)">
 	<option value="0" selected="selected">Choose Your Style</option>
@@ -238,12 +247,12 @@ href="../yahoo.html">
 </div>
 </div>
 <div class="Clr"></div>
-<div class="count-page"> 
+<div class="count-page">
 <a href="honeymoon-recommended-itineraries-6.html"> Prev > </a>
-<a href="honeymoon-recommended-itineraries-introduction.html">1</a> | 
-<a href="honeymoon-recommended-itineraries-2.html">2</a> | 
-<a href="honeymoon-recommended-itineraries-3.html">3</a> | 
-<a href="honeymoon-recommended-itineraries-4.html">4</a> | 
+<a href="honeymoon-recommended-itineraries-introduction.html">1</a> |
+<a href="honeymoon-recommended-itineraries-2.html">2</a> |
+<a href="honeymoon-recommended-itineraries-3.html">3</a> |
+<a href="honeymoon-recommended-itineraries-4.html">4</a> |
 <a href="honeymoon-recommended-itineraries-5.html">5</a> |
 <a href="honeymoon-recommended-itineraries-6.html">6</a> |
 <a href="honeymoon-recommended-itineraries-7.html"><strong>7</strong></a> |
@@ -252,12 +261,12 @@ href="../yahoo.html">
 <a href="honeymoon-recommended-itineraries-8.html"> Next > </a>
 </div>
 <div class="Clr"></div>
-
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/honeymoon/Romance-Under-the-Stars.jpg" alt="Botswana Honeymoon" /></div>
-<div class="rightbox"><h2>Botswana: Romance Under the Stars</h2>
-<p><strong>Duration:</strong>  9 Nights<br />
-<strong>Highlights:</strong> Relive the ambience of a bygone era on this journey through the riverine forests, expansive delta and spectacular game-filled bush land of Botswana. Romance is in the air - literally - when you sleep under the stars on an elevated platform and share a lantern-lit "star bath" on your private deck. </p>
+<div class="leftbox"><img src="../images/honeymoon/honeymoon_at_zimbabwe_thumb.jpg" alt="Honeymoon at Zimbabwe" /></div>
+<div class="rightbox">
+<h2>Honeymoon at Zimbabwe </h2>
+<p><strong>Duration:</strong> 7 Days <br />
+<strong>Highlights: </strong> Experience the Helicopter Ride over the Victoria Falls & enjoy the Game Cruise on the Upper Zambezi.</p>
 
 </div>
 <div class="bottom">
@@ -273,11 +282,12 @@ href="../yahoo.html">
 </div>
 
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/honeymoon/honeymoon_experience_in_japan_thumb.jpg" alt="Honeymoon In Japan" /></div>
-<div class="rightbox"><h2>Honeymoon Experience in Japan</h2>
-<p><strong>Duration:</strong>  14 Days<br />
-<strong>Highlights:</strong> TOKYO - KAMAKURA - HAKONE/MT FUJI - KYOTO - ISHIGAKI – TOKYO.</p>
-    <p>From beginning to end, your 14 day honeymoon experience in Japan will leave forever lasting fond memories. </p>
+<div class="leftbox"><img src="../images/honeymoon/luxury_honeymoon_in_zimbabwe_thumb.jpg" alt="Luxury Honeymoon in Zimbabwe" /></div>
+<div class="rightbox">
+<h2> Luxury Honeymoon in Zimbabwe </h2>
+<p><strong>Duration:</strong> 7 Days <br />
+<strong>Highlights: </strong>Enjoy the romantic Sunset cruise at the Zambezi River, experience the smoke that thunders at Victoria Falls </p>
+
 </div>
 <div class="bottom">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
@@ -292,10 +302,11 @@ href="../yahoo.html">
 </div>
 
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/honeymoon/honey_in_vietnam_beaches_more_thumb.jpg" alt="Honeyoon in Vietnam" /></div>
-<div class="rightbox"><h2>Honeymoon in Vietnam – Beaches & More</h2>
-<p><strong>Duration:</strong> 14 Days <br />
-<strong>Highlights:</strong> Hanoi- Ho Chi Minh-Con Dao, itinerary covers Bustling commercial city & Southeast Asia nicest beach. </p>
+<div class="leftbox"><img src="../images/honeymoon/luxury_honeymoon_in_kenya_thumb.jpg" alt="Luxury Honeymoon in Kenya" /></div>
+<div class="rightbox">
+<h2>Luxury Honeymoon in Kenya </h2>
+<p><strong>Duration:</strong> 10 Days <br />
+<strong>Highlights: </strong> Celebrate your honeymoon in style with a safari in Africa & relax at the luxury Hotels & lodges </p>
 
 </div>
 <div class="bottom">
@@ -311,10 +322,10 @@ href="../yahoo.html">
 </div>
 
 <div class="RecommendedBox">
-<div class="leftbox"><img src="../images/honeymoon/honeymoon_in_myanmar_thumb.jpg" alt="Honeymoon In Myanmar" /></div>
-<div class="rightbox"><h2>Seventh Heaven – Honeymoon in Myanmar</h2>
-<p><strong>Duration:</strong>  7 Days<br />
-<strong>Highlights:</strong> This itinerary offers the finest hotels, enjoy the best restaurants and experience a level of service you could only dream about. </p>
+<div class="leftbox"><img src="../images/honeymoon/africa-safari.jpg" alt="South African Safari Honeymoon" /></div>
+<div class="rightbox"><h2>South Africa: The Six-Carat Safari</h2>
+<p><strong>Duration:</strong> 10 Days<br />
+<strong>Highlights:</strong>  Rekindle the spark of romance in South Africa, land of exotic wildlife, renowned cuisine and lively culture. Enjoy a cellar tour at a top South African winery, and observe the region's wildlife from up close on a safari drive led by your private guide.</p>
 </div>
 <div class="bottom">
 <strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
@@ -329,12 +340,12 @@ href="../yahoo.html">
 </div>
 
 <div class="Clr"></div>
-<div class="count-page"> 
+<div class="count-page">
 <a href="honeymoon-recommended-itineraries-6.html"> Prev > </a>
-<a href="honeymoon-recommended-itineraries-introduction.html">1</a> | 
-<a href="honeymoon-recommended-itineraries-2.html">2</a> | 
-<a href="honeymoon-recommended-itineraries-3.html">3</a> | 
-<a href="honeymoon-recommended-itineraries-4.html">4</a> | 
+<a href="honeymoon-recommended-itineraries-introduction.html">1</a> |
+<a href="honeymoon-recommended-itineraries-2.html">2</a> |
+<a href="honeymoon-recommended-itineraries-3.html">3</a> |
+<a href="honeymoon-recommended-itineraries-4.html">4</a> |
 <a href="honeymoon-recommended-itineraries-5.html">5</a> |
 <a href="honeymoon-recommended-itineraries-6.html">6</a> |
 <a href="honeymoon-recommended-itineraries-7.html"><strong>7</strong></a> |
@@ -351,7 +362,7 @@ href="../yahoo.html">
 <!-- Footer Part Start Here -->
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
-<!--Botswana: Romance Under the Stars -->
+<!--  Honeymoon at Zimbabwe starts Here -->
 <div id="popup1" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -362,106 +373,95 @@ href="../yahoo.html">
 <li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="../popup-page.html?page=pdf/Bostwana-Romance-Under-the-Stars.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/honeymoon-at-zimbabwe.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
+
 <div class="popuprightcontainer">
 <div class="popupheader">
-<div class="logoinner"><img src="../images/botswana-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
 <div id="tab1">
 <div class="logoinner1"></div>
-<h1>Botswana: Romance Under the Stars (2012)</h1>
-<div class="popupbanner"><img src="../images/botswana-inner.jpg" alt="botswana itinerary" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<h1>  Honeymoon at Zimbabwe</h1>
+<div class="popupbanner"><img src="../images/honeymoon_at_zimbabwe.jpg" alt="Honeymoon at Zimbabwe" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong> 9 Nights</p>
-<p>Relive the ambience of a bygone era on this journey through the riverine forests, expansive delta and spectacular game-filled bush land of Botswana. Romance is in the air - literally - when you sleep under the stars on an elevated platform and share a lantern-lit "star bath" on your private deck. The euphoria continues on a private sundowner cruise as you admire enjoy your beautiful surroundings and the array of wildlife that comes to the water's edge.</p>
+<p><strong>Duration:</strong> 7 days</p>
+<p><strong>Highlights:</strong> Experience the Helicopter Ride over the Victoria Falls & enjoy the Game Cruise on the Upper Zambezi. Itinerary offers stay at luxury Hide Safari Camp with Elephant interaction.</p>
 </li>
+<h5>ITINERARY</h5>
 <li><h4>Day 1</h4>
-<h5>	India/Johannesburg, South Africa</h5>
-<p>On Arrival at Johannesburg, where you are met by an Abercrombie & Kent representative and taken to your hotel, set in one of the city's most exclusive residential suburbs amid lush hillside terraces and sculpted gardens. The balance of the day is at your leisure.
-</p>
-<p><strong>Overnight:</strong> The Westcliff Hotel<br />
-<strong>Meal Plan</strong> None
-</p>
+<h5>Arrival at Victoria Falls Airport// Hwange</h5>
+<p>On arrival at Victoria Falls Airport off a flight to be advised you will be road transferred to The Hide Safari Camp in Hwange.</p>
+<p><strong>The Hide Safari Camp: -</strong>The Hide Safari Camp is situated on the Eastern boundary of the famous Hwange National Park well known world over for its size and its wildlife population of buffalo, zebra, giraffe, rhino and all the big cats and the elephant population hence the game drives are the order of the day.</p>
+<p>Later in the day go for an evening Game Drive & dinner at the Camp.</p>
+<p><strong>Overnight Stay:</strong> Hide Safari Camp</p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>Johannesburg/Maun, Botswana/Okavango Delta</h5>
-<p>Fly to Maun and connect to your camp, located on the banks of the Boro River in the Okavango Delta. This labyrinth of waterways, wetlands and islands is an unspoiled paradise for some of Africa's greatest concentration of wildlife and birdlife. Your elegant African-themed suite is set on an elevated platform in the tree line, with a wooden deck that offers expansive views over the river and lagoon. Tonight, get close to nature - and each other - when you roll your bed onto the deck for the unique opportunity to sleep under the stars.</p>
-<p><strong>Overnight:</strong> Sanctuary Baines' Camp <br />
-<strong>Meal Plan:</strong> B,L,D
-</p>
+<h5>Enjoy Bush Breakfast, Game Drive & Spend time in the hides close to the watering hole</h5>
+<p>You will spend the whole day at The Hide Safari Camp – enjoy bush breakfast, game drives, spend time in the hides close to the watering hole, enjoy lunch in your own private sitting area. </p>
+<p>Enjoy the evening game walk</p>
+<p><strong>Overnight Stay:</strong> Doves Nest or Tree House</p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5> Okavango Delta</h5>
-<p>Game-viewing options flourish at Baines' Camp. Resting on 260,000 acres in a private concession neighboring the famed Moremi Game Reserve, the area is superb for viewing wildlife by land in open safari vehicles or on the water from a poled mokoro (dugout canoe). However, sometimes the best way to tune into the bush is on foot. Walking safaris are a specialty at your camp, and skilled guides introduce you to the area's natural wonders.
-
-</p>
-<p>
-Return from a night game drive for a relaxing "star bath," a freestanding traditional Botswana-style zinc bathtub set out on your private deck, surrounded by lanterns.</p>
-<p>Philanthropic Activities: During your time at Baines' you have the opportunity to participate in an educational experience with a group of semi-habituated African elephants. After a few safety tips from your mahout (trainer), you are encouraged to touch each of the elephants and lead one of them while it gently rests the tip of its trunk on your hand. You may even get a "kiss" on the cheek from one of your new friends. At a picnic spot under large shade trees, sit down and relax with cold refreshments and brunch. The elephants are fed pre-cut fodder, and you can observe them eating and playing together after their lunch.</p>
-<p><strong>Overnight:</strong> Sanctuary Baines' Camp <br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>Hwange//Victoria Falls</h5>
+<p>After Lunch you depart the Hide by road for Victoria Falls Imbabala Lodge. <br>
+        <strong>Imbabala River Lodge: -</strong> Imbabala Zambezi Safari Lodge is situated on a riverine fringe of the mighty Zambezi River where Zimbabwe, Botswana, Zambia and Namibia converge. Located 80 kilometers west of Victoria Falls</p>
+<p>After Check- in, have tea at the lodge. & later in the evening go on a Game Cruise on the Upper Zambezi with Dinner at the Lodge.</p>
+<p><strong>Overnight Stay:</strong> The Imbabala River Lodge</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>Okavango Delta</h5>
-<p>Fly to the Moremi Game Reserve and your camp, situated on the previous hunting grounds of the Batawana Tribe on Chief's Island. The camp overlooks the seasonal Piajio Channel within the Moremi Game Reserve, an area renowned for its abundant wildlife and large variety of bird life. Sanctuary Chief's Camp is made up of 12 luxury bush pavilions - each with a spacious seating area and game-viewing deck with a hammock. While you are here, take a dip in Chief's pool, pamper yourself in the spa and choose from a variety of activities that include game drives and mokoro safaris (in season).</p>
-<p><strong>Overnight:</strong> Sanctuary Baines' Camp <br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h5>Full Day at Hide Safari Camp</h5>
+<p>You will spend the whole day at lodge on a Fully Inclusive Basis i.e. accommodation, Meals, Game Drives and Game walks with Dinner at the Lodge</p>
+<p><strong>Overnight Stay::</strong> The Imbabala River Lodge</p>
 </li>
 <li>
-<h4>Day  5-6</h4>
-<h5> Okavango Delta</h5>
-<p>Game viewing in the Moremi is nothing short of spectacular. In addition to 400 species of birds, ostrich, antelope, crocodile, wildebeest, kudu and hippo are common here. However, the area has been dubbed the "predator capital" of Botswana, boasting leopard, cheetah, painted wild dog, spotted hyena and a large resident pride of lion. Game drives are conducted in custom-built open vehicles, offering an ideal viewing vantage point. While you are here, you may wish to take an optional helicopter excursion for a different perspective on the wildlife. A specially prepared romantic dinner is also in store for you during one of your evenings at Chief's.</p>
-<p><strong>Overnight:</strong> Sanctuary Baines' Camp <br />
-<strong>Meal Plan:</strong> B,L,D</p>
+<h4>Day 5</h4>
+<h5>Imbabala Lodge//Elephant Camp</h5>
+<p>After Breakfast you depart Imbabala lodge for an hour’s drive to The Elephant Camp. On arrival at the Elephant Camp you will check-in and spend the whole afternoon at leisure</p>
+<p>Later in the day you will go for Elephant Interaction at the and subsequently on a Sunset Cruise on the Mighty Zambezi River wit Dinner at the Boma</p>
+<p><strong>Overnight Stay:</strong> The Elephant Camp</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>Experience helicopter flight</h5>
+<p>After breakfast, you will go on a helicopter flight over the mighty Victoria Falls</p>
+<p>The Afternoon is open for Optional Activities for Honeymooners <br>
+        •	White water rafting <br>
+•	George swing/Zipline/Fly fox <br>
+•	Bungee jumping from the bridge <br>
+•	Canoe Safari <br>
+•	Walk with the lions <br>
+•	Helicopter flights <br>
+
+</p>
+<p>Dinner at the Hotel</p>
+<p><strong>Overnight Stay:</strong> The Elephant Camp</p>
 </li>
 <li>
 <h4>Day 7</h4>
-<h5>Okavango Delta/Chobe National Park</h5>
-<p>The name "Chilwero" means "place of high view" in the local Setswana language, and true to its namesake, Sanctuary Chobe Chilwero is positioned high above the Chobe River. Fly to Chobe National Park today and check in at your award-winning lodge, which offers unparalleled panoramic views across the islands and floodplains, stretching as far as Namibia. Your cottage features either a private garden or a sala (balcony) with a hammock, ideal for cuddling and casual game viewing.</p>
-<p><strong>Overnight:</strong> Sanctuary Chobe Chilwero <br />
-<strong>Meal Plan:</strong> Meals: B,L,D</p>
+<h5>Depart</h5>
+<p>After Breakfast you will check-out at the Hotel and road transferred to Victoria Falls Airport for a flight to be advised.</p>
+<strong style="text-align: center;">*********************************************End of A&K Services*******************************************</strong>
 </li>
-<li>
-<h4>Day 8</h4>
-<h5>Chobe National Park</h5>
-<p>Chobe National Park covers a diversity of landscapes, ranging from riverine forests to floodplains and periodic marshlands. The area is home to one of the largest concentration of elephants in Africa, as well as an abundance of lion, hippopotamus, buffalo, impala, puku, and a large variety of bird species. Embark on your first game drive shortly after sunrise. You can also view water-loving game up close from a different perspective when you board a small boat. End your day with a romantic couple's spa treatment.</p>
-<p><strong>Overnight:</strong> Sanctuary Chobe Chilwero  <br />
-<strong>Meal Plan:</strong> B,L,D</p>
-</li>
-<li>
-<h4>Day 9</h4>
-<h5>Chobe National Park/Victoria Falls, Zimbabwe</h5>
-<p>Travel overland this morning, crossing the border into Zimbabwe toward breathtaking Victoria Falls and your accommodations at the world-famous Victoria Falls Hotel. Built in 1904, the Victoria Falls Hotel's gracious colonial style epitomizes the romance of grand travel. Late this afternoon, set out on a private cruise on the Zambezi River aboard Ra-Ikane, a small luxury boat that reflects the ambience of a bygone era. Glide lazily down the river looking for hippo, elephant or buffalo coming to drink at the water's edge and absorb the stillness of the African bush as sunset brings the day to a close.</p>
-<p><strong>Overnight:</strong> The Victoria Falls Hotel <br />
-<strong>Meal Plan:</strong> B</p>
-</li>
-<li>
-<h4>Day 10</h4>
-<h5>Victoria Falls/Johannesburg/Depart</h5>
-<p>The final day of your adventure begins with an exclusive "Flight of Angels" that offers the amazing opportunity to travel above the majestic falls in a helicopter for unrivaled views of the crashing waters. When you are back on the ground, set out on a walking tour of Victoria Falls. Notice the permanent rainbows that crisscross the gorge, producing images that are more like paintings than reality. The unique tropical rainforest that veils the edge of the falls, the rising spray and thundering roar as these waters break against the ragged rocks below make a sight and sound never to be forgotten. Later, transfer to the airport and fly to Johannesburg for your homebound flight.</p>
-<p><strong>Meal Plan:</strong> B</p>
-</li>
-
 </ul>
 </div>
 
 <div id="tab2" style="display:none;">
-<h1>Send itinerary</h1>
+    <h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Botswana"/>
+<input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Bostwana Romance Under the Stars"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Bostwana-Romance-Under-the-Stars.pdf"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Honeymoon at Zimbabwe"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="honeymoon-at-zimbabwe.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -471,68 +471,88 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Botswana"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Botswana - Romance Under The Stars"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Honeymoon at Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
 <?php include("../quote1.php");?>
 </form>
 </div>
 
 <div id="tab4" style="display:none;">
 <script type="text/javascript">
-	
+
 			var markerLetter = 'A';
 			var map = '';
 			var zoom = 10;
 			var origin = 0;
-			
+
 			function gmapInitialize() {
 				if (GBrowserIsCompatible()) {
 					map = new GMap2(document.getElementById("map_canvas"));
 					map.setUIToDefault();
-					
-					
+
+
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>This morning awake to a steaming hot cup of tea or coffee served on the decking of your tent before enjoying breakfast at the main tent. Enjoy a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 sq km, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, where 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other plains game that follow close behind, make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Serengeti", description, "7");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Today enjoy another full day discovering the spirit of the Serengeti by 4WD vehicle with exciting morning and afternoon game drives.&nbsp;<br /><br />The Serengeti National Park lies between the Ngorongoro Highlands, Lake Victoria and Tanzania's northern border with Kenya. The name comes from the Maasai meaning \"endless plains\". The Serengeti contains about three million large animals, most taking part in seasonal migrations, unparalleled in nature. Be sure to have your camera constantly at hand as life in the Serengeti is always action packed.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Serengeti", description, "8");
+						map.addOverlay(mark);
+
 						description = '<div style="width:300px;">Day 1 - ';
-						description = description + "<p>Upon arrival at Kilimanjaro International airport you will be met and transferred by private vehicle to your lodge set on a coffee plantation in Arusha. The remainder of your day is at leisure.<br /><br />Arusha Coffee Lodge is located on a coffee plantation on the outskirts of Arusha. Designed around the original plantation houses but completely renovated to achieve the highest standards of comfort, the d&eacute;cor is luxuriant and stylish with undertones of the bygone days of early exploration. Each of the 18 plantation houses has been lavishly furnished and features a split level living area and a private deck. The lodge also boasts a coffee shop, patisserie, conference facilities and a swimming pool.<br /></p>";
+						description = description + "<p>Arrive at Dar es Salaam International airport where you will be met and assisted with your onward flight. Fly from Dar es Salaam to the remote Selous Game Reserve. Upon arrival you are met by a camp representative and transferred to your camp to settle in. This afternoon explore the Selous either by foot on a walking safari, by boat on the Rufiji and Lake Tagala, or in open 4WD vehicles. All excursions are escorted by an experienced armed guide.<br /><br />Selous Sand Rivers is situated on the banks of the Rufiji River, offering a unique combination of adventure, comfort and exclusivity. This small luxury lodge, crafted out of local materials, comprises six individually designed cottages with en-suite bathrooms. Spaced along the river bank, each has its own private view of the wide sand-banked river with its hippos, crocodiles and birdlife. Near the dining area a large baobab tree shades the swimming pool in which guests can escape the heat of the sun or cool off after a game walk.<br /></p>";
 						description = description + '</div>';
-						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arrive Kilimanjaro - Arusha", description, "1");
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Arrive Selous Game Reserve", description, "1");
 						map.addOverlay(mark);
-					
+
 						description = '<div style="width:300px;">Day 2 - ';
-						description = description + "<p>Today meet your private driver/guide in the lobby of your lodge for a short briefing before transferring to Swala Camp located within Tarangire National Park. This afternoon enjoy a game drive in Tarangire National Park. Tarangire is noted for its elephant population and spectacular baobabs of every shape creating a beautiful setting for your safari.<br /><br />Swala Camp is located under a majestic umbrella of acacia trees at the southwestern part of the park. The camp offers a peaceful setting for the traveller after a long day of game viewing. The camp is comprised of nine double tents and a mess tent with a common room. All tents face east overlooking the marshland and watering hole which are regularly visited by lions, buffalo and elephants.<br /></p>";
+						description = description + "<p>Today enjoy morning and afternoon game activities in the bush where your game sightings will rarely be interrupted by other vehicles. Enjoy the solitude whilst observing elephants, lions, buffalo, hippos and crocodiles. Game drives are conducted by 4WD vehicles or from your river boat, the more adventurous of you may like to stretch your legs with a walking safari.<br /><br />The Selous Game Reserve is the largest game reserve in the world and has some of the finest virgin bush left in Africa, where the last of the really big-tusked elephants and large-maned lions roam. The Selous supports around one million game animals, is bigger than Switzerland and is a World Heritage site. From March to May floods sweep the valley, forcing the game on to the 'islands' of higher ground, where elephant, buffalo, lion, leopard, crocodile, puku, buck, eland, sable and others concentrate.<br /></p>";
 						description = description + '</div>';
-						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Arusha - Tarangire", description, "2");
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Selous", description, "2");
 						map.addOverlay(mark);
-					
+
 						description = '<div style="width:300px;">Day 3 - ';
-						description = description + "<p>You will be awoken this morning with a steaming hot cup of tea or coffee served on the decking of your tent looking out over the waterhole. Enjoy an early breakfast before venturing out into Tarangire National Park by 4WD vehicle on exciting morning and afternoon game drives.&nbsp;<br /><br />The appeal of Tarangire National Park lies not only in the herds of migrating animals but also in the beauty of the landscape with its grand baobabs and acacia trees. During the dry season the animals migrate from as far north as Lake Natron, resulting in the resident population of wildebeest, zebra, eland, elephant, hartebeest, buffalo and fringe-eared oryx swelling and competing for Tarangire's permanent water pools.<br /></p>";
+						description = description + "<p>Enjoy another day at leisure to be as active as you like. You may like to explore the Selous overland by 4WD vehicle or on a bush walk, or take to the river on a boat trip. Alternatively you may like to relax at your camp with a book on your private verandah or cool off in the camp's pool.<br /><br />The Selous is Africa's largest wildlife sanctuary and one of its least known treasures. Covering 21,000 square miles of completely undeveloped land, the Selous is one of the last great tracts of true wilderness left in Africa.<br /></p>";
 						description = description + '</div>';
-						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Tarangire", description, "3");
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Selous", description, "3");
 						map.addOverlay(mark);
-					
+
 						description = '<div style="width:300px;">Day 4 - ';
-						description = description + "<p>Following an early breakfast, head out on a game drive before leaving Tarangire for Ngorongoro Crater highlands. Transfer to your lodge located adjacent to the Ngorongoro Conservation area. This afternoon is at leisure to participate in one of the many activities on offer at your lodge including coffee tasting, guided walks on the estate, bike riding or horse back riding.&nbsp;<br /><br />The Manor at Ngorongoro is reminiscent of an elegant, up country farm home in the Cape Dutch style of architecture. With its 20 luxurious guest cottage suites, this is a luxury safari experience fusing East African safari hospitality with old world Afro-European architecture and d&eacute;cor.<br /></p>";
+						description = description + "<p>Wake up early this morning as you prepare for a long day of travel to Ngorongoro. Transfer to the airstrip for your flight from the Selous to Arusha. Upon arrival at Arusha airport you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Ngorongoro Crater Lodge located on the rim with spectacular views across the crater. The Ngorongoro Crater is the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Crater Lodge is situated on the edge of the ancient crater rim above the cool, swirling mists. The lodge is a return to the noble elegance of the travelling colonials. Inspired in design by the Maasai Manyatta, three separate camps of 6 to 12 suites each remember a bygone era when characters such as Lord Delamere adorned the stilted, handcrafted structures with graceful antiques, grand chandeliers and treasures collected from travels through Africa.<br /><br /></p>";
 						description = description + '</div>';
-						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Tarangire - Ngorongoro Crater", description, "4");
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Selous - Arusha - Lake Manyara", description, "4");
 						map.addOverlay(mark);
-					
+
 						description = '<div style="width:300px;">Day 5 - ';
-						description = description + "<p>Enjoy an early breakfast before transferring to the Ngorongoro Crater. Descend to the crater floor by 4WD safari vehicle for a game drive unlike any other you will experience in Africa with the forest-covered crater walls rising around you. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 sq miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can often be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals. Gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
 						description = description + '</div>';
-						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "5");
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "5");
 						map.addOverlay(mark);
-					
-					
-					var minLat = -4.0295777;
-					var minLng = 35.566932;
-					var maxLat = -3.172344;
-					var maxLng = 36.67445;
-										
+
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue to your camp located in the southern reaches of Serengeti National Park.<br /><br />Kusini Camp is built in and around a large kopje. The camp offers spectacular views across Tortillis woodland situated on the edge of the short grass plains. The camp is comprised of nine double tents scattered around the kopje with the mess tent and common area as the central feature. Privacy between tents is guaranteed as they are at a substantial distance from each other and are generally concealed by a tree or kopje.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Ngorongoro Crater - Serengeti", description, "6");
+						map.addOverlay(mark);
+
+
+					var minLat = -7.2833;
+					var minLng = 34.685650;
+					var maxLat = -2.416213;
+					var maxLng = 36.0667;
+
 					botLeft = new GLatLng(minLat, minLng);
 					topRight = new GLatLng(maxLat, maxLng);
-					
+
 					bounds = new GLatLngBounds(botLeft, topRight);
 					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
 					zoom = map.getBoundsZoomLevel(bounds);
@@ -540,18 +560,18 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 					zoom = map.getZoom();
 				}
 			}
-			
+
 			function createMarker(point, title, html, day) {
 				var markerOpts = {};
 				var mIcon = new GIcon();
 				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
-				
+
 				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
 				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
 				mIcon.iconSize = new GSize(20, 34);
 				mIcon.iconAnchor = new GPoint(10, 34);
 				mIcon.infoWindowAnchor = new GPoint(10, 1);
-				
+
 				markerOpts = {
 					"icon": mIcon,
 					"clickable": true,
@@ -559,24 +579,24 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 					};
 				var newPoint = point;
 				var marker = new GMarker(newPoint, markerOpts);
-				
+
 				GEvent.addListener(marker, "click", function() {
 					marker.openInfoWindowHtml(html);
 				});
-				
+
 				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
-				
+
 				return marker;
 			}
-			
+
 			//$(document).ready(function(){
 //				gmapInitialize();
 //			});
-			
+
 			$(window).unload(function(){
 				GUnload();
 			});
-	
+
 		</script>
 
 <div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
@@ -587,115 +607,101 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 
 </div>
 
-</div>   
 </div>
-<!--Botswana: Romance Under the Stars -->
-<!--  Honeymoon Experience in Japan starts Here -->
+</div>
+
+
+<!-- Honeymoon at Zimbabwe End Here -->
+
+<!-- Luxury Honeymoon in Zimbabwe starts Here -->
 <div id="popup2" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
 <li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/honeymoon-experience-in-japan.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/honeymoon-in-zimbabwe.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
 <div class="popuprightcontainer">
 <div class="popupheader">
-<div class="logoinner"><img src="../images/japan-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
 <div id="tab5">
-
-<h1>Honeymoon Experience in Japan</h1>
-<div class="popupbanner"><img src="../images/honeymoon_experience_in_japan.jpg" alt="Honeymoon Experience in Japan" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="logoinner1"></div>
+<h1> Luxury Honeymoon in Zimbabwe</h1>
+<div class="popupbanner"><img src="../images/luxury_honeymoon_in_zimbabwe.jpg" alt="Luxury Honeymoon in Zimbabwe" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong> 14 Days<br />
-<strong>Highlights:</strong> TOKYO - KAMAKURA - HAKONE/MT FUJI - KYOTO - ISHIGAKI – TOKYO.</p>
-<p>From beginning to end, your 14 day honeymoon experience in Japan will leave forever lasting fond memories. This itinerary offers City life, National park & World Heritage sites with airport transfer in a vintage Rolls Royce, Traditional wedding ceremony in a Japanese Kimono at the oldest shrine in Kyoto, Full day exploring Fuji Hakone National Park, Ride the world's second longest cable car to the top of Mt Owakudani & then Transfer to Kyoto by the Shinkansen bullet train.</p>
+<p><strong>Duration:</strong> 7 Days</p>
+<p><strong>Highlights:</strong> Enjoy the romantic Sunset cruise at the Zambezi River, experience the smoke that thunders at Victoria Falls & relax at the luxury lodges i.e. Victoria Falls, Hide Safari Camp & Changa Safari Camp and experience the best game drives safari experience with bush walk.</p>
 </li>
-    <h5>ITINERARY</h5>
+<h5>ITINERARY</h5>
 <li><h4>Day 1</h4>
-<h5>Arrival Tokyo</h5>
-<p>Travel by vintage Rolls Royce to your hotel from the airport. Dine at some of the world class restaurants located in your hotel this evening.</p>
-<p><strong>Overnight:</strong> in the Peninsula Hotel, Tokyo
-</p>
+<h5>Arrival at Victoria Falls Airport</h5>
+<p>On arrival at The Victoria Falls Airport off a flight to be advised you be road transferred to The Victoria Falls Hotel.</p>
+<p>Later in the afternoon go for a romantic Sunset Cruise at the Mighty Zambezi River & Dinner at the Hotel.</p>
+<p><strong>Overnight Stay:</strong> The Victoria Falls Hotel </p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>Tokyo/Visit Asakusa & Sensoji Temple</h5>
-<p>Visit Asakusa, part of Tokyo's Shitamachi (old town) and home to Sensoji Temple. You also visit Meiji Jinja; Tokyo's most famous Shrine, where you will witness a traditional Shinto purification dance and receive a blessing from a Shinto Priest.</p>
-<p><strong>Overnight:</strong> in the Peninsula Hotel, Tokyo</p>
+<h5>Visit Victoria Falls & Enjoy Optional Activities</h5>
+<p>After breakfast, you will go on a guided tour of the falls.<br>
+        <strong>The Mighty Victoria Falls: -</strong>Victoria Falls present a spectacular sight of awe-inspiring beauty and grandeur on the Zambezi River, forming the border between Zambia and Zimbabwe. It was described by the Kololo tribe living in the area in the 1800’s as ‘Mosi-oa-Tunya’ – ‘The Smoke that Thunders’. In more modern terms Victoria Falls is known as the greatest curtain of falling water in the world.</p>
+<p>The Afternoon is open for Optional Activities <br>
+       •	White water rafting <br>
+•	George swing/Zipline/Fly fox <br>
+•	Bungee jumping from the bridge <br>
+•	Canoe Safari <br>
+•	Walk with the lions <br>
+•	Helicopter flights
+</p>
+<p><strong>Later in the evening dinner at the Hotel</strong></p>
+<p><strong>Overnight Stay:</strong> The Victoria Falls Hotel </p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5>Tokyo/Visit World Famous Tsukji Fish Market</h5>
-<p>Take a private tour of Tokyo by car. Visit the world famous Tsukji Fish Market.</p>
-<p><strong>Overnight:</strong> in the Peninsula Hotel, Tokyo</p>
+<h5>Victoria Falls//Hwange</h5>
+<p>After breakfast and check-out at the Hotel, you will be Road Transferred to Hwange where you will stay at The Hide for 2 nights.</p>
+<p><strong>The Hide Safari Camp:-</strong> The Hide Safari Camp is situated on the Eastern boundary of the famous Hwange National Park well known world over for its size and its wildlife population of buffalo, zebra, giraffe, rhino, all the big cats and the elephant population hence the game drives are the order of the day.</p>
+<p>Later in the afternoon tea you will go on a Game Drive & Dinner at camp then enjoy a night safari.</p>
+<p><strong>Overnight Stay:</strong> The Hide Safari Camp</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>Tokyo - Kamakura - Hakone/Mt Fuji</h5>
-<p>Travel with a knowledgeable guide to Kamakura, the formal capital of Japan turned quaint seaside town. From here continue to Fuji Hakone National Park where you will stay in a traditional inn.</p>
-<p><strong>Overnight:</strong> at Hakone Ginyu, Hakone</p>
+<h5>Game driver & Bush walk</h5>
+<p>Today you may do a bush walk in the morning along with a bush breakfast</p>
+<p>You will spend the whole day at The Hide Safari Camp. Enjoy Game Drives and Game walks, and spend time at the ‘hides’ where you can observe the animals at the watering hole.</p>
+<p>Spend the night at the tree house called Dove’s Nest & later enjoy the game drive with dinner at tree house.</p>
+<p><strong>Overnight Stay:</strong> The Doves Nest </p>
 </li>
 <li>
 <h4>Day 5</h4>
-<h5>Hakone/Mt Fuji</h5>
-<p>Visit the Hakone Open Air Museum and its intriguing number of outdoor sculptures. It als holds an extensive Picasso collection. Ride the world's second longest cable car to the top of Mt Owakudani.</p>
-<p><strong>Overnight:</strong> at Hakone Ginyu, Hakone</p>
+<h5>Hwange//Kariba//Game Drive</h5>
+<p>On this day after breakfast you will be Charter Transferred to Kariba where you will stay at The Changa Safari Camp for 2 nights on fully inclusive basis.</p>
+<p>The Changa Safari Camp: -is Located on the shores of Lake Kariba in Zimbabwe and provides the unique experience of combined Game and fishing Safaris.  </p>
+<p>After check-in you will have afternoon Tea then go on evening Game Drive & Dinner at Changa Safari Camp</p>
+<p><strong>Overnight Stay:</strong> Changa Safari Camp</p>
 </li>
 <li>
 <h4>Day 6</h4>
-<h5> Hakone/Mt Fuji-Kyoto</h5>
-<p>Continue on to Kyoto by the Shinkansen bullet train. Kyoto is home to an astonishing 2000 Shrines and Temples, including 17 UNESCO World Heritage Sights that you will explore by private car. Amongst other things you will visit Heian Shrine, home to Japan's largest torii gate and strolling gardens (featured in Lost in Translation).</p>
-<p><strong>Overnight:</strong> at the Granvia Hotel, Kyoto</p>
+<h5>Enjoy Canoe Rides, Game Walk & Drives and Fishing on Lake Kariba</h5>
+<p>You will spend the whole day at The Changa Safari Camp, enjoying canoe rides, Game Walks, Game Drives and Fishing on Lake Kariba.</p>
+<p><strong>Overnight Stay:</strong> Changa Safari Camp</p>
 </li>
 <li>
 <h4>Day 7</h4>
-<h5>Kyoto/Visit Nijo Castle, Kinkakuji & Daitoku-ji Zen Temple</h5>
-<p>Spend half a day sightseeing with local guide by private transport. Visit Nijo Castle, famous for its Momoyama architecture. Continue on to Kinkakuji, the Golden Pavilion before stopping at the Daitoku-ji Zen Temple for some Zen meditation practice.</p>
-<p><strong>Overnight:</strong> at the Granvia Hotel, Kyoto</p>
+<h5>Depart</h5>
+<p>After breakfast at a time to be advised you will be charter transferred to Harare International Airport for your outbound flight.</p>
+<strong style="text-align: center;">***************************************End of A&K Services************************************************</strong>
 </li>
-<li>
-<h4>Day 8</h4>
-<h5>Kyoto/Traditional Japanese Wedding Kimono</h5>
-<p>The big day has arrived! After breakfast, have your hair styled and then be dressed in traditional Japanese wedding kimono. Depart by private car to Kamigamo Shrine, the oldest Shinto shrine in Kyoto and a registered World Heritage Site. Your hairdresser will also accompany you. You will then have a traditional wedding ceremony administered by a Shinto priest in this tranquil and atmospheric shrine. </p>
-<p>Dinner tonight is a special Wedding Dinner in a private room at the Granvia's Rakusui Japanese restaurant.</p>
-<p><strong>Overnight:</strong> at the Granvia Hotel, Kyoto</p>
-</li>
-    <li>
-<h4>Day 9</h4>
-<h5>Kyoto/Ishigaki</h5>
-<p>Take a flight from Kansai airport to Okinawa and discover the unique culture that prevails here. Head to Ishigaki, part of the Yaeyama Islands, famous for its clear waters and untouched beaches</p>
-<p><strong>Overnight:</strong> in Intercontinental Ishigaki Resort</p>
-</li>
-    <li>
-<h4>Day 10-12</h4>
-<h5>Ishigaki/Enjoy & relax on Ishigaki Sandy Beaches</h5>
-<p>Enjoy 3 full days to relax on Ishigaki's sandy beaches, as you discover why the Okinawans live longer than anyone else in the world. For the adventurous, Ishigaki offers some of Japan's best snorkeling. Visit a perfectly preserved Ryuku village on nearby Taketomi Island, just 10 minutes away by boat.</p>
-<p><strong>Overnight:</strong> in Ishigaki</p>
-</li>
-    <li>
-<h4>Day 13</h4>
-<h5>Ishigaki/Tokyo</h5>
-<p>This morning, transfer to Ishigaki airport for the 3h 30m flight to Tokyo's Haneda Airport. The rest of the day is free for any last minute sightseeing or shopping in Tokyo. Enjoy your last meal of the honeymoon at the New York Grill, located on the 52nd floor of the Park Hyatt hotel.</p>
-<p><strong>Overnight:</strong> in Park Hyatt, Tokyo</p>
-</li>
-    <li>
-<h4>Day 14</h4>
-<h5>Depart Tokyo</h5>
-<p>A private transfer to Tokyo airport is included.</p>
-<strong style="text-align: center;">***********************************End of A&K services**************************************</strong>
-</li>
-
 </ul>
 </div>
 
@@ -703,10 +709,10 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
     <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Japan"/>
-<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Honeymoon Experience in Japan"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="honeymoon-experience-in-japan.pdf"/>
+<input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Luxury Honeymoon in Zimbabwe"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="honeymoon-in-zimbabwe.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -716,11 +722,13 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Japan"/>
-<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Honeymoon Experience in Japan"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Luxury Honeymoon in Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
 <?php include("../quote1.php");?>
 </form>
 </div>
@@ -728,102 +736,101 @@ Return from a night game drive for a relaxing "star bath," a freestanding tradit
 <div id="tab8" style="display:none;">
 <script type="text/javascript">
 
-var markerLetter = 'A';
-var map = '';
-var zoom = 10;
-var origin = 0;
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
 
-function gmapInitialize1() {
-if (GBrowserIsCompatible()) {
-	map = new GMap2(document.getElementById("map_canvas1"));
-	map.setUIToDefault();
-	
-	
-		description = '<div style="width:300px;">Day 1 - ';
-		description = description + "<p>As you will be entering Zambia, a single entry visa will be required and is obtainable at the point of entry at a cost of USD 50.00 per person, payable in cash. The visa fee is subject to change at the discretion of the Zambian Government.<br /><br />Depart by scheduled light aircraft transfer from Lusaka Airport to Mfuwe Airport. The flying time is approximately 1 hour and 10 minutes.<br /><br />Upon arrival, transfer to Chichele Presidential Lodge. This historic property, once the bush retreat of President Kenneth Kaunda, has a magnificent hilltop location in Zambia's premier game viewing area, the South Luangwa National Park. Its long terrace, with commanding views across the valleys of the South Luangwa, is the perfect place to enjoy breakfast or afternoon tea. Chichele has ten air-conditioned suites, each with French doors onto individual balconies overlooking the valley. The lodge is accessible all year around and the ideal base for exploring the prolific wildlife that populates the mosaic of different habitats surrounding the Luangwa River.<br /><br />The afternoon is at leisure to enjoy one of the game viewing activities on offer.<br /></p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "Arrive Zambia", description, "1");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 2 - ';
-		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.<br /></p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "2");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 3 - ';
-		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.</p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "3");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 4 - ';
-		description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to the Mfuwe airstrip. The transfer time will be confirmed to you locally by the camp management.<br /><br />Depart by scheduled light aircraft transfer from Mfuwe Airport to Livingstone Airport via Lusaka Airport. The flying time is approximately 2 hours and 45 minutes.<br /><br />On arrival at Livingstone Airport please clear customs and immigration and collect your luggage. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to Sussi &amp; Chuma. The transfer time is approximately 30 minutes.<br /><br />Sussi &amp; Chuma is named after David Livingstone's faithful companions and consists of an intimate lodge and two exclusive houses, both of which are situated to make the most of the amazing views that the sweeping Zambezi River provides.<br /><br />The central lodge building features a raised bar/lounge deck, open air dining area, swimming pool and a spa which provide incredible views of the mighty Zambezi.<br />&nbsp;<br />The afternoon is at leisure to enjoy an activity on offer.<br /></p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "South Luangwa - Livingstone", description, "4");
-		map.addOverlay(mark);
-	
-		description = '<div style="width:300px;">Day 5 - ';
-		description = description + "<p>The day is at leisure to enjoy the activities on offer.</p><p>Activities offered at the lodge include game drives in the Mosi-oa-Tunya National Park, where guests can see a variety of game, including white rhino, elephant, buffalo and giraffe. Tours of the incredible Victoria Falls, a World Heritage Site, are another must as they give guests an opportunity to experience one of the seven great natural wonders of the world.</p>";
-		description = description + '</div>';
-		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Livingstone", description, "5");
-		map.addOverlay(mark);
-	
-	
-	var minLat = -17.857719;
-	var minLng = 25.85845;
-	var maxLat = -12.693842;
-	var maxLng = 31.8107079;
-						
-	botLeft = new GLatLng(minLat, minLng);
-	topRight = new GLatLng(maxLat, maxLng);
-	
-	bounds = new GLatLngBounds(botLeft, topRight);
-	origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
-	zoom = map.getBoundsZoomLevel(bounds);
-	map.setCenter(origin, zoom);
-	zoom = map.getZoom();
-}
-}
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
 
-function createMarker(point, title, html, day) {
-var markerOpts = {};
-var mIcon = new GIcon();
-//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
 
-//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
-mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
-mIcon.iconSize = new GSize(20, 34);
-mIcon.iconAnchor = new GPoint(10, 34);
-mIcon.infoWindowAnchor = new GPoint(10, 1);
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Upon arrival at Kilimanjaro International airport you will be met and transferred by private vehicle to your lodge set on a coffee plantation in Arusha. The remainder of your day is at leisure.<br /><br />Arusha Coffee Lodge is located on a coffee plantation on the outskirts of Arusha. Designed around the original plantation houses but completely renovated to achieve the highest standards of comfort, the d&eacute;cor is luxuriant and stylish with undertones of the bygone days of early exploration. Each of the 18 plantation houses has been lavishly furnished and features a split level living area and a private deck. The lodge also boasts a coffee shop, patisserie, conference facilities and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arrive Kilimanjaro - Arusha", description, "1");
+						map.addOverlay(mark);
 
-markerOpts = {
-	"icon": mIcon,
-	"clickable": true,
-	"title": title
-	};
-var newPoint = point;
-var marker = new GMarker(newPoint, markerOpts);
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today meet your private driver/guide in the lobby of your lodge for a short briefing before transferring to Swala Camp located within Tarangire National Park. This afternoon enjoy a game drive in Tarangire National Park. Tarangire is noted for its elephant population and spectacular baobabs of every shape creating a beautiful setting for your safari.<br /><br />Swala Camp is located under a majestic umbrella of acacia trees at the southwestern part of the park. The camp offers a peaceful setting for the traveller after a long day of game viewing. The camp is comprised of nine double tents and a mess tent with a common room. All tents face east overlooking the marshland and watering hole which are regularly visited by lions, buffalo and elephants.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Arusha - Tarangire", description, "2");
+						map.addOverlay(mark);
 
-GEvent.addListener(marker, "click", function() {
-	marker.openInfoWindowHtml(html);
-});
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>You will be awoken this morning with a steaming hot cup of tea or coffee served on the decking of your tent looking out over the waterhole. Enjoy an early breakfast before venturing out into Tarangire National Park by 4WD vehicle on exciting morning and afternoon game drives.&nbsp;<br /><br />The appeal of Tarangire National Park lies not only in the herds of migrating animals but also in the beauty of the landscape with its grand baobabs and acacia trees. During the dry season the animals migrate from as far north as Lake Natron, resulting in the resident population of wildebeest, zebra, eland, elephant, hartebeest, buffalo and fringe-eared oryx swelling and competing for Tarangire's permanent water pools.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-4.0295777, 36.0023225), "Tarangire", description, "3");
+						map.addOverlay(mark);
 
-markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following an early breakfast, head out on a game drive before leaving Tarangire for Ngorongoro Crater highlands. Transfer to your lodge located adjacent to the Ngorongoro Conservation area. This afternoon is at leisure to participate in one of the many activities on offer at your lodge including coffee tasting, guided walks on the estate, bike riding or horse back riding.&nbsp;<br /><br />The Manor at Ngorongoro is reminiscent of an elegant, up country farm home in the Cape Dutch style of architecture. With its 20 luxurious guest cottage suites, this is a luxury safari experience fusing East African safari hospitality with old world Afro-European architecture and d&eacute;cor.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Tarangire - Ngorongoro Crater", description, "4");
+						map.addOverlay(mark);
 
-return marker;
-}
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before transferring to the Ngorongoro Crater. Descend to the crater floor by 4WD safari vehicle for a game drive unlike any other you will experience in Africa with the forest-covered crater walls rising around you. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.172344, 35.566932), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
 
-//$(document).ready(function(){
-//gmapInitialize();
-//});
 
-$(window).unload(function(){
-GUnload();
-});
+					var minLat = -4.0295777;
+					var minLng = 35.566932;
+					var maxLat = -3.172344;
+					var maxLng = 36.67445;
 
-</script>
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
 
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+
+				return marker;
+			}
+
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+
+			$(window).unload(function(){
+				GUnload();
+			});
+
+		</script>
 
 <div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
@@ -833,143 +840,137 @@ GUnload();
 
 </div>
 
-</div>   
+</div>
 </div>
 
-<!--  Honeymoon Experience in Japan end Here -->
-<!--  Honeymoon in Vietnam – Beaches & More starts Here -->
+<!-- Luxury Honeymoon in Zimbabwe end Here -->
+
+<!-- Luxury Honeymoon in Kenya starts Here -->
+
 <div id="popup3" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli9"><a href="javascript:void(0)" onclick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li id="divli9"><a href="javascript:void(0)" onClick="showMe('9');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
 <li><a href="#" onClick="javascript:CallPrint('tab9');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli10"><a href="javascript:void(0)" onclick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli11"><a href="javascript:void(0)" onclick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli12"><a href="javascript:void(0)" onclick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/honeymoon-in-vietnam.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li id="divli10"><a href="javascript:void(0)" onClick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli11"><a href="javascript:void(0)" onClick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli12"><a href="javascript:void(0)" onClick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/luxury-honeymoon-in-kenya.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
 <div class="popuprightcontainer">
 <div class="popupheader">
-<div class="logoinner"><img src="../images/vietnam-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<div class="logoinner"><img src="../images/kenya-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
 <div id="tab9">
-
-<h1>Honeymoon in Vietnam – Beaches & More</h1>
-<div class="popupbanner"><img src="../images/honey_in_vietnam_beaches_more.jpg" alt="Honeymoon in Vietnam" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="logoinner1"></div>
+<h1>  Luxury Honeymoon in Kenya</h1>
+<div class="popupbanner"><img src="../images/luxury_honeymoon_in_kenya.jpg" alt="Tahiti Bora Bor" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong> 14 Days</p>
-<p><strong>Highlights:</strong> Hanoi- Ho Chi Minh-Con Dao, itinerary covers Bustling commercial city & Southeast Asia nicest beach & offer UNESCO World Heritage site Halong Bay & Hoi An ancient town, Colonial city Hanoi,Southeast Asia nicest beach Hoi An & Con Dao & Bustling commercial city Ho Chi Minh .</p>
+<p><strong>Duration:</strong> 10 days</p>
+<p><strong>Highlights:</strong> Celebrate your honeymoon in style with a safari in Africa & relax at the luxury Hotels & lodges i.e. Lewa Safari Camp in Lewa Downs, Sanctuary Olonana in Masai Mara & Kinondo Kwetu in Diani Beach and experience the best game drives safari experience, adventure activities like kite surfing, sailing, scuba diving, horse riding and bush breakfast also enjoy the breeze by the waters of the Indian Ocean.   </p>
 </li>
+<h5>ITINERARY</h5>
 <li><h4>Day 1</h4>
-<h5>Arrival Hanoi </h5>
-<p>***Note: Early check-in at hotel is NOT included.</p>
-<p>Arrive in Hanoi by Flight # TBA (Own ticket).</p>
-<p>Meet & transfer to hotel. Balance of the day is free at leisure.</p>
-<p>Lunch & Dinner at your own account</p>
-<p><strong>Overnight Stay:</strong>	Intercontinental Hanoi Westlake
-</p>
+<h5>Arrive Nairobi – Fly to Lewa Downs</h5>
+<p>On arrival at Jomo Kenyatta International Airport in Nairobi you will be met by an A&K representative and after clearing customs you will be transferred to Wilson Airport about 15 kilometres away for your scheduled flight to Lewa Downs.</p>
+<p>A guide will meet you on arrival and transfer you to the camp. Enjoy a game drive en-route to the camp; you may be rewarded with sightings of lion, elephant and plenty of plains game.</p>
+<p>Lewa Safari Camp comprises twelve luxury tents on Lewa Wildlife Conservancy. Lewa is famed the world over for its community conservation efforts and the fruits of those efforts are visible in the vast quantities of game that live on the 65,000 acre farm. Rarities like rhino and the splay-footed sitatunga antelope are easy to see at Lewa, as are more common elephant, lion and leopard.</p>
+<p>Once at the camp, you will be met by your hosts with a beverage at hand after which you will be escorted to your luxurious tent that consists of a main bedroom, an en-suite bathroom and a private veranda from which you can enjoy views of the landscape and Mt Kenya in the distance.</p>
+<p>After lunch, you have time for a relaxing swim or a nap, followed by your first game drive in a private vehicle booked just for you. Game driving in Lewa is outstanding - Lewa is home to 10 per cent of Kenya’s black rhino population and the single largest population of Grevy’s zebra in the world. </p>
+<p>You will return to camp for a romantic candle lit dinner served by the fireplace in the main lounge.</p>
+<p><strong>Overnight Stay:</strong> Lewa Safari Camp</p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5> Hanoi//Visit to Duong Lam Village, Temple of Literature </h5>
-<p>After breakfast, start your day to visit Duong Lam Village. The ancient village has a history of about 1,200 years with many houses dating back up to 400 years. One special thing about the village is that most of the buildings here are made of laterite and mud, two materials that are abundant in the area. Laterite is used on house walls, gates, wells, temple walls, and so forth. The mud is taken from ponds. Apart from its historical and tourism values, Duong Lam ancient village is an important place for scientists to study resident communities in ancient agriculture. The village gate, banyan, well, communal house are important factors in classifying Duong Lam ancient village. Enjoy Lunch in the village before heading back to Hanoi.</p>
-<p>Next, you will visit the Temple of Literature, founded in 1070 and dedicated to Confucius, honors scholars and men of literary accomplishment.</p>
-<p>Later in the afternoon, you will take an hour cyclo ride into the Old Quarter area.  The Old Quarter is characterized by numerous narrow streets, which date from the 15th century, each bearing a name that reflects the business once conducted there.  </p>
-<p>Drop by Thang Long theatre to enjoy famous Water Puppet Show, the unique Vietnamese traditional art. This art originates from rural festivals in Vietnam. The artists-men and women-stand waist-deep in the water to manipulate the puppets, making them move about, talk, laugh and even dance on water surface.</p>
-<p>Dinner at your own account</p>
-<p><strong>Overnight Stay:</strong> Intercontinental Hanoi Westlake</p>
+<h5>Lewa Downs</h5>
+<p>Start the second day of your special honeymoon with a wakeup call followed by a private breakfast served on your tent deck. Mornings at Lewa are always special; often you can enjoy spectacular views of a snow-capped Mt Kenya in the distance.</p>
+<p>Today you have the chance to explore Lewa by spending a full day at the conservancy in a variety of ways. You can choose to go on a guided bush walk - there are few better ways to experience nature. Get close to the plains game through an evening horse or camel ride in the picturesque conservancy.</p>
+<p>Lewa Downs are in the heart of the Laikipia region, a broad swathe of lava plateau that reaches the foothills of Mount Kenya on one side and in contrast, the wild deserts of the Northern Frontier District on the other. Outside of the Maasai Mara, Laikipia can boast the greatest wildlife experiences in Kenya.</p>
+<p>Lewa Downs is probably East Africa’s finest conservancy and has been the home of the Craig family since the 1920’s. Delia, the grandmother, was awarded it in a post war colonial land lottery. She had qualified to enter the land hand out through her services as a nurse in the trenches. With a handsome chunk of Kenya to her name, she was soon married to David and they ran the area as a cattle ranch up in to the late 1980’s. </p>
+<p>At this time and with the support of various benefactors, Royal and otherwise, they decided to concentrate on the conservation of game and are now one of the country’s great success stories. Having originally hunted out the rhino themselves, they now have over sixty, both black and white, on their property. They also have a thriving predator population and a plethora of plains game and smaller beasts.</p>
+<p>After a long day in the bush, indulge in a massage at the spa, a wonderful way to ease the fatigue out of tired shoulders and back. Compliment those tanned limbs with a manicure and a pedicure!</p>
+<p>Later enjoy a private romantic dinner served by the pool side, as you watch the sun set over the horizon.</p>
+<p><strong>Overnight Stay:</strong> Lewa Safari Camp</p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5> Hanoi/Halong (Overnight Cruise) </h5>
-<p>After breakfast, departure transfer to Halong bay (around 3.5 – 4 hours driving). </p>
-<p>Noon: Check-in at Bhaya Café, Tuan Chau Island.</p>
-<p>Embark on Bhaya Legend and enjoy a welcome cocktail while slowly sailing to Bai Tu Long, passing the setting for the movie Indochina, Mat Quy and Am Tich Islets. Savor a delicious fresh seafood lunch on-board.</p>
-<p>Bhaya Legend moves on into Vung Vieng fishing village, nestled among the limestone peaks, unaffected by ocean waves or strong winds. Visit the village by kayak or small boat to see the daily lives of locals up close.</p>
-<p>Swim or kayak the turquoise waters off the pristine white sandy beaches. Watch the sunset over enchanting Halong Bay while cruising to the overnight anchorage.</p>
-<p>Candlelit set-dinner on board</p>
-<p>Retire to your cabin or join the fishing program.</p>
-<p><strong>Overnight:</strong> Bhaya Legend I Cruise</p>
+<h5>Lewa Downs</h5>
+<p>Today on your last day in Lewa, breakfast will be served in the bush. Take the time to sit back, enjoy the spectacular views, the smells, colours and the gentle breeze. Bush breakfasts are a chance to enjoy a full breakfast in the middle of the plains, surrounded by wildlife</p>
+<p>On your final day you have the chance to interact with your hosts – the Samburu people. Lewa Conservancy borders the Samburu community living in bordering conservancies in the arid lowlands of the north. The Samburu whose name means butterfly are one of the few remaining communities who still practice their traditional culture despite the fast changing world. You have the opportunity to visit a local Samburu village, where you can learn about the culture and also buy hand-crafted beadwork and carvings offered for sale. Remember to bargain!</p>
+<p>As the day draws to a close, your guide will drive you into the bush where a private and secluded vantage point where a sundowner has been prepared. Stop, watch the spectacular sunset as you enjoy the gin and tonic in your hand.</p>
+<p>Later drive back to the camp where a sumptuous dinner will be laid out on your tent verandah.</p>
+<p><strong>Overnight Stay:</strong> Lewa Safari Camp</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>Halong/Hanoi/Danang/Hoi An</h5>
-<p>Enjoy the sunrise, the lapping waves, the fresh sea air, the gentle breeze or get up at your leisure. Complimentary tea & coffee are available on request.</p>
-<p>The crew will ready the vessel to sail to a destination of your choice. Choices include: sightseeing at Sung Sot Grotto; hiking up Titop Mountain; lagoon kayaking or swimming on a deserted beach.</p>
-<p>Brunch is served onboard. Bhaya Legend returns to Tuan Chau Island at 11 am. End of services.</p>
-<p>Transfer back to Hanoi for free shopping time & dinner (own arrangement) before transfer to Noi Bai Airport for flight to Da Nang (Own ticket)</p>
-<p>Upon arrival, private pick up and transfer to check in hotel for night.</p>
-<p><strong>Overnight Stay:</strong> Victoria Hoi An Resort</p>
+<h5>Lewa Downs //Masai Mara</h5>
+<p>After breakfast this morning, you will be transferred to the airstrip for your scheduled flight to
+Maasai Mara’s Kichwa Tembo airstrip.</p>
+<p>As you approach the Maasai Mara the beauty of the wilderness and the freshness of air that comes with it are sure to take your breath away. In this vast wilderness, culture mingles easily with the wild and the Mara is home to not only the Maasai people but also the numerous games that include the Big Five.</p>
+<p>A flower girl and your Sanctuary Olonana guide will meet you on arrival and transfer you to the camp. En-route enjoy a first glimpse of the Maasai Mara’s wildlife, you may be rewarded with sightings of elephant, buffalo, giraffe and a host of plain game.</p>
+<p>On arrival at Sanctuary Olonana you will be met by your host with scented towels and a glass of nice welcome juice or iced tea as you are shown to your spacious tent that has floor to ceiling mosquito netting, en suite bathroom, solar lighting and large river view veranda. In your room you find a bottle of sparkling wine, fruits and flowers.</p>
+<p>After lunch there is time for a relaxing swim or a nap, followed by your first afternoon game drive. The Maasai Mara is a fabulous place for seeing big cats and all of the big five, a variety of plains game and over 300 species of birds. The plains offer a rich variety of food for the dominant wildebeest and Topi, eland and buffalo, Thompson’s and Grant’s gazelle. In the Mara River, hippos submerge to snort and grumble while crocodiles sunbathe, mouths agape, on the riverbanks. Around July to October, the Mara plays host to the greatest show on earth – the wildebeest migration. </p>
+<p>You will return to camp for a private candle lit dinner served on your deck under the African stars.</p>
+<p><strong>Overnight Stay:</strong> Sanctuary Olonana</p>
 </li>
 <li>
 <h4>Day 5</h4>
-<h5>Hoi An//Walking tour Hoi An </h5>
-<p>After breakfast, free at leisure for your own activities.</p>
-<p>In the afternoon, take a walking tour of Hoi An, discover the historic town which used to be a prosperous seaport city during the 16th to 18th centuries. Visit Hoi An colorful local market, Tan Ky old house, Fukien Assembly Hall, and the 400-year-old Japanese covered bridge.<br>
-Travelers can also see local residents raise silkworms and produce silk for Hoi An's burgeoning textile industry.
+<h5>Maasai Mara </h5>
+<p>Start another day of your special safari holiday with a wakeup call and steaming coffee or tea as you watch the rising of the African sun, listen to the sounds of the cascading river before you, the singing of birds and the hippos snorting in the river. Then take in the fresh morning air as you walk to the main camp for breakfast. After a nice sumptuous breakfast it is time for your second extended game drive that will bring you back for lunch.</p>
+<p>Today you can choose to walk with our naturalist and learn about plants, trees, insects and even how to approach animals on foot, as your guide shows you how to spot animal signs which are everywhere but not that easily noticed. </p>
+<p>During your stay there are a variety of activities that can be booked on request. These include a balloon safari. Imagine floating gently over the plains with a bird’s eye view of the game below as the sun rises slowly over the horizon. After around one hour the balloon lands and nearby a full breakfast is served in the middle of the bush with glasses of bubbly to toast your flight!</p>
+<p>Another activity available is an adventure on Lake Victoria. Take an early flight by light aircraft to the lake. Try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands or stop at a traditional fishing village and see how the villagers live from day to day before flying back to the Maasai Mara.</p>
+<p>Return for lunch.</p>
+<p>There is time to relax after lunch before your three hour appointment in our mini spa which offers a range of treatments from facials to body massages. <br>
+After an invigorating spa treatment join your guide for a short game drive before driving to a specially chosen vantage point overlooking the Mara plains.  Enjoy sundowner drinks as you take in the beauty of the rapid sunset colouring the acacia dotted plains and transforming the world in a matter of minutes.  Sit by a log fire and discuss the day's adventures as waiters serve canapés, with the spectacular setting sun on the horizon.
 </p>
-<p>Lunch & Dinner at your own account</p>
-<p><strong>Overnight Stay:</strong> Victoria Hoi An Resort</p>
+<p>Return to camp for a candle lit dinner by your deck. </p>
+<p><strong>Overnight Stay:</strong> Sanctuary Olonana </p>
 </li>
 <li>
 <h4>Day 6</h4>
-<h5>Hoi An//Visit to Tra Que Village </h5>
-<p>Pick guest up at hotel and transfer to Tra Que Village (bike can be arrange somewhere in the middle route with additional charge),  At the home of your host, Mr Tuan , a welcome drink of freshly picked fruits is waiting, before we take a walk around the village and learn about the history and customs of this charming village. We walk through the market gardens where hundreds of local farmers work their fields using the traditional methods of hundreds of years ago - no electrical machinery here. </p>
-<p>We return to the home of Mr Tuan, and this is where the real fun begins. Everyone is given farming instruments, and we set about joining the farmers in preparing the land for sewing. Our guide describes the traditional farming methods while we help fertilize the garden using seaweed from the local river, and then water it using huge tin cans strapped to our back. Time is then spent picking vegetables and herbs, and learning how to wrap them to prevent damage.  <br>
-Many of the local herbs are used by the farmers for traditional village medicines.</p>
-<p>It's now time to try are hands at making the village speciality named “Tam Huu” spring rolls - using the local herbs and vegetables we have just picked or Xeo Cake ( Banh Xeo). We then sit down and enjoy a lovely local meal.</p>
-<p>Rest of the day is free at leisure.</p>
-<p>Dinner at your own account</p>
-<p><strong>Overnight Stay:</strong> Victoria Hoi An Resort</p>
+<h5>Maasai Mara</h5>
+<p>This morning after breakfast venture out with your expert guide to explore the Mara on a full day game drive.</p>
+<p>Experience a special “Out of Africa” picnic in homage to that magical scene in the film with Meryl Streep, Robert Redford and that wonderful gramophone. Sanctuary Olonana is located in almost exactly the same spot where the Maasai Mara scenes in “Out of Africa” were filmed. Out in the bush on a rise of the escarpment, we recreate a memorable traditional British picnic tea whilst overlooking some of the most spectacular, game-filled scenery on the continent.</p>
+<p>Return to camp later in the afternoon. There is time relax by the pool or in your tent.</p>
+<p>On your last evening in the Maasai Mara, you will be picked up by your guide and driven into the bush where a private and secluded clearing has been prepared for an elegant dinner in the middle of the wilderness. The table setting is as sophisticated and elegant as those found in the finest restaurants. Candles flicker in the darkness, throwing golden lights on the tablecloth as smiling waiters serve a delicious dinner. After dinner retire to the warmth of the campfire with a brandy or other liqueur of your choice to relax and absorb the peace and beauty of an African night.</p>
+<p><strong>Overnight Stay:</strong> Sanctuary Olonana</p>
 </li>
-    <li>
+<li>
 <h4>Day 7</h4>
-<h5>Hoi An//Danang//Ho Chi Minh City visit Cu Chi  </h5>
-<p>After late breakfast, transfer to the airport for your noon flight to Ho Chi Minh City (Own ticket)</p>
-<p>Arrive in Ho Chi Minh City, meet your guide and start to visit Cu Chi, a small community located in the northwest of Ho Chi Minh City, which gained notoriety for its network of deep tunnels that provided shelter and an effective source of infiltration for the Viet Cong during the later years of the Vietnam War.  The tunnels, which reached hundreds of miles in total length, housed storage rooms, make-shift hospitals and sleeping quarters that accommodated rebel fighters for up to two weeks at a time.  Heavy bombing by U.S. forces did not halt movement through the tunnels, making this an unusually successful defense against the superior weaponry of the American troops.</p>
-<p>Back to Saigon</p>
-<p><strong>Overnight Stay:</strong> Intercontinental Asiana Saigon</p>
+<h5>Maasai Mara// Diani Beach </h5>
+<p>After a sumptuous breakfast at Sanctuary Olonana, bid the staff farewell and depart for Kichwa
+Tembo airstrip for your scheduled flight to Diani Beach in Kenya’s South coast.
+</p>
+<p>You will be met by a guide and transferred to Kinondo Kwetu, your abode for this last leg of
+your honeymoon.
+</p>
+<p>Kinondo Kwetu is a collection of five houses on Galu Beach south of Mombasa. Run by a Swedish family, it boasts what must be the only sauna on the Kenyan coast! Surprisingly pleasant even at the high temperatures found here, saunas are just one of the myriad activities offered at Kinondo Kwetu – from scuba diving to horseback riding.
+</p>
+<p>Once you’re settled in and after lunch take a dip in the swimming pool or a relaxing nap in your room. Later enjoy a romantic evening by the beach where dinner will be served.
+</p>
+<p><strong>Overnight Stay:</strong> Kinondo Kwetu </p>
 </li>
     <li>
-<h4>Day 8</h4>
-<h5>Ho Chi Minh City// Insider Saigon by Vintage Vespa </h5>
-<p>Breakfast at hotel</p>
-<p>This is the best way to get around and explore real Saigon bustle local life, drivers to take you on a tour: past the historic Reunification Hall, down Dong Khoi Street – passing the red-brick Notre Dame Cathedral, elegant Post Office and Opera House – before cruising down central Le Loi and out to Ben Thanh Market, squeezing through backpacker Pham Ngu Lao, out to the Chinese Cholon district and back to the city. Our Vespa tour of modern-day Ho Chi Minh City will give you a view of greater Saigon unlike anything you'll see from the hot, crowded interior of a tour bus, and much more of the city than you could see on your own. (Note: tour will not take guest inside the buildings).<br>
-Tour includes: Bird club (morning tour), Thich Quang Duc Monument, Flower market, Funeral house, Ong Bon Pagoda, Tailor’s accessories market, Chinese medicine market in Chinatown, driving through tunnel to District 2, visit a local market, People’s Committee building, Rex Reunification Palace, Notre Dame Cathedral and the Old Central Post Office, CIA building on Dong Khoi, Opera House. Guests ride pillion behind our drivers.<br>
-Return to hotel.</p>
-<p>Lunch & Dinner at your own account</p>
-<p><strong>Overnight Stay:</strong> Intercontinental Asiana Saigon</p>
-</li>
-    <li>
-<h4>Day 9</h4>
-<h5>Ho Chi Minh City//Con Dao </h5>
-<p>After breakfast, transfer the airport for the airport for the noon flight to Con Dao (Own ticket)</p>
-<p>Arrive in Con Dao, PRIVATE transfer to Six Senses Con Dao (arranged by hotel). </p>
-<p>Free at leisure rest of the day.</p>
-<p><strong>Overnight Stay:</strong> Six Senses Con Dao Resort</p>
-</li>
-    <li>
-<h4>Day 10-13</h4>
-<h5>Con Dao// Enjoy the Resort at Leisure </h5>
-<p>Breakfast at hotel & Full day at leisure </p>
-<p><strong>Overnight Stay:</strong> Six Senses Con Dao Resort</p>
-</li>
-    <li>
-<h4>Day 14</h4>
-<h5>Con Dao// Ho Chi Minh City// Departure </h5>
-<p>Breakfast at hotel</p>
-<p>Transfer to airport for the flight to Ho Chi Minh to connect with your departure.(Own ticket)</p>
-<strong style="text-align: center;">***************************************End of A&K services**************************************</strong>
-</li>
-
-
+<h4>Day 8 & 9</h4>
+<h5>Diani Beach</h5>
+<p>Spend the next two idyllic days enjoying the breeze by the waters of the Indian Ocean.   </p>
+<p>There are plenty of activities to engage in such as kite surfing, sailing, scuba diving, horse riding on the beach, tennis and many more.  </p>
+<p><strong>Overnight Stay:</strong> Kinondo Kwetu </p>
+    </li>
+ <li>
+<h4>Day 10</h4>
+<h5>Diani Beach// Nairobi// Depart</h5>
+<p>After nine glorious nights in Kenya it is time to bid the country good bye. After breakfast you will be transferred to Ukunda airstrip for your scheduled flight to Nairobi. Later an A&K representative will drive you to the airport for your homeward flight. </p>
+<strong style="text-align: center;">*********************************************End of A&K Services*******************************************</strong>
+ </li>
 </ul>
 </div>
 
@@ -977,10 +978,10 @@ Return to hotel.</p>
     <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Vietnam"/>
-<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Honeymoon in Vietnam – Beaches & More"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="honeymoon-in-vietnam.pdf"/>
+<input type="hidden" name="country_email" id="country_email" value="Kenya"/>
+<input type="hidden" name="region_email" id="region_email" value="Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Luxury Honeymoon in Kenya"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="luxury-honeymoon-in-kenya.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -990,10 +991,11 @@ Return to hotel.</p>
 
 <div id="tab11" style="display:none;">
 <h1>Request a quote</h1>
+
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Vietnam"/>
-<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Honeymoon in Vietnam – Beaches & More"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Kenya"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Luxury Honeymoon in Kenya"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <?php include("../quote1.php");?>
@@ -1003,103 +1005,119 @@ Return to hotel.</p>
 <div id="tab12" style="display:none;">
 <script type="text/javascript">
 
-var markerLetter = 'A';
-var map = '';
-var zoom = 10;
-var origin = 0;
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
 
-function gmapInitialize2() {
-	if (GBrowserIsCompatible()) {
-		map = new GMap2(document.getElementById("map_canvas2"));
-		map.setUIToDefault();
-		
-		
-			description = '<div style="width:300px;">Day 1 - ';
-			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			function gmapInitialize2() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas2"));
+					map.setUIToDefault();
 
-			description = description + '</div>';
-			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
-			map.addOverlay(mark);
-		
-			description = '<div style="width:300px;">Day 2 - ';
-			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
-			description = description + '</div>';
-			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
-			map.addOverlay(mark);
-		
-			description = '<div style="width:300px;">Day 3 - ';
-			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
-			description = description + '</div>';
-			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
-			map.addOverlay(mark);
-		
-			description = '<div style="width:300px;">Day 4 - ';
-			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
-			description = description + '</div>';
-			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
-			map.addOverlay(mark);
-		
-			description = '<div style="width:300px;">Day 5 - ';
-			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
-			description = description + '</div>';
-			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
-			map.addOverlay(mark);
-		
-		
-		var minLat = -19.673625;
-		var minLng = 23.3129882;
-		var maxLat = -17.8067;
-		var maxLng = 25.2562;
-							
-		botLeft = new GLatLng(minLat, minLng);
-		topRight = new GLatLng(maxLat, maxLng);
-		
-		bounds = new GLatLngBounds(botLeft, topRight);
-		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
-		zoom = map.getBoundsZoomLevel(bounds);
-		map.setCenter(origin, zoom);
-		zoom = map.getZoom();
-	}
-}
 
-function createMarker(point, title, html, day) {
-	var markerOpts = {};
-	var mIcon = new GIcon();
-	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
-	
-	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
-	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
-	mIcon.iconSize = new GSize(20, 34);
-	mIcon.iconAnchor = new GPoint(10, 34);
-	mIcon.infoWindowAnchor = new GPoint(10, 1);
-	
-	markerOpts = {
-		"icon": mIcon,
-		"clickable": true,
-		"title": title
-		};
-	var newPoint = point;
-	var marker = new GMarker(newPoint, markerOpts);
-	
-	GEvent.addListener(marker, "click", function() {
-		marker.openInfoWindowHtml(html);
-	});
-	
-	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
-	
-	return marker;
-}
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>This morning awake to a steaming hot cup of tea or coffee served on the decking of your tent before enjoying breakfast at the main tent. Enjoy a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 sq km, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, where 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other plains game that follow close behind, make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Serengeti", description, "7");
+						map.addOverlay(mark);
 
-//$(document).ready(function(){
-//	gmapInitialize();
-//});
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Today enjoy another full day discovering the spirit of the Serengeti by 4WD vehicle with exciting morning and afternoon game drives.&nbsp;<br /><br />The Serengeti National Park lies between the Ngorongoro Highlands, Lake Victoria and Tanzania's northern border with Kenya. The name comes from the Maasai meaning \"endless plains\". The Serengeti contains about three million large animals, most taking part in seasonal migrations, unparalleled in nature. Be sure to have your camera constantly at hand as life in the Serengeti is always action packed.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Serengeti", description, "8");
+						map.addOverlay(mark);
 
-$(window).unload(function(){
-	GUnload();
-});
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Dar es Salaam International airport where you will be met and assisted with your onward flight. Fly from Dar es Salaam to the remote Selous Game Reserve. Upon arrival you are met by a camp representative and transferred to your camp to settle in. This afternoon explore the Selous either by foot on a walking safari, by boat on the Rufiji and Lake Tagala, or in open 4WD vehicles. All excursions are escorted by an experienced armed guide.<br /><br />Selous Sand Rivers is situated on the banks of the Rufiji River, offering a unique combination of adventure, comfort and exclusivity. This small luxury lodge, crafted out of local materials, comprises six individually designed cottages with en-suite bathrooms. Spaced along the river bank, each has its own private view of the wide sand-banked river with its hippos, crocodiles and birdlife. Near the dining area a large baobab tree shades the swimming pool in which guests can escape the heat of the sun or cool off after a game walk.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Arrive Selous Game Reserve", description, "1");
+						map.addOverlay(mark);
 
-</script>
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>Today enjoy morning and afternoon game activities in the bush where your game sightings will rarely be interrupted by other vehicles. Enjoy the solitude whilst observing elephants, lions, buffalo, hippos and crocodiles. Game drives are conducted by 4WD vehicles or from your river boat, the more adventurous of you may like to stretch your legs with a walking safari.<br /><br />The Selous Game Reserve is the largest game reserve in the world and has some of the finest virgin bush left in Africa, where the last of the really big-tusked elephants and large-maned lions roam. The Selous supports around one million game animals, is bigger than Switzerland and is a World Heritage site. From March to May floods sweep the valley, forcing the game on to the 'islands' of higher ground, where elephant, buffalo, lion, leopard, crocodile, puku, buck, eland, sable and others concentrate.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Selous", description, "2");
+						map.addOverlay(mark);
 
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Enjoy another day at leisure to be as active as you like. You may like to explore the Selous overland by 4WD vehicle or on a bush walk, or take to the river on a boat trip. Alternatively you may like to relax at your camp with a book on your private verandah or cool off in the camp's pool.<br /><br />The Selous is Africa's largest wildlife sanctuary and one of its least known treasures. Covering 21,000 square miles of completely undeveloped land, the Selous is one of the last great tracts of true wilderness left in Africa.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-7.2833, 36.0667), "Selous", description, "3");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Wake up early this morning as you prepare for a long day of travel to Ngorongoro. Transfer to the airstrip for your flight from the Selous to Arusha. Upon arrival at Arusha airport you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Ngorongoro Crater Lodge located on the rim with spectacular views across the crater. The Ngorongoro Crater is the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Crater Lodge is situated on the edge of the ancient crater rim above the cool, swirling mists. The lodge is a return to the noble elegance of the travelling colonials. Inspired in design by the Maasai Manyatta, three separate camps of 6 to 12 suites each remember a bygone era when characters such as Lord Delamere adorned the stilted, handcrafted structures with graceful antiques, grand chandeliers and treasures collected from travels through Africa.<br /><br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Selous - Arusha - Lake Manyara", description, "4");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 sq miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can often be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals. Gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "5");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue to your camp located in the southern reaches of Serengeti National Park.<br /><br />Kusini Camp is built in and around a large kopje. The camp offers spectacular views across Tortillis woodland situated on the edge of the short grass plains. The camp is comprised of nine double tents scattered around the kopje with the mess tent and common area as the central feature. Privacy between tents is guaranteed as they are at a substantial distance from each other and are generally concealed by a tree or kopje.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.685650), "Ngorongoro Crater - Serengeti", description, "6");
+						map.addOverlay(mark);
+
+
+					var minLat = -7.2833;
+					var minLng = 34.685650;
+					var maxLat = -2.416213;
+					var maxLng = 36.0667;
+
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+
+				return marker;
+			}
+
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+
+			$(window).unload(function(){
+				GUnload();
+			});
+
+		</script>
 
 <div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
@@ -1109,11 +1127,11 @@ $(window).unload(function(){
 
 </div>
 
-</div>   
 </div>
+</div>
+<!-- Luxury Honeymoon in Kenya End Here -->
 
-<!--  Honeymoon in Vietnam – Beaches & More end Here -->
-<!--  Seventh Heaven – Honeymoon in Myanmar starts Here -->
+<!--South Africa The Six-Carat Safari starts here-->
 <div id="popup4" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -1124,104 +1142,98 @@ $(window).unload(function(){
 <li id="divli14"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli15"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli16"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/seventh-heaven–honeymoon-in-myanmar.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/South-Africa-The-Six-Carat-Safari.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
 <div class="popuprightcontainer">
 <div class="popupheader">
-<div class="logoinner"><img src="../images/myanmar-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<div class="logoinner"><img src="../images/south-africa-logo.gif" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
 <div id="tab13">
-
-<h1>Seventh Heaven – Honeymoon in Myanmar</h1>
-<div class="popupbanner"><img src="../images/honeymoon_in_myanmar.jpg" alt="Honeymoon in Myanmar" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="logoinner1"></div>
+<h1>South Africa: The Six-Carat Safari (2012)</h1>
+<div class="popupbanner"><img src="../images/south-africa-inner.jpg" alt="Classic South Africa" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
 <li>
-<p><strong>Duration:</strong> 7 Days</p>
-<p>This itinerary offers the finest hotels, enjoy the best restaurants and experience a level of service you could only dream about.<br>
-        Travel to Myanmar and celebrate your new life together on this luxurious and romantic journey into one of Asia's most fascinatingly mysterious countries & Discover an impressive colonial and spiritual heritage in one of the most fascinating cities in Southeast Asia i.e. Yangon, See the dreamscape temples of Bagan and the picturesque Inle Lake, Take romantic horse carriage tours, experience special sunset cocktails in private romantic settings and exclusive boat rides, Visit a Burmese monastery and receive a special blessing traditionally bestowed upon newly wedded honeymooners to wish you good luck and eternal happiness.
-</p>
+<p><strong>Duration:</strong> 10 Days</p>
+<p>Rekindle the spark of romance in South Africa, land of exotic wildlife, renowned cuisine and lively culture. Enjoy cellar and vineyard tours at top South African wineries, cast your eyes upon seas as endless as your love in quaint Hermanus and observe the region's wildlife from up close on a safari drives led by a private guide in the unspoiled Thorny bush Private Game Reserve.</p>
 </li>
 <li><h4>Day 1</h4>
-<h5>Arrival in Yangon </h5>
-<p>On arrival at the Yangon airport, you will be welcomed your tour guide, who will assist you through all the immigration procedures. </p>
-<p>We’ll stop on the way into town for a foot massage at Yangon’s best spa. This is the perfect way to relax and unwind after a long international flight.</p>
-<p>Check in to your hotel where a special Burmese wedding present is waiting.</p>
-<p>Depending on your arrival time, we recommend having lunch at Monsoon restaurant to enjoy freshly prepared Myanmar cuisine.</p>
-<p>This afternoon, enjoy a tour of Yangon's colonial city centre, with its many cultural delights.  Yangon, formerly known as Rangoon, is a relatively quiet and charming city with an impressive colonial and spiritual heritage. Travel past faded colonial buildings, busy street markets, and glittering temples. If you wish, we can take as short walking tour for a different perspective of the city. The route covers around 2 kilometres and passes sites such as the Strand Hotel, the old Post Office, other historic buildings as well as parks and markets.</p>
-<p>End your tour at the magnificent Shwedagon Pagoda the most revered Buddhist temple in Myanmar. Although the origins of the pagoda are unclear, the local legend states that the original structure was built 2500 years ago then renovated several times until taking its current shape in the 15th century. The 8-sided central stupa is 99 meters tall and gilded with gold leaf and is surrounded by 64 smaller stupas and your guide will show you around the massive complex, explaining why this temple is so revered. Enjoy breathtaking views of the golden stupa from this vantage point.</p>
-<p>Return to your hotel where a bottle of champagne and special welcome present awaits you back in your room to toast your arrival to Myanmar.</p>
-<p><strong>Overnight:</strong>	at The Strand, Yangon
-</p>
+<h5>India/Cape Town</h5>
+<p>Arrive at Cape Town International Airport, where an Abercrombie & Kent representative will meet and transfer you to your hotel. The remainder of the afternoon is at leisure to settle in to your hotel or perhaps explore Cape Town, a city set on a soaring, rocky peninsula punctuated by lush valleys.</p>
+<p><strong>Overnight:</strong> Cape Grace<br />
+<strong>Meal Plan:</strong> None
+ </p>
 </li>
 <li>
 <h4>Day 2</h4>
-<h5>Yangon//Bagan//Visit to an Elevated Temple, Myinkaba village & Gubyaukgyi Temple</h5>
-<p>This morning, transfer to the airport for your domestic flight to Nyaung Oo. Upon arrival, transfer to your hotel in Bagan. A special wedding present is waiting in your room upon arrival.</p>
-<p>After freshening up, the journey begins with a visit to an elevated temple with spectacular views over the surrounding plains. This is the perfect introduction to the grandeur and scope of Bagan’s architecture. Next continue to Ananda Temple, one of the most revered temples in Bagan and which is quiet in the morning, before all the tour buses arrive.</p>
-<p>Afterwards we will go to Myinkaba Village and visit Gubyaukgyi Temple which is noted for its beautiful mural paintings on its inner walls and well-preserved plaster carvings on its exterior. Nearby is Manuha Temple and Nan Paya Temple, two smaller temples with nice Buddha statues and stone work.</p>
-<p>Transfer to hotel for a break to escape the intense afternoon heat of Bagan.</p>
-<p>Later this afternoon, resume your journey with a visit to two workshops producing Bagan’s most famous products: lacquer ware and wood crafts. Watch as the skilled craftsmen use techniques passed down through generations to create beautiful items.</p>
-<p>Then travel by horse carriage among the temples starting at Ananda and passing many of Bagan’s famous monuments and traversing the plains.</p>
-<p>This evening enjoy dinner at your hotel.</p>
-<p><strong>Overnight:</strong> at Aureum Palace, Bagan</p>
+<h5>Cape Town</h5>
+<p>This morning, meet an A&K representative for a tour of charming Cape Town. Drive though the suburb of Tamboerskloof ("Drummers' Ravine") to the lower cable car station on the slopes of Table Mountain. Weather permitting; ascend by cable car to the top of this famous mountain, which affords magnificent views of the sea and the city from its summit. Then head to historic Cape Town, starting with a tranquil walk through the lovely Company Gardens, the remnants of the Dutch East India Company's fruit and vegetable gardens. Stroll past the Houses of Parliament, the Tuynhuis ("Townhouse," or Cape Town's "White House"), the National Art Gallery and the National Library. Then continue to the 17th-century Castle of Good Hope. End your explorations at the bustling Victoria & Alfred Waterfront, a working harbor surrounded by eclectic shops and restaurants. This is the perfect setting to arrange for a romantic waterfront dinner.</p>
+<p><strong>Overnight:</strong> Cape Grace<br />
+<strong>Meal Plan:</strong> B,L
+</p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5>Bagan//Visit the Colorful Nyaung Oo Market </h5>
-<p>Begin today with a visit to the colorful Nyaung Oo Market where dozens of vendors come to sell their fresh produce and products.  The market is at its busiest early in the morning as the locals come to do their shopping. This is a great opportunity to observe the daily lifestyle of the friendly locals.</p>
-<p>Continue to the neighboring villages where you will learn about their traditional livelihood. Learn the interesting process of creating poneyay gyi (pea powder paste) and see how local plum jam is made and packed.<br>
-Then resume your temple touring with a visit to the glittering Shwezigon Pagoda, a prototype of later Myanmar stupas.
-</p>
-<p>Transfer to the Taungbi Monastery where you will participate in a special traditional Buddhist ceremony. Afterwards you will receive a special blessing from the monks to ensure good luck and happiness. This auspicious occasion is sure to be an unforgettable part of your honeymoon in Myanmar.</p>
-<p>Return to your hotel for a break from the midday heat and lunch at leisure.<br>
-Late this afternoon, the romance and beauty of Myanmar's Irrawaddy River awaits you.  Board a luxurious private boat for a cruise down the River, soaking in the scenery and enjoying sunset cocktails and canapés along the way. Return to shore and dinner is at your leisure.
-</p>
-<p><strong>Overnight:</strong> at Aureum Palace, Bagan</p>
+<h5> Cape Town</h5>
+<p>After breakfast, set off for a day of discoveries en route to Cape Point. Drive past the "bikini beaches" of Clifton and Camps Bay, located at the base of the towering Twelve Apostles Mountains. Continue to the Cape of Good Hope Nature Reserve at the end of the Cape Peninsula. The reserve converges in the south at Cape Point, a great pinnacle of rock. Climb the steps or ride a funicular railway - the "Flying Dutchman" - to the top for unparalleled views poised for contemplating with your loved one: southern right whale in spring and dolphin and a variety of seabirds in early summer. The journey continues to Kalk Bay, a quaint fishing hamlet on the False Bay. Around lunchtime here, fishermen offload their catch and it is possible to buy your supper straight from the boat. Travel back toward Cape Town, passing through the elegant suburb of Constantia, the cradle of the South African wine industry. Stop at Kirstenbosch, the world-renowned National Botanical Garden, where a private guide shows you around this fascinating, romantic garden. Return to your hotel, passing the University of Cape Town, Rhodes Memorial and Mostert's Mill, a Dutch windmill dating back to 1797.</p>
+<p><strong>Overnight:</strong> Cape Grace <br />
+<strong>Meal Plan:</strong> B,L</p>
 </li>
 <li>
 <h4>Day 4</h4>
-<h5>Bagan/Heho/Inle Lake </h5>
-<p>Transfer to Nyaung Oo Airport in Bagan for your domestic flight to Heho.  Here you will enjoy a one-hour scenic drive to Nyaung Shwe, the gateway village to the lovely Inle Lake.</p>
-<p>Start with a visit to the Nyaung Shwe morning market where locals gather every morning to buy and sell fresh produce from the lake and its surroundings.</p>
-<p>Continue by local trishaw down to the bustling canal which is a hive of activity in the morning as boats from the lake come in to unload tomatoes and other vegetables for distribution to the markets around the country. Watch as baskets laden with produce are transferred from boats to trucks and bikes.</p>
-<p>Hop back on the trishaw and wind through quiet streets. Make a stop at the ‘tomato house’, a warehouse-like structure where the tomatoes are sorted and priced for sale. Then continue past some of the many monasteries and nunneries in the town, stopping for photos as you go.</p>
-<p>Then venture on to the lake by your private boat. First we’ll stop at a stilted restaurant to enjoy lunch with a view! (Client’s account) Then we resume our touring with a visit to Phaung Daw Oo Pagoda, the lake's main sanctuary, which houses five sacred Buddha statues.</p>
-<p>Proceed to the village of Inpawkhone to observe the traditional silk weaving techniques of Inthar people. Inpawkhone is also known for its weaving from the stems of lotus flowers, a time consuming process that results in high quality materials famous throughout the country. We also visit a cheroot factory where local Burmese cigars are rolled by hand.</p>
-<p>Then continue to your hotel for check-in. A fruit basket and welcome gift will be waiting in your room.
-Your romantic experience continues with a wine tasting at the Inle Princess Resort, before enjoying a private terrace dinner.
-</p>
-<p><strong>Overnight:</strong>at Inle Princess Resort, Inle Lake</p>
+<h5> Cape Town/Cape Winelands/Cape Town</h5>
+<p>Today you explore the Cape Town's famous culinary scene. The Western Cape region is blessed with ideal wine-growing climate, beautiful natural scenery and historic estates - not to mention a bevy of top-notch restaurants. Start your gastronomic journey at Morgenster Estate for a cellar tour and sampling of wine and olive oil (also produced here). Enjoy lunch at the critically acclaimed Cape Winelands restaurant Terroir, on the grounds of the Kleine Zalze winery. Dine on a Provençal-inspired chalkboard menu dominated by seasonal ingredients and local wines. After lunch, visit Waterford Wine Estate, where you sample award-winning wines complemented by a chocolate tasting. Continue to picturesque Stellenbosch, the second oldest town in South Africa. Explore this lovely town's history and shops on your own as you meander its charming streets hand in hand. End the day at Anura Estate, to sample the perfect couple: award-winning wines and handcrafted Forest Hill cheeses.</p>
+<p><strong>Overnight:</strong> Cape Grace <br />
+<strong>Meal Plan:</strong> B,L</p>
 </li>
 <li>
 <h4>Day 5</h4>
-<h5>Inle Lake // In Dein// Explore area on Foot & Strolling around the village</h5>
-<p>This morning, enjoy a relaxing boat trip along a small canal to the Pa-oh village of Indein.  Explore the area on foot, strolling around the village, visiting a local school, and wander through the beautiful Alaung Sitthou area.  Alaung Sitthou is filled with picturesque ancient stupas and has magnificent views of the lake below.</p>
-<p>On the return journey, stop at a stilted village for a hands-on cooking class with a local family. This is a great way to learn about the local ingredients, traditions and cuisine of the Inthar people. Enjoy a lunch of your creations as you sit on cushions around a round table.</p>
-<p>Return by boat to the hotel for a relaxing afternoon before enjoying dinner at the hotel. Should you wish to really indulge, head to the Resort’s spa for a luxurious massage or body treatment (client’s account).</p>
-<p><strong>Overnight:</strong> at Inle Princess Resort, Inle Lake</p>
+<h5>Cape Town/Hermanus</h5>
+<p>Enjoy a leisurely breakfast this morning. Afterward, you are driven to Hermanus, a town on the southern coast of the Western Cape, known as the perfect spot for whale watching. Check in to your luxury retreat and evening at leisure.</p>
+<p><strong>Overnight:</strong> Birkenhead House<br />
+<strong>Meal Plan:</strong> B,L</p>
 </li>
 <li>
 <h4>Day 6</h4>
-<h5> Inle//Heho//Yangon </h5>
-<p>This morning, transfer to the airport for your domestic flight back to Yangon.</p>
-<p>This afternoon you'll head to Bogyoke Market (also known as Scott Market), known for its colonial architecture and inner cobblestone streets. Browse the aisles of handmade goods, looking for the perfect souvenir of your Myanmar holiday. </p>
-<p>OPTION: Before leaving the market, have a chance to hear what the future holds by visiting a famous Myanmar fortune teller. San Zar Ni Bo will read your palm and discuss your future. (Client’s account)
-As your honeymoon in Myanmar comes to a close, enjoy a romantic candle lit dinner at Le Planteur, one of the country’s best restaurants.
-</p>
-<p><strong>Overnight:</strong> at The Strand, Yangon</p>
+<h5>Hermanus</h5>
+<p>Spend the day at leisure, soaking in the beauty of your surroundings. Choose to sample excellent Cape cuisine at its fine restaurant or walk hand in hand along its secluded, romantic beach, watching for the spray of whales.</p>
+<p><strong>Overnight:</strong> Birkenhead House <br />
+<strong>Meal Plan:</strong> B</p>
 </li>
 <li>
 <h4>Day 7</h4>
-<h5>Departure</h5>
-<p>Your private car and guide will be at your disposal until it's time to transfer to the airport.</p>
-<p>Should you wish to extend your stay we have a range of unique insider tours which explore the arts, culture and history of Yangon or excursions to the surrounding local villages of the city.</p>
-<strong style="text-align: center;">***************************************End of A&K services**************************************</strong>
+<h5>Hermanus/Cape Town/Johannesburg</h5>
+<p>After breakfast, drive a couple of hours overland, returning to Cape Town in time to catch your flight to Johannesburg. An A&K representative will meet and transfer you to your boutique hotel, situated on 10 acres of beautifully landscaped gardens. The rest of your day is at leisure to enjoy the hotel's amenities together or explore cosmopolitan Johannesburg on your own.</p>
+<p>
+<strong>Overnight:</strong> Saxon Boutique Hotel & Spa   <br />
+<strong>Meal Plan:</strong> B</p>
 </li>
-
+<li>
+<h4>Day 8</h4>
+<h5>Johannesburg/Thorny bush Private Game Reserve</h5>
+<p>After a romantic breakfast at your hotel, perhaps overlooking the terrace and lush gardens beyond, take a short flight to Thorny bush Private Game Reserve, located in the world-famous Kruger National Park. Upon arrival, you are picked up and whisked away to Royal Malewane, a beautiful safari lodge in the heart of a private game reserve. Your luxurious accommodations offer unparalleled views of the African bush, coupled with warm hospitality and award-winning cuisine. </p>
+<p>
+<strong>Overnight:</strong> Royal Malewane <br />
+<strong>Meal Plan:</strong> B,L,D</p>
+</li>
+<li>
+<h4>Day 9-10</h4>
+<h5>Thorny bush Private Game Reserve</h5>
+<p>Spend two full days on safari in search of the "Big Five" (elephant, rhino, buffalo, lion and leopard). This unspoiled area is also home to wild dog, wildebeest and plenty of giraffe. Set out on morning and evening game drives, as well as guided bush walks with expert guides and trackers. Rekindle your love over delicious, candlelit meals and South African wines, and sleep under a blanket of the brilliant stars.</p>
+<p>
+<strong>Overnight:</strong> Royal Malewane<br />
+<strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 11</h4>
+<h5>Thorny bush Private Game Reserve/Johannesburg/India</h5>
+<p>Bid farewell to this paradise of flora and fauna with a final morning game drive. Fly back to Johannesburg, where you are met by an A&K representative and escorted to the international airport for your return flight home.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
 </ul>
 </div>
 
@@ -1229,10 +1241,10 @@ As your honeymoon in Myanmar comes to a close, enjoy a romantic candle lit dinne
     <h1>Send itinerary</h1>
 <?php $id =4;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Myanmar"/>
-<input type="hidden" name="region_email" id="region_email" value="The Orient"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Seventh Heaven – Honeymoon in Myanmar"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="seventh-heaven–honeymoon-in-myanmar.pdf"/>
+<input type="hidden" name="country_email" id="country_email" value="Family Holidays"/>
+<input type="hidden" name="region_email" id="region_email" value="Ank Journey Style"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="South Africa The Six Carat Safari"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="South-Africa-The-Six-Carat-Safari.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -1243,9 +1255,9 @@ As your honeymoon in Myanmar comes to a close, enjoy a romantic candle lit dinne
 <div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Myanmar"/>
-<input type="hidden" name="region_quote" id="region_quote" value="The Orient"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Seventh Heaven – Honeymoon in Myanmar"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Family Holidays"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Ank Journey Style"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="South Africa The Six Carat Safari"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <?php include("../quote1.php");?>
 </form>
@@ -1263,47 +1275,47 @@ function gmapInitialize3() {
 if (GBrowserIsCompatible()) {
 	map = new GMap2(document.getElementById("map_canvas3"));
 	map.setUIToDefault();
-	
-	
+
+
 		description = '<div style="width:300px;">Day 1 - ';
 		description = description + "<p>As you will be entering Zambia, a single entry visa will be required and is obtainable at the point of entry at a cost of USD 50.00 per person, payable in cash. The visa fee is subject to change at the discretion of the Zambian Government.<br /><br />Depart by scheduled light aircraft transfer from Lusaka Airport to Mfuwe Airport. The flying time is approximately 1 hour and 10 minutes.<br /><br />Upon arrival, transfer to Chichele Presidential Lodge. This historic property, once the bush retreat of President Kenneth Kaunda, has a magnificent hilltop location in Zambia's premier game viewing area, the South Luangwa National Park. Its long terrace, with commanding views across the valleys of the South Luangwa, is the perfect place to enjoy breakfast or afternoon tea. Chichele has ten air-conditioned suites, each with French doors onto individual balconies overlooking the valley. The lodge is accessible all year around and the ideal base for exploring the prolific wildlife that populates the mosaic of different habitats surrounding the Luangwa River.<br /><br />The afternoon is at leisure to enjoy one of the game viewing activities on offer.<br /></p>";
 		description = description + '</div>';
 		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "Arrive Zambia", description, "1");
 		map.addOverlay(mark);
-	
+
 		description = '<div style="width:300px;">Day 2 - ';
 		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.<br /></p>";
 		description = description + '</div>';
 		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "2");
 		map.addOverlay(mark);
-	
+
 		description = '<div style="width:300px;">Day 3 - ';
 		description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.</p><p>Game drives in the lodge's customised 4x4 vehicles by day or night, are an ideal way to explore the South Luangwa - an area famed for its frequent leopard sightings. This is also an excellent area to spot lion, elephant, packs of wild dog and endemic species such as the Thornicroft giraffe and Cookson's wildebeest.<br /><br />This part of Zambia is also renowned for being the original home of the walking safari. A stay at Chichele also offers the chance to venture out on foot with a Zambian professional guide and qualified park ranger to learn about the bush from a different perspective, up close and personal with the environment.</p>";
 		description = description + '</div>';
 		var mark = createMarker(new GLatLng(-12.693842, 31.8107079), "South Luangwa", description, "3");
 		map.addOverlay(mark);
-	
+
 		description = '<div style="width:300px;">Day 4 - ';
 		description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to the Mfuwe airstrip. The transfer time will be confirmed to you locally by the camp management.<br /><br />Depart by scheduled light aircraft transfer from Mfuwe Airport to Livingstone Airport via Lusaka Airport. The flying time is approximately 2 hours and 45 minutes.<br /><br />On arrival at Livingstone Airport please clear customs and immigration and collect your luggage. Proceed through into the Arrivals Hall, where a representative will meet and transfer you to Sussi &amp; Chuma. The transfer time is approximately 30 minutes.<br /><br />Sussi &amp; Chuma is named after David Livingstone's faithful companions and consists of an intimate lodge and two exclusive houses, both of which are situated to make the most of the amazing views that the sweeping Zambezi River provides.<br /><br />The central lodge building features a raised bar/lounge deck, open air dining area, swimming pool and a spa which provide incredible views of the mighty Zambezi.<br />&nbsp;<br />The afternoon is at leisure to enjoy an activity on offer.<br /></p>";
 		description = description + '</div>';
 		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "South Luangwa - Livingstone", description, "4");
 		map.addOverlay(mark);
-	
+
 		description = '<div style="width:300px;">Day 5 - ';
 		description = description + "<p>The day is at leisure to enjoy the activities on offer.</p><p>Activities offered at the lodge include game drives in the Mosi-oa-Tunya National Park, where guests can see a variety of game, including white rhino, elephant, buffalo and giraffe. Tours of the incredible Victoria Falls, a World Heritage Site, are another must as they give guests an opportunity to experience one of the seven great natural wonders of the world.</p>";
 		description = description + '</div>';
 		var mark = createMarker(new GLatLng(-17.857719, 25.85845), "Livingstone", description, "5");
 		map.addOverlay(mark);
-	
-	
+
+
 	var minLat = -17.857719;
 	var minLng = 25.85845;
 	var maxLat = -12.693842;
 	var maxLng = 31.8107079;
-						
+
 	botLeft = new GLatLng(minLat, minLng);
 	topRight = new GLatLng(maxLat, maxLng);
-	
+
 	bounds = new GLatLngBounds(botLeft, topRight);
 	origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
 	zoom = map.getBoundsZoomLevel(bounds);
@@ -1359,13 +1371,12 @@ GUnload();
 
 </div>
 
-</div>   
 </div>
-
-<!--  Seventh Heaven – Honeymoon in Myanmar end Here -->
+</div>
+<!--South Africa The Six-Carat Safari end here-->
 <script language="javascript1.1" type="text/javascript">
 function ChangeValue(val)
-{ 
+{
   if(val.value != "0")
   {
     window.open(val.value,"_self");
