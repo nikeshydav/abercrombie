@@ -259,6 +259,8 @@ include("../classes/mimemail.class.php");
         <a href="honeymoon-recommended-itineraries-7.html">7</a> |
         <a href="honeymoon-recommended-itineraries-8.html">8</a> |
         <a href="honeymoon-recommended-itineraries-9.html">9</a> |
+        <a href="honeymoon-recommended-itineraries-10.html">10</a> |
+        <a href="honeymoon-recommended-itineraries-11.html">11</a> |
         <a href="honeymoon-recommended-itineraries-4.html"> Next > </a>
         </div>
         <div class="Clr"></div>
@@ -356,6 +358,8 @@ include("../classes/mimemail.class.php");
         <a href="honeymoon-recommended-itineraries-7.html">7</a> |
         <a href="honeymoon-recommended-itineraries-8.html">8</a> |
         <a href="honeymoon-recommended-itineraries-9.html">9</a> |
+        <a href="honeymoon-recommended-itineraries-10.html">10</a> |
+        <a href="honeymoon-recommended-itineraries-11.html">11</a> |
         <a href="honeymoon-recommended-itineraries-4.html"> Next > </a>
         </div>
         </div>
@@ -523,9 +527,9 @@ Spend the night in your private Igloo and gaze up at the wonderful spectacle of 
 <h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Family Holidays"/>
-<input type="hidden" name="region_email" id="region_email" value="A&K Journey Style"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Fine Food and Art Berlin"/>
+<input type="hidden" name="country_email" id="country_email" value="FINLAND"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Honeymoon-in-Finland"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Honeymoon-in-Finland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
@@ -537,8 +541,8 @@ Spend the night in your private Igloo and gaze up at the wonderful spectacle of 
 <div id="tab3" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Family Holidays"/>
-<input type="hidden" name="region_quote" id="region_quote" value="A&K Journey Style"/>
+<input type="hidden" name="country_quote" id="country_quote" value="FINLAND"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="HONEYMOON IN FINLAND"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <?php include("../quote1.php");?>
