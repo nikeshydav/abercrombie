@@ -1,10 +1,174 @@
- <html>    
-  <head>      
-    <title>Abercrombiekent</title>      
-    <meta http-equiv="refresh" content="0;URL=http://www.abercrombiekent.co.in/journeystyles/private-mob-copm.html
-" />    
-  </head>    
-  <body> 
-   
-  </body>  
-</html>    
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="Private Mobile Camping, Mobile Safari, Private Mobile Tented Safari, Private Mobile Camping Tour"/>
+<meta name="description" content="A&K private mobile camping and tented offers Africa safaris, Botswana, Tanzania, and Kenya safari and chance to see lion, leopard, zebra, tiger and wildebeest." />
+<title>Private Mobile Camping & Safaris Tours - A & K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/mobile-campaning-banner.jpg" alt="Private Mobile Camping" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
+<li>Private Mobile Camping</li>
+</ul>
+</div>
+<div class="LeftList">
+<h4>CHOOSE YOUR STYLE</h4>
+<ul>
+<li><a href="ak-journey-style.html" title="Overview">Overview</a></li>
+<li><a href="private-journeys.html" title="Private Luxury Journeys">Private Luxury Journeys</a></li><li><a href="connections.html" title="Connections">Connections</a>
+</li>
+<li><a href="extreme-adventures.html" title="Extreme Adventures">Extreme Adventures</a></li>
+<li><a href="small-ship-cruising.html" title="Small Ship Cruising">Small Ship Cruising</a></li>
+<li><a href="private-jet.html" title="Private Jet Journeys">Private Jet Journeys</a></li>
+<li><a href="Luxury-rail-journey.html" title="Luxury Rail Journeys">Luxury Rail Journeys</a></li>
+<li><a href="family-holidays.html" title="Family Holidays">Family Holidays</a></li>
+<li><a href="rest-revive.html" title="Rest &amp; Revive">Rest &amp; Revive</a></li>
+<li><a href="celebration.html" title="Celebrations">Celebrations</a></li>
+<li><a href="honeymoon.html" title="Honeymoon"> Honeymoon</a></li>
+
+<li><a href="special-interst-groups.html" title="Special Interest Groups">Special Interest Groups</a></li>
+<li><a href="private-mob-copm.html" title="Private Mobile Camping" class="Active">Private Mobile Camping</a></li>
+<li><a href="ak-villas.html" title="A&amp;K Villas">A&amp;K Villas</a></li>
+<li><a href="sanctuary-retreats.html" title="Sanctuary Retreats">Sanctuary Retreats</a></li>
+</ul>
+
+<h4>Travel Destinations</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+</div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Private Mobile Camping</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+
+<p style="color:#517390;font-size:14px;">A&amp;K's private mobile camping offers an Africa few visitors have the chance to see, reminiscent of vintage days when every safari was a self-sufficient, private caravan travelling through glorious landscapes inhabited only by lion, leopard, zebra and wildebeest.</p>
+
+<p style="color:#517390;font-size:14px;">Tailor-Made for You</p>
+<p>Private mobile camping itineraries are tailor-made to your own preferences and can include any combination of mobile tented camps, permanent safari camps and bush lodges. A&amp;K has rights to camp on a private basis in some of Africa's most beautiful and game-rich territories: in and adjacent to Kenya's Masai Mara, Samburu and Amboseli reserves; within the 55,000-acre private Lewa Downs and other game conservancies in Laikipia; on the slopes of Mount Kenya; and, in Tanzania, the Serengeti, Tarangire National Park and Ngorongoro Crater.</p>
+
+<p style="color:#517390;font-size:14px;">The ExperienceSafari Escort</p>
+<p>Each luxury private mobile camp is erected in a manner that ensures personalised service and absolute privacy in prime locations for wildlife-viewing. Imagine waking to an early-morning cup of tea or coffee delivered by your personal butler while a herd of zebra grazes on the plains beyond! Gourmet meals and fine wines from the bush kitchen are a highlight, served al fresco or in the traditional mess tent, complete with crisp linen tablecloths, white china and fine crystal glassware. Your safari guide will design each day according to your pace in a private A&amp;K 4WD LandCruiser. A private mobile safari is the ideal choice for groups of friends and families with older children.</p>
+<p>One of A&amp;K's finest naturalist guides accompanies you throughout your trip. You will be well taken care of at camp with a staff-to-client ratio of approximately 2:1.</p>
+
+<p style="color:#517390;font-size:14px;">Recommended Stay<p>
+<p>The itineraries on private mobile safaris are flexible and can be incorporated into longer itineraries. Private mobile camps are available for as few as two nights when incorporated into a five-night safari. You can choose one or more locations, with a permanent lodge/camp in between mobile stays. Your private mobile camp is relocated during this time.</p>
+
+<p style="color:#517390;font-size:14px;">Dining</p
+><p>Some of the finest in Africa: your personal chef never ceases to surprise with original recipes and only the freshest ingredients used to create camp cuisine from the well-equipped bush kitchen. Whilst you are camping, all meals, beverages (except Champagne and premium spirits) are included.</p>
+
+<p style="color:#517390;font-size:14px;">Tents</p>
+<p>All our large East African style custom-made walk-in tents are light, airy and spacious, with en suite bathrooms. They are tastefully appointed with twin or king beds, mosquito nets, crisp linen, warm blankets or duvets and hot water bottles for chilly nights. Framed pictures and local wall-hangings, Persian rugs, bedside tables, wardrobes and luggage racks make your tent a true 'home away from home'. Lighting is solar powered and the bathroom comes complete with a dressing table and fully-plumbed washbasin, toilet and shower. Hot water is available throughout the day and evening.  Laundry, morning tea - in fact, your every need - will be taken care of by your personal attendant.
+</p>
+
+<p style="color:#517390;font-size:14px;">Transport</p>
+<p>You will travel in a custom-built 4WD LandCruiser with guaranteed window seats and access to photographic roof hatches, driven by an accomplished driver/guide.</p> <p><strong>Speak to a consultant on +91 11 46001600 or <a href="mailto:privatetravel@abercrombiekent.co.in">click here</a> to send an email.</strong></p>
+<div><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/mobile_camping_lowres.pdf" class="downloadpdf" rel="facebox"><img src="../images/pdf_icon.png" alt="PDF" />The Classic Tented Safari - Mobile Camping in East Africa brochure</a></div>
+</div>
+
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
