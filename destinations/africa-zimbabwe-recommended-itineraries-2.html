@@ -28,24 +28,24 @@ include("../classes/mimemail.class.php");
 <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
 <script language="javascript">
     function showMe(tab)
-    {		
+    {
 	for(var i=1; i<=16; i++)
 	{
             var name="tab"+i;
             var name2="divli"+i;
             if(tab==i)
             {
-                
-	        if(document.getElementById(name2) != null)	
+
+	        if(document.getElementById(name2) != null)
                 {
                     document.getElementById(name2).className="active";
                 }
-                
-                if(document.getElementById(name) != null)	
+
+                if(document.getElementById(name) != null)
                 {
                     document.getElementById(name).style.display="block";
                 }
-                
+
                 if(name == 'tab4'){
                     $(document).ready(function(){
                         gmapInitialize();
@@ -67,20 +67,20 @@ include("../classes/mimemail.class.php");
                     });
 		}
             }
-            
+
             else
             {
-                if(document.getElementById(name2) != null)	
+                if(document.getElementById(name2) != null)
                 {
                     document.getElementById(name2).className="";
                 }
-                
-                if(document.getElementById(name) != null)	
+
+                if(document.getElementById(name) != null)
                 {
                     document.getElementById(name).style.display="none";
                 }
             }
-            
+
 	}
     }
 </script>
@@ -131,9 +131,9 @@ function CallPrint(strid)
 <span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
 
 
-<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false"
 href="../yahoo.html">
-                 
+
      <img src="../images/livechaticon.png" alt="live chat" /></a>
      <SCRIPT language=JavaScript type=text/JavaScript>
 
@@ -196,12 +196,12 @@ href="../yahoo.html">
         <h5><a href="africa.html">Africa</a></h5>
         <ul>
           <li><a href="africa-kenya.html" title="kenya">+ Kenya</a>
-            
+
           </li>
           <li><a href="africa-tanzania.html" title="Tanzania"><span>+</span> Tanzania</a></li>
 		  <li><a href="africa-uganda.html" title="Uganda"><span>+</span> Uganda</a></li>
 		  <li><a href="africa-southafrica.html" title="South Africa"><span>+</span> South Africa</a></li>
-		  <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a></li>  
+		  <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a></li>
           <li><a href="africa-zimbabwe.html" title="Zimbabwe"><span>-</span> Zimbabwe</a>
           <ul> <li><a href="africa-zimbabwe.html" title="Introduction to zimbabwe"><span>-</span> Introduction to Zimbabwe</a></li>
               <li><a href="africa-zimbabwe-highlights.html" title="Highlights"><span>- </span>Highlights</a></li>
@@ -217,10 +217,10 @@ href="../yahoo.html">
               <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>               <li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
             </ul>
           </li>
-                 
+
           </li>
           <li><a href="africa-zambia.html" title="Zambia" ><span>+</span> Zambia</a><li><a href="africa-rwanda.html" title="Rwanda">+  Rwanda</a></li>
-<li><a href="africa-namibia.html" title="Namibia"><span>+</span> Namibia</a></li>  
+<li><a href="africa-namibia.html" title="Namibia"><span>+</span> Namibia</a></li>
           </li> </ul>
           <h4>CHOOSE YOUR STYLE</h4>
     <select onChange="ChangeValue(this)">
@@ -267,10 +267,10 @@ href="../yahoo.html">
 </div>
 <p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
 
-<div class="count-page"> 
+<div class="count-page">
 <a href="africa-zimbabwe-recommended-itineraries.html"> Prev > </a>|
-<a href="africa-zimbabwe-recommended-itineraries.html">1</a> | 
-<a href="africa-zimbabwe-recommended-itineraries-2.html"><b>2</b></a> 
+<a href="africa-zimbabwe-recommended-itineraries.html">1</a> |
+<a href="africa-zimbabwe-recommended-itineraries-2.html"><b>2</b></a>
 </div>
 
 <div class="Clr"></div>
@@ -343,8 +343,8 @@ time visitors to Zimbabwe.</p>
 
 <div class="count-page">
 <a href="africa-zimbabwe-recommended-itineraries.html"> Prev > </a>|
-<a href="africa-zimbabwe-recommended-itineraries.html">1</a> | 
-<a href="africa-zimbabwe-recommended-itineraries-2.html"><b>2</b></a>  
+<a href="africa-zimbabwe-recommended-itineraries.html">1</a> |
+<a href="africa-zimbabwe-recommended-itineraries-2.html"><b>2</b></a>
 </div>
 </div>
 <!-- Center Container Part End Here -->
@@ -492,7 +492,7 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Classic Zimbabwe Safari"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="classic-zimbabwe-safari.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -505,7 +505,7 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Classic Zimbabwe Safari"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <?php include("../quote1.php");?>
@@ -520,7 +520,7 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 </div>
 </div>
 
-</div>   
+</div>
 </div>
 <!-- Classic Zimbabwe Safari end -->
 <!--  Deluxe Zimbabwe Stars -->
@@ -643,7 +643,7 @@ River.</p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Deluxe Zimbabwe"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="deluxe-zimbabwe.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -656,7 +656,7 @@ River.</p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Deluxe Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <?php include("../quote1.php");?>
@@ -671,7 +671,7 @@ River.</p>
 </div>
 </div>
 
-</div>   
+</div>
 </div>
 <!--  Deluxe Zimbabwe end -->
 <!--  Ultimate Zimbabwe Stars -->
@@ -837,7 +837,7 @@ village.</p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Ultimate Zimbabwe"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="ultimate-zimbabwe.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -850,7 +850,7 @@ village.</p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Ultimate Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <?php include("../quote1.php");?>
@@ -865,70 +865,13 @@ village.</p>
 </div>
 </div>
 
-</div>   
+</div>
 </div>
 <!--  Ultimate Zimbabwe end -->
-<!-- Wings over Zambia & Zimbabwe Stars -->
-<div id="popup4" class="popup_block">
-<div class="popupbox">
-<div class="popupcontainer">
-<div class="popuplefnav">
-<ul>
-<li id="divli13"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
-<li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli14"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli15"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli16"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Wings-Over-Zambia-Zimbabwe.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
-</ul>
-</div>
 
-<div class="popuprightcontainer">
-<div class="popupheader">
-<div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
-</div>
-
-
-<div id="tab14" style="display:none;">
-<h1>Send itinerary</h1>
-<?php $id=4; ?>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
-<input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
-<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Wings-Over-Zambia-Zimbabwe.pdf"/>
-<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php include("../itinerary.php");?>
-</form>
-</div>
-
-<div id="tab15" style="display:none;">
-<h1>Request a quote</h1>
-<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
-<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
-
-<?php include("../quote1.php");?>
-</form>
-</div>
-
-<div id="tab16" style="display:none;">
-<iframe width="625" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-
-<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
-</div>
-</div>
-</div>
-
-</div>   
-</div>
-<!-- Wings over Zambia & Zimbabwe end -->
 <script language="javascript1.1" type="text/javascript">
 function ChangeValue(val)
-{ 
+{
   if(val.value != "0")
   {
     window.open(val.value,"_self");

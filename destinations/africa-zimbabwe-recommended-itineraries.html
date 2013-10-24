@@ -28,24 +28,24 @@ include("../classes/mimemail.class.php");
 <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
 <script language="javascript">
     function showMe(tab)
-    {		
+    {
 	for(var i=1; i<=16; i++)
 	{
             var name="tab"+i;
             var name2="divli"+i;
             if(tab==i)
             {
-                
-	        if(document.getElementById(name2) != null)	
+
+	        if(document.getElementById(name2) != null)
                 {
                     document.getElementById(name2).className="active";
                 }
-                
-                if(document.getElementById(name) != null)	
+
+                if(document.getElementById(name) != null)
                 {
                     document.getElementById(name).style.display="block";
                 }
-                
+
                 if(name == 'tab4'){
                     $(document).ready(function(){
                         gmapInitialize();
@@ -67,20 +67,20 @@ include("../classes/mimemail.class.php");
                     });
 		}
             }
-            
+
             else
             {
-                if(document.getElementById(name2) != null)	
+                if(document.getElementById(name2) != null)
                 {
                     document.getElementById(name2).className="";
                 }
-                
-                if(document.getElementById(name) != null)	
+
+                if(document.getElementById(name) != null)
                 {
                     document.getElementById(name).style.display="none";
                 }
             }
-            
+
 	}
     }
 </script>
@@ -131,8 +131,8 @@ function CallPrint(strid)
 <span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
 
 
-<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
-href="../yahoo.html">                 
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false"
+href="../yahoo.html">
      <img src="../images/livechaticon.png" alt="live chat" /></a>
      <SCRIPT language=JavaScript type=text/javaScript>
 
@@ -195,12 +195,12 @@ href="../yahoo.html">
         <h5><a href="africa.html">Africa</a></h5>
         <ul>
           <li><a href="africa-kenya.html" title="kenya">+ Kenya</a>
-            
+
           </li>
           <li><a href="africa-tanzania.html" title="Tanzania"><span>+</span> Tanzania</a></li>
 		  <li><a href="africa-uganda.html" title="Uganda"><span>+</span> Uganda</a></li>
 		  <li><a href="africa-southafrica.html" title="South Africa"><span>+</span> South Africa</a></li>
-		  <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a></li>  
+		  <li><a href="africa-botswana.html" title="Botswana"><span>+</span> Botswana</a></li>
           <li><a href="africa-zimbabwe.html" title="Zimbabwe"><span>-</span> Zimbabwe</a>
           <ul> <li><a href="africa-zimbabwe.html" title="Introduction to zimbabwe"><span>-</span> Introduction to Zimbabwe</a></li>
               <li><a href="africa-zimbabwe-highlights.html" title="Highlights"><span>- </span>Highlights</a></li>
@@ -216,10 +216,10 @@ href="../yahoo.html">
               <li><a href="../journeystyles/celebration.html" title="Celebrations "><span>-</span> Celebrations</a></li>               <li><a href="../journeystyles/private-journeys.html" title="Private journey"><span>-</span> Private journey</a></li>
             </ul>
           </li>
-                 
+
           </li>
           <li><a href="africa-zambia.html" title="Zambia" ><span>+</span> Zambia</a><li><a href="africa-rwanda.html" title="Rwanda">+  Rwanda</a></li>
-<li><a href="africa-namibia.html" title="Namibia"><span>+</span> Namibia</a></li>  
+<li><a href="africa-namibia.html" title="Namibia"><span>+</span> Namibia</a></li>
           </li> </ul>
           <h4>CHOOSE YOUR STYLE</h4>
     <select onChange="ChangeValue(this)">
@@ -267,7 +267,7 @@ href="../yahoo.html">
 <p><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p>
 <div class="Clr"></div>
 
-<div class="count-page"> 
+<div class="count-page">
 <a href="africa-zimbabwe-recommended-itineraries.html"><strong>1</strong></a> |
 <a href="africa-zimbabwe-recommended-itineraries-2.html">2</a> |
 <a href="africa-zimbabwe-recommended-itineraries-2.html"> Next > </a> </div>
@@ -359,9 +359,9 @@ Victoria Falls Safari Club</p>
 
 <div class="Clr"></div>
 
-<div class="count-page"> 
-<a href="africa-zimbabwe-recommended-itineraries.html"><strong>1</strong></a> | 
-<a href="africa-zimbabwe-recommended-itineraries-2.html">2</a> | 
+<div class="count-page">
+<a href="africa-zimbabwe-recommended-itineraries.html"><strong>1</strong></a> |
+<a href="africa-zimbabwe-recommended-itineraries-2.html">2</a> |
 <a href="africa-zimbabwe-recommended-itineraries-2.html"> Next > </a>
 </div>
 </div>
@@ -395,7 +395,7 @@ Victoria Falls Safari Club</p>
 <div id="tab1">
 
 <h1>Hwange Victoria Falls Zimbabwe</h1>
-<div class="popupbanner"><img src="../images/Hwange-victoria-falls.jpg" alt="Hwange Victoria Falls" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+<div class="popupbanner"><img src="../images/Hwange-victoria-falls.jpg" alt="Hwange Victoria Falls Zimbabwe" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
 
 <h3>Programme Overview</h3>
 <ul class="itinerarylist">
@@ -478,7 +478,7 @@ Victoria Falls Safari Club</p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Hwange Victoria Falls Zimbabwe"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="HWANGE-VICTORIA-FALLS-ZIMBABWE.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -491,7 +491,7 @@ Victoria Falls Safari Club</p>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Hwange Victoria Falls Zimbabwe"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <?php include("../quote1.php");?>
@@ -506,7 +506,7 @@ Victoria Falls Safari Club</p>
 </div>
 </div>
 
-</div>   
+</div>
 </div>
 <!--  HWANGE-VICTORIA-FALLS-ZIMBABWE  end -->
 <!--  IMBABALA VICTORIA FALLS Zimbabwe Stars -->
@@ -602,7 +602,7 @@ Steeped in History, the Victoria Falls Tram Bridge Tours are a unique journey in
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Imbabala Victoria Falls Zimbabwe"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="IMBABALA-VICTORIA-FALLS-ZIMBABWE.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -630,7 +630,7 @@ Steeped in History, the Victoria Falls Tram Bridge Tours are a unique journey in
 </div>
 </div>
 
-</div>   
+</div>
 </div>
 <!--  IMBABALA-VICTORIA-FALLS-ZIMBABWE end -->
 <!-- THE-HIDE-IMBABALA-VFS-CLUB-ZIMBABWE Stars -->
@@ -740,7 +740,7 @@ Steeped in History, the Victoria Falls Tram Bridge Tours are a unique journey in
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Zimbabwe"/>
 <input type="hidden" name="region_email" id="region_email" value="Africa"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="Wings Over Zambia Zimbabwe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The hide imbabala vfs club zimbabwe"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="THE-HIDE-IMBABALA-VFS-CLUB-ZIMBABWE.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
@@ -753,7 +753,7 @@ Steeped in History, the Victoria Falls Tram Bridge Tours are a unique journey in
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Africa"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="THE HIDE-IMBABALA-VFS CLUB ZIMBABWE"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="THE HIDE IMBABALA VFS CLUB ZIMBABWE"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <?php include("../quote1.php");?>
@@ -768,7 +768,7 @@ Steeped in History, the Victoria Falls Tram Bridge Tours are a unique journey in
 </div>
 </div>
 
-</div>   
+</div>
 </div>
 <!--  THE HIDE-IMBABALA-VFS CLUB ZIMBABWE end -->
 <!-- Wings over Zambia & Zimbabwe Stars -->
@@ -878,12 +878,12 @@ Steeped in History, the Victoria Falls Tram Bridge Tours are a unique journey in
 </div>
 </div>
 
-</div>   
+</div>
 </div>
 <!-- Wings over Zambia & Zimbabwe end -->
 <script language="javascript1.1" type="text/javascript">
 function ChangeValue(val)
-{ 
+{
   if(val.value != "0")
   {
     window.open(val.value,"_self");
