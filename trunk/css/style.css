@@ -721,7 +721,7 @@ tab accordain
 
 
 div.pdf_button {
-    background: transparent url('../images/btns/btn-gray-right.png') no-repeat scroll top right;
+    background: transparent url('../images/btns/btn-gray-rights.png') no-repeat scroll top right;
     display: block;
     float: left;
     height: 30px;
@@ -747,4 +747,74 @@ div.pdf_button a {
          padding:5px;
          margin-bottom: 5px;
          float: left;
+}
+
+
+		.enquire .button-container {
+float: left;
+margin-top: 0;
+}
+
+
+a.default-button.blue-button {
+background-image: url('../images/btns/btn-blue-right.png');
+}
+
+a.default-button {
+background: transparent url('../images/btns/btn-gray-right.png') no-repeat scroll top right;
+font-size: 11px;
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+display: block;
+float: left;
+height: 30px;
+margin-right: 6px;
+padding-right: 20px;
+text-decoration: none;
+}
+
+a.default-button:hover {
+background-position: bottom right;
+color: #fff;
+outline: none;
+}
+
+a.default-button span {
+background: transparent url('../images/btns/btn-gray-left.png') no-repeat;
+display: block;
+line-height: 19px;
+padding: 6px 0 5px 20px;
+}
+
+a.default-button:hover span {
+background-position: bottom left;
+}
+
+
+a.default-button.blue-button span {
+background-image: url('../images/btns/btn-blue-left.png');
+}
+
+span.span_call {
+border-left: solid 1px #85888d;
+}
+
+
+span.span_call strong {
+font-weight: bold;
+font-size: 145%;
+}
+
+
+
+span.span_call, span.span_chat {
+font-size: 91%;
+float: left;
+display: block;
+height: 30px;
+line-height: 15px;
+padding: 0 0 0 10px;
+margin: 0 0 0 10px;
+color: #85888d;
 }
