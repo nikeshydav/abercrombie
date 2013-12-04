@@ -1,0 +1,315 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="Best Honeymoon Destination, Perfect Honeymoon Destination, Romantic Places"/>
+<meta name="description" content="Find perfect luxury honeymoon destination for romantic couples and enjoy your dream holidays in a memorable destination. A&amp;K helps you to relish inspiring journeys, customized to your individual interests and needs." />
+<title>Best Luxury Honeymoon Destination Holidays - A&amp;K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--pop up-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+    function showMe(tab)
+    {
+
+        for(var i=1; i<=16; i++){
+            var name="tab"+i;
+            var name2="divli"+i;
+            if(tab==i)
+            {
+
+                if(document.getElementById(name2) != null)
+                {
+                    document.getElementById(name2).className="active";
+                }
+                if(document.getElementById(name) != null)
+                {
+                    document.getElementById(name).style.display="";
+                }
+                if(name == 'tab4'){
+                    $(document).ready(function(){
+                        gmapInitialize();
+                    });
+		}
+		if(name == 'tab8'){
+                    $(document).ready(function(){
+                        gmapInitialize1();
+                    });
+		}
+		if(name == 'tab12'){
+                    $(document).ready(function(){
+                        gmapInitialize2();
+                    });
+		}
+		if(name == 'tab16'){
+                    $(document).ready(function(){
+                        gmapInitialize3();
+                    });
+		}
+            } else {
+                if(document.getElementById(name2) != null)
+                {
+                    document.getElementById(name2).className="";
+                }
+
+                if(document.getElementById(name) != null)
+                {
+                    document.getElementById(name).style.display="none";
+                }
+            }
+	}
+    }
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--pop up-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false"
+href="../yahoo.html">
+
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/honeymoon/honeymoon-banners1.jpg" alt="Best Honeymoon Destination" width="959" height="300" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
+<li><a href="honeymoon.html">Honeymoon</a></li>
+<li><a href="honeymoon-recommended-itineraries-introduction.html">Recommended Itineraries</a></li>
+</ul>
+</div>
+<div class="LeftList">
+ <h5><a href="honeymoon.html">Honeymoon</a></h5>
+
+		 <ul>
+              <li><a href="honeymoon.html" title="Introduction to Honeymoon"> Introduction to Honeymoon</a></li>
+              <li><a href="honeymoon-recommended-itineraries-introduction.html" title="Recommended Itineraries">Recommended Itineraries</a>
+             </li>
+              <li><a href="africa-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Africa</a></li>
+             <li><a href="east-north-africa-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Middle East & North Africa</a></li>
+             <li><a href="europe-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Europe</a></li>
+             <li><a href="australasia-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Australasia</a></li>
+             <li><a href="theorient-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - The Orient</a></li>
+             <li><a href="south-america-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - South America</a></li>
+             <li><a href="central-america-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Central America</a></li>
+              <li><a href="north-america-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - North America</a></li>
+               <li><a href="beach-island-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Beach & Island Escapes</a></li>
+                <li><a href="antarctica-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Antarctica</a></li>
+                 <li><a href="arctic-honeymoon-recommended-itineraries.html" title="Introduction to Honeymoon"> &nbsp;&nbsp; - Arctic</a></li>
+              <li><a href="honeymoon-hotelportfolio.html" title="Hotel Portfolio">Hotel Portfolio</a></li>
+              <li><a href="honeymoon-special-offers.html" title="Special Offers">Special Offers</a></li>
+            </ul>
+
+
+        <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+    	  <option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+          <option value="../journeystyles/extreme-adventures.html">Extreme Adventures</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option> <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+                 <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Tailor Made Luxury Honeymoon Itineraries</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+
+<div align="left">
+<div class="boldtext_for_thailand">Please Choose a Luxury Honeymoon Itineraries</div>
+<div class="Clr"></div>
+<select name="select" class="choose" onchange="ChangeValue(this)">
+<option selected="selected" value="0" >--Please Select--</option>
+<option value="africa-honeymoon-recommended-itineraries.html">Africa  </option>
+<option value="east-north-africa-honeymoon-recommended-itineraries.html">Middle East & North Africa  </option>
+<option value="europe-honeymoon-recommended-itineraries.html">Europe </option>
+<option value="australasia-honeymoon-recommended-itineraries.html">Australasia  </option>
+<option value="theorient-honeymoon-recommended-itineraries.html">The Orient </option>
+<option value="south-america-honeymoon-recommended-itineraries.html">South America  </option>
+<option value="central-america-honeymoon-recommended-itineraries.html">Central America</option>
+<option value="north-america-honeymoon-recommended-itineraries.html">North America</option>
+<option value="beach-island-honeymoon-recommended-itineraries.html">Beach & Island Escapes</option>
+<option value="antarctica-honeymoon-recommended-itineraries.html">Antarctica</option>
+<option value="arctic-honeymoon-recommended-itineraries.html">Arctic</option>
+
+
+</select>
+</div>
+
+
+<div class="count-page">
+<a href="europe-honeymoon-recommended-itineraries.html"> < Prev </a>
+<a href="europe-honeymoon-recommended-itineraries.html">1</a> |
+<a href="europe-honeymoon-recommended-itineraries-2.html"><strong>2</strong></a> 
+</div>
+<div class="Clr"></div>
+
+
+
+
+
+<div class="Clr"></div>
+<div class="count-page">
+<a href="europe-honeymoon-recommended-itineraries.html"> < Prev </a>
+<a href="europe-honeymoon-recommended-itineraries.html">1</a> |
+<a href="europe-honeymoon-recommended-itineraries-2.html"><strong>2</strong></a> 
+</div>
+</div>
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+<!--  Europe Honeymoon Exclusives Start Here -->
+
+
+
+
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
