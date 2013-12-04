@@ -820,3 +820,8 @@ color: #85888d;
 }
 
 .img2{ float:right; padding-top:175px; padding-right:252px;}
+
+#formcontainer{background:#ebebeb;padding:5px;}
+#formcontainer input{display:block;height:15px;font-size:11px;width:90%}
+#formcontainer textarea{display:block;height:50px;font-size:11px;width:90%}
+#formcontainer  #submit{background:url("../images/enter.jpg") no-repeat;border:0px;height:20px;text-indent:-2000px; width:50px;float:right;margin-top:10px}
