@@ -22,7 +22,7 @@ Thanks,
 $headers = "From: $name";
 $flgSend = @mail($to, $subject, $message, $headers);
 if($flgSend){
-	echo "<div class='thank1'><p>Thank you for showing your interest. Our advisors will revert you shortly</p></div>";
+	echo "<div class='thank1'><h1>Thank you for showing your interest. Our advisors will revert you shortly</h1></div>";
 }else{
 	echo "Mail Not Send";
 }
