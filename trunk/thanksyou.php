@@ -11,7 +11,7 @@
  $email=$_POST['email'];
  $phone=$_POST['phone'];
  $query=$_POST['query'];
-$to =  'manish@dakshsoftwares.in';
+$to =  'privatetravel@abercrombiekent.co.in';
 $subject = 'Mail from Abercrombiekent';
 $message = 'Name : '.$name.'
 Email : '.$email.'
