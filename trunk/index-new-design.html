@@ -181,12 +181,87 @@ include("classes/mimemail.class.php");
 			
 			<div id="formcontainer">
             <h2 style="font-size:11px;font-weight:bold">Looking for a perfect holiday?</h2>
-            Name<input type="">            
-            Email<input type="">
-            Telephone<input type="">
-            Query<textarea></textarea>
-            <input name="" type="submit" id="submit"><br>
+            <script>
+//                function validateForm(f)
+//                {
+//                    if(f.name.value=='')
+//                        {
+//                            alert("Please Enter Name");
+//                            return false;
+//                        }
+//                        if(f.email.value=='')
+//                        {
+//                            alert("Please Enter Email");
+//                            return false;
+//                        }
+//                        if(f.phone.value=='')
+//                        {
+//                            alert("Please Enter Phone No.");
+//                            return false;
+//                        }
+//                         if(f.query.value=='')
+//                        {
+//                            alert("Please Enter Query");
+//                            return false;
+//                        }
+//                }
 
+$(function() {
+                                $('#mymailingform').submit(function(){
+                                    var myContent = $(this).serialize();                               
+                                    
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "thanksyou.php",
+                                        data: myContent,
+                                        success: function(result){
+                                            $("#mymailingform").html(result);
+                                            //alert("Your mail was sent")
+                                        }
+                                    });
+                                   return false;
+                                });
+                                
+                $('#submit').click(function() {
+		var name = $('#name').val();
+		var email = $('#email').val();
+                var phone = $('#phone').val();
+		              
+		var pattern_email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                var mob = /(\+91-?|0)?\d{8}/;
+		if (name == "") {
+			alert("Please enter name");
+			return false;
+		};
+                 if (email == "") {
+			alert("Please enter email");
+			return false;
+		};
+                if (!pattern_email.test(email)) {
+			alert("Please enter valid email");
+			return false;
+		};
+                if (phone == "") {
+			alert("Please enter Phone No.");
+			return false;
+		};
+                if (mob.test($.trim(phone)) == false) {
+			alert("Please enter valid phone number");
+			return false;
+		}
+				
+	});
+                                
+                            });
+            </script>
+
+            <form action='' method="post" onsubmit="return validateForm(this)" id="mymailingform">
+                Name<input type="text" name="name" id="name">            
+                Email<input type="text" name="email" id="email">
+                Telephone<input type="text" name="phone" id="phone">
+                Query<textarea name="query"></textarea>
+                <input name="submit" type="submit" id="submit"><br>
+            </form>
             <br/>
 			</div> <!-- Form Container -->
 			
