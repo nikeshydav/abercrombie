@@ -1,5 +1,10 @@
 <style>
-.thank1{width: 275px; margin: 34px 0px 0px 30px;  font-size:17px; font-family: 'FolksRegular';}
+.thank1 {
+    font-family: 'FolksRegular';
+    font-size: 17px;
+    margin: 10px 0 0 14px;
+    width: 184px;
+}
 </style>
 <?php
  $name=$_POST['name'];
@@ -19,5 +24,5 @@ $flgSend = @mail($to, $subject, $message, $headers);
 if($flgSend){
 	echo "<div class='thank1'><p>Thank you for showing your interest. Our advisors will revert you shortly</p></div>";
 }else{
-	echo "";
+	echo "Mail Not Send";
 }

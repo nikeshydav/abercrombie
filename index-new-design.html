@@ -181,32 +181,8 @@ include("classes/mimemail.class.php");
 			
 			<div id="formcontainer">
             <h2 style="font-size:11px;font-weight:bold">Looking for a perfect holiday?</h2>
-            <script>
-//                function validateForm(f)
-//                {
-//                    if(f.name.value=='')
-//                        {
-//                            alert("Please Enter Name");
-//                            return false;
-//                        }
-//                        if(f.email.value=='')
-//                        {
-//                            alert("Please Enter Email");
-//                            return false;
-//                        }
-//                        if(f.phone.value=='')
-//                        {
-//                            alert("Please Enter Phone No.");
-//                            return false;
-//                        }
-//                         if(f.query.value=='')
-//                        {
-//                            alert("Please Enter Query");
-//                            return false;
-//                        }
-//                }
-
-$(function() {
+            <script> 
+                $(function() {
                                 $('#mymailingform').submit(function(){
                                     var myContent = $(this).serialize();                               
                                     
@@ -255,7 +231,7 @@ $(function() {
                             });
             </script>
 
-            <form action='' method="post" onsubmit="return validateForm(this)" id="mymailingform">
+            <form action='' method="post" id="mymailingform">
                 Name<input type="text" name="name" id="name">            
                 Email<input type="text" name="email" id="email">
                 Telephone<input type="text" name="phone" id="phone">
