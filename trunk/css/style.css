@@ -825,3 +825,5 @@ color: #85888d;
 #formcontainer input{display:block;height:15px;font-size:11px;width:90%}
 #formcontainer textarea{display:block;height:50px;font-size:11px;width:90%}
 #formcontainer  #submit{background:url("../images/enter.jpg") no-repeat;border:0px;height:20px;text-indent:-2000px; width:50px;float:right;margin-top:10px}
+#formcontainer {background: #ebebeb;padding: 5px;height: 254px;}
+ 
