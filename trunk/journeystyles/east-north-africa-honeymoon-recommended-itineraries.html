@@ -512,7 +512,7 @@ The services of an Abercrombie & Kent Representative
                                                     <?php $id =3;?>
                                                     <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
                                                         <input type="hidden" name="country_email" id="country_email" value="Morocco"/>
-                                                        <input type="hidden" name="region_email" id="region_email" value="Egypt"/>
+                                                        <input type="hidden" name="region_email" id="region_email" value="North-Africa"/>
                                                         <input type="hidden" name="itineraries_email" id="itineraries_email" value="ROMANTIC MOROCCO"/>
                                                         <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="romantic_morocco_kasbahs.pdf"/>
                                                         <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
@@ -527,7 +527,7 @@ The services of an Abercrombie & Kent Representative
 
                                                     <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
                                                         <input type="hidden" name="country_quote" id="country_quote" value="Morocco"/>
-                                                        <input type="hidden" name="region_quote" id="region_quote" value="Egypt"/>
+                                                        <input type="hidden" name="region_quote" id="region_quote" value="North-Africa"/>
                                                         <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="ROMANTIC MOROCCO"/>
                                                         <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
@@ -774,7 +774,7 @@ The services of an Abercrombie & Kent Representative
                                                                     <?php $id=2;?>
                                                                     <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
                                                                         <input type="hidden" name="country_email" id="country_email" value="Morocco"/>
-                                                                        <input type="hidden" name="region_email" id="region_email" value="Egypt"/>
+                                                                        <input type="hidden" name="region_email" id="region_email" value="North-Africa"/>
                                                                         <input type="hidden" name="itineraries_email" id="itineraries_email" value="LUXURY HONEYMOON IN MOROCCO RED GREEN & BLUE"/>
                                                                         <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="luxury_honeymoon_red_green_and_blue.pdf"/>
                                                                         <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
@@ -789,7 +789,7 @@ The services of an Abercrombie & Kent Representative
 
                                                                     <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
                                                                         <input type="hidden" name="country_quote" id="country_quote" value="Morocco"/>
-                                                                        <input type="hidden" name="region_quote" id="region_quote" value="Egypt"/>
+                                                                        <input type="hidden" name="region_quote" id="region_quote" value="North-Africa"/>
                                                                         <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="LUXURY HONEYMOON IN MOROCCO RED GREEN & BLUE"/>
                                                                         <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
@@ -1050,7 +1050,7 @@ Evening, you can experience a special private massage session in one of the hidd
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="TURKEY"/>
-<input type="hidden" name="region_email" id="region_email" value="Egypt"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="TURKEY: TURKISH DELIGHT"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="turkey_turkish_delight.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
@@ -1065,7 +1065,7 @@ Evening, you can experience a special private massage session in one of the hidd
 
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="TURKEY"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Egypt"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="TURKEY: TURKISH DELIGHT"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
@@ -1202,7 +1202,7 @@ Evening, you can experience a special private massage session in one of the hidd
 </div>
 <!-- Morocco: Land of the Kasbahs End Here -->
 
-<!-- Egypt: Love on the Nile Start Here -->
+<!-- Egypt: Love on the Nile Start Here 
 <div id="popup3" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -1300,7 +1300,7 @@ Evening, you can experience a special private massage session in one of the hidd
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
 <p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
-<?php include("../itinerary.php");?>
+<?php //include("../itinerary.php");?>
 </form>
 </div>
 
@@ -1312,7 +1312,7 @@ Evening, you can experience a special private massage session in one of the hidd
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Egypt Love on the Nile"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
-<?php include("../quote1.php");?>
+<?php //include("../quote1.php");?>
 </form>
 </div>
 
@@ -1426,7 +1426,7 @@ $(window).unload(function(){
 
 </div>
 </div>
-<!-- Egypt: Love on the Nile End Here -->
+Egypt: Love on the Nile End Here -->
 
 <script language="javascript1.1" type="text/javascript">
 function ChangeValue(val)
