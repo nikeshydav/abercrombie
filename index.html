@@ -2,7 +2,7 @@
 include("config.php");
 include("classes/mimemail.class.php");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 	<title>Abercrombie and Kent Luxury Holidays Travels | A&K India</title>
@@ -158,20 +158,16 @@ include("classes/mimemail.class.php");
 
 			    <div id="example1">
 				<div style="position: relative;" class="effectContainer">
-                <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"><a href="destinations/australian-open-packages.html" style="border:0;"><img src="images/home-banner/honeymoon- banner-australian.jpg" border="0" alt="Australia Open Package 2014 " /> </a></div>
-                                     <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/thailand-special-offers.html" style="border:0;"><img src="images/home-banner/exclusive-thailand-special-offers.jpg" border="0" alt="Exclusive Thailand special offers" /> </a> </div>
-				    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/antartica-travel.html" style="border:0;"><img src="images/home-banner/antarctica-banner.jpg" border="0" alt="Antarctica Travel" /> </a> </div>
-				    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="journeystyles/private-jet.html"><img src="images/home-banner/private-jet-africa-a.jpg" alt="Africa private jet travel" /></a></div>
-				    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="journeystyles/honeymoon-recommended-itineraries-introduction.html"><img src="images/home-banner/honeymoon-banner.jpg"  border="0" alt="Romantic Honeymoon Europe" /></a> </div>
-				    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/africa-tanzania-special-offers.html"><img src="images/home-banner/tanzania-speacial-offer.jpg" border="0" alt="Tanzania Climb Mt.Kilimanjaro" /></a> </div>
-				    <!--<div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2">
-				    <a href="destinations/beach-island-escapes-mauritius-special-offers.html"><img src="images/home-banner/mauritius-banner3.jpg" alt="Mauritius"></a>
-				</div>-->
-				    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/beach-island-escapes-maldives-special-offers.html"> <img src="images/home-banner/maldives-banner4.jpg" alt="Luxury Maldives Holiday" /></a> </div>
-				    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="journeystyles/family-holidays-itineraries.html"> <img src="images/home-banner/family-holidays-banner.jpg" alt="Luxury Family holiday" /></a> </div>
+                
+                                    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="journeystyles/private-jet.html"><img src="images/home-banner/africa.jpg" alt="Africa Private Jet Travel" /></a></div>
+                                    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/antartica-travel.html" style="border:0;"><img src="images/home-banner/antarica.jpg" border="0" alt="Antarctica Travel " /> </a> </div>
+                                    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/cambodia-recommended-itineraries.html" style="border:0;"><img src="images/home-banner/cambodia.jpg" border="0" alt="Cambodia Travel  " /> </a> </div>
+                                    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="journeystyles/africa-honeymoon-recommended-itineraries.html"><img src="images/home-banner/honeymoon_final.jpg" alt="Luxury Honeymoon" /></a></div>
+                                    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/myanmar-recommended-itineraries.html" style="border:0;"><img src="images/home-banner/myanmar.jpg" border="0" alt="Myanmar Travel  " /> </a> </div>
+                                    <div style="left: 0px; top: 0px; position: absolute; opacity: 1; display: none;" class="slide r2"> <a href="destinations/south-america-peru-recommended-itineraries.html"><img src="images/home-banner/peru.jpg" alt="Peru Tour" /></a></div>
                                     
-                                </div>
-			    </div>
+				</div
+			    ></div>
 
 			</div>
 		    </div>
@@ -182,22 +178,71 @@ include("classes/mimemail.class.php");
 		<div id="Container">
 		    <!-- Left Container Part Start Here -->
 		    <div class="LeftContaner">
-                        <p>
-                            <form method="post" style="background:#EBEBEB;">
-                              <table width="200" border="0" >
-                                <tr>
-                                  <td style="color:#022B4B; font-size:12; font-family:Arial, Helvetica, sans-serif;"><strong>Looking For A Perfect Holiday ?</strong></td>
-                                </tr>
-                                <tr>
-                                  <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                  <td>&nbsp;</td>
-                                </tr>
-                              </table>
-                            </form>
-                        </p>
-			<div class="LeftList">
+			
+			<div id="formcontainer">
+            <h2 style="font-size:11px;font-weight:bold">Looking for a perfect holiday?</h2>
+            <script> 
+                $(function() {
+                                $('#mymailingform').submit(function(){
+                                    var myContent = $(this).serialize();                               
+                                    
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "thanksyou.php",
+                                        data: myContent,
+                                        success: function(result){
+                                            $("#mymailingform").html(result);
+                                            //alert("Your mail was sent")
+                                        }
+                                    });
+                                   return false;
+                                });
+                                
+                $('#submit').click(function() {
+		var name = $('#name').val();
+		var email = $('#email').val();
+                var phone = $('#phone').val();
+		              
+		var pattern_email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                var mob = /(\+91-?|0)?\d{8}/;
+		if (name == "") {
+			alert("Please enter name");
+			return false;
+		};
+                 if (email == "") {
+			alert("Please enter email");
+			return false;
+		};
+                if (!pattern_email.test(email)) {
+			alert("Please enter valid email");
+			return false;
+		};
+                if (phone == "") {
+			alert("Please enter Phone No.");
+			return false;
+		};
+                if (mob.test($.trim(phone)) == false) {
+			alert("Please enter valid phone number");
+			return false;
+		}
+				
+	});
+                                
+                            });
+            </script>
+
+            <form action='' method="post" id="mymailingform">
+                Name<input type="text" name="name" id="name">            
+                Email<input type="text" name="email" id="email">
+                Telephone<input type="text" name="phone" id="phone">
+                Query<textarea name="query"></textarea>
+                <input name="submit" type="image" id="submit"><br>
+            </form>
+            <br/>
+			</div> <!-- Form Container -->
+			
+			
+			<div class="LeftList" style="margin-top:14px;">
 			    <h4><a href="destinations/destinations.html">TRAVEL Destinations</a></h4>
 			    <ul>
 				<li><a href="destinations/africa.html" title="Africa">Africa</a></li>
@@ -237,20 +282,11 @@ include("classes/mimemail.class.php");
 			    <h4>A&K's iPad Travel App</h4>
 			    <div><img src="images/ipad-homepage.jpg" alt="iPad Travel App" title="iPad Travel App" /></div>
 			    <div class="Txt">
-				<p><strong>The World of A&K for iPad®</strong></p>
-				<ul>
-				    <li><img src="images/bullet.gif" alt="bullet" />  Explore 26 A&K destinations through &nbsp;&nbsp;&nbsp;photos and video</li>
-				    <li><img src="images/bullet.gif" alt="bullet" />  Share through Facebook and Twitter </li>
-				    <li><img src="images/bullet.gif" alt="bullet" />  Send beautiful electronic postcards </li>
-				    <li><img src="images/bullet.gif" alt="bullet" />  Create your own customized travel &nbsp;&nbsp;&nbsp;map </li>
-				    <li><img src="images/bullet.gif" alt="bullet" />  Available FREE from the App Store <sup>SM</sup> </li>
-				</ul>
-				<div class="More2">
-				    <a href="http://www.abercrombiekent.com/ipad-travel-apps/" target="_blank" title="iPad App Learn More"><img src="images/learn-more.jpg" alt="learn more"/>Learn more</a>
-				    <a href="http://itunes.apple.com/us/app/world-of-a-k/id449045086?mt=8" target="_blank" title="iPad App Download"> <img src="images/download.jpg" alt="iPad App download"/>Download</a>
-
-				</div>
-			    </div>
+				<p><a href="http://www.abercrombiekent.com/ipad-travel-apps/" target="_blank" title="iPad App Learn More"><img src="images/learn-more.jpg" alt="learn more">Learn more</a>
+			      <a href="http://itunes.apple.com/us/app/world-of-a-k/id449045086?mt=8" target="_blank" title="iPad App Download"> <img src="images/download.jpg" alt="iPad App download">Download</a>			    </p>
+</div>
+                
+                
 			</div>
 			<div style="margin:25px 0 15px 0;"><a href="http://www.facebook.com/AbercrombieKent?ref=hl" target="_blank"><img src="images/follow-us-facebook.gif" alt="facebook" width="102" height="31" border="0" /></a> <a href="https://twitter.com/AKTravel_IN" target="_blank"><img src="images/follow-us-twitter.gif" alt="twitter" width="102" height="31" border="0"/></a></div>
 
@@ -258,13 +294,14 @@ include("classes/mimemail.class.php");
 		    </div>
 		    <!-- Left Container Part End Here -->
 		    <!-- Center Container Part Start Here -->
-		    <div class="CenterContaner">
-                        <h1 style="font-size: 20px ; color: #505050;">A&K Journey Styles </h1>
-                        <img src="images/ak_font1.jpg" alt="" title=""style=" padding-top: 7px;" />
-                        <img src="images/ak_font.jpg" alt="" title=""style=" padding-top: 7px;" />
-                        <img src="images/ak_font2.jpg" alt="" title="" style=" padding-top: 7px;"/>
-                        <img src="images/ak_font3.jpg" alt="" title="" style=" padding-top: 7px;"/>
-                        <img src="images/ak_font4.jpg" alt="" title="" style=" padding-top: 7px;"/>
+		    <div class="CenterContaner" style="width:495px;">
+                        <h2 style="font-size: 20px ; color: #505050;">A&K Journey Styles </h2>
+                        <a href="journeystyles/europe-honeymoon-recommended-itineraries.html"><img src="images/ak_font1.jpg" alt="Luxury honeymoon" title=""style=" padding-top: 7px;" /></a>
+                        <a href="journeystyles/family-holidays-itineraries.html"><img src="images/ak_font.jpg" alt="Luxury Family holidays" title=""style=" padding-top: 7px;" /></a>
+                        <a href="journeystyles/Luxury-rail-journey.html" ><img src="images/ak_font2.jpg" alt="Luxury train journeys" title="" style=" padding-top: 7px;" /></a>
+                        <a href="journeystyles/connections-recommended-itineraries.html"><img src="images/ak_font3.jpg" alt="small group journeys" title="" style=" padding-top: 7px; float:left;" /></a>
+                        <a href="journeystyles/small-ship-cruising.html"><img src="images/ak_font3_2.jpg" alt="Small ship cruising	" title="" style=" padding-top: 7px; float:left;"/></a>
+                        <a href="journeystyles/extreme-adventures.html"><img src="images/ak_font4.jpg" alt="Extreme Adventure	" title="" style=" padding-top: 7px;"/></a>
                         <h1 style="padding-top: 12px;">Luxury Holidays by Abercrombie &amp; Kent</h1>
       <p>Abercrombie & Kent has been successfully perfecting the art of <strong>tailor-made luxury travel</strong> for over five decades. We are pioneers in experiential <a href="http://www.abercrombiekent.co.in/luxury-holidays.html">luxury holidays</a> since 1962, with a network of 50 offices in six continents and more than 2,200 employees, we help our discerning clients experience the world from a unique perspective. Each journey is flawlessly tailored to provide the traveler a hassle free experience. Our exceptional guides and local experts, sumptuous food, premium wines and <strong>luxurious</strong> properties all form part of our customized itineraries. We work hard to get to know each and every client and partner with them to design the ultimate itinerary that will be exciting, unforgettable, life changing and etched into their memories forever. Being the world's leading authority on luxury and experiential travel, we do not compromise on our standards and impeccable personal service is a guarantee. Our experts on the ground don't just receive our clients at their <strong>destination</strong>; they also take a keen interest in educating them about history, culture, traditions of the destination and showing the local way of life in a manner that makes them feel like they are in their own home.<br /><br />
        <strong>Safaris, Cruises</strong>, Photography Tours, <a href="http://www.abercrombiekent.co.in/journeystyles/family-holidays.html">Family Holidays</a>, Journeys by Private Jets, <a href="http://www.abercrombiekent.co.in/journeystyles/Luxury-rail-journey.html">Luxury Trains</a>, Extreme Adventures, Group Journeys or <strong>Honeymoons</strong> whatever your passion, Abercrombie & Kent will take you on a trip of a lifetime.
@@ -335,7 +372,7 @@ include("classes/mimemail.class.php");
 			</div> -->
                 <div class="enquire clear">
                     <div class="button-container " style="padding-top: 7px;">
-				<a title="Enquire Now" onclick="this.blur();" href="../enquiry-form.html" class="default-button blue-button"><span>MAKE AN ENQUIRY</span></a>
+				<a title="Enquire Now" onclick="this.blur();" href="enquiry-form.html" class="default-button blue-button"><span>MAKE AN ENQUIRY</span></a>
 			</div>
 			<!--<span class="span_call">Call <strong> 1800 111 010 </strong><br>to speak to a consultant</span>-->
 		</div> <br /><br /> <br />
@@ -353,16 +390,16 @@ include("classes/mimemail.class.php");
 			<div align="center" style="margin:15px 0; "><img src="images/wta-awards1.jpg" alt="wta" width="210" height="81" border="0" usemap="#Map" />
 			    <map name="Map" id="Map"><area shape="rect" coords="75,9,207,36" href="destinations/africa-news.html" />
 				<area shape="rect" coords="77,43,201,69" href="destinations/australasia-news.html" />
-                            </map></div><br></br>
+              </map></div><br></br>
 
 
 			<h2 style="margin-top: 20px;"><a href="destinations/special-offers.html" style="text-decoration:none; font-size: 20px ;color:#505050;">A&K EXCLUSIVES</a></h2>
-                         <img src="images/ak_side.jpg" alt="" title=""style=" padding-top: 30px;" />
-                        <img src="images/ak_side1.jpg" alt="" title=""style=" padding-top: 30px;" />
-                        <img src="images/ak_side2.jpg" alt="" title=""style=" padding-top: 30px;" />
-                        <img src="images/ak_side3.jpg" alt="" title=""style=" padding-top: 30px;" />
-                        <img src="images/ak_side4.jpg" alt="" title=""style=" padding-top: 30px;" />
-                        <img src="images/ak_side5.jpg" alt="" title=""style=" padding-top: 30px;" />
+            <a href="journeystyles/private-jet.html"><img src="images/ak_side.jpg" alt="Private jet Journeys	" title=""style=" padding-top: 30px;" /></a>
+                        <a href="destinations/tour-operator-of-australian-open-2014.html"><img src="images/ak_side1.jpg" alt="Australian open 2014" title=""style=" padding-top: 30px;" /></a>
+                        <a href="journeystyles/sanctuary-retreats.html"><img src="images/ak_side2.jpg" alt="Sanctuary retreats" title=""style=" padding-top: 30px;" /></a>
+                        <a href="journeystyles/ak-villas.html"><img src="images/ak_side3.jpg" alt="A&k Villas, Ski and chalets" title=""style=" padding-top: 30px;" /></a>
+                        <a href="destinations/thailand-special-offers.html"><img src="images/ak_side4.jpg" alt="Thailand Exclusive Offers" title=""style=" padding-top: 30px;" /></a>
+                        <a href="journeystyles/beach-island-honeymoon-recommended-itineraries.html"><img src="images/ak_side5.jpg" alt="Honeymoon Exclusive Offers" title=""style=" padding-top: 30px;" /></a>
                         
 			    </div>
 			</div>
