@@ -551,7 +551,7 @@ The services of an Abercrombie & Kent Guardian Angel<br /></p>
 <p>This morning you will be privately transferred to Prague airport for your departure flight.</p>
 <p><strong>Meal Plan:</strong> B </p>
 </li>
-
+</div>
 
 <div id="tab2" style="display:none;">
 <h1>Send itinerary</h1>
@@ -682,12 +682,7 @@ $(window).unload(function(){
 
 <div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
-
 </div>
-
-
-</div>
-
 </div>
 </div>
 </div>
@@ -704,7 +699,7 @@ $(window).unload(function(){
 <li id="divli10"><a href="javascript:void(0)" onClick="showMe('10');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
 <li id="divli11"><a href="javascript:void(0)" onClick="showMe('11');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
 <li id="divli12"><a href="javascript:void(0)" onClick="showMe('12');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
-<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/honeymoon-in-tuscanye.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/honeymoon-in-tuscany.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
 
@@ -902,7 +897,7 @@ The ideal choice for both relaxation and exploration, the luxury sanctuary Caste
     <h1>Send itinerary</h1>
 <?php $id =3;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="ROMANTIC HONEYMOON IN TUSCANY"/>
+<input type="hidden" name="country_email" id="country_email" value="Tuscany"/>
 <input type="hidden" name="region_email" id="region_email" value="Europe"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="ROMANTIC HONEYMOON IN TUSCANY"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="honeymoon-in-tuscany.pdf"/>
@@ -917,7 +912,7 @@ The ideal choice for both relaxation and exploration, the luxury sanctuary Caste
 <h1>Request a quote</h1>
 
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="ROMANTIC HONEYMOON IN TUSCANY"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Tuscany"/>
 <input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="ROMANTIC HONEYMOON IN TUSCANY"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
@@ -1492,8 +1487,8 @@ This evening you will be met at your hotel by your English–speaking guide and 
 <h1>Send itinerary</h1>
 <?php $id =2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="Honeymoon"/>
-<input type="hidden" name="region_email" id="region_email" value="Ank Journeystyles"/>
+<input type="hidden" name="country_email" id="country_email" value="Italy"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
 <input type="hidden" name="itineraries_email" id="itineraries_email" value="Capri VIP Island"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="Capri-VIPIsland.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
@@ -1506,8 +1501,8 @@ This evening you will be met at your hotel by your English–speaking guide and 
 <div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
-<input type="hidden" name="country_quote" id="country_quote" value="Honeymoon"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Ank Journeystyles"/>
+<input type="hidden" name="country_quote" id="country_quote" value="Italy"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
 <input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Capri VIP Island"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <?php include("../quote1.php");?>
