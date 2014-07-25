@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+.thank1 {
+    font-family: 'FolksRegular';
+    font-size: 17px;
+    margin: 10px 0 0 14px;
+    width: 184px;
+}
+</style></head>
+<body>
+<?php
+ $name=$_POST['name'];
+ $email=$_POST['email'];
+ $phone=$_POST['phone'];
+ $query=$_POST['query'];
+$to = 'privatetravel@abercrombiekent.co.in,GAjmani@abercrombiekent.co.in';
+$subject = "Mail from Abercrombiekent's Home Page Enquiry Form ";
+$message = 'Name : '.$name.'
+Email : '.$email.'
+Phone : '.$phone.'
+Query : '.$query.'
+Thanks,
+'.$name;
+$headers = "From: ".$name;
+$flgSend = @mail($to, $subject, $message, $headers);
+if($flgSend){
+	echo "<div class='thank1'><h1 style='text-transform:none'> Thank you for showing interest in our Travel Services. Our destination experts will contact you at the earliest possible.<br> For any urgent travel query call 91 011 46001647 ! </h1></div>";
+}else{
+	echo "Mail Not Send";
+}?>
+<!-- Google Code for contact Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 984307113;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "JPytCJfstQkQqaut1QM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/984307113/?label=JPytCJfstQkQqaut1QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</body>
+
+</html>
