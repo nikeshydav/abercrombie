@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
     $mail->AddAddress($address, "Abercrombie");
     //$mail->AddAddress('pravesh@oliveinternet.com', "Abercrombie");
     $mail->AddCC($addresscc, "Abercrombie");
-    $mail->AddBCC('powerfunction@gmail.com', "Abercrombie");
+    //$mail->AddBCC('powerfunction@gmail.com', "Abercrombie");
 
     $mail->Subject = 'Email Itinerary - ' . $_REQUEST['itineraries_email'];
     $mail->AltBody = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
@@ -89,3 +89,21 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+<!-- Google Code for contact Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 984307113;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "JPytCJfstQkQqaut1QM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/984307113/?label=JPytCJfstQkQqaut1QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
