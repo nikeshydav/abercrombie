@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
     //exit;
     $objMail->set_To($to);
     $objMail->set_Bcc($cc);
-    $objMail->set_Bcc('powerfunction@gmail.com');
+    //$objMail->set_Bcc('powerfunction@gmail.com');
     //$objMail->set_Bcc($bcc);
     //print_r($objMail);
     //exit;
