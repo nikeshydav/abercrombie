@@ -826,4 +826,6 @@ color: #85888d;
 #formcontainer textarea{display:block;height:50px;font-size:11px;width:90%}
 #formcontainer  #submit{background:url("../images/enter.jpg") no-repeat;border:0px;height:20px;text-indent:-2000px; width:50px;float:right;margin-top:10px; font-size: 0px; cursor: pointer;}
 #formcontainer {background: #ebebeb;padding: 5px;height: 254px;}
- 
+.enews{ width: 500px; float: left;}
+.enews h1{text-align: left; font-size: 20px; color: #333333; padding: 17px 0 20px 0px;}
+.enews p{text-align: left; font-size: 14px; }

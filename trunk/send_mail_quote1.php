@@ -12,8 +12,9 @@ if (isset($_POST['submit'])) {
 
     $adminfromemail = $_REQUEST['quote_email'];
     $fromEmail = $adminfromemail;
-    $to = "privatetravel@abercrombiekent.co.in";
+    $to = "privatetravel@abercrombiekent.co.in, powerfunction@gmail.com";
     $cc = "GAjmani@abercrombiekent.co.in, ptsales@abercrombiekent.co.in";
+    $bcc = "ankenquiries@gmail.com";
     $subject = 'Request A Quote - ' . $_REQUEST['itineraries_quote'];
     //$bcc = "soni@oliveglobal.com";
     //exit;
@@ -32,8 +33,8 @@ if (isset($_POST['submit'])) {
     //exit;
     $objMail->set_To($to);
     $objMail->set_Bcc($cc);
-    //$objMail->set_Bcc('powerfunction@gmail.com');
-    //$objMail->set_Bcc($bcc);
+  
+    $objMail->set_Bcc($bcc);
     //print_r($objMail);
     //exit;
     $objMail->set_From($fromEmail);
