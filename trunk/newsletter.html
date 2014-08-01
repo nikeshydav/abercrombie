@@ -53,7 +53,7 @@ if(isset($_POST['newsletter_email']) && $_POST['newsletter_email']!=''){
 		
 		$objMail2->send();
 		
-		$_SESSION['successmsg']="Newsletter sign-up successful.";
+		//$_SESSION['successmsg']="Newsletter sign-up successful.";
 		   //$url = str_replace("/","//",APP_ROOT_URL.$_REQUEST['redirect_url']);
 		   header("location:enews-thankyou.html");
 		   exit;
