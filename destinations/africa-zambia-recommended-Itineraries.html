@@ -61,22 +61,22 @@ function showMe(tab)
 		}
 		if(name == 'tab4'){
 		  $(document).ready(function(){
-				gmapInitialize();
+				gmapInitialize2();
 			});
 		}
 		if(name == 'tab8'){
 		  $(document).ready(function(){
-				gmapInitialize1();
+				gmapInitialize();
 			});
 		}
 		if(name == 'tab12'){
 		  $(document).ready(function(){
-				gmapInitialize2();
+				gmapInitialize1();
 			});
 		}
                 if(name == 'tab16'){
 		  $(document).ready(function(){
-				gmapInitialize2();
+				gmapInitialize3();
 			});
 		}
 	}
@@ -504,9 +504,9 @@ opportunity to experience one of the seven great natural wonders of the world.</
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize1() {
+			function gmapInitialize() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas1"));
+					map = new GMap2(document.getElementById("map_canvas"));
 					map.setUIToDefault();
 					
 					
@@ -636,7 +636,7 @@ opportunity to experience one of the seven great natural wonders of the world.</
 			});
 	
 		</script>
-		<div id="map_canvas1" style="width:625px; height:450px;overflow: hidden"></div>
+		<div id="map_canvas" style="width:625px; height:450px;overflow: hidden"></div>
 </div>
 
 </div>
@@ -992,9 +992,9 @@ world at a prestigious competition in Italy. The wines are also top ranking.</p>
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize2() {
+			function gmapInitialize1() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas2"));
+					map = new GMap2(document.getElementById("map_canvas1"));
 					map.setUIToDefault();
 					
 					
@@ -1131,7 +1131,7 @@ world at a prestigious competition in Italy. The wines are also top ranking.</p>
 	
 		</script>
 
-<div id="map_canvas2" style="width:625px; height:450px;overflow: hidden"></div>
+<div id="map_canvas1" style="width:625px; height:450px;overflow: hidden"></div>
 </div>
 </div>
 </div>
@@ -1317,9 +1317,9 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize() {
+			function gmapInitialize2() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas"));
+					map = new GMap2(document.getElementById("map_canvas2"));
 					map.setUIToDefault();
 					
 					
@@ -1395,7 +1395,7 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 			});
 	
 		</script>
-<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+<div id="map_canvas2" style="width:625px; height:450px; overflow: hidden"></div>
 </div>
 
 </div>
@@ -1413,11 +1413,11 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli5"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li id="divli13"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
 <li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli6"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli7"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli8"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li id="divli14"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli15"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli16"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
 <li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Classic-SouthLuangwa.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
@@ -1564,9 +1564,9 @@ This morning a representative will meet and transfer you to Lusaka International
 			var zoom = 10;
 			var origin = 0;
 			
-			function gmapInitialize1() {
+			function gmapInitialize3() {
 				if (GBrowserIsCompatible()) {
-					map = new GMap2(document.getElementById("map_canvas1"));
+					map = new GMap2(document.getElementById("map_canvas3"));
 					map.setUIToDefault();
 					
 					
@@ -1696,7 +1696,7 @@ This morning a representative will meet and transfer you to Lusaka International
 			});
 	
 		</script>
-		<div id="map_canvas1" style="width:625px; height:450px;overflow: hidden"></div>
+		<div id="map_canvas3" style="width:625px; height:450px;overflow: hidden"></div>
 </div>
 
 </div>
