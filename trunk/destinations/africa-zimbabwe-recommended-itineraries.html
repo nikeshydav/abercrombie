@@ -322,10 +322,10 @@ href="../yahoo.html">
 <a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -614,11 +614,11 @@ href="../yahoo.html">
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli1"><a href="javascript:void(0)" onclick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
-<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli2"><a href="javascript:void(0)" onclick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli3"><a href="javascript:void(0)" onclick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli4"><a href="javascript:void(0)" onclick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li id="divli1"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
 <li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/classic-zimbabwe-safari.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
@@ -627,7 +627,7 @@ href="../yahoo.html">
 <div class="popupheader">
 <div class="logoinner"><img src="../images/zimbabwe-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
-<div id="tab1">
+<div id="tab5">
 
 <h1>Classic Zimbabwe Safari</h1>
 <div class="popupbanner"><img src="../images/classic_zimbabwe_safari.jpg" alt="Classic Zimbabwe Safari" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
@@ -739,7 +739,7 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 </ul>
 </div>
 
-<div id="tab2" style="display:none;">
+<div id="tab6" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=1; ?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
@@ -753,7 +753,7 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 </form>
 </div>
 
-<div id="tab3" style="display:none;">
+<div id="tab7" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zimbabwe"/>
@@ -765,7 +765,7 @@ lodge also offers cultural tours in the form of visits to a nearby village in th
 </form>
 </div>
 
-<div id="tab4" style="display:none;">
+<div id="tab8" style="display:none;">
 <iframe width="625" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=zimbabwe&amp;sll=-19.015438,29.154857&amp;sspn=11.760769,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Zimbabwe&amp;t=m&amp;ll=-19.020577,29.157715&amp;spn=9.959959,14.0625&amp;z=6" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 
 <div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>

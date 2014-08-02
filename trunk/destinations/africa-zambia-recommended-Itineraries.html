@@ -333,10 +333,10 @@ Delta. </p>
 <a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
 
 <strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('14');">Email itinerary </a></strong>
 
 <strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
-<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('15');">Request a quote</a></strong>
 </div>
 </div>
 
@@ -1413,11 +1413,11 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 <div class="popupcontainer">
 <div class="popuplefnav">
 <ul>
-<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
-<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
-<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
-<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
-<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('13');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab13');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('14');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('15');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('16');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
 <li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/Classic-SouthLuangwa.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
 </ul>
 </div>
@@ -1426,7 +1426,7 @@ Game Drives: Explore the game-rich Mosi-oa- Tunya National Park in open 4X4 vehi
 <div class="popupheader">
 <div class="logoinner"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
-<div id="tab5">
+<div id="tab13">
 <div class="logoinner1"><img src="../images/temprature-header5.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 <h1>Classic South Luangwa</h1>
 <div class="popupbanner"><img src="../images/southluangwa-inner.jpg" alt="Classic South Luangwa" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
@@ -1531,7 +1531,7 @@ This morning a representative will meet and transfer you to Lusaka International
 </ul>
 </div>
 
-<div id="tab6" style="display:none;">
+<div id="tab14" style="display:none;">
 <h1>Send itinerary</h1>
 <?php $id=2;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
@@ -1545,7 +1545,7 @@ This morning a representative will meet and transfer you to Lusaka International
 </form>
 </div>
 
-<div id="tab7" style="display:none;">
+<div id="tab15" style="display:none;">
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Zambia"/>
@@ -1556,7 +1556,7 @@ This morning a representative will meet and transfer you to Lusaka International
 </form>
 </div>
 
-<div id="tab8" style="display:none;">
+<div id="tab16" style="display:none;">
 <script type="text/javascript">
 	
 			var markerLetter = 'A';
