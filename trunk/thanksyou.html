@@ -15,6 +15,7 @@
  $phone=$_POST['phone'];
  $query=$_POST['query'];
 $to = 'privatetravel@abercrombiekent.co.in,GAjmani@abercrombiekent.co.in';
+$bcc= 'ankenquiries@gmail.com, powerfunction@gmail.com';
 $subject = "Mail from Abercrombiekent's Home Page Enquiry Form ";
 $message = 'Name : '.$name.'
 Email : '.$email.'
@@ -23,7 +24,7 @@ Query : '.$query.'
 Thanks,
 '.$name;
 $headers = "From: ".$name;
-$flgSend = @mail($to, $subject, $message, $headers);
+$flgSend = @mail($to, $bcc, $subject, $message, $headers);
 if($flgSend){
 	echo "<div class='thank1'><h1 style='text-transform:none'> Thank you for showing interest in our Travel Services. Our destination experts will contact you at the earliest possible.<br> For any urgent travel query call 91 011 46001647 ! </h1></div>";
 }else{
