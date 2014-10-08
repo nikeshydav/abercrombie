@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
     $mailadmin->AddReplyTo("privatetravel@abercrombiekent.co.in", "Abercrombie");
 
     $addressadmin = 'privatetravel@abercrombiekent.co.in';
-    $addressadmin2 = 'GAjmani@abercrombiekent.co.in';
+    $addressadmin2 = 'IJubbal@abercrombiekent.co.in';
     $addressadmin3 = 'ptsales@abercrombiekent.co.in';
 
 

@@ -120,8 +120,8 @@ if(isset($_REQUEST['magazine'])) {
 $body .= "<tr><td nowrap height=15 border:1px style='padding-left:2px;width:20%' align='left'><b>How did You Hear About A&K :</td><td nowrap height=15  style='width:80%;' align='left'><b>".$_REQUEST['magazine']."</td></tr>";}
 
 
-if(isset($_REQUEST['Condè_Nast_Traveller'])) {
-$body .= "<tr><td nowrap height=15 style='padding-left:2px;width:20%' align='left'><b></td><td nowrap height=15  style='width:80%;' align='left'><b>".$_REQUEST['Condè_Nast_Traveller']."</td></tr>";}
+if(isset($_REQUEST['Condï¿½_Nast_Traveller'])) {
+$body .= "<tr><td nowrap height=15 style='padding-left:2px;width:20%' align='left'><b></td><td nowrap height=15  style='width:80%;' align='left'><b>".$_REQUEST['Condï¿½_Nast_Traveller']."</td></tr>";}
 
 
 if(isset($_REQUEST['Vogue'])) {
@@ -193,7 +193,7 @@ $body .="</table>";
 
 
 $to="privatetravel@abercrombiekent.co.in";
-$cc="GAjmani@abercrombiekent.co.in";
+$cc="IJubbal@abercrombiekent.co.in";
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 // Additional headers
