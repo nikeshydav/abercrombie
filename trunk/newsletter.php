@@ -41,7 +41,7 @@ if(isset($_POST['newsletter_email']) && $_POST['newsletter_email']!=''){
 		
 		//Mail To Admin
 		$admin_email = 'privatetravel@abercrombiekent.co.in';
-		$admin_email5 = 'GAjmani@abercrombiekent.co.in';
+		$admin_email5 = 'IJubbal@abercrombiekent.co.in';
 		$objMail2 = new Mimemail();
 		$objMail2->set_To($admin_email);
 		$objMail2->set_Bcc($admin_email5);

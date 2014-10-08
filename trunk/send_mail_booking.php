@@ -8,7 +8,7 @@ if(isset($_POST['submit_x']))
 	$fromEmail 		= $adminfromemail;
 	//$to 			= "privatetravel@abercrombiekent.co.in";
 	 $to 			= "privatetravel@abercrombiekent.co.in";
-	 $cc 			= "GAjmani@abercrombiekent.co.in,ptsales@abercrombiekent.co.in";
+	 $cc 			= "IJubbal@abercrombiekent.co.in,ptsales@abercrombiekent.co.in";
 	//$bcc 			= "anjali.rai321@gmail.com";
 	$subject	 	= "Download Booking Form";
 	//$bcc = "soni@oliveglobal.com";

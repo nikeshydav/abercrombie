@@ -23,7 +23,7 @@ $body .="</table>";
 
 
 $to="privatetravel@abercrombiekent.co.in";
-$cc="GAjmani@abercrombiekent.co.in";
+$cc="IJubbal@abercrombiekent.co.in";
 $bcc="ptsales@abercrombiekent.co.in";
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
