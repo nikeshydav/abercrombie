@@ -277,11 +277,11 @@ e{float:left;margin:0 12px 4px 12px;}
 .small-cruise ul{ margin:0px; padding:0px;}
 .small-cruise ul li{display:list-item; text-align:-webkit-match-parent;}
 /*********** Footer Css Start Here ***********/
-#Footer {width:100%;height:297px;background:#353535;clear:both;} 
+#Footer {width:100%;height:310px;background:#353535;clear:both;} 
 .FooterInner {width:959px;margin:0 auto;padding:3px 0 0 0;}
 .Copyright {float:left;width:180px;padding:7px 0 0 0;height:226px;color:#FFFFFF;text-transform:uppercase;font-size:11px;line-height:16px;background:url(../images/footer-bg.gif) repeat-y right top;}
 .Copyright .Heading {font-family:"Times New Roman";font-size:19px;margin:0 0 10px 0;text-transform:none;}
-.FooterLink {float:left;padding:7px 0 0 14px;width:168px;height:236px;font-size:11px;line-height:16px;text-transform:uppercase;background:url(../images/footer-bg.gif) repeat-y right top;}
+.FooterLink {float:left;padding:7px 0 0 14px;width:168px;height:245px;font-size:11px;line-height:16px;text-transform:uppercase;background:url(../images/footer-bg.gif) repeat-y right top;}
 .FooterLinkLast {float:left;padding:7px 0 0 19px;width:128px;height:205px;font-size:11px;line-height:16px;text-transform:uppercase;background:url(../images/footer-bg.gif) repeat-y right top;}
 .FooterLink h4, .FooterLinkLast h4, .FollowBox h4 {font-weight:normal;color:#FFFFFF;margin:0 0 8px 0;font-size:11px;line-height:18px;text-transform:uppercase;}
 .FooterLink ul, .FooterLinkLast ul {margin:0;padding:0;}
