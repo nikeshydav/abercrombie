@@ -278,6 +278,8 @@ href="../yahoo.html">
 </div>
 <!-- Container Part End Here -->
 </div>
+</div>
+
 <!-- Footer Part Start Here -->
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
@@ -298,7 +300,7 @@ href="../yahoo.html">
 
 <div class="popuprightcontainer">
 <div class="popupheader">
-<div class="logoinner"><img src="../images/ank-logo.jpg.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
 </div>
 <div id="tab1">
 <div class="logoinner1"></div>
@@ -401,9 +403,9 @@ Superior Queen Room<br />
 <h1>Send itinerary</h1>
 <?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
-<input type="hidden" name="country_email" id="country_email" value="fiji"/>
-<input type="hidden" name="region_email" id="region_email" value="Fiji"/>
-<input type="hidden" name="itineraries_email" id="itineraries_email" value="fiji escape"/>
+<input type="hidden" name="country_email" id="country_email" value="Fiji"/>
+<input type="hidden" name="region_email" id="region_email" value="Beach & Island Escapes"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="fijian escape"/>
 <input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="fijian-escape.pdf"/>
 <input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 
@@ -416,8 +418,8 @@ Superior Queen Room<br />
 <h1>Request a quote</h1>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
 <input type="hidden" name="country_quote" id="country_quote" value="Fiji"/>
-<input type="hidden" name="region_quote" id="region_quote" value="Fiji"/>
-<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="fiji escape"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Beach & Island Escapes"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="fijian escape"/>
 <input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
 <?php include("../quote1.php");?>
 </form>
