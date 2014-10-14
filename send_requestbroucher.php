@@ -24,7 +24,7 @@ error_reporting(0);
 		// MAIL TO USER 
 		$objMail = new Mimemail();
 		$objMail->set_To('privatetravel@abercrombiekent.co.in');
-		$objMail->set_Bcc('ptsales@abercrombiekent.co.in');
+		$objMail->set_Bcc('ptsales@abercrombiekent.co.in,ankenquiries@gmail.com,powerfunction@gmail.com');
 		$objMail->set_Cc('IJubbal@abercrombiekent.co.in');
 		$objMail->set_From($fromEmail);
 		$objMail->set_Subject($subject); 
