@@ -8,6 +8,7 @@ if(isset($_POST['submit_x']))
 	$fromEmail 		= $adminfromemail;
 	$to 			= "privatetravel@abercrombiekent.co.in";
 	$cc 			= "IJubbal@abercrombiekent.co.in, ptsales@abercrombiekent.co.in";
+        $bcc                    = "ankenquiries@gmail.com,powerfunction@gmail.com";
 	
 	$subject	 	= 'Download PDF - '.$_REQUEST['filename'];
 	//$bcc = "soni@oliveglobal.com";
@@ -25,7 +26,7 @@ if(isset($_POST['submit_x']))
 	//exit;
 	$objMail->set_To($to);
 	$objMail->set_Bcc($cc);
-	//$objMail->set_Bcc($bcc);
+	$objMail->set_Bcc($bcc);
 	//print_r($objMail);
 	//exit;
 	$objMail->set_From($fromEmail);
