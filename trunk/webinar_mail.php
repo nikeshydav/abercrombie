@@ -7,6 +7,7 @@ if(isset($_POST['submit_x']))
 	$adminfromemail = "privatetravel@abercrombiekent.co.in";
 	$fromEmail 		= $adminfromemail;
 	$to 			= "privatetravel@abercrombiekent.co.in";
+        $bcc                    = "ankenquiries@gmail.com,powerfunction@gmail.com";
 	$subject	 	= "Webinar Registration";
 	//$bcc = "soni@oliveglobal.com";
 	//exit;
@@ -22,7 +23,7 @@ if(isset($_POST['submit_x']))
 	//print_r($objMail);
 	//exit;
 	$objMail->set_To($to);
-	//$objMail->set_Bcc($bcc);
+	$objMail->set_Bcc($bcc);
 	//print_r($objMail);
 	//exit;
 	$objMail->set_From($fromEmail);

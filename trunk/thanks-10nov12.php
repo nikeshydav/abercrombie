@@ -194,12 +194,14 @@ $body .="</table>";
 
 $to="privatetravel@abercrombiekent.co.in";
 $cc="IJubbal@abercrombiekent.co.in";
+$bcc="ankenquiries@gmail.com,powerfunction@gmail.com";
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 // Additional headers
 $headers .= 'To: '.$to."\r\n";
 $headers .= 'From: '.$_POST['email']."\r\n";
 $headers .= 'Cc: '.$cc."\r\n";
+$headers .= 'Bcc: '.$bcc."\r\n";
 
 
 $to2="raj@internetmoguls.in";
@@ -208,7 +210,7 @@ $header1 .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $header1 .= 'To: '.$to2."\r\n";
 $header1 .= 'From: '.$_POST['email']."\r\n";
 //$headers .= 'Cc: '.$cc."\r\n";
-//$headers .= 'Bcc: '.$bcc."\r\n";
+$header1 .= 'Bcc: '.$bcc."\r\n";
 $subject = 'Enquiry from Abercrombie & Kent India';
 //if( preg_match ( "/^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/", $_POST['sender']))
 //{
