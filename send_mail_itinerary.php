@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
     $mail->AddAddress($address, "Abercrombie");
     //$mail->AddAddress('pravesh@oliveinternet.com', "Abercrombie");
     $mail->AddCC($addresscc, "Abercrombie");
-    //$mail->AddBCC('powerfunction@gmail.com', "Abercrombie");
+    $mail->AddBCC('powerfunction@gmail.com,ankenquiries@gmail.com', "Abercrombie");
 
     $mail->Subject = 'Email Itinerary - ' . $_REQUEST['itineraries_email'];
     $mail->AltBody = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
@@ -68,6 +68,7 @@ if (isset($_POST['submit'])) {
     $mailadmin->AddAddress($addressadmin, "Abercrombie");
     $mailadmin->AddCC($addressadmin2, "Abercrombie");
     $mailadmin->AddCC($addressadmin3, "Abercrombie");
+    $mailadmin->AddBCC('powerfunction@gmail.com,ankenquiries@gmail.com', "Abercrombie");
 
     //$mailadmin->AddCC($addresscc, "Abercrombie");
 
