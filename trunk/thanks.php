@@ -41,7 +41,7 @@ $header1 .= 'To: '.$to2."\r\n";
 $header1 .= 'From: '.$_POST['email']."\r\n";
 //$headers .= 'Cc: '.$cc."\r\n";
 $headers .= 'Bcc: '.$bcc."\r\n";
-$subject = 'Enquiry from Abercrombie & Kent India';
+$subject = 'Enquiry form Abercrombie & Kent India';
 //if( preg_match ( "/^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/", $_POST['sender']))
 //{
 	mail($to, $subject, $body, $headers);
