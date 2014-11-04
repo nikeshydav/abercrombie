@@ -21,11 +21,94 @@ include("../classes/mimemail.class.php");
 <script type="text/javascript" src="../js/lightview.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
 <!--Flag-->
+
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+
 <script type="text/javascript" src="../js/tabcontent.js"></script>
 
 <script type="text/javascript" src="../js/ddaccordion.js"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language=javascript>
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<script language="javascript">
+function showMe(tab)
+{
+	for(var i=1; i<=24; i++)
+	{
+		var name="tab"+i;
+                //alert(name);
+		var name2="divli"+i;
+                //alert(name);
+		if(tab==i)
+		{
+
+	       if(document.getElementById(name2) != null)
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)
+		    {
+				document.getElementById(name2).className="";
+			}
+
+			if(document.getElementById(name) != null)
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+		}
+		if(name == 'tab20'){
+		  $(document).ready(function(){
+				gmapInitialize4();
+			});
+		}
+		if(name == 'tab24'){
+		  $(document).ready(function(){
+				gmapInitialize5();
+			});
+		}
+	}
+}
+</script>
 <script type="text/javascript">
 
 //Initialize first demo:
@@ -249,11 +332,11 @@ href="../yahoo.html">
 <div><img src="../images/shadow.gif" alt="Shadow" /></div>
 <div class="Clr"></div>
 <div class="small-cruise">
-<div class="heading">Sanctuary Ananda</div><br />
+<h3>Sanctuary Ananda</h3>
 <p>Named after the beautiful Ananda Temple in Bagan, Ananda also translates in Sanskrit as 'extreme happiness' - one of the highest states of being. Step aboard the beautiful Sanctuary Ananda and be transported into a world of luxury and comfort with all modern amenities expected and welcomed by staff who are gracious and warming. Sanctuary Ananda will take you on the most incredible journeys through this fascinating country, experience the serenity and beauty of life on the river. She is being custom built for the Myanmar Rivers by local shipbuilders using age-old knowledge and traditional materials while incorporating the most modern technology. She has a shallow draft so that she can navigate both the Upper and Lower Ayeyarwady and Chindwin Rivers. The design of the ship is elegant and contemporary with a fusion of the traditional Burmese handicrafts with local fabrics, wood and lacquerware adorn each suite. Sanctuary Ananda will sail every day on each itinerary, offering plenty of time to combine the 'must see sights' with smaller villages to meet the indigenous peoples and see local crafts being made first hand. From spectacular temples, beautiful monasteries and ancient archaeological sites to the varied landscapes, Myanmar is a country just waiting to be discovered. Sanctuary Ananda will commence sailing in late 2014.</p>
 <div class="hightlight">
 <h3>HIGHLIGHTS</h3>
-<ul>
+<ul style="list-style-type:disc">
 <li>The only way to discover the real Myanmar</li>
 <li>A stylish ship with 20 beautiful suites all with a private balcony and a stunning Aloungpayah suite</li>
 <li>A spacious and gracious vessel spread across four decks</li>
@@ -270,25 +353,25 @@ href="../yahoo.html">
 <td style="padding: 2px 4px;">
 <div style="padding: 15px; border-radius: 10px; background-color:#f4f4f4;">
     <img style="float: none;margin: 0px;" alt="The Great Migration in Style: Under Canvas Edition" src="../images/myanmar_smallship_cruising_box1.jpg" width="318">
-        <h3 style="padding: 15px 0 10px;margin: 0px;"><a title="The Great Migration in Style: Under Canvas Edition" href="#">Myanmar &amp; the Irrawaddy</a></h3><p>Luxury Small Group Journey<br/>
-<strong>10 Days</strong><br/><span style="color:#F90;">New dates added: Jan 17, Feb 7, Mar 7, Oct 2, Oct 9 and Oct 16</span>
-<br><br>
- Journey to untouched Myanmar to experience tranquil Inle Lake, cruise the Irrawaddy River on new Sanctuary &lsquo;Ananda&rsquo; and enjoy a hot air balloon ride over Bagan and its countless pagodas and temples.<br>
+        <h3 style="padding: 15px 0 10px;margin: 0px;"><a title="The Great Migration in Style: Under Canvas Edition" href="#">Myanmar &amp; the Irrawaddy</a></h3><p>Yangon | Heho | Mandalay | Bagan  <br/>
+<strong>10 Days/ 9 Nights </strong><br/><br/>
+
+ Explore the untouched Myanmar, experience the tranquil Inle Lake, cruise through the Irrawaddy River on new Sanctuary 'Ananda' and enjoy a hot air balloon ride over Bagan and its countless pagodas and temples.<br>
 <br>
-<a class="icon swirl_arrow" title="Myanamr &amp; the Irrawaddy" href="#">Itinerary</a> > 
-<a href="#?w=770" rel="popup1" class="poplight" title="Myanamr &amp; the Irrawaddy">Availability</a>
+    <a href="#?w=920" rel="popup1" class="poplight">Itinerary</a> <font color="#00447c">|</font> 
+<a href="#?w=770" rel="popup3" class="poplight" title="Myanamr &amp; the Irrawaddy">Availability</a>
 </p> </div>
 </td>
 <td style="padding: 2px 4px;">
 <div style="padding: 15px; border-radius: 10px; background-color: #f4f4f4;">
     <img style="float: none;margin: 0px;" alt="The Great Migration in Style: Under Canvas Edition" src="../images/myanmar_smallship_cruising_box2.jpg" width="318">
- <h3 style="padding: 15px 0 10px;margin: 0px;"><a title="Botswana Safari in Style" href="#">Signature Myanmar &amp; the Irrawaddy</a></h3><p>Signature Series<br/>
-<strong>10 Days</strong><br><br>
- Journey to untouched Myanmar to experience tranquil Inle Lake, cruise the Irrawaddy River on new Sanctuary &lsquo;Ananda&rsquo; and enjoy a hot air balloon ride over Bagan and its countless pagodas and temples. <br>
-<br><br>
-<a class="icon swirl_arrow" title="Myanamr &amp; the Irrawaddy" href="#">Itinerary</a> > 
-<a href="#?w=770" rel="popup2" class="poplight" title="Myanamr &amp; the Irrawaddy">Availability</a>
-    </p><p style="padding-bottom:5px;"></p></div>
+ <h3 style="padding: 15px 0 10px;margin: 0px;"><a title="Botswana Safari in Style" href="#">Signature Myanmar &amp; the Irrawaddy</a></h3><p>Yangon | Heho | Mandalay | Bagan<br/>
+<strong>10 Days/ 9 Nights </strong><br><br>
+ Journey to untouched Myanmar to experience tranquil Inle Lake, cruise the Irrawaddy River on new Sanctuary 'Ananda' and enjoy a hot air balloon ride over Bagan and its countless pagodas and temples.<br>
+<br>
+<a href="#?w=920" rel="popup2" class="poplight">Itinerary</a> <font color="#00447c">|</font> 
+<a href="#?w=770" rel="popup4" class="poplight" title="Myanamr &amp; the Irrawaddy">Availability</a>
+<!--<p style="padding-bottom:5px;"></p>--></p></div>
 </td>
 </tr>
 </tbody>
@@ -306,18 +389,711 @@ href="../yahoo.html">
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
 <div id="popup1" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli1"><a href="javascript:void(0)" onClick="showMe('1');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab1');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli2"><a href="javascript:void(0)" onClick="showMe('2');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli3"><a href="javascript:void(0)" onClick="showMe('3');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli4"><a href="javascript:void(0)" onClick="showMe('4');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/a-new-year-celebration-in-london.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/myanmar-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab1" style="display:block;">
+
+<h1>Myanmar & the Irrawaddy</h1>
+<div class="popupbanner"><img src="../images/myanmar-and-the-Irrawaddy.jpg" alt="Myanmar and the Irrawaddy" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  10 Days/ 9 Nights    </p>
+<p>Explore the untouched Myanmar, experience the tranquil Inle Lake, cruise through the Irrawaddy River on new Sanctuary 'Ananda' and enjoy a hot air balloon ride over Bagan and its countless pagodas and temples.</p>
+<h3>Programme Overview</h3>
+<p> Yangon | Heho | Mandalay | Bagan  </p>
+
+
+</li>
+<h5>Detailed Itinerary</h5>
+<li><h4>Day 1</h4>
+<h5>ARRIVE YANGON</h5>
+<p>After your arrival in Yangon, you are met by an A&K representative and escorted to your hotel.</p>
+<p><strong>Overnight:</strong> Sule, Shangri-La, Yangon<br />
+</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>YANGON  </h5>
+<p>Begin your journey of Myanmar, a profoundly Buddhist country with many prevailing ancient traditions, with a walking tour of the vibrant Chinatown, its streets filled with wooden shuttered houses, shops and food stalls, with an uncrowded and authentic atmosphere.</p>
+<p>Further, view the Musmeah Yeshua, a colonial relic and the last remaining Jewish synagogue in Myanmar, strategically located in the heart of city center. Experience the lively culture with a walk through the bazaar at Scott Market (Bogyoke Market) amid shops filled with antiques, old coins, Burmese jade and handicrafts.</p>
+<p>Later, enjoy lunch at a local restaurant before you visit the Reclining Buddha at Chauk Htat Gyi Pagoda, about the height of a five storey building with an expressive enamel face. Read the story of the Buddha's life embossed on the soles of the statue's staggered feet. Continue to explore the Buddhist culture with a visit to the 2,600 years old Shwedagon Pagoda, the most sacred Buddhist site in Myanmar. Visit this oldest historical pagoda in the world and admire its round, gilded stupa capturing the rays of the warm afternoon sun, lending a crowning moment to your Burmese adventure.</p>
+<p>Conclude your day with a warm welcome dinner at Le Planteur Restaurant.</p>
+<p><strong>Overnight:</strong> Sule, Shangri-La, Yangon<br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>HEHO </h5>
+<p>Today, take a flight to Heho and after arrival enjoy lunch at a local restaurant. Later, take a transfer to the scenic Inle Lake and further to your resort, by private boat. </p>
+<p>Continue to Visit the splendid Phaung Daw Oo Pagoda, which houses iconic Buddha figures covered in gold leaf and further attend a traditional silk-weaving workshop for a display of the masterful skills of the local artists.</p>
+<p>This evening, enjoy dinner at your hotel.</p>
+<p><strong>Overnight:</strong> Inle Lake View Resort   <br />
+<strong>Meal Plan: </strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>HEHO</h5>
+<p>Enjoy your breakfast and head for a visit to the Five-Day Market to observe the regional hill tribe-people in traditional dress bartering for goods and produce. En-route visit a blacksmith’s workshop followed by a visit to an authentic Artisan, where you experiment with making a cheroot (Burmese cigar). </p>
+<p>This afternoon, savor lunch at the Intha Heritage House, serving authentic Intha dishes from recipes running from generations and made with locally grown organic vegetables. Proceed to explore the ingenious floating gardens of Inle Lake before you visit the Nga Phe Kyaung Monastery, famed for its beautiful Buddha images.</p>
+<p>Be a spectator to a private Intha boat race, while sipping the afternoon tea. Appreciate the coordinated efforts put in by the 20 participants per boat, each using the traditional single-leg rowing technique, which is still prevalent with some of the local fishermen .Later, travel back to your hotel for dinner.</p>
+<p><strong>Overnight:</strong> Inle Lake View Resort <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>SANCTUARY 'ANANDA' </h5>
+<p>This morning, depart for Mandalay to view the Mahamuni Pagoda, home to a golden statue that was cast in the presence of the Gautama Buddha and is said to present his one true likeness. 
+</p>
+<p>Continue to visit the historic Shwenandaw Monastery at Kuthodaw Pagoda, with the more than 700 marble slabs inscribed with Buddhist religious texts, referred to by some as the biggest book in the world. </p>
+<p>Later, embark the luxurious all-balcony Sanctuary 'Ananda,' your home for a four-night cruise upon the timeless Irrawaddy River. Enjoy lunch before you disembark to visit Amarapura, with its textile workshops, and Sagaing, renowned for its monasteries, pagodas and nunneries.</p>
+<p>Further, ride on a local boat to arrive at the U Bein Bridge for a splendid scenic Sundowner. Tonight, board the ship for cocktails and dinner.</p>
+<p><strong>Overnight:</strong> Sanctuary 'Ananda'     <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>    
+<li>
+<h4>Day 6</h4>
+<h5>SANCTUARY 'ANANDA' </h5>
+<p>Wake up this morning for a meditation or yoga session on deck before breakfast. Then, set out to visit Mingun, where you view the monumental Mingun Temple, a colossal unfinished stupa that towers the surrounding landscape.</p>
+<p>Also view the 90-ton Mingun Bell, one of the world's heaviest ringing bells. Later, return to the ship and cruise southward to Bagan.
+</p>
+<p><strong>Overnight:</strong> Sanctuary 'Ananda' <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>SANCTUARY 'ANANDA'  </h5>
+<p>Start you day with an early morning today for yoga and meditation session on deck or enjoy breakfast at leisure before you exit the cruise to ride a trishaw to the Pakokku Village. Experience the culture with a stroll through the local market and the traditional shoe and cheroot factories.</p>
+<p>This afternoon, enjoy lunch on board and later, travel ashore to tour Bagan and Myinkaba village, famous for its lacquerware created by local artisans using ancient local techniques. En-route visit the beautifully symmetrical Pyathatgyi Temple, with its majestic red brick architecture. </p>
+<p>Later, return to the ship for dinner, while you enjoy a traditional Burmese musical performance.</p>
+<p><strong>Overnight:</strong> Sanctuary 'Ananda' <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>SANCTUARY 'ANANDA'</h5>
+<p>Today, Set off for an early exciting balloon ride over Bagan as the rising sun illuminates the gold- and sand-colored stupas. Later, disembark at Sale to closely observe the beautifully crafted reliefs at a local monastery and the revered bamboo Buddha image at Thartana Yaunggyi Temple.</p>
+<p>Enjoy lunch on board before you cruise back to Bagan to visit a monastery inside Ananda Temple, adorned with murals depicting medieval Burmese life. 
+</p><p>
+Next is a beautiful drive to the cave temple in Gubyaukgyi, to behold its pyramidal spire. Further, ride a horse cart to return to the ship, where you savor a traditional Shan dinner with the captain and your fellow guests.
+</p>
+<p><strong>Overnight:</strong> Sanctuary 'Ananda' <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>YANGON </h5>
+<p>This day, disembark the cruise for a flight to Yangon to explore the National Museum of Myanmar, a treasure trove of Burmese arts and culture. Further, visit the 2,500 years old golden Sule Pagoda.</p>
+<p>This afternoon, join your fellow travelers to conclude the journey with a farewell lunch. Tonight, transfer to the airport for your onward flight or you may choose to stay at your hotel for the night for no additional cost.</p>
+<p><strong>Overnight:</strong> Sule, Shangri-La, Yangon <br />
+<strong>Meal Plan:</strong> B, L
+</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>DEPART YANGON</h5>
+<p>After breakfast, transfer to the airport for your departing flight.</p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h5>LUANG PRABANG PRE-TOUR EXTENSION</h5>
+<h5>5 days</h5>
+<p><b>Available on the Dec 18 (2014), Jan 27, Feb 3, Feb 7, Feb 17, Mar 7, Apr 7, Oct 12, Oct 16 and Dec 22 departures.</b></p>
+</li>
+<li>
+    <h4>Day 1</h4>
+<h5>Arrive Bangkok </h5>
+<p>After your arrival at Bangkok, you are met by an A&K representative and escorted to your hotel.</p>
+<p>The rest of the day is for you to explore the place.</p>
+<p><strong>Overnight:</strong> Novotel Suvarnabhumi Hotel
+</p>
+</li>
+<li>
+    <h4>Day 2</h4>
+<h5>LUANG PRABANG</h5>
+<p>Today, catch a flight to Luang Prabang, Laos, an outstanding example of the fusion of traditional architecture and Lao urban structures. After arrival, you will be assisted with transfer to your hotel.</p>
+<p>Begin your journey to explore the monasteries of Wat Xiengthong, Wat Khili with its rare spectacular architecture and Wat Sene. </p>
+<p>Later, experience the culture in-depth by attending a village baci ceremony, an ancient sacred tradition in Laos.</p>
+<p><strong>Overnight:</strong> Luang Say Residence/Belmond La Residence Phouvao <br />
+<strong>Meal Plan:</strong> B, D
+</p>
+</li>
+<li>
+    <h4>Day 3</h4>
+<h5>LUANG PRABANG </h5>
+<p>This day, join the locals making food offerings to local monks. Continue to visit a farm and then the truly spectacular and crystal clear Kuangsi Waterfall before you embark on a cruise to view the scenic sunset. </p>
+
+</li>
+<li>
+    <h4>Day 4</h4>
+<h5>LUANG PRABANG </h5>
+<p>This day, set out on a tour of the majestic Royal Palace. Continue for a hike on the Phousi Hill (Sacred Hill), the geographical and spiritual center of the city, to enjoy the spectacular views from its peak. Later, visit the Traditional Art and Ethnology Center. </p>
+
+<p><strong>Overnight:</strong> Luang Say Residence/Belmond La Residence Phouvao <br />
+<strong>Meal Plan:</strong> B, L
+</p>
+</li>
+<li>
+    <h4>Day 5</h4>
+<h5>DEPART LUANG PRABANG</h5>
+<p>Depart for Yangon to begin with your Myanmar journey.</p>
+<p><strong>Overnight:</strong> Angkor Wat Post-Tour Extension<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+    <h5>5 days </h5>
+<p><b>Available on the Jan 17, Jan 27, Feb 3, Feb 17, Mar 10, Oct 5, Dec 15 and Dec 22 departures.</b></p>
+</li>
+<li>
+    <h4>Day 1</h4>
+<h5>Arrive Siem Reap </h5>
+<p>After your arrival in Siem Reap, Cambodia, you will be met by an A&K representative and assisted to your hotel. 
+Begin the journey with a visit to Angkor Thom, a masterpiece of the Khmer empire. Continue to visit the richly decorated Khmer temple, The Bayon, with its beguiling 172 large-scale faces.
+</p><p>Later, visit the impressive Terrace of the Elephants before you explore the Leper King Terrace.
+</p>
+<p><strong>Overnight:</strong> Raffles Grand Hotel D'Angkor
+</p>
+</li>
+<li>
+    <h4>Day 2</h4>
+<p>Today, visit the beautiful Ta Prohm Temple, bound by massive roots of huge trees, followed by Angkor National Museum, dedicated to the collection, preservation and presentation of Angkorian artifacts.</p>
+<p>Enjoy your lunch and later ride on a tuk-tuk to explore the glorious Angkor Wat until sunset.</p>
+<p><strong>Overnight:</strong> Raffles Grand Hotel D'Angkor <br />
+<strong>Meal Plan:</strong> B, L
+</p>
+</li>
+<li>
+    <h4>Day 3</h4>
+<h5>LUANG PRABANG </h5>
+<p>Set off to explore the jungle-ravaged Beng Mealea and Banteay Srei, renowned for its intricate decoration carved in pinkish sandstone that covers the walls like tapestry.</p>
+<p>End the day with a visit to Sam's Brothers Clean Water Project site, an AKP-supported project, aimed to bring clean water to local families and their communities in the countryside of Cambodia. </p>
+<p><strong>Overnight:</strong> Raffles Grand Hotel D'Angkor<br />
+<strong>Meal Plan:</strong> B, L
+</li>
+<li>
+    <h4>Day 4</h4>
+<p>After the morning at leisure, depart for Bangkok, Thailand. Transfer to your hotel. </p>
+<p>After your arrival, you are met by an A&K representative and escorted to the hotel. </p>
+<p><strong>Overnight:</strong> Novotel Suvarnabhumi Airport Hotel <br />
+<strong>Meal Plan:</strong> B, D
+</p>
+</li>
+<li>
+    <h4>Day 5</h4>
+<p>After breakfast, transfer to the airport for your onward flight. </p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+</ul>
+</div>
+
+<div id="tab2" style="display:none;">
+    <h1>Send itinerary</h1>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Myanmar"/>
+<input type="hidden" name="region_email" id="region_email" value="Myanmar"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="MYANMAR AND THE IRRAWADDY"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="myanmar-and-the-irrawaddy.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab3" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Myanmar"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Myanmar"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="MYANMAR AND THE IRRAWADDY"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab4" style="display:none;">
+<script type="text/javascript">
+
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+
+
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport and transfer to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />Just south of the equator Nairobi's main avenues blaze with colour from tropical bushes and vines. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch.<br /><br />Sitting in the formidable shadow of Africa's highest mountain, Amboseli Serena Lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of big game, from lion, buffalo, giraffe and wildebeest to some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies southeast of Nairobi, at the foot of Mount Kilimanjaro.&nbsp; The snow-capped peak of Mount Kilimanjaro rising above a saucer of clouds, dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge and then drive to the Kenya/Tanzania border town of Namanga. After immigration and customs formalities meet your Tanzania driver guides and drive to the town of Arusha for lunch.<br /><br />After lunch continue to Manyara. Dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley, the rooms blend gracefully with the serene natural surroundings. The lodge is located only a few minutes from Lake Manyara National Park.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Amboseli - Namanga - Arusha - Manyara", description, "4");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning enjoy a game drive in the park before driving to the Ngorongoro Conservation area.<br /><br />Stop at Gibbs Farm, an old-colonial farmhouse for lunch. Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Manyara - Ngorongoro", description, "5");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the full day game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "6");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park drive to your lodge with game viewing en-route. Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "7");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "8");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi. Upon arrival in Nairobi fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.&nbsp;</p><p>Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Serengeti - Masai Mara", description, "9");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "11");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "14");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "10");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.&nbsp;</p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "13");
+						map.addOverlay(mark);
+
+
+					var minLat = -3.6;
+					var minLng = 34.6856509;
+					var maxLat = -1.274359;
+					var maxLng = 40.866667;
+
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+
+				return marker;
+			}
+
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+
+			$(window).unload(function(){
+				GUnload();
+			});
+
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+<!--A Myanmar & the Irrawaddy End Here-->
+<!-- A NEW YEAR CELEBRATION IN MADRID Start Here -->
+<div id="popup2" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onClick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onClick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onClick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onClick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="../popup-page.html?page=pdf/a-new-year-celebration-in-madrid.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/myanmar-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>Signature Myanmar & the Irrawaddy</h1>
+<div class="popupbanner"><img src="../images/signature-myanmar-and-the-Irrawaddy.jpg" alt="Signature Myanmar and the Irrawaddy" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<ul class="itinerarylist">
+<li>
+<p><strong>Duration:</strong>  10 Days/ 9 Nights     </p>
+<p>Journey to untouched Myanmar to experience tranquil Inle Lake, cruise the Irrawaddy River on new Sanctuary 'Ananda' and enjoy a hot air balloon ride over Bagan and its countless pagodas and temples.</p>
+<h3>Programme Overview</h3>
+<p>Yangon | Heho | Mandalay | Bagan</p>
+
+
+</li>
+<h5>Detailed Itinerary</h5>
+<li><h4>Day 1</h4>
+<h5>ARRIVE YANGON</h5>
+<p>After your arrival in Yangon, you are met by an A&K representative and escorted to your hotel.</p>
+<p><strong>Overnight:</strong> Sule, Shangri-La, Yangon<br />
+</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>YANGON   </h5>
+<p>Begin your journey of Myanmar, a profoundly Buddhist country with many prevailing ancient traditions, with a walking tour of the vibrant Chinatown, its streets filled with wooden shuttered houses, shops and food stalls, with an uncrowded and authentic atmosphere.</p>
+<p>Further, view the Musmeah Yeshua, a colonial relic and the last remaining Jewish synagogue in Myanmar, strategically located in the heart of city center. Experience the lively culture with a walk through the bazaar at Scott Market (Bogyoke Market) amid shops filled with antiques, old coins, Burmese jade and handicrafts.</p>
+<p>Later, enjoy lunch at a local restaurant before you visit the Reclining Buddha at Chauk Htat Gyi Pagoda, about the height of a five storey building with an expressive enamel face. Read the story of the Buddha's life embossed on the soles of the statue's staggered feet. Continue to explore the Buddhist culture with a visit to the 2,600 years old Shwedagon Pagoda, the most sacred Buddhist site in Myanmar. Visit this oldest historical pagoda in the world and admire its round, gilded stupa capturing the rays of the warm afternoon sun, lending a crowning moment to your Burmese adventure.</p>
+
+<p><strong>Overnight:</strong> Sule, Shangri-La, Yangon<br />
+<strong>Meal Plan:</strong> B, L
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>HEHO </h5>
+<p>Fly to Heho, after arrival travel to the scenic Inle Lake and further to your resort, by private boat. View Phaung Daw Oo Pagoda, which houses iconic Buddha figures covered in gold leaf. Further attend a traditional silk-weaving workshop for a display of the masterful skills of the local artists.</p>
+<p><strong>Overnight:</strong> Inle Lake View Resort   <br />
+<strong>Meal Plan: </strong> B, L
+</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>HEHO</h5>
+<p>Enjoy your breakfast and head for a visit to the Five-Day Market to observe the regional hill tribe-people in traditional dress bartering for goods and produce. En-route visit a blacksmith’s workshop followed by a visit to an authentic Artisan, where you experiment with making a cheroot (Burmese cigar). </p>
+<p>This afternoon, savor your lunch and proceed to explore the ingenious floating gardens of Inle Lake before you visit the Nga Phe Kyaung Monastery, famed for its beautiful Buddha images.</p>
+<p><strong>Overnight:</strong> Inle Lake View Resort <br />
+<strong>Meal Plan:</strong> B, L
+</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>SANCTUARY 'ANANDA' </h5>
+<p>This morning, depart for Mandalay to view the Mahamuni Pagoda, home to a golden statue that was cast in the presence of the Gautama Buddha and is said to present his one true likeness. 
+</p>
+<p>Continue to visit the historic Shwenandaw Monastery at Kuthodaw Pagoda, with the more than 700 marble slabs inscribed with Buddhist religious texts, referred to by some as the biggest book in the world. </p>
+<p>Later, embark the luxurious all-balcony Sanctuary 'Ananda,' your home for a four-night cruise upon the timeless Irrawaddy River. Enjoy lunch before you disembark to visit Amarapura, with its textile workshops, and Sagaing, renowned for its monasteries, pagodas and nunneries.</p>
+<p>Further, ride on a local boat to arrive at the U Bein Bridge for a splendid scenic Sundowner. </p>
+<p><strong>Overnight:</strong> Sanctuary 'Ananda'     <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>    
+<li>
+<h4>Day 6</h4>
+<h5>SANCTUARY 'ANANDA' </h5>
+<p>This day, set out to visit Mingun, where you view the monumental Mingun Temple, a colossal unfinished stupa that towers the surrounding landscape.</p>
+<p>Also view the 90-ton Mingun Bell, one of the world's heaviest ringing bells. Later, return to the ship and cruise southward to Bagan.
+</p>
+<p><strong>Overnight:</strong> Sanctuary 'Ananda' <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 7</h4>
+<h5>SANCTUARY 'ANANDA'  </h5>
+<p>Start you day with an early morning today for yoga and meditation session on deck or enjoy breakfast at leisure before you exit the cruise to ride a trishaw to the Pakokku Village. Experience the culture with a stroll through the local market and the traditional shoe and cheroot factories.</p>
+<p>This afternoon, enjoy lunch on board and later, travel ashore to tour Bagan and Myinkaba village, famous for its lacquerware created by local artisans using ancient local techniques. En-route visit the beautifully symmetrical Pyathatgyi Temple, with its majestic red brick architecture. </p>
+
+<p><strong>Overnight:</strong> Sanctuary 'Ananda' <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>SANCTUARY 'ANANDA'</h5>
+<p>Today, Set off for an early exciting balloon ride over Bagan as the rising sun illuminates the gold- and sand-colored stupas. Later, disembark at Sale to closely observe the beautifully crafted reliefs at a local monastery and the revered bamboo Buddha image at Thartana Yaunggyi Temple.</p>
+<p>Cruise back to Bagan to visit a monastery inside Ananda Temple, adorned with murals depicting medieval Burmese life. Next is a beautiful drive to the cave temple in Gubyaukgyi, to behold its pyramidal spire. Further, ride a horse cart to return to the ship</p>
+<p><strong>Overnight:</strong> Sanctuary 'Ananda' <br />
+<strong>Meal Plan:</strong> B, L, D
+</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>YANGON </h5>
+<p>This day, disembark the cruise for a flight to Yangon to explore the National Museum of Myanmar, a treasure trove of Burmese arts and culture. Further, visit the 2,500 years old golden Sule Pagoda.</p>
+<p><strong>Overnight:</strong> Sule, Shangri-La, Yangon <br />
+<strong>Meal Plan:</strong> B, L
+</p>
+</li>
+<li>
+<h4>Day 10</h4>
+<h5>DEPART YANGON</h5>
+<p>After breakfast, transfer to the airport for your departing flight.</p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+    <h1>Send itinerary</h1>
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Myanmar"/>
+<input type="hidden" name="region_email" id="region_email" value="Myanmar"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="SIGNATURE MYANMAR AND THE IRRAWADDY"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="signature-myanmar-and-the-irrawaddy.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Myanmar"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Myanmar"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="SIGNATURE MYANMAR AND THE IRRAWADDY"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+
+			function gmapInitialize1() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas1"));
+					map.setUIToDefault();
+
+
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy the day doing as much or as little as you please. You may like to take an optional trip to explore the old Stone Town, a spice farm or Jozani Forest to see the Red colobus monkey which is endemic to Zanzibar (tours not included). Alternatively you may prefer to just relax at your resort or pamper yourself at the spa, enjoy yoga or meditation. There is also a water sports centre for snorkeling, windsurfing, sailing or canoeing and a licensed PADI dive centre.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "7");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>Enjoy another full day at your idyllic beach resort.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Zanzibar", description, "8");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Kilimanjaro International airport where you will be met by your private driver/guide who will escort you for the duration of your safari in Tanzania. Transfer from Arusha to Lake Manyara Serena Lodge in time for lunch. This afternoon enjoy a game drive in Lake Manyara National Park in search of the elusive tree-climbing lion.&nbsp;<br /><br />Lake Manyara Serena Lodge is dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley. The 66 rooms blend gracefully with the serene natural surroundings and the lodge is located only a few minutes from Lake Manyara National Park. For those who want some time out of their vehicles, the lodge supports a number of nature trails and also has a resident naturalist to enhance the experience. Guests may also choose to relax at an observation post or by the pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.365789, 36.67445), "Arusha - Lake Manyara", description, "1");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>This morning is at leisure before transferring to Gibbs Farm, located in the Ngorongoro Crater highlands, for lunch. Continue to the Ngorongoro Crater, the largest unbroken caldera in the world and the first sight of it is breathtaking.<br /><br />Ngorongoro Sopa Lodge is situated on the eastern rim of the crater. The 92 rooms of the lodge are built in the traditional African rondavel style. There is a beautifully designed dining room, a bar, a well-stocked gift shop and a swimming pool.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Lake Manyara - Ngorongoro Crater", description, "2");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>Enjoy an early breakfast before venturing out on your game drive. From your lodge on the crater rim descend to the crater floor by 4WD safari vehicle for a morning unlike any other you will experience in Africa. Spot some of the rarer species in Africa like the black rhino against the spectacular backdrop of the crater's forest covered walls. Enjoy a picnic lunch amongst the hippos and birds before visiting a Maasai village this afternoon.<br /><br />The floor of the crater is only 100 square miles but is home to around 30,000 animals with a high concentration of predators and some of the finest black-maned lions in Africa. Rhinos can be seen with calves at heel. Eland and waterbuck appear not to notice the human visitors, enabling photographers to shoot at ease. On the lake in the middle of the crater you may see thousands of flamingos, fluttering and shimmering like a pink heat haze. Zebra and wildebeest account for almost half the animals - gazelle, buffalo, eland, hartebeest and wart hog can also be seen.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "3");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Following breakfast this morning transfer to Olduvai Gorge, the cradle of mankind, made famous by Dr Leaky's discovery of fossil fragments dating back some 3.5 million years. After a picnic lunch continue the drive to your lodge, centrally located in the Serengeti National Park. Enjoy game viewing en route.<br /><br />Serengeti Serena Lodge is located high on a hill offering magnificent views of the Serengeti Plains. The lodge is pure Africa. Rustic and natural, circular like an African village, its 66 rooms make up a series of rondavels. The simple style is enhanced with sophisticated detail in the form of traditional handicraft, such as wood carvings, beadwork and pottery designs. The lodge offers its own unique game trails devised in conjunction with park consultants to allow enjoyment of the Serengeti's unequalled variety of game.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "4");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>Spend a full day exploring the Serengeti by 4WD vehicle with thrilling morning and afternoon game drives. Whether this is your first time on safari or a return trip, the Serengeti will not disappoint.<br /><br />The Serengeti National Park is arguably the most famous national park in the world. The Serengeti perhaps defines the safari experience as surely as the wildlife that inhabits it. Established in 1951, and covering an area of almost 15,000 square kilometers, an area comparable to the state of Connecticut or Northern Ireland, the Serengeti hosts a fantastically diverse ecosystem. The principal attraction of the Serengeti is the passing of the wildebeest migration, when 1.5 million wildebeest, hundreds of thousands of zebra, gazelle and other game that follow close behind make their way across the plains, stalked by the inevitable predators who make the most of the feast close at hand.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "5");
+						map.addOverlay(mark);
+
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>Following breakfast, transfer to the airstrip for your flight to Zanzibar. Upon arrival you will be met and transferred by private vehicle to your beach resort.<br /><br />Breezes Beach Club is situated along a pristine, untouched beach, stretching as far as the eye can see. It is located on the eastern side of the island, near the village of Bwejuu approximately one hour from the airport. The hotel has a swimming pool, fitness and aerobics centre, water sports centre, floodlit tennis court, scuba diving, Makuti a-la carte restaurant, Breakers lunch restaurant, The Safari bar, Upepo Lounge and Mutiny Pool Bar.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-6.165917, 39.202641), "Serengeti - Zanzibar", description, "6");
+						map.addOverlay(mark);
+
+
+					var minLat = -6.165917;
+					var minLng = 34.6856509;
+					var maxLat = -2.416213;
+					var maxLng = 39.202641;
+
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+
+				return marker;
+			}
+
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+
+			$(window).unload(function(){
+				GUnload();
+			});
+
+		</script>
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+<!-- A NEW YEAR CELEBRATION IN MADRID End Here-->
+<!--avilability popup 1-->
+<div id="popup3" class="popup_block">
 <div class="popupbox1">
 <div><img src="../images/myanmar-logo.jpg" /></div><br />
 <h3>Myanmar & the Irrawaddy Availability</h3>
-<div><img src="../images/myanmar_popup_image.jpg" alt="Kenya" class="Imgbord " /></div>
+<div><img src="../images/avibility-image-myanmar.jpg" alt="signature-myanmar" class="Imgbord " /></div>
 
 </div>   
 </div>
-<div id="popup2" class="popup_block">
+<!--avilability popup 2-->
+<div id="popup4" class="popup_block">
 <div class="popupbox1">
 <div><img src="../images/myanmar-logo.jpg" /></div><br />
 <h3>Signature Myanmar & the Irrawaddy Availability</h3>
-<div><img src="../images/myanmar_popup_image.jpg" alt="Kenya" class="Imgbord " /></div>
+<div><img src="../images/avilability-signature-myanmar.jpg" alt="Kenya" class="Imgbord " /></div>
 
 </div>   
 </div>
