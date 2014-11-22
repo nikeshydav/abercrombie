@@ -47,6 +47,7 @@ $(document).ready(function(){
 			if($("div#tab21").attr("id") != null){  $("#tab21").show();   }
 			if($("div#tab25").attr("id") != null){  $("#tab25").show();   }
 			if($("div#tab29").attr("id") != null){  $("#tab29").show();   }
+                        
 			
 	}); //fade them both out
 		

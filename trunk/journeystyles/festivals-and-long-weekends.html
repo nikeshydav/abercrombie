@@ -43,7 +43,7 @@ function CallPrint(strid)
 <script language="javascript">
 function showMe(tab)
 {
-	for(var i=1; i<=24; i++)
+	for(var i=1; i<=64; i++)
 	{
 		var name="tab"+i;
                 //alert(name);
@@ -97,6 +97,36 @@ function showMe(tab)
 			});
 		}
 		if(name == 'tab24'){
+		  $(document).ready(function(){
+				gmapInitialize5();
+			});
+		}
+                if(name == 'tab28'){
+		  $(document).ready(function(){
+				gmapInitialize5();
+			});
+		}
+                 if(name == 'tab32'){
+		  $(document).ready(function(){
+				gmapInitialize5();
+			});
+		}
+                 if(name == 'tab36'){
+		  $(document).ready(function(){
+				gmapInitialize5();
+			});
+		}
+                 if(name == 'tab40'){
+		  $(document).ready(function(){
+				gmapInitialize5();
+			});
+		}
+                 if(name == 'tab44'){
+		  $(document).ready(function(){
+				gmapInitialize5();
+			});
+		}
+                 if(name == 'tab48'){
 		  $(document).ready(function(){
 				gmapInitialize5();
 			});
@@ -267,9 +297,14 @@ href="../yahoo.html">
 <ul>
 <li><a href="#?w=920" rel="popup1" class="poplight">A New Year Celebration In London</a></li>		
 <li><a href="#?w=920" rel="popup2" class="poplight">A New Year Celebration In Madrid</a></li>		
-<li><a href="#?w=920" rel="popup3" class="poplight">New Year In Paris</a></li>		
+<li><a href="#?w=920" rel="popup3" class="poplight">New Year In Paris</a></li>	
+<li><a href="#?w=920" rel="popup7" class="poplight">A New Year Celebration In Vienna At Le Grand Ball</a></li>		
+<li><a href="#?w=920" rel="popup8" class="poplight">A New Year Celebration At The Tsar's Ball In St.Petersburg</a></li>		
+<li><a href="#?w=920" rel="popup9" class="poplight">Christmas And New Year’s Eve In Morocco </a></li>		
+<li><a href="#?w=920" rel="popup10" class="poplight">A New Year Celebration In Edinburgh</a></li>
 </ul>
 </div>
+
 
 
 
@@ -1459,7 +1494,7 @@ href="../yahoo.html">
 
 <div id="tab18" style="display:none;">
 <h1>Send itinerary</h1>
-<?php $id =5;?>
+<?php $id =1;?>
 <form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
 <input type="hidden" name="country_email" id="country_email" value="Belgium"/>
 <input type="hidden" name="region_email" id="region_email" value="Belgium"/>
@@ -1807,6 +1842,1205 @@ href="../yahoo.html">
 </div>
 
 <div id="tab24" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport and transfer to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />Just south of the equator Nairobi's main avenues blaze with colour from tropical bushes and vines. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch.<br /><br />Sitting in the formidable shadow of Africa's highest mountain, Amboseli Serena Lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of big game, from lion, buffalo, giraffe and wildebeest to some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies southeast of Nairobi, at the foot of Mount Kilimanjaro.&nbsp; The snow-capped peak of Mount Kilimanjaro rising above a saucer of clouds, dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge and then drive to the Kenya/Tanzania border town of Namanga. After immigration and customs formalities meet your Tanzania driver guides and drive to the town of Arusha for lunch.<br /><br />After lunch continue to Manyara. Dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley, the rooms blend gracefully with the serene natural surroundings. The lodge is located only a few minutes from Lake Manyara National Park.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Amboseli - Namanga - Arusha - Manyara", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning enjoy a game drive in the park before driving to the Ngorongoro Conservation area.<br /><br />Stop at Gibbs Farm, an old-colonial farmhouse for lunch. Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Manyara - Ngorongoro", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the full day game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park drive to your lodge with game viewing en-route. Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi. Upon arrival in Nairobi fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.&nbsp;</p><p>Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Serengeti - Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.&nbsp;</p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.6856509;
+					var maxLat = -1.274359;
+					var maxLng = 40.866667;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+
+
+<!-- End Here-->
+
+<!-- A NEW YEAR CELEBRATION IN VIENNA AT LE GRAND BALL Start Here-->
+<div id="popup7" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli25"><a href="javascript:void(0)" onClick="showMe('25');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab21');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli26"><a href="javascript:void(0)" onClick="showMe('26');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli27"><a href="javascript:void(0)" onClick="showMe('27');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli28"><a href="javascript:void(0)" onClick="showMe('28');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/three-winter-wonderlands.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab25" style="display:block;">
+
+<h1>A NEW YEAR CELEBRATION IN VIENNA AT LE GRAND BALL</h1>
+<div class="popupbanner"><img src="../images/a_new_year_celebrationin_vieena_at_ball.jpg" alt="Three winter wonderlands" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+
+<ul class="itinerarylist">
+<li>
+
+<h3>Programme Overview</h3>
+<p>This itinerary is ideal for a festive holiday to Austria, taking in the highlights of Vienna over the New Year period including the new Le Grand Ball</p>
+<p><strong>Duration:</strong>  6 days/ 5 nights</p>
+<p><strong>Highlights:</strong> Schönbrunn Palace | Ringstrasse | Vienna Woods | Hofburg Palace | Le Grand Ball </p>
+
+
+</li>
+<h5>Detailed Itinerary</h5>
+<li><h4>Day 1</h4>
+<h5>ARRIVE VIENNA </h5>
+<p>After arrival at the Vienna airport, you will be greeted by an A&K representative, who will assist you with a private transfer and check in to your hotel.</p>
+<p><strong>Overnight:</strong> Hotel Sacher Wien<br />
+<strong>Meal Plan:</strong> None</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>VIENNA AND DANCING LESSON </h5>
+<p>This morning, embark on a beautiful morning walking tour with your guide (3 hrs). Stroll along the famous ‘Ringstrasse’, with its 19th century buildings. Continue to attend a mass in the Chapel of the Hofburg Palace, expertly performed by the court orchestra comprising the Vienna Boys Choir.</p> 
+<p>Further, view the Treasury in the Hofburg. Later, embark on an elegant tour as you are taken by horse and carriage to the gothic St Stephen’s cathedral, whose soaring structure enshrines the heart of Vienna.</p>
+
+<p>Return to your hotel and proceed for a memorable afternoon as you absorb in Vienna’s world-renowned musical culture with a lesson in one of its most sought-after ‘export goods’: the Viennese Waltz. Enjoy the special opportunity to master the famous Waltz dance with a private lesson in an exclusive baroque ballroom. Conclude your lesson with a traditional Viennese ‘pause’ with coffee or sparkling wine and cake; also receive a certificate authenticating your dance efforts.</p>
+
+<p><strong>Overnight:</strong> Hotel Sacher Wien<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>VIENNA AND SCHÖNBRUNN PALACE</h5>
+<p>Begin the day with a morning excursion (4 hrs) with your private driver and guide. Drive to the magnificent Schönbrunn Palace, one of the most impressive and well preserved Baroque ensembles of its kind in Europe.</p> 
+    <p>Take a fascinating guided tour to explore many of the palace’s staterooms including the Hall of Mirrors in which Mozart performed for the Empress Maria Theresa, when he was just six years old.</p>
+
+        <p>This afternoon, travel towards the charming Vienna Woods and visit the hunting lodge at Mayerling, the scene of the suicide pact between Crown Prince of Austria and his lover, now converted into a convent.</p> 
+        <p>Further, Visit the nearby Heiligenkreuz to see the magnificent Cistercian abbey. On the return trip to Vienna stop by at the Seegrotte, a former mine and now a fascinating underground lake. Here, take a motor boat trip for the best view of the reflections before returning to your hotel.</p>
+
+<p><strong>Overnight:</strong> Hotel Sacher Wien<br />
+<strong>Meal Plan: </strong> B
+</p>
+</li>
+
+<li>
+<h4>Day 4</h4>
+<h5>VIENNA AND LE GRAND BALL</h5>
+<p>This morning, embark on a guided four hour tour to explore the city’s significant musical past. Visit the places where the great composers lived, worked and played. Learn more about the history of these distinguished composers and their music.</p>
+
+<p>Later, return to your hotel to don your finest gowns before we chauffeur you for a memorable evening at the Hofburg Palace to attend the Le Grand Ball. </p>
+
+<p>Be welcomed with a refreshing cocktail and proceed into the state apartments where you will be treated to a splendid four course dinner followed by petit fours and confectionary. After dinner the ball begins with music from the Wiener Opera Orchestra and Big Band Gerhard Aflenzer in the Grand Festival Hall.Mark the midnight New Year stroke with the ringing of the Pummerin, the largest bells in the history of St Stephen’s Cathedral in Vienna.</p>
+
+<p><strong>Overnight:</strong> The Hotel Sacher Wien<br />
+<strong>Meal Plan:</strong> B, D
+</p>
+</li> 
+<li>
+<h4>Day 5</h4>
+<h5>VIENNA </h5>
+<p>Spend a relaxing day after the previous night’s festivities. Enjoy the hotel amenities or treat yourself to a relaxing massage after a leisurely New Year’s Day brunch.</p>
+<p><strong>Overnight:</strong> The Hotel Sacher Wien<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>DEPART VIENNA</h5>
+<p>Today, you will be assisted with a private transfer to Vienna airport for your onward flight.</p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab26" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Austria"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="A New Year Celebration In Vienna At Le Grand Ball"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="a-new-year-celebration-in-vienna-at-le-grand-ball.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab27" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Austria"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="A New Year Celebration In Vienna At Le Grand Ball"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab28" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport and transfer to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />Just south of the equator Nairobi's main avenues blaze with colour from tropical bushes and vines. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch.<br /><br />Sitting in the formidable shadow of Africa's highest mountain, Amboseli Serena Lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of big game, from lion, buffalo, giraffe and wildebeest to some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies southeast of Nairobi, at the foot of Mount Kilimanjaro.&nbsp; The snow-capped peak of Mount Kilimanjaro rising above a saucer of clouds, dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge and then drive to the Kenya/Tanzania border town of Namanga. After immigration and customs formalities meet your Tanzania driver guides and drive to the town of Arusha for lunch.<br /><br />After lunch continue to Manyara. Dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley, the rooms blend gracefully with the serene natural surroundings. The lodge is located only a few minutes from Lake Manyara National Park.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Amboseli - Namanga - Arusha - Manyara", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning enjoy a game drive in the park before driving to the Ngorongoro Conservation area.<br /><br />Stop at Gibbs Farm, an old-colonial farmhouse for lunch. Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Manyara - Ngorongoro", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the full day game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park drive to your lodge with game viewing en-route. Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi. Upon arrival in Nairobi fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.&nbsp;</p><p>Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Serengeti - Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.&nbsp;</p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.6856509;
+					var maxLat = -1.274359;
+					var maxLng = 40.866667;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+
+
+<!-- End Here-->
+
+<!-- A NEW YEAR CELEBRATION AT THE TSAR'S BALL IN ST.PETERSBURG Start Here-->
+<div id="popup8" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli29"><a href="javascript:void(0)" onClick="showMe('29');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab29');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli30"><a href="javascript:void(0)" onClick="showMe('30');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli31"><a href="javascript:void(0)" onClick="showMe('31');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli32"><a href="javascript:void(0)" onClick="showMe('32');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/three-winter-wonderlands.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab29" style="display:block;">
+
+<h1>A NEW YEAR CELEBRATION AT THE TSAR'S BALL IN ST.PETERSBURG</h1>
+<div class="popupbanner"><img src="../images/A_NEW_YEAR_CELEBRATION_AT_THE_TSARS_BALL_IN_STPETERSBURG.jpg" alt="Three winter wonderlands" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+
+<ul class="itinerarylist">
+<li>
+
+<h3>Programme Overview</h3>
+<p>Experience New Year somewhere different with this 6-day itinerary showcasing St Petersburg's highlights and the spectacular New Year Tsar's Ball.</p>
+<p><strong>Duration:</strong>  6 days/ 5 nights</p>
+<p><strong>Highlights:</strong> St Petersburg </p>
+
+
+</li>
+<h5>Detailed Itinerary</h5>
+<li><h4>Day 1</h4>
+<h5>ARRIVE ST PETERSBURG</h5>
+<p>After arrival at St Petersburg airport you will be met by an A&K representative and assisted with private transfer to your Hotel.</p>
+<p><strong>Overnight:</strong> Grand Hotel Europe<br />
+<strong>Meal Plan:</strong> None</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>ST PETERSBURG </h5>
+<p>Begin with your journey to explore The Hermitage museum, situated in the lavishly decorated Winter Palace. View its six magnificent buildings with three million pieces of artwork, including private collections of the Western European aristocracy and monarchies. Take a guided tour of the museum with a special visit to the Gold Room to view its exquisite collection of Scythian gold.</p> 
+
+    <p>This afternoon, enjoy lunch at leisure and proceed to visit the opulent Yusupov Palace, home to Russia’s wealthiest family before the revolution. Further, view the beautiful state, private rooms (including the exotic Moorish Room) and the basement room where the ‘mad monk’ Rasputin was poisoned in 1916.</p>
+
+        <p>Tonight, you may wish to have dinner at one of the city’s finest restaurants with strategic locations and sumptuous cuisines. You will be assisted with recommendations and table reservations for your dinner. </p>
+
+<p><strong>Overnight:</strong> Grand Hotel Europe<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>ST PETERSBURG </h5>
+<p>This day, journey southwards for a morning visit to Pavlosk Palace, once a royal residence.  Pavlosk’s park of woodland, rivers, lakes, and classical statues is one of the most exquisite in Russia and the Great Palace is a classical contrast to Catherine’s Palace. </p>
+<p>Later, hop on for a ride in the horse drawn troika, colorfully painted in a traditional Russian style. The fervent ring of the bells tied to a bridle will be your accompanying music.</p>
+
+<p>This afternoon, enjoy lunch at the lively country restaurant Podvorie Dacha, where President Putin has celebrated his birthday. Travel back to St. Petersburg and after some time at leisure, set off to enjoy a memorable night at the Tsar’s Ball at Catherine Palace.</p>
+
+<p>This annual ball has been successfully organized since 1994 at the magnificent Catherine Palace in Tsarskoye Selo on the 31st of December. Here, you will enjoy an evening of true romance and splendor echoing the imperial traditions of a bygone era, adorned with an authentic atmosphere of unequaled pomp.</p>
+
+<p>On arrival at Catherine Palace, enjoy a welcome by the Military Brass Orchestra while Royal Hussars with torches escort you to the building. Sip a cocktail on the Grand Staircase before proceeding through the beautiful baroque rooms to the Throne Hall for dinner. The fabulous 5 course dinner is accompaniment by a Symphony Orchestra, Classical Balalaika Orchestra as well as ballet and opera performances. Further, view a bell concert and a beautiful display of fireworks as the clock strikes twelve. </p>
+<p>After midnight, enjoy a Russian folklore show, Cossack show, while the Jazz Orchestras plays until early hours making for a truly special and greatly memorable New Year celebration.</p>
+
+<p><strong>Overnight:</strong> Grand Hotel Europe<br />
+<strong>Meal Plan: </strong> B
+</p>
+</li>
+
+<li>
+<h4>Day 4</h4>
+<h5>ST PETERSBURG</h5>
+<p>Spend a relaxing morning and enjoy the hospitality of your luxurious hotel. You may wish to attend a New Year’s Brunch at the historic European restaurant of your hotel.</p>
+
+    <p>Later, you may choose to spend the afternoon exploring St. Petersburg. Perhaps visit the vibrant traditional Christmas Market at the Ostrovsky Square. Continue in the festive spirit with games, carousels, food and souvenirs as well as live music concerts. The evening is for you to enjoy at leisure.</p>
+
+<p><strong>Overnight:</strong> Grand Hotel Europe<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li> 
+<li>
+<h4>Day 5</h4>
+<h5>ST PETERSBURG </h5>
+<p>This day, discover the Russian Museum, exhibiting over 40,000 exhibits showcasing the history of Russian art.</p>
+
+<p>You may wish to stop for lunch at “Sadko” restaurant. Be engulfed by the stunning interior invoking thoughts of a flower gallery with red blooms filling the walls. Enjoy the hip atmosphere along with traditional Russian food styled with modern twist.</p>
+
+<p>Later, you get the opportunity to interact with a local Russian family. Experience the authentic local culture as you visit their home for a traditional tea of Russian ‘Baranki’, cookies and stewed fruit. Spend the remaing day at leisure.</p>
+<p><strong>Overnight:</strong> Grand Hotel Europe<br />
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>DEPART ST PETERSBURG </h5>
+<p>Today, you will be escorted to the airport with a private transfer for your onward flight.</p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab30" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Russia"/>
+<input type="hidden" name="region_email" id="region_email" value="Europe"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="A New Year Celebration At The Tsar Ball In St.Petersburg"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="a-new-year-celebration-at-the-tsar-ball-in-st.petersburg.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab31" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Russia"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Europe"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="A New Year Celebration At The Tsar Ball In St.Petersburg"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab32" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport and transfer to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />Just south of the equator Nairobi's main avenues blaze with colour from tropical bushes and vines. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch.<br /><br />Sitting in the formidable shadow of Africa's highest mountain, Amboseli Serena Lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of big game, from lion, buffalo, giraffe and wildebeest to some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies southeast of Nairobi, at the foot of Mount Kilimanjaro.&nbsp; The snow-capped peak of Mount Kilimanjaro rising above a saucer of clouds, dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge and then drive to the Kenya/Tanzania border town of Namanga. After immigration and customs formalities meet your Tanzania driver guides and drive to the town of Arusha for lunch.<br /><br />After lunch continue to Manyara. Dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley, the rooms blend gracefully with the serene natural surroundings. The lodge is located only a few minutes from Lake Manyara National Park.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Amboseli - Namanga - Arusha - Manyara", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning enjoy a game drive in the park before driving to the Ngorongoro Conservation area.<br /><br />Stop at Gibbs Farm, an old-colonial farmhouse for lunch. Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Manyara - Ngorongoro", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the full day game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park drive to your lodge with game viewing en-route. Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi. Upon arrival in Nairobi fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.&nbsp;</p><p>Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Serengeti - Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.&nbsp;</p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.6856509;
+					var maxLat = -1.274359;
+					var maxLng = 40.866667;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+
+
+<!-- End Here-->
+
+<!-- A NEW YEAR CELEBRATION AT THE TSAR'S BALL IN ST.PETERSBURG Start Here-->
+<div id="popup9" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli33"><a href="javascript:void(0)" onClick="showMe('33');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab33');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli34"><a href="javascript:void(0)" onClick="showMe('34');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli35"><a href="javascript:void(0)" onClick="showMe('35');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli36"><a href="javascript:void(0)" onClick="showMe('36');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/three-winter-wonderlands.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab33" style="display:block;">
+
+<h1>CHRISTMAS AND NEW YEAR’S EVE IN MOROCCO </h1>
+<div class="popupbanner"><img src="../images/CHRISTMAS_AND_NEW_YEARS_EVE_IN_MOROCCO.jpg" alt="Three winter wonderlands" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+
+<ul class="itinerarylist">
+<li>
+
+<h3>Programme Overview</h3>
+<p>Explore Morocco, discover its main attractions and celebrate Christmas or welcome in 2015 in thrilling Marrakech! </p>
+<p><strong>Duration:</strong>  9 days/ 8 nights</p>
+<p><strong>Highlights:</strong> Casablanca | Fes Rabat | Marrakech | Atlas Mountains</p>
+
+
+</li>
+<h5>Detailed Itinerary</h5>
+<li><h4>Day 1</h4>
+<h5>ARRIVE CASABLANCA</h5>
+<p>Upon arrival at the Casablanca airport, you will be greeted by an A&K representative. The name Casablanca evokes thoughts of good living, romance and adventure in a tropical setting. Casablanca’s fairly recent growth has made it the bustling, French-influenced business centre of Morocco it is today.</p>
+
+    <p>Depending on your arrival time, you will visit the Hassan II Grand Mosque, one of the largest in the world and can house as many as 25,000 worshipers. The mosque’s minaret is the tallest religious structure in the world. Later, drive to the historical city of Fes.</p>
+<p><strong>Meal Plan:</strong> B</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>FES</h5>
+<p>Today, explore the Middle Ages as you visit Fes El Bali, the largest living medieval city in the world and cultural heart of Morocco. Your sightseeing for the day includes a visit to the Nejjarine Square, Fondouq (Caravanserai), Dar Batha and the Museum of Moroccan Arts.</p>
+
+<p>Continue to visit the Fes El Jedid (New Fes), a UNESCO World Heritage site built by the Merinid Dynasty in the 13th Century, providing an interesting insight into Jewish architecture and culture. Here you view the Royal Palace, mosques, medersas (schools), souks and the city wall.</p>
+
+<p><strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>RABAT</h5>
+<p>This day, explore Volubilis, the site of the largest and most well preserved Roman ruins in Morocco. Further, visit Meknes, the formal Imperial city built in the 17th Century.</p> 
+
+<p>Later, admire Bab Mansour gateway, the grandest of all imperial Moroccan gateways. Also view the Moulay Ismail’s Mausoleum.</p>
+
+<p>This afternoon, drive to Rabat, the capital of the Kingdom.</p>
+
+<p><strong>Meal Plan: </strong> B
+</p>
+</li>
+
+<li>
+<h4>Day 4</h4>
+<h5>RABAT </h5>
+<p>Start the day with a visit to Citadel of Challah, the oldest part of the city. Enjoy your lunch and proceed for a visit to La Tour Hassan II Mosque, the city's most famous site is the massive minaret of Hassan. Continue to see the Mohammed V Mausoleum, one of the greatest monuments of modern Morocco, inaugurated in 1967.Here, the deceased king lies entombed in white onyx, surrounded by royal guards.</p>
+
+<p>Later, visit the Kasbah des Oudayas, Stroll through the sights as you appreciate the scenery. The Kasbah was the Almohad citadel of medieval Rabat, and is guarded by an impressive arched gate built around 1195.This afternoon, depart for the bustling Marrakech, the pearl of the south, enchanting you with its historical monuments.</p> 
+
+<p><strong>Meal Plan:</strong> B
+</p>
+</li> 
+<li>
+<h4>Day 5</h4>
+<h5>MARRAKECH</h5>
+<p>Today, discover the mysteries of Marrakech. Begin with a visit to the Bahia Palace, a small piece of folly ordered in 1880 by the great vizir Sidi Moussa.</p>
+
+    <p>Further, visit Si Said Museum to appreciate its beautifully decorated weapons, fabulously decorative clothing, beaten copper articles and captivating traditional Berber jewels.Enjoy your lunch and proceed to visit the Ben Youssef Medersa, one of the jewels of Marrakech. The current structure of this Koranic school was built around 1570.</p>
+
+        <p>Later, discover the labyrinth of souks and get ready to shop. This maze of vibrant alleys and small squares are home to a bewildering array of stalls and ateliers devoted to specific crafts. Then, visit the Djemâa el Fna Square, where a multitude of street-artists and stalls of dried fruit and orange juice can be found.</p> 
+            <p>Conclude the day with a visit to the Koutoubia Mosque, an emblem of Marrakech. Built in the 12th century, the Koutoubia minaret is the most perfect Islamic religious structure in North Africa.</p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>MARRAKECH</h5>
+<p>This morning, travel to visit a little farm located in the surroundings of Marrakech for a cookery class. Enjoy a cozy and casual atmosphere and be welcomed by Chef Tarek, under a Berber tent adorned with carpets and cushions, nestled in organic gardens. Embark on a culinary excursion as you mix all the ingredients to cook a tasteful Moroccan salad and sweet and sour tajine. The chef also shares with you his knowledge and tip on Moroccan cooking.
+    While the dish is cooking on the fire, interact with the locals of the Berber village before returning to the farm for your freshly cooked meal. </p>
+
+<p>This afternoon, enjoy a horse-drawn carriage ride, starting in the Menara Gardens, where tranquility and comparative coolness makes it one of the most pleasant and romantic places for taking a stroll in Marrakech. Also view a harmonious Saadian style pavilion, built at the end of the 19th century.</p>
+
+    <p>Later, Continue to the Majorelle Gardens, created in the 1920's by the French painter Jacques Majorelle. Majorelle is a very unique and special blue and is now a trademark colour name. </p>
+
+        <p>Whether you are celebrating Christmas or welcoming in the 2015 New Year, if you prefer an elegant and refined atmosphere or something more wild, we will be pleased to arrange a special evening which will remain in your memories forever.</p> 
+
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+
+<li>
+<h4>Day 7</h4>
+<h5>MARRAKECH</h5>
+<p>Spend the day at leisure relaxing by the pool of the hotel or strolling in the medina.</p> 
+
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 8</h4>
+<h5>ATLAS MOUNTAINS</h5>
+<p>This day, unveil another side of Morocco, the gorgeous Atlas Mountains and North Africa’s greatest mountain range.
+En-route enjoy stunning views of the snow-capped mountains and the little Berber villages nestled in the hills. Further, explore the village of Asni and Imlil on the foothills of the Djebel Toubkal, the highest mountain in the Atlas. </p>
+
+<p>Arrive in Imlil and exchange your car for a mule, the traditional method of transportation in this region. Travel to explore the fascinating and authentic Berber culture. Reach the village located on a small hill and get the opportunity to experience their culture and family. Visit the home of a village local and interact with his family, view the traditional oven where they cook the delightful Berber bread and savor mint tea.</p>
+
+    <p>Later, depart for the valley du Kik and the rocky Agafay desert. This will be a complete change of scenery with dry landscape replacing lush vegetation. Then visit the tranquil Kasbah Beldi, located in the heart of the countryside, far from the hustle and bustle of Marrakech. This beautiful and charming place is perfect for a rustic lunch in a cozy and comfortable atmosphere. Appreciate the spectacular views on Lake Lalla Takarkoust as you enjoy the smell of roses with a sumptuous lunch. Return to Marrakech and spend the rest of the day at leisure.</p>
+
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+<li>
+<h4>Day 9</h4>
+<h5>DEPART MOROCCO</h5>
+<p>This day, bid farewell to Morocco and transfer to the airport for your onward flight.</p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab34" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="morocco"/>
+<input type="hidden" name="region_email" id="region_email" value="North Africa"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="Christmas And New Years Eve In Morocco"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="christmas-and-new-years-eve-in-morocco.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab35" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="morocco"/>
+<input type="hidden" name="region_quote" id="region_quote" value="North Africa"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="Christmas And New Years Eve In Morocco"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab36" style="display:none;">
+<script type="text/javascript">
+	
+			var markerLetter = 'A';
+			var map = '';
+			var zoom = 10;
+			var origin = 0;
+			
+			function gmapInitialize() {
+				if (GBrowserIsCompatible()) {
+					map = new GMap2(document.getElementById("map_canvas"));
+					map.setUIToDefault();
+					
+					
+						description = '<div style="width:300px;">Day 1 - ';
+						description = description + "<p>Arrive at Jomo Kenyatta International Airport and transfer to the Norfolk Hotel.&nbsp;<br /><br />Probably Kenya's most famous hotel - and certainly one of its oldest - The Norfolk has been drawing the rich and famous to its hallowed doors since they first opened on Christmas Day 1904. In many respects, Nairobi grew up around the Norfolk, which occupies a central but quiet location opposite the National Theatre.<br /><br />Just south of the equator Nairobi's main avenues blaze with colour from tropical bushes and vines. The nearby Nairobi National Park boasts the presence of all but one of the`Big Five'. Shopping in Nairobi varies from African clothing and craft shops to open-air markets. There are excellent museums, offering insights into the fauna, culture and history of Kenya.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />The rest of the day is free to relax or if time permits, enjoy some sightseeing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.274359, 36.813106), "Arrive Nairobi", description, "1");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 2 - ';
+						description = description + "<p>After breakfast, begin your drive south to Amboseli.<br /><br />Arrive at Amboseli Serena Lodge in time for lunch.<br /><br />Sitting in the formidable shadow of Africa's highest mountain, Amboseli Serena Lodge offers luxurious rooms and fine dining in one of Kenya's purest natural settings. Accommodation is in well-spaced rooms designed along the lines of traditional Maasai manyattas and decorated with authentic Africana and attractive murals painted by a local artist. A natural spring and waterhole in the lodge's immediate vicinity draw a steady stream of big game, from lion, buffalo, giraffe and wildebeest to some of Africa's largest elephant herds. The lodge also features a sculpted swimming pool and there are several protected jogging trails.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Nairobi - Amboseli", description, "2");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 3 - ';
+						description = description + "<p>A full day to explore Amboseli National Park.<br /><br />Amboseli lies southeast of Nairobi, at the foot of Mount Kilimanjaro.&nbsp; The snow-capped peak of Mount Kilimanjaro rising above a saucer of clouds, dominates every aspect of the park and provides a backdrop to a spectacular display of wildlife - lion, elephant, leopard, rhino, cheetah, buffalo and a host of plains game. The Tanzania border runs along its base and also forms the boundary of the park. Amboseli has five main wildlife habitats- open plains, acacia woodland, rocky thorn bush country, swamps and marshland.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.666667, 37.283333), "Amboseli", description, "3");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 4 - ';
+						description = description + "<p>Breakfast at the lodge and then drive to the Kenya/Tanzania border town of Namanga. After immigration and customs formalities meet your Tanzania driver guides and drive to the town of Arusha for lunch.<br /><br />After lunch continue to Manyara. Dramatically situated on top of the Mto Wa Mbu escarpment, overlooking the vast expanse of the Great Rift Valley, the rooms blend gracefully with the serene natural surroundings. The lodge is located only a few minutes from Lake Manyara National Park.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.6, 35.933333), "Amboseli - Namanga - Arusha - Manyara", description, "4");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 5 - ';
+						description = description + "<p>This morning enjoy a game drive in the park before driving to the Ngorongoro Conservation area.<br /><br />Stop at Gibbs Farm, an old-colonial farmhouse for lunch. Built by German settlers in the early 20th century, the house still has the character of a well-looked after private house with log fires and friendly service. It lies perched on the outer slopes of the Ngorongoro Crater Highlands and is surrounded by coffee plantations and a vegetable farm with views over this lush agricultural area.<br /><br />After lunch continue to the&nbsp; Ngorongoro Serena Lodge which is nestled on the rim of the Ngorongoro Crater, one of the natural wonders of the world.<br /><br />Your lodge is designed in stone and wood.&nbsp; The vegetation around is left natural, so the lodge is almost unseen as it blends in with its natural surroundings. All rooms have breathtaking views of the crater.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Manyara - Ngorongoro", description, "5");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 6 - ';
+						description = description + "<p>This morning drive down the crater walls and spend the full day game viewing in the crater.<br /><br />The Ngorongoro Cater is the world's largest intact caldera. With an area of just 260 km&sup2; (102 square miles) the Ngorongoro is a true Garden of Eden. Highland forest covers the 610 metre (2,000 ft) sheer sides of the caldera, a spectacular barrier encircling and protecting the roaming plains wildlife which patrol the flat crater floor. This is a world of wide grassland plains, acacia copses, pools and streams. All the 'Big Five' are here - elephant, buffalo, lion, leopard and even rhino can still be found. The central soda lake attracts birds and sometimes flocks of flamingo.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-3.207834, 35.463749), "Ngorongoro Crater", description, "6");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 7 - ';
+						description = description + "<p>Enjoy a hearty breakfast at the lodge before beginning your drive to Olduvai Gorge, often called the Cradle of Mankind. This is one of the most important prehistoric sites in the world. The museum at the site shows how this area played an important part in understanding early human evolution.<br /><br />Leaving Olduvai continue to the Serengeti, one of the most magnificent parks in Africa. On arrival at the park drive to your lodge with game viewing en-route. Serengeti is the home of the great wildebeest migration and the short grass plains around your accommodation provide the perfect setting for the wildebeest as they mass around the area during the birthing of their young in the early months of each year.<br /><br />Kusini is perfectly located in a private corner of the Serengeti and sited among a cluster of kopjes (beautiful outcrops of granite rock).&nbsp; Part of Kusini's charm is its remote and private location within the park borders and with no other camps in the near vicinity Kusini offers exceptional and essentially private game viewing.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Ngorongoro Crater - Serengeti", description, "7");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 8 - ';
+						description = description + "<p>A full day to explore the Serengeti.<br /><br />The Serengeti's abundance of game is legendary and it is famed for the annual wildebeest and zebra migration which mass on its grassland plains, dotted with acacia.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.416213, 34.6856509), "Serengeti", description, "8");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 9 - ';
+						description = description + "<p>This morning after breakfast take a scheduled flight to Kilimanjaro Airport and connect with your flight to Nairobi. Upon arrival in Nairobi fly to the famous Masai Mara Game Reserve.<br /><br />On landing at the airstrip, your guide will meet you. Take a short game drive en route to your camp. You may be rewarded with sightings of elephant, buffalo, giraffe and a host of other plains game.<br /><br />Olonana is at the forefront of eco-tourism in Kenya with solar power, bio degradable products and an ingenious wetlands project which allows for all used water to be totally recycled and returned to the river clean.&nbsp;</p><p>Your room is a permanent canvas structure. The camp comprises of just 14 spacious and airy en suite accommodation tents; all with floor to ceiling mosquito net 'windows' and river view verandahs.<br /><br />Lunch is served at the main cottage's lounge and dining area, its spacious verandah overlooks the river where the resident hippo pods spend their days wallowing.<br /><br />After lunch there is time to relax before enjoying an activity of your choice.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Serengeti - Masai Mara", description, "9");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 11 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "11");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 14 - ';
+						description = description + "<p>As above.<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "14");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 10 - ';
+						description = description + "<p>The next two days are yours to enjoy game viewing as you venture out in open 4X4 vehicles led by your expert driver/guide. A wide range of activities are offered at Olonana and you can plan your day to be as active or as leisurely as you wish. Visit the adjacent Maasai village, take a morning bush walk with an armed ranger or enjoy sundowners in the evening or even dinner under the stars in the middle of the African bush.<br /><br />In the Mara, the wildlife is abundant and the swaying grasslands ensure that animals are never out of sight. Elephants browse amongst the large herds of wildebeest, topi, gazelle, eland and buffalo. The plains offer a rich variety of food for the dominant predators: lion, leopard, hyena and cheetah. In the Mara River, hippos submerge while crocodiles sunbathe on the riverbanks.<br /><br />Around July to September, rain depending, the Masai Mara is host to the famous wildebeest migration which is one of the few remaining mass migrations of mammals in the world. During this time herds of over a million wildebeest will trawl their way through this region and they become the major focus for predatory activity and drama unfolds at every corner.<br /><br />There are also options for a morning balloon safari or a half-day visit to Lake Victoria.<br /><br />Balloon Safari: As the balloon is inflated against the first rays of sunrise your pilot will go through safety procedures. Once aloft, the balloon floats gently over the plains, giving a bird's eye view of the game below as the sun creeps slowly over the horizon. After around one hour the balloon lands as breakfast is already being prepared and, of course, enjoy a glass or two of bubbly to toast your flight in a tradition initiated by the Montgolfier brothers.&nbsp;<br /><br />Lake Victoria Adventure : An early start this morning with a transfer to the airstrip for a flight by light aircraft to Lake Victoria. On arrival enjoy an appetising full English breakfast before you board the boat for the morning. There will be the opportunity to try fishing for the legendary giant Nile perch found in these waters as you explore the myriad of tiny islands in this region of the lake. An experienced and knowledgeable fisherman captains each boat. There is the chance to stop at a traditional fishing village and see how the villagers live from day to day before returning to the airstrip for your return flight to the Masai Mara.&nbsp;&nbsp;&nbsp;<br /></p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-1.49, 35.143889), "Masai Mara", description, "10");
+						map.addOverlay(mark);
+					
+						description = '<div style="width:300px;">Day 13 - ';
+						description = description + "<p>Lamu is an ancient Arab island, blissfully lost in the tides of history with its historical mosques and&nbsp; narrow streets. Donkey is the main form of transport as there are no cars on the island's narrow streets which are very much as they were centuries ago.&nbsp;</p><p>Two days at leisure to relax and fall into the peace, tranquility and coastal pace of this unique island.</p>";
+						description = description + '</div>';
+						var mark = createMarker(new GLatLng(-2.283333, 40.866667), "Lamu Island", description, "13");
+						map.addOverlay(mark);
+					
+					
+					var minLat = -3.6;
+					var minLng = 34.6856509;
+					var maxLat = -1.274359;
+					var maxLng = 40.866667;
+										
+					botLeft = new GLatLng(minLat, minLng);
+					topRight = new GLatLng(maxLat, maxLng);
+					
+					bounds = new GLatLngBounds(botLeft, topRight);
+					origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+					zoom = map.getBoundsZoomLevel(bounds);
+					map.setCenter(origin, zoom);
+					zoom = map.getZoom();
+				}
+			}
+			
+			function createMarker(point, title, html, day) {
+				var markerOpts = {};
+				var mIcon = new GIcon();
+				//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+				
+				//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+				mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+				mIcon.iconSize = new GSize(20, 34);
+				mIcon.iconAnchor = new GPoint(10, 34);
+				mIcon.infoWindowAnchor = new GPoint(10, 1);
+				
+				markerOpts = {
+					"icon": mIcon,
+					"clickable": true,
+					"title": title
+					};
+				var newPoint = point;
+				var marker = new GMarker(newPoint, markerOpts);
+				
+				GEvent.addListener(marker, "click", function() {
+					marker.openInfoWindowHtml(html);
+				});
+				
+				markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+				
+				return marker;
+			}
+			
+			//$(document).ready(function(){
+//				gmapInitialize();
+//			});
+			
+			$(window).unload(function(){
+				GUnload();
+			});
+	
+		</script>
+
+<div id="map_canvas" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+
+
+<!-- End Here-->
+
+<!-- A NEW YEAR CELEBRATION IN EDINBURGH Start Here-->
+<div id="popup10" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli37"><a href="javascript:void(0)" onClick="showMe('37');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab37');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli38"><a href="javascript:void(0)" onClick="showMe('38');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli39"><a href="javascript:void(0)" onClick="showMe('39');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli40"><a href="javascript:void(0)" onClick="showMe('40');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/three-winter-wonderlands.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab37" style="display:block;">
+
+<h1>A NEW YEAR CELEBRATION IN EDINBURGH</h1>
+<div class="popupbanner"><img src="../images/A_NEW_YEAR_CELEBRATION_IN_EDINBURGH.jpg" alt="Three winter wonderlands" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+
+<ul class="itinerarylist">
+<li>
+
+<h3>Programme Overview</h3>
+<p>Experience New Year somewhere different with this 6-day itinerary showcasing Edinburgh's highlights and famous Hogmanay celebrations.</p>
+<p><strong>Duration:</strong>  6 days/ 5 nights</p>
+<p><strong>Highlights:</strong> Edinburgh</p>
+
+
+</li>
+<h5>Detailed Itinerary</h5>
+<li><h4>Day 1</h4>
+<h5>ARRIVE EDINBURGH</h5>
+<p>After arrival at the Edinburgh airport, you will be met by an A&K representative and escorted to your hotel by a private vehicle.</p>
+<p><strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan: </strong> NONE
+</p>
+</li>
+<li>
+<h4>Day 2</h4>
+<h5>EDINBURGH </h5>
+<p>Today, embark on a guided city tour of Edinburgh, the inspiring capital of Scotland, on a private vehicle.
+Visit the Edinburgh Castle to view the Scottish Crown Jewels and enjoy panoramic views of the city. Further, travel down the Royal Mile to the Holyrood Palace, official residence of the British monarch in Scotland. View the magnificent staterooms of the palace (if no member of the Royal Family is staying here at the time).</p>
+
+<p>This afternoon, travel to discover the Rosslyn Chapel, recently seen in the Da Vinci Code. Explore this exquisitely carved church building with an expert guide, who will take you through some of the mystical masonic symbolism that is present on almost every surface.</p>
+
+<p><strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan: </strong> B
+</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>EDINBURGH </h5>
+<p>This morning, discover the Scottish countryside as you drive into the soft fruit-growing region called Strathmore and visit the turreted medieval Glamis Castle, the childhood home of Queen Elizabeth and legendary setting of Shakespeare's 'Macbeth'.</p>
+
+    <p>Proceed southwards over the Sidlaw Hills to arrive at St. Andrews, the charming and historic town famous as the home of golf. Later, Visit the ruins of the cathedral, destroyed during the reformation also view the historic university buildings where Prince William first met Kate Middleton.</p>
+        <p>Travel back to Edinburgh and get ready to watch the torchlight procession that winds its way from the Royal Mile along to Carlton Hill. Toward the end of the procession a firework display marks the start of the Hogmanay celebrations.</p>
+
+<p><strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan: </strong> B
+</p>
+</li>
+
+<li>
+<h4>Day 4</h4>
+<h5>EDINBURGH  </h5>
+<p>Begin the day with a drive down to the city docks at Leith, where you will board the former Royal Yacht Britannia, once used by the Royal Family, now permanently moored here. Take a guided tour of the Yacht, which has played host to some of the world's most famous people. View the staterooms in which the Queen entertained, and the private quarters where the Royal Family relaxed. </p>
+
+    <p>Celebrate the New Year’s Eve at the glamorous and stylish Hogmanay Gala Ball at the Balmoral Hotel. Begin the evening with a Champagne and Canapé reception in the Holyrood Suite. Be serenaded by the delightful trio ‘Le Swing’ singing Rat Pack and Michael Buble classics.</p>
+        <p>Later, Proceed for a stupendous dinner in the Sir Walter Scott Suite. Witness an amazing traditional Scottish bagpipes performance followed by a dance performance by some of the world’s top highland dancers. Continue the night’s celebration as you take part in a Scottish ceilidh, a form of Scottish dancing, accompanied by one of the best ceilidh bands in the country. Mark the midnight stroke with an outstanding view of the city’s extraordinary fireworks. Drink champagne, take part in the customary Auld Land Syne song and let the DJ entertain you into the early hours of the morning.</p>
+
+<p><strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan: </strong> B
+</p>
+</li> 
+<li>
+<h4>Day 5</h4>
+<h5>EDINBURGH </h5>
+<p>This day, relax after the celebrations of the previous night. Enjoy the tranquility of the streets and explore the city with a short walk as you climb up Calton Hill to absorb stunning views of the city. You may opt for a longer adventure walk down to Holyrood Park. Continue to climb up Arthur’s Seat, the extinct volcano that provides one of the most spectacular backdrops to any European City.
+</p>
+<p><strong>Overnight:</strong> The Balmoral<br />
+<strong>Meal Plan: </strong> B
+</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>DEPART EDINBURGH</h5>
+<p>After breakfast, you will be assisted with transfer to the airport by a private vehicle for your onward flight.</p>
+<p>
+<strong>Meal Plan:</strong> B
+</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab38" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =1;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="Scotland"/>
+<input type="hidden" name="region_email" id="region_email" value="Uk"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="A New Year Celebration In Edinburgh"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="a-new-year-celebration-in-edinburgh.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab39" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="Scotland"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Uk"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="A New Year Celebration In Edinburgh"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab40" style="display:none;">
 <script type="text/javascript">
 	
 			var markerLetter = 'A';
