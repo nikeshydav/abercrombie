@@ -68,6 +68,21 @@ $(document).ready(function(){
             if($("div#tab29").attr("id") != null){
                 $("#tab29").show();
             }
+             if($("div#tab33").attr("id") != null){
+                $("#tab33").show();
+            }
+             if($("div#tab37").attr("id") != null){
+                $("#tab37").show();
+            }
+             if($("div#tab41").attr("id") != null){
+                $("#tab41").show();
+            }
+             if($("div#tab45").attr("id") != null){
+                $("#tab45").show();
+            }
+             if($("div#tab49").attr("id") != null){
+                $("#tab49").show();
+            }
 			
         }); //fade them both out
 		
