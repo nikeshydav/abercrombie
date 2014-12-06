@@ -1,0 +1,1595 @@
+<?php
+include("../config.php");
+include("../classes/mimemail.class.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content=""/>
+<meta name="description" content="" />
+<title>Belmond Royal Scotsman - A&K India</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<!--Flag-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../js/spinners.js"></script>
+<script type="text/javascript" src="../js/lightview.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+<!--Flag-->
+<!--pop up-->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery1.js"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+<script language="javascript">
+function showMe(tab)
+{		
+	for(var i=1; i<=16; i++)
+	{
+		var name="tab"+i;
+		var name2="divli"+i;
+		if(tab==i)
+		{
+		
+	       if(document.getElementById(name2) != null)	
+		   {
+				document.getElementById(name2).className="active";
+		   }
+		   if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="";
+		   }
+		} else {
+		    if(document.getElementById(name2) != null)	
+		    {
+				document.getElementById(name2).className="";
+			}
+			
+			if(document.getElementById(name) != null)	
+		   {
+				document.getElementById(name).style.display="none";
+			}
+		}
+		if(name == 'tab4'){
+		  $(document).ready(function(){
+				gmapInitialize();
+			});
+		}
+		if(name == 'tab8'){
+		  $(document).ready(function(){
+				gmapInitialize1();
+			});
+		}
+		if(name == 'tab12'){
+		  $(document).ready(function(){
+				gmapInitialize2();
+			});
+		}
+		if(name == 'tab16'){
+		  $(document).ready(function(){
+				gmapInitialize3();
+			});
+		}
+	}
+}
+</script>
+<script language="javascript">
+function CallPrint(strid)
+{
+ var prtContent = document.getElementById(strid);
+ var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+ WinPrint.document.write(prtContent.innerHTML);
+ WinPrint.document.close();
+ WinPrint.focus();
+ WinPrint.print();
+ WinPrint.close();
+ prtContent.innerHTML=strOldOne;
+}
+</script>
+<!--pop up-->
+<link rel="SHORTCUT ICON" href="../favicon.ico" />
+<!-- Google Analytics Start here -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5419456-35']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36473986-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
+href="../yahoo.html">
+                 
+     <img src="../images/livechaticon.png" alt="live chat" /></a>
+     <SCRIPT language=JavaScript type=text/JavaScript>
+
+    var win = null;
+
+    function NewWindow(mypage, myname, w, h, scroll) {
+
+        var winl = (screen.width - w) / 2;
+
+        var wint = (screen.height - h) / 2;
+
+        var settings = 'height=' + h + ',';
+
+        settings += 'width=' + w + ',';
+
+        settings += 'top=' + wint + ',';
+
+        settings += 'left=' + winl + ',';
+
+        settings += 'scrollbars=' + scroll + ',';
+
+        settings += 'resizable=yes';
+
+        win = window.open(mypage, myname, settings);
+
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+
+    }
+
+</SCRIPT></span>
+
+<div class="tickerHolder">
+<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquiry" /></a><br class="Clr" />
+<br />
+<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+<div id="Wrap">
+  <!-- Header Part Start Here -->
+  <?php include('../header.html'); ?>
+<!-- Header Part End Here -->
+
+<!-- Banner Part Start Here -->
+<div id="Banner"><img src="../images/luxury-rail.jpg" alt="Luxury Rail Journeys" /></div>
+<!-- Banner Part End Here -->
+
+<!-- Container Part Start Here -->
+<div id="Container">
+<!-- Left Container Part Start Here -->
+<div class="LeftContaner">
+<div class="Breadcrumb">
+<ul>
+<li>You are here</li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="ak-journey-style.html">A&amp;K Journey Styles</a></li>
+<li><a href="Luxury-rail-journey.html">Luxury rail journeys</a></li>
+<li><a href="train-portfolio.html">Train Portfolio </a></li>
+<li><a href="royal-scotsman.html">Belmond Royal</a></li>
+<li>Recommended Itineraries</li>
+</ul>
+</div>
+<div class="LeftList">
+        <h5><a href="Luxury-rail-journey.html"> Luxury rail journeys</a></h5>
+     
+		  <ul>
+		    <li><a href="train-portfolio.html" title="Train Portfolio"> Train Portfolio </a>
+		      <ul>
+<li><a href="royal-scotsman.html" title="Golden Eagle "><span>Belmond Royal Scotsman<br><!--<p style="font-size:11px; margin-top:-8px">-Trans Siberian Express</p> --></span></a>
+
+<ul>
+              <li><a href="royal-scotsman-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span>	Recommended Itineraries</a></li>
+              
+              <!-- <li><a href="golden-eagle-special-offers.html" title="Special Offers"><span>-</span> Special Offers</a></li>
+               
+            </ul>
+            
+             <li><a href="the-blue-train.html" title="The Blue Train "><span>The Blue Train </span></a>
+             <li><a href="rovos.html" title="Rovos Rail "><span>Rovos Rail</span></a></li>
+             <li><a href="eastern-oriental-train.html" title="Eastern & Oriental Train "><span>The Eastern & Oriental Train </span></a></li>
+             <li><a href="orient-royal-scotsman-train.html" title="Eastern & Oriental Train "><span>Orient Express <br><p style="font-size:11px; margin-top:-8px">-The Royal Scotsman</p> </span></a></li>
+
+ </ul>-->
+</li>
+ </ul>
+	
+         
+ 
+        <h4>CHOOSE YOUR STYLE</h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Choose Your Style</option>
+    	  <option value="../journeystyles/private-journeys.html">Private Journeys</option>
+          <option value="../journeystyles/festivals-and-long-weekends.html">Festivals & Long Weekends</option>
+          <option value="../journeystyles/small-ship-cruiesing.html">Small Ship Cruising</option>
+          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option> <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+          <option value="../journeystyles/celebration.html">Celebrations</option>
+                 <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
+          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+    <select onChange="ChangeValue(this)">
+	<option value="0" selected="selected">Select Destination</option>
+        <option value="../destinations/africa.html">Africa</option>
+		<option value="../destinations/middle-east-north-africa.html">Middle East &amp; North Africa</option>
+		<option value="../destinations/europe.html">Europe</option>
+		<option value="../destinations/australasia.html">Australasia</option>
+		<option value="../destinations/theorient.html">The Orient</option>
+		<option value="../destinations/south-america.html">South America</option>
+        <option value="../destinations/central-america.html">Central America</option>
+		<option value="../destinations/north-america.html">North America</option>
+        		<option value="../destinations/beach-island-escapes.html">Beach &amp; Island Escapes</option>
+		<option value="../destinations/antartica.html">Antarctica</option>
+         <option value="../destinations/arctic.html">Arctic</option>
+    </select>
+      </div>
+
+<?php include('../brochure_left.html'); ?>
+</div>
+<!-- Left Container Part End Here -->
+
+<!-- Center Container Part Start Here -->
+<div class="CenterContainerInner">
+<h1>Recommended itineraries</h1>
+<div class="Right">
+<div class="RightIcons"> <?php include('../share.html'); ?></div>
+<div class="NewsletterBox">
+<?php include('../newsletterform.html'); ?>
+</div>
+</div>
+<div class="Clr"></div>
+<div class="count-page">  <a href="royal-scotsman-recommended-itineraries.html"> <strong>1</strong></a> | <a href="royal-scotsman-recommended-itineraries1.html">2</a> | <a href="royal-scotsman-recommended-itineraries1.html">Next > </a> <!--<a href="golden-eagle-recommended-itineraries2.html">3</a> | --></div>
+<!-- <div class="RecommendedBox">
+<div class="leftbox"><img src="../images/golden-eagle/baikal-express.jpg" alt="Recommended Itineraries" /></div>
+<div class="rightbox">
+<h2>The Baikal Express Eastbound </h2>
+<p><strong>Duration:</strong> 9 Days <br />
+<strong>Highlights: </strong> Moscow, Kazan, Yekaterinburg, Novosibirsk, Iruktsk, Lake Baikal 
+</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('2');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup1" class="poplight" onclick="showMe('3');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/golden-eagle/the-silk-road.jpg" alt="Recommended Itineraries" /></div>
+<div class="rightbox"><h2>The Silk Road (Almaty - Moscow) Westbound</h2>
+<p><strong>Duration:</strong>   13 Days<br />
+<strong>Highlights:</strong> Almaty, Tashkent, Samarkand, Bukhara, Merv, Ashgabat, Khiva, Kara Kum, Volgograd, Moscow </p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup2" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/golden-eagle/silk-road-Moscow-Beijing.jpg" alt="Recommended Itineraries" /></div>
+<div class="rightbox"><h2>The Silk Road Westbound 
+</h2>
+<p><strong>Duration:</strong> 21 Days<br />
+<strong>Highlights:</strong> Beijing, Xian, Lanzhou, Dunhuang, Turpan, Urumchi, Almaty, Tashkent, Samarkand, Bukhara, Merv, Ashgabat, Khiva, Kara Kum, Volgograd, Moscow</p>
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('10');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup3" class="poplight" onclick="showMe('11');">Request a quote</a></strong>
+</div>
+</div> -->
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/golden-eagle/baikal-express.jpg" alt="Recommended Itineraries" /></div>
+<div class="rightbox"><h2>Classic Journey Aboard 'Belmond Royal Scotsman'</h2>
+<p><strong>Duration:</strong> 5 days/ 4 nights<br />
+<strong>Highlights:</strong> Keith | Kyle of Lochalsh | Boat of Garten | Dundee 
+</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup4" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/the_blue_train/ir2.jpg" alt="Recommended Itineraries" /></div>
+<div class="rightbox"><h2>Grand North Western Journey Aboard 'Belmond Royal Scotsman'</h2>
+<p><strong>Duration:</strong> 8 days / 7 nights<br />
+<strong>Highlights:</strong> Keith | Kyle of Lochalsh | Boat of Garten | Dundee | Spean Bridge | Bridge of Orchy | Wemyss Bay | Edinburgh 
+</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup5" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup5" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup5" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/golden-eagle/the-silk-road.jpg" alt="Recommended Itineraries" /></div>
+<div class="rightbox"><h2>Grand West Highland Journey Aboard 'Belmond Royal Scotsman'</h2>
+<p><strong>Duration:</strong> 6 days/ 5 nights<br />
+<strong>Highlights:</strong> Spean Bridge | Bridge of Orchy | Wemyss Bay | Boat of Garten | Dundee | Edinburgh
+</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup6" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup6" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup6" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div>
+
+<div class="RecommendedBox">
+<div class="leftbox"><img src="../images/golden-eagle/Naadam-Festival-Eastbound.jpg" alt="Recommended Itineraries" /></div>
+<div class="rightbox"><h2>Highland Journey Aboard 'Belmond Royal Scotsman'</h2>
+<p><strong>Duration:</strong> 3 days/ 2 nights<br />
+<strong>Highlights:</strong> Boat of Garten | Dundee
+</p>
+
+</div>
+<div class="bottom">
+<strong class="Left" style="width:250px;padding-left:20px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup7" class="poplight">View full itinerary</a></strong>
+
+<strong class="Left" style="width:250px;"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup7" class="poplight" onclick="showMe('6');">Email itinerary </a></strong>
+
+<strong class="Left"><img src="../images/recommended-arrow.jpg" alt="Recommended" />
+<a href="#?w=920" rel="popup7" class="poplight" onclick="showMe('7');">Request a quote</a></strong>
+</div>
+</div> 
+<div class="count-page">  <a href="royal-scotsman-recommended-itineraries.html"> <strong>1</strong></a> | <a href="royal-scotsman-recommended-itineraries1.html">2</a> | <a href="royal-scotsman-recommended-itineraries1.html">Next > </a> <!-- <a href="golden-eagle-recommended-itineraries2.html">3</a> | --></div>
+
+</div>
+
+<!-- Center Container Part End Here -->
+<div class="Clr"></div>
+</div>
+<!-- Container Part End Here -->
+</div>
+<!-- Footer Part Start Here -->
+<?php include('../footer.html'); ?>
+<!-- Footer Part End Here -->
+
+
+<!--Classic Journey Aboard 'Belmond Royal Scotsman' STARTS -->
+<div id="popup4" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/bluetrain_pretoria_to_cape_route.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>Classic Journey Aboard 'Belmond Royal Scotsman'</h1>
+<div class="popupbanner"><img src="../images/golden-eagle/golden-eagle-inner2.jpg" alt="Golden Eagle" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+
+<p>On this quintessential train journey, follow the coast to Keith en route to Inverness, the capital of the Highlands. Visit the Glen Ord Distillery and stop in picturesque Plockton for a boat trip to the Isle of Skye. You are personally invited to visit magnificent Ballindalloch Castle in the Spey Valley. At Rothiemurchus Estate, take time to enjoy fishing, clay pigeon shooting or a guided walk though stunning landscapes.
+</p>
+    <p><strong>Duration:</strong> 5 days/ 4 nights</p>
+    <p><strong>Highlights:</strong> Keith | Kyle of Lochalsh | Boat of Garten | Dundee</p>
+</li>
+<li>
+    <h3>Detailed Itinerary</h3>
+    <h4>Day 1</h4>
+<h5>ARRIVE KEITH</h5>
+<p>Early this afternoon, board the Belmond Royal Scotsman, the luxury train travelling through the Scottish Highlands. From Edinburgh's Waverley Station you travel northwards across the Firth of Forth passing the cantilever Forth Railway Bridge, a celebrated Scottish landmark. The Forth Railway Bridge is considered as a milestone in the development of railway civil engineering, and known as the eighth wonder of the world.
+</p>
+<p>Spend a leisurely afternoon, relaxing over a cup of tea as you pass through Arbroath, Montrose and Aberdeen. After your arrival in Keith, end your day with an informal dinner followed by an overnight stabling.
+</p>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> D</p>
+</li>
+    <li>
+<h4>Day 2</h4>
+<h5>KYLE OF LOCHALSH</h5>
+<p>Begin the day with a leisurely breakfast aboard the train. Depart Keith and travel westwards to Inverness, the beautiful capital of the Highlands. Travel on to Muir of Ord, where you disembark to visit Glen Ord Distillery, the only remaining single malt Scotch whisky distillery on the Black Isle.
+</p>
+<p>Return to the train for lunch onboard. Travel along one of the most scenic routes in Britain en route for Kyle of Lochalsh, a village on the northwest coast of Scotland. The line passes Loch Luichart and the Torridon mountains, which are so old that they contain no fossils. Geologists believe that they were formed before any life began. 
+</p>
+<P>Pass by Achnasheen, ascending towards Luib summit and Achnashellach forest, later descending to Strathcarron. Your train journey traces the edge of Loch Carron through Attadale, Stromeferry and Duncraig. </P>
+<P>Arriving at Plockton, you have the opportunity to self-explore this charming Scottish Highland village. Further, take a boat trip to observe the colony of wild seals, while you take in the splendid views across the Isle of Skye to the Applecross Mountains. Cross by a woodland walk, leading to a viewpoint overlooking the loch. Alternatively, you could visit the local art gallery or simply meander through this charming village. Later, rendezvous at the Plockton Hotel; where there is time to enjoy a dram or two before rejoining the motorcoach.</P>
+<P>Return to the train in Kyle of Lochalsh for your overnight stabling.</P>
+<P>This evening, enjoy a formal dinner and afterwards there is entertainment in the Observation Car. Marvel at the view from the train's verandah as you gaze over Loch Alsh to the Isle of Skye.
+</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>BOAT OF GARTEN</h5>
+<p>This day, after breakfast, you may choose to visit Eilean Donan Castle before the train heads north to Inverness. Further, travel southwards to Carrbridge, disembark here for your visit to Ballindalloch, one of Scotland's most romantic castles with magnificent gardens surrounded by the wonderful Spey valley.
+</p>
+<p>Later, return to the train in Boat of Garten on the private Strathspey Railway for overnight stabling. </p>
+<P>Begin the evening with an informal dinner followed by an interactive session with a Highlander, who brings to life the stories of Scottish heroes. Gain a true sense of the past and learn how life in the Highlands has changed over the centuries.</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>DUNDE</h5>
+<p>Enjoy your breakfast and then, debark the train at Boat of Garten. Take the motorcoach to Rothiemurchus Estate, where you could enjoy a variety of activities, including fishing, clay pigeon shooting, a guided walk or perhaps, you may simply prefer to unwind at leisure by the fire at Drumintoul Lodge surrounded by magnificent scenery.
+</p>
+<P>Rejoin the train in Kinggussie and savor lunch as you travel southwards through Blair Atholl and Pitlochry to Dunkeld. Disembark here for your visit to Glamis Castle, Scotland's most beautiful castle & childhood home of HM queen Elizabeth, The Queen Mother. Be intrigued by its history of legends and myths and marvel at its beautiful architecture and stunning gardens. Return back to the train in Perth, where you enjoy a formal dinner on the move before stabling for the evening at Dundee.
+</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>DEPART DUNDE</h5>
+<p>This morning, depart Dundee and travel through the former Kingdom of Fife. You cross the Firth of Forth passing the cantilever Forth Railway Bridge, a celebrated Scottish landmark. Conclude your luxurious train journey after your arrival in Edinburgh.
+</p>
+<strong>Meal plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="The Blue Train"/>
+<input type="hidden" name="region_email" id="region_email" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Blue Train"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="bluetrain_pretoria_to_cape_route.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="The Blue Train"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Blue Train"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize1() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas1"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Classic Journey Aboard 'Belmond Royal Scotsman' ENDS -->
+
+<!--Grand North Western Journey Aboard 'Belmond Royal Scotsman' STARTS -->
+
+<div id="popup5" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/bluetrain_pretoria_to_cape_route.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>Classic Journey Aboard 'Belmond Royal Scotsman'</h1>
+<div class="popupbanner"><img src="../images/the_blue_train/ir2banner.jpg" alt="Golden Eagle" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+
+<p>This program combines the favorite Classic and scenic Western journeys for seven memorable nights aboard Belmond Royal Scotsman. Travel toward Inverness, stopping in Plockton for a boat trip to the Isle of Skye. Visit Ballindalloch, the home of the Macpherson-Grant family since 1546, and enjoy time for leisure activities at Rothiemurchus Estate. Take a ferry from Wemyss Bay to the Isle of Bute to visit Mount Stuart, Britain's most spectacular Victorian Gothic house. All along the way feast on Scotland's spectacular scenery from the comfort of your elegant train.
+</p>
+    <p><strong>Duration:</strong> 8 days / 7 nights</p>
+    <p><strong>Highlights:</strong> Keith | Kyle of Lochalsh | Boat of Garten | Dundee | Spean Bridge | Bridge of Orchy | Wemyss Bay | Edinburgh
+    </p>
+</li>
+<li>
+    <h3>Detailed Itinerary</h3><br />
+    <h4>Day 1</h4>
+<h5>ARRIVE KEITH</h5>
+<p>Early this afternoon, board the Belmond Royal Scotsman, the luxury train travelling through the Scottish Highlands. From Edinburgh's Waverley Station you travel northwards across the Firth of Forth passing the cantilever Forth Railway Bridge, a celebrated Scottish landmark. The Forth Railway Bridge is considered as a milestone in the development of railway civil engineering, and known as the eighth wonder of the world.
+</p>
+<p>Spend a leisurely afternoon, relaxing over a cup of tea as you pass through Arbroath, Montrose and Aberdeen. After your arrival in Keith, end your day with an informal dinner followed by an overnight stabling.
+</p>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> D</p>
+</li>
+    <li>
+<h4>Day 2</h4>
+<h5>KYLE OF LOCHALSH</h5>
+<p>Begin the day with a leisurely breakfast aboard the train. Depart Keith and travel westwards to Inverness, the beautiful capital of the Highlands. Travel on to Muir of Ord, where you disembark to visit Glen Ord Distillery, the only remaining single malt Scotch whisky distillery on the Black Isle.
+</p>
+<p>Return to the train for lunch onboard. Travel along one of the most scenic routes in Britain en route for Kyle of Lochalsh, a village on the northwest coast of Scotland. The line passes Loch Luichart and the Torridon mountains, which are so old that they contain no fossils. Geologists believe that they were formed before any life began. 
+</p>
+<P>Return to the train for lunch onboard. Travel along one of the most scenic routes in Britain en route for Kyle of Lochalsh, a village on the northwest coast of Scotland. The line passes Loch Luichart and the Torridon mountains, which are so old that they contain no fossils. Geologists believe that they were formed before any life began. 
+</P>
+<P>Pass by Achnasheen, ascending towards Luib summit and Achnashellach forest, later descending to Strathcarron. Your train journey traces the edge of Loch Carron through Attadale, Stromeferry and Duncraig. </P>
+<P>Arriving at Plockton, you have the opportunity to self-explore this charming Scottish Highland village. Further, take a boat trip to observe the colony of wild seals, while you take in the splendid views across the Isle of Skye to the Applecross Mountains. Cross by a woodland walk, leading to a viewpoint overlooking the loch. Alternatively, you could visit the local art gallery or simply meander through this charming village. Later, rendezvous at the Plockton Hotel; where there is time to enjoy a dram or two before rejoining the motorcoach.</P>
+<P>Return to the train in Kyle of Lochalsh for your overnight stabling.
+</P>
+<P>This evening, enjoy a formal dinner and afterwards there is entertainment in the Observation Car. Marvel at the view from the train's verandah as you gaze over Loch Alsh to the Isle of Skye.
+</P>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>BOAT OF GARTEN</h5>
+<p>This day, after breakfast, you may choose to visit Eilean Donan Castle before the train heads north to Inverness. Further, travel southwards to Carrbridge, disembark here for your visit to Ballindalloch, one of Scotland's most romantic castles with magnificent gardens surrounded by the wonderful Spey valley.
+</p>
+<p>Later, return to the train in Boat of Garten on the private Strathspey Railway for overnight stabling. </p>
+<P>Begin the evening with an informal dinner followed by an interactive session with a Highlander, who brings to life the stories of Scottish heroes. Gain a true sense of the past and learn how life in the Highlands has changed over the centuries.</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>DUNDE</h5>
+<p>Enjoy your breakfast and then, debark the train at Boat of Garten. Take the motorcoach to Rothiemurchus Estate, where you could enjoy a variety of activities, including fishing, clay pigeon shooting, a guided walk or perhaps, you may simply prefer to unwind at leisure by the fire at Drumintoul Lodge surrounded by magnificent scenery.
+</p>
+<P>Rejoin the train in Kinggussie and savor lunch as you travel southwards through Blair Atholl and Pitlochry to Dunkeld. Disembark here for your visit to Glamis Castle, Scotland's most beautiful castle & childhood home of HM queen Elizabeth, The Queen Mother. Be intrigued by its history of legends and myths and marvel at its beautiful architecture and stunning gardens. Return back to the train in Perth, where you enjoy a formal dinner on the move before stabling for the evening at Dundee.
+</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>SPEAN BRIDGE</h5>
+<p>This morning, depart Dundee and travel east towards Edinburgh to explore this marvelous city at your pace. Visit the historic Royal Mile and view the Edinburgh Castle, which dominates the skyline of the city. Appreciate an art gallery or simply unwind with a cup of coffee amidst the beautiful surroundings. Re-board the train to begin with the second part of your journey.
+</p>
+<P>Early this afternoon, Belmond Royal Scotsman heads west through Falkirk, Clydebank and Dumbarton to skirt Glasgow to arrive at the northern bank of the Clyde. Near the mouth of the Clyde estuary lies Craigendoran, marking the commencement of the majestic West Highland Line.
+</P>
+<P>Travel along the edge of Gare Loch, while sipping a cup of tea. You can sight Loch Long on your left, and after a while, view Ben Arthur (The Cobbler) with its distinctive peak.
+</P>
+<P>Passing Arrochar, you will get your first view of Loch Lomond. The train descends almost to the water's edge at Ardlui, and then has a hard climb up Glen Falloch, whose many waterfalls provide an extraordinary view.
+</P>
+<P>Continue north and pass through Crianlarich and Bridge of Orchy. Enjoy splendid views of Rannoch Moor and arrive in Spean Bridge, for overnight stabling. Enjoy an informal dinner before you meet and interact with a Highlander, who takes you through the life of Scottish heroes and gives you insights about life in the Highlands.
+</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>BRIDGE OF ORCHY</h5>
+<p>Breakfast is served as your journey continues west, passing through Fort William with views of Ben Nevis (Britain's highest mountain). Travelling along the Loch Eil you then pass Glenfinnan and Lochailort. Continue north along this stunning coastline to reach Arisaig. Disembark here for a romantic walk along the silver Morar Sands, a stunning string of white sandy beaches, with spectacular views of the Small Isles with its awe-inspiring Cuillin Mountains.
+</p>
+<P>Rejoin the train and relish lunch onboard. Your journey now retraces the route towards Fort William. Visit the Glenfinnan Monument, followed by tea at Inverlochy Castle. Re-board the train, where you will be served with an informal dinner. Head southwards to Bridge of Orchy for overnight stabling of the train.
+</P>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+    
+<li>
+<h4>Day 7</h4>
+<h5>WEMYSS BAY</h5>
+<p>Today, depart from Bridge of Orchy, travel south towards Glasgow and Gourock, with your breakfast served onboard. Disembark at Wemyss Bay, and set off for a ferry ride across to the Isle of Bute. The island embraces a variety of landscapes, seashore, moorland, farmland and forest. The natural history, geography, geology and ancient history of the island are revealed at every turn. From St. Blane's Chapel at the south of the island to the abandoned townships in Glen More at the north, every stone has its tale to tell.
+</p>
+<P>View Mount Stuart, Britain's remarkable Victorian Gothic house, adorned with stunning and mysterious interiors. Mount Stuart boasts of arguably the finest privately held collection of family portraits in Scotland.
+</P>
+<P>Relax over a cup of tea, with the afternoon to self-explore this magnificent house. Observe its tranquil Rock Garden, the Wee Garden containing rare plants from the southern hemisphere, the Kitchen Garden and the Victorian Pinetum. The Limetree Avenue leads you to a secluded stretch of coastline and one of the most beautiful beaches in Scotland.
+</P>
+<P>Return to the mainland and rejoin the train in Wemyss Bay, where you enjoy a formal dinner onboard, and the train stables for the night.
+</P>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+    
+<li>
+<h4>Day 8</h4>
+<h5>DEPART WEMYSS BAY</h5>
+<p>This morning, depart Wemyss Bay and enjoy breakfast aboard. Conclude your luxurious train journey after your arrival in Edinburgh.
+</p>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B</p>
+</li>
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="The Blue Train"/>
+<input type="hidden" name="region_email" id="region_email" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Blue Train"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="bluetrain_pretoria_to_cape_route.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="The Blue Train"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Blue Train"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize1() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas1"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Grand North Western Journey Aboard 'Belmond Royal Scotsman' ENDS -->
+
+<!--Grand West Highland Journey Aboard 'Belmond Royal Scotsman' STARTS -->
+
+<div id="popup6" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/bluetrain_pretoria_to_cape_route.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>Grand West Highland Journey Aboard 'Belmond Royal Scotsman'</h1>
+<div class="popupbanner"><img src="../images//golden-eagle/Naadam-Festival-Eastbound-inner.jpg" alt="Golden Eagle" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+
+<p>This longer five-night journey combines the three-night Western Journey and the two-night Highland Journey. Explore the West Highlands at a stately pace that includes an exclusive visit to Mount Stuart, Britain's most glorious Victorian Gothic house. Learn about Scottish history on a private tour of Culloden, site of the famous 1746 battle. From Spean Bridge, visit magnificent Rothiemurchus Estate where you can fish, try your hand at clay pigeon shooting of enjoy a guided walk.
+</p>
+    <p><strong>Duration:</strong> 6 days/ 5 nights</p>
+    <p><strong>Highlights:</strong> Spean Bridge | Bridge of Orchy | Wemyss Bay | Boat of Garten | Dundee | Edinburgh
+    </p>
+</li>
+<li>
+    <h3>Detailed Itinerary</h3><br />
+    <h4>Day 1</h4>
+<h5>ARRIVE SPEAN BRIDGE</h5>
+<p>Early this afternoon, board the Belmond Royal Scotsman, the luxury train travelling through the Scottish Highlands. Depart Edinburgh's Waverley Station and travel westwards through Falkirk, Clydebank and Dumbarton to skirt Glasgow and arrive at the northern bank of the Clyde. Near the mouth of the Clyde estuary lies Craigendoran, marking the commencement of the majestic West Highland Line.
+</p>
+<p>Travel along the edge of Gare Loch, while sipping a cup of tea. You can sight Loch Long on your left, and after a while, view Ben Arthur (The Cobbler) with its distinctive peak. Passing Arrochar, you will get your first view of Loch Lomond. The train descends almost to the water's edge at Ardlui, and then has a hard climb up Glen Falloch, whose many waterfalls provide an extraordinary view.
+</p>
+<P>Continue north and pass through Crianlarich and Bridge of Orchy. Enjoy splendid views of Rannoch Moor and arrive in Spean Bridge for overnight stabling. Enjoy an informal dinner before you meet and interact with a Highlander, who takes you through the life of Scottish heroes and gives you insights about life in the Highlands.</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman or similar<br />
+<strong>Meal plan:</strong> D</p>
+</li>
+    <li>
+<h4>Day 2</h4>
+<h5>BRIDGE OF ORCHY</h5>
+<p>Breakfast is served as your journey continues west, passing through Fort William with views of Ben Nevis (Britain's highest mountain). Travelling along the Loch Eil you then pass Glenfinnan and Lochailort. Continue north along this stunning coastline to reach Arisaig. Disembark here for a romantic walk along the silver Morar Sands, a stunning string of white sandy beaches, with spectacular views of the Small Isles with its awe-inspiring Cuillin Mountains.
+</p>
+<p>Rejoin the train and relish lunch onboard. Your journey now retraces the route towards Fort William. Visit the Glenfinnan Monument, followed by tea at Inverlochy Castle. Re-board the train, where you will be served with an informal dinner. Head southwards to Bridge of Orchy for overnight stabling of the train.
+</p>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman or similar<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>WEMYSS BAY</h5>
+<p>Today, depart from Bridge of Orchy, travel south towards Glasgow and Gourock, with your breakfast served onboard. Disembark at Wemyss Bay, and set off for a ferry ride across to the Isle of Bute. The island embraces a variety of landscapes, seashore, moorland, farmland and forest. The natural history, geography, geology and ancient history of the island are revealed at every turn. From St. Blane's Chapel at the south of the island to the abandoned townships in Glen More at the north, every stone has its tale to tell.
+</p>
+<p>View Mount Stuart, Britain's remarkable Victorian Gothic house, adorned with stunning and mysterious interiors. Mount Stuart boasts of arguably the finest privately held collection of family portraits in Scotland.</p>
+<P>Relax over a cup of tea, with the afternoon to self-explore this magnificent house. Observe its tranquil Rock Garden, the Wee Garden containing rare plants from the southern hemisphere, the Kitchen Garden and the Victorian Pinetum. The Limetree Avenue leads you to a secluded stretch of coastline and one of the most beautiful beaches in Scotland.</P>
+<P>Return to the mainland and rejoin the train in Wemyss Bay, where you enjoy a formal dinner onboard, and the train stables for the night.</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman or similar<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 4</h4>
+<h5>BOAT OF GARTEN</h5>
+<p>This morning, depart Wemyss Bay and travel east towards Edinburgh to explore this marvelous city at your pace. Visit the historic Royal Mile and view the Edinburgh Castle, which dominates the skyline of the city. Appreciate an art gallery or simply unwind with a cup of coffee amidst the beautiful surroundings. Re-board the train to begin with the second part of your journey.
+</p>
+<P>Early this afternoon, travel westward through Linlithgow to Stirling, crossing Gleneagles en-route for “Fair City" of Perth. Continue northwards on the Highland line through Dunkeld, Pitlochry and Blair Atholl. Once past the station you catch a glimpse of the Blair Castle.
+</P>
+<P>Arrive at Boat of Garten for overnight stabling on the private Strathspey Railway. This evening, you will be served with an informal dinner followed by entertainment in the Observation Car.</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman or similar<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 5</h4>
+<h5>DUNDEE</h5>
+<p>Enjoy your breakfast and then, debark the train at Boat of Garten. Take the motorcoach to Rothiemurchus Estate, with diverse landscape comprises low-lying fields on the river flood plain, open heather moorland, forestry plantations and majestic Caledonian pine forest. Here you could enjoy a variety of activities, including clay pigeon shooting, or perhaps a guided tour of the Estate with one of the Park Rangers, who will introduce you to the local flora and wildlife.
+</p>
+<P>Rejoin the train and savor lunch as you travel to the historic battlefield at Culloden for a private tour. It was here in 1745 that the troops of "Bonnie Prince" Charlie suffered their final confrontation with the British Hanovarian ruler, George II. Enjoy a formal dinner on the move before stabling for the night at Dundee.
+</P>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman or similar<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 6</h4>
+<h5>DEPART DUNDEE</h5>
+<p>This morning, depart Dundee and travel through the former Kingdom of Fife. You cross the Firth of Forth passing the cantilever Forth Railway Bridge, a celebrated Scottish landmark. Conclude your luxurious train journey after your arrival in Edinburgh.
+</p>
+<strong>Meal plan:</strong> B</p>
+</li>
+    
+
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="The Blue Train"/>
+<input type="hidden" name="region_email" id="region_email" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Blue Train"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="bluetrain_pretoria_to_cape_route.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="The Blue Train"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Blue Train"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize1() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas1"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Grand West Highland Journey Aboard 'Belmond Royal Scotsman' ENDS -->
+
+<!--Highland Journey Aboard 'Belmond Royal Scotsman' STARTS -->
+
+<div id="popup7" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/bluetrain_pretoria_to_cape_route.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>Highland Journey Aboard 'Belmond Royal Scotsman'</h1>
+<div class="popupbanner"><img src="../images/golden-eagle/Naadam-Festival-Eastbound-inner.jpg" alt="Golden Eagle" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+
+<p>Experience the drama and wild beauty of the Scottish Highlands on this scenic two-night journey. Head north on the Highland Line through Dunkeld and Blair Atholl to Boat of Garten, stopping for a private tour of Culloden, site of the famous 1746 battle. At Rothiemurchus Estate, try your hand at clay pigeon shooting, venture out with the estate's rangers on a Highland safari or just enjoy a walk in the scenic countryside.
+</p>
+    <p><strong>Duration:</strong> 3 days/ 2 nights</p>
+    <p><strong>Highlights:</strong> Boat of Garten | Dundee
+    </p>
+</li>
+<li>
+    <h3>Detailed Itinerary</h3><br />
+    <h4>Day 1</h4>
+<h5>ARRIVE BOAT OF GARTEN</h5>
+<p>Early this afternoon, board the Belmond Royal Scotsman, the luxury train travelling through the Scottish Highlands. Begin your journey westward through Linlithgow to Stirling, crossing Gleneagles en-route for “Fair City" of Perth. Continue northwards on the Highland line through Dunkeld, Pitlochry and Blair Atholl. Once past the station you catch a glimpse of the Blair Castle.
+</p>
+<p>Arrive at Boat of Garten for overnight stabling on the private Strathspey Railway. This evening, you will be served with an informal dinner followed by entertainment in the Observation Car.
+</p>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> D</p>
+</li>
+    <li>
+<h4>Day 2</h4>
+<h5>DUNDEE</h5>
+<p>Enjoy your breakfast and then, debark the train at Boat of Garten. Take the motorcoach to Rothiemurchus Estate, with diverse landscape comprises low-lying fields on the river flood plain, open heather moorland, forestry plantations and majestic Caledonian pine forest. Here you could enjoy a variety of activities, including clay pigeon shooting, or perhaps a guided tour of the Estate with one of the Park Rangers, who will introduce you to the local flora and wildlife.
+</p>
+<p>Rejoin the train and savor lunch as you travel to the historic battlefield at Culloden for a private tour. It was here in 1745 that the troops of "Bonnie Prince" Charlie suffered their final confrontation with the British Hanovarian ruler, George II. Enjoy a formal dinner on the move before stabling for the night at Dundee.
+</p>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>DEPART DUNDEE</h5>
+<p>This morning, depart Dundee and travel through the former Kingdom of Fife. You cross the Firth of Forth passing the cantilever Forth Railway Bridge, a celebrated Scottish landmark. Conclude your luxurious train journey after your arrival in Edinburgh.
+</p>
+<strong>Meal plan:</strong> B</p>
+</li>
+
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="The Blue Train"/>
+<input type="hidden" name="region_email" id="region_email" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Blue Train"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="bluetrain_pretoria_to_cape_route.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="The Blue Train"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Blue Train"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize1() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas1"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>   
+</div>
+<!--Highland Journey Aboard 'Belmond Royal Scotsman' ENDS -->
+
+
+<!--Western Journey Aboard 'Belmond The Royal Scotsman' STARTS -->
+
+<div id="popup8" class="popup_block">
+<div class="popupbox">
+<div class="popupcontainer">
+<div class="popuplefnav">
+<ul>
+<li id="divli5"><a href="javascript:void(0)" onclick="showMe('5');"><img src="../images/view-icon.gif" alt="View Itinerary" />View Itinerary</a></li>
+<li><a href="#" onClick="javascript:CallPrint('tab5');"><img src="../images/print-icon.gif" alt="Print Itinerary" />Print Itinerary</a></li>
+<li id="divli6"><a href="javascript:void(0)" onclick="showMe('6');"><img src="../images/send-icon.gif" alt="Email Itinerary" />Email Itinerary</a></li>
+<li id="divli7"><a href="javascript:void(0)" onclick="showMe('7');"><img src="../images/request-icon.gif" alt="Request a Quote" />Request a Quote</a></li>
+<li id="divli8"><a href="javascript:void(0)" onclick="showMe('8');"><img src="../images/map-icon.gif" alt="View Map" />View Map</a></li>
+<li><a href="<?php echo APP_ROOT_URL; ?>popup-page.html?page=pdf/bluetrain_pretoria_to_cape_route.pdf" target="_blank" rel="facebox"><img src="../images/pdf-icon.gif" alt="Download PDF" />Download PDF</a></li>
+</ul>
+</div>
+
+<div class="popuprightcontainer">
+<div class="popupheader">
+<div class="logoinner"><img src="../images/ank-logo.jpg" alt="Ambercrombie &amp; Kent" border="0" /></div>
+</div>
+<div id="tab5">
+
+<h1>Western Journey Aboard 'Belmond The Royal Scotsman'</h1>
+<div class="popupbanner"><img src="../images/the_blue_train/ir2banner.jpg" alt="Golden Eagle" /><img src="../images/banner-bottom-shadow.gif" alt="Banner" /></div>
+
+<h3>Programme Overview</h3>
+<ul class="itinerarylist">
+<li>
+
+<p>The West Highland line is one of the world's most scenic railway journeys. On your three-night journey which includes dramatic Rannoch Moor, Belmond Royal Scotsman's stately pace allows for plenty of time to reflect and fully appreciate the beauty outside your window. At Wemyss Bay, board a ferry to the Isle of Bute to visit Mount Stuart, Britain's most spectacular Victorian Gothic house. There is also the opportunity to take a walk along one of the glorious West Coast beaches.
+</p>
+    <p><strong>Duration:</strong> 4days/ 3nights</p>
+    <p><strong>Highlights:</strong> Spean Bridge | Bridge of Orchy | Wemyss Bay
+    </p>
+</li>
+<li>
+    <h3>Detailed Itinerary</h3><br />
+    <h4>Day 1</h4>
+<h5>ARRIVE SPEAN BRIDGE</h5>
+<p>Early this afternoon, board the Belmond Royal Scotsman, the luxury train travelling through the Scottish Highlands. Depart Edinburgh's Waverley Station and travel westwards through Falkirk, Clydebank and Dumbarton to skirt Glasgow and arrive at the northern bank of the Clyde. Near the mouth of the Clyde estuary lies Craigendoran, marking the commencement of the majestic West Highland Line.
+</p>
+<p>Travel along the edge of Gare Loch, while sipping a cup of tea. You can sight Loch Long on your left, and after a while, view Ben Arthur (The Cobbler) with its distinctive peak.
+</p>
+<P>Passing Arrochar, you will get your first view of Loch Lomond. The train descends almost to the water's edge at Ardlui, and then has a hard climb up Glen Falloch, whose many waterfalls provide an extraordinary view.
+</P>
+<P>Continue north and pass through Crianlarich and Bridge of Orchy. Enjoy splendid views of Rannoch Moor and arrive in Spean Bridge for overnight stabling. Enjoy an informal dinner before you meet and interact with a Highlander, who takes you through the life of Scottish heroes and gives you insights about life in the Highlands.
+</P>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> D</p>
+</li>
+    <li>
+<h4>Day 2</h4>
+<h5>BRIDGE OF ORCHY</h5>
+<p>Breakfast is served as your journey continues west, passing through Fort William with views of Ben Nevis (Britain's highest mountain). Travelling along the Loch Eil you then pass Glenfinnan and Lochailort. Continue north along this stunning coastline to reach Arisaig. Disembark here for a romantic walk along the silver Morar Sands, a stunning string of white sandy beaches, with spectacular views of the Small Isles with its awe-inspiring Cuillin Mountains.
+</p>
+<p>Rejoin the train and relish lunch onboard. Your journey now retraces the route towards Fort William. Visit the Glenfinnan Monument, followed by tea at Inverlochy Castle. Re-board the train, where you will be served with an informal dinner. Head southwards to Bridge of Orchy for overnight stabling of the train.
+</p>
+
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+<li>
+<h4>Day 3</h4>
+<h5>WEMYSS BAY</h5>
+<p>Today, depart from Bridge of Orchy, travel south towards Glasgow and Gourock, with your breakfast served onboard. Disembark at Wemyss Bay, and set off for a ferry ride across to the Isle of Bute. The island embraces a variety of landscapes, seashore, moorland, farmland and forest. The natural history, geography, geology and ancient history of the island are revealed at every turn. From St. Blane's Chapel at the south of the island to the abandoned townships in Glen More at the north, every stone has its tale to tell.
+</p>
+<P>View Mount Stuart, Britain's remarkable Victorian Gothic house, adorned with stunning and mysterious interiors. Mount Stuart boasts of arguably the finest privately held collection of family portraits in Scotland.
+</P>
+<P>Relax over a cup of tea, with the afternoon to self-explore this magnificent house. Observe its tranquil Rock Garden, the Wee Garden containing rare plants from the southern hemisphere, the Kitchen Garden and the Victorian Pinetum. The Limetree Avenue leads you to a secluded stretch of coastline and one of the most beautiful beaches in Scotland.
+</P>
+<P>Return to the mainland and rejoin the train in Wemyss Bay, where you enjoy a formal dinner onboard, and the train stables for the night.
+</p>
+<p><strong>Overnight:</strong> Belmond Royal Scotsman<br />
+<strong>Meal plan:</strong> B, L, D</p>
+</li>
+
+<li>
+<h4>Day 4</h4>
+<h5> DEPART WEMYSS BAY</h5>
+<p>This morning, depart Wemyss Bay and enjoy breakfast aboard. Conclude your luxurious train journey after your arrival in Edinburgh.
+</p>
+<strong>Meal plan:</strong> B</p>
+</li>
+    
+</ul>
+</div>
+
+<div id="tab6" style="display:none;">
+<h1>Send itinerary</h1>
+<?php $id =2;?>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_itinerary.php" method="post"  onSubmit="return validate_itinerary(this,fld_arr3,'<?php echo $id;?>');">
+<input type="hidden" name="country_email" id="country_email" value="The Blue Train"/>
+<input type="hidden" name="region_email" id="region_email" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_email" id="itineraries_email" value="The Blue Train"/>
+<input type="hidden" name="itineraries_email_pdf" id="itineraries_email_pdf" value="bluetrain_pretoria_to_cape_route.pdf"/>
+<input type="hidden" name="itineraries_email_redirect" id="itineraries_email_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+<p><strong>A PDF version of this itinerary will be send to Recipient's email Id.</strong></p>
+<?php include("../itinerary.php");?>
+</form>
+</div>
+
+<div id="tab7" style="display:none;">
+<h1>Request a quote</h1>
+<form action="<?php echo APP_ROOT_URL; ?>send_mail_quote1.php" method="post"   onSubmit="return validate_quote1(this,fld_arr22,'<?php echo $id;?>');">
+<input type="hidden" name="country_quote" id="country_quote" value="The Blue Train"/>
+<input type="hidden" name="region_quote" id="region_quote" value="Luxury Rail Journey"/>
+<input type="hidden" name="itineraries_quote" id="itineraries_quote" value="The Blue Train"/>
+<input type="hidden" name="itineraries_quote_redirect" id="itineraries_quote_redirect" value="<?php echo basename($_SERVER['PHP_SELF']); ?>"/>
+
+<?php include("../quote1.php");?>
+</form>
+</div>
+
+<div id="tab8" style="display:none;">
+<script type="text/javascript">
+
+var markerLetter = 'A';
+var map = '';
+var zoom = 10;
+var origin = 0;
+
+function gmapInitialize1() {
+	if (GBrowserIsCompatible()) {
+		map = new GMap2(document.getElementById("map_canvas1"));
+		map.setUIToDefault();
+		
+		
+			description = '<div style="width:300px;">Day 1 - ';
+			description = description + "<p>Arrive Johannesburg, South Africa and continue onto Stanley's Camp, Botswana<br /><br />Please note that South Africa immigrations require you to have two completely blank visa pages in your passport per entry; without this you will be denied entry.<br /><br />On arrival at OR Tambo International Airport, please clear customs and immigration and collect your luggage.&nbsp;<br /><br />Proceed through into the Arrivals Hall where a representative will meet and assist you with your onward flight to Botswana.<br /><br />On arrival at Maun Airport, you will be transferred to your onward shared light aircraft transfer to Stanley's Camp. Estimated flying time to Stanley's Camp is approximately 15 minutes.<br /><br />Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />Set in an amphitheatre of ebony and sausage trees on the southern tip of Chief's Island, Stanley's Camp sits amidst 260,000 acres of untamed and untrammeled African bush.<br /><br />Bordering the southern section of the famous Moremi Game Reserve this private concession is located in seasonal delta. The floodwaters arrive around June, although there is often navigable water all year round due to the presence of the Boro River.<br /><br />Stanley's is a small luxury camp consisting of eight classic styled safari tents raised on wooden decking. Each safari tent features en-suite facilities as well as a private balcony. Hammocks and Morris chairs offer the perfect means of relaxaton in the African sunshine. The main building is raised on decking and offers expansive views over the surrounding floodplains. There is also a refreshing swimming pool to cool off in the African bush.<br /><br />The afternoon is at leisure to enjoy a game viewing activity with an experienced ranger.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Arrive Botswana", description, "1");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 2 - ';
+			description = description + "<p>The day is at leisure to enjoy the game viewing activities on offer.</p><p>Activities include wonderful game drives in open-sided 4X4 vehicles, informative walking safaris with an armed professional guide as well as serene mokoro excursions* along the narrow channels of the Delta. The unique and educational elephant interaction is available where guests have the opportunity of interacting with a herd of three semi-habituated elephants in their natural environment.<br /><br />* subject to water levels<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-19.673625, 23.3129882), "Stanley's Camp", description, "2");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 3 - ';
+			description = description + "<p>Time permitting enjoy a morning game viewing activity. After breakfast you will be transferred to Stanley's airstrip.<br /><br />Depart Stanley's Camp by Mack Air shared light aircraft transfer to Kasane. The departure time will be advised to you locally by the camp management. Estimated flying time to Kasane is approximately 1 hour 20 minutes. Kindly note, however, that all inter-camp flights are subject to multiple pick ups and drop offs en route to your destination which could affect the flying time.<br /><br />On arrival at the Kasane International Airport, a lodge representative will meet and transfer you the short distance to the lodge.<br /><br />Deep in the heart of the Botswana wilderness lies Chobe Chilwero Lodge, one of the most enchanting places on earth.<br /><br />Relax in luxurious thatched cottages, with modern freestanding baths, indoor and outdoor showers, terrace and private garden with hammock overlooking the magnificent Chobe River.<br /><br />The main public area includes a lounge and dining room, which are linked to outdoor viewing patios. The spa offers a range of spa and hydrotherapy treatments from both the Thalgo and Africology ranges. The lodge also boasts a split-level swimming pool, library, curio shop and a communications centre, which offers telephone, fax and internet access.<br /><br />The afternoon is at leisure to enjoy a game viewing activity on offer.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Stanley's Camp - Chobe Chilwero", description, "3");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 4 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "4");
+			map.addOverlay(mark);
+		
+			description = '<div style="width:300px;">Day 5 - ';
+			description = description + "<p>Today is at leisure to enjoy the game viewing activities on offer.<br /><br />Enjoy thrilling guided game drives in open-sided 4X4 vehicles that bring you to the heart of Africa's largest concentration of elephants, as well as hippos, buffalos, puku, antelope, lions and other creatures that gather on the banks of the Chobe River. Or join one of the acclaimed guides on a wondrous water safari on specially adapted motorboats.<br /></p>";
+			description = description + '</div>';
+			var mark = createMarker(new GLatLng(-17.8067, 25.2562), "Chobe Chilwero", description, "5");
+			map.addOverlay(mark);
+		
+		
+		var minLat = -19.673625;
+		var minLng = 23.3129882;
+		var maxLat = -17.8067;
+		var maxLng = 25.2562;
+							
+		botLeft = new GLatLng(minLat, minLng);
+		topRight = new GLatLng(maxLat, maxLng);
+		
+		bounds = new GLatLngBounds(botLeft, topRight);
+		origin = new GLatLng(((maxLat + minLat) / 2.0),((maxLng + minLng) / 2.0));
+		zoom = map.getBoundsZoomLevel(bounds);
+		map.setCenter(origin, zoom);
+		zoom = map.getZoom();
+	}
+}
+
+function createMarker(point, title, html, day) {
+	var markerOpts = {};
+	var mIcon = new GIcon();
+	//mIcon.image = 'http://www.google.com/mapfiles/marker'+markerLetter+'.png';
+	
+	//mIcon.image = 'http://www.akdmc.com/images/maps/markerAK'+day+'.png';
+	mIcon.image = 'http://www.akdmc.com/images/maps/markerAK.png';
+	mIcon.iconSize = new GSize(20, 34);
+	mIcon.iconAnchor = new GPoint(10, 34);
+	mIcon.infoWindowAnchor = new GPoint(10, 1);
+	
+	markerOpts = {
+		"icon": mIcon,
+		"clickable": true,
+		"title": title
+		};
+	var newPoint = point;
+	var marker = new GMarker(newPoint, markerOpts);
+	
+	GEvent.addListener(marker, "click", function() {
+		marker.openInfoWindowHtml(html);
+	});
+	
+	markerLetter = String.fromCharCode(markerLetter.charCodeAt(0)+1);
+	
+	return marker;
+}
+
+//$(document).ready(function(){
+//	gmapInitialize();
+//});
+
+$(window).unload(function(){
+	GUnload();
+});
+
+</script>
+
+
+<div id="map_canvas1" style="width:625px; height:450px; overflow: hidden"></div>
+</div>
+
+</div>
+
+
+</div>
+</div>   
+</div>
+
+<!--Western Journey Aboard 'Belmond The Royal Scotsman' ENDS -->
+
+<script language="javascript1.1" type="text/javascript">
+function ChangeValue(val)
+{ 
+  if(val.value != "0")
+  {
+    window.open(val.value,"_self");
+  }
+}
+</script></body>
+</html>
