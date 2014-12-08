@@ -4,280 +4,276 @@ include("../classes/mimemail.class.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="keywords" content="Itineraries Italy Tour, Croatia Itineraries, Holidays Itineraries Italy, A&K Italy Itineraries"/>
+	<meta name="description" content="" />
+	<title>Austria Holiday Tour Itineraries with A & K India</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<!--Flag-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<!--[if lt IE 9]>
+	  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../js/spinners.js"></script>
+	<script type="text/javascript" src="../js/lightview.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+	<!--Flag-->
 
-<meta name="keywords" content="Itineraries Austria Tour, Vienna Itineraries, Holidays Itineraries Prague, A&K Austria Itineraries"/>
-<meta name="description" content="Find the itineraries for royal journey to Austria and private tour to Prague and also customized to your individual interests and are required not only for luxury but also for culture and tradition." />
-<title>Austria Travel Itineraries | Private Tour Itineraries Budapest & Vienna - A & K India</title>
-<link rel="stylesheet" href="../css/style.css" type="text/css" />
-<!--Flag-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-<!--[if lt IE 9]>
-  <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
-<![endif]-->
-<script type="text/javascript" src="../js/spinners.js"></script>
-<script type="text/javascript" src="../js/lightview.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
-<!--Flag-->
-<!--popup-->
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/popup.js"></script>
-<script type="text/javascript" src="../js/tabcontent.js"></script>
-<script type="text/javascript" src="../js/jquery1.js"></script>
-<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
+	<!--popup-->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/popup.js"></script>
+	<script type="text/javascript" src="../js/tabcontent.js"></script>
+	<script type="text/javascript" src="../js/jquery1.js"></script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;sensor=false&amp;key=ABQIAAAAo59XZJkke8qRZq7Li3UOERRZJaBXQHsjuUxi7vw0GTNauii7xhRCe2uqkZX-IKuYKE9cxngLKYmfAg" type="text/javascript"></script>
 
-<script language=javascript>
-function CallPrint(strid)
-{
- var prtContent = document.getElementById(strid);
- var WinPrint = window.open('','','letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
- WinPrint.document.write(prtContent.innerHTML);
- WinPrint.document.close();
- WinPrint.focus();
- WinPrint.print();
- WinPrint.close();
- prtContent.innerHTML=strOldOne;
-}
-</script>
-<script language="javascript">
-function showMe(tab)
-{		
-	for(var i=1; i<=16; i++)
-	{
-		var name="tab"+i;
-		var name2="divli"+i;
-		if(tab==i)
+	<script language=javascript>
+	    function CallPrint(strid)
+	    {
+		var prtContent = document.getElementById(strid);
+		var WinPrint = window.open('', '', 'letf=100,top=0,width=600,height=600,toolbar=0,scrollbars=0,status=0');
+		WinPrint.document.write(prtContent.innerHTML);
+		WinPrint.document.close();
+		WinPrint.focus();
+		WinPrint.print();
+		WinPrint.close();
+		prtContent.innerHTML = strOldOne;
+	    }
+	</script>
+	<script language="javascript">
+	    function showMe(tab)
+	    {
+		for (var i = 1; i <= 16; i++)
 		{
-		
-	       if(document.getElementById(name2) != null)	
-		   {
-				document.getElementById(name2).className="active";
-		   }
-		   if(document.getElementById(name) != null)	
-		   {
-				document.getElementById(name).style.display="";
-		   }
-		} else {
-		    if(document.getElementById(name2) != null)	
+		    var name = "tab" + i;
+		    var name2 = "divli" + i;
+		    if (tab == i)
 		    {
-				document.getElementById(name2).className="";
+
+			if (document.getElementById(name2) != null)
+			{
+			    document.getElementById(name2).className = "active";
 			}
-			
-			if(document.getElementById(name) != null)	
-		   {
-				document.getElementById(name).style.display="none";
+			if (document.getElementById(name) != null)
+			{
+			    document.getElementById(name).style.display = "";
 			}
-		}
-		if(name == 'tab4'){
-		  $(document).ready(function(){
-				gmapInitialize();
+		    } else {
+			if (document.getElementById(name2) != null)
+			{
+			    document.getElementById(name2).className = "";
+			}
+
+			if (document.getElementById(name) != null)
+			{
+			    document.getElementById(name).style.display = "none";
+			}
+		    }
+		    if (name == 'tab4') {
+			$(document).ready(function() {
+			    gmapInitialize();
 			});
-		}
-		if(name == 'tab8'){
-		  $(document).ready(function(){
-				gmapInitialize1();
+		    }
+		    if (name == 'tab8') {
+			$(document).ready(function() {
+			    gmapInitialize1();
 			});
-		}
-		if(name == 'tab12'){
-		  $(document).ready(function(){
-				gmapInitialize2();
+		    }
+		    if (name == 'tab12') {
+			$(document).ready(function() {
+			    gmapInitialize2();
 			});
-		}
-		if(name == 'tab16'){
-		  $(document).ready(function(){
-				gmapInitialize3();
+		    }
+		    if (name == 'tab16') {
+			$(document).ready(function() {
+			    gmapInitialize3();
 			});
+		    }
+		    if (name == 'tab20') {
+			$(document).ready(function() {
+			    gmapInitialize4();
+			});
+		    }
 		}
-	}
-}
-</script>
-<!--popup-->
+	    }
+	</script>
+	<!--popup-->
+	<link rel="SHORTCUT ICON" href="../favicon.ico" />
+	<!-- Google Analytics Start here -->
+	<script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-5419456-35']);
+	    _gaq.push(['_trackPageview']);
+	    (function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	    })();
+	</script>
+	<script type="text/javascript">
 
-<link rel="SHORTCUT ICON" href="../favicon.ico" />
-<!-- Google Analytics Start here -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-5419456-35']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<script type="text/javascript">
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-36473986-1']);
+	    _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36473986-1']);
-  _gaq.push(['_trackPageview']);
+	    (function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	    })();
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	</script>
+    </head>
 
-</script>
-</head>
-
-<body>
-<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
+    <body>
+	<span style=" position:fixed; bottom:0px; right:0px; z-index:999999;">
 
 
-<a  onclick="NewWindow(this.href,'name','255','440','yes');return false" 
-href="../yahoo.html">
-                 
-     <img src="../images/livechaticon.png" alt="live chat" /></a>
-     <SCRIPT language=JavaScript type=text/JavaScript>
+	    <a  onclick="NewWindow(this.href, 'name', '255', '440', 'yes');
+		    return false" 
+		href="../yahoo.html">
 
-    var win = null;
+		<img src="../images/livechaticon.png" alt="live chat" /></a>
+	    <SCRIPT language=JavaScript type=text/JavaScript>
 
-    function NewWindow(mypage, myname, w, h, scroll) {
+		var win = null;
 
-        var winl = (screen.width - w) / 2;
+		function NewWindow(mypage, myname, w, h, scroll) {
 
-        var wint = (screen.height - h) / 2;
+		    var winl = (screen.width - w) / 2;
 
-        var settings = 'height=' + h + ',';
+		    var wint = (screen.height - h) / 2;
 
-        settings += 'width=' + w + ',';
+		    var settings = 'height=' + h + ',';
 
-        settings += 'top=' + wint + ',';
+		    settings += 'width=' + w + ',';
 
-        settings += 'left=' + winl + ',';
+		    settings += 'top=' + wint + ',';
 
-        settings += 'scrollbars=' + scroll + ',';
+		    settings += 'left=' + winl + ',';
 
-        settings += 'resizable=yes';
+		    settings += 'scrollbars=' + scroll + ',';
 
-        win = window.open(mypage, myname, settings);
+		    settings += 'resizable=yes';
 
-        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+		    win = window.open(mypage, myname, settings);
 
-    }
+		    if (parseInt(navigator.appVersion) >= 4) {
+			win.window.focus();
+		    }
 
-</SCRIPT></span>
+		}
 
-<div class="tickerHolder">
-<a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
-<br />
-<a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
-<div id="Wrap">
-  <!-- Header Part Start Here -->
-  <?php include('../header.html'); ?>
-<!-- Header Part End Here -->
+	    </SCRIPT></span>
 
-<!-- Banner Part Start Here -->
-<div id="Banner"><img src="../images/rest-of-europe-banner.jpg" alt="Rest-of-Europe" width="959" height="300" /></div>
-<!-- Banner Part End Here -->
-<!-- Container Part Start Here -->
-<div id="Container">
-<!-- Left Container Part Start Here -->
-<div class="LeftContaner">
-<div class="Breadcrumb">
-<ul>
-<li>You are here</li>
-<li><a href="../index.html">Home</a></li>
-<li><a href="destinations.html">Destinations</a></li>
-<li><a href="europe.html">Europe</a></li>
-<li><a href="europe-rest-europe.html">Rest of Europe</a></li>
-<li>Recommended Itineraries</li>
-</ul>
-</div>
-<div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
-        <h5><a href="europe.html">Europe</a></h5>
-        <ul>
-          <li><a href="europe-uk-ireland.html" title="UK &amp; Ireland"><span>+</span> UK &amp; Ireland</a></li>
-                    <li><a href="europe-spain-portugal.html" title="Spain &amp; Portugal"><span>+</span> Spain &amp; Portugal </a></li>
-          <li><a href="europe-italy-croatia.html" title="Italy &amp; Croatia">+ Italy &amp; Croatia</a>
-            
-          </li>
-                      <li><a href="europe-russia.html" title="Russia"><span>+</span> Russia</a></li>
-                      <li><a href="europe-rest-europe.html" title="Rest of Europe"><span>-</span> Rest of Europe</a>
-        <ul>
-              <li><a href="europe-rest-europe.html" title="Rest of Europe"><span>-</span> Introduction to Rest of Europe</a></li>
-              <li><a href="europe-rest-europe-highlights.html" title="Highlights"><span>-</span> Highlights</a></li>
-<!--              <li><a href="europe-rest-europe-best-time.html" title="Best Time to Go"><span>-</span> Best Time to Go</a></li>
-              <li><a href="europe-rest-europe-travel-tips.html" title="Travel Tips"><span>-</span> Travel Tips</a></li>-->
-             
-              <li><a href="europe-rest-europe-recommended-itineraries1.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li> 
-             
-              <li><a href="europe-rest-europe-hotel-portfolio.html" title="Hotel Portfolio"><span>-</span> Hotel Portfolio</a></li> 
- 
-            </ul>
-        </li> <li><a href="europe-france.html"  title="France"><span>+</span> France</a></li>   
-        
-          <li><a href="#" class="cursorauto"  title="Benelux"><span>+</span> Benelux </a></li>
-          <li><a href="#" class="cursorauto"  title="Greece"><span>+</span> Greece </a></li>
-          <li><a href="#" class="cursorauto" title="Germany"><span>+</span> Germany </a></li>
-          <li><a href="#" class="cursorauto" title="Poland"><span>+</span> Poland </a></li>
-          <li><a href="europe-austria-recommended-itineraries.html" title="Austria"><span>+</span> Austria </a></li>
-        
-		 <li><a href="europe-turkey.html" title="Turkey"><span>+</span> Turkey</a></li>
-		 
- </ul>
-          <h4>CHOOSE YOUR STYLE</h4>
-    <select onChange="ChangeValue(this)">
-	<option value="0" selected="selected">Choose Your Style</option><option value="../journeystyles/private-journeys.html">Private Journeys</option>
-          <option value="../journeystyles/connections.html">Connections</option>
-          <option value="../journeystyles/festivals-and-long-weekends.html">Festivals & Long Weekends</option>
-          <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
-          <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
-         <option value="../journeystyles/family-holidays.html">Family Holidays</option>
-          <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
-          <option value="../journeystyles/celebration.html">Celebrations</option>
-            <option value="../journeystyles/honeymoon.html">Honeymoon</option>
-          <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
-          <option value="../journeystyles/private-mob-copm.html">Private Mobile Camping</option>
-          <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
-          <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
-    </select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
-    <select onChange="ChangeValue(this)">
-	<option value="0" selected="selected">Select Destination</option>
-        <option value="africa.html">Africa</option>
-		<option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
-		<option value="europe.html">Europe</option>
-		<option value="australasia.html">Australasia</option>
-		<option value="theorient.html">The Orient</option>
-		<option value="south-america.html">South America</option>
-		<option value="north-america.html">North America</option>
-        <option value="central-america.html">Central America</option>
-		<option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
-		<option value="antartica.html">Antarctica</option>
-        <option value="arctic.html">Arctic</option>
-    </select>
-      </div>
+	<div class="tickerHolder">
+	    <a href="../enquiry-form.html"><img src="../images/ticker-enquery.jpg" alt="Enquery" /></a><br class="Clr" />
+	    <br />
+	    <a href="../request-brochure.html"><img src="../images/ticker-brochure.jpg" alt="Brochure" /></a></div>
+	<div id="Wrap">
+	    <!-- Header Part Start Here -->
+	    <?php include('../header.html'); ?>
+	    <!-- Header Part End Here -->
 
-<?php include('../brochure_left.html'); ?>
-</div>
-<!-- Left Container Part End Here -->
-<!-- Center Container Part Start Here -->
-<div class="CenterContainerInner">
-<h1>Rest of Europe Recommended Itineraries</h1>
-<div class="Right">
-<div class="RightIcons"><?php include('../share.html'); ?></div>
-<div class="NewsletterBox">
-<?php include('../newsletterform.html'); ?>
-</div>
-</div>
-<strong><p style="color:#FF0000"><?php if(isset($_REQUEST['m']) && $_REQUEST['m']==1) echo "Your request send successfully."; ?></p></strong>
-<div class="Clr"></div>
-<div align="left">
-<div class="boldtext">Select the Location from the list below</div>
-<select onChange="ChangeValue(this)" class="choose">
-<option value="0" selected="selected">--Please Select--</option>
-      <option value="europe-rest-europe-recommended-itineraries1.html">France </option>
-    <!--  <option value="europe-rest-europe-recommended-itineraries2.html">Switzerland</option>-->
-      <option value="europe-rest-europe-recommended-itineraries3.html">Germany &amp; Beyond</option>
-      <!-- <option value="europe-rest-europe-recommended-itineraries4.html">Austria &amp; Beyond</option>-->
-       <option value="europe-rest-europe-recommended-itineraries5.html">Netherlands &amp; Belgium</option>
-     <option value="europe-rest-europe-recommended-itineraries6.html">Greece </option>
-    <!--  <option value="europe-rest-europe-greenland-recommended-itineraries.html">Greenland </option>
-       <option value="europe-rest-europe-iceland-recommended-itineraries.html">Iceland </option>-->
-</select>
-</div>
+	    <!-- Banner Part Start Here -->
+	    <div id="Banner"><img src="../images/switzerland-banner1.jpg" alt="Italy" width="959" height="300" /></div>
+	    <!-- Banner Part End Here -->
+	    <!-- Container Part Start Here -->
+	    <div id="Container">
+		<!-- Left Container Part Start Here -->
+		<div class="LeftContaner">
+		    <div class="Breadcrumb">
+			<ul>
+			    <li>You are here</li>
+			    <li><a href="../index.html">Home</a></li>
+			    <li><a href="destinations.html">Destinations</a></li>
+			    <li><a href="europe.html">Europe</a></li>
+			    <li><a href="europe-austria-recommended-itineraries.html">Ausrtia</a></li>
+			    <li>Recommended Itineraries</li>
+			</ul>
+		    </div>
+		    <div class="LeftList"><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+			<h5><a href="europe.html">Europe</a></h5>
+			<ul>
+			    <li><a href="europe-uk-ireland.html" title="UK &amp; Ireland"><span>+</span> UK &amp; Ireland</a></li>
+
+			    <li><a href="europe-spain-portugal.html" title="Spain &amp; Portugal"><span>+</span> Spain &amp; Portugal </a></li>
+			    <li><a href="europe-italy-croatia.html" title="Italy &amp; Croatia"><span>+</span> Italy &amp; Croatia</a></li>
+			    <li><a href="europe-russia.html" title="Russia" ><span>+</span> Russia</a></li>
+			    <li><a href="europe-rest-europe.html" title="Rest of Europe" ><span>+</span> Rest of Europe</a></li> 
+
+			    <li><a href="" title="France" class="cursorauto"><span>+</span> France</a></li>
+
+
+			    <li><a href="#" class="cursorauto"  title="Benelux"><span>+</span> Benelux </a></li>
+			    <li><a href="#" title="Greece" class="cursorauto"><span>+</span> Greece </a></li>
+			    <li><a href="#" title="Germany" class="cursorauto"><span>+</span> Germany </a></li>
+			    <li><a href="#" title="Poland" class="cursorauto"><span>+</span> Poland </a></li>
+			    <li><a href="europe-austria-recommended-itineraries.html" title="Austria">- Austria </a>
+                             <ul>
+				    <li><a href="europe-austria-recommended-itineraries.html" title="Recommended Itineraries"><span>-</span> Recommended Itineraries</a></li>				  
+				</ul></li>
+			    <li><a href="europe-turkey.html" title="Turkey"><span>+</span> Turkey</a></li>
+			    <li><a href="europe-switzerland-recommended-itineraries.html" title="Switzerland"><span>+</span> Switzerland</a>
+				
+			    </li>
+
+			</ul>
+			<h4>CHOOSE YOUR STYLE</h4>
+			<select onChange="ChangeValue(this)">
+			    <option value="0" selected="selected">Choose Your Style</option>
+			    <option value="../journeystyles/private-journeys.html">Private Luxury Journeys</option>
+			    <option value="../journeystyles/connections.html">Connections</option>
+			    <option value="../journeystyles/festivals-and-long-weekends.html">Festivals & Long Weekends</option>
+			    <option value="../journeystyles/small-ship-cruising.html">Small Ship Cruising</option>
+			    <option value="../journeystyles/private-jet.html">Private Jet Journeys</option>
+			    <option value="../journeystyles/Luxury-rail-journey.html">Luxury Rail Journeys</option>
+			    <option value="../journeystyles/family-holidays.html">Family Holidays</option>
+			    <option value="../journeystyles/rest-revive.html">Rest &amp; Revive</option>
+			    <option value="../journeystyles/celebration.html">Celebrations</option>
+			    <option value="../journeystyles/honeymoon.html">Honeymoon</option>
+			    <option value="../journeystyles/special-interst-groups.html">Special Interest Groups</option>
+			    <option value="../journeystyles/Private-mob-copm.html">Private Mobile Camping</option>
+			    <option value="../journeystyles/ak-villas.html">A&amp;K Villas</option>
+			    <option value="../journeystyles/sanctuary-retreats.html">Sanctuary Retreats</option>
+			</select><h4><a href="destinations.html">TRAVEL DestinationS</a></h4>
+			<select onChange="ChangeValue(this)">
+			    <option value="0" selected="selected">Select Destination</option>
+			    <option value="africa.html">Africa</option>
+			    <option value="middle-east-north-africa.html">Middle East &amp; North Africa</option>
+			    <option value="europe.html">Europe</option>
+			    <option value="australasia.html">Australasia</option>
+			    <option value="theorient.html">The Orient</option>
+			    <option value="south-america.html">South America</option>
+			    <option value="north-america.html">North America</option>
+			    <option value="central-america.html">Central America</option>
+			    <option value="beach-island-escapes.html">Beach &amp; Island Escapes</option>
+			    <option value="antartica.html">Antarctica</option>
+			    <option value="arctic.html">Arctic</option>
+			</select>
+		    </div>
+
+		    <?php include('../brochure_left.html'); ?>
+		</div>
+		<!-- Left Container Part End Here -->
+		<!-- Center Container Part Start Here -->
+		<div class="CenterContainerInner">
+		    <h1>Austria Recommended Itineraries</h1>
+		    <div class="Right">
+			<div class="RightIcons"><?php include('../share.html'); ?></div>
+			<div class="NewsletterBox">
+			    <?php include('../newsletterform.html'); ?>
+			</div>
+		    </div>
+		    <!--<div class="Clr"></div>-->
+		                        
 <div class="RecommendedBox">
 <div class="leftbox"><img src="../images/Austria-Southern-Bavaria.jpg" alt="Austria and Southern Bavaria" width="326" height="210" /></div>
 <div class="rightbox"><h2>Austria and Southern Bavaria</h2>
@@ -345,6 +341,7 @@ href="../yahoo.html">
 <?php include('../footer.html'); ?>
 <!-- Footer Part End Here -->
 <!--Austria and Southern Bavaria Start Here -->
+
 <div id="popup1" class="popup_block">
 <div class="popupbox">
 <div class="popupcontainer">
@@ -378,7 +375,7 @@ href="../yahoo.html">
 <h5>ARRIVE VIENNA</h5>
 <p>Upon arrival at Vienna Airport you will be met by your local representative and transferred to your hotel. The remainder of the day will be at leisure to relax after your flight.</p>
 <p>
-Located on the Ringstrasse, the Hotel Imperial's central location offers easy access to the nearby Opera House, concert halls, museums and shopping district. The grand marble staircase, crystal chandeliers and splendid public rooms all help to create an air of sophistication and elegance. Facilities include the Imperial Restaurant, the Imperial Caf√© (famed for its torte) and piano bar.</p>
+Located on the Ringstrasse, the Hotel Imperial's central location offers easy access to the nearby Opera House, concert halls, museums and shopping district. The grand marble staircase, crystal chandeliers and splendid public rooms all help to create an air of sophistication and elegance. Facilities include the Imperial Restaurant, the Imperial CafÈ (famed for its torte) and piano bar.</p>
 <p><strong>Overnight:</strong> Hotel Imperial</p>
 </li>
 <li>
@@ -386,15 +383,15 @@ Located on the Ringstrasse, the Hotel Imperial's central location offers easy ac
 <h5> VIENNA</h5>
 <p>Today you will be met by your private English-speaking guide for a half day walking tour of the imperial city of Vienna. Your tour will commence at the Hofburg complex, the residence of the Habsburg family who ruled the Austro-Hungarian Empire until 1918. You may be able to see a training session of the famous Spanish Riding School (timetable and ticket availability permitting). You will also visit St Stephen's Cathedral whose soaring structure enshrines the heart of Vienna.</p>
 <p>
-The afternoon will be at leisure for you to enjoy. Why not visit the new Museums Quarter? A late baroque palace, it has recently been converted to house a variety of interesting museums, including the Museum of Modern Art, as well as contemporary exhibitions. Or perhaps enjoy a shopping spree on Vienna's famous K√§rtnerstrasse.</p>
+The afternoon will be at leisure for you to enjoy. Why not visit the new Museums Quarter? A late baroque palace, it has recently been converted to house a variety of interesting museums, including the Museum of Modern Art, as well as contemporary exhibitions. Or perhaps enjoy a shopping spree on Vienna's famous K‰rtnerstrasse.</p>
 <p>
 <strong>Overnight:</strong> Hotel Imperial<br />
 <strong>Meal Plan:</strong> B</p>
 </li>
 <li>
 <h4>Day 3</h4>
-<h5>VIENNA &AMP; SCH√ñNBRUNN PALACE</h5>
-<p>This morning your private vehicle and English-speaking guide will take you away from the centre of Vienna to Sch√ñnbrunn Palace, which was the vast summer residence of the Habsburgs. Sch√ñnbrunn Palace takes its name from a beautiful spring that was found here. The spectacular setting of the palace and the gardens is a prime example of Baroque planning. The beauty of the strict architectural symmetry is further enhanced by its gardens with their fountains, trees and alleyways.</p>
+<h5>VIENNA &AMP; SCH÷NBRUNN PALACE</h5>
+<p>This morning your private vehicle and English-speaking guide will take you away from the centre of Vienna to Sch÷nbrunn Palace, which was the vast summer residence of the Habsburgs. Sch÷nbrunn Palace takes its name from a beautiful spring that was found here. The spectacular setting of the palace and the gardens is a prime example of Baroque planning. The beauty of the strict architectural symmetry is further enhanced by its gardens with their fountains, trees and alleyways.</p>
 <p>
 The afternoon will be at leisure for shopping or some independent sightseeing.</p>
 <p>
@@ -664,7 +661,7 @@ In the afternoon enjoy an orientation tour (3 hours) of Munich by private vehicl
 <li>
 <h4>Day 2</h4>
 <h5>BUDAPEST</h5>
-<p> Enjoy a half-day tour (4 hours) of the Buda side of the Danube river with you English-speaking guide for a walking tour.  In this ancient Royal district you will visit the Matthias Church, which has witnessed the coronation of many Hungarian Kings, and enjoy stunning panoramas of the city and river from the Fishermen's Bastion.  The Bastion affords fantastic views across the whole city.  Also visit the former Royal Palace which houses the Hungarian National Gallery, Budapest History Museum and the National Sz√©chenyi Library.  Your guide will escort you back to your hotel on foot.</p>
+<p> Enjoy a half-day tour (4 hours) of the Buda side of the Danube river with you English-speaking guide for a walking tour.  In this ancient Royal district you will visit the Matthias Church, which has witnessed the coronation of many Hungarian Kings, and enjoy stunning panoramas of the city and river from the Fishermen's Bastion.  The Bastion affords fantastic views across the whole city.  Also visit the former Royal Palace which houses the Hungarian National Gallery, Budapest History Museum and the National SzÈchenyi Library.  Your guide will escort you back to your hotel on foot.</p>
 <p>
 <strong>Overnight:</strong> Budapest Hilton Hotel<br />
 <strong>Meal Plan:</strong> B</p>
@@ -694,7 +691,7 @@ In the afternoon meet your English-speaking local guide today for a half-day wal
 <li>
 <h4>Day 5</h4>
 <h5>VIENNA</h5>
-<p>  Meet your English-speaking local guide today and travel outside the city center by private vehicle for a half-day excursion (up to 4 hours) to the magnificent Sch√∂nbrunn Palace with its beautiful grounds.  Sch√∂nbrunn Palace was the vast summer residence of the Habsburg's and takes its name from a beautiful spring found on the estate. The beauty of the strict architectural symmetry is further enhanced by its gardens with fountains, trees and alleyways.  Your guide will accompany you through many of the palace staterooms including the 'Hall of Mirrors' in which Mozart performed for the Empress Maria Theresa when he was only six years old.
+<p>  Meet your English-speaking local guide today and travel outside the city center by private vehicle for a half-day excursion (up to 4 hours) to the magnificent Schˆnbrunn Palace with its beautiful grounds.  Schˆnbrunn Palace was the vast summer residence of the Habsburg's and takes its name from a beautiful spring found on the estate. The beauty of the strict architectural symmetry is further enhanced by its gardens with fountains, trees and alleyways.  Your guide will accompany you through many of the palace staterooms including the 'Hall of Mirrors' in which Mozart performed for the Empress Maria Theresa when he was only six years old.
 Return to Vienna for a further half-day tour (4 hours) into Vienna's musical past.  Your guide will show you the places where the great composers lived, worked and played.  Your guide will also tell you some history about the composers and their music. </p>
 <p>
 <strong>Overnight:</strong> Sacher Wien<br />
@@ -937,7 +934,7 @@ After lunch at leisure you will visit the Troja Palace.  Troja was built in the 
 <h5>BUDAPEST</h5>
 <p>Today meet your English-speaking local guide and private vehicle for a full day sightseeing tour. This morning start on the Pest side of the Danube. Beginning at the market hall (only open in the morning) you will see the vast array of provisions and craftwares on sale. Continuing on your tour you will visit the ornate synagogue which is the largest in Europe and is also home to the Jewish Museum. See the vast Heroes' Square with its impressive Millennial Monument, and St. Stephen's Basilica, the city's largest church. You will also enjoy a viewing of the Crown Jewels in the Parliament Building and a private tour (approx. one hour and subject to theatre scheduling) of the palatial Opera House, built between 1875 and 1884 and painstakingly restored after being severely damaged during the siege of the city in 1944-5. In addition we can include a private opera recital where two arias will be performed on the sweeping stairs of the opera house.</p>
 <p>
-This afternoon cross the graceful Chain Bridge over the Danube to Buda and ascend by funicular to Castle Hill where the former Royal Palace gracefully towers over the Danube. Explore the cobbled and colourful streets of this ancient royal district and visit the Matthias Church, which has witnessed the coronation of many Hungarian Kings. Enjoy stunning panoramas of the city and river from the Fishermen's Bastion and the nearby Gell√©rt Hill before returning to your hotel.</p>
+This afternoon cross the graceful Chain Bridge over the Danube to Buda and ascend by funicular to Castle Hill where the former Royal Palace gracefully towers over the Danube. Explore the cobbled and colourful streets of this ancient royal district and visit the Matthias Church, which has witnessed the coronation of many Hungarian Kings. Enjoy stunning panoramas of the city and river from the Fishermen's Bastion and the nearby GellÈrt Hill before returning to your hotel.</p>
 <p>
 <strong>Overnight:</strong> Four Seasons Gresham Palace<br />
 <strong>Meal Plan:</strong> B</p>
@@ -945,7 +942,7 @@ This afternoon cross the graceful Chain Bridge over the Danube to Buda and ascen
 <li>
 <h4>Day 3</h4>
 <h5>BUDAPEST - DANUBE VALLEY - BUDAPEST</h5>
-<p>Meet your English-speaking local guide and private vehicle this morning for a full day sightseeing excursion to the picturesque Danube Bend area of Hungary, the centre of culture during the Hungarian Renaissance. Visit the preserved Baroque town of Szentendre, a flourishing artist's community with a profusion of cobbled streets, church spires and colourful houses. Visit the Margit Kov√°cs Museum which displays many of the artists' best pieces from fine ceramics to life-size sculptures, and the Blagovestenska Church, a red roccoco masterpiece. Continue to Visegr√°d, the royal seat in medieval times, which offers an imposing fortress and the partially restored palace of the Anjou kings. Here you will also visit the ancient citadel. Visit Esztergom, the seat of the Hungarian Catholic Church, and visit the Basilica, Crypt and Treasury containing an impressive collection of priceless treasures. Return to your hotel in Budapest at the end of the afternoon.</p>
+<p>Meet your English-speaking local guide and private vehicle this morning for a full day sightseeing excursion to the picturesque Danube Bend area of Hungary, the centre of culture during the Hungarian Renaissance. Visit the preserved Baroque town of Szentendre, a flourishing artist's community with a profusion of cobbled streets, church spires and colourful houses. Visit the Margit Kov·cs Museum which displays many of the artists' best pieces from fine ceramics to life-size sculptures, and the Blagovestenska Church, a red roccoco masterpiece. Continue to Visegr·d, the royal seat in medieval times, which offers an imposing fortress and the partially restored palace of the Anjou kings. Here you will also visit the ancient citadel. Visit Esztergom, the seat of the Hungarian Catholic Church, and visit the Basilica, Crypt and Treasury containing an impressive collection of priceless treasures. Return to your hotel in Budapest at the end of the afternoon.</p>
 <p><strong>Overnight:</strong> Four Seasons Gresham Palace <br />
 <strong>Meal Plan:</strong> B
 </p>
@@ -986,7 +983,7 @@ This afternoon visit the charming Vienna Woods. Visit Mayerling, scene of the su
 <li>
 <h4>Day 8</h4>
 <h5>VIENNA - SCHONBRUNN &AMP; DANCING LESSON - VIENNA</h5>
-<p>This morning you will travel outside the city centre with your driver-guide for an excursion to the magnificent Sch√∂nbrunn Palace with its beautiful grounds. Sch√∂nbrunn Palace was the vast summer residence of the Habsburgs and takes its name from a beautiful spring found on the estate. The spectacular setting and symmetry of the palace and the gardens are a prime example of Baroque planning. Your guide will accompany you through many of the palace staterooms including the Hall of Mirrors in which Mozart performed for the Empress Maria Theresa when he was only six years old.</p>
+<p>This morning you will travel outside the city centre with your driver-guide for an excursion to the magnificent Schˆnbrunn Palace with its beautiful grounds. Schˆnbrunn Palace was the vast summer residence of the Habsburgs and takes its name from a beautiful spring found on the estate. The spectacular setting and symmetry of the palace and the gardens are a prime example of Baroque planning. Your guide will accompany you through many of the palace staterooms including the Hall of Mirrors in which Mozart performed for the Empress Maria Theresa when he was only six years old.</p>
 <p>
 Vienna is the world's capital of music and one of its most sought-after "export goods" is the Viennese Waltz, the dance in three quarter time that waltz king Johann Strauss triumphantly took across the globe. This afternoon you will have the opportunity to take an individual Viennese Waltz lesson (in English) in an exclusive baroque ballroom. After your introductory lesson you will have a traditional Viennese "pause" with coffee or sparkling wine and cake. At the end of the lesson you will receive a certificate authenticating your efforts.</p>
    <p><strong>Overnight:</strong> Hotel Imperial<br />
@@ -1222,15 +1219,15 @@ After your excursion travel back to Prague, via Nelahozeves. The Czech Republic'
 
 </div>   
 </div>
-<!-- Discover Budapest, Vienna and Prague Here -->
+	    <!--CROATIA BEACH-->
 
-<script language="javascript1.1" type="text/javascript">
-function ChangeValue(val)
-{ 
-  if(val.value != "0")
-  {
-    window.open(val.value,"_self");
-  }
-}
-</script></body>
+	    <script language="javascript1.1" type="text/javascript">
+		function ChangeValue(val)
+		{
+		    if (val.value != "0")
+		    {
+			window.open(val.value, "_self");
+		    }
+		}
+	    </script></body>
 </html>
